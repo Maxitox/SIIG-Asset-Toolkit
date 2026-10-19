@@ -1,8 +1,8 @@
 {
   "format": "SIIG_RELEASE_MANIFEST",
   "release": "2.10.0-dev25",
-  "file_count": 789,
-  "total_bytes": 7364590,
+  "file_count": 790,
+  "total_bytes": 7377081,
   "files": [
     {
       "path": ".gitignore",
@@ -60,9 +60,14 @@
       "sha256": "485b47be42f7baa78fe345361a96397cc2f7ee26ab16317f9ff394a96a887174"
     },
     {
+      "path": "docs/archives/INVENTORY.md",
+      "size": 12303,
+      "sha256": "293c376ebd52c804fff159197855f95481c4ae3cf3f72e93244da2dc270028f4"
+    },
+    {
       "path": "docs/archives/README.md",
-      "size": 2925,
-      "sha256": "2081b829a22d42e34465c53c797c962c1b210f711614ebf519e855abafdfa0b8"
+      "size": 3113,
+      "sha256": "df79b2c27a29ec4150dec9829c4073f10f41056ed94bc0e172cadac34290604b"
     },
     {
       "path": "docs/formats/ANM_NOTES.md",
