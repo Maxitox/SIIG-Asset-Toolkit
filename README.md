@@ -1,6 +1,8 @@
 # Space Invaders Infinity Gene Asset Toolkit
 
-**Current development checkpoint: `2.10.0-dev24 WIP199` — unsealed Mod Workspace packaging-fix checkpoint.** The latest sealed release remains `v2.10.0-dev23`; WIP199 is intentionally unsealed.
+**Current development checkpoint: `v2.10.0-dev25` — unsealed development checkpoint.** The latest sealed release remains `v2.10.0-dev23` and is immutable. This branch is a public-review staging branch; the default `main` branch has not been updated by this staging work.
+
+The development notes below preserve historical checkpoint records from the dev24 work. Their WIP labels describe those historical checkpoints, not the current package version.
 
 ### WIP199 — exact Xbox replacement wrappers + single deployment tree
 
