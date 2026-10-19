@@ -1,93 +1,23 @@
 {
   "format": "SIIG_RELEASE_MANIFEST",
   "release": "2.10.0-dev25",
-  "file_count": 782,
-  "total_bytes": 7350614,
+  "file_count": 787,
+  "total_bytes": 7357216,
   "files": [
     {
-      "path": "CHANGELOG.md",
-      "size": 141514,
-      "sha256": "b9f358a6ae760e3cd1e9036b35e6da20809ae3f8581c9d8b2e8d219e66e6414e"
+      "path": ".gitignore",
+      "size": 349,
+      "sha256": "05b2854cd6b99afc09b085ca7a0373b50837d4e2e4cb3123c65595b0a16ef813"
     },
     {
-      "path": "LICENSES/README.md",
-      "size": 528,
-      "sha256": "f8f389b82261c79d26a629fc7bb0b4d12f299ece5853fb954addbed00968fe61"
+      "path": "addons/blender_addon_source/siig_blender/__init__.py",
+      "size": 44965,
+      "sha256": "97c409dd336997ea3673fabd04b7e38bd2c0cb62db05d64d983864e1816c1a4d"
     },
     {
-      "path": "LICENSES/XENIA-BSD-3-CLAUSE.txt",
-      "size": 1458,
-      "sha256": "9c1f53338b0e582b8416e13f011ce07a535f5c3dfaf68202db72315997148680"
-    },
-    {
-      "path": "README.md",
-      "size": 104917,
-      "sha256": "18a9811a3bcbd7b47c9d398aada5e9bbf001b3d3274984741dde8d655abe6b44"
-    },
-    {
-      "path": "SIIG_Build_Asset_Viewer.bat",
-      "size": 425,
-      "sha256": "52ecc49740d2c10f5b782ae2c63a742c32e3aea57d27ba29db42a8d021eb47d3"
-    },
-    {
-      "path": "SIIG_Decode_Stage3D.bat",
-      "size": 232,
-      "sha256": "472fff1e7151a4bbd0b90f33cacdf7060cdba3b69cfd8602840481d000dfdb47"
-    },
-    {
-      "path": "SIIG_Decode_StageWall.bat",
-      "size": 239,
-      "sha256": "79cd1e8bf8f84afbc1d34d4a54753296a2862c6d4802cc15c684e8fb756bce6a"
-    },
-    {
-      "path": "SIIG_Extract_BBX.bat",
-      "size": 391,
-      "sha256": "919860ffd3afa744a5c7f4f939630411adf26d0058caf2fca60e3d91880d50e6"
-    },
-    {
-      "path": "SIIG_GUI.bat",
-      "size": 280,
-      "sha256": "ffe796b1a0a4eb075ad7569a7debc96322459d3ed77a2e15ef9508075ffe9113"
-    },
-    {
-      "path": "SIIG_Inspect_Shaders.bat",
-      "size": 223,
-      "sha256": "e5044e7538f3771c58f4104a157c0415c4aeaa0d98a62ddf4266ece21d5366d3"
-    },
-    {
-      "path": "SIIG_Repack_BBX.bat",
-      "size": 515,
-      "sha256": "003de156bd8b90631e95fdae87a457f83aaf291d918607378fa2bbbaf0ad4779"
-    },
-    {
-      "path": "SIIG_Rip_Game.bat",
-      "size": 1202,
-      "sha256": "d25ae04e1293542be71e461c40b1556478afec88358b27f50ea8757e61b43eb0"
-    },
-    {
-      "path": "SIIG_Run_Selftest.bat",
-      "size": 322,
-      "sha256": "8e3e42bc71df3300bbe8da4121cd6aecb0559744596f05a45727268a96c9e813"
-    },
-    {
-      "path": "SIIG_Serve_Output.bat",
-      "size": 160,
-      "sha256": "cec916197e526d92ab1d9b4066a4628cdba54d2f11c100b00b926b0b051b3232"
-    },
-    {
-      "path": "SIIG_Update_Rip.bat",
-      "size": 822,
-      "sha256": "9d4b190376a9a7fcc9f344c81d4025d5c79e78fb95348c0876b51dce5ebd3fc7"
-    },
-    {
-      "path": "SIIG_Verify_Rip.bat",
-      "size": 529,
-      "sha256": "7f0f47d8c20514daa6a1480a97b0df53c6b80ae777cca04bdc84bd647f43a4f4"
-    },
-    {
-      "path": "VERSION.txt",
-      "size": 13,
-      "sha256": "327446cf344d197bd92db49e10bc3d47b254e7c96512ac9e23b8838747759ed6"
+      "path": "addons/blender_addon_source/siig_blender/README.md",
+      "size": 4683,
+      "sha256": "6645e5239b37f012a9d89fed15b45a021086d24da63c722c55b5642c0a227348"
     },
     {
       "path": "addons/README.md",
@@ -120,19 +50,14 @@
       "sha256": "eb98e4d026873bc5b9116f8935afebac7a57c2c2301822ea3967509cf6cc4f3b"
     },
     {
-      "path": "addons/blender_addon_source/siig_blender/README.md",
-      "size": 4683,
-      "sha256": "6645e5239b37f012a9d89fed15b45a021086d24da63c722c55b5642c0a227348"
+      "path": "CHANGELOG.md",
+      "size": 141514,
+      "sha256": "b9f358a6ae760e3cd1e9036b35e6da20809ae3f8581c9d8b2e8d219e66e6414e"
     },
     {
-      "path": "addons/blender_addon_source/siig_blender/__init__.py",
-      "size": 44965,
-      "sha256": "97c409dd336997ea3673fabd04b7e38bd2c0cb62db05d64d983864e1816c1a4d"
-    },
-    {
-      "path": "docs/README.md",
-      "size": 6349,
-      "sha256": "65a059f0b8642311c21ddea8a25f2f7a95ceff6a36feb692b15c9d559647a68e"
+      "path": "CONTRIBUTING.md",
+      "size": 718,
+      "sha256": "485b47be42f7baa78fe345361a96397cc2f7ee26ab16317f9ff394a96a887174"
     },
     {
       "path": "docs/formats/ANM_NOTES.md",
@@ -301,8 +226,8 @@
     },
     {
       "path": "docs/project/PROJECT_LICENSE_STATUS.md",
-      "size": 686,
-      "sha256": "f5404fac5c26a14382aeeea624602c01ea2b56b2640d76df71b7e8755ef36152"
+      "size": 1039,
+      "sha256": "8aebae6d28085a551a455497add2f03645b5db0ade3d991b37b57c89f9b6f88d"
     },
     {
       "path": "docs/project/README.md",
@@ -333,6 +258,11 @@
       "path": "docs/project/VERSIONING.md",
       "size": 2224,
       "sha256": "4d44c3589d4cd9a578b36bfd38837fce181efb1cfcd3ec1c3820ffb976885266"
+    },
+    {
+      "path": "docs/README.md",
+      "size": 6349,
+      "sha256": "65a059f0b8642311c21ddea8a25f2f7a95ceff6a36feb692b15c9d559647a68e"
     },
     {
       "path": "docs/releases/README.md",
@@ -855,9 +785,29 @@
       "sha256": "0194007bad22d7623fe75b7fe22ba3c2afa81b3125659dd5bb98af5634bef83d"
     },
     {
-      "path": "reference/README.md",
-      "size": 1957,
-      "sha256": "f268e6bfcb26b519c289b838e4f3a655f25de3ee4dd6249749f1ccafc0bb8e17"
+      "path": "LICENSES/PROJECT-LICENSING.md",
+      "size": 2292,
+      "sha256": "51b80f6e2aa927ddea0f12b00768ecff112ba0ad8e04cce7207a3f52398458b0"
+    },
+    {
+      "path": "LICENSES/README.md",
+      "size": 858,
+      "sha256": "b743d9de5ab0f29948c2486d02d79564ee07e84a58b71494aff91d1677a98cbd"
+    },
+    {
+      "path": "LICENSES/THIRD-PARTY.md",
+      "size": 1142,
+      "sha256": "61b4c92a7f77f3fe925d292fa650a59a17056c417c38675e07d70b25c5d84ffe"
+    },
+    {
+      "path": "LICENSES/XENIA-BSD-3-CLAUSE.txt",
+      "size": 1458,
+      "sha256": "9c1f53338b0e582b8416e13f011ce07a535f5c3dfaf68202db72315997148680"
+    },
+    {
+      "path": "README.md",
+      "size": 105135,
+      "sha256": "0e81615a41343b6ced3e76b7162988057a7fd8406823c717758646f90ad93a04"
     },
     {
       "path": "reference/provenance/PROVENANCE.json",
@@ -873,6 +823,11 @@
       "path": "reference/provenance/SOURCES.csv",
       "size": 9510,
       "sha256": "04f00ce9b7f130b82d821fc4d4e58636936b80dfb94ee5070f198c52a3f19a97"
+    },
+    {
+      "path": "reference/README.md",
+      "size": 1957,
+      "sha256": "f268e6bfcb26b519c289b838e4f3a655f25de3ee4dd6249749f1ccafc0bb8e17"
     },
     {
       "path": "reference/research/BOSS_DAT_RUNTIME_A2_AB_DEV24.md",
@@ -1160,11 +1115,6 @@
       "sha256": "3a4cb772de1a0619fd6e6fd76269de0cb8d42d044bb8f4fa5a65f5bcc6408660"
     },
     {
-      "path": "reference/systemfont/systemfont.fnt",
-      "size": 626457,
-      "sha256": "c79fab7a9bae416dc727714bb6e1bdb8324ff613ca7bbaa26a689f8f607bc1f4"
-    },
-    {
       "path": "reference/systemfont/systemfont_aliases.csv",
       "size": 6551,
       "sha256": "197b5016172927e97e93e275939c8f69a2433ffff4f1d0e9334c6da5f7130c6d"
@@ -1178,6 +1128,11 @@
       "path": "reference/systemfont/systemfont_metadata.json",
       "size": 691,
       "sha256": "48b907da62cf640104e7e83516d734d61cac753f1b6a30aed467bfdcf5970968"
+    },
+    {
+      "path": "reference/systemfont/systemfont.fnt",
+      "size": 626457,
+      "sha256": "c79fab7a9bae416dc727714bb6e1bdb8324ff613ca7bbaa26a689f8f607bc1f4"
     },
     {
       "path": "reference/tables/ALL_BOSS_RECONSTRUCTION_MATRIX_DEV20.csv",
@@ -1210,21 +1165,6 @@
       "sha256": "ee2185cb430ea57d7b44242cbfa5f692f07e64dd40e337149225737e9615c56a"
     },
     {
-      "path": "reference/tables/CAMERA_PRESETS_RAW.csv",
-      "size": 34696,
-      "sha256": "8ed5d0ac5c2f469488faa93afae900a11073d4936d8954f66ede558cf66f72fa"
-    },
-    {
-      "path": "reference/tables/CAMERA_PRESETS_RUNTIME.csv",
-      "size": 6735,
-      "sha256": "72d7b5b9beda606126c9444f21e2b1fbaa1579aada2aad27567f84750e146062"
-    },
-    {
-      "path": "reference/tables/CAMERA_PRESETS_RUNTIME_SEMANTIC.csv",
-      "size": 6749,
-      "sha256": "24bb1453d87c0cbdea13f9082ae299f6068381ecb6a0ec5a7b6d861e9ad89443"
-    },
-    {
       "path": "reference/tables/CAMERA_PRESET_DIRECT_CALLERS_PS3.csv",
       "size": 546,
       "sha256": "373f38f3a0561f717244ca9df0ce8b44745277404720d41c4e7b6069e6eb0d46"
@@ -1233,6 +1173,21 @@
       "path": "reference/tables/CAMERA_PRESET_SCHEMA.csv",
       "size": 5282,
       "sha256": "ad1fdcc1e914869b1d2ec7e94e9611b05044b5b058bdc553aaf301babc616c49"
+    },
+    {
+      "path": "reference/tables/CAMERA_PRESETS_RAW.csv",
+      "size": 34696,
+      "sha256": "8ed5d0ac5c2f469488faa93afae900a11073d4936d8954f66ede558cf66f72fa"
+    },
+    {
+      "path": "reference/tables/CAMERA_PRESETS_RUNTIME_SEMANTIC.csv",
+      "size": 6749,
+      "sha256": "24bb1453d87c0cbdea13f9082ae299f6068381ecb6a0ec5a7b6d861e9ad89443"
+    },
+    {
+      "path": "reference/tables/CAMERA_PRESETS_RUNTIME.csv",
+      "size": 6735,
+      "sha256": "72d7b5b9beda606126c9444f21e2b1fbaa1579aada2aad27567f84750e146062"
     },
     {
       "path": "reference/tables/CENTIPEDE_RUNTIME_TOPOLOGY_DEV14.csv",
@@ -1265,11 +1220,6 @@
       "sha256": "ba8c803f8fe682eb3c4bf17e64f043a2cf989263e0dd2e17e15de79b108183a7"
     },
     {
-      "path": "reference/tables/ENTITY_RUNTIME_REGISTRY.csv",
-      "size": 151237,
-      "sha256": "91ce69c196e51fd97bc31b4c02f863d2c522c3ff98c9072edf4173989ac9061b"
-    },
-    {
       "path": "reference/tables/ENTITY_RUNTIME_REGISTRY_BUILD_DIFF.csv",
       "size": 22652,
       "sha256": "15bedd3e6653af591e90928053b32605dab45c84aa03fe4cd6c92853da979923"
@@ -1278,6 +1228,11 @@
       "path": "reference/tables/ENTITY_RUNTIME_REGISTRY_SUMMARY.json",
       "size": 1354,
       "sha256": "2059a071f22dc8ed27b92d019ff90efd43818016be19e8aa351920d885bfdcc1"
+    },
+    {
+      "path": "reference/tables/ENTITY_RUNTIME_REGISTRY.csv",
+      "size": 151237,
+      "sha256": "91ce69c196e51fd97bc31b4c02f863d2c522c3ff98c9072edf4173989ac9061b"
     },
     {
       "path": "reference/tables/EST_EFFECT_MODEL_AUDIT_DEV24.csv",
@@ -1695,6 +1650,11 @@
       "sha256": "701aadf2788c999f3ca6008e0ce68c966f87bc621610c33fcac8b20af8c97894"
     },
     {
+      "path": "SIIG_Build_Asset_Viewer.bat",
+      "size": 425,
+      "sha256": "52ecc49740d2c10f5b782ae2c63a742c32e3aea57d27ba29db42a8d021eb47d3"
+    },
+    {
       "path": "siig_camera.py",
       "size": 11532,
       "sha256": "248e6805194f7b44b793f97eae8ad87d555c18f9cb3407af5c27287fb3b27279"
@@ -1705,9 +1665,34 @@
       "sha256": "b89af47ae73c7db4c5f2c7250b7980922c0ad3d7c43bbc36bf936b070f9b38df"
     },
     {
+      "path": "SIIG_Decode_Stage3D.bat",
+      "size": 232,
+      "sha256": "472fff1e7151a4bbd0b90f33cacdf7060cdba3b69cfd8602840481d000dfdb47"
+    },
+    {
+      "path": "SIIG_Decode_StageWall.bat",
+      "size": 239,
+      "sha256": "79cd1e8bf8f84afbc1d34d4a54753296a2862c6d4802cc15c684e8fb756bce6a"
+    },
+    {
+      "path": "SIIG_Extract_BBX.bat",
+      "size": 391,
+      "sha256": "919860ffd3afa744a5c7f4f939630411adf26d0058caf2fca60e3d91880d50e6"
+    },
+    {
+      "path": "SIIG_GUI.bat",
+      "size": 280,
+      "sha256": "ffe796b1a0a4eb075ad7569a7debc96322459d3ed77a2e15ef9508075ffe9113"
+    },
+    {
       "path": "siig_gui.py",
       "size": 178971,
       "sha256": "14e090a7bbafeb7bc2abecb1a1cdac33e590245a914e7ec687034300bbeb1c0d"
+    },
+    {
+      "path": "SIIG_Inspect_Shaders.bat",
+      "size": 223,
+      "sha256": "e5044e7538f3771c58f4104a157c0415c4aeaa0d98a62ddf4266ece21d5366d3"
     },
     {
       "path": "siig_lineage.py",
@@ -1735,9 +1720,29 @@
       "sha256": "c2cbafa25de0a9f2c3ec2e92d11fb18cc6f62fdf13da942cd8bbc6b55c9cbb61"
     },
     {
+      "path": "SIIG_Repack_BBX.bat",
+      "size": 515,
+      "sha256": "003de156bd8b90631e95fdae87a457f83aaf291d918607378fa2bbbaf0ad4779"
+    },
+    {
+      "path": "SIIG_Rip_Game.bat",
+      "size": 1202,
+      "sha256": "d25ae04e1293542be71e461c40b1556478afec88358b27f50ea8757e61b43eb0"
+    },
+    {
       "path": "siig_route.py",
       "size": 25768,
       "sha256": "229225767c16048b215a0e33b23f0d2972dca21dca83c9a7d7d5ada4f261ebb5"
+    },
+    {
+      "path": "SIIG_Run_Selftest.bat",
+      "size": 322,
+      "sha256": "8e3e42bc71df3300bbe8da4121cd6aecb0559744596f05a45727268a96c9e813"
+    },
+    {
+      "path": "SIIG_Serve_Output.bat",
+      "size": 160,
+      "sha256": "cec916197e526d92ab1d9b4066a4628cdba54d2f11c100b00b926b0b051b3232"
     },
     {
       "path": "siig_sony_bnk.py",
@@ -1755,14 +1760,19 @@
       "sha256": "87d1f368e72f7d7328fb97da21dabd4207321d1e220e146c054c25f1651cf178"
     },
     {
+      "path": "SIIG_Update_Rip.bat",
+      "size": 822,
+      "sha256": "9d4b190376a9a7fcc9f344c81d4025d5c79e78fb95348c0876b51dce5ebd3fc7"
+    },
+    {
+      "path": "SIIG_Verify_Rip.bat",
+      "size": 529,
+      "sha256": "7f0f47d8c20514daa6a1480a97b0df53c6b80ae777cca04bdc84bd647f43a4f4"
+    },
+    {
       "path": "siig_visualizer.py",
       "size": 115645,
       "sha256": "0dc5aaf3d2a381562b132d251cdee665aa186119a885b55870bf482be6cf6da4"
-    },
-    {
-      "path": "tools/README.md",
-      "size": 490,
-      "sha256": "dded10ea732499cb38fc2caa28fc915cec7b409396cdadb202d1de9a1b25dec9"
     },
     {
       "path": "tools/ghidra/ApplySIIGFunctionNames.java",
@@ -1775,9 +1785,19 @@
       "sha256": "0deb4ea760546268a5c4d1434c46142f45d9e4cf6c1366db0e9b7aa4a73a94ba"
     },
     {
+      "path": "tools/README.md",
+      "size": 490,
+      "sha256": "dded10ea732499cb38fc2caa28fc915cec7b409396cdadb202d1de9a1b25dec9"
+    },
+    {
       "path": "tools/systemfont_derived_font.py",
       "size": 15069,
       "sha256": "52e3ce8f1ed31575b15f711641f2d595199e682b16dd3eaa888a96b7b7c5de09"
+    },
+    {
+      "path": "UNLICENSE",
+      "size": 1200,
+      "sha256": "eaca00ec3bfd6bd8a53243aae5bec3feba254679842a0ad6012485a3e45cd9fd"
     },
     {
       "path": "validation/ALL_BOSS_RECONSTRUCTION_2.10.0-dev20.json",
@@ -2010,14 +2030,14 @@
       "sha256": "a28ebf07e20339f9f4445b84ed9c808c61231fcbfc53fc70e8032591008b96d0"
     },
     {
-      "path": "validation/BLENDER_MODDING_HEADLESS_2.10.0-dev24_WIP179.json",
-      "size": 1892,
-      "sha256": "6224b909b934d73e64a7ce664df996af74b6ff7ec2928c731e637aa50e0ae80d"
-    },
-    {
       "path": "validation/BLENDER_MOD_WORKSPACE_2.10.0-dev24_WIP196.json",
       "size": 2119,
       "sha256": "a4d20e2bf26198fa3739247a3668cd3f5fe709f6fd757db131cb96ca66bf4b64"
+    },
+    {
+      "path": "validation/BLENDER_MODDING_HEADLESS_2.10.0-dev24_WIP179.json",
+      "size": 1892,
+      "sha256": "6224b909b934d73e64a7ce664df996af74b6ff7ec2928c731e637aa50e0ae80d"
     },
     {
       "path": "validation/BLENDER_STYLE_PREVIEW_2.10.0-dev24_WIP188.json",
@@ -3045,14 +3065,14 @@
       "sha256": "b866c1b518ebed814bc9d6fbf722ee31d979e5b20b08ea705feb5f14d5d94346"
     },
     {
-      "path": "validation/SELFTEST_2.10.0-dev23.json",
-      "size": 26336,
-      "sha256": "29c6d311f8d2ec3240013b22590f099d9017dff924a2f311a2dfd2b553db0cae"
-    },
-    {
       "path": "validation/SELFTEST_2.10.0-dev23_WIP_2026-09-18.json",
       "size": 26142,
       "sha256": "bf196d2bbac0407b80624c77fd996b25085ac85c3abf2ad87f959a948dc3a5b2"
+    },
+    {
+      "path": "validation/SELFTEST_2.10.0-dev23.json",
+      "size": 26336,
+      "sha256": "29c6d311f8d2ec3240013b22590f099d9017dff924a2f311a2dfd2b553db0cae"
     },
     {
       "path": "validation/SELFTEST_2.10.0-dev3.json",
@@ -3865,14 +3885,14 @@
       "sha256": "3d263295d1f606fc90f0dc78a46d636b01b41380bb445d66ebc5bb1651c2a0b6"
     },
     {
-      "path": "validation/VISUALIZER_PRESENTATION_AUDIO_2.10.0-dev24.json",
-      "size": 990,
-      "sha256": "50e6ac0227139d74a5ebe93150c472977522558d6adffad24911e99ab5c4f65f"
-    },
-    {
       "path": "validation/VISUALIZER_PRESENTATION_AUDIO_2.10.0-dev24_WIP168.json",
       "size": 1849,
       "sha256": "cf686f2802544ec470d2544bb3e70e15b519b229ce1282044c151fa10022b657"
+    },
+    {
+      "path": "validation/VISUALIZER_PRESENTATION_AUDIO_2.10.0-dev24.json",
+      "size": 990,
+      "sha256": "50e6ac0227139d74a5ebe93150c472977522558d6adffad24911e99ab5c4f65f"
     },
     {
       "path": "validation/VISUALIZER_SEQUENCE_TIMING_2.10.0-dev24_WIP173.json",
@@ -3913,6 +3933,11 @@
       "path": "validation/WRATH_RETAIL_VALIDATION_2.10.0-dev24.json",
       "size": 2170,
       "sha256": "a650c731ca3a26c5df066ed12fe46830584b85ddef52bc969621cfd295ae35df"
+    },
+    {
+      "path": "VERSION.txt",
+      "size": 13,
+      "sha256": "327446cf344d197bd92db49e10bc3d47b254e7c96512ac9e23b8838747759ed6"
     }
   ]
 }
