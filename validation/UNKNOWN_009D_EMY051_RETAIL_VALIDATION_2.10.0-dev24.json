@@ -1,0 +1,33 @@
+{
+  "format": "SIIG_DEV_RETAIL_VALIDATION",
+  "release": "2.10.0-dev24",
+  "status": "pass",
+  "subject": "runtime 0x9D / emy_051 common DAT/controller ownership",
+  "runtime_type": "0x9D",
+  "script_name": null,
+  "model": "emy_051.gmx",
+  "controller_factory": "Function_82106F78 via Function_821489F8 case 0x9E (runtime_type + 1)",
+  "opcode_callback": "Function_820E8268",
+  "common_handler": "Function_820E7F68 / Function_820E7CE0",
+  "custom_tail": null,
+  "custom_tail_evidence": "controller vtable +0x5C is 0x824DBC78 no-op; all 80 retail records contain exactly five arguments",
+  "auxiliary_pool": {"runtime_type":"0x3E","count":40,"model_registry_status":"unconfigured","assembly_claim":false},
+  "schema": ["spawn_condition","body_hp","travel_speed_raw512","position_x","position_z"],
+  "retail_corpus": {
+    "record_count": 80,
+    "argument_counts": {"5":80},
+    "stages": {"level4_stage6.dat":21,"level5_stage2.dat":22,"extra1_stage7.dat":1,"extra3_stage2.dat":36},
+    "body_hp_values": [300],
+    "speed_raw512_values": [256,512],
+    "position_z_values": [-20,-10],
+    "distinct_position_x_count": 36
+  },
+  "representative_args": [
+    [0,300,256,213,-20],
+    [0,300,512,52,-20],
+    [0,300,256,213,-10],
+    [0,300,512,416,-20]
+  ],
+  "evidence_boundary": "factory/controller ownership, absence of a custom DAT tail, common HP/speed/X/Z storage and corpus counts are executable/DAT-backed; script/gameplay name and deeper state-machine meaning remain unresolved",
+  "selftest": {"passed":127,"failed":0,"report_external":"SELFTEST_2.10.0-dev24_WIP_127.json"}
+}

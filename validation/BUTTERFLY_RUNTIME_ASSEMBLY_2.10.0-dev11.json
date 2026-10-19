@@ -1,0 +1,193 @@
+{
+  "format": "SIIG_BUTTERFLY_RUNTIME_ASSEMBLY_VALIDATION",
+  "release": "2.10.0-dev11",
+  "status": "pass",
+  "catalogs": [
+    "butterfly_phase_1",
+    "butterfly_phase_2",
+    "butterfly_phase_3",
+    "butterfly_phase_4"
+  ],
+  "retail_xbox": {
+    "loader": "0x82111F48",
+    "record_table": "0x82009560..0x820095FC",
+    "model_index_table": "0x82009750..0x82009768",
+    "locator_pointer_table": "PTR_DAT_82543150",
+    "locator_range": "lt_001..lt_048"
+  },
+  "june10_xbox": {
+    "loader": "0x8212B490",
+    "record_table": "0x8200F1A0..0x8200F23C",
+    "model_index_table": "0x8200F720..0x8200F738",
+    "locator_pointer_table": "PTR_DAT_82573D00",
+    "record_values_match_retail": true
+  },
+  "retail_ps3": {
+    "registry_crosscheck": "A4/C4/C5/C6/C7/C8/C9 map to bos_011/bos_011a/b/c/d/e/f.gmx respectively",
+    "note": "dev11 uses PS3 as an independent model-registry cross-check; the exact PS3 10-row loader table was not required for the preset proof because retail Xbox and June 10 independently expose the same loader records."
+  },
+  "phases": {
+    "1": {
+      "body": [
+        "0xA4",
+        "bos_011.gmx"
+      ],
+      "modules": [],
+      "instances": 1,
+      "locator_range": null
+    },
+    "2": {
+      "body": [
+        "0xC4",
+        "bos_011a.gmx"
+      ],
+      "modules": [
+        {
+          "runtime_type": "0xC7",
+          "model": "bos_011d.gmx",
+          "count": 4,
+          "locators": "lt_001..lt_004",
+          "role": "large square"
+        }
+      ],
+      "instances": 5
+    },
+    "3": {
+      "body": [
+        "0xC5",
+        "bos_011b.gmx"
+      ],
+      "modules": [
+        {
+          "runtime_type": "0xC7",
+          "model": "bos_011d.gmx",
+          "count": 8,
+          "locators": "lt_001..lt_008",
+          "role": "large square"
+        },
+        {
+          "runtime_type": "0xC8",
+          "model": "bos_011e.gmx",
+          "count": 10,
+          "locators": "lt_009..lt_018",
+          "role": "small square"
+        }
+      ],
+      "instances": 19
+    },
+    "4": {
+      "body": [
+        "0xC6",
+        "bos_011c.gmx"
+      ],
+      "modules": [
+        {
+          "runtime_type": "0xC7",
+          "model": "bos_011d.gmx",
+          "count": 8,
+          "locators": "lt_001..lt_008",
+          "role": "large square"
+        },
+        {
+          "runtime_type": "0xC8",
+          "model": "bos_011e.gmx",
+          "count": 32,
+          "locators": "lt_009..lt_040",
+          "role": "small square"
+        },
+        {
+          "runtime_type": "0xC9",
+          "model": "bos_011f.gmx",
+          "count": 8,
+          "locators": "lt_041..lt_048",
+          "role": "elongated rectangle"
+        }
+      ],
+      "instances": 49
+    }
+  },
+  "real_retail_xbox": {
+    "source": "project-owner re-uploaded original Xbox 360 retail STFS package; proprietary bytes excluded from release",
+    "assets": {
+      "bos_011.gmx": {
+        "size": 22448,
+        "sha256": "60eaa4b68c2b350bd25294662dc49af6be8acabc806032c7caebcc2d45679334"
+      },
+      "bos_011a.gmx": {
+        "size": 51488,
+        "sha256": "45efdedcf4e95f652ef4dcd93e1b89930857932e6a45e6b2bf0678113b5761e3"
+      },
+      "bos_011b.gmx": {
+        "size": 78272,
+        "sha256": "177d7448e8e1a643a7c7347823ed7c26c61255d44c3e83c43d94330ea53450cd"
+      },
+      "bos_011c.gmx": {
+        "size": 112992,
+        "sha256": "150366f9c5c204edf359b2b1a433e069767881be2cb06204eeabc390e075d022"
+      },
+      "bos_011d.gmx": {
+        "size": 6672,
+        "sha256": "c0dac3ba000a77bb86e89674a3667e4aeb94881277b0c7a49bd07561a93ea0a7"
+      },
+      "bos_011e.gmx": {
+        "size": 6672,
+        "sha256": "46f74d7a6d816ab85680a38944648b4f46025f5e2987d95d9d8ae8d2ff93c1a1"
+      },
+      "bos_011f.gmx": {
+        "size": 6672,
+        "sha256": "5606d4c0cf7e9e9e11d0627823ddbe2617153281de156834d99612ff8904908c"
+      }
+    },
+    "exports": {
+      "1": {
+        "instances": 1,
+        "meshes": 2,
+        "nodes": 4,
+        "animations": 0,
+        "root_nodes": [
+          "body"
+        ]
+      },
+      "2": {
+        "instances": 5,
+        "meshes": 18,
+        "nodes": 32,
+        "animations": 3,
+        "root_nodes": [
+          "body"
+        ]
+      },
+      "3": {
+        "instances": 19,
+        "meshes": 60,
+        "nodes": 116,
+        "animations": 3,
+        "root_nodes": [
+          "body"
+        ]
+      },
+      "4": {
+        "instances": 49,
+        "meshes": 150,
+        "nodes": 296,
+        "animations": 3,
+        "root_nodes": [
+          "body"
+        ]
+      }
+    }
+  },
+  "gameplay_capture_corroboration": {
+    "source": "project-owner screenshots supplied 2026-09-15",
+    "status": "corroboration_only",
+    "observations": [
+      "phase 1 has no wings/modules",
+      "phase 2 visibly has four large square modules",
+      "phase 3 visibly has large and small square module families",
+      "phase 4 visibly has large squares, many small squares, and elongated rectangles"
+    ],
+    "note": "screenshots were not used to derive locator counts or placement; executable loader records and GMX lt_* hierarchy are the formal proof."
+  },
+  "native_animation_policy": "phase bodies 2-4 retain native animations; modules are attached under exact lt_* body nodes with no baked world-space transforms. Phase 1 body has no native motion tracks.",
+  "ok": true
+}

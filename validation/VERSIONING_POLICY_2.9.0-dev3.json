@@ -1,0 +1,11 @@
+{
+  "format": "SIIG_VERSIONING_POLICY_VALIDATION",
+  "toolkit_target": "2.9.0-dev3",
+  "status": "pass",
+  "previous_checkpoint": "2.8.0-dev28",
+  "new_feature_line": "2.9.0-dev1",
+  "minor_review_deadline": "dev8",
+  "policy": "Advance MINOR earlier when the active work becomes a materially different user-facing capability; do not keep a minor line indefinitely merely because work remains unfinished.",
+  "document": "docs/project/VERSIONING.md",
+  "current_checkpoint": "2.9.0-dev3"
+}

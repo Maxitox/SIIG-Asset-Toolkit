@@ -1,0 +1,30 @@
+{
+  "format": "SIIG_MOD_WORKSPACE_ASSET_TREE_VALIDATION",
+  "release": "2.10.0-dev24",
+  "checkpoint": "WIP184",
+  "status": "pass",
+  "gui_version": "0.45.0-dev24",
+  "simple_mode_list_assets": true,
+  "embedded_tree": true,
+  "tree_hierarchy": [
+    "archive",
+    "resource"
+  ],
+  "persistent_statuses": [
+    "untouched",
+    "exported",
+    "edited",
+    "staged",
+    "added"
+  ],
+  "status_source": "workspace edit-baseline hashes + staged/addition state; not GUI session memory",
+  "open_edit_selected": true,
+  "double_click_edit": true,
+  "external_editor_refresh": "Refresh marks",
+  "build_verify_auto_refresh_when_open": true,
+  "gmx_selection_populates_advanced_fields": true,
+  "backend_command": "mod-browser",
+  "backend_mutates_workspace": false,
+  "regression": "Untouched -> Exported -> Edited -> Staged synthetic DAT workspace transition",
+  "scope_note": "lightweight modding browser; deliberately not a duplicate thumbnail/model Asset Viewer"
+}

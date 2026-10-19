@@ -1,0 +1,94 @@
+{
+  "format": "SIIG_RELEASE_VALIDATION",
+  "release": "2.9.0-dev3",
+  "date": "2026-09-11",
+  "status": "development-pass",
+  "selftest": {
+    "passed": 77,
+    "failed": 0,
+    "ok": true,
+    "report": "validation/SELFTEST_2.9.0-dev3.json",
+    "reported_toolkit_version": "2.9.0-dev3"
+  },
+  "inherited_release_gate": {
+    "from": "2.9.0-dev2",
+    "report": "validation/RELEASE_VALIDATION_2.9.0-dev2.json",
+    "note": "All sealed dev2 donor-free GMX vertex/material schema synthesis, dev1 integrated mod staging, dev28 TXIF graph, dev27 scene graph, dev26 mesh graph, dev25 retail GMX evidence, native builders, extraction/research and source-only gates are inherited. dev3 removes the native TEX same-layout donor requirement for the confirmed canonical platform layouts."
+  },
+  "tex_layout_synthesis": {
+    "status": "pass",
+    "report": "validation/TEX_LAYOUT_SYNTHESIS_2.9.0-dev3.json",
+    "xbox_donor_free": true,
+    "ps3_structural_donor_free": true,
+    "new_dimension_regression": "37x19 Xbox",
+    "mod_workspace_fallback": true
+  },
+  "mod_gltf_texture_pipeline": {
+    "status": "pass",
+    "report": "validation/MOD_GLTF_TEXTURE_PIPELINE_2.9.0-dev3.json",
+    "source_tex_donor_present": false,
+    "new_tex_dimensions": "37x19",
+    "bbx_member_addition": "pass",
+    "siigmod_reconstruction": "pass"
+  },
+  "desktop_gui": {
+    "status": "pass",
+    "report": "validation/DESKTOP_GUI_2.9.0-dev3.json",
+    "gui_version": "0.7.0-dev3",
+    "tabs": [
+      "Game Rip",
+      "Mod Workspace",
+      "GMX Workbench",
+      "Utilities"
+    ]
+  },
+  "asset_functionalization": {
+    "status": "pass",
+    "report": "validation/ASSET_FUNCTIONALIZATION_2.9.0-dev3.json",
+    "known_asset_families": 14,
+    "viewable_or_exportable_families": 14,
+    "native_round_trip_families": 11,
+    "native_builder_available_families": 11,
+    "tex_layout_synthesis": true
+  },
+  "source_only_audit": {
+    "status": "pass",
+    "report": "validation/SOURCE_ONLY_AUDIT_2.9.0-dev3.json",
+    "game_assets": 0,
+    "external_executable_magic": 0,
+    "archive_binary_members": 0,
+    "private_runtime_paths": 0,
+    "python_bytecode": 0,
+    "third_party_binaries_bundled": false,
+    "sources_rows": 24
+  },
+  "version_consistency": {
+    "VERSION.txt": "2.9.0-dev3",
+    "cli_toolkit_version": "2.9.0-dev3",
+    "gui_version": "0.7.0-dev3"
+  },
+  "fresh_package": {
+    "status": "pass",
+    "candidate_manifest_entries_verified": 355,
+    "candidate_manifest_missing": 0,
+    "candidate_manifest_mismatched": 0,
+    "candidate_unlisted_files": 0,
+    "candidate_source_only_audit": "pass",
+    "candidate_selftest_passed": 77,
+    "candidate_selftest_failed": 0,
+    "candidate_version_reported": "2.9.0-dev3",
+    "candidate_gui_version": "0.7.0-dev3",
+    "candidate_package_sha256": "f3eb033df544b2948427844be58ef82cb92a138b13590afab209052cf13fecfa",
+    "note": "Candidate was extracted fresh, verified against RELEASE_MANIFEST with no unlisted files, source-audited before executing package code, and then passed 77/77 selftests plus CLI/GUI version checks. Final package is rebuilt deterministically after recording this evidence."
+  },
+  "limitations": [
+    "Compressed/mipmapped native texture variants are not synthesized.",
+    "PS3 donor-free wrapper synthesis is structurally validated but arbitrary runtime acceptance is not yet hardware/emulator-proven.",
+    "MOTN/ANIM graph synthesis/import, platform shader compilation, remaining opaque chunk semantics, and fully template-free GMX root creation remain unresolved.",
+    "Runtime acceptance of arbitrary donor-free synthesized models/textures remains a separate hardware/emulator gate.",
+    "The external dev25 306/306 retail GMX evidence is inherited rather than re-run from proprietary inputs.",
+    "PS3 NPDRM/SDAT re-encryption is not implemented.",
+    "Audio replacement/rebuilding remains intentionally deferred.",
+    "Project-owner license selection remains open."
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "format": "SIIG_RELEASE_VALIDATION",
+  "release": "2.8.0-dev18",
+  "date": "2026-09-10",
+  "status": "development-pass",
+  "selftest": {
+    "passed": 54,
+    "failed": 0,
+    "ok": true,
+    "report": "validation/SELFTEST_2.8.0-dev18.json",
+    "reported_toolkit_version": "2.8.0-dev18"
+  },
+  "inherited_release_gate": {
+    "from": "2.8.0-dev17",
+    "report": "validation/RELEASE_VALIDATION_2.8.0-dev17.json",
+    "note": "All prior console extraction/rendering/audio/route/camera and dev15-dev17 mobile-format/exclusives behavior gates are inherited. dev18 adds iOS-to-console executable-lineage research without modifying sealed dev17."
+  },
+  "dev18_ios_console_lineage_validation": {
+    "status": "pass",
+    "report": "validation/IOS_CONSOLE_CODE_LINEAGE_DEV18.json",
+    "function_correspondences": 9,
+    "mobile_dispatch_frontier": "0x8D",
+    "console_dispatch_table_frontier": "0xCE",
+    "ios_active_opcode_count": 87,
+    "june_console_active_opcode_count": 113,
+    "active_opcode_intersection": 73,
+    "normal_stage_pairs_compared": 18,
+    "normal_stage_aggregate_opcode_lcs_ratio": 0.91702,
+    "stages_same_opcode_sequence": 10,
+    "major_rewrite_stages": [
+      "3-6"
+    ],
+    "ios_runtime_delta_formula": "authored_delta * runtime_fps / 30",
+    "ios_runtime_scroll_speed_formula": "authored_speed * 30 / runtime_fps",
+    "generator_ios_capacity_identity": "6144 = 24 * 8 * 32 bytes per output layer"
+  },
+  "source_only_audit": {
+    "status": "pass",
+    "report": "validation/SOURCE_ONLY_AUDIT_2.8.0-dev18.json",
+    "game_assets": 0,
+    "external_executable_magic": 0,
+    "archive_binary_members": 0,
+    "private_runtime_paths": 0,
+    "python_bytecode": 0,
+    "third_party_binaries_bundled": false,
+    "sources_rows": 24
+  },
+  "version_consistency": {
+    "VERSION.txt": "2.8.0-dev18",
+    "cli_toolkit_version": "2.8.0-dev18"
+  },
+  "fresh_package": {
+    "status": "pass",
+    "candidate_manifest_entries_verified": 253,
+    "candidate_source_only_audit": "pass",
+    "candidate_selftest_passed": 54,
+    "candidate_selftest_failed": 0,
+    "candidate_version_reported": "2.8.0-dev18",
+    "note": "Final package is rebuilt deterministically after recording these candidate results and is revalidated separately before publication."
+  },
+  "limitations": [
+    "Exact Xbox address of the authored DAT loader is not yet isolated from retained console references.",
+    "Exact console generator-map output-buffer initializer corresponding to iOS stageGenerateMapInit is not yet isolated.",
+    "The exact cause of the console generator resource corpus's 2x total cell capacity remains unresolved.",
+    "Normal-stage content is substantially retuned even where opcode sequence structure is preserved; code lineage must not be described as byte-identical stage content.",
+    "The iOS executable is from the supplied decrypted/modified-distribution 4.1.0 research IPA; executable/resource lineage findings do not imply wrapper authenticity.",
+    "Individual low-range enemy-handler instruction-level correspondences are not yet exhaustively mapped across iOS and console.",
+    "Existing console limitations on shader ISA translation, real Blender UI/runtime validation, and project-owner license selection remain."
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "format": "SIIG_VISUALIZER_VALIDATION",
+  "release": "2.10.0-dev22",
+  "date": "2026-09-17",
+  "status": "pass",
+  "primary_visual_reference": "June 10 Visualizer Check Mode footage supplied by project owner; footage not bundled",
+  "render_model": "ping-pong feedback/trailing-copy surface: magnify/rotate/fade previous image then inject current SHAPE stamp",
+  "recovered": {
+    "parameter_presets": 49,
+    "sequences": 57,
+    "parameter_values_per_row": 29,
+    "shape_order": [
+      "WhiteCircle",
+      "line",
+      "3line",
+      "square",
+      "triangle",
+      "WhiteCircle2",
+      "line2",
+      "3line2",
+      "square2",
+      "triangle2"
+    ],
+    "retail_dat_timelines": 30,
+    "retail_visualizer_commands": 243
+  },
+  "unresolved": [
+    "exact original SHAPE sprite pixels/compositing math",
+    "Position Fix semantics",
+    "Fix Rotation semantics",
+    "exact final blend/order details"
+  ],
+  "selftest_covered": true,
+  "ok": true
+}

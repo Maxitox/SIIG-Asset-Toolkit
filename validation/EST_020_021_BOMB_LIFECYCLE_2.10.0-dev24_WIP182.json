@@ -1,0 +1,56 @@
+{
+  "format": "SIIG_EST_020_021_BOMB_LIFECYCLE_VALIDATION",
+  "release": "2.10.0-dev24",
+  "checkpoint": "WIP182",
+  "status": "pass",
+  "semantic_source": "project-owner gameplay observation",
+  "models": {
+    "est_020.gmx": {
+      "semantic_identity": "OCTOPUS / GLUTTONY bomb before detonation",
+      "lifecycle_role": "pre_detonation_projectile",
+      "gmx_size": 7568,
+      "gmx_sha256": "7200645337fdb777a309d64037f277628abc479600e9832b11b310edbba9bdb0",
+      "converted_geometry_size": 4620,
+      "converted_geometry_sha256": "bbc8e9f15e2ce606a9acf75906ad8bf4b47af9ec2edb40e1b43bfa8dd72dcd0e"
+    },
+    "est_021.gmx": {
+      "semantic_identity": "OCTOPUS / GLUTTONY bomb detonation / explosion",
+      "lifecycle_role": "detonation_explosion",
+      "gmx_size": 62256,
+      "gmx_sha256": "8b32ff304f14dc641a9e63f8b5ae71cdf96a2ace17b0e06ee0b527af0d7d2bd2",
+      "converted_geometry_size": 31644,
+      "converted_geometry_sha256": "fe79b077a3fd51bfad1b184e60d6ba263629800fe860c5551f75bd35c480f3f4"
+    }
+  },
+  "shared_users": [
+    "OCTOPUS",
+    "GLUTTONY"
+  ],
+  "executable_corroboration": {
+    "gluttony_routine": "Gluttony::DischargeBomb",
+    "asserted_shot_type": "EShotManager::eENEMY_SHOT_TYPE_ID_SG_BOMB",
+    "shot_subsystem": "EShotSg",
+    "shot_subsystem_methods": [
+      "SetGravity",
+      "MoveGravity",
+      "ChangeState",
+      "CheckState",
+      "GetDischargeTime"
+    ],
+    "octopus_routine": "Octopus::dischargeShot",
+    "octopus_shot_type_directly_proven": false
+  },
+  "top_level_runtime_registered": false,
+  "direct_filename_binding_status": "unisolated",
+  "current_identity_counts": {
+    "project_owner_confirmed_entities": 71,
+    "project_owner_confirmed_effects": 5,
+    "project_owner_speculative_effects": 6
+  },
+  "retained_boundaries": [
+    "direct executable SG_BOMB-to-est_020/est_021 filename/resource binding",
+    "exact OCTOPUS dischargeShot enemy-shot type trace",
+    "original internal symbolic names for est_020 and est_021"
+  ],
+  "external_inputs_bundled": false
+}

@@ -1,0 +1,32 @@
+{
+  "format": "SIIG_VISUALIZER_BGM_METER_VALIDATION",
+  "release": "2.10.0-dev24",
+  "status": "pass",
+  "dataset_version": 6,
+  "game_semantics": {
+    "meter": "XAudio2 pPeakLevels",
+    "channels": 2,
+    "combine": "arithmetic mean",
+    "domain": "linear 0..1",
+    "check_mode_post_meter_transfer": "none; raw peak mean is consumed directly",
+    "normal_stage_post_meter_transfer": "adaptive VOL SCALE normalizer; see VISUALIZER_GAMEPLAY_BGM_NORMALIZER_2.10.0-dev24.json"
+  },
+  "retail_or_prototype_evidence": [
+    "June10 Function_82495500",
+    "June10 FUN_824956C0",
+    "June10 FUN_82495360",
+    "June10 Function_82183B20"
+  ],
+  "public_api_reference": {
+    "source": "Microsoft Learn — XAUDIO2FX_VOLUMEMETER_LEVELS / XAudio2CreateVolumeMeter",
+    "code_copied": false,
+    "bundled": false
+  },
+  "browser_bridge": {
+    "method": "channel splitter + per-channel max(abs(time-domain sample))",
+    "mono": "single peak",
+    "multichannel": "first two channels",
+    "timing_boundary": "browser AnalyserNode window/cadence is not claimed bit/timing-identical to XAudio2 processing pass"
+  },
+  "downstream_gameplay_validation": "validation/VISUALIZER_GAMEPLAY_BGM_NORMALIZER_2.10.0-dev24.json"
+}

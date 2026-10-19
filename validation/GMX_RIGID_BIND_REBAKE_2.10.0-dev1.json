@@ -1,0 +1,43 @@
+{
+  "format": "SIIG_GMX_RIGID_BIND_REBAKE_VALIDATION",
+  "toolkit_version": "2.10.0-dev1",
+  "status": "pass",
+  "selftest_case": "GMX rigid inverse-bind geometry rebake",
+  "native_model": "rigid BONE->MESH attachment; no emitted JOINT/WEIGHT ARRY stream",
+  "accepted": {
+    "JOINTS_0": "UNSIGNED_BYTE/UNSIGNED_SHORT VEC4",
+    "WEIGHTS_0": "FLOAT or normalized unsigned VEC4",
+    "weight_rule": "exactly one active unit weight per vertex and one selected joint shared by the whole mesh",
+    "inverse_bind": "identity/default or non-identity affine FLOAT MAT4 for the selected joint"
+  },
+  "rebake": {
+    "position": "selected inverseBindMatrix * glTF POSITION into joint bind-local space",
+    "normal": "inverse-transpose of inverse-bind linear 3x3, then normalize",
+    "translation_affects_normal": false,
+    "singular_normal_matrix": "explicitly rejected",
+    "root_aabb_repaired_after_rebake": true,
+    "template_layout_path": true,
+    "schema_synthesis_path": true
+  },
+  "negative_guards": [
+    "blended/multi-joint weights",
+    "different rigid joints across vertices",
+    "JOINTS_1/WEIGHTS_1",
+    "non-affine inverse bind matrices",
+    "singular inverse-bind linear part when NORMAL is present"
+  ],
+  "mesh_skin_index_policy": "0xFFFF/no-vertex-skin unless existing donor/explicit override is preserved",
+  "report_provenance": [
+    "inverse_bind_identity",
+    "inverse_bind_matrix",
+    "geometry_rebaked",
+    "mode=rigid-collapse-rebake"
+  ],
+  "inherited_external_evidence": {
+    "dev7_player_enemy": "150 retail GMXs / 901 MESH records: skin_index 0xFFFF and POSITION/NORMAL/UV/COLOR + indices only",
+    "prior_full_corpus": "486-GMX exporter research found no per-vertex skin weights",
+    "dev25_noop": "306/306 mesh-bearing retail GMXs byte-identical no-edit round trip"
+  },
+  "evidence_boundary": "No native blended-skin representation is claimed; MESH.skin_index remains semantically unresolved beyond repeated 0xFFFF no-vertex-skin observations.",
+  "runtime_boundary": "Fully original synthesized-scene acceptance remains an emulator/hardware validation gate."
+}

@@ -1,0 +1,78 @@
+{
+  "format": "SIIG_ULTIMATE_UFO_LATE_OBJECT_VALIDATION",
+  "release": "2.8.0-dev11",
+  "date": "2026-09-07",
+  "status": "pass",
+  "cross_build_archives": [
+    {
+      "name": "SIIGGHIDRA(1).zip",
+      "sha256": "444ea2b9cf85f201cd160f935ea890bc473b6d541cb9d8cecb849ae462c53499",
+      "size": 14231549
+    },
+    {
+      "name": "SIIGMAY9GHIDRA.zip",
+      "sha256": "57da9c228c0040b90d760e115cdf658a32cb4c8a8147a5ba09703884960bcb43",
+      "size": 15225876
+    },
+    {
+      "name": "SIIGMAY11GHIDRA.zip",
+      "sha256": "4fc11fbe66656596eedc6560774e5858cb2882dbbe6d4aeaccf20aa2d717531d",
+      "size": 15277347
+    },
+    {
+      "name": "SIIGJUNE10GHIDRA.zip",
+      "sha256": "987cf607e4164dde06b980718a6169791d81e064d4b5e46ecb35f45176076f66",
+      "size": 15557546
+    },
+    {
+      "name": "SIIGPS3GHIDRA.zip",
+      "sha256": "e7af0cd5940268c4697470ca58d55010b45a50706dfc10ead552d4ee4ce55d6d",
+      "size": 12469255
+    }
+  ],
+  "facts": {
+    "xbox360_retail": {
+      "model_id": "0xD8",
+      "model": "bos_015k.gmx",
+      "owner_field": "+0x25C",
+      "setup": "0x8212FC80",
+      "move_main": "0x8212EC50",
+      "phase11": 5902,
+      "final_phase": 13,
+      "final_frame": 6200
+    },
+    "xbox360_june10": {
+      "model_id": "0xD8",
+      "model": "bos_015k.gmx",
+      "owner_field": "+0x260",
+      "setup": "0x8214AE58",
+      "move_main": "0x82149DF8",
+      "phase11": 5902,
+      "final_phase": 13,
+      "final_frame": 6200
+    },
+    "xbox360_may11": {
+      "model_id": "0xD9",
+      "model": "bos_015l.gmx",
+      "owner_field": "+0x1E8",
+      "move_main": "0x821431D0",
+      "final_phase": 12,
+      "final_frame": 6200
+    },
+    "xbox360_may9": {
+      "model_id": "0xD9",
+      "model": "bos_015l.gmx",
+      "owner_field": "+0x1DC",
+      "move_main": "0x82142008",
+      "final_phase": 12,
+      "final_frame": 6200
+    }
+  },
+  "retail_script_context": {
+    "ultimate_ufo_encounters": 2,
+    "next_authored_camera_change_matches": 2,
+    "camera_preset": 4,
+    "claimed_as_final_rear_camera": false
+  },
+  "semantic_boundary": "Executable evidence proves model identity/ownership/actions. The airlock-door label is independent project-owner observation; final rear-camera mapping remains unproven."
+}

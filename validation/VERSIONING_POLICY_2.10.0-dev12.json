@@ -1,0 +1,10 @@
+{
+  "format": "SIIG_VERSIONING_POLICY_VALIDATION",
+  "release": "2.10.0-dev12",
+  "status": "pass",
+  "previous": "2.10.0-dev11",
+  "toolkit_version": "2.10.0-dev12",
+  "gui_version": "0.23.0-dev12",
+  "reason": "incremental 2.10 development checkpoint: executable/real-GMX-backed UNKNOWN internal-form selector, duplicate-form census, and exact subtree exports; no incompatible public format break",
+  "ok": true
+}

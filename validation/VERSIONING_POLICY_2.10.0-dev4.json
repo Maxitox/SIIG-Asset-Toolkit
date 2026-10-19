@@ -1,0 +1,8 @@
+{
+  "format": "SIIG_VERSIONING_POLICY_VALIDATION",
+  "release": "2.10.0-dev4",
+  "previous": "2.10.0-dev3",
+  "status": "pass",
+  "note": "Dev4 extends the sealed dev3 assembly layer with backward-compatible per-instance native pose sampling, the evidence-backed CRAB catalog, and beginner GUI modes/help; no incompatible native format contract is introduced.",
+  "toolkit_version": "2.10.0-dev4"
+}

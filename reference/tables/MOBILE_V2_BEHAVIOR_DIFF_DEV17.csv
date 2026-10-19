@@ -1,0 +1,7 @@
+boss,original_type,v2_type,shared_mover,explicit_type_branch,evidence_address,constructor_pool_difference,proven_behavior_difference
+THE_MOON,70,100,moveTheMoon,no,0x0000BA14 vs 0x0000BBA0,helper 36x20 -> 55x80; V2 adds randomI,constructor/helper configuration; no direct 70/100 branch found in shared mover
+THE_SUN,71,101,moveTheSun,yes,0x000D8084,"helper 37x8,38x36,39x20 -> 56x8,59x36,57x60; type46x4 retained",type71-only four-pair ramp: +512/-512 toward 6144; V2 bypasses original-only branch
+GIGANTIC_UFO,72,102,moveGiganticUfo,yes,0x000D6C4C;0x000D7260,"40x20,41x20,42x4,43x2,44x2 -> 63x20,60x40,61x4,62x80","one coordinate path uses +4096 original vs +18432 V2-side; traceOption multiplier 1 vs 2, adding 92 internal units of V2 offset"
+LADYBUG,73,103,moveLadybug,no,0x00009B54 vs 0x00009EBC,"45x40,46x20,47x4 -> 66x40,65x48,64x40,67x80; one extra pool; V2 has 3 randomI calls vs original 1",constructor/helper configuration; no direct 73/103 branch found in shared mover
+MANDALA,74,104,moveMandala,no,0x0000AA90 vs 0x0000B248,"48x100,49x10,50x40 -> 68x80,49x10,71x40; V2 has 1 randomI call vs original 2",constructor/helper configuration; no direct 74/104 branch found in shared mover
+UNKNOWN,75,105,moveUnknown,yes,0x000D3A88;0x000D3E24;0x000D4014;0x000D47F8,"51x30,52x30,53x80 -> 72x80,73x40,74x80",V2 doubles helper +0x14 in two phases and helper +0x28 in another; defeat calls setVer2Destroy

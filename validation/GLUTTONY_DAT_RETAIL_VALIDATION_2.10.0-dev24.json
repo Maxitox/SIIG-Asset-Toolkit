@@ -1,0 +1,38 @@
+{
+  "format": "SIIG_DEV_RETAIL_VALIDATION",
+  "release": "2.10.0-dev24",
+  "status": "pass",
+  "subject": "GLUTTONY runtime 0x9C 25-word DAT/path semantics",
+  "runtime_type": "0x9C",
+  "controller_factory": "Function_82103878 via Function_821489F8 case 0x9D (runtime_type + 1)",
+  "controller_functions": {
+    "common_dat_setup": "Function_820E7CE0",
+    "tail_copy_raw_ppc": "0x82102F58 copies args5..24 (0x28 bytes) to +0x1C8",
+    "route_setup": "Function_82103380",
+    "route_update": "Function_821034D0",
+    "helper_liveness": "Function_821031A0"
+  },
+  "schema": {
+    "arg0": "spawn_condition",
+    "arg1": "body_hp",
+    "arg2": "travel_speed_raw512",
+    "args3_22": "path0..path9 X/Z pairs; point0 is args3/4 and points1..9 are args5..22",
+    "arg23": "path_point_count (1..10)",
+    "arg24": "helper_hp for each of the two emy_050a helpers"
+  },
+  "evidence_boundary": "all 25 argument labels are executable-backed; route coordinates are authored retail DAT data; live helper aim remains gameplay-state-dependent and is not baked",
+  "records": [
+    {"file":"level5_stage4.dat","body_hp":3000,"speed_raw512":1024,"speed":2.0,"point_count":6,"points_xz":[[335,320],[335,-160],[335,240],[335,140],[40,0],[40,-300]],"helper_hp":500},
+    {"file":"level5_stage4.dat","body_hp":3000,"speed_raw512":1024,"speed":2.0,"point_count":3,"points_xz":[[95,320],[95,140],[-209,0]],"helper_hp":500},
+    {"file":"level5_stage4.dat","body_hp":3000,"speed_raw512":1024,"speed":2.0,"point_count":4,"points_xz":[[-100,220],[213,80],[213,-120],[213,540]],"helper_hp":500},
+    {"file":"level5_stage5.dat","body_hp":500,"speed_raw512":768,"speed":1.5,"point_count":4,"points_xz":[[-120,120],[106,120],[106,0],[-1000,0]],"helper_hp":100},
+    {"file":"level5_stage5.dat","body_hp":500,"speed_raw512":768,"speed":1.5,"point_count":4,"points_xz":[[547,120],[320,120],[320,0],[1427,0]],"helper_hp":100},
+    {"file":"extra1_stage7.dat","body_hp":3000,"speed_raw512":256,"speed":0.5,"point_count":10,"points_xz":[[47,-80],[47,71],[47,167],[379,167],[379,71],[213,71],[213,100],[213,100],[213,100],[213,100]],"helper_hp":500,"note":"repeated final points are authored and intentionally preserved"},
+    {"file":"extra3_stage2.dat","body_hp":3000,"speed_raw512":512,"speed":1.0,"point_count":8,"points_xz":[[213,-100],[213,200],[387,40],[387,200],[40,40],[40,200],[213,80],[213,-121]],"helper_hp":500}
+  ],
+  "selftest": {
+    "passed": 126,
+    "failed": 0,
+    "report_external": "SELFTEST_2.10.0-dev24_WIP_126.json"
+  }
+}

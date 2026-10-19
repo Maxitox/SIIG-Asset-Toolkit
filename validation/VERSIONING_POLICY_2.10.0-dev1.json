@@ -1,0 +1,12 @@
+{
+  "format": "SIIG_VERSIONING_POLICY_VALIDATION",
+  "toolkit_target": "2.10.0-dev1",
+  "status": "pass",
+  "previous_checkpoint": "2.9.0-dev7",
+  "new_feature_line": "2.10.0-dev1",
+  "minor_review_deadline": "dev8",
+  "policy": "Advance MINOR earlier when work becomes a materially different user-facing capability; do not keep a minor line indefinitely.",
+  "document": "docs/project/VERSIONING.md",
+  "current_checkpoint": "2.10.0-dev1",
+  "review_decision": "2.9 feature development ended at dev7; 2.10 opens with rigid inverse-bind geometry rebaking. Reserve 2.9.0-dev8 for stabilization only."
+}

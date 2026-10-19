@@ -1,0 +1,7 @@
+﻿step,xbox360_retail,evidence,xbox360_may9,xbox360_may11,debug_name,xbox360_june10,ps3_retail,trigger_frame
+hp_zero_dispatch,0x820FBD30,"when a tracked health slot subtracts to <1, dispatches vtable +0x3C(part,state=1) then +0x44(part)",,,,,,
+ufo_part_state_override,0x8212DCB0,UltimateUfo override records part-1 state in byte +0x1EE and performs special-stage coupled state/destruction handling,,,,,,
+prototype_vanish,,"prototype symbols name vtable +0x48; Vanish(1) checks part 1, emits an effect at its owned-part position, then invokes the part-state handler",0x821410A8,0x821423B8,UltimateUfo::Vanish,,,
+delete_lv5_boss_dispatch,,script AnalyzeDelLv5Boss selects entity types 0xA6..0xAB (including Ultimate UFO 0xA8) and invokes each matching boss part's vtable +0x48,0x8215B1F0,0x8215C330,,0x82166190,0x00203308,
+retail_phase12,0x8212EC50,"on phase entry, propagates part-1 state to part 0; if +0x1EE is nonzero it invokes destruction for part 0 and enables the recurring explosion-emission flag +0x1EC",,,,,,6030
+retail_phase13,0x8212EC50,"on phase entry disables the owned object referenced at UFO +0x25C/part slot 0x97 via 0x820F2CF8(...,0)",,,,,,6200

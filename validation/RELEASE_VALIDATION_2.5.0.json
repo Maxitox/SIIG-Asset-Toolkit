@@ -1,0 +1,137 @@
+{
+  "format": "SIIG_RELEASE_VALIDATION",
+  "release": "2.5.0",
+  "date": "2026-08-28",
+  "status": "pass",
+  "selftest": {
+    "passed": 15,
+    "failed": 0,
+    "ok": true
+  },
+  "research": {
+    "anm": {
+      "files": 3,
+      "records": 160,
+      "groups": 130,
+      "details": [
+        {
+          "file": "enemy.anm",
+          "records": 90,
+          "groups": 60,
+          "looped": 35,
+          "non_looped": 55
+        },
+        {
+          "file": "map.anm",
+          "records": 67,
+          "groups": 67,
+          "looped": 40,
+          "non_looped": 27
+        },
+        {
+          "file": "player.anm",
+          "records": 3,
+          "groups": 3,
+          "looped": 3,
+          "non_looped": 0
+        }
+      ]
+    },
+    "stage3d": {
+      "files": 47,
+      "active_records": 19563,
+      "model_placements": 23830,
+      "unique_model_refs": 77,
+      "missing_model_refs": 0,
+      "cell_step_counts": {
+        "0,0,-1": 16890,
+        "0,1,0": 1616,
+        "0,0,1": 512,
+        "0,-1,0": 522,
+        "0,1,-1": 2,
+        "1,0,0": 20,
+        "0,-1,-1": 1
+      },
+      "cross_build_identical_files": 77,
+      "cross_build_compared": "June 10 prototype versus retail stage tables"
+    },
+    "stagewall": {
+      "files": 30,
+      "wall_files": 29,
+      "generator_files": 1,
+      "active_named_wall_records": 32,
+      "generator_enabled_candidates": 53
+    },
+    "shaders": {
+      "files": 16,
+      "pixel": 9,
+      "vertex": 7,
+      "microcode_bytes": 2264
+    }
+  },
+  "integration": {
+    "archives": {
+      "processed": 9,
+      "skipped": 0,
+      "failed": 0,
+      "resources": 879,
+      "hash_mismatches": 0
+    },
+    "outputs": {
+      "png": 185,
+      "gltf": 0,
+      "obj": 47,
+      "wav": 0,
+      "wma": 0,
+      "bnk": 0,
+      "collision_png": 153,
+      "anm_csv": 3,
+      "stage_wall_tables": 30,
+      "stage3d_maps": 47,
+      "shader_inventories": 16,
+      "dat_csv": 76,
+      "map_files": 64,
+      "localization_archives": 0,
+      "ready_files": 0,
+      "stage_explorer": 0,
+      "asset_viewer": 0
+    },
+    "errors": 0,
+    "verification_ok": true,
+    "hashes_checked": 1757
+  },
+  "source_only_audit": {
+    "game_assets_in_release": false,
+    "external_binaries_bundled": false,
+    "tcrf_used": false
+  },
+  "limitations": [
+    "Interactive Asset Viewer browser behavior was not automated in the release environment; JavaScript syntax, payloads, and local references were validated.",
+    "Xenos microcode is extracted but not ISA-disassembled.",
+    "Five Bmap/Xmap auxiliary vectors are preserved; their per-slot gameplay roles remain unnamed.",
+    "Complete runtime 2D MAP scrolling and 3D stage playback remain future work.",
+    "Modified BBX acceptance still requires game/emulator testing.",
+    "Exact original retail SIIG STFS and PKG outer packages remain unavailable for final direct-package validation.",
+    "PS3 inner SDAT decryption remains an external user step.",
+    "The project owner has not selected a license for original project code."
+  ],
+  "asset_viewer_2_0": {
+    "status": "pass",
+    "corpus_files": 1759,
+    "source_bytes": 300776833,
+    "previewable_assets": 1016,
+    "thumbnails": 1016,
+    "missing_previewable_thumbnails": 0,
+    "html_bytes": 12022,
+    "v2_4_same_corpus_html_bytes": 18207366,
+    "html_reduction_percent": 99.934,
+    "data_bytes": 884237,
+    "payload_bytes": 30238740,
+    "thumbnail_bytes": 4205223,
+    "payload_shards": 32,
+    "base64_media_embedded": false,
+    "relative_reference_errors": 0,
+    "payload_key_errors": 0,
+    "javascript_syntax": "pass"
+  }
+}

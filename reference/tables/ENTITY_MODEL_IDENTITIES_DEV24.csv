@@ -1,0 +1,83 @@
+model_stem_pattern,display_name,entity_kind,dimension_scope,platform_note,identity_status,notes,source
+plr_001,RAPID,player,,,project_owner_confirmed,,project_owner_model_identification_2026-09-20
+plr_002,SEARCH,player,,,project_owner_confirmed,,project_owner_model_identification_2026-09-20
+plr_003,WAVE,player,,,project_owner_confirmed,,project_owner_model_identification_2026-09-20
+plr_004,LOCK-ON,player,,,project_owner_confirmed,,project_owner_model_identification_2026-09-20
+plr_005,GRAVITY,player,,,project_owner_confirmed,,project_owner_model_identification_2026-09-20
+plr_006*,ROUND,player,,,project_owner_confirmed,Wildcard covers project-owner-described related model variants.,project_owner_model_identification_2026-09-20
+plr_007,CLASSIC,player,,,project_owner_confirmed,,project_owner_model_identification_2026-09-20
+plr_008,FIELD,player,,console-exclusive,project_owner_confirmed,,project_owner_model_identification_2026-09-20
+plr_009*,OPTION,player,,console-exclusive,project_owner_confirmed,Wildcard covers project-owner-described related model variants.,project_owner_model_identification_2026-09-20
+plr_010*,VARIABLE,player,,console-exclusive,project_owner_confirmed,Wildcard covers project-owner-described related model variants.,project_owner_model_identification_2026-09-20
+emy_015,SCRATCHER,enemy,2D/3D,,project_owner_confirmed,,project_owner_model_identification_2026-09-20
+emy_016,ASSAILANT,enemy,2D/3D,,project_owner_confirmed,,project_owner_model_identification_2026-09-20
+emy_017,LINER,enemy,2D/3D,,project_owner_confirmed,,project_owner_model_identification_2026-09-20
+emy_018,TENTACLE,enemy,2D/3D,,project_owner_confirmed,,project_owner_model_identification_2026-09-20
+emy_019,REVOLVER,enemy,2D/3D,,project_owner_confirmed,,project_owner_model_identification_2026-09-20
+emy_020,REVOLVER,enemy,2D/3D,,project_owner_confirmed,,project_owner_model_identification_2026-09-20
+emy_021,ATTACKER,enemy,2D/3D,,project_owner_confirmed,,project_owner_model_identification_2026-09-20
+emy_022,CONSPIRATOR,enemy,2D/3D,,project_owner_confirmed,,project_owner_model_identification_2026-09-20
+emy_023,CONSPIRATOR2,enemy,2D/3D,,project_owner_confirmed,,project_owner_model_identification_2026-09-20
+emy_024,KITE,enemy,2D/3D,,project_owner_confirmed,,project_owner_model_identification_2026-09-20
+emy_025,ELEMENT,enemy,2D/3D,,project_owner_confirmed,,project_owner_model_identification_2026-09-20
+emy_026,ELEMENT2,enemy,2D/3D,,project_owner_confirmed,,project_owner_model_identification_2026-09-20
+emy_027,ELEMENT3,enemy,2D/3D,,project_owner_confirmed,,project_owner_model_identification_2026-09-20
+emy_028,SLUGGARD,enemy,2D/3D,,project_owner_confirmed,,project_owner_model_identification_2026-09-20
+emy_029,SWINDLER,enemy,2D/3D,,project_owner_confirmed,,project_owner_model_identification_2026-09-20
+emy_030,PRIDE,enemy,2D/3D,,project_owner_confirmed,,project_owner_model_identification_2026-09-20
+emy_031,SLOTH,enemy,2D/3D,,project_owner_confirmed,,project_owner_model_identification_2026-09-20
+emy_032*,KEEPER,enemy,2D/3D,,project_owner_confirmed,Wildcard covers project-owner-described related model variants.,project_owner_model_identification_2026-09-20
+emy_033,FORTRESS,enemy,2D/3D,,project_owner_confirmed,,project_owner_model_identification_2026-09-20
+emy_034,FORTRESS2,enemy,2D/3D,,project_owner_confirmed,,project_owner_model_identification_2026-09-20
+emy_035,GUSHER,enemy,2D/3D,,project_owner_confirmed,,project_owner_model_identification_2026-09-20
+emy_036,CRAWLER,enemy,2D/3D,,project_owner_confirmed,,project_owner_model_identification_2026-09-20
+emy_037,HATCH,enemy,2D/3D,,project_owner_confirmed,,project_owner_model_identification_2026-09-20
+emy_038,SHADOW,enemy,2D/3D,,project_owner_confirmed,,project_owner_model_identification_2026-09-20
+emy_039,SPRINKLER,enemy,2D/3D,,project_owner_confirmed,,project_owner_model_identification_2026-09-20
+emy_040,MINE,enemy,2D/3D,,project_owner_confirmed,,project_owner_model_identification_2026-09-20
+emy_041,STORMER,enemy,2D/3D,,project_owner_confirmed,,project_owner_model_identification_2026-09-20
+emy_042,EXPANDER,enemy,2D/3D,,project_owner_confirmed,,project_owner_model_identification_2026-09-20
+emy_043*,OPPRESSOR,enemy,2D/3D,,project_owner_confirmed,Wildcard covers project-owner-described related model variants.,project_owner_model_identification_2026-09-20
+emy_044,CELL,enemy,3D-only,,project_owner_confirmed,,project_owner_model_identification_2026-09-20
+emy_045,ENVY,enemy,3D-only,,project_owner_confirmed,,project_owner_model_identification_2026-09-20
+emy_046,GREED,enemy,3D-only,,project_owner_confirmed,,project_owner_model_identification_2026-09-20
+emy_049,WRATH,enemy,3D-only,,project_owner_confirmed,,project_owner_model_identification_2026-09-20
+emy_050*,GLUTTONY,enemy,3D-only,,project_owner_confirmed,Wildcard covers project-owner-described related model variants.,project_owner_model_identification_2026-09-20
+emy_051,LUST,enemy,3D-only,,project_owner_confirmed,,project_owner_model_identification_2026-09-20
+emy_052,SHUTTER,enemy,2D/3D,,project_owner_confirmed,,project_owner_model_identification_2026-09-20
+sbs_002*,VANITY,sub_boss,2D/3D,,project_owner_confirmed,Wildcard covers project-owner-described related model variants.,project_owner_model_identification_2026-09-20
+sbs_003*,TELEPORTER,sub_boss,2D/3D,,project_owner_confirmed,Wildcard covers project-owner-described related model variants.,project_owner_model_identification_2026-09-20
+sbs_004,DIFFUSER,sub_boss,2D/3D,,project_owner_confirmed,,project_owner_model_identification_2026-09-20
+sbs_005,DIFFUSER2,sub_boss,2D/3D,,project_owner_confirmed,,project_owner_model_identification_2026-09-20
+sbs_006,SPIDER,sub_boss,2D/3D,,project_owner_confirmed,,project_owner_model_identification_2026-09-20
+sbs_007,SOL,sub_boss,2D/3D,,project_owner_confirmed,,project_owner_model_identification_2026-09-20
+sbs_008,JOLYNE,sub_boss,2D/3D,,project_owner_confirmed,,project_owner_model_identification_2026-09-20
+bos_001,THE MOON,boss,2D/3D,,project_owner_confirmed,,project_owner_model_identification_2026-09-20
+bos_002*,THE SUN,boss,2D/3D,,project_owner_confirmed,Wildcard covers project-owner-described related model variants.,project_owner_model_identification_2026-09-20
+bos_003*,GIGANTIC UFO,boss,2D/3D,,project_owner_confirmed,Wildcard covers project-owner-described related model variants.,project_owner_model_identification_2026-09-20
+bos_004*,LADYBUG,boss,2D/3D,,project_owner_confirmed,Wildcard covers project-owner-described related model variants.,project_owner_model_identification_2026-09-20
+bos_005*,MANDALA,boss,2D/3D,,project_owner_confirmed,Wildcard covers project-owner-described related model variants.,project_owner_model_identification_2026-09-20
+bos_006,UNKNOWN,boss,2D/3D,,project_owner_confirmed,,project_owner_model_identification_2026-09-20
+bos_007*,CENTIPEDE,boss,3D-only,,project_owner_confirmed,Wildcard covers project-owner-described related model variants.,project_owner_model_identification_2026-09-20
+bos_008*,HORNET,boss,3D-only,,project_owner_confirmed,Wildcard covers project-owner-described related model variants.,project_owner_model_identification_2026-09-20
+bos_009*,PROGRESSIVE UFO,boss,3D-only,,project_owner_confirmed,Wildcard covers project-owner-described related model variants.,project_owner_model_identification_2026-09-20
+bos_010,OCTOPUS,boss,3D-only,,project_owner_confirmed,,project_owner_model_identification_2026-09-20
+bos_011*,BUTTERFLY,boss,3D-only,,project_owner_confirmed,Wildcard covers project-owner-described related model variants.,project_owner_model_identification_2026-09-20
+bos_012*,AXON,boss,3D-only,,project_owner_confirmed,Wildcard covers project-owner-described related model variants.,project_owner_model_identification_2026-09-20
+bos_013*,CRAB,boss,3D-only,,project_owner_confirmed,Wildcard covers project-owner-described related model variants.,project_owner_model_identification_2026-09-20
+bos_014,WATER STRIDER,boss,3D-only,,project_owner_confirmed,,project_owner_model_identification_2026-09-20
+bos_015*,ULTIMATE UFO,boss,3D-only,,project_owner_confirmed,Wildcard covers project-owner-described related model variants.,project_owner_model_identification_2026-09-20
+bos_016*,SQUID,boss,3D-only,,project_owner_confirmed,Wildcard covers project-owner-described related model variants.,project_owner_model_identification_2026-09-20
+bos_017*,VERTEBRATE,boss,3D-only,,project_owner_confirmed,Wildcard covers project-owner-described related model variants.,project_owner_model_identification_2026-09-20
+bos_018*,NAMELESS,boss,3D-only,,project_owner_confirmed,Wildcard covers project-owner-described related model variants.,project_owner_model_identification_2026-09-20
+est_013,PROGRESSIVE UFO missiles,effect/projectile,3D effect,,project_owner_confirmed_effect,Project owner identified usage; executable ownership path not yet isolated.,project_owner_model_identification_2026-09-20
+est_015,WATER STRIDER trail spikes,effect/projectile,3D effect,,project_owner_confirmed_effect,Project owner identified usage; executable ownership path not yet isolated.,project_owner_model_identification_2026-09-20
+est_011,Unidentified effect — hexagon shape,effect/projectile,3D effect,,project_owner_speculative,Project-owner hypothesis only; do not treat as resolved runtime ownership.,project_owner_model_identification_2026-09-20
+est_012,Shared interactive target cube (JOLYNE / UNKNOWN),effect/projectile,3D effect,,project_owner_confirmed_effect,Project-owner gameplay identification: transparent shootable cube at the end of JOLYNE's orthogonal fuse and in UNKNOWN's first-phase cube patterns. Retail executable independently shows JOLYNE-lineage setup loading runtime 0xE6 -> est_012.gmx after ten line helpers and UNKNOWN controller setup Function_82130190 loading the same resource with a 120-helper pool. May11 repeats both relationships with shifted 0xE7 -> est_012.gmx; UNKNOWN's May11 setup is Function_82144298.,project_owner_gameplay_identification_2026-09-21+executable_runtime_crosscheck
+est_014,Unidentified effect — hexagon shape (matches est_011 silhouette),effect/projectile,3D effect,,project_owner_speculative,Project-owner hypothesis only; do not treat as resolved runtime ownership.,project_owner_model_identification_2026-09-20
+est_016,Possible ULTIMATE UFO / WRATH giant laser beam,effect/projectile,3D effect,,project_owner_speculative,Project-owner hypothesis: possibly ULTIMATE UFO giant laser and perhaps shared with WRATH; not confirmed.,project_owner_model_identification_2026-09-20
+est_017,Unidentified effect — dodecahedron-like shape,effect/projectile,3D effect,,project_owner_speculative,Project-owner hypothesis only; do not treat as resolved runtime ownership.,project_owner_model_identification_2026-09-20
+est_018,Unidentified effect — bidirectional-arrows plane,effect/projectile,3D effect,,project_owner_speculative,Project-owner hypothesis only; do not treat as resolved runtime ownership.,project_owner_model_identification_2026-09-20
+est_019,Unidentified effect — long hexagon plane,effect/projectile,3D effect,,project_owner_speculative,Project-owner hypothesis only; do not treat as resolved runtime ownership.,project_owner_model_identification_2026-09-20
+est_020,OCTOPUS / GLUTTONY bomb (pre-detonation),effect/projectile,3D effect,,project_owner_confirmed_effect,Project-owner gameplay identification: shared bomb model dropped by OCTOPUS and GLUTTONY before detonation. Executable strings independently confirm Gluttony::DischargeBomb creates an EShotManager::eENEMY_SHOT_TYPE_ID_SG_BOMB shot; the exact est_020 filename binding and OCTOPUS controller call path are not yet isolated in executable code.,project_owner_gameplay_identification_2026-09-21+gluttony_sg_bomb_executable_crosscheck
+est_021,OCTOPUS / GLUTTONY bomb explosion (detonation),effect/projectile,3D effect,,project_owner_confirmed_effect,"Project-owner gameplay identification: shared detonation/explosion model produced by the OCTOPUS / GLUTTONY bomb. The retained 3D enemy-shot subsystem exposes EShotSg::ChangeState and the executable confirms GLUTTONY uses the SG_BOMB shot family, but the exact est_021 filename binding is not yet isolated in executable code.",project_owner_gameplay_identification_2026-09-21+gluttony_sg_bomb_subsystem_crosscheck

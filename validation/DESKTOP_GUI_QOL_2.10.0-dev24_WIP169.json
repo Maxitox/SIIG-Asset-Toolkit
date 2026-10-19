@@ -1,0 +1,21 @@
+{
+  "format": "SIIG_DESKTOP_GUI_QOL_VALIDATION",
+  "schema_version": 1,
+  "release": "2.10.0-dev24",
+  "checkpoint": "WIP169",
+  "gui_version": "0.44.0-dev24",
+  "status": "pass",
+  "game_rip_tab": {
+    "update_existing_rip_button": true,
+    "original_game_input_not_required_for_update": true,
+    "rip_update_console_streaming": true,
+    "shared_structured_progress": true,
+    "auto_open_refreshed_asset_viewer": true,
+    "six_actions_in_two_rows": true
+  },
+  "cli": {
+    "command": "update-rip",
+    "drag_drop_launcher": "SIIG_Update_Rip.bat",
+    "non_destructive_check": "update-rip --check"
+  }
+}

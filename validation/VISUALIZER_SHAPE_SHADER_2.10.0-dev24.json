@@ -1,0 +1,60 @@
+{
+  "format": "SIIG_VISUALIZER_SHAPE_SHADER_VALIDATION",
+  "version": "2.10.0-dev24",
+  "status": "pass",
+  "dataset_version": 11,
+  "retail_xbox360": {
+    "shader": "ScreenSpritePS",
+    "variant_index": 0,
+    "shader_container_size_bytes": 232,
+    "microcode_size_bytes": 60,
+    "stage": "pixel",
+    "control_flow": "one 2D texture fetch followed by one vector multiply and color export",
+    "texture_fetch": {
+      "dimension": "2D",
+      "source": "ScreenSprite texture coordinates",
+      "result": "sampled SHAPE RGBA"
+    },
+    "alu": {
+      "operation": "vector multiply",
+      "result": "sampled_shape.rgba * runtime_tint.rgba"
+    },
+    "runtime_tint": {
+      "type": "float4",
+      "components": ["R", "G", "B", "A"]
+    },
+    "shader_output_rgba": "sampled_shape.rgba * runtime_tint.rgba"
+  },
+  "blend": {
+    "enabled": true,
+    "rgb": {
+      "src": "SrcAlpha",
+      "dst": "OneMinusSrcAlpha",
+      "op": "Add"
+    },
+    "alpha": {
+      "src": "SrcAlpha",
+      "dst": "OneMinusSrcAlpha",
+      "op": "Add"
+    },
+    "equivalent_composite": "source-over"
+  },
+  "browser_bridge": {
+    "real_shape_rgba_preserved": true,
+    "runtime_tint_multiplies_rgba": true,
+    "composite": "source-over",
+    "image_smoothing": false,
+    "obsolete_luminance_mask_removed": true,
+    "obsolete_source_in_tint_removed": true,
+    "procedural_fallback_remains_approximate": true
+  },
+  "source_package_contains_shader_binary": false,
+  "source_package_contains_shape_pixels": false,
+  "evidence": [
+    "private retail ScreenSpritePS Xenos microcode decode",
+    "retail ScreenSprite runtime color path",
+    "retail fixed-function ScreenSprite blend-state decode",
+    "existing RESEARCH_VALIDATION_2.4 shader inventory independently records ScreenSpritePS as a 232-byte pixel shader with 60-byte microcode"
+  ],
+  "remaining_boundary": "procedural fallback geometry is approximate when a user-rip SHAPE PNG is unavailable; Canvas does not claim bit-exact Xenos render-target alpha storage"
+}

@@ -1,0 +1,21 @@
+{
+  "format": "SIIG_MOD_GLTF_TEXTURE_PIPELINE_VALIDATION",
+  "toolkit_target": "2.9.0-dev1",
+  "status": "pass",
+  "command": "mod-import-gltf",
+  "regression": {
+    "input": "synthetic GMX with base TXIF/MTRL plus 2x2 native Xbox TEX inside a synthetic BBX; edited glTF points baseColorTexture at new_albedo.png with no SIIG native identity extras",
+    "gmx": "new TXIF identity/name is synthesized and DiffuseSampler is rewired through the inherited dev28 graph compiler",
+    "tex": "new_albedo.png is rebuilt to native TEX using base.tex as the compatible donor layout",
+    "bbx": "new_albedo.tex is appended as a new named BBX member; count/name/hash tables and alignment are rebuilt and reparsed",
+    "mod_build": "workspace reports one added resource and verifies the rebuilt BBX",
+    "mod_package": ".siigmod uses one baseline-dependent archive-level delta and a fresh workspace reconstructs the exact rebuilt BBX"
+  },
+  "distribution_boundary": "The package contains binary delta payload bytes and metadata, not the clean source BBX/resources.",
+  "inherited_external_retail_gate": "dev25 306/306 mesh-bearing GMX no-op byte-identical plus plr_001 topology smoke",
+  "limitations": [
+    "new TEX payloads require a compatible native donor layout and dimensions",
+    "arbitrary TEX header/layout synthesis is not implemented",
+    "retail runtime acceptance of a BBX with newly appended texture members has not yet been proven on hardware/emulator"
+  ]
+}

@@ -1,0 +1,10 @@
+address,function,confirmed_role
+0x82239190,Function_82239190,Load and allocate MAP layers
+0x82239488,Function_82239488,Initialize per-layer scrolling state
+0x82239608,Function_82239608,Update scrolling and visible ranges
+0x8223AC28,Function_8223AC28,Read cells; decode ID and flip flags; submit tiles
+0x8223A1B0,Function_8223A1B0,Select 49-tile UV variant groups and apply X/Y reflection
+0x821C8C58,Function_821C8C58,Queue draw command type 0x0D
+0x821CA750,Function_821CA750,Render texture/UV sprite command
+0x8226CB28,Function_8226CB28,Append generator MAP blocks to larger layer buffers
+0x8226CD30,Function_8226CD30,Select and load 24 generator MAP blocks

@@ -1,0 +1,67 @@
+{
+  "xbox360_retail": {
+    "entry_count": 240,
+    "category_counts": {
+      "primitive": 22,
+      "model": 129,
+      "unconfigured": 89
+    },
+    "render_group_counts": {
+      "Offset Opacity": 229,
+      "Non Opacity": 11
+    }
+  },
+  "xbox360_june10": {
+    "entry_count": 240,
+    "category_counts": {
+      "primitive": 22,
+      "model": 129,
+      "unconfigured": 89
+    },
+    "render_group_counts": {
+      "Offset Opacity": 229,
+      "Non Opacity": 11
+    }
+  },
+  "xbox360_may11": {
+    "entry_count": 241,
+    "category_counts": {
+      "primitive": 22,
+      "model": 131,
+      "unconfigured": 88
+    },
+    "render_group_counts": {
+      "Offset Opacity": 228,
+      "Non Opacity": 13
+    }
+  },
+  "xbox360_may9": {
+    "entry_count": 241,
+    "category_counts": {
+      "primitive": 22,
+      "model": 131,
+      "unconfigured": 88
+    },
+    "render_group_counts": {
+      "Offset Opacity": 228,
+      "Non Opacity": 13
+    }
+  },
+  "ps3_retail": {
+    "entry_count": 240,
+    "category_counts": {
+      "primitive": 22,
+      "model": 129,
+      "unconfigured": 89
+    },
+    "render_group_counts": {
+      "Offset Opacity": 229,
+      "Non Opacity": 11
+    }
+  },
+  "normalized_equalities": {
+    "may9_vs_may11_same_index": 241,
+    "june10_vs_xbox_retail_same_index": 240,
+    "xbox_retail_vs_ps3_retail_same_index": 240
+  }
+}

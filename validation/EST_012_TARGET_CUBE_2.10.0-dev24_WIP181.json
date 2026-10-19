@@ -1,0 +1,52 @@
+{
+  "format": "SIIG_EST_012_TARGET_CUBE_VALIDATION",
+  "release": "2.10.0-dev24",
+  "checkpoint": "WIP181",
+  "status": "pass",
+  "model": "est_012.gmx",
+  "semantic_identity": "shared interactive target cube",
+  "semantic_source": "project-owner gameplay observation",
+  "runtime_registry": {
+    "xbox360_retail": "0xE6",
+    "xbox360_june10": "0xE6",
+    "ps3_retail": "0xE6",
+    "xbox360_may9": "0xE7",
+    "xbox360_may11": "0xE7"
+  },
+  "executable_ownership": {
+    "jolyne": {
+      "status": "confirmed",
+      "may11_init": "Function_82119D68",
+      "may11_resource": "0xE7",
+      "retail_resource": "0xE6",
+      "line_helper_count": 10,
+      "notes": "Jolyne setup initializes ten helper objects before loading est_012; the following update path drives the segment helpers and endpoint object."
+    },
+    "unknown": {
+      "status": "confirmed",
+      "runtime_type": "0x4B",
+      "visual_controller_constructor": "Function_821300A8",
+      "retail_setup": "Function_82130190",
+      "retail_resource": "0xE6",
+      "helper_capacity": 120,
+      "secondary_runtime_resource": "0xBD",
+      "secondary_resource_kind": "primitive",
+      "secondary_texture_resource_id": 13,
+      "factory_case": "0x4C (runtime type 0x4B + 1)",
+      "may11_visual_controller_constructor": "Function_821441B0",
+      "may11_setup": "Function_82144298",
+      "may11_resource": "0xE7",
+      "may11_secondary_runtime_resource": "0xBC"
+    }
+  },
+  "current_identity_counts": {
+    "project_owner_confirmed_entities": 71,
+    "project_owner_confirmed_effects": 3,
+    "project_owner_speculative_effects": 8
+  },
+  "retained_boundaries": [
+    "original internal symbolic name for est_012",
+    "precise executable controller ownership for est_013 and est_015"
+  ],
+  "external_inputs_bundled": false
+}

@@ -1,0 +1,37 @@
+{
+  "format": "SIIG_PROGRESSIVE_UFO_RUNTIME_ASSEMBLY_VALIDATION",
+  "release": "2.10.0-dev3",
+  "date": "2026-09-11",
+  "status": "pass",
+  "runtime_order": ["0xA2", "0xC2", "0xC2", "0xC3", "0xC3"],
+  "models": ["bos_009.gmx", "bos_009a.gmx", "bos_009a.gmx", "bos_009b.gmx", "bos_009b.gmx"],
+  "translations": [[0,0,0],[-90,0,-10],[90,0,-10],[-160,0,-50],[160,0,-50]],
+  "rotations_degrees": [[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0]],
+  "scale": [1,1,1],
+  "june_xbox": {
+    "type_table": "0x82010F2C",
+    "creation_loop": "0x8214A328",
+    "formation_table": "0x825D9538",
+    "formation_initializer": "0x82576808",
+    "formation_apply": "0x8214C820",
+    "transition_frames": 60
+  },
+  "retail_xbox": {
+    "type_table": "0x8200A4EC",
+    "creation_loop": "0x821327F0",
+    "formation_table": "0x82568108",
+    "formation_initializer": "0x82549418",
+    "formation_apply": "0x82134900",
+    "transition_frames": 60,
+    "crosscheck": "unique normalized-mnemonic matches to June creation/apply/initializer routines; constants identical"
+  },
+  "retail_ps3": {
+    "source_export_sha256": "e7af0cd5940268c4697470ca58d55010b45a50706dfc10ead552d4ee4ce55d6d",
+    "formation_initializer": "0x001C51E8",
+    "first_output": "DAT_0054B598",
+    "crosscheck": "same five translation/zero-rotation records"
+  },
+  "coordinate_conversion": "none for XYZ/units; GMX POSITION values are exported directly to glTF; matrices use standard glTF column-major translation slots",
+  "boundary": "first recovered runtime formation only; later dynamic phase/movement targets are not collapsed into this preset",
+  "proprietary_inputs_bundled": false
+}

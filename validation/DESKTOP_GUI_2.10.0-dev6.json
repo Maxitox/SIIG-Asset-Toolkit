@@ -1,0 +1,39 @@
+{
+  "gui_version": "0.17.0-dev6",
+  "toolkit_version": "2.10.0-dev6",
+  "toolkit_exists": true,
+  "tkinter_available": true,
+  "python": "3.13.5",
+  "tabs": [
+    "Game Rip",
+    "Mod Workspace",
+    "GMX Workbench",
+    "Utilities"
+  ],
+  "principle": "GUI wraps the existing CLI; format logic stays in audited toolkit code",
+  "gmx_scene_graph_report": true,
+  "gmx_scene_graph_sync": true,
+  "gmx_texture_graph_sync": true,
+  "gmx_animation_graph_sync": true,
+  "mod_gltf_texture_pipeline": true,
+  "native_tex_layout_synthesis": true,
+  "gmx_multibone_animation_sync": true,
+  "gltf_cubicspline_animation_import": true,
+  "gmx_template_free_compile": true,
+  "gmx_canonical_root_synthesis": true,
+  "gmx_rigid_skin_import": true,
+  "gmx_blended_skin_rejection": true,
+  "gmx_rigid_inverse_bind_rebake": true,
+  "gmx_rigid_partitioning": true,
+  "gmx_multi_file_assembly": true,
+  "progressive_ufo_one_click_assembly": true,
+  "crab_one_click_assembly": true,
+  "hornet_one_click_assembly": true,
+  "hornet_prism_wall_variants": 13,
+  "gui_modes": [
+    "simple",
+    "advanced"
+  ],
+  "default_gui_mode": "simple",
+  "hover_context_help": true
+}

@@ -1,0 +1,123 @@
+{
+  "format": "SIIG_REAL_CORPUS_ROUNDTRIP_DEV23",
+  "toolkit_version": "2.8.0-dev23",
+  "scope": "user-supplied retail Xbox 360 BBX corpus; proprietary inputs are not bundled",
+  "gmx": {
+    "container": "player.bin",
+    "container_sha256": "b5841b7906b826d6fbf4c4f235caf4dd9bb2ca24b34ddd9f7ad183cdbb932f1a",
+    "models_tested": 13,
+    "byte_identical": 13,
+    "models": [
+      {
+        "file": "plr_001.gmx",
+        "bytes": 49600,
+        "source_sha256": "0c5c1549b7040b6fa7a7606d9f20f52e0071a8cd88c5549daa267bfbdbf07037",
+        "rebuilt_sha256": "0c5c1549b7040b6fa7a7606d9f20f52e0071a8cd88c5549daa267bfbdbf07037",
+        "byte_identical": true
+      },
+      {
+        "file": "plr_002.gmx",
+        "bytes": 26720,
+        "source_sha256": "e1da94cdd89ed1ae6ecbcf79f35931b2f6465a8b87f4f41dc26ca81beb5655cf",
+        "rebuilt_sha256": "e1da94cdd89ed1ae6ecbcf79f35931b2f6465a8b87f4f41dc26ca81beb5655cf",
+        "byte_identical": true
+      },
+      {
+        "file": "plr_003.gmx",
+        "bytes": 50656,
+        "source_sha256": "4945bfae22e45a0032036ff98d2910c6e2182092212cae0546990a502937e546",
+        "rebuilt_sha256": "4945bfae22e45a0032036ff98d2910c6e2182092212cae0546990a502937e546",
+        "byte_identical": true
+      },
+      {
+        "file": "plr_004.gmx",
+        "bytes": 52720,
+        "source_sha256": "90a9a2aa938a14b2b592bf3918a100144f6448987d14cef3b31183661fd2a523",
+        "rebuilt_sha256": "90a9a2aa938a14b2b592bf3918a100144f6448987d14cef3b31183661fd2a523",
+        "byte_identical": true
+      },
+      {
+        "file": "plr_005.gmx",
+        "bytes": 51536,
+        "source_sha256": "fe5cba044d57fe1348fdce440e7c9f2d76c7ba3e0201a0a0e8d39e18b95105a6",
+        "rebuilt_sha256": "fe5cba044d57fe1348fdce440e7c9f2d76c7ba3e0201a0a0e8d39e18b95105a6",
+        "byte_identical": true
+      },
+      {
+        "file": "plr_006.gmx",
+        "bytes": 54336,
+        "source_sha256": "c8ff36bf9e74b5d94c4a2a345b495bf5a0c3de5a41ec27926de68fe0a84618c5",
+        "rebuilt_sha256": "c8ff36bf9e74b5d94c4a2a345b495bf5a0c3de5a41ec27926de68fe0a84618c5",
+        "byte_identical": true
+      },
+      {
+        "file": "plr_006a.gmx",
+        "bytes": 17024,
+        "source_sha256": "1c305c2acd80c99f84550c6fff9a4eb1d369b8d36570b2984b03c5a3b24a104d",
+        "rebuilt_sha256": "1c305c2acd80c99f84550c6fff9a4eb1d369b8d36570b2984b03c5a3b24a104d",
+        "byte_identical": true
+      },
+      {
+        "file": "plr_007.gmx",
+        "bytes": 15936,
+        "source_sha256": "0b9a1f11c05373727419a1a58f906038bd0171cdc07018b3cc5b0ce0b0b93523",
+        "rebuilt_sha256": "0b9a1f11c05373727419a1a58f906038bd0171cdc07018b3cc5b0ce0b0b93523",
+        "byte_identical": true
+      },
+      {
+        "file": "plr_008.gmx",
+        "bytes": 100352,
+        "source_sha256": "c1f77c4195e72d62dd58a65eb937a8ac58c89650c0a8c9920672fea71f0c356d",
+        "rebuilt_sha256": "c1f77c4195e72d62dd58a65eb937a8ac58c89650c0a8c9920672fea71f0c356d",
+        "byte_identical": true
+      },
+      {
+        "file": "plr_009.gmx",
+        "bytes": 87664,
+        "source_sha256": "b440cb1d2cb95ddc04f8782237aee11d800d6e511a672850aa3fcf701492fe8f",
+        "rebuilt_sha256": "b440cb1d2cb95ddc04f8782237aee11d800d6e511a672850aa3fcf701492fe8f",
+        "byte_identical": true
+      },
+      {
+        "file": "plr_009a.gmx",
+        "bytes": 42768,
+        "source_sha256": "39b573f7ff728f109774ac7c3ff3e1d838fe05d03040feefb1c3413e302e6b27",
+        "rebuilt_sha256": "39b573f7ff728f109774ac7c3ff3e1d838fe05d03040feefb1c3413e302e6b27",
+        "byte_identical": true
+      },
+      {
+        "file": "plr_010.gmx",
+        "bytes": 89824,
+        "source_sha256": "771ecbe1e83e6e68ec77c9dfc270ed478292a27f894da2c18f88e3f443706c6a",
+        "rebuilt_sha256": "771ecbe1e83e6e68ec77c9dfc270ed478292a27f894da2c18f88e3f443706c6a",
+        "byte_identical": true
+      },
+      {
+        "file": "plr_010a.gmx",
+        "bytes": 35424,
+        "source_sha256": "0f2ee4a7972881ccd51327b056512603f7e66e5151552baecc663df4b42a58e6",
+        "rebuilt_sha256": "0f2ee4a7972881ccd51327b056512603f7e66e5151552baecc663df4b42a58e6",
+        "byte_identical": true
+      }
+    ],
+    "method": "retail GMX -> SIIG_GMX_TEMPLATE_EDIT_V1 -> gmx-build with unchanged edit document -> byte comparison"
+  },
+  "localization": {
+    "text.bin": {
+      "source_sha256": "da2448bef16b4c731170b125650f397e7ae805d5268f2ad108d497814fdbba92",
+      "rebuilt_sha256": "da2448bef16b4c731170b125650f397e7ae805d5268f2ad108d497814fdbba92",
+      "string_count": 542,
+      "readable_export_byte_identical": true
+    },
+    "message.bin": {
+      "source_sha256": "ee585b80f804982fe3d4a737e5e955447a0a26bc3acf6d1f00b513e3cc1ebbf2",
+      "rebuilt_sha256": "ee585b80f804982fe3d4a737e5e955447a0a26bc3acf6d1f00b513e3cc1ebbf2",
+      "group_count": 284,
+      "strings_per_language": 1295,
+      "readable_export_byte_identical": true
+    },
+    "method": "retail BBX -> readable editable export -> native builder with no edits -> byte comparison"
+  },
+  "result": "PASS",
+  "boundary": "Byte-identical no-op rebuild proves lossless round-trip on these retail samples; it does not by itself prove runtime acceptance of arbitrary modifications."
+}

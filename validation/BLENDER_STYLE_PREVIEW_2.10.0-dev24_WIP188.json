@@ -1,0 +1,27 @@
+{
+  "format": "SIIG_BLENDER_STYLE_PREVIEW_VALIDATION",
+  "release": "2.10.0-dev24",
+  "checkpoint": "WIP188",
+  "addon_version": "0.3.0",
+  "status": "pass",
+  "features": {
+    "native_outline_source": "preserved GMX _E/edge line geometry",
+    "outline_preview": "non-destructive white emissive curve copies parented to native outline objects",
+    "scanline_stage": "post-process compositor overlay after the existing Composite image source",
+    "scanline_controls": [
+      "spacing_pixels",
+      "thickness_pixels",
+      "strength"
+    ],
+    "restoration": "remove preview restores prior Composite image input and prior compositor enable state",
+    "auto_apply_after_siig_import": true
+  },
+  "validation": {
+    "source_compile": true,
+    "package_source_identity": true,
+    "headless_import_register_contract": true,
+    "native_outline_classifier_smoke": true,
+    "real_blender_visual_runtime": "external_required"
+  },
+  "fidelity_boundary": "Native _E geometry is evidence-backed; Blender curve thickness and scanline presentation are host-side preview controls, not claimed exact Xenos/RSX rasterization or final scanout."
+}

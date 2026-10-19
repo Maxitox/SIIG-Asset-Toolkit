@@ -1,0 +1,94 @@
+{
+  "format": "SIIG_RELEASE_VALIDATION",
+  "release": "2.9.0-dev5",
+  "date": "2026-09-11",
+  "status": "development-pass",
+  "selftest": {
+    "passed": 79,
+    "failed": 0,
+    "ok": true,
+    "report": "validation/SELFTEST_2.9.0-dev5.json",
+    "reported_toolkit_version": "2.9.0-dev5"
+  },
+  "inherited_release_gate": {
+    "from": "2.9.0-dev4",
+    "report": "validation/RELEASE_VALIDATION_2.9.0-dev4.json",
+    "note": "All sealed dev4 donor-free MOTN/ANIM creation, dev3 TEX synthesis, dev2 native vertex/material schema synthesis, dev1 integrated mod staging, dev28 TXIF graph, dev27 scene graph, dev26 mesh graph, dev25 retail GMX evidence, native builders, extraction/research and source-only gates are inherited. dev5 adds multi-bone clip expansion and glTF CUBICSPLINE sampling."
+  },
+  "gmx_animation_clip_synthesis": {
+    "status": "pass",
+    "report": "validation/GMX_ANIMATION_CLIP_SYNTHESIS_2.9.0-dev5.json",
+    "gltf_clip_target_bones": 2,
+    "native_tracks_created": 2,
+    "native_runtime_hz": 30.0,
+    "cubicspline": true,
+    "shared_timeline": true,
+    "animation_aware_noop": "byte-identical",
+    "mod_import_gltf_enabled": true
+  },
+  "desktop_gui": {
+    "status": "pass",
+    "report": "validation/DESKTOP_GUI_2.9.0-dev5.json",
+    "gui_version": "0.9.0-dev5",
+    "tabs": [
+      "Game Rip",
+      "Mod Workspace",
+      "GMX Workbench",
+      "Utilities"
+    ],
+    "animation_graph_control": true,
+    "multibone_animation_sync": true,
+    "cubicspline_animation_import": true
+  },
+  "asset_functionalization": {
+    "status": "pass",
+    "report": "validation/ASSET_FUNCTIONALIZATION_2.9.0-dev5.json",
+    "known_asset_families": 14,
+    "viewable_or_exportable_families": 14,
+    "native_round_trip_families": 11,
+    "native_builder_available_families": 11,
+    "gmx_multibone_cubicspline_synthesis": true
+  },
+  "source_only_audit": {
+    "status": "pass",
+    "report": "validation/SOURCE_ONLY_AUDIT_2.9.0-dev5.json",
+    "game_assets": 0,
+    "external_executable_magic": 0,
+    "archive_binary_members": 0,
+    "private_runtime_paths": 0,
+    "python_bytecode": 0,
+    "third_party_binaries_bundled": false,
+    "sources_rows": 24
+  },
+  "version_consistency": {
+    "VERSION.txt": "2.9.0-dev5",
+    "cli_toolkit_version": "2.9.0-dev5",
+    "gui_version": "0.9.0-dev5"
+  },
+  "fresh_package": {
+    "status": "pass",
+    "candidate_manifest_entries_verified": 371,
+    "candidate_manifest_missing": 0,
+    "candidate_manifest_mismatched": 0,
+    "candidate_unlisted_files": 0,
+    "candidate_source_only_audit": "pass",
+    "candidate_selftest_passed": 79,
+    "candidate_selftest_failed": 0,
+    "candidate_version_reported": "2.9.0-dev5",
+    "candidate_gui_version": "0.9.0-dev5",
+    "candidate_package_sha256": "5762dfcfd63f2d3897ceef38be9cae786c27e31bac533a4f0c1a840fa9ed3e01",
+    "note": "Candidate was extracted fresh, verified against RELEASE_MANIFEST with no unlisted files, source-audited before executing package code, and then passed 79/79 selftests plus CLI/GUI version checks. Final package is rebuilt deterministically after recording this evidence."
+  },
+  "limitations": [
+    "GMX exposes per-bone MOTN/ANIM tracks; no native named multi-bone clip container is proven, so clip grouping is report provenance only.",
+    "Explicit replacement via scalar gmxMotionIndex remains single-track; multi-bone imports create fresh synchronized native tracks.",
+    "Runtime acceptance of arbitrary synthesized animations/models/textures remains a separate emulator/hardware gate.",
+    "Platform shader microcode compilation, remaining opaque GMX chunk semantics, and fully template-free GMX root construction remain unresolved.",
+    "Compressed/mipmapped native texture variants are not synthesized.",
+    "PS3 donor-free TEX wrapper synthesis remains structurally validated rather than hardware/emulator-proven.",
+    "The external dev25 306/306 retail GMX evidence is inherited rather than re-run from proprietary inputs.",
+    "PS3 NPDRM/SDAT re-encryption is not implemented.",
+    "Audio replacement/rebuilding remains intentionally deferred.",
+    "Project-owner license selection remains open."
+  ]
+}

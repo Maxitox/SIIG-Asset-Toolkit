@@ -1,0 +1,26 @@
+{
+  "format": "SIIG_GMX_TEXTURE_GRAPH_SYNC_VALIDATION",
+  "toolkit_target": "2.8.0-dev28",
+  "status": "pass",
+  "mode": "opt-in --sync-texture-graph; implies --sync-scene-graph and --sync-mesh-graph; conservative dev25/dev26/dev27 modes remain available",
+  "regression": {
+    "texture_sync_no_edit": "byte-identical synthetic native GMX including TXIF/SHAD/MTRL/PARE/BONE/MESH/ARRY even when the TXIF image payload is unavailable",
+    "export_provenance": "top-level glTF extras.gmxTextureRefs preserves every TXIF index/flags/name independently of converted image availability",
+    "blender_style_input": "new glTF image/texture has no SIIG native identity extras; image name supplies the desired native reference name",
+    "create_texture": "fresh TXIF identity 1 synthesized with name new_albedo.tex",
+    "bind_material": "existing MTRL 0 DiffuseSampler type-2 reference changes TXIF 0 -> TXIF 1",
+    "visual_report": "scene HTML+JSON exposes TXIF inventory and MTRL texture bindings",
+    "post_build_guards": [
+      "duplicate TXIF identity",
+      "dangling type-2 MTRL->TXIF reference"
+    ]
+  },
+  "inherited_dev27_scene_gate": "SHAD/MTRL/BONE/PARE synthesis plus inherited MESH/ARRY graph synchronization",
+  "inherited_dev25_external_evidence": {
+    "retail_mesh_bearing_noop": "306/306 byte-identical",
+    "meshless_not_applicable": 1,
+    "retail_topology_smoke": "plr_001.gmx mesh0 328->329 vertices; 656->658 indices; 49600->49680 bytes",
+    "note": "External proprietary corpus was validated in sealed dev25 and is not bundled or re-run in dev28."
+  },
+  "boundary": "TXIF reference/binding synthesis is structurally regression-tested. Native TEX/DDS payload authoring remains a separate asset workflow; arbitrary MTRL schemas/vertex declarations, MOTN/ANIM graph synthesis, platform shader compilation, template-free GMX construction, and retail runtime acceptance of arbitrary synthesized scenes remain unresolved."
+}

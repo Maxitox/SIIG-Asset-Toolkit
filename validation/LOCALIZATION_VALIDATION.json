@@ -1,0 +1,22 @@
+{
+  "message_bin": {
+    "languages": 6,
+    "groups": 284,
+    "strings_per_language": 1295,
+    "structure_mismatches": 0,
+    "unicode_correction_examples": {
+      "french": "LES ESPÈCES QUI SURVIVENT NE SONT",
+      "italian": "NON È LA PIÙ FORTE",
+      "german": "ZURÜCK",
+      "spanish": "ATENCIÓN"
+    }
+  },
+  "text_bin": {
+    "languages": 6,
+    "keys": 542,
+    "line_count_mismatches": 0,
+    "first_key": "EVOL_TEXT1",
+    "last_key": "RICH_PRESENCE9"
+  },
+  "command": "python siig_toolkit.py text2csv <file-or-directory> -o localization"
+}

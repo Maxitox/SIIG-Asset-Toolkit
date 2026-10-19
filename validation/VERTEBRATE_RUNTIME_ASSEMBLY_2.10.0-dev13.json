@@ -1,0 +1,230 @@
+{
+  "format": "SIIG_VERTEBRATE_RUNTIME_ASSEMBLY_V1",
+  "release": "2.10.0-dev13",
+  "boss": "VERTEBRATE",
+  "runtime_root_type": "0xAA",
+  "presets": {
+    "vertebrate_phase1_tower": {
+      "instance_count": 32,
+      "endcap_count": 2,
+      "pillar_count": 30,
+      "models": {
+        "bos_017.gmx": 2,
+        "bos_017a.gmx": 30
+      },
+      "pillar_y_formula": "-630 + 70*i, i=0..29",
+      "pillar_y_range": [
+        -630.0,
+        1400.0
+      ],
+      "lower_endcap": {
+        "translation": [
+          0.0,
+          -608.0,
+          0.0
+        ],
+        "z_rotation_degrees": 180.0
+      },
+      "upper_endcap": {
+        "translation": [
+          0.0,
+          1448.0,
+          0.0
+        ],
+        "z_rotation_degrees": 0.0
+      },
+      "real_retail_export": {
+        "mesh_count": 64,
+        "node_count": 128,
+        "animation_count": 0,
+        "bounds_min": [
+          -63.85530090332031,
+          -715.5932998657227,
+          -63.85530090332031
+        ],
+        "bounds_max": [
+          63.85530090332031,
+          1483.0,
+          63.85530090332031
+        ]
+      }
+    },
+    "vertebrate_phase2_endcaps": {
+      "instance_count": 2,
+      "endcap_count": 2,
+      "pillar_count": 0,
+      "models": {
+        "bos_017.gmx": 2
+      },
+      "origin": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "effective_z_rotations_degrees": [
+        90.0,
+        270.0
+      ],
+      "collapse_duration_frames": 120,
+      "real_retail_export": {
+        "mesh_count": 4,
+        "node_count": 8,
+        "animation_count": 0,
+        "bounds_min": [
+          -35.0,
+          -53.03300094604492,
+          -53.03300094604492
+        ],
+        "bounds_max": [
+          35.0,
+          53.03300094604492,
+          53.03300094604492
+        ]
+      }
+    }
+  },
+  "asset_census": [
+    {
+      "model": "bos_017.gmx",
+      "runtime_type": "0xAA",
+      "size_bytes": 33392,
+      "sha256": "98e7abb98b65d9e040c975f3e64b9d5288bd324c0a689b7fb51c949eaab8c4b4",
+      "mesh_count": 2,
+      "bone_count": 3,
+      "animation_count": 0,
+      "structural_body_member": "yes",
+      "role": "structural endcap; two runtime instances form tower caps / phase-2 pair",
+      "evidence": "real retail Xbox GMX + retail/June/PS3 executable lineage"
+    },
+    {
+      "model": "bos_017a.gmx",
+      "runtime_type": "0xDB",
+      "size_bytes": 103760,
+      "sha256": "3a14bca042c8a0a282cb4f92b84ef6b6eabe9cd014cc4fa6a0b377d176d9b9bd",
+      "mesh_count": 2,
+      "bone_count": 3,
+      "animation_count": 0,
+      "structural_body_member": "yes",
+      "role": "phase-1 structural pillar section; thirty runtime instances",
+      "evidence": "real retail Xbox GMX + retail/June/PS3 executable lineage"
+    },
+    {
+      "model": "bos_017b.gmx",
+      "runtime_type": "0xDC",
+      "size_bytes": 9856,
+      "sha256": "830018f7a2d6a37ed8679833a19a44fb8a2b70773a68d77269a303d2fec8e091",
+      "mesh_count": 2,
+      "bone_count": 3,
+      "animation_count": 0,
+      "structural_body_member": "no",
+      "role": "separate rotating-blade attack auxiliary; not part of structural body preset",
+      "evidence": "real retail Xbox GMX + retail/June/PS3 executable lineage"
+    },
+    {
+      "model": "bos_017c.gmx",
+      "runtime_type": "0xDD",
+      "size_bytes": 268000,
+      "sha256": "98d187c9a19839e0d8d899511fbeb85a0141d4e85cb0105e0dd093519d56ab4c",
+      "mesh_count": 50,
+      "bone_count": 76,
+      "animation_count": 25,
+      "structural_body_member": "no",
+      "role": "animated attack-pattern auxiliary; not part of structural body preset",
+      "evidence": "real retail Xbox GMX + retail/June/PS3 executable lineage"
+    },
+    {
+      "model": "bos_017d.gmx",
+      "runtime_type": "0xDE",
+      "size_bytes": 268000,
+      "sha256": "963805a44c3e1a2a64660c2256267f991803b3c5a97a6cafc4f5594f28cbaabe",
+      "mesh_count": 50,
+      "bone_count": 76,
+      "animation_count": 25,
+      "structural_body_member": "no",
+      "role": "animated attack-pattern auxiliary; not part of structural body preset",
+      "evidence": "real retail Xbox GMX + retail/June/PS3 executable lineage"
+    },
+    {
+      "model": "bos_017e.gmx",
+      "runtime_type": "0xDF",
+      "size_bytes": 248272,
+      "sha256": "af3cdc8c4a303253fd6d7148fc593d3635e389c121929ed10f9dd7e6573bdbfc",
+      "mesh_count": 46,
+      "bone_count": 70,
+      "animation_count": 23,
+      "structural_body_member": "no",
+      "role": "animated attack-pattern auxiliary; not part of structural body preset",
+      "evidence": "real retail Xbox GMX + retail/June/PS3 executable lineage"
+    },
+    {
+      "model": "bos_017f.gmx",
+      "runtime_type": "0xE0",
+      "size_bytes": 240416,
+      "sha256": "22c8d96c509d5fabbbe19fcd036aea9dd8b63e2c530ff71cf7d48ab37560795d",
+      "mesh_count": 44,
+      "bone_count": 67,
+      "animation_count": 22,
+      "structural_body_member": "no",
+      "role": "animated attack-pattern auxiliary; not part of structural body preset",
+      "evidence": "real retail Xbox GMX + retail/June/PS3 executable lineage"
+    },
+    {
+      "model": "bos_017g.gmx",
+      "runtime_type": "0xE1",
+      "size_bytes": 258576,
+      "sha256": "863d6ad24f25c3dd9db14b290e7dfc02f8af72ae72a0954e58480675dc1db486",
+      "mesh_count": 48,
+      "bone_count": 73,
+      "animation_count": 24,
+      "structural_body_member": "no",
+      "role": "animated attack-pattern auxiliary; not part of structural body preset",
+      "evidence": "real retail Xbox GMX + retail/June/PS3 executable lineage"
+    },
+    {
+      "model": "bos_017h.gmx",
+      "runtime_type": "0xE2",
+      "size_bytes": 265456,
+      "sha256": "258fd1b817a58258fed0c19c9a15013892198e493e8670dbb8519967b71829a8",
+      "mesh_count": 48,
+      "bone_count": 73,
+      "animation_count": 24,
+      "structural_body_member": "no",
+      "role": "animated attack-pattern auxiliary; not part of structural body preset",
+      "evidence": "real retail Xbox GMX + retail/June/PS3 executable lineage"
+    },
+    {
+      "model": "bos_017i.gmx",
+      "runtime_type": "0xE3",
+      "size_bytes": 258576,
+      "sha256": "c9c1a55512396454ebdaa011166a1a70559f1794f1b78e20cb6bc52cf92d0d58",
+      "mesh_count": 48,
+      "bone_count": 73,
+      "animation_count": 24,
+      "structural_body_member": "no",
+      "role": "animated attack-pattern auxiliary; not part of structural body preset",
+      "evidence": "real retail Xbox GMX + retail/June/PS3 executable lineage"
+    },
+    {
+      "model": "bos_017j.gmx",
+      "runtime_type": "0xE4",
+      "size_bytes": 264624,
+      "sha256": "9eb479177b8e6232021998d21b6a965f649712c149a1dfe31f35c8f29283a307",
+      "mesh_count": 48,
+      "bone_count": 73,
+      "animation_count": 24,
+      "structural_body_member": "no",
+      "role": "animated attack-pattern auxiliary; not part of structural body preset",
+      "evidence": "real retail Xbox GMX + retail/June/PS3 executable lineage"
+    }
+  ],
+  "excluded_from_structural_presets": {
+    "bos_017b.gmx": "separate attack auxiliary; static GMX",
+    "bos_017c.gmx..bos_017j.gmx": "separate heavily animated attack-pattern auxiliary GMXs (22-25 tracks each)"
+  },
+  "cross_build_evidence": [
+    "retail Xbox runtime construction/phase-transition logic",
+    "June 10 Xbox prototype independently preserves the structural construction/transition",
+    "retail PS3 independently preserves pillar removal, cap positioning/rotation, and rebase behavior"
+  ],
+  "evidence_boundary": "Presets reconstruct the persistent structural body only. Separate attack auxiliaries are intentionally excluded; no visual/screenshot transform guessing is used."
+}

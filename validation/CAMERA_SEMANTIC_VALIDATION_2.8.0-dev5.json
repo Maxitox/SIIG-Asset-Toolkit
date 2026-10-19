@@ -1,0 +1,23 @@
+{
+  "format": "SIIG_CAMERA_SEMANTIC_VALIDATION",
+  "release": "2.8.0-dev5",
+  "date": "2026-09-05",
+  "status": "pass",
+  "preset_rows": 32,
+  "schema_words": 30,
+  "word11_constant_all_presets": true,
+  "word11_value": 0.20000000298023224,
+  "word11_semantic": "shared model/material scalar; exact virtual-setter property unresolved",
+  "fog_profiles_per_preset": 3,
+  "known_preset_1": {
+    "fov_degrees": 36.5,
+    "uniform_scene_view_scale": 0.4300000071525574,
+    "dynamic_eval_input": {
+      "runtime_x": 426,
+      "runtime_y": 233
+    },
+    "target_local_x": 53.77906799316406,
+    "eye_local_x": 58.13953399658203
+  },
+  "evidence_policy": "Names are assigned only where retained retail-PS3 consumers prove the runtime role; gameplay labels are not guessed."
+}

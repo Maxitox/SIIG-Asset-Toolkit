@@ -1,0 +1,154 @@
+{
+  "format": "SIIG_RELEASE_VALIDATION",
+  "release": "2.10.0-dev20",
+  "date": "2026-09-17",
+  "status": "development-pass",
+  "selftest": {
+    "passed": 102,
+    "failed": 0,
+    "ok": true,
+    "report": "validation/SELFTEST_2.10.0-dev20.json",
+    "reported_toolkit_version": "2.10.0-dev20"
+  },
+  "inherited_release_gate": {
+    "from": "2.10.0-dev19",
+    "report": "validation/RELEASE_VALIDATION_2.10.0-dev19.json",
+    "note": "All sealed dev19 THE SUN and earlier boss/native-format/mod/source-only gates remain inherited. Dev20 adds the unified 18-family boss registry and five conservative native-body coverage catalogs without modifying sealed dev19."
+  },
+  "all_boss_reconstruction": {
+    "status": "pass",
+    "report": "validation/ALL_BOSS_RECONSTRUCTION_2.10.0-dev20.json",
+    "boss_family_count": 18,
+    "deep_runtime_reconstruction_families": 13,
+    "native_inspection_only_families": 5,
+    "canonical_catalogs": 18,
+    "fresh_retail_root_models_present": 18,
+    "all_catalogs_resolve": true,
+    "new_native_catalogs": [
+      "the_moon_native_body",
+      "ladybug_native_body",
+      "octopus_native_body",
+      "water_strider_native_body",
+      "no_name_native_body"
+    ],
+    "new_native_catalog_exports": {
+      "the_moon_native_body": {
+        "instances": 1,
+        "meshes": 2,
+        "nodes": 4,
+        "animations": 0
+      },
+      "ladybug_native_body": {
+        "instances": 1,
+        "meshes": 8,
+        "nodes": 14,
+        "animations": 8
+      },
+      "octopus_native_body": {
+        "instances": 1,
+        "meshes": 22,
+        "nodes": 50,
+        "animations": 12
+      },
+      "water_strider_native_body": {
+        "instances": 1,
+        "meshes": 16,
+        "nodes": 31,
+        "animations": 10
+      },
+      "no_name_native_body": {
+        "instances": 1,
+        "meshes": 1,
+        "nodes": 3,
+        "animations": 1
+      }
+    },
+    "evidence_boundary": "native_inspection_only preserves a proven runtime-type-to-root-GMX mapping at identity inspection space; it does not claim a reconstructed gameplay world transform or multipart/state assembly"
+  },
+  "desktop_gui": {
+    "status": "pass",
+    "report": "validation/DESKTOP_GUI_2.10.0-dev20.json",
+    "gui_version": "0.31.0-dev20",
+    "gui_modes": [
+      "simple",
+      "advanced"
+    ],
+    "default_gui_mode": "simple",
+    "all_boss_matrix": true,
+    "boss_families": 18,
+    "boss_deep_runtime_reconstruction_families": 13,
+    "boss_native_inspection_only_families": 5
+  },
+  "asset_functionalization": {
+    "status": "pass",
+    "report": "validation/ASSET_FUNCTIONALIZATION_2.10.0-dev20.json",
+    "known_asset_families": 14,
+    "viewable_or_exportable_families": 14,
+    "native_round_trip_families": 11,
+    "native_builder_available_families": 11,
+    "gmx_multi_file_assembly": true
+  },
+  "versioning_policy": {
+    "status": "pass",
+    "report": "validation/VERSIONING_POLICY_2.10.0-dev20.json",
+    "previous": "2.10.0-dev19",
+    "current": "2.10.0-dev20"
+  },
+  "source_only_audit": {
+    "status": "pass",
+    "report": "validation/SOURCE_ONLY_AUDIT_2.10.0-dev20.json",
+    "game_assets": 0,
+    "external_executable_magic": 0,
+    "archive_binary_members": 0,
+    "private_runtime_paths": 0,
+    "python_bytecode": 0,
+    "third_party_binaries_bundled": false,
+    "sources_rows": 24
+  },
+  "version_consistency": {
+    "VERSION.txt": "2.10.0-dev20",
+    "cli_toolkit_version": "2.10.0-dev20",
+    "gui_version": "0.31.0-dev20"
+  },
+  "fresh_package": {
+    "status": "pass",
+    "candidate_manifest_entries_verified": 602,
+    "candidate_manifest_missing": 0,
+    "candidate_manifest_mismatched": 0,
+    "candidate_unlisted_files": 0,
+    "candidate_source_only_audit": "pass",
+    "candidate_selftest_passed": 102,
+    "candidate_selftest_failed": 0,
+    "candidate_version_reported": "2.10.0-dev20",
+    "candidate_gui_version": "0.31.0-dev20",
+    "candidate_gui_boss_families": 18,
+    "candidate_gui_deep_runtime_families": 13,
+    "candidate_gui_native_inspection_only_families": 5,
+    "package_sha256": "recorded externally in SIIG_Asset_Toolkit_v2.10.0-dev20_SHA256.txt"
+  },
+  "final_package": {
+    "status": "pass",
+    "deterministic_rebuild_byte_identical": true,
+    "untouched_manifest_entries_verified": 602,
+    "untouched_manifest_missing": 0,
+    "untouched_manifest_mismatched": 0,
+    "untouched_unlisted_files": 0,
+    "untouched_source_only_audit": "pass",
+    "untouched_selftest_passed": 102,
+    "untouched_selftest_failed": 0,
+    "untouched_gui_version": "0.31.0-dev20",
+    "untouched_gui_boss_families": 18,
+    "untouched_gui_deep_runtime_families": 13,
+    "untouched_gui_native_inspection_only_families": 5,
+    "note": "Final package is a fixed-metadata deterministic ZIP. Final hash is stored outside the package to avoid self-referential package metadata."
+  },
+  "limitations": [
+    "THE MOON, LADYBUG, OCTOPUS, WATER STRIDER and NO_NAME are native-inspection-only in dev20; their root mappings and native contents are proven, but no untraced multipart/gameplay-state assembly is invented.",
+    "Identity outer transforms in those five native catalogs are inspection-space transforms only and do not assert gameplay world-origin placement.",
+    "Existing complex boss evidence boundaries remain in force, including dynamic/random-state handling and THE SUN body/wave synchronization separation.",
+    "Fresh retail Xbox game data was used only for external validation; no proprietary package, GMX, executable, Ghidra export, or generated retail glTF is bundled.",
+    "Runtime acceptance of arbitrary fully original synthesized scenes remains a separate emulator/hardware gate.",
+    "Platform shader microcode compilation and remaining opaque GMX semantics remain unresolved.",
+    "Audio replacement/rebuilding remains intentionally deferred."
+  ]
+}

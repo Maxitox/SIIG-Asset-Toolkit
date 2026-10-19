@@ -1,0 +1,42 @@
+{
+  "format": "SIIG_CONSOLE_GENERATOR_OUTPUT_CAPACITY_VALIDATION",
+  "release": "2.10.0-dev24",
+  "checkpoint": "WIP163",
+  "status": "pass",
+  "ios": {
+    "output_layers": 3,
+    "bytes_per_output_layer": 6144,
+    "hex_bytes_per_output_layer": "0x1800",
+    "block_iterations": 24,
+    "ordinary_block_width": 8,
+    "ordinary_block_height": 32,
+    "capacity_identity": "24 * 8 * 32 = 6144"
+  },
+  "ps3_retail": {
+    "stageGenerateMapInit": "0x001327E8",
+    "stageGenerate2DMap_append": "0x001329DC",
+    "capacity_factor_table": "0x004B152C",
+    "capacity_factors": [
+      32,
+      32,
+      32
+    ],
+    "capacity_multiplier": 384,
+    "capacity_multiplier_hex": "0x180",
+    "bytes_per_output_layer": 12288,
+    "hex_bytes_per_output_layer": "0x3000",
+    "append_bound_uses_same_factor_product": true
+  },
+  "comparison": {
+    "output_capacity_ratio": 2.0,
+    "runtime_output_buffer_doubling_resolved": true,
+    "resource_corpus_files_both": 330,
+    "resource_nonempty_layers_both": 645,
+    "ios_resource_cells": 121472,
+    "console_resource_cells": 242944,
+    "resource_total_cell_ratio": 2.0,
+    "simple_content_duplication": false
+  },
+  "remaining_boundary": "Why the console-authored generator MAP resources were designed/expanded to total exactly 2x the iOS stored-cell count remains unresolved; runtime allocator mechanics are no longer the blocker.",
+  "source_only": true
+}

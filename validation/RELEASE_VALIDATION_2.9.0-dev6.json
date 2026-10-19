@@ -1,0 +1,88 @@
+{
+  "format": "SIIG_RELEASE_VALIDATION",
+  "release": "2.9.0-dev6",
+  "date": "2026-09-11",
+  "status": "development-pass",
+  "selftest": {
+    "passed": 80,
+    "failed": 0,
+    "ok": true,
+    "report": "validation/SELFTEST_2.9.0-dev6.json",
+    "reported_toolkit_version": "2.9.0-dev6"
+  },
+  "inherited_release_gate": {
+    "from": "2.9.0-dev5",
+    "report": "validation/RELEASE_VALIDATION_2.9.0-dev5.json",
+    "note": "All sealed dev5 multi-bone/CUBICSPLINE animation work, dev4 MOTN/ANIM creation, dev3 TEX synthesis, dev2 native schema synthesis, dev1 integrated mod staging, dev28 TXIF graph, dev27 scene graph, dev26 mesh graph, dev25 retail GMX evidence, native builders and source-only gates are inherited. dev6 removes the mandatory GMX root/template dependency through canonical root synthesis and gltf2gmx-new."
+  },
+  "gmx_template_free_compilation": {
+    "status": "pass",
+    "report": "validation/GMX_TEMPLATE_FREE_COMPILATION_2.9.0-dev6.json",
+    "original_gmx_required": false,
+    "canonical_root_synthesis": true,
+    "full_decoded_graph_synthesis": true,
+    "cli": "gltf2gmx-new",
+    "selftest": "pass"
+  },
+  "desktop_gui": {
+    "status": "pass",
+    "report": "validation/DESKTOP_GUI_2.9.0-dev6.json",
+    "gui_version": "0.10.0-dev6",
+    "tabs": [
+      "Game Rip",
+      "Mod Workspace",
+      "GMX Workbench",
+      "Utilities"
+    ],
+    "create_new_gmx": true
+  },
+  "asset_functionalization": {
+    "status": "pass",
+    "report": "validation/ASSET_FUNCTIONALIZATION_2.9.0-dev6.json",
+    "known_asset_families": 14,
+    "viewable_or_exportable_families": 14,
+    "native_round_trip_families": 11,
+    "native_builder_available_families": 11,
+    "gmx_template_free_compile": true
+  },
+  "source_only_audit": {
+    "status": "pass",
+    "report": "validation/SOURCE_ONLY_AUDIT_2.9.0-dev6.json",
+    "game_assets": 0,
+    "external_executable_magic": 0,
+    "archive_binary_members": 0,
+    "private_runtime_paths": 0,
+    "python_bytecode": 0,
+    "third_party_binaries_bundled": false,
+    "sources_rows": 24
+  },
+  "version_consistency": {
+    "VERSION.txt": "2.9.0-dev6",
+    "cli_toolkit_version": "2.9.0-dev6",
+    "gui_version": "0.10.0-dev6"
+  },
+  "fresh_package": {
+    "status": "pass",
+    "candidate_manifest_entries_verified": 379,
+    "candidate_manifest_missing": 0,
+    "candidate_manifest_mismatched": 0,
+    "candidate_unlisted_files": 0,
+    "candidate_source_only_audit": "pass",
+    "candidate_selftest_passed": 80,
+    "candidate_selftest_failed": 0,
+    "candidate_version_reported": "2.9.0-dev6",
+    "candidate_gui_version": "0.10.0-dev6",
+    "candidate_package_sha256": "de94327c06b6cbd320c94a0eeea63aab6dd622766776dad579899a551b6514e1",
+    "note": "Candidate was extracted fresh, verified against RELEASE_MANIFEST with no unlisted files, source-audited before executing package code, and then passed 80/80 selftests plus CLI/GUI version checks. Final package is rebuilt deterministically after recording this evidence."
+  },
+  "limitations": [
+    "Template-free GMX creation is structurally regression-tested; arbitrary original scenes still require emulator/hardware runtime validation.",
+    "Platform shader microcode compilation remains unresolved; SHAD synthesis covers the fixed metadata record only.",
+    "Standard glTF skin/joint-weight import is not yet implemented.",
+    "Root +0x08 and +0x28..+0x2F remain semantically unresolved and default to zero unless explicitly overridden.",
+    "The external dev25 306/306 retail GMX evidence is inherited rather than re-run from proprietary inputs.",
+    "PS3 NPDRM/SDAT re-encryption is not implemented.",
+    "Audio replacement/rebuilding remains intentionally deferred.",
+    "Project-owner license selection remains open."
+  ]
+}

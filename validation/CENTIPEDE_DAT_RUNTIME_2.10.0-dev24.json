@@ -1,0 +1,46 @@
+{
+  "version": "2.10.0-dev24",
+  "status": "wip",
+  "runtime_type": "0xA0",
+  "script_opcode": "0xA0",
+  "name": "CENTIPEDE",
+  "confidence": "high",
+  "retail": {
+    "factory_case": "0xA1",
+    "constructor": "Function_82116478",
+    "object_size": "0x210",
+    "opcode_handler": "Function_820E8330",
+    "common_handler": "Function_820E7F68 / Function_820E7CE0",
+    "tail_copy": "raw PPC 0x82112080: one short arg5 -> +0x1DC",
+    "hp_initializer": "Function_821132A8",
+    "ring_initializer": "Function_821133A0",
+    "record_count": 7,
+    "argument_count": 6,
+    "field_names": [
+      "spawn_condition",
+      "a0_form_hp",
+      "common_speed_raw512",
+      "ring_center_x",
+      "ring_center_z",
+      "be_form_hp"
+    ],
+    "ring": {
+      "visible_links": 32,
+      "radius": 80.0,
+      "angle_step_degrees": 11.25,
+      "first_angle_degrees": -90.0
+    }
+  },
+  "june10": {
+    "factory_case": "0xA1",
+    "constructor": "Function_8212FD50",
+    "object_size": "0x214",
+    "opcode_handler": "Function_820FACB8",
+    "tail_copy": "Function_8212B620: one short arg5 -> +0x1E0",
+    "hp_initializer": "Function_8212C998",
+    "observed_occurrences": 8,
+    "observed_word_count": 8,
+    "argument_count": 6
+  },
+  "claim_boundary": "arg2 is kept as common_speed_raw512 because /512 storage is proven but no narrower CENTIPEDE-only motion consumer is claimed"
+}

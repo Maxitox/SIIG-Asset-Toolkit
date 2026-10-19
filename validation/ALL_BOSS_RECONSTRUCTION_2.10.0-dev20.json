@@ -1,0 +1,346 @@
+{
+  "format": "SIIG_ALL_BOSS_RECONSTRUCTION_VALIDATION_V1",
+  "release": "2.10.0-dev20",
+  "date": "2026-09-17",
+  "status": "pass",
+  "boss_family_count": 18,
+  "deep_runtime_reconstruction_families": 13,
+  "native_inspection_only_families": 5,
+  "all_catalogs_resolve": true,
+  "fresh_retail_root_models_present": 18,
+  "fresh_retail_bosses": [
+    {
+      "key": "the_moon",
+      "name": "THE MOON",
+      "runtime_type": "0x46",
+      "root_model": "bos_001.gmx",
+      "canonical_catalog": "the_moon_native_body",
+      "coverage": "native_inspection_only",
+      "root_validation": {
+        "present": true,
+        "size": 27504,
+        "sha256": "d91b332b475097ddafc5fb2249b96dd09e399403e29f3fd5c250835e6ff7549f",
+        "meshes": 2,
+        "bones": 3,
+        "animation_tracks": 0
+      }
+    },
+    {
+      "key": "the_sun",
+      "name": "THE SUN",
+      "runtime_type": "0x47",
+      "root_model": "bos_002.gmx",
+      "canonical_catalog": "the_sun_native_body",
+      "coverage": "deep_runtime_reconstruction",
+      "root_validation": {
+        "present": true,
+        "size": 78016,
+        "sha256": "13f595fd6a89bb0efb056d91594a7342bf4ff8f551bc2d152bdb7cb223128fba",
+        "meshes": 8,
+        "bones": 9,
+        "animation_tracks": 6
+      }
+    },
+    {
+      "key": "gigantic_ufo",
+      "name": "GIGANTIC UFO",
+      "runtime_type": "0x48 / 0x9E",
+      "root_model": "bos_003.gmx",
+      "canonical_catalog": "gigantic_ufo_complete",
+      "coverage": "deep_runtime_reconstruction",
+      "root_validation": {
+        "present": true,
+        "size": 414192,
+        "sha256": "047a469fd571611b67703d7af1287407302dc5f35a6fd4d0af0241748771a154",
+        "meshes": 2,
+        "bones": 40,
+        "animation_tracks": 0
+      }
+    },
+    {
+      "key": "ladybug",
+      "name": "LADYBUG",
+      "runtime_type": "0x49",
+      "root_model": "bos_004.gmx",
+      "canonical_catalog": "ladybug_native_body",
+      "coverage": "native_inspection_only",
+      "root_validation": {
+        "present": true,
+        "size": 40528,
+        "sha256": "65652b8d071fd295950477308da38561cd33a216579afd93c2960a28276e4dbb",
+        "meshes": 8,
+        "bones": 13,
+        "animation_tracks": 8
+      }
+    },
+    {
+      "key": "mandala",
+      "name": "MANDALA",
+      "runtime_type": "0x4A",
+      "root_model": "bos_005.gmx",
+      "canonical_catalog": "mandala_initial_combat",
+      "coverage": "deep_runtime_reconstruction",
+      "root_validation": {
+        "present": true,
+        "size": 3584,
+        "sha256": "6ffcd50acae159805461301e1eacbf69957d035df4c75a15d459e5556fc68e14",
+        "meshes": 1,
+        "bones": 2,
+        "animation_tracks": 0
+      }
+    },
+    {
+      "key": "unknown",
+      "name": "UNKNOWN",
+      "runtime_type": "0x4B",
+      "root_model": "bos_006.gmx",
+      "canonical_catalog": "unknown_all_forms",
+      "coverage": "deep_runtime_reconstruction",
+      "root_validation": {
+        "present": true,
+        "size": 661760,
+        "sha256": "9ec3de255073c7871ef35dce3f27de6305ae9e3b8c1177bcfaeef4a04befbecf",
+        "meshes": 33,
+        "bones": 48,
+        "animation_tracks": 0
+      }
+    },
+    {
+      "key": "centipede",
+      "name": "CENTIPEDE",
+      "runtime_type": "0xA0",
+      "root_model": "bos_007.gmx",
+      "canonical_catalog": "centipede_initial_combat_ring",
+      "coverage": "deep_runtime_reconstruction",
+      "root_validation": {
+        "present": true,
+        "size": 25264,
+        "sha256": "7fd09bbd989b7cab2a9b4305de5e95f2c674350b080a20dd8ad1d4ba1bc1d6de",
+        "meshes": 2,
+        "bones": 3,
+        "animation_tracks": 0
+      }
+    },
+    {
+      "key": "hornet",
+      "name": "HORNET",
+      "runtime_type": "0xA1",
+      "root_model": "bos_008.gmx",
+      "canonical_catalog": "hornet_full_armor",
+      "coverage": "deep_runtime_reconstruction",
+      "root_validation": {
+        "present": true,
+        "size": 28736,
+        "sha256": "0d73ffe9744fdd635c6480836734576f715b3037d2aa90737682912ab88cd516",
+        "meshes": 2,
+        "bones": 3,
+        "animation_tracks": 2
+      }
+    },
+    {
+      "key": "progressive_ufo",
+      "name": "PROGRESSIVE UFO",
+      "runtime_type": "0xA2",
+      "root_model": "bos_009.gmx",
+      "canonical_catalog": "progressive_ufo",
+      "coverage": "deep_runtime_reconstruction",
+      "root_validation": {
+        "present": true,
+        "size": 146480,
+        "sha256": "086e34c20a1d59006b4663b61023965dc0f6a3f90ba40a37b5a5adf89ce6e8ec",
+        "meshes": 2,
+        "bones": 3,
+        "animation_tracks": 2
+      }
+    },
+    {
+      "key": "octopus",
+      "name": "OCTOPUS",
+      "runtime_type": "0xA3",
+      "root_model": "bos_010.gmx",
+      "canonical_catalog": "octopus_native_body",
+      "coverage": "native_inspection_only",
+      "root_validation": {
+        "present": true,
+        "size": 282400,
+        "sha256": "db37f53c2062898bd4eea36023f537d7007ea60a42c0d5bd893657f580eea51b",
+        "meshes": 22,
+        "bones": 49,
+        "animation_tracks": 12
+      }
+    },
+    {
+      "key": "butterfly",
+      "name": "BUTTERFLY",
+      "runtime_type": "0xA4",
+      "root_model": "bos_011.gmx",
+      "canonical_catalog": "butterfly_phase_1",
+      "coverage": "deep_runtime_reconstruction",
+      "root_validation": {
+        "present": true,
+        "size": 22448,
+        "sha256": "60eaa4b68c2b350bd25294662dc49af6be8acabc806032c7caebcc2d45679334",
+        "meshes": 2,
+        "bones": 3,
+        "animation_tracks": 0
+      }
+    },
+    {
+      "key": "axon",
+      "name": "AXON",
+      "runtime_type": "0xA5",
+      "root_model": "bos_012.gmx",
+      "canonical_catalog": "axon_native_body",
+      "coverage": "deep_runtime_reconstruction",
+      "root_validation": {
+        "present": true,
+        "size": 172256,
+        "sha256": "09931a245a532e33eb1e540f025a43bc6f79c2f4a4545aa4a30c1f237246dbc7",
+        "meshes": 42,
+        "bones": 75,
+        "animation_tracks": 32
+      }
+    },
+    {
+      "key": "water_strider",
+      "name": "WATER STRIDER",
+      "runtime_type": "0xA6",
+      "root_model": "bos_014.gmx",
+      "canonical_catalog": "water_strider_native_body",
+      "coverage": "native_inspection_only",
+      "root_validation": {
+        "present": true,
+        "size": 202576,
+        "sha256": "f91ff68585be034f57a91b6986a11784237f6bde56a86716ba9c614b45312ac3",
+        "meshes": 16,
+        "bones": 30,
+        "animation_tracks": 10
+      }
+    },
+    {
+      "key": "crab",
+      "name": "CRAB",
+      "runtime_type": "0xA7",
+      "root_model": "bos_013.gmx",
+      "canonical_catalog": "crab",
+      "coverage": "deep_runtime_reconstruction",
+      "root_validation": {
+        "present": true,
+        "size": 360720,
+        "sha256": "8abf1ea783bd576b1fc1bfb363ca40396b57f139d3f24802d3cdd2f9765e6723",
+        "meshes": 26,
+        "bones": 55,
+        "animation_tracks": 14
+      }
+    },
+    {
+      "key": "ultimate_ufo",
+      "name": "ULTIMATE UFO",
+      "runtime_type": "0xA8",
+      "root_model": "bos_015.gmx",
+      "canonical_catalog": "ultimate_ufo_complete",
+      "coverage": "deep_runtime_reconstruction",
+      "root_validation": {
+        "present": true,
+        "size": 2268720,
+        "sha256": "75e5152028d3484dcd7fa2433ca0df014d206e600fdcb3672d820a4d73b23950",
+        "meshes": 4,
+        "bones": 40,
+        "animation_tracks": 0
+      }
+    },
+    {
+      "key": "squid",
+      "name": "SQUID",
+      "runtime_type": "0xA9",
+      "root_model": "bos_016.gmx",
+      "canonical_catalog": "squid_phase1_legs",
+      "coverage": "deep_runtime_reconstruction",
+      "root_validation": {
+        "present": true,
+        "size": 44544,
+        "sha256": "5e51d90192593d2d87cb81471532e32f2f78b63b490d91a117875ef913591b30",
+        "meshes": 2,
+        "bones": 11,
+        "animation_tracks": 8
+      }
+    },
+    {
+      "key": "vertebrate",
+      "name": "VERTEBRATE",
+      "runtime_type": "0xAA",
+      "root_model": "bos_017.gmx",
+      "canonical_catalog": "vertebrate_phase1_tower",
+      "coverage": "deep_runtime_reconstruction",
+      "root_validation": {
+        "present": true,
+        "size": 33392,
+        "sha256": "98e7abb98b65d9e040c975f3e64b9d5288bd324c0a689b7fb51c949eaab8c4b4",
+        "meshes": 2,
+        "bones": 3,
+        "animation_tracks": 0
+      }
+    },
+    {
+      "key": "no_name",
+      "name": "NO_NAME",
+      "runtime_type": "0xAB",
+      "root_model": "bos_018a.gmx",
+      "canonical_catalog": "no_name_native_body",
+      "coverage": "native_inspection_only",
+      "root_validation": {
+        "present": true,
+        "size": 45728,
+        "sha256": "ef48c5d3ec4270a211742d6f461b78985c733d386495a7348d73d93213360261",
+        "meshes": 1,
+        "bones": 2,
+        "animation_tracks": 1
+      }
+    }
+  ],
+  "new_native_catalog_exports": {
+    "the_moon_native_body": {
+      "instances": 1,
+      "meshes": 2,
+      "nodes": 4,
+      "animations": 0
+    },
+    "ladybug_native_body": {
+      "instances": 1,
+      "meshes": 8,
+      "nodes": 14,
+      "animations": 8
+    },
+    "octopus_native_body": {
+      "instances": 1,
+      "meshes": 22,
+      "nodes": 50,
+      "animations": 12
+    },
+    "water_strider_native_body": {
+      "instances": 1,
+      "meshes": 16,
+      "nodes": 31,
+      "animations": 10
+    },
+    "no_name_native_body": {
+      "instances": 1,
+      "meshes": 1,
+      "nodes": 3,
+      "animations": 1
+    }
+  },
+  "new_native_catalogs": [
+    "the_moon_native_body",
+    "ladybug_native_body",
+    "octopus_native_body",
+    "water_strider_native_body",
+    "no_name_native_body"
+  ],
+  "evidence_boundary": "native_inspection_only preserves a proven runtime-type-to-root-GMX mapping at identity inspection space; it does not claim a reconstructed gameplay world transform or multipart/state assembly",
+  "limitations": [
+    "THE MOON, LADYBUG, OCTOPUS, WATER STRIDER, and NO_NAME are native-inspection-only in dev20; no multipart/gameplay-state assembly is claimed.",
+    "Identity in those five catalogs is an outer inspection transform only and does not assert a gameplay world transform.",
+    "Fresh retail game data was used only for external validation; no proprietary GMX or generated retail glTF is bundled."
+  ]
+}

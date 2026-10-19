@@ -1,0 +1,365 @@
+{
+  "format": "SIIG_RUNTIME_3D_RESEARCH_VALIDATION",
+  "toolkit_version": "2.8.0-dev2",
+  "status": "pass",
+  "sources": {
+    "ps3_retail_pkg_sha256": "40d94cff410f54e4d69319e188caa5c376de06835873be08e3fcd72ea155978c",
+    "ghidra_archives": {
+      "SIIGGHIDRA(1).zip": "444ea2b9cf85f201cd160f935ea890bc473b6d541cb9d8cecb849ae462c53499",
+      "SIIGJUNE10GHIDRA.zip": "987cf607e4164dde06b980718a6169791d81e064d4b5e46ecb35f45176076f66",
+      "SIIGMAY11GHIDRA.zip": "4fc11fbe66656596eedc6560774e5858cb2882dbbe6d4aeaccf20aa2d717531d",
+      "SIIGMAY9GHIDRA.zip": "57da9c228c0040b90d760e115cdf658a32cb4c8a8147a5ba09703884960bcb43",
+      "SIIGPS3GHIDRA.zip": "e7af0cd5940268c4697470ca58d55010b45a50706dfc10ead552d4ee4ce55d6d"
+    },
+    "tcrf_used": false
+  },
+  "entity_registry": {
+    "xbox360_retail": {
+      "entry_count": 240,
+      "category_counts": {
+        "primitive": 22,
+        "model": 129,
+        "unconfigured": 89
+      },
+      "render_group_counts": {
+        "Offset Opacity": 229,
+        "Non Opacity": 11
+      }
+    },
+    "xbox360_june10": {
+      "entry_count": 240,
+      "category_counts": {
+        "primitive": 22,
+        "model": 129,
+        "unconfigured": 89
+      },
+      "render_group_counts": {
+        "Offset Opacity": 229,
+        "Non Opacity": 11
+      }
+    },
+    "xbox360_may11": {
+      "entry_count": 241,
+      "category_counts": {
+        "primitive": 22,
+        "model": 131,
+        "unconfigured": 88
+      },
+      "render_group_counts": {
+        "Offset Opacity": 228,
+        "Non Opacity": 13
+      }
+    },
+    "xbox360_may9": {
+      "entry_count": 241,
+      "category_counts": {
+        "primitive": 22,
+        "model": 131,
+        "unconfigured": 88
+      },
+      "render_group_counts": {
+        "Offset Opacity": 228,
+        "Non Opacity": 13
+      }
+    },
+    "ps3_retail": {
+      "entry_count": 240,
+      "category_counts": {
+        "primitive": 22,
+        "model": 129,
+        "unconfigured": 89
+      },
+      "render_group_counts": {
+        "Offset Opacity": 229,
+        "Non Opacity": 11
+      }
+    },
+    "normalized_equalities": {
+      "may9_vs_may11_same_index": 241,
+      "june10_vs_xbox_retail_same_index": 240,
+      "xbox_retail_vs_ps3_retail_same_index": 240
+    }
+  },
+  "stage3d_route_source": {
+    "files": 47,
+    "active_records": 19563,
+    "runtime_route_source_points": 19563,
+    "nonzero_slot_counts": {
+      "2": 19562
+    },
+    "origin_fallback_count": 1,
+    "origin_fallback_files": [
+      "Bmap16.bin"
+    ],
+    "used_placements": 23830,
+    "unique_placement_models": 77,
+    "all_route_source_exports_present": true
+  },
+  "gmx_tracks": {
+    "files": 4,
+    "total_tracks": 6,
+    "files_detail": [
+      {
+        "file": "cam01_op1.gmx",
+        "track_count": 2,
+        "tracks": [
+          {
+            "track_index": 0,
+            "target_bone_name": "cam1",
+            "sample_count": 200,
+            "start_seconds": 0.0,
+            "end_seconds": 8.291669845581055,
+            "observed_sample_rate_hz": 23.998169085000228,
+            "max_decomposition_error": 0.0
+          },
+          {
+            "track_index": 1,
+            "target_bone_name": "int1",
+            "sample_count": 200,
+            "start_seconds": 0.0,
+            "end_seconds": 8.291669845581055,
+            "observed_sample_rate_hz": 23.998169085000228,
+            "max_decomposition_error": 0.0
+          }
+        ]
+      },
+      {
+        "file": "cam02_op1.gmx",
+        "track_count": 2,
+        "tracks": [
+          {
+            "track_index": 0,
+            "target_bone_name": "cam1",
+            "sample_count": 300,
+            "start_seconds": 0.0,
+            "end_seconds": 12.45829963684082,
+            "observed_sample_rate_hz": 23.998169085000228,
+            "max_decomposition_error": 0.0
+          },
+          {
+            "track_index": 1,
+            "target_bone_name": "int1",
+            "sample_count": 300,
+            "start_seconds": 0.0,
+            "end_seconds": 12.45829963684082,
+            "observed_sample_rate_hz": 23.998169085000228,
+            "max_decomposition_error": 0.0
+          }
+        ]
+      },
+      {
+        "file": "fld014.gmx",
+        "track_count": 1,
+        "tracks": [
+          {
+            "track_index": 0,
+            "target_bone_name": "fld014",
+            "sample_count": 1440,
+            "start_seconds": 0.0,
+            "end_seconds": 59.95830154418945,
+            "observed_sample_rate_hz": 23.981703412313603,
+            "max_decomposition_error": 1.3809928025992901e-06
+          }
+        ]
+      },
+      {
+        "file": "fld015.gmx",
+        "track_count": 1,
+        "tracks": [
+          {
+            "track_index": 0,
+            "target_bone_name": "fld015",
+            "sample_count": 6301,
+            "start_seconds": 0.0,
+            "end_seconds": 262.5,
+            "observed_sample_rate_hz": 23.979509696304426,
+            "max_decomposition_error": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "camera_presets": {
+    "preset_count": 32,
+    "words_per_preset": 30,
+    "rows": 960,
+    "table_address_ps3_retail": "0x0053284C"
+  },
+  "route_animation_descriptors": [
+    {
+      "descriptor_index": "0",
+      "model_name": "fld015",
+      "gmx_file": "fld015.gmx",
+      "frame_limit": "6300.0",
+      "raw_flag": "0",
+      "raw_flag_hex": "0x00000000"
+    },
+    {
+      "descriptor_index": "1",
+      "model_name": "fld014",
+      "gmx_file": "fld014.gmx",
+      "frame_limit": "1440.0",
+      "raw_flag": "1",
+      "raw_flag_hex": "0x00000001"
+    }
+  ],
+  "selftest": {
+    "format": "SIIG_SELFTEST",
+    "toolkit_version": "2.8.0-dev2",
+    "python": "3.13.5",
+    "passed": 24,
+    "failed": 0,
+    "ok": true,
+    "tests": [
+      {
+        "name": "AES-128 FIPS-197",
+        "status": "PASS",
+        "seconds": 8.1e-05,
+        "detail": "known-answer vector"
+      },
+      {
+        "name": "AES-128 decrypt",
+        "status": "PASS",
+        "seconds": 0.000575,
+        "detail": "encrypt and inverse-cipher vectors"
+      },
+      {
+        "name": "PKG AES-CTR backend",
+        "status": "PASS",
+        "seconds": 0.001933,
+        "detail": "unaligned chunking equals one-shot CTR and round-trips"
+      },
+      {
+        "name": "STFS CON initialization",
+        "status": "PASS",
+        "seconds": 0.000684,
+        "detail": "CON transactional layout initializes after first hash-table address"
+      },
+      {
+        "name": "NPDRM SDAT authentication",
+        "status": "PASS",
+        "seconds": 0.006757,
+        "detail": "encrypted-key HMAC-SHA1 block decrypts; tamper rejected"
+      },
+      {
+        "name": "PSX ADPCM decoder",
+        "status": "PASS",
+        "seconds": 3.8e-05,
+        "detail": "16-byte frame -> 28 PCM16 samples; terminal frame silent"
+      },
+      {
+        "name": "DAT parser",
+        "status": "PASS",
+        "seconds": 2.1e-05,
+        "detail": "one command, absolute frame 5"
+      },
+      {
+        "name": "MAP parser",
+        "status": "PASS",
+        "seconds": 1.5e-05,
+        "detail": "tile IDs and X/Y bits preserved"
+      },
+      {
+        "name": "BBX parser/hash",
+        "status": "PASS",
+        "seconds": 7.9e-05,
+        "detail": "named entry and filename hash"
+      },
+      {
+        "name": "BBX repacker",
+        "status": "PASS",
+        "seconds": 0.000105,
+        "detail": "named/unnamed payloads, hashes, alignment, and sorted index"
+      },
+      {
+        "name": "ANM range parser",
+        "status": "PASS",
+        "seconds": 1.9e-05,
+        "detail": "16-byte names, start/end frames, grouping, and loop flags"
+      },
+      {
+        "name": "Stage wall/generator table",
+        "status": "PASS",
+        "seconds": 4.9e-05,
+        "detail": "20-byte names, wall repeat counts, clamp, and generator enable flags"
+      },
+      {
+        "name": "Bmap/Xmap parser",
+        "status": "PASS",
+        "seconds": 0.000133,
+        "detail": "0x118 record, corrected placement transforms, route-source slots, origin fallback, and sentinel"
+      },
+      {
+        "name": "GMX animation-track exporter",
+        "status": "PASS",
+        "seconds": 0.001124,
+        "detail": "matrix tracks, seconds, observed 24 Hz cadence, decomposition, CSV/OBJ output"
+      },
+      {
+        "name": "Xenos shader inventory",
+        "status": "PASS",
+        "seconds": 0.000203,
+        "detail": "stage bit, header offsets, strings, and bounded microcode"
+      },
+      {
+        "name": "Gzip safety",
+        "status": "PASS",
+        "seconds": 0.00016,
+        "detail": "valid stream decoded; expansion over limit rejected"
+      },
+      {
+        "name": "PNG/atlas renderer",
+        "status": "PASS",
+        "seconds": 1.548787,
+        "detail": "RGBA PNG round trip and flipped atlas MAP render"
+      },
+      {
+        "name": "ZIP safety",
+        "status": "PASS",
+        "seconds": 0.001064,
+        "detail": "valid member extracted; traversal rejected"
+      },
+      {
+        "name": "Outer-container resume cache",
+        "status": "PASS",
+        "seconds": 0.002168,
+        "detail": "content-addressed staging reuses exact input and invalidates changed packages"
+      },
+      {
+        "name": "Privacy scrubber",
+        "status": "PASS",
+        "seconds": 1.2e-05,
+        "detail": "Windows and POSIX routes redacted"
+      },
+      {
+        "name": "Stage Explorer platform roots",
+        "status": "PASS",
+        "seconds": 0.067115,
+        "detail": "Xbox Media and PS3 USRDIR stage roots detected without renaming"
+      },
+      {
+        "name": "HTML asset viewer",
+        "status": "PASS",
+        "seconds": 0.007769,
+        "detail": "small linked HTML, lazy image thumbnail, and deferred text payload"
+      },
+      {
+        "name": "Release layout",
+        "status": "PASS",
+        "seconds": 0.000204,
+        "detail": "organized support folders present; 20 root files"
+      },
+      {
+        "name": "Output manifest/verification",
+        "status": "PASS",
+        "seconds": 0.001961,
+        "detail": "fresh tree verified; tampering detected"
+      }
+    ]
+  },
+  "limitations": [
+    "Runtime route-source export contains control/source points; exact engine spline resampling/tangent generation is not yet reproduced.",
+    "Camera preset words are preserved raw; individual gameplay field names remain unresolved unless downstream use proves them.",
+    "Xenos/RSX shader microcode is not yet instruction-level disassembled/translated."
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "format": "SIIG_RELEASE_VALIDATION",
+  "release": "2.8.0-dev20",
+  "date": "2026-09-10",
+  "status": "development-pass",
+  "selftest": {
+    "passed": 56,
+    "failed": 0,
+    "ok": true,
+    "report": "validation/SELFTEST_2.8.0-dev20.json",
+    "reported_toolkit_version": "2.8.0-dev20"
+  },
+  "inherited_release_gate": {
+    "from": "2.8.0-dev19",
+    "report": "validation/RELEASE_VALIDATION_2.8.0-dev19.json",
+    "note": "All prior console extraction/rendering/audio/route/camera, mobile-format/exclusives, dev18 MAP/DAT/timing/generator lineage, and dev19 boss/enemy constructor/pool lineage gates are inherited. dev20 adds direct original-six gameplay-mover ancestry without modifying sealed dev19."
+  },
+  "dev20_boss_mover_lineage_validation": {
+    "status": "pass",
+    "report": "validation/IOS_CONSOLE_BOSS_MOVER_LINEAGE_DEV20.json",
+    "bosses": 6,
+    "dispatch_identity": "mobile original type IDs 70..75 == console cases 0x46..0x4B",
+    "xbox_dispatchers": {
+      "May 9": "0x8225E9D0",
+      "May 11": "0x82260668",
+      "June 10": "0x8226A988",
+      "Retail": "0x822434B8"
+    },
+    "ps3_retail_dispatcher": "0x0012FB70",
+    "constructor_exact_middle_similarity_percent": {
+      "THE_MOON": 87.947883,
+      "THE_SUN": 86.072423,
+      "GIGANTIC_UFO": 87.99505,
+      "LADYBUG": 89.208633,
+      "MANDALA": 92.691316,
+      "UNKNOWN": 92.075472
+    },
+    "semantic_anchors": [
+      "THE_MOON paired event thresholds/order",
+      "THE_SUN four-pair +/-512 ramp to 6144",
+      "GIGANTIC_UFO original +4096 path",
+      "LADYBUG May9->May11 state-0x14 guard",
+      "MANDALA 109/69 trig geometry",
+      "UNKNOWN original +/-2560 motion"
+    ],
+    "v2_branch_result": "GIGANTIC_UFO and UNKNOWN console movers select original-mobile behavior; THE_SUN preserves its original-only ramp"
+  },
+  "source_only_audit": {
+    "status": "pass",
+    "report": "validation/SOURCE_ONLY_AUDIT_2.8.0-dev20.json",
+    "game_assets": 0,
+    "external_executable_magic": 0,
+    "archive_binary_members": 0,
+    "private_runtime_paths": 0,
+    "python_bytecode": 0,
+    "third_party_binaries_bundled": false,
+    "sources_rows": 24
+  },
+  "version_consistency": {
+    "VERSION.txt": "2.8.0-dev20",
+    "cli_toolkit_version": "2.8.0-dev20"
+  },
+  "fresh_package": {
+    "status": "pass",
+    "candidate_manifest_entries_verified": 271,
+    "candidate_source_only_audit": "pass",
+    "candidate_selftest_passed": 56,
+    "candidate_selftest_failed": 0,
+    "candidate_version_reported": "2.8.0-dev20",
+    "note": "Final package is rebuilt deterministically after recording these candidate results and is revalidated separately before publication."
+  },
+  "limitations": [
+    "Opcode 0xA7 remains machine-readably unnamed until the gameplay CRAB identification is explicitly connected to the retained Crab.cpp implementation at code level.",
+    "LADYBUG global state value 0x10 is proven as a new May11 guard condition, but its exact gameplay semantic label remains unresolved.",
+    "Raw mnemonic similarity is not treated as semantic equivalence; June->retail GIGANTIC_UFO/UNKNOWN raw deltas normalize to relocated global-address materialization only.",
+    "Exact console generator-map output-buffer initializer corresponding to iOS stageGenerateMapInit is not yet isolated.",
+    "The exact cause of the console generator resource corpus's 2x total cell capacity remains unresolved.",
+    "The iOS executable is from the supplied decrypted/modified-distribution 4.1.0 research IPA; a bounded local Mach-O metadata repair was used only for analysis and is not bundled.",
+    "Existing console limitations on shader ISA translation, real Blender UI/runtime validation, and project-owner license selection remain."
+  ]
+}

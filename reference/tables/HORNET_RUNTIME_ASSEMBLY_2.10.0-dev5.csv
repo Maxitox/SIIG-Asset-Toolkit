@@ -1,0 +1,5 @@
+preset,component,runtime_type,model,runtime_count,visible_instances_in_preset,pose_or_transform_source,status
+hornet_full_armor,core/root,0xA1,bos_008.gmx,1,1,native pose sample 0,recovered
+hornet_full_armor,armor cube,0xBF,bos_008a.gmx,125,125,C1 c_001..c_125 sample-0 5x5x5 locator lattice,recovered
+hornet_full_armor,prism/weapon pool,0xC0,bos_008b.gmx,125,0,parallel runtime pool; later state 3/4 including 45-slot attack formation,real but dormant in preset
+hornet_full_armor,formation rig,0xC1,bos_008c.gmx,1,0,meshless 126-track c_001..c_125 + lt_001 controller,real invisible controller

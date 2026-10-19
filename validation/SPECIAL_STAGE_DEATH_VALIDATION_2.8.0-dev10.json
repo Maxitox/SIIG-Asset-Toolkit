@@ -1,0 +1,121 @@
+{
+  "format": "SIIG_SPECIAL_STAGE_DEATH_VALIDATION",
+  "release": "2.8.0-dev10",
+  "date": "2026-09-06",
+  "status": "pass",
+  "retail_stage_corpus": {
+    "stage_explorer_version": 4,
+    "stage_count": 92,
+    "special_boss_occurrences": 6,
+    "all_preceded_by_matching_special_warning": true,
+    "encounters": [
+      {
+        "script": "level5_stage1.dat",
+        "boss_opcode": 166,
+        "boss_frame": 877685,
+        "preceding_warning_value": 12,
+        "preceding_warning_frame": 807327,
+        "expected_warning_value": 12,
+        "match": true
+      },
+      {
+        "script": "level5_stage3.dat",
+        "boss_opcode": 168,
+        "boss_frame": 781,
+        "preceding_warning_value": 14,
+        "preceding_warning_frame": 1,
+        "expected_warning_value": 14,
+        "match": true
+      },
+      {
+        "script": "extra2_stage8.dat",
+        "boss_opcode": 166,
+        "boss_frame": 241,
+        "preceding_warning_value": 12,
+        "preceding_warning_frame": 41,
+        "expected_warning_value": 12,
+        "match": true
+      },
+      {
+        "script": "extra5_stage6.dat",
+        "boss_opcode": 166,
+        "boss_frame": 10647,
+        "preceding_warning_value": 12,
+        "preceding_warning_frame": 2448,
+        "expected_warning_value": 12,
+        "match": true
+      },
+      {
+        "script": "extra5_stage6.dat",
+        "boss_opcode": 168,
+        "boss_frame": 33749,
+        "preceding_warning_value": 14,
+        "preceding_warning_frame": 28603,
+        "expected_warning_value": 14,
+        "match": true
+      },
+      {
+        "script": "trial_level5_stage1.dat",
+        "boss_opcode": 166,
+        "boss_frame": 877545,
+        "preceding_warning_value": 12,
+        "preceding_warning_frame": 807327,
+        "expected_warning_value": 12,
+        "match": true
+      }
+    ]
+  },
+  "executable_cross_build_checks": [
+    {
+      "build": "SIIGGHIDRA(1)",
+      "file": "listing_all.txt",
+      "needles": [
+        "Function_822157F0",
+        "stw r10,0x920(r31)",
+        "stw r11,0x91c(r31)"
+      ],
+      "ok": true
+    },
+    {
+      "build": "SIIGMAY9GHIDRA",
+      "file": "strings.csv",
+      "needles": [
+        "SgScript::AnalyzeWarning",
+        "UltimateUfo::Vanish"
+      ],
+      "ok": true
+    },
+    {
+      "build": "SIIGMAY11GHIDRA",
+      "file": "strings.csv",
+      "needles": [
+        "SgScript::AnalyzeWarning",
+        "UltimateUfo::Vanish"
+      ],
+      "ok": true
+    },
+    {
+      "build": "SIIGJUNE10GHIDRA",
+      "file": "strings.csv",
+      "needles": [
+        "SgScript::AnalyzeWarning",
+        "SgScript::PreExecWarning"
+      ],
+      "ok": true
+    },
+    {
+      "build": "SIIGPS3GHIDRA",
+      "file": "strings.csv",
+      "needles": [
+        "AnalyzeWarning"
+      ],
+      "ok": true
+    }
+  ],
+  "conclusions": [
+    "Retail opcode 0x78 writes its first argument into the special reload parameter and resets the transition timer.",
+    "All six retail Water Strider/Ultimate UFO occurrences in this corpus are preceded by the matching WARNING[12]/WARNING[14] request.",
+    "May 9/May 11 preserve UltimateUfo::Vanish and AnalyzeWarning debug identities; June 10 preserves AnalyzeWarning/PreExecWarning; PS3 retail preserves AnalyzeWarning.",
+    "Human airlock/rear-camera labels remain unassigned without a proven specific camera consumer."
+  ]
+}

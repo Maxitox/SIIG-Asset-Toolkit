@@ -1,0 +1,48 @@
+{
+  "format": "SIIG_VISUALIZER_EFFECTBLUR_BLEND_VALIDATION",
+  "release": "2.10.0-dev24",
+  "status": "pass",
+  "retail": {
+    "state_setup": "Function_821595F0",
+    "draw": "Function_82159CB8",
+    "blend_enable_call": "FUN_8224B188(device, 1)",
+    "src_factor_call": "FUN_8224B2A8(device, 6)",
+    "dst_factor_call": "FUN_8224B338(device, 1)",
+    "packed_rb_blendcontrol": "0x01060106",
+    "rgb": {
+      "src": "SrcAlpha",
+      "src_value": 6,
+      "dst": "One",
+      "dst_value": 1,
+      "op": "Add",
+      "op_value": 0
+    },
+    "alpha": {
+      "src": "SrcAlpha",
+      "src_value": 6,
+      "dst": "One",
+      "dst_value": 1,
+      "op": "Add",
+      "op_value": 0
+    }
+  },
+  "corrected_assumption": {
+    "DAT_8200E3C8": "two-element vertex declaration, not a blend-state block"
+  },
+  "browser": {
+    "composite_operation": "lighter",
+    "feedback_global_alpha": "magnify alpha",
+    "xenos_alpha_channel_exact": false
+  },
+  "external_reference": {
+    "project": "Xenia",
+    "file": "src/xenia/gpu/xenos.h",
+    "relationship": "BlendFactor/BlendOp enum documentation only",
+    "code_copied": false,
+    "license": "BSD-3-Clause"
+  },
+  "unresolved": [
+    "exact EffectBlur pixel-shader sample/color math",
+    "exact Canvas premultiplied-alpha equivalence for the feedback target alpha channel"
+  ]
+}

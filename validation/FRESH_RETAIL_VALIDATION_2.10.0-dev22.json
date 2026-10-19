@@ -1,0 +1,71 @@
+{
+  "format": "SIIG_FRESH_RETAIL_VALIDATION",
+  "release": "2.10.0-dev22",
+  "date": "2026-09-17",
+  "status": "pass",
+  "input": {
+    "label": "project-owner supplied Xbox retail archive",
+    "sha256": "fecd319785881ff427f428f75e35424cc182f356fd55017570bcd0328fe6dde9",
+    "size": 172140392,
+    "bundled": false
+  },
+  "execution": {
+    "mode": "clean output start followed by content-addressed --resume after execution-wrapper interruption",
+    "final_exit_code": 0,
+    "gmx_visual_pass": "separate"
+  },
+  "platform": "xbox360",
+  "source_kind": "zip",
+  "resources": 2593,
+  "archive_failures": 0,
+  "reported_errors": 0,
+  "outputs": {
+    "png": 1351,
+    "gltf": 486,
+    "obj": 94,
+    "wav": 86,
+    "wma": 53,
+    "bnk": 0,
+    "collision_png": 153,
+    "anm_csv": 3,
+    "stage_wall_tables": 30,
+    "stage3d_maps": 47,
+    "shader_inventories": 16,
+    "dat_csv": 1334,
+    "map_files": 394,
+    "localization_archives": 2,
+    "ready_files": 69,
+    "stage_explorer": 1,
+    "visualizer_simulator": 1,
+    "asset_viewer": 1
+  },
+  "stage_explorer": {
+    "entries": 92,
+    "runtime_pairs": 78,
+    "commands": 17335
+  },
+  "visualizer": {
+    "timelines": 30,
+    "commands": 243,
+    "parameter_presets": 49,
+    "sequences": 57,
+    "shapes": 10
+  },
+  "asset_viewer": {
+    "indexed_files": 9384,
+    "previewable": 8669,
+    "thumbnails": 8669,
+    "missing_previewable_thumbnails": 0,
+    "hashes_included": true,
+    "linked_data_mode": true
+  },
+  "output_manifest": {
+    "file_count": 16544,
+    "total_bytes": 1031181758,
+    "verify_hashes_checked": 16544,
+    "verify_issues": 0,
+    "verify_exit_code": 0
+  },
+  "privacy_issues": 0,
+  "ok": true
+}

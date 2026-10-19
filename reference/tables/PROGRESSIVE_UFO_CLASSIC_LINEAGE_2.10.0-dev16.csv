@@ -1,0 +1,4 @@
+build,initializer,pose_table,apply_helper,state_usage,result
+Xbox retail,Function_82536720,0x82568180,Function_82127018,major states 5 and 8,same five pose records
+Xbox June 10,Function_82562710,0x825D95B0,Function_82141B38,equivalent recurring state flow,byte-equivalent five pose records
+PS3 retail,_opd_FUN_001c51e8,DAT_0054b610..DAT_0054b67c,_opd_FUN_001c064c,"major-state equivalents call with (15,30,8) and (8,15,5)",same five pose records

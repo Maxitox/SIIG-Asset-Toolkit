@@ -1,0 +1,9 @@
+ending_no,ending_name,terminal_node,achievement_index,achievement_name,executable_mapping
+1,LINK,28,52,SURVIVAL_01_CLEAR,(terminal_node-28)&7 = 0; achievement=(ending_index&7)+52
+2,CIRCLE,29,53,SURVIVAL_02_CLEAR,(terminal_node-28)&7 = 1; achievement=(ending_index&7)+52
+3,VIRTUAL,30,54,SURVIVAL_03_CLEAR,(terminal_node-28)&7 = 2; achievement=(ending_index&7)+52
+4,ETERNITY,31,55,SURVIVAL_04_CLEAR,(terminal_node-28)&7 = 3; achievement=(ending_index&7)+52
+5,CUT OFF,32,56,SURVIVAL_05_CLEAR,(terminal_node-28)&7 = 4; achievement=(ending_index&7)+52
+6,IMMORTALITY,33,57,SURVIVAL_06_CLEAR,(terminal_node-28)&7 = 5; achievement=(ending_index&7)+52
+7,PHANTASM,34,58,SURVIVAL_07_CLEAR,(terminal_node-28)&7 = 6; achievement=(ending_index&7)+52
+8,PARALLEL,35,59,SURVIVAL_08_CLEAR,(terminal_node-28)&7 = 7; achievement=(ending_index&7)+52

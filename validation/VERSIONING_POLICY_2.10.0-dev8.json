@@ -1,0 +1,10 @@
+{
+  "format": "SIIG_VERSIONING_POLICY_VALIDATION",
+  "release": "2.10.0-dev8",
+  "status": "pass",
+  "previous": "2.10.0-dev7",
+  "toolkit_version": "2.10.0-dev8",
+  "gui_version": "0.19.0-dev8",
+  "reason": "incremental 2.10 development checkpoint: five-build MANDALA initial-combat runtime assembly; no incompatible public format break",
+  "ok": true
+}

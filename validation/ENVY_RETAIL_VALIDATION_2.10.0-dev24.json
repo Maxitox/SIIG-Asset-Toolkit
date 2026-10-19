@@ -1,0 +1,85 @@
+{
+  "catalogs": [
+    {
+      "animation_names": [
+        "envy_piece_00:emy_045_clip_00",
+        "envy_piece_01:emy_045_clip_00",
+        "envy_piece_02:emy_045_clip_00",
+        "envy_piece_03:emy_045_clip_00",
+        "envy_piece_04:emy_045_clip_00",
+        "envy_piece_05:emy_045_clip_00",
+        "envy_piece_06:emy_045_clip_00",
+        "envy_piece_07:emy_045_clip_00",
+        "envy_piece_08:emy_045_clip_00",
+        "envy_piece_09:emy_045_clip_00",
+        "envy_piece_10:emy_045_clip_00",
+        "envy_piece_11:emy_045_clip_00",
+        "envy_piece_12:emy_045_clip_00",
+        "envy_piece_13:emy_045_clip_00",
+        "envy_piece_14:emy_045_clip_00",
+        "envy_piece_15:emy_045_clip_00",
+        "envy_piece_16:emy_045_clip_00",
+        "envy_piece_17:emy_045_clip_00",
+        "envy_piece_18:emy_045_clip_00",
+        "envy_piece_19:emy_045_clip_00"
+      ],
+      "animations": 20,
+      "catalog": "envy_retail_level4_2_growth_complete",
+      "generated_gltf_sha256": "442c89a7a01f7370a13ee069faf2d985dba2667ee7905f052e1a12e40219664c",
+      "instances": 20,
+      "meshes": 40,
+      "nodes": 80
+    },
+    {
+      "animation_names": [
+        "envy_piece_00:emy_045_clip_00",
+        "envy_piece_01:emy_045_clip_00",
+        "envy_piece_02:emy_045_clip_00",
+        "envy_piece_03:emy_045_clip_00",
+        "envy_piece_04:emy_045_clip_00",
+        "envy_piece_05:emy_045_clip_00"
+      ],
+      "animations": 6,
+      "catalog": "envy_zigzag_preview_06",
+      "generated_gltf_sha256": "8007b87f43cf17d9c01d2a796ac8663dfc31ceb70b81e1059d2b574fe9078d6b",
+      "instances": 6,
+      "meshes": 12,
+      "nodes": 24
+    }
+  ],
+  "evidence_boundary": "runtime+1 ownership, DAT count/heading and normalized 10-unit/plus-minus-2 chain geometry are executable-backed; absolute moving base and later live fly-away are not baked",
+  "format": "SIIG_DEV_RETAIL_VALIDATION",
+  "input": {
+    "model": "emy_045.gmx",
+    "note": "external retail asset used only for validation; not bundled",
+    "runtime_type": "0x98",
+    "sha256": "25e3bb05bace6bb9aca3e87c22ea43e1f05b6be284218eb31e693e11bce1972d"
+  },
+  "release": "2.10.0-dev24",
+  "selftest": {
+    "failed": 0,
+    "passed": 123,
+    "report_external": "selftest_wrath_123.json"
+  },
+  "source_dat": {
+    "args": [
+      0,
+      10,
+      256,
+      20,
+      -10,
+      20,
+      361,
+      20,
+      5,
+      0,
+      3,
+      1280
+    ],
+    "command_index": 56,
+    "file": "level4_stage2.dat",
+    "frame": 5057
+  },
+  "status": "pass",
+  "subject": "ENVY runtime 0x98 chain reconstruction"
+}

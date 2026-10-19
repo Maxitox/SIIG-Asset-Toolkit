@@ -1,0 +1,10 @@
+{
+  "format": "SIIG_VERSIONING_POLICY_VALIDATION",
+  "release": "2.10.0-dev17",
+  "status": "pass",
+  "previous": "2.10.0-dev16",
+  "toolkit_version": "2.10.0-dev17",
+  "gui_version": "0.28.0-dev17",
+  "reason": "incremental 2.10 development checkpoint: executable-backed two-phase SQUID native-locator assembly with state-8 leg disable transition; no incompatible public format break",
+  "ok": true
+}

@@ -1,0 +1,47 @@
+{
+  "format": "SIIG_EST_EFFECT_MODEL_AUDIT_VALIDATION",
+  "release": "2.10.0-dev24",
+  "checkpoint": "WIP180",
+  "status": "pass",
+  "model_range": [
+    "est_011",
+    "est_021"
+  ],
+  "model_count": 11,
+  "identity_split": {
+    "project_owner_confirmed_effect": 2,
+    "project_owner_speculative": 9
+  },
+  "top_level_runtime_registered_models": [
+    "est_012"
+  ],
+  "est_012_registry": {
+    "build_count": 5,
+    "runtime_types": [
+      "0xE6",
+      "0xE7"
+    ],
+    "retail_lineage_runtime": "0xE6",
+    "may_prototype_runtime": "0xE7"
+  },
+  "geometry_duplicate_groups": [
+    {
+      "members": [
+        "est_011",
+        "est_014"
+      ],
+      "relation": "converted glTF binary geometry payload byte-identical; native GMX hashes differ"
+    }
+  ],
+  "other_duplicate_geometry_pairs": 0,
+  "confirmed_project_owner_usages": {
+    "est_013": "PROGRESSIVE UFO missiles",
+    "est_015": "WATER STRIDER trail spikes"
+  },
+  "retained_boundaries": [
+    "exact executable owner/controller for est_011..021",
+    "est_016 ULTIMATE UFO / WRATH beam hypothesis",
+    "meaning of est_ prefix beyond observed effect/projectile orientation"
+  ],
+  "external_inputs_bundled": false
+}

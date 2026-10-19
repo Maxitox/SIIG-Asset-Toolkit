@@ -1,0 +1,180 @@
+{
+  "format": "SIIG_IOS_CONSOLE_BOSS_MOVER_LINEAGE_VALIDATION",
+  "release": "2.8.0-dev20",
+  "date": "2026-09-10",
+  "status": "pass",
+  "dispatch_identity": {
+    "mobile_original_type_ids": [
+      70,
+      71,
+      72,
+      73,
+      74,
+      75
+    ],
+    "console_dispatch_ids": [
+      "0x46",
+      "0x47",
+      "0x48",
+      "0x49",
+      "0x4A",
+      "0x4B"
+    ],
+    "identity": "exact numeric identity: decimal 70..75 == hex 0x46..0x4B"
+  },
+  "dispatchers": {
+    "xbox_may9": "0x8225E9D0",
+    "xbox_may11": "0x82260668",
+    "xbox_june10": "0x8226A988",
+    "xbox_retail": "0x822434B8",
+    "ps3_retail": "0x0012FB70"
+  },
+  "constructors_recovered": {
+    "count": 6,
+    "may9_to_may11_all_100_percent": true,
+    "june10_to_retail_all_100_percent": true,
+    "may11_to_june10_percent": {
+      "THE_MOON": 87.947883,
+      "THE_SUN": 86.072423,
+      "GIGANTIC_UFO": 87.99505,
+      "LADYBUG": 89.208633,
+      "MANDALA": 92.691316,
+      "UNKNOWN": 92.075472
+    }
+  },
+  "movers": {
+    "THE_MOON": {
+      "type_id": 70,
+      "ios_symbol": "moveTheMoon",
+      "ios_address": "0x000D0014",
+      "xbox": {
+        "May 9": "0x82254920",
+        "May 11": "0x82256570",
+        "June 10": "0x822611D8",
+        "Retail": "0x82239D08"
+      },
+      "ps3_retail": "0x0011459C",
+      "similarity_percent": {
+        "May9->May11": 100.0,
+        "May11->June10": 89.251359,
+        "June10->Retail raw": 100.0
+      },
+      "semantic_equivalence_june10_retail": "yes",
+      "anchor": "sound 0x80 + vibration 100 event sequence; thresholds 122/132 mobile -> 262/272 console base, preserving 10-unit spacing"
+    },
+    "THE_SUN": {
+      "type_id": 71,
+      "ios_symbol": "moveTheSun",
+      "ios_address": "0x000D8000",
+      "xbox": {
+        "May 9": "0x82255CC8",
+        "May 11": "0x82257918",
+        "June 10": "0x82262390",
+        "Retail": "0x8223AEC0"
+      },
+      "ps3_retail": "0x001121A4",
+      "similarity_percent": {
+        "May9->May11": 100.0,
+        "May11->June10": 72.906404,
+        "June10->Retail raw": 100.0
+      },
+      "semantic_equivalence_june10_retail": "yes",
+      "anchor": "four-pair +/-512 ramp toward 6144 preserved; console expresses 512 as 15360 divided by timing denominator"
+    },
+    "GIGANTIC_UFO": {
+      "type_id": 72,
+      "ios_symbol": "moveGiganticUfo",
+      "ios_address": "0x000D64F8",
+      "xbox": {
+        "May 9": "0x822574A8",
+        "May 11": "0x822590F8",
+        "June 10": "0x82263910",
+        "Retail": "0x8223C440"
+      },
+      "ps3_retail": "0x0010DB14",
+      "similarity_percent": {
+        "May9->May11": 100.0,
+        "May11->June10": 92.74524,
+        "June10->Retail raw": 99.758571
+      },
+      "semantic_equivalence_june10_retail": "yes; raw delta is relocated global-address materialization only",
+      "anchor": "original +4096 placement path preserved; V2 +18432 path absent"
+    },
+    "LADYBUG": {
+      "type_id": 73,
+      "ios_symbol": "moveLadybug",
+      "ios_address": "0x000D4D7C",
+      "xbox": {
+        "May 9": "0x82259520",
+        "May 11": "0x8225B170",
+        "June 10": "0x82265970",
+        "Retail": "0x8223E4A0"
+      },
+      "ps3_retail": "0x00109DB8",
+      "similarity_percent": {
+        "May9->May11": 99.564438,
+        "May11->June10": 82.869154,
+        "June10->Retail raw": 100.0
+      },
+      "semantic_equivalence_june10_retail": "yes",
+      "anchor": "inherited 1.1x growth path; May11 adds unresolved global-state 0x10 guard at state 0x14"
+    },
+    "MANDALA": {
+      "type_id": 74,
+      "ios_symbol": "moveMandala",
+      "ios_address": "0x000D223C",
+      "xbox": {
+        "May 9": "0x8225B390",
+        "May 11": "0x8225D000",
+        "June 10": "0x82267660",
+        "Retail": "0x82240190"
+      },
+      "ps3_retail": "0x001084CC",
+      "similarity_percent": {
+        "May9->May11": 100.0,
+        "May11->June10": 89.570552,
+        "June10->Retail raw": 100.0
+      },
+      "semantic_equivalence_june10_retail": "yes",
+      "anchor": "trig geometry coefficients 109 and 69 plus 20/8 iteration geometry survive; console uses runtime root/base placement"
+    },
+    "UNKNOWN": {
+      "type_id": 75,
+      "ios_symbol": "moveUnknown",
+      "ios_address": "0x000D2C30",
+      "xbox": {
+        "May 9": "0x8225C0C8",
+        "May 11": "0x8225DD38",
+        "June 10": "0x822682A0",
+        "Retail": "0x82240DD0"
+      },
+      "ps3_retail": "0x001039EC",
+      "similarity_percent": {
+        "May9->May11": 100.0,
+        "May11->June10": 91.432617,
+        "June10->Retail raw": 99.853372
+      },
+      "semantic_equivalence_june10_retail": "yes; raw delta is relocated global-address materialization only",
+      "anchor": "original +/-2560 helper motion preserved; V2 doubling and setVer2Destroy path absent"
+    }
+  },
+  "variant_lineage": {
+    "GIGANTIC_UFO": "console keeps original +4096 placement path, not V2 +18432",
+    "UNKNOWN": "console keeps original +/-2560 helper motion; no V2 doubling or setVer2Destroy",
+    "THE_SUN": "console keeps original type-71 four-pair ramp; V2 bypasses it"
+  },
+  "prototype_retune": {
+    "boss": "LADYBUG",
+    "window": "May 9 -> May 11",
+    "state": "0x14",
+    "change": "global-state != 0x10 guard added around inherited three-field 1.1x growth/clear path",
+    "global_state_meaning": "unresolved"
+  },
+  "source_only": true,
+  "bundled_raw_executable_or_decompile": false,
+  "reference_files": [
+    "reference/tables/IOS_CONSOLE_BOSS_MOVER_LINEAGE_DEV20.csv",
+    "reference/tables/XBOX_BOSS_CONSTRUCTOR_EVOLUTION_DEV20.csv",
+    "docs/research/IOS_CONSOLE_BOSS_STATE_MACHINE_LINEAGE_DEV20.md"
+  ]
+}

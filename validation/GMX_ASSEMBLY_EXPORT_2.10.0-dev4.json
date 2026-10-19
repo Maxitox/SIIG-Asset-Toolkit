@@ -1,0 +1,37 @@
+{
+  "format": "SIIG_GMX_ASSEMBLY_EXPORT_VALIDATION",
+  "release": "2.10.0-dev4",
+  "status": "pass",
+  "generic_export": "manifest-driven multi-GMX glTF assembly with explicit outer matrices, hierarchy/resource remapping and source-hash report",
+  "unresolved_transform_guard": true,
+  "pose_sample": {
+    "supported": true,
+    "validation": "non-negative and in range for every native animation track",
+    "behavior": "bake native sample into static node TRS and suppress posed instance animation channels"
+  },
+  "progressive_ufo_catalog": {
+    "status": "inherited/proven from 2.10.0-dev3",
+    "direct_catalog_command": "gmx-assemble-catalog progressive_ufo"
+  },
+  "crab_catalog": {
+    "membership_count_status": "proven",
+    "instances": [
+      "1x bos_013.gmx (0xA7)",
+      "1x bos_013b.gmx (0xCD)",
+      "1x bos_013a.gmx (0xCC)",
+      "2x bos_013c.gmx (0xCE)",
+      "4x bos_013d.gmx (0xCF)"
+    ],
+    "runtime_transform_status": "first-visible frame-167 formation recovered/cross-checked",
+    "root_pose_sample": 167,
+    "body_shell_pose_sample": 0,
+    "evidence": "June Xbox + retail Xbox + retail PS3 runtime state/locator code plus GMX/ANM model evidence",
+    "guessed_placement": false,
+    "direct_catalog_command": "gmx-assemble-catalog crab"
+  },
+  "selftests": [
+    "GMX multi-file assembly export",
+    "PROGRESSIVE UFO runtime assembly preset",
+    "CRAB runtime assembly pose"
+  ]
+}

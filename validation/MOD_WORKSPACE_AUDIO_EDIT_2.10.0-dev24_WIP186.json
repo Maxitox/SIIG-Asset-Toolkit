@@ -1,0 +1,37 @@
+{
+  "format": "SIIG_MOD_WORKSPACE_AUDIO_EDIT_VALIDATION",
+  "release": "2.10.0-dev24",
+  "checkpoint": "WIP186",
+  "gui_version": "0.47.0-dev24",
+  "xbox360": {
+    "surface": "sound.bin / media/sound -> AUDIO \u00b7 EDIT",
+    "canonical_edit": "named PCM16 WAV",
+    "constraints": [
+      "same channel count",
+      "same sample rate",
+      "same sample count"
+    ],
+    "native_rebuild": "standard XACT XWB edited slots -> PCM16; untouched slots preserved",
+    "big_endian_pcm16_byteswap": true,
+    "xma2_encoder_bundled": false,
+    "synthetic_regression": "Exported -> Edited -> archive override; rebuilt slot reparses as PCM16 with verified big-endian first sample"
+  },
+  "ps3": {
+    "surface": "SBlk/989SND .bnk resource",
+    "canonical_edit": "mono PCM16 WAV",
+    "constraints": [
+      "mono",
+      "same sample rate",
+      "same sample count",
+      "existing PS-ADPCM slot"
+    ],
+    "native_rebuild": "clean-room PS-ADPCM fixed-slot replacement",
+    "synthetic_regression": "Edited -> staged native .bnk; slot structure unchanged"
+  },
+  "runtime_acceptance": "not yet claimed; emulator/hardware test required",
+  "remaining": [
+    "native XMA2 re-encoding",
+    "variable-duration/topology-changing XWB/SBlk authoring",
+    "PS3 SDAT re-encryption"
+  ]
+}

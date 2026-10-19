@@ -1,0 +1,7 @@
+original_boss,original_opcode,original_es_init2_type_x_capacity,v2_boss,v2_opcode,v2_es_init2_type_x_capacity,executable_observation
+THE_MOON,0x0046,70x5;36x20,THE_MOON_V2,0x004C,100x5;55x80,same moveTheMoon engine; V2 constructor includes randomized initialization
+THE_SUN,0x0047,71x9;37x8;38x36;39x20;46x4,THE_SUN_V2,0x004D,101x9;56x8;59x36;57x60;46x4,same moveTheSun engine; helper families differ and one pool expands 20->60
+GIGANTIC_UFO,0x0048,72x59;40x20;41x20;42x4;43x2;44x2;23x10;28x10;60x30;29x30;80x4,GIGANTIC_UFO_V2,0x004E,102x59;63x20;60x40;61x4;62x80;23x10;28x10;60x30;29x30;80x4,same moveGiganticUfo engine; explicit normal/V2 type branches
+LADYBUG,0x0049,73x5;45x40;46x20;47x4,LADYBUG_V2,0x004F,103x5;66x40;65x48;64x40;67x80,same moveLadybug engine; largest constructor/helper-family expansion among six pairs
+MANDALA,0x004A,74x72;48x100;49x10;50x40,MANDALA_V2,0x0050,104x72;68x80;49x10;71x40,same moveMandala engine; helper types/capacities change
+UNKNOWN,0x004B,75x11;51x30;52x30;53x80,UNKNOWN_V2,0x0051,105x11;72x80;73x40;74x80,same moveUnknown engine; explicit V2 branches and setVer2Destroy

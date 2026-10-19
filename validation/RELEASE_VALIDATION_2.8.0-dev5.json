@@ -1,0 +1,45 @@
+{
+  "format": "SIIG_RELEASE_VALIDATION",
+  "release": "2.8.0-dev5",
+  "date": "2026-09-05",
+  "status": "development-pass",
+  "selftest": {
+    "passed": 29,
+    "failed": 0,
+    "ok": true,
+    "report": "validation/SELFTEST_2.8.0-dev5.json"
+  },
+  "inherited_release_gate": {
+    "from": "2.8.0-dev4",
+    "report": "validation/RELEASE_VALIDATION_2.8.0-dev4.json",
+    "note": "Dev5 changes camera-preset semantic analysis/reference data/documentation only. Direct retail package extraction, SDAT/audio, route runtime/DAT coupling, Stage Explorer, Asset Viewer, and prior real-corpus gates remain inherited from the frozen dev4 checkpoint."
+  },
+  "dev5_camera_semantic_validation": {
+    "report": "validation/CAMERA_SEMANTIC_VALIDATION_2.8.0-dev5.json",
+    "preset_rows": 32,
+    "schema_words": 30,
+    "fog_profiles_per_preset": 3,
+    "word11_constant_all_presets": true,
+    "word11_status": "shared model/material scalar proven; exact virtual-setter semantic unresolved",
+    "dynamic_response_regression": "pass"
+  },
+  "source_only_audit": {
+    "status": "pass",
+    "report": "validation/SOURCE_ONLY_AUDIT_2.8.0-dev5.json",
+    "game_assets": 0,
+    "external_executable_magic": 0,
+    "archive_binary_members": 0,
+    "private_runtime_paths": 0,
+    "python_bytecode": 0,
+    "third_party_binaries_bundled": false,
+    "sources_rows": 18
+  },
+  "limitations": [
+    "Camera preset word 11 is proven to be a shared model/material scalar forwarded to collada_edge1/collada_face1/collada_face2, but the exact virtual-setter property meaning remains unresolved.",
+    "Combined route orientation, route position, camera preset/animation state, and field-model animation are not yet one executable-faithful playback model.",
+    "Complete authoritative route-to-DAT pairing and route-object activation timing remain unresolved; route-playback requires caller-supplied pairing/start frame.",
+    "Instruction-level RSX/Xenos shader disassembly/translation remains future work.",
+    "The bundled Blender add-on has not been exercised inside a real Blender UI/runtime.",
+    "The project owner has not selected a license for original toolkit code."
+  ]
+}

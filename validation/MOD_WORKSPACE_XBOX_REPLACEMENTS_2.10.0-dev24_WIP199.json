@@ -1,0 +1,35 @@
+{
+  "format": "SIIG_VALIDATION_RECORD",
+  "toolkit_version": "2.10.0-dev24",
+  "checkpoint": "WIP199",
+  "status": "pass",
+  "scope": "Xbox Mod Workspace package-ready archive reconstruction",
+  "fixes": {
+    "xbox_gz_sdat": "Xbox .bin.gz.sdat paths are gzip-wrapped directly; they are not routed through the PS3 NPDRM/SDAT limitation",
+    "raw_sound_bin": "raw .bin package paths remain raw BBX",
+    "single_deployment_tree": "Xbox builds emit deployment copies only under build/xbox360_replacements and remove legacy game_patch/decompressed_bbx mirrors",
+    "stale_output_cleanup": "xbox360_replacements is recreated for each build",
+    "workspace_path_repair": "known Xbox retail wrapper paths lost by older updater-generated manifest.source values are repaired when a workspace loads",
+    "updater_provenance": "future asset refreshes preserve the previous source label instead of substituting retained decompressed_bbx/*.bin"
+  },
+  "synthetic_regression": {
+    "message_path": "media/message.bin.gz.sdat",
+    "message_wrapper": "gzip",
+    "message_payload": "verified BBX containing edited readable localization",
+    "sound_path": "media/sound.bin",
+    "sound_wrapper": "raw_bbx",
+    "duplicate_build_trees_absent": [
+      "build/game_patch",
+      "build/decompressed_bbx"
+    ],
+    "replacement_manifest": "SIIG_XBOX360_REPLACEMENTS_V2"
+  },
+  "real_package_metadata_probe": {
+    "message_package_name": "Media/message.bin.gz.sdat",
+    "message_leading_format": "gzip",
+    "message_decompressed_format": "BBX",
+    "sound_package_name": "Media/sound.bin",
+    "sound_leading_format": "BBX",
+    "payload_bytes_bundled": false
+  }
+}

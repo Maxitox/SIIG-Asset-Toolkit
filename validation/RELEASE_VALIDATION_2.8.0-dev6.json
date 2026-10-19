@@ -1,0 +1,57 @@
+{
+  "format": "SIIG_RELEASE_VALIDATION",
+  "release": "2.8.0-dev6",
+  "date": "2026-09-06",
+  "status": "development-pass",
+  "selftest": {
+    "passed": 31,
+    "failed": 0,
+    "ok": true,
+    "report": "validation/SELFTEST_2.8.0-dev6.json"
+  },
+  "inherited_release_gate": {
+    "from": "2.8.0-dev5",
+    "report": "validation/RELEASE_VALIDATION_2.8.0-dev5.json",
+    "note": "Dev6 changes procedural route orientation, procedural camera world-state combination, combined playback, tests, and documentation. Direct retail package extraction, SDAT/audio, Stage Explorer, Asset Viewer, and earlier real-package/source-only gates remain inherited from frozen prior checkpoints."
+  },
+  "dev6_runtime_camera_route_validation": {
+    "report": "validation/RUNTIME_CAMERA_ROUTE_VALIDATION_2.8.0-dev6.json",
+    "real_route_files_resampleable": 46,
+    "route_empty_files_skipped": 1,
+    "files_exercising_hermite_orientation": 6,
+    "total_orientation_updates_at_100_unit_analysis_spacing": 356,
+    "explicit_combined_pair": {
+      "stage": "Xmap3_1.bin",
+      "dat": "level3_stage1.dat",
+      "camera_preset": 0,
+      "runtime_x": 213.0,
+      "runtime_y": 233.0,
+      "runtime_updates_simulated": 265020,
+      "scroll02_events": 7,
+      "termination": "route_finished",
+      "emit_every": 60,
+      "rows_written": 4418,
+      "policy": "preset/runtime coordinates are deterministic validation inputs, not inferred gameplay activation"
+    }
+  },
+  "source_only_audit": {
+    "status": "pass",
+    "report": "validation/SOURCE_ONLY_AUDIT_2.8.0-dev6.json",
+    "game_assets": 0,
+    "external_executable_magic": 0,
+    "archive_binary_members": 0,
+    "private_runtime_paths": 0,
+    "python_bytecode": 0,
+    "third_party_binaries_bundled": false,
+    "sources_rows": 18
+  },
+  "limitations": [
+    "Authoritative route-to-DAT object-instantiation timing and camera-preset/runtime-coordinate activation remain unresolved; combined playback requires explicit caller inputs.",
+    "Animated cam1/int1 camera mode and fld014/fld015 field-orientation mode are not yet integrated with procedural playback.",
+    "Runtime fog-profile selection over time remains unresolved.",
+    "Camera preset word 11 remains a proven shared model/material scalar with unresolved exact virtual-setter meaning.",
+    "Instruction-level RSX/Xenos shader disassembly/translation remains future work.",
+    "The bundled Blender add-on has not been exercised inside a real Blender UI/runtime.",
+    "The project owner has not selected a license for original toolkit code."
+  ]
+}

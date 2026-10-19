@@ -1,0 +1,98 @@
+{
+  "format": "SIIG_RELEASE_VALIDATION",
+  "release": "2.8.0-dev1",
+  "date": "2026-09-05",
+  "status": "development-pass",
+  "selftest": {
+    "passed": 23,
+    "failed": 0,
+    "ok": true
+  },
+  "retail_validation": {
+    "xbox360": {
+      "input_type": "stfs",
+      "outer_files": 94,
+      "resources": 2593,
+      "hash_mismatches": 0,
+      "archive_failures": 0,
+      "png": 899,
+      "wav": 86,
+      "wma": 53,
+      "errors": 0,
+      "stage_explorer": {
+        "version": 5,
+        "entries": 92,
+        "runtime_pairings": 78
+      },
+      "asset_viewer": {
+        "files": 7355,
+        "previewable": 3520,
+        "thumbnails": 3520,
+        "missing": 0
+      },
+      "output_verification": {
+        "ok": true,
+        "hashes_checked": 9855,
+        "issues": 0,
+        "warnings": 0,
+        "mode": "hash/privacy"
+      }
+    },
+    "ps3": {
+      "input_type": "ps3_pkg",
+      "outer_files": 88,
+      "resources": 2593,
+      "hash_mismatches": 0,
+      "archive_failures": 0,
+      "wav": 84,
+      "sdat_internal": 6,
+      "sdat_authenticated_blocks": 18,
+      "sdat_fallback": 0,
+      "errors": 0,
+      "stage_explorer": {
+        "version": 5,
+        "entries": 92,
+        "runtime_pairings": 78
+      },
+      "asset_viewer": {
+        "files": 8264,
+        "previewable": 3991,
+        "thumbnails": 3991,
+        "missing": 0
+      },
+      "output_verification": {
+        "ok": true,
+        "hashes_checked": 11195,
+        "issues": 0,
+        "warnings": 0,
+        "mode": "hash/privacy"
+      }
+    }
+  },
+  "source_only_audit": {
+    "game_asset_extensions_found": [],
+    "external_executable_magic_found": [],
+    "archive_binary_members_found": [],
+    "private_runtime_paths_found": [],
+    "bundled_archives": [
+      "addons/SIIG_Blender_Addon_v0.1.0.zip"
+    ],
+    "sources_csv": {
+      "rows": 18,
+      "columns": 10,
+      "ragged_rows": 0
+    },
+    "tcrf_used": false,
+    "third_party_binaries_bundled": false
+  },
+  "publication_gates": {
+    "original_project_license_selected": false,
+    "blender_ui_test_completed": false,
+    "modified_bbx_game_acceptance_tested": false,
+    "xenos_shader_isa_disassembled": false
+  },
+  "notes": [
+    "Retail extraction/conversion, Stage Explorer, Asset Viewer, and output-manifest gates were validated independently because a single resumed full-rip command plus viewer generation exceeds the execution harness window.",
+    "Source-only package intentionally excludes proprietary game packages, extracted assets, Ghidra exports, and generated game-data viewers."
+  ]
+}

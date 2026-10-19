@@ -1,0 +1,70 @@
+{
+  "format": "SIIG_VISUALIZER_POSITION_COORDINATES_VALIDATION",
+  "release": "2.10.0-dev24",
+  "checkpoint": "WIP171",
+  "status": "pass",
+  "visualizer_dataset_version": 16,
+  "supersedes": "VISUALIZER_POSITION_COORDINATES_2.10.0-dev24_WIP170.json",
+  "correction": "WIP170 decoded the file-image float2 table before its startup initializer patched the upper/lower Y rows.",
+  "target": {
+    "width": 1280,
+    "height": 720,
+    "origin": [640, 360],
+    "x_axis": "right-positive",
+    "y_axis": "up-positive"
+  },
+  "canvas_bridge": {
+    "x": "640 + game_x",
+    "y": "360 - game_y"
+  },
+  "runtime_position_fix_table": [
+    {"raw": 0, "coord": [0, 0], "mode": "free_position_path"},
+    {"raw": 1, "coord": [-448, 308], "mode": "upper_left"},
+    {"raw": 2, "coord": [0, 308], "mode": "upper_center"},
+    {"raw": 3, "coord": [448, 308], "mode": "upper_right"},
+    {"raw": 4, "coord": [-448, 0], "mode": "middle_left"},
+    {"raw": 5, "coord": [0, 0], "mode": "fixed_center"},
+    {"raw": 6, "coord": [448, 0], "mode": "middle_right"},
+    {"raw": 7, "coord": [-448, -308], "mode": "lower_left"},
+    {"raw": 8, "coord": [0, -308], "mode": "lower_center"},
+    {"raw": 9, "coord": [448, -308], "mode": "lower_right"}
+  ],
+  "runtime_canvas_anchors": [
+    [640, 360], [192, 52], [640, 52], [1088, 52], [192, 360],
+    [640, 360], [1088, 360], [192, 668], [640, 668], [1088, 668]
+  ],
+  "startup_initializer": {
+    "june10_address": "0x82564470",
+    "table_base": "0x82574250",
+    "vertical_constant_address": "0x82574248",
+    "vertical_constant_hex": "0xC39A0000",
+    "vertical_constant_float": -308.0,
+    "upper_row_patch": "+308 to Y words of raw 1,2,3",
+    "lower_row_patch": "-308 to Y words of raw 7,8,9",
+    "middle_row": "raw 4,5,6 remain Y=0"
+  },
+  "cross_build": {
+    "may11_same_patch_pattern": true,
+    "retail_xbox_same_patch_pattern": true
+  },
+  "owner_capture_crosscheck": {
+    "reference": "June 10 Misc segment 3, approximately 1:34-2:22",
+    "observed_grid": "raw 1..9 upper/middle/lower x left/center/right; raw 0 centered with default free (0,0)",
+    "bundled": false
+  },
+  "same_stage_free_position_crosscheck": {
+    "sequence": 4,
+    "parameter": 3,
+    "raw_position_fix": 0,
+    "free_position": [10, 360],
+    "expected_canvas": [650, 0]
+  },
+  "regression": {
+    "all_raw_indices_preserved": true,
+    "alias_collapse_removed": true,
+    "runtime_initializer_patch_modeled": true,
+    "3x3_canvas_anchors_checked": true
+  },
+  "source_only": true,
+  "proprietary_validation_inputs_bundled": false
+}

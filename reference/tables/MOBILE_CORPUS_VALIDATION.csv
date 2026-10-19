@@ -1,0 +1,4 @@
+corpus,dat_files,dat_commands,map_files,map_layers_declared,map_nonempty_layers,map_cells,map_nonzero_cells,parse_failures
+iOS 4.1.0 authored,78,15498,83,324,78,663320,,0
+iOS 4.1.0 generator,581,3665,330,990,645,121472,38253,0
+Android 1.0.4 authored,78,13591,80,315,52,471456,,0

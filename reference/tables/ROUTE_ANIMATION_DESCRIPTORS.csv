@@ -1,0 +1,3 @@
+﻿descriptor_index,model_name,gmx_file,start_frame,end_frame,loop_flag,loop,runtime_matrix_samples,runtime_clock_hz,runtime_note
+0,fld015,fld015.gmx,0,6300,0,False,6301,30,externally frame-driven field model; descriptor is non-loop
+1,fld014,fld014.gmx,0,1440,1,True,1440,30,externally frame-driven field model; frame 1440 modulo-wraps to matrix sample 0

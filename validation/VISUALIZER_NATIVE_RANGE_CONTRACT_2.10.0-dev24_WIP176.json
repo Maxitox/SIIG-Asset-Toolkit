@@ -1,0 +1,49 @@
+{
+  "format": "SIIG_VISUALIZER_NATIVE_RANGE_CONTRACT_VALIDATION",
+  "release": "2.10.0-dev24",
+  "checkpoint": "WIP176",
+  "status": "pass",
+  "visualizer_dataset_version": 19,
+  "hardware_assert": {
+    "observed": true,
+    "capture_date": "2026-09-20",
+    "build": "June 10 prototype Visualizer Check Mode",
+    "method": "VisualizerMain::SetMagnifyAlpha",
+    "source_line_decimal": 446,
+    "condition": "a1 >= a0",
+    "message": "Magnify Alpha is invalid",
+    "capture_media_bundled": false
+  },
+  "executable_contract": {
+    "magnify_scale_x": "June10 Function_821750F8: x1 >= x0",
+    "magnify_scale_y": "June10 Function_821750F8: y1 >= y0",
+    "magnify_alpha": "June10 Function_821751B0: a1 >= a0",
+    "shape_rgba": "June10 Function_82174E88: each channel max >= min",
+    "clear_rgba_range": "June10 Function_82174FA8: each channel max >= min; Check Mode BG controls are single values",
+    "shape_scale_xy": "ParameterSet indices 17..20 call FUN_821750e0, which stores four floats without the same range-order assertion"
+  },
+  "simulator_enforced_pairs": [
+    "magnify_scale_x",
+    "magnify_scale_y",
+    "magnify_alpha",
+    "shape_r",
+    "shape_g",
+    "shape_b",
+    "shape_a"
+  ],
+  "simulator_policy": "preserve native valid domain by clamping the opposite endpoint to the edited value; do not reproduce the native debug assertion",
+  "deliberately_not_generalized": {
+    "shape_scale_xy": true,
+    "reason": "no equivalent range-order assertion in the recovered June 10 setter"
+  },
+  "same_batch_corroboration": {
+    "capture_count": 8,
+    "container": "MKV accepted directly; no user conversion required",
+    "add_rotation": "consistent with Rotation Base + Add Rotation * volume, including negative direction",
+    "fix_rotation": "nonzero direct signed-degree override; full-turn sweep wraps visually",
+    "magnify_xy": "strong 1.03..1.30-style ranges visibly track BGM interpolation",
+    "bgm_check_mode": "quiet-to-loud experiments remain consistent with raw linear 0..1 stereo peak mean",
+    "bgm_phase_boundary_closed": false
+  },
+  "source_package_contains_capture_media": false
+}

@@ -1,0 +1,10 @@
+{
+  "format": "SIIG_VERSIONING_POLICY_VALIDATION",
+  "release": "2.10.0-dev16",
+  "status": "pass",
+  "previous": "2.10.0-dev15",
+  "toolkit_version": "2.10.0-dev16",
+  "gui_version": "0.27.0-dev16",
+  "reason": "incremental 2.10 development checkpoint: executable-backed second PROGRESSIVE UFO classic formation with original dev3 formation preserved; no incompatible public format break",
+  "ok": true
+}

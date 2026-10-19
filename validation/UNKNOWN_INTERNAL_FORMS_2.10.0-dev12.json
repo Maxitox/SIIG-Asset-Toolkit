@@ -1,0 +1,237 @@
+{
+  "format": "SIIG_UNKNOWN_INTERNAL_FORMS_VALIDATION",
+  "release": "2.10.0-dev12",
+  "status": "pass",
+  "runtime_type": "0x4B",
+  "model": "bos_006.gmx",
+  "retail_xbox": {
+    "draw": "0x821302E8",
+    "move": "0x82240DD0",
+    "name_pointer_table": "0x8200B068",
+    "normal_counter_wrap": "12 * timing_scale",
+    "selector": "floor(counter/timing_scale)%14 outside state-0 override",
+    "state_0": "forces uk01; counter decreases by 6 until state 1",
+    "state_23": "counter frozen"
+  },
+  "june10_xbox": {
+    "draw": "0x8214B4C0",
+    "move": "0x822682A0",
+    "name_pointer_table": "0x820122B8",
+    "same_counter_and_selector_structure": true
+  },
+  "retail_ps3": {
+    "draw": "0x001D5148",
+    "move": "0x001039EC",
+    "name_pointer_table": "0x004BBB84",
+    "same_counter_and_selector_structure": true
+  },
+  "real_retail_xbox": {
+    "source": "project-owner retained Xbox 360 retail package; proprietary bytes excluded from release",
+    "size": 661760,
+    "sha256": "9ec3de255073c7871ef35dce3f27de6305ae9e3b8c1177bcfaeef4a04befbecf",
+    "native_bones": 48,
+    "native_meshes": 33,
+    "native_motions": 0,
+    "native_animation_tracks": 0,
+    "named_form_branches": 14,
+    "unique_visual_forms": 13,
+    "visual_duplicates": {
+      "uk08": "uk01"
+    },
+    "duplicate_proof": "world-transformed POSITION/NORMAL + UV + indices + material payload canonical signatures are identical for uk01 and uk08; no other pair matches",
+    "forms": [
+      {
+        "form": 1,
+        "branch": "uk01",
+        "mesh_count": 2,
+        "node_count": 5,
+        "animation_count": 0,
+        "visual_signature_sha256": "c7d4eab99e21bc17f0a5a568a7f2ef1c8dd33646285aface2ce604c2a7d48ec7",
+        "normal_cycle_tick": 0,
+        "normal_cycle_selected": true,
+        "duplicate_of": null
+      },
+      {
+        "form": 2,
+        "branch": "uk02",
+        "mesh_count": 2,
+        "node_count": 5,
+        "animation_count": 0,
+        "visual_signature_sha256": "bc220bb0185c6e0c1fc610b4e2d49d86ee3f81d31b46a718c164c74a6773ad65",
+        "normal_cycle_tick": 1,
+        "normal_cycle_selected": true,
+        "duplicate_of": null
+      },
+      {
+        "form": 3,
+        "branch": "uk03",
+        "mesh_count": 2,
+        "node_count": 5,
+        "animation_count": 0,
+        "visual_signature_sha256": "b52d7caacd596a2b13bc295f44fb903fd5b36bf62df8814450d0eda74d7bf88e",
+        "normal_cycle_tick": 2,
+        "normal_cycle_selected": true,
+        "duplicate_of": null
+      },
+      {
+        "form": 4,
+        "branch": "uk04",
+        "mesh_count": 2,
+        "node_count": 5,
+        "animation_count": 0,
+        "visual_signature_sha256": "9065131c38ab7d08e2a1c2bcb66f66b2c49cfbadf6399c89e57591a4a4183c34",
+        "normal_cycle_tick": 3,
+        "normal_cycle_selected": true,
+        "duplicate_of": null
+      },
+      {
+        "form": 5,
+        "branch": "uk05",
+        "mesh_count": 2,
+        "node_count": 5,
+        "animation_count": 0,
+        "visual_signature_sha256": "77c890a53749de32dfc0b38d4434e904d445628ee543ba64e2d64d7512eb9f95",
+        "normal_cycle_tick": 4,
+        "normal_cycle_selected": true,
+        "duplicate_of": null
+      },
+      {
+        "form": 6,
+        "branch": "uk06",
+        "mesh_count": 5,
+        "node_count": 8,
+        "animation_count": 0,
+        "visual_signature_sha256": "bc90fb7c36c001738f74826ab38a31affc75317b36183d776784c72766d88245",
+        "normal_cycle_tick": 5,
+        "normal_cycle_selected": true,
+        "duplicate_of": null
+      },
+      {
+        "form": 7,
+        "branch": "uk07",
+        "mesh_count": 2,
+        "node_count": 5,
+        "animation_count": 0,
+        "visual_signature_sha256": "9894802c18773fe66be16b9c1ac36fa175ea101f1ee0686f73b5252ef7f1c5e2",
+        "normal_cycle_tick": 6,
+        "normal_cycle_selected": true,
+        "duplicate_of": null
+      },
+      {
+        "form": 8,
+        "branch": "uk08",
+        "mesh_count": 2,
+        "node_count": 5,
+        "animation_count": 0,
+        "visual_signature_sha256": "c7d4eab99e21bc17f0a5a568a7f2ef1c8dd33646285aface2ce604c2a7d48ec7",
+        "normal_cycle_tick": 7,
+        "normal_cycle_selected": true,
+        "duplicate_of": "uk01"
+      },
+      {
+        "form": 9,
+        "branch": "uk09",
+        "mesh_count": 2,
+        "node_count": 5,
+        "animation_count": 0,
+        "visual_signature_sha256": "9740ca1c165db73fcd0e27b927ff1fdd881a6cb2a1abdd4e817732acec7ecbb4",
+        "normal_cycle_tick": 8,
+        "normal_cycle_selected": true,
+        "duplicate_of": null
+      },
+      {
+        "form": 10,
+        "branch": "uk10",
+        "mesh_count": 2,
+        "node_count": 5,
+        "animation_count": 0,
+        "visual_signature_sha256": "4ba09f63072fe5185f931dbad29d4a31c8e2ea5dbd8d9472ce2e74a1d97ae176",
+        "normal_cycle_tick": 9,
+        "normal_cycle_selected": true,
+        "duplicate_of": null
+      },
+      {
+        "form": 11,
+        "branch": "uk11",
+        "mesh_count": 2,
+        "node_count": 5,
+        "animation_count": 0,
+        "visual_signature_sha256": "6dfd3062a64673df1437829261e197fcebbf32399d54e005a35b06aafb6b15c6",
+        "normal_cycle_tick": 10,
+        "normal_cycle_selected": true,
+        "duplicate_of": null
+      },
+      {
+        "form": 12,
+        "branch": "uk12",
+        "mesh_count": 4,
+        "node_count": 7,
+        "animation_count": 0,
+        "visual_signature_sha256": "ccd594ef2a64bc115ce7d63afaac909aebea1a405f4bd612ce1ccbe3bf420400",
+        "normal_cycle_tick": 11,
+        "normal_cycle_selected": true,
+        "duplicate_of": null
+      },
+      {
+        "form": 13,
+        "branch": "uk13",
+        "mesh_count": 2,
+        "node_count": 5,
+        "animation_count": 0,
+        "visual_signature_sha256": "87bf5a85522ee5d568cebb0e1018c9280ef122469a29cdee2041ee82a5773dfb",
+        "normal_cycle_tick": null,
+        "normal_cycle_selected": false,
+        "duplicate_of": null
+      },
+      {
+        "form": 14,
+        "branch": "uk14",
+        "mesh_count": 2,
+        "node_count": 5,
+        "animation_count": 0,
+        "visual_signature_sha256": "4382ee1cc553a552dc3b8b2ddb7cdedb578a8d6f8b177125d041df46a8d46bc9",
+        "normal_cycle_tick": null,
+        "normal_cycle_selected": false,
+        "duplicate_of": null
+      }
+    ],
+    "all_forms_export": {
+      "instances": 1,
+      "meshes": 33,
+      "nodes": 49,
+      "animations": 0
+    }
+  },
+  "normal_console_cycle": {
+    "named_selections": 12,
+    "unique_visuals": 11,
+    "sequence": [
+      "uk01",
+      "uk02",
+      "uk03",
+      "uk04",
+      "uk05",
+      "uk06",
+      "uk07",
+      "uk08",
+      "uk09",
+      "uk10",
+      "uk11",
+      "uk12"
+    ],
+    "duplicate_inside_cycle": {
+      "uk08": "uk01"
+    },
+    "normalized_rate_hz": 30,
+    "period_seconds": 0.4,
+    "uk13": "registered/present but outside normal 12-tick cycle",
+    "uk14": "registered/present but outside normal 12-tick cycle"
+  },
+  "ios_2d_counterpart_observation": {
+    "source": "project-owner gameplay/asset observation supplied 2026-09-16",
+    "status": "corroboration_only",
+    "observation": "the 2D UNKNOWN counterpart likewise includes a duplicate of its first form",
+    "note": "not used to derive the 3D duplicate relation; retail bos_006.gmx independently proves uk08=uk01"
+  },
+  "ok": true
+}

@@ -1,0 +1,77 @@
+{
+  "format": "SIIG_RELEASE_VALIDATION",
+  "release": "2.8.0-dev19",
+  "date": "2026-09-10",
+  "status": "development-pass",
+  "selftest": {
+    "passed": 55,
+    "failed": 0,
+    "ok": true,
+    "report": "validation/SELFTEST_2.8.0-dev19.json",
+    "reported_toolkit_version": "2.8.0-dev19"
+  },
+  "inherited_release_gate": {
+    "from": "2.8.0-dev18",
+    "report": "validation/RELEASE_VALIDATION_2.8.0-dev18.json",
+    "note": "All prior console extraction/rendering/audio/route/camera, mobile-format/exclusives, and dev18 MAP/DAT/timing/generator lineage gates are inherited. dev19 adds direct boss/enemy gameplay-code lineage without modifying sealed dev18."
+  },
+  "dev19_enemy_handler_lineage_validation": {
+    "status": "pass",
+    "report": "validation/IOS_CONSOLE_ENEMY_HANDLER_LINEAGE_DEV19.json",
+    "stage3_bosses": 6,
+    "pool_slots_preserved": 29,
+    "pool_slots_total": 30,
+    "sole_pool_change": "THE_SUN type 38 / dischargeTheSunWaveShot 36->60",
+    "xbox_constructor_may9_to_may11": "100% mnemonic-sequence match for all six",
+    "xbox_constructor_june10_to_retail": "100% mnemonic-sequence match for all six",
+    "xbox_constructor_may11_to_june10": "~86-93% range across six; exact per-boss values not retained",
+    "enemy_dispatch_range": "0x96..0xAB",
+    "deliberate_null_opcode": "0x9F",
+    "known_handler_retunes": 3,
+    "world5_first_normal_integration_june10": [
+      "SQUID 5-4",
+      "VERTEBRATE 5-5",
+      "NO_NAME 5-6"
+    ],
+    "loadscript_xbox_addresses": {
+      "May 9": "0x8222C3B8",
+      "May 11": "0x8222DE78",
+      "June 10": "0x82239790",
+      "Retail": "0x82212888"
+    },
+    "loadscript_ps3_retail_opd": "0x000DF5C0"
+  },
+  "source_only_audit": {
+    "status": "pass",
+    "report": "validation/SOURCE_ONLY_AUDIT_2.8.0-dev19.json",
+    "game_assets": 0,
+    "external_executable_magic": 0,
+    "archive_binary_members": 0,
+    "private_runtime_paths": 0,
+    "python_bytecode": 0,
+    "third_party_binaries_bundled": false,
+    "sources_rows": 24
+  },
+  "version_consistency": {
+    "VERSION.txt": "2.8.0-dev19",
+    "cli_toolkit_version": "2.8.0-dev19"
+  },
+  "fresh_package": {
+    "status": "pass",
+    "candidate_manifest_entries_verified": 263,
+    "candidate_source_only_audit": "pass",
+    "candidate_selftest_passed": 55,
+    "candidate_selftest_failed": 0,
+    "candidate_version_reported": "2.8.0-dev19",
+    "note": "Final package is rebuilt deterministically after recording these candidate results and is revalidated separately before publication."
+  },
+  "limitations": [
+    "Exact raw 0x96..0xAB dispatcher pointer values from the prior interactive dev19 analysis were not retained at the chat-5 boundary; the source-only release preserves slot/name status and exact surviving retunes without inventing pointers.",
+    "Exact individual May 11->June 10 mnemonic-similarity percentages for the six boss constructors were not retained; only the established ~86-93% range is recorded.",
+    "Opcode 0xA7 remains machine-readably unnamed until the gameplay CRAB identification is explicitly connected to the retained Crab.cpp implementation at code level.",
+    "Exact console generator-map output-buffer initializer corresponding to iOS stageGenerateMapInit is not yet isolated.",
+    "The exact cause of the console generator resource corpus's 2x total cell capacity remains unresolved.",
+    "The iOS executable is from the supplied decrypted/modified-distribution 4.1.0 research IPA; executable/resource lineage findings do not imply wrapper authenticity.",
+    "Existing console limitations on shader ISA translation, real Blender UI/runtime validation, and project-owner license selection remain."
+  ]
+}

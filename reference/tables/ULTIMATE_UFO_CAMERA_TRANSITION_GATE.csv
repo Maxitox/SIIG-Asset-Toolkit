@@ -1,0 +1,4 @@
+﻿step,ps3_retail,controller_offset,effect,confidence,xbox360_retail,condition
+camera_preset_gate_semantics,0x0015B524,+0x11C,timed preset changes require gate != 0; immediate duration-0 changes are accepted and set gate=1,direct_executable,,
+ufo_part0_state0_gate_clear,0x001D3380,,clear camera controller +0x11C to 0,direct_executable_cross_platform,0x8212DCB0,"part index 0, state 0, except the category-5 / (5,6) Extra fast-destroy path"
+static_preset_writer_audit,0x0015B524,,five direct callers in complete export; DAT + three stage setup/refresh paths + Vertebrate transition; no UltimateUfo direct caller,complete_direct_caller_scan,,

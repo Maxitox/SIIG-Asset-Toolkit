@@ -1,0 +1,28 @@
+{
+  "format": "SIIG_DEV24_RELEASE_READINESS_VALIDATION",
+  "release": "2.10.0-dev24",
+  "status": "pass",
+  "toolkit_version": "2.10.0-dev24",
+  "gui_version": "0.56.0-dev24",
+  "boss_family_count": 18,
+  "boss_coverage": {
+    "deep_runtime": 14,
+    "gameplay_pose": 3,
+    "native_inspection_only": 1
+  },
+  "release_manifest_current": true,
+  "provenance_release_current": true,
+  "explicit_source_rows": 29,
+  "trueancestor_dedicated_source_row": true,
+  "project_license_selected": false,
+  "publication_gate": "do not seal without explicit project-owner decision",
+  "selftest_expected": 175,
+  "selftest_passed": 175,
+  "selftest_failed": 0,
+  "fresh_package_selftest_required": true,
+  "deterministic_rebuild_required": true,
+  "sealed_release": false,
+  "current_tree_selftest_passed": 175,
+  "current_tree_selftest_failed": 0,
+  "release_manifest_file_count": 779
+}

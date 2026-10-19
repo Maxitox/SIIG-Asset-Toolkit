@@ -1,0 +1,151 @@
+{
+  "format": "SIIG_RELEASE_VALIDATION",
+  "release": "2.10.0-dev4",
+  "date": "2026-09-11",
+  "status": "development-pass",
+  "selftest": {
+    "passed": 86,
+    "failed": 0,
+    "ok": true,
+    "report": "validation/SELFTEST_2.10.0-dev4.json",
+    "reported_toolkit_version": "2.10.0-dev4"
+  },
+  "inherited_release_gate": {
+    "from": "2.10.0-dev3",
+    "report": "validation/RELEASE_VALIDATION_2.10.0-dev3.json",
+    "note": "All sealed dev3 PROGRESSIVE UFO runtime assembly, dev2 rigid joint partitioning/multi-GMX assembly, and inherited 2.9/2.10 native-format, mod-workspace and source-only gates remain inherited. Dev4 adds backward-compatible static native pose sampling, the CRAB first-visible runtime assembly preset, and beginner GUI modes/help."
+  },
+  "crab_runtime_assembly": {
+    "status": "pass",
+    "report": "validation/CRAB_RUNTIME_ASSEMBLY_2.10.0-dev4.json",
+    "runtime_order": [
+      "0xA7",
+      "0xCD",
+      "0xCC",
+      "0xCE",
+      "0xCE",
+      "0xCF",
+      "0xCF",
+      "0xCF",
+      "0xCF"
+    ],
+    "root_pose_sample": 167,
+    "body_shell_pose_sample": 0,
+    "attachment_center_y": 422.0840835571289,
+    "propodus_x_offsets": [
+      -81,
+      81
+    ],
+    "dactyl_y_offsets": [
+      -23,
+      23
+    ],
+    "crosscheck": [
+      "June 10 Xbox",
+      "retail Xbox",
+      "retail PS3"
+    ],
+    "visual_guessing": false
+  },
+  "gmx_assembly_export": {
+    "status": "pass",
+    "report": "validation/GMX_ASSEMBLY_EXPORT_2.10.0-dev4.json",
+    "pose_sample_supported": true,
+    "posed_instance_animation_suppression": true,
+    "progressive_ufo_instances": 5,
+    "crab_instances": 9,
+    "direct_catalog_commands": [
+      "gmx-assemble-catalog progressive_ufo",
+      "gmx-assemble-catalog crab"
+    ],
+    "generic_unresolved_transform_guard": true
+  },
+  "lineage_resolution": {
+    "status": "pass",
+    "opcode": "0xA7",
+    "script_name": "CRAB",
+    "note": "Resolved in live dev4 lineage API from A7 bos_013.gmx registry + explicit Crab.cpp part-construction/runtime linkage; old dev19 unresolved table remains historical."
+  },
+  "versioning_policy": {
+    "status": "pass",
+    "report": "validation/VERSIONING_POLICY_2.10.0-dev4.json",
+    "previous": "2.10.0-dev3",
+    "current": "2.10.0-dev4"
+  },
+  "desktop_gui": {
+    "status": "pass",
+    "report": "validation/DESKTOP_GUI_2.10.0-dev4.json",
+    "gui_version": "0.15.0-dev4",
+    "tabs": [
+      "Game Rip",
+      "Mod Workspace",
+      "GMX Workbench",
+      "Utilities"
+    ],
+    "gui_modes": [
+      "simple",
+      "advanced"
+    ],
+    "default_gui_mode": "simple",
+    "hover_context_help": true,
+    "progressive_ufo_one_click_assembly": true,
+    "crab_one_click_assembly": true
+  },
+  "asset_functionalization": {
+    "status": "pass",
+    "report": "validation/ASSET_FUNCTIONALIZATION_2.10.0-dev4.json",
+    "known_asset_families": 14,
+    "viewable_or_exportable_families": 14,
+    "native_round_trip_families": 11,
+    "native_builder_available_families": 11,
+    "gmx_multi_file_assembly": true,
+    "completed_runtime_assembly_presets": [
+      "progressive_ufo",
+      "crab"
+    ]
+  },
+  "source_only_audit": {
+    "status": "pass",
+    "report": "validation/SOURCE_ONLY_AUDIT_2.10.0-dev4.json",
+    "game_assets": 0,
+    "external_executable_magic": 0,
+    "archive_binary_members": 0,
+    "private_runtime_paths": 0,
+    "python_bytecode": 0,
+    "third_party_binaries_bundled": false,
+    "sources_rows": 24
+  },
+  "version_consistency": {
+    "VERSION.txt": "2.10.0-dev4",
+    "cli_toolkit_version": "2.10.0-dev4",
+    "gui_version": "0.15.0-dev4"
+  },
+  "fresh_package": {
+    "status": "pass",
+    "candidate_manifest_entries_verified": 427,
+    "candidate_manifest_missing": 0,
+    "candidate_manifest_mismatched": 0,
+    "candidate_unlisted_files": 0,
+    "candidate_source_only_audit": "pass",
+    "candidate_selftest_passed": 86,
+    "candidate_selftest_failed": 0,
+    "candidate_version_reported": "2.10.0-dev4",
+    "candidate_gui_version": "0.15.0-dev4",
+    "candidate_package_sha256": "58dc6fbf642240ac70868a773235f76550577160b5b7e6232e66993846043064",
+    "note": "Candidate was extracted fresh, verified against RELEASE_MANIFEST with no unlisted files, independently source-audited before executing package code, and then passed 86/86 selftests plus CLI/GUI version checks. Final package is rebuilt deterministically after recording this candidate evidence."
+  },
+  "limitations": [
+    "CRAB preset represents the executable-defined first-visible frame-167 static snapshot; later attack/damage formations are not collapsed into this catalog entry.",
+    "PROGRESSIVE UFO preset remains the first recovered five-part runtime formation; later dynamic phase/movement formations are not collapsed into its static catalog entry.",
+    "True blended/multi-joint deformation is not encoded; triangles spanning rigid joint partitions are rejected because no confirmed native per-vertex skin representation exists.",
+    "Assembly export produces a combined glTF viewing/editing scene; it does not claim the retail game stores or accepts one merged native GMX for multipart runtime entities.",
+    "Runtime acceptance of arbitrary fully original synthesized scenes remains a separate emulator/hardware gate.",
+    "Platform shader microcode compilation and remaining opaque GMX semantics remain unresolved.",
+    "Compressed/mipmapped native texture variants are not synthesized.",
+    "PS3 donor-free TEX wrapper synthesis remains structurally validated rather than hardware/emulator-proven.",
+    "The external dev25 306/306 retail GMX no-op evidence and dev7 retail skin-field evidence are inherited rather than rerun/bundled from proprietary inputs.",
+    "PS3 NPDRM/SDAT re-encryption is not implemented.",
+    "Audio replacement/rebuilding remains intentionally deferred.",
+    "Project-owner license selection remains open."
+  ]
+}

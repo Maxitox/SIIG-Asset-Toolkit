@@ -1,0 +1,100 @@
+{
+  "format": "SIIG_RELEASE_VALIDATION",
+  "release": "2.9.0-dev1",
+  "date": "2026-09-11",
+  "status": "development-pass",
+  "selftest": {
+    "passed": 75,
+    "failed": 0,
+    "ok": true,
+    "report": "validation/SELFTEST_2.9.0-dev1.json",
+    "reported_toolkit_version": "2.9.0-dev1"
+  },
+  "inherited_release_gate": {
+    "from": "2.8.0-dev28",
+    "report": "validation/RELEASE_VALIDATION_2.8.0-dev28.json",
+    "note": "All sealed dev28 TXIF graph synchronization, dev27 scene graph, dev26 mesh graph, dev25 retail GMX evidence, native builders, mod packages, extraction/research and source-only gates are inherited. 2.9.0-dev1 opens a new minor feature line and integrates GMX/TXIF import with TEX/BBX mod staging."
+  },
+  "versioning_transition": {
+    "status": "pass",
+    "report": "validation/VERSIONING_POLICY_2.9.0-dev1.json",
+    "previous": "2.8.0-dev28",
+    "current": "2.9.0-dev1",
+    "minor_review_no_later_than": "dev8"
+  },
+  "mod_gltf_texture_pipeline": {
+    "status": "pass",
+    "report": "validation/MOD_GLTF_TEXTURE_PIPELINE_2.9.0-dev1.json",
+    "command": "mod-import-gltf",
+    "proven_regression": [
+      "edited glTF compiles through mesh/scene/TXIF synchronization",
+      "linked PNG rebuilds to native TEX through a compatible donor layout",
+      "new TXIF name can append a new named BBX member",
+      "BBX count/name/hash tables rebuild and reparse",
+      "mod-build/mod-verify accept the addition",
+      ".siigmod packages the entry-count change as a baseline-dependent archive delta and reconstructs the exact target in a fresh workspace"
+    ],
+    "inherited_external_retail_gate": "dev25 306/306 mesh-bearing retail GMX no-op byte-identical plus plr_001 topology smoke"
+  },
+  "desktop_gui": {
+    "status": "pass",
+    "report": "validation/DESKTOP_GUI_2.9.0-dev1.json",
+    "gui_version": "0.5.0-dev1",
+    "mod_gltf_texture_action": true,
+    "tabs": [
+      "Game Rip",
+      "Mod Workspace",
+      "GMX Workbench",
+      "Utilities"
+    ]
+  },
+  "asset_functionalization": {
+    "status": "pass",
+    "report": "validation/ASSET_FUNCTIONALIZATION_2.9.0-dev1.json",
+    "known_asset_families": 14,
+    "viewable_or_exportable_families": 14,
+    "native_round_trip_families": 11,
+    "native_builder_available_families": 11,
+    "gmx_mod_texture_pipeline": true
+  },
+  "source_only_audit": {
+    "status": "pass",
+    "report": "validation/SOURCE_ONLY_AUDIT_2.9.0-dev1.json",
+    "game_assets": 0,
+    "external_executable_magic": 0,
+    "archive_binary_members": 0,
+    "private_runtime_paths": 0,
+    "python_bytecode": 0,
+    "third_party_binaries_bundled": false,
+    "sources_rows": 24
+  },
+  "version_consistency": {
+    "VERSION.txt": "2.9.0-dev1",
+    "cli_toolkit_version": "2.9.0-dev1",
+    "gui_version": "0.5.0-dev1"
+  },
+  "fresh_package": {
+    "status": "pass",
+    "candidate_manifest_entries_verified": 339,
+    "candidate_manifest_missing": 0,
+    "candidate_manifest_mismatched": 0,
+    "candidate_unlisted_files": 0,
+    "candidate_source_only_audit": "pass",
+    "candidate_selftest_passed": 75,
+    "candidate_selftest_failed": 0,
+    "candidate_version_reported": "2.9.0-dev1",
+    "candidate_gui_version": "0.5.0-dev1",
+    "candidate_package_sha256": "abcc8f0ee57cc83054959fe435af15778ca25ab9a05dab089997f7bc317afdc2",
+    "note": "Candidate was extracted fresh, verified against RELEASE_MANIFEST with no unlisted files, source-audited before executing package code, and then passed 75/75 selftests plus CLI/GUI version checks. Final package is rebuilt deterministically after recording this evidence."
+  },
+  "limitations": [
+    "New TEX payloads still require a compatible native donor layout; arbitrary TEX header/layout synthesis is not implemented.",
+    "Arbitrary GMX vertex declarations and MTRL parameter schemas remain donor-dependent.",
+    "MOTN/ANIM graph synthesis/import, platform shader compilation, and fully template-free GMX creation remain unresolved.",
+    "BBX member addition is structurally regression-tested; retail runtime acceptance of arbitrary newly appended texture members remains to be proven on hardware/emulator.",
+    "The external dev25 306/306 retail GMX evidence is inherited rather than re-run from proprietary inputs.",
+    "PS3 NPDRM/SDAT re-encryption is not implemented.",
+    "Audio replacement/rebuilding remains intentionally deferred.",
+    "Project-owner license selection remains open."
+  ]
+}

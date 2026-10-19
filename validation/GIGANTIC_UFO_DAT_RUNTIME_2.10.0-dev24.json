@@ -1,0 +1,382 @@
+{
+  "format": "SIIG_GIGANTIC_UFO_DAT_RUNTIME_VALIDATION",
+  "release": "2.10.0-dev24-WIP",
+  "status": "pass",
+  "runtime_type": "0x9E",
+  "opcode_name": "SG_GIGANTIC_UFO",
+  "root_model": "bos_003.gmx",
+  "controller_factory": "Function_8211B560 via Function_821489F8 case 0x9F",
+  "opcode_handler": "Function_820E82C0",
+  "common_handler": "Function_820E7F68 / Function_820E7CE0",
+  "dat_tail_copy": {
+    "address": "0x8211A8B8",
+    "short_count": 5,
+    "args": "5..9",
+    "controller_offsets": "0x1DC..0x1E4"
+  },
+  "schema": [
+    "spawn_condition",
+    "body_hp",
+    "travel_speed_raw512",
+    "start_x",
+    "start_z",
+    "child_hp",
+    "waypoint0_x",
+    "waypoint0_z",
+    "waypoint1_x",
+    "waypoint1_z"
+  ],
+  "runtime_hierarchy": {
+    "root_0x9e": 1,
+    "helper_control_0xb4": 3,
+    "weapon_module_0xb5": 36,
+    "total_hp_slots": 40
+  },
+  "auxiliary_pools": [
+    {
+      "runtime_type": "0x42",
+      "count": 36
+    },
+    {
+      "runtime_type": "0x43",
+      "count": 60
+    }
+  ],
+  "retail_records": [
+    {
+      "script_file": "level4_stage3.dat",
+      "absolute_frame": 61743,
+      "args": [
+        0,
+        5000,
+        256,
+        737,
+        100,
+        100,
+        737,
+        100,
+        -310,
+        0
+      ],
+      "speed_native": 0.5,
+      "waypoints": [
+        [
+          737,
+          100
+        ],
+        [
+          -310,
+          0
+        ]
+      ]
+    },
+    {
+      "script_file": "level4_stage3.dat",
+      "absolute_frame": 89043,
+      "args": [
+        0,
+        5000,
+        256,
+        -310,
+        100,
+        100,
+        -310,
+        100,
+        737,
+        0
+      ],
+      "speed_native": 0.5,
+      "waypoints": [
+        [
+          -310,
+          100
+        ],
+        [
+          737,
+          0
+        ]
+      ]
+    },
+    {
+      "script_file": "level4_stage3.dat",
+      "absolute_frame": 532123,
+      "args": [
+        0,
+        2500,
+        256,
+        737,
+        80,
+        100,
+        377,
+        0,
+        377,
+        361
+      ],
+      "speed_native": 0.5,
+      "waypoints": [
+        [
+          377,
+          0
+        ],
+        [
+          377,
+          361
+        ]
+      ]
+    },
+    {
+      "script_file": "level4_stage3.dat",
+      "absolute_frame": 547053,
+      "args": [
+        0,
+        2500,
+        256,
+        -310,
+        80,
+        100,
+        50,
+        0,
+        50,
+        361
+      ],
+      "speed_native": 0.5,
+      "waypoints": [
+        [
+          50,
+          0
+        ],
+        [
+          50,
+          361
+        ]
+      ]
+    },
+    {
+      "script_file": "level4_stage3.dat",
+      "absolute_frame": 567653,
+      "args": [
+        0,
+        5000,
+        256,
+        737,
+        360,
+        100,
+        -120,
+        120,
+        737,
+        -120
+      ],
+      "speed_native": 0.5,
+      "waypoints": [
+        [
+          -120,
+          120
+        ],
+        [
+          737,
+          -120
+        ]
+      ]
+    },
+    {
+      "script_file": "level4_stage3.dat",
+      "absolute_frame": 571253,
+      "args": [
+        0,
+        5000,
+        256,
+        -310,
+        -120,
+        100,
+        547,
+        120,
+        -310,
+        360
+      ],
+      "speed_native": 0.5,
+      "waypoints": [
+        [
+          547,
+          120
+        ],
+        [
+          -310,
+          360
+        ]
+      ]
+    },
+    {
+      "script_file": "level4_stage3.dat",
+      "absolute_frame": 640313,
+      "args": [
+        0,
+        5000,
+        256,
+        213,
+        -500,
+        100,
+        213,
+        -500,
+        213,
+        50
+      ],
+      "speed_native": 0.5,
+      "waypoints": [
+        [
+          213,
+          -500
+        ],
+        [
+          213,
+          50
+        ]
+      ]
+    },
+    {
+      "script_file": "level4_stage5.dat",
+      "absolute_frame": 64767,
+      "args": [
+        0,
+        2500,
+        256,
+        737,
+        120,
+        100,
+        737,
+        120,
+        213,
+        50
+      ],
+      "speed_native": 0.5,
+      "waypoints": [
+        [
+          737,
+          120
+        ],
+        [
+          213,
+          50
+        ]
+      ]
+    },
+    {
+      "script_file": "level5_stage1.dat",
+      "absolute_frame": 97339,
+      "args": [
+        1,
+        500,
+        2560,
+        737,
+        100,
+        100,
+        737,
+        100,
+        -600,
+        0
+      ],
+      "speed_native": 5.0,
+      "waypoints": [
+        [
+          737,
+          100
+        ],
+        [
+          -600,
+          0
+        ]
+      ]
+    },
+    {
+      "script_file": "extra1_stage9.dat",
+      "absolute_frame": 21,
+      "args": [
+        0,
+        2000,
+        256,
+        900,
+        200,
+        1000,
+        -400,
+        0,
+        213,
+        0
+      ],
+      "speed_native": 0.5,
+      "waypoints": [
+        [
+          -400,
+          0
+        ],
+        [
+          213,
+          0
+        ]
+      ]
+    },
+    {
+      "script_file": "extra5_stage1.dat",
+      "absolute_frame": 23092,
+      "args": [
+        0,
+        3000,
+        256,
+        213,
+        -200,
+        100,
+        213,
+        -200,
+        213,
+        0
+      ],
+      "speed_native": 0.5,
+      "waypoints": [
+        [
+          213,
+          -200
+        ],
+        [
+          213,
+          0
+        ]
+      ]
+    },
+    {
+      "script_file": "trial_level5_stage1.dat",
+      "absolute_frame": 97339,
+      "args": [
+        1,
+        500,
+        2560,
+        737,
+        100,
+        100,
+        737,
+        100,
+        -600,
+        0
+      ],
+      "speed_native": 5.0,
+      "waypoints": [
+        [
+          737,
+          100
+        ],
+        [
+          -600,
+          0
+        ]
+      ]
+    }
+  ],
+  "retail_record_count": 12,
+  "june10": {
+    "opcode_occurrences_from_bundled_census": 13,
+    "controller_factory": "Function_82135360 via runtime+1 case 0x9F",
+    "opcode_handler": "Function_820FAC48",
+    "dat_tail_copy": "0x821344E0, five signed shorts, shifted offsets +0x1E0..+0x1E8",
+    "child_hp_initializer": "Function_821346F8",
+    "route_update": "Function_821347A8",
+    "schema_matches_retail": true
+  },
+  "distribution_boundary": "No proprietary XEX/DAT/GMX payload is bundled; validation stores only decoded numeric records and executable-derived semantics."
+}

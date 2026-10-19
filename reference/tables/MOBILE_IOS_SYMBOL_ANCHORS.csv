@@ -1,0 +1,37 @@
+symbol,armv7_value,interpretation,evidence
+_setNormalInvader,0x0000A458,2D enemy constructor,Mach-O LC_SYMTAB in user-supplied iOS 4.1.0 research copy
+_setGiganticUfo,0x0000E24C,2D boss constructor,Mach-O LC_SYMTAB in user-supplied iOS 4.1.0 research copy
+_analyzeScript,0x00011C68,30 Hz script analyzer,Mach-O LC_SYMTAB in user-supplied iOS 4.1.0 research copy
+_initMap,0x0008CE40,map runtime init,Mach-O LC_SYMTAB in user-supplied iOS 4.1.0 research copy
+_setMapData,0x0008CE74,map data setter,Mach-O LC_SYMTAB in user-supplied iOS 4.1.0 research copy
+_setMapSpeed,0x0008CF88,map scroll speed setter,Mach-O LC_SYMTAB in user-supplied iOS 4.1.0 research copy
+_Invinf_LoadScript,0x0008FEFC,script loader,Mach-O LC_SYMTAB in user-supplied iOS 4.1.0 research copy
+_Invinf_LoadMap,0x000900CC,map loader,Mach-O LC_SYMTAB in user-supplied iOS 4.1.0 research copy
+_Invinf_Init,0x000957D0,Infinity Gene core init,Mach-O LC_SYMTAB in user-supplied iOS 4.1.0 research copy
+_checkSurvivalStage,0x00096BDC,Survival stage check,Mach-O LC_SYMTAB in user-supplied iOS 4.1.0 research copy
+_initSurvivalSelect,0x00096C48,Survival selection init,Mach-O LC_SYMTAB in user-supplied iOS 4.1.0 research copy
+_drawSurvivalEnding,0x00099478,Survival ending draw,Mach-O LC_SYMTAB in user-supplied iOS 4.1.0 research copy
+__ZL20stageGenerateMapInitv,0x000E0128,generator MAP init,Mach-O LC_SYMTAB in user-supplied iOS 4.1.0 research copy
+__ZL23stageGenerateScriptInitv,0x000E0304,generator script init,Mach-O LC_SYMTAB in user-supplied iOS 4.1.0 research copy
+__ZL16stageGenerateMapv,0x000E06D8,generator MAP build,Mach-O LC_SYMTAB in user-supplied iOS 4.1.0 research copy
+_analyzeScript_FPS60,0x001308B4,60 Hz script analyzer,Mach-O LC_SYMTAB in user-supplied iOS 4.1.0 research copy
+__Z23checkSurvivalModeEndingi,0x000062A8,Survival mode ending check,Mach-O LC_SYMTAB in user-supplied iOS 4.1.0 research copy
+__ZL25survivalStageConvertTable,0x002E96C0,Survival stage conversion table,Mach-O LC_SYMTAB in user-supplied iOS 4.1.0 research copy
+__ZL19tSurvivalStageParam,0x002E9708,Survival stage parameter table,Mach-O LC_SYMTAB in user-supplied iOS 4.1.0 research copy
+_setTheMoonV2,0x0000BA14,V2 Moon constructor,Mach-O LC_SYMTAB in user-supplied iOS 4.1.0 research copy
+_setTheSunV2,0x00008EF4,V2 Sun constructor,Mach-O LC_SYMTAB in user-supplied iOS 4.1.0 research copy
+_setGiganticUfoV2,0x0000D9E8,V2 Gigantic UFO constructor,Mach-O LC_SYMTAB in user-supplied iOS 4.1.0 research copy
+_setLadybugV2,0x00009B54,V2 Ladybug constructor,Mach-O LC_SYMTAB in user-supplied iOS 4.1.0 research copy
+_setMandalaV2,0x0000AA90,V2 Mandala constructor,Mach-O LC_SYMTAB in user-supplied iOS 4.1.0 research copy
+_setUnknownV2,0x000089E8,V2 Unknown constructor,Mach-O LC_SYMTAB in user-supplied iOS 4.1.0 research copy
+_setVer2Destroy,0x000965AC,V2-specific destruction/status action,Mach-O LC_SYMTAB in user-supplied iOS 4.1.0 research copy
+_selectSurvivalSelectButtonDecide,0x000B1114,Survival selected-node to stage-ID decision,Mach-O LC_SYMTAB in user-supplied iOS 4.1.0 research copy
+_InvinfSys_Calc,0x000B18A4,system update; terminal Survival node -> ending mapping,Mach-O LC_SYMTAB in user-supplied iOS 4.1.0 research copy
+__Z9moveEnemyP5_JikiP9_JikiShotP12_EnemyStructS4_P9_expEnemy,0x000DED78,central enemy movement dispatcher,Mach-O LC_SYMTAB in user-supplied iOS 4.1.0 research copy
+_setKingFossil,0x00007B18,Chimera Darius boss constructor,Mach-O LC_SYMTAB in user-supplied iOS 4.1.0 research copy
+_setTwilightMirage,0x0000786C,Chimera Night Striker boss constructor,Mach-O LC_SYMTAB in user-supplied iOS 4.1.0 research copy
+_setApartHead,0x000074C8,Chimera Metal Black boss constructor,Mach-O LC_SYMTAB in user-supplied iOS 4.1.0 research copy
+_setKingFossil_FPS60,0x0012621C,60 Hz Chimera Darius boss constructor,Mach-O LC_SYMTAB in user-supplied iOS 4.1.0 research copy
+_setTwilightMirage_FPS60,0x00125F64,60 Hz Chimera Night Striker boss constructor,Mach-O LC_SYMTAB in user-supplied iOS 4.1.0 research copy
+_setApartHead_FPS60,0x00125BD0,60 Hz Chimera Metal Black boss constructor,Mach-O LC_SYMTAB in user-supplied iOS 4.1.0 research copy
+_pScriptDataFileName,0x003466C8,54-entry script resource-name table,Mach-O LC_SYMTAB + CFString objects in user-supplied iOS 4.1.0 research copy

@@ -1,0 +1,110 @@
+{
+  "controller_factory": "Function_82106378",
+  "evidence_boundary": "DAT point layout/count, speed, active-member count, spawn timing and procedural controller ownership are executable-backed; no GMX body is claimed or generated",
+  "examples": [
+    {
+      "active_member_count": 50,
+      "command_index": 405,
+      "file": "level5_stage1.dat",
+      "frame": 752372,
+      "path_resource_mode": 2,
+      "point_count": 10,
+      "points_xz": [
+        [
+          -31,
+          62
+        ],
+        [
+          24,
+          55
+        ],
+        [
+          79,
+          50
+        ],
+        [
+          132,
+          47
+        ],
+        [
+          186,
+          46
+        ],
+        [
+          241,
+          46
+        ],
+        [
+          295,
+          47
+        ],
+        [
+          349,
+          50
+        ],
+        [
+          403,
+          55
+        ],
+        [
+          456,
+          62
+        ]
+      ],
+      "spawn_interval_30hz": 5,
+      "spawn_interval_runtime_ticks_normal": 10,
+      "speed": 4.0,
+      "speed_raw512": 2048
+    },
+    {
+      "active_member_count": 8,
+      "command_index": 78,
+      "file": "level5_stage3.dat",
+      "frame": 83165,
+      "path_resource_mode": 2,
+      "point_count": 3,
+      "points_xz": [
+        [
+          47,
+          270
+        ],
+        [
+          47,
+          20
+        ],
+        [
+          548,
+          20
+        ]
+      ],
+      "spawn_interval_30hz": 4,
+      "spawn_interval_runtime_ticks_normal": 8,
+      "speed": 4.0,
+      "speed_raw512": 2048
+    }
+  ],
+  "format": "SIIG_DEV_RETAIL_VALIDATION",
+  "gmX_body": null,
+  "gmX_boundary": "no emy_047.gmx or emy_048.gmx exists in the extracted retail enemy model corpus; procedural controller resources are not replaced with an invented model",
+  "inputs": [
+    {
+      "file": "level5_stage1.dat",
+      "note": "external retail DAT used only for validation; not bundled",
+      "sha256": "ab91a73047847922663a66ba8c262e7fea85b1023eb068ee21a6661f0534888e"
+    },
+    {
+      "file": "level5_stage3.dat",
+      "note": "external retail DAT used only for validation; not bundled",
+      "sha256": "f93ad9548ae8fbfe31337f4a93f8b90769a07d9a35e85b9a92ea0ab88a8357be"
+    }
+  ],
+  "release": "2.10.0-dev24",
+  "runtime_type": "0x9A",
+  "selftest": {
+    "failed": 0,
+    "passed": 125,
+    "report_external": "selftest_line_invader_125.json"
+  },
+  "status": "pass",
+  "subject": "LINE_INVADER runtime 0x9A procedural path semantics"
+}

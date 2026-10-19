@@ -1,0 +1,20 @@
+{
+  "format": "SIIG_IOS_ATLAS_UV_RESEARCH",
+  "toolkit_version": "2.10.0-dev25",
+  "status": "active_research",
+  "sealed_release": "2.10.0-dev23",
+  "findings": {
+    "ios_texture_archive": "texture.tzip is a zlib-compressed binary plist containing original texture filenames and PNG payloads",
+    "ios_common512_dimensions": [512, 1024],
+    "mapUVTable_address": "0x002E79AC",
+    "mapUVTable_size_bytes": 392,
+    "mapUVTable_pairs": 49,
+    "mapUVTable_grid": "7x7, 0x40-pixel steps",
+    "endingTextureId_address": "0x002F23DC",
+    "endingTextureUV_address": "0x002F23FC",
+    "endingTextureUV_size_bytes": 64,
+    "sprite_renderer_has_explicit_uv_args": true,
+    "general_common512_native_rectangles_recovered": false
+  },
+  "next_target": "trace common512 callers and active texture identity to recover authoritative U0/V0/U1/V1 records"
+}

@@ -1,0 +1,45 @@
+{
+  "format": "SIIG_VISUALIZER_CHECK_FOLLOWUP_SWEEP_VALIDATION",
+  "release": "2.10.0-dev24",
+  "wip": 178,
+  "status": "pass",
+  "visualizer_dataset_version": 20,
+  "segment_count": 10,
+  "hardware_inputs": {
+    "owner_supplied": true,
+    "platform": "Xbox 360",
+    "build": "June 10 prototype",
+    "capture": "1920x1080 60 fps MKV",
+    "batch": "2026-09-20 18-35-14",
+    "bundled": false
+  },
+  "confirmed": {
+    "shape_rgba_are_volume_endpoints": true,
+    "magnify_xy_target_previous_feedback": true,
+    "magnify_xy_independent_axes": true,
+    "ordinary_scale_targets_new_shape_stamp": true,
+    "stick_is_direct_check_mode_volume_input": true,
+    "add_rotation_depends_on_volume": true,
+    "shape_resource_order_recorroborated": true,
+    "debug_overlay_visibility_separate_from_simulation": true,
+    "background_rgb_survives_bg_alpha_zero": true,
+    "background_rgb_must_not_be_premultiplied_away_by_bg_alpha": true
+  },
+  "native_frame_constraint": {
+    "bg_r": 255,
+    "bg_g": 0,
+    "bg_b": 0,
+    "bg_a": 0,
+    "visible_result": "bright red background/clear remains visible around recursive feedback"
+  },
+  "implementation": {
+    "renderer_math_changed": false,
+    "dataset_version_changed": false,
+    "browser_feedback_clear_rgb_independent_of_bg_a": true,
+    "new_regression": "BG RGB survives BG:A=0"
+  },
+  "boundaries_retained": [
+    "exact Xenos render-target alpha storage/final-composite equivalence",
+    "browser/native XAudio2 snapshot phase/scheduling"
+  ]
+}

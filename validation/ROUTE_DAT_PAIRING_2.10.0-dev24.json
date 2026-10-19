@@ -1,0 +1,78 @@
+{
+  "format": "SIIG_ROUTE_DAT_PAIRING_VALIDATION",
+  "release": "2.10.0-dev24",
+  "checkpoint": "WIP164",
+  "status": "pass",
+  "normal_stage_rule": {
+    "XmapW_S.bin": "levelW_stageS.dat",
+    "map4_S.bin": "level4_stageS.dat",
+    "map5_S.bin": "level5_stageS.dat",
+    "stage_no_formula": "(world - 1) * 6 + stage",
+    "world_range": [
+      1,
+      5
+    ],
+    "stage_range": [
+      1,
+      6
+    ],
+    "registry_crosscheck": "reference/tables/STAGE_PAIRING.csv runtime_stage rows 1..30"
+  },
+  "regression_examples": [
+    {
+      "stage3d": "Xmap3_1.bin",
+      "dat": "level3_stage1.dat",
+      "stage_no": 13,
+      "script_registry_crosscheck": true,
+      "activation_frame_inferred": false
+    },
+    {
+      "stage3d": "map5_4.bin",
+      "dat": "level5_stage4.dat",
+      "stage_no": 28,
+      "script_registry_crosscheck": true,
+      "activation_frame_inferred": false
+    }
+  ],
+  "special_reload_evidence": [
+    {
+      "stage3d": "Bmap13.bin",
+      "warning_parameter": 12,
+      "field_model": "fld014.gmx",
+      "descriptor": 1,
+      "automatic_dat_pairing": false,
+      "activation_frame_inferred": false
+    },
+    {
+      "stage3d": "Bmap15.bin",
+      "warning_parameter": 14,
+      "field_model": "fld015.gmx",
+      "descriptor": 0,
+      "automatic_dat_pairing": false,
+      "activation_frame_inferred": false
+    }
+  ],
+  "boundaries": [
+    "normal-stage filename inference does not infer route-object creation/activation frame",
+    "explicit Bmap13/Bmap15 DAT playback cross-checks WARNING[12]/[14] request compatibility but does not infer canonical DAT ownership",
+    "WARNING request frames and reload normalized frame 130 are not treated as route-object initialization frames",
+    "missing inferred normal-stage DAT files fail closed and require an explicit path"
+  ],
+  "explicit_bmap_dat_validation": {
+    "Bmap13.bin": {
+      "expected_warning_parameter": 12,
+      "field_model": "fld014.gmx",
+      "descriptor": 1
+    },
+    "Bmap15.bin": {
+      "expected_warning_parameter": 14,
+      "field_model": "fld015.gmx",
+      "descriptor": 0
+    },
+    "authored_warning_frames_reported": true,
+    "other_special_requests_reported": true,
+    "reload_time_normalized_frame": 130,
+    "unique_dat_owner_inferred": false,
+    "route_initialization_frame_inferred": false
+  }
+}

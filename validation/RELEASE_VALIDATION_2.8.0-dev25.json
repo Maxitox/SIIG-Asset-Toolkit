@@ -1,0 +1,85 @@
+{
+  "format": "SIIG_RELEASE_VALIDATION",
+  "release": "2.8.0-dev25",
+  "date": "2026-09-11",
+  "status": "development-pass",
+  "selftest": {
+    "passed": 71,
+    "failed": 0,
+    "ok": true,
+    "report": "validation/SELFTEST_2.8.0-dev25.json",
+    "reported_toolkit_version": "2.8.0-dev25"
+  },
+  "inherited_release_gate": {
+    "from": "2.8.0-dev24",
+    "report": "validation/RELEASE_VALIDATION_2.8.0-dev24.json",
+    "note": "All dev24 mod-package, workspace, native-builder, retail round-trip and research gates are inherited. Dev25 prioritizes GMX topology compilation and a desktop GUI; audio rebuilding is deliberately deferred."
+  },
+  "dev25_gmx_gltf_template_import": {
+    "status": "pass",
+    "report": "validation/GMX_GLTF_TEMPLATE_IMPORT_DEV25.json",
+    "mesh_bearing_retail_noop": "306/306 byte-identical",
+    "meshless_not_applicable": 1,
+    "root_aabb_player_proof": "13/13 exact",
+    "retail_topology_smoke": "plr_001 mesh0 328->329 vertices, 656->658 indices, 49600->49680 bytes",
+    "boundary": "Topology/count changes within an existing GMX graph are supported; adding/removing whole graph nodes and from-scratch graph synthesis remain unresolved."
+  },
+  "dev25_desktop_gui": {
+    "status": "pass",
+    "report": "validation/DESKTOP_GUI_DEV25.json",
+    "implementation": "standard-library Tkinter thin wrapper over existing CLI",
+    "tabs": [
+      "Game Rip",
+      "Mod Workspace",
+      "GMX Workbench",
+      "Utilities"
+    ],
+    "launchers": [
+      "SIIG_GUI.bat",
+      "python siig_gui.py",
+      "python siig_toolkit.py gui"
+    ]
+  },
+  "asset_functionalization": {
+    "status": "pass",
+    "report": "validation/ASSET_FUNCTIONALIZATION_DEV25.json",
+    "known_asset_families": 14,
+    "viewable_or_exportable_families": 14,
+    "native_round_trip_families": 11,
+    "gmx_topology_template_build": true
+  },
+  "source_only_audit": {
+    "status": "pass",
+    "report": "validation/SOURCE_ONLY_AUDIT_2.8.0-dev25.json",
+    "game_assets": 0,
+    "external_executable_magic": 0,
+    "archive_binary_members": 0,
+    "private_runtime_paths": 0,
+    "python_bytecode": 0,
+    "third_party_binaries_bundled": false,
+    "sources_rows": 24
+  },
+  "version_consistency": {
+    "VERSION.txt": "2.8.0-dev25",
+    "cli_toolkit_version": "2.8.0-dev25"
+  },
+  "fresh_package": {
+    "status": "pass",
+    "candidate_manifest_entries_verified": 309,
+    "candidate_source_only_audit": "pass",
+    "candidate_selftest_passed": 71,
+    "candidate_selftest_failed": 0,
+    "candidate_version_reported": "2.8.0-dev25",
+    "candidate_package_sha256": "acf41c2d24244ec712351ef9a4b9c696410730f694b305b3549547978b8a003a",
+    "note": "Candidate was freshly extracted, verified against RELEASE_MANIFEST with no unlisted files, audited before executing package code, and passed 71/71 selftests. Final package is rebuilt deterministically after recording these candidate results and revalidated separately."
+  },
+  "limitations": [
+    "GMX glTF import preserves an existing native mesh/chunk/material/bone graph; adding/removing whole MESH/ARRY graph nodes and from-scratch graph synthesis are not implemented.",
+    "The retail topology smoke proves native structural rewriting/reparse, not arbitrary edited-model acceptance by the retail runtime.",
+    "The first desktop GUI covers the major normal workflows but does not expose every advanced CLI switch or per-resource workspace editor yet.",
+    "PS3 NPDRM/SDAT re-encryption is not implemented.",
+    "Audio replacement/rebuilding is intentionally deferred by current project priority.",
+    "Xenos shader compilation remains unresolved.",
+    "Project-owner license selection remains open."
+  ]
+}

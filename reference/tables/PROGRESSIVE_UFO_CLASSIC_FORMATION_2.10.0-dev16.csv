@@ -1,0 +1,6 @@
+formation,part_index,runtime_type,model,role,x,y,z,rot_x_rad,rot_y_rad,rot_z_rad,retail_major_states
+classic,0,0xA2,bos_009.gmx,body,0,0,0,3.1415927410125732,0,0,5;8
+classic,1,0xC2,bos_009a.gmx,laser_left,-78.5,0,5,0.06108652427792549,0,1.4049900770187378,5;8
+classic,2,0xC2,bos_009a.gmx,laser_right,78.5,0,5,0.06108652427792549,0,-1.3962634801864624,5;8
+classic,3,0xC3,bos_009b.gmx,barrier_right,115,0,3,0,0,1.7453292608261108,5;8
+classic,4,0xC3,bos_009b.gmx,barrier_left,-115,0,3,0,0,-1.7453292608261108,5;8

@@ -1,0 +1,236 @@
+{
+  "format": "SIIG_HORNET_PROPAGATION_VALIDATION",
+  "toolkit_version": "2.10.0-dev7",
+  "status": "pass",
+  "catalog_family": "hornet_propagation_SS_wave_WW",
+  "canonical_single_variant": false,
+  "seeds": [
+    0,
+    2,
+    6,
+    8,
+    18,
+    20,
+    22,
+    24,
+    26,
+    36,
+    38,
+    42,
+    44
+  ],
+  "seed_source": "inherited state-4 A1 prism-wall slot; no second random selection",
+  "grid": {
+    "record_count": 45,
+    "rows": 5,
+    "columns": 9,
+    "spacing": 46.0,
+    "x_origin": 29.5,
+    "y": 0.0,
+    "z_origin": 28.0
+  },
+  "state5": {
+    "clears_record_flags_all_45": true,
+    "a1_hidden": true
+  },
+  "state6": {
+    "initial": "seed only",
+    "expansion_order": [
+      "orthogonal",
+      "diagonal"
+    ],
+    "alternates_until_full": true,
+    "a1_visible": false,
+    "visible_model": "bos_008b.gmx",
+    "runtime_type": "0xC0",
+    "activation_snapshot_extra_y_rotation_deg": 0.0,
+    "transient_target_y_rotation_deg": 45.0,
+    "beam_effects_in_snapshot": false
+  },
+  "progressions": {
+    "0": [
+      1,
+      3,
+      6,
+      11,
+      20,
+      26,
+      32,
+      37,
+      43,
+      45
+    ],
+    "2": [
+      1,
+      4,
+      10,
+      18,
+      29,
+      36,
+      42,
+      45
+    ],
+    "6": [
+      1,
+      4,
+      10,
+      18,
+      29,
+      36,
+      42,
+      45
+    ],
+    "8": [
+      1,
+      3,
+      6,
+      11,
+      20,
+      26,
+      32,
+      37,
+      43,
+      45
+    ],
+    "18": [
+      1,
+      4,
+      10,
+      17,
+      23,
+      28,
+      32,
+      37,
+      43,
+      45
+    ],
+    "20": [
+      1,
+      5,
+      17,
+      27,
+      33,
+      38,
+      42,
+      45
+    ],
+    "22": [
+      1,
+      5,
+      17,
+      29,
+      41,
+      45
+    ],
+    "24": [
+      1,
+      5,
+      17,
+      27,
+      33,
+      38,
+      42,
+      45
+    ],
+    "26": [
+      1,
+      4,
+      10,
+      17,
+      23,
+      28,
+      32,
+      37,
+      43,
+      45
+    ],
+    "36": [
+      1,
+      3,
+      6,
+      11,
+      20,
+      26,
+      32,
+      37,
+      43,
+      45
+    ],
+    "38": [
+      1,
+      4,
+      10,
+      18,
+      29,
+      36,
+      42,
+      45
+    ],
+    "42": [
+      1,
+      4,
+      10,
+      18,
+      29,
+      36,
+      42,
+      45
+    ],
+    "44": [
+      1,
+      3,
+      6,
+      11,
+      20,
+      26,
+      32,
+      37,
+      43,
+      45
+    ]
+  },
+  "cross_platform": [
+    "June 10 Xbox",
+    "retail Xbox",
+    "retail PS3"
+  ],
+  "anchors": {
+    "june": {
+      "state5_reset": "0x82136468",
+      "neighbor_helper": "0x821378A0",
+      "state6": "0x82137DE0",
+      "dispatcher": "0x82138568"
+    },
+    "retail_xbox": {
+      "state5_reset": "0x8211C4B8",
+      "neighbor_helper": "0x8211D8C0",
+      "state6": "0x8211DCC0"
+    },
+    "retail_ps3": {
+      "state5_reset": "_opd_FUN_001b1e6c",
+      "neighbor_helper": "_opd_FUN_001b1318",
+      "state6": "_opd_FUN_001b1458"
+    }
+  },
+  "external_real_export": {
+    "catalog": "hornet_propagation_22_wave_03",
+    "instance_count": 29,
+    "mesh_count": 58,
+    "node_count": 116,
+    "animation_count": 0,
+    "unique_root_count": 29,
+    "bounds_min": [
+      75.5,
+      0.0,
+      28.0
+    ],
+    "bounds_max": [
+      351.5,
+      0.0,
+      212.0
+    ],
+    "c0_sha256": "e4be18e2da142cc65504456c16d5464cb9064636a621c78d57878f144b8b47e5"
+  },
+  "visual_guessing": false,
+  "ok": true
+}

@@ -1,0 +1,96 @@
+{
+  "format": "SIIG_ULTIMATE_UFO_FINAL_RESET_VALIDATION",
+  "release": "2.8.0-dev14",
+  "date": "2026-09-10",
+  "status": "pass_static_closure_runtime_branch_unresolved",
+  "evidence_policy": {
+    "prototype_footage": "first-party gameplay observation",
+    "retail_video": "third-party gameplay observation",
+    "executables_and_assets": "implementation proof",
+    "visual_interpretation_promoted_to_executable_fact": false
+  },
+  "retail_xbox": {
+    "ufo_vtable": "0x8200A9A0",
+    "move_main": "0x8212EC50",
+    "generic_vanish_reset": "0x820FBEE8",
+    "part_state_handler": "0x8212DCB0",
+    "camera_gate_clear_instruction": "0x8212DD20",
+    "camera_controller_constructor": "0x820ECFD8",
+    "camera_preset_setter": "0x820ECDF0",
+    "generic_lifetime_watchdog": "0x820FB280",
+    "flagged_entity_removal": "0x82148748 -> 0x8214A368"
+  },
+  "retail_ps3": {
+    "part_state_handler": "0x001D3380",
+    "camera_preset_setter": "0x0015B524",
+    "camera_controller_constructor": "0x0015C6C8"
+  },
+  "checks": [
+    {
+      "name": "mframe_6030_uses_state_1_not_state_0",
+      "status": "pass",
+      "basis": "retail Xbox MoveMain and +0x1EE HP-zero propagation"
+    },
+    {
+      "name": "mframe_6200_only_disables_bos_015k",
+      "status": "pass",
+      "basis": "retail Xbox MoveMain phase 13"
+    },
+    {
+      "name": "move_main_has_no_later_part0_plus_0x48",
+      "status": "pass",
+      "basis": "complete retail Xbox MoveMain body"
+    },
+    {
+      "name": "generic_plus_0x48_dispatches_part_state_0",
+      "status": "pass",
+      "basis": "0x820FBEE8"
+    },
+    {
+      "name": "part0_state0_clears_camera_gate",
+      "status": "pass",
+      "basis": "0x8212DCB0 / store 0x8212DD20"
+    },
+    {
+      "name": "normal_5_3_applicable_dat_cleanup_absent",
+      "status": "pass",
+      "basis": "decoded level5_stage3.dat and cleanup group ranges"
+    },
+    {
+      "name": "manager_removal_is_destructor_only",
+      "status": "pass",
+      "basis": "0x82148748 -> 0x8214A368"
+    },
+    {
+      "name": "lifetime_threshold_is_25200_timer_units",
+      "status": "pass",
+      "basis": "A8 table record 0x820073D0 and 0x820FB280"
+    },
+    {
+      "name": "default_timer_scale_is_two_units_per_main_update",
+      "status": "pass",
+      "basis": "0x820E0000, 0x820E0200, 0x820E0248, and main counter update"
+    },
+    {
+      "name": "camera_construction_and_accepted_presets_set_gate_1",
+      "status": "pass",
+      "basis": "Xbox 0x820ECFD8/0x820ECDF0; PS3 0x0015C6C8/0x0015B524"
+    },
+    {
+      "name": "june10_visible_ufo_registration_removal_bracketed",
+      "status": "pass",
+      "basis": "project-owner June 10 Normal seg6: ULTIMATE_UFO HP line present ~427.367 s, absent ~427.400 s at stage-completion white-out; observational only"
+    }
+  ],
+  "conclusion": "Static closure: retail Mframe 6030 and 6200 are not the camera-gate clear, and no ordinary Normal 5-3 post-6200 +0x48 caller is proven. Part-0/state-0 defines the clear mechanism if invoked, but current evidence does not prove that the ordinary ending invokes it at all. June 10 footage brackets entity-registration removal at the stage-completion white-out but cannot distinguish +0x48 reset from destructor-only manager teardown.",
+  "limitations": [
+    "The ordinary Normal 5-3 ending may invoke a higher-level +0x48 reset before teardown or may use destructor-only manager removal; static evidence does not distinguish those outcomes.",
+    "Visible disappearance and the June 10 debug-registration boundary cannot identify the virtual/destructor path.",
+    "The 25200-unit generic lifetime path is retained as a failsafe and is not assigned as the normal ending.",
+    "A runtime watchpoint on retail camera-controller +0x11C or a recovered complete higher-level transition trace is required to resolve the runtime-only branch."
+  ],
+  "static_closure": true,
+  "ordinary_post_6200_reset_caller_proven": false,
+  "ordinary_normal_5_3_gate_clear_proven_to_execute": false,
+  "runtime_branch_resolved": false
+}

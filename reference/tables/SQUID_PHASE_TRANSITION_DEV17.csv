@@ -1,0 +1,3 @@
+build,transition_function,phase_or_state,affected_records,operation,resolved_target,result
+Retail Xbox,Function_8212AE30,state 8,1..8,virtual +0x54 per leg,Function_820FC270,disable each DA leg/model; record 0 remains active
+June 10 Xbox,Function_82145E68,equivalent legless transition,1..8,same eight-record disable loop,,disable all eight leg records

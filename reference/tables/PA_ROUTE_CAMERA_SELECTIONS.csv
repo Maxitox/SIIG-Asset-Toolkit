@@ -1,0 +1,3 @@
+﻿index,resource,retail_stage_setup_observed,controller_start,controller_end_exclusive,loop,evidence
+0,cam01_op1.gmx,True,0,200,False,retail PS3/Xbox stage setup invokes Route vtable +0x08 with argument 0
+1,cam02_op1.gmx,False,0,200,False,Route::SetPaRoute accepts index 1 and formats cam02_op1.gmx; no proven retail activation callsite selecting index 1 has been found yet

@@ -1,0 +1,45 @@
+{
+  "format": "SIIG_UPDATE_RIP_VIEWER_RECOVERY_VALIDATION",
+  "toolkit_version": "2.10.0-dev24",
+  "checkpoint": "WIP198",
+  "asset_viewer_internal_version": "2.2.1",
+  "findings": [
+    {
+      "issue": "staged Asset Viewer rebuild indexed the previous canonical Asset Viewer",
+      "cause": "asset_viewer.siig-update-part was excluded from source walking but root/asset_viewer was not",
+      "fix": "canonical asset_viewer is excluded whenever the output is a different staged directory"
+    },
+    {
+      "issue": "Visualizer/Stage Explorer-only migrations forced Asset Viewer rebuilds",
+      "cause": "refresh_viewer treated sibling generated tools as upstream viewer dependencies",
+      "fix": "viewer refresh now follows only indexed asset/localization/font/audio/structured source changes or the viewer generator itself"
+    },
+    {
+      "issue": "WIP197 final verification failure made recovery fall back to exhaustive hashing",
+      "fix": "verification_failed + recovery journal + refreshed output manifest is recognized as a final-gate recovery baseline and stays scoped"
+    },
+    {
+      "issue": "host-created metadata could appear as one untracked file",
+      "fix": "Thumbs.db, desktop.ini and .DS_Store are excluded from output integrity accounting"
+    },
+    {
+      "issue": "runtime errors printed the full argparse usage banner",
+      "fix": "runtime exceptions now print concise ERROR lines; final update verification lists concrete issue kind/path"
+    }
+  ],
+  "synthetic_transition_probe": {
+    "description": "small retained-source rip migrated through historical WIP196 -> WIP197 then current fixes; timings are environment-specific",
+    "wip197_asset_viewer_indexed_files_after_self_indexing": 36,
+    "current_asset_viewer_indexed_files_after_fix": 17,
+    "wip197_viewer_total_bytes": 228849,
+    "current_viewer_total_bytes": 131723,
+    "current_update_elapsed_seconds": 1.07,
+    "current_final_gate_ok": true
+  },
+  "safety": {
+    "full_verify_remains_explicit": true,
+    "scoped_overwrite_guard_retained": true,
+    "host_metadata_exclusions_are_not_game_payload": true,
+    "proprietary_game_payload_bundled": false
+  }
+}

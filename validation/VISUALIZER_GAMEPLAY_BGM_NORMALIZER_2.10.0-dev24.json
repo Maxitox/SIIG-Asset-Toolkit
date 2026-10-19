@@ -1,0 +1,56 @@
+{
+  "format": "SIIG_VISUALIZER_GAMEPLAY_BGM_NORMALIZER",
+  "release": "2.10.0-dev24",
+  "checkpoint": "WIP167",
+  "status": "pass",
+  "dataset_version": 13,
+  "june10_xbox360": {
+    "constructor": "Function_82177510",
+    "configure": "Function_82177300",
+    "normalize": "Function_821773F0",
+    "update": "Function_82177648",
+    "debug_average": "Function_82175FA8",
+    "debug_strings": {
+      "ave": "0x82017EB4",
+      "vol_scale": "0x82017ED0",
+      "vol_min_max": "0x82017EE0",
+      "seq_param": "0x82017F00"
+    },
+    "constructor_default_window_frames": 300,
+    "minimum_authored_window_frames": 5,
+    "diagnostic_history_frames": 180,
+    "minimum_span": 0.001,
+    "initial": {"min": 0.0, "max": 1.0, "scale": 1.0},
+    "formula": {
+      "below_min": 0.0,
+      "above_max": 1.0,
+      "inside": "(VOL - MIN) / max(abs(MAX - MIN), 0.001)"
+    },
+    "check_mode_uses_raw_meter": true,
+    "normal_stage_uses_normalized_scale": true
+  },
+  "dat_opcode_0xCE": {
+    "symbolic_name": "VL_VOLUME_SCALE",
+    "runtime_consumer": "Function_82177300",
+    "semantic": "adaptive normalizer window length in Visualizer update frames",
+    "reference_stages": {
+      "level4_stage2.dat": 180,
+      "level4_stage4.dat": 180,
+      "level4_stage5.dat": 180
+    }
+  },
+  "real_hardware_cross_checks": [
+    {"stage": "4-2", "vol": 0.4625, "min": 0.0486, "max": 0.7312, "predicted_scale": 0.6063, "displayed_scale": 0.6064},
+    {"stage": "4-5", "vol": 0.2467, "min": 0.0751, "max": 0.4167, "predicted_scale": 0.5023, "displayed_scale": 0.5022},
+    {"stage": "4-5", "vol": 0.4562, "min": 0.3206, "max": 0.7757, "predicted_scale": 0.2980, "displayed_scale": 0.2979}
+  ],
+  "simulator": {
+    "check_mode": "raw stereo peak mean",
+    "stage_mode": "adaptive VOL SCALE",
+    "authored_window_applied_from_timeline": true,
+    "hardware_style_diagnostics": true,
+    "logical_update_hz": 60,
+    "upstream_xaudio_meter_window_exact": false
+  },
+  "source_only": true
+}

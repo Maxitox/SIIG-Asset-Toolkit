@@ -1,0 +1,23 @@
+opcode,script_name,may9,may11,june10,retail,known_retune,retune_window,name_or_pointer_note
+0x96,CIRCLE_INVADER,reconstructed,reconstructed,reconstructed,reconstructed,,,raw handler pointer values were not retained in chat-5 continuity; do not invent them
+0x97,,reconstructed,reconstructed,reconstructed,reconstructed,,,script name unresolved in current source table; raw handler pointer values were not retained in continuity
+0x98,,reconstructed,reconstructed,reconstructed,reconstructed,,,script name unresolved in current source table; raw handler pointer values were not retained in continuity
+0x99,GREED,reconstructed,reconstructed,reconstructed,reconstructed,,,raw handler pointer values were not retained in chat-5 continuity; do not invent them
+0x9A,LINE_INVADER,reconstructed,reconstructed,reconstructed,reconstructed,,,raw handler pointer values were not retained in chat-5 continuity; do not invent them
+0x9B,WRATH,reconstructed,reconstructed,reconstructed,reconstructed,,,raw handler pointer values were not retained in chat-5 continuity; do not invent them
+0x9C,GLUTTONY,reconstructed,reconstructed,reconstructed,reconstructed,56-object helper type 55->72,May 9 -> May 11,raw handler pointer values were not retained in chat-5 continuity; do not invent them
+0x9D,,reconstructed,reconstructed,reconstructed,reconstructed,,,script name unresolved in current source table; raw handler pointer values were not retained in continuity
+0x9E,SG_GIGANTIC_UFO,reconstructed,reconstructed,reconstructed,reconstructed,,,raw handler pointer values were not retained in chat-5 continuity; do not invent them
+0x9F,,NULL,NULL,NULL,NULL,,,deliberately null in every build; opcode absent from available DAT corpus
+0xA0,CENTIPEDE,reconstructed,reconstructed,reconstructed,reconstructed,,,raw handler pointer values were not retained in chat-5 continuity; do not invent them
+0xA1,HONET,reconstructed,reconstructed,reconstructed,reconstructed,,,raw handler pointer values were not retained in chat-5 continuity; do not invent them
+0xA2,PROGRESSIVE_UFO,reconstructed,reconstructed,reconstructed,reconstructed,,,raw handler pointer values were not retained in chat-5 continuity; do not invent them
+0xA3,OCTOPUS,reconstructed,reconstructed,reconstructed,reconstructed,,,raw handler pointer values were not retained in chat-5 continuity; do not invent them
+0xA4,BUTTERFLY,reconstructed,reconstructed,reconstructed,reconstructed,,,raw handler pointer values were not retained in chat-5 continuity; do not invent them
+0xA5,,reconstructed,reconstructed,reconstructed,reconstructed,,,script name unresolved in current source table; raw handler pointer values were not retained in continuity
+0xA6,WATER_STRIDER,reconstructed,reconstructed,reconstructed,reconstructed,,,raw handler pointer values were not retained in chat-5 continuity; do not invent them
+0xA7,,reconstructed,reconstructed,reconstructed,reconstructed,,,machine-readable opcode name unresolved; gameplay identification CRAB + Crab.cpp are not yet treated as explicit opcode-code proof
+0xA8,ULTIMATE_UFO,reconstructed,reconstructed,reconstructed,reconstructed,type-55 helper pool 20->40,May 11 -> June 10,raw handler pointer values were not retained in chat-5 continuity; do not invent them
+0xA9,SQUID,reconstructed,reconstructed,reconstructed,reconstructed,,,raw handler pointer values were not retained in chat-5 continuity; do not invent them
+0xAA,VERTEBRATE,reconstructed,reconstructed,reconstructed,reconstructed,one pool 4->20; 80-object helper type 72->62,May 11 -> June 10,raw handler pointer values were not retained in chat-5 continuity; do not invent them
+0xAB,NO_NAME,reconstructed,reconstructed,reconstructed,reconstructed,,,raw handler pointer values were not retained in chat-5 continuity; do not invent them

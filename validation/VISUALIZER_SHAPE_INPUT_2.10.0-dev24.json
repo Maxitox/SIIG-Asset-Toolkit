@@ -1,0 +1,72 @@
+{
+  "format": "SIIG_VISUALIZER_SHAPE_INPUT_VALIDATION",
+  "release": "2.10.0-dev24",
+  "status": "pass",
+  "private_validation_source": "retail Xbox 360 full-rip converted visualizer.bin textures (not bundled)",
+  "shape_count": 10,
+  "all_128x128": true,
+  "shapes": [
+    {
+      "name": "WhiteCircle",
+      "width": 128,
+      "height": 128,
+      "png_sha256": "1091aeddc5b7a49e50e572d152709d704185131fd8d611ca4035aed72672ea1e"
+    },
+    {
+      "name": "line",
+      "width": 128,
+      "height": 128,
+      "png_sha256": "d6a21a7f0cca0e5675a4186b7cef90483a3c722dad9b943df0f1a988e933b9fc"
+    },
+    {
+      "name": "3line",
+      "width": 128,
+      "height": 128,
+      "png_sha256": "263dec7425d92d253f2981231c230555c9985cff03581c927317ac43bfac499d"
+    },
+    {
+      "name": "square",
+      "width": 128,
+      "height": 128,
+      "png_sha256": "053a1eef5a666e2f0d68d62e93e34c75886f79b11dea282179e9661afa9995a4"
+    },
+    {
+      "name": "triangle",
+      "width": 128,
+      "height": 128,
+      "png_sha256": "481560488ec75cf47e36e47d2761db331c01635eb213e1f449018dca9121ca8a"
+    },
+    {
+      "name": "WhiteCircle2",
+      "width": 128,
+      "height": 128,
+      "png_sha256": "ce4215493e7d4809ec2800a1038d24c57f0f5e2bb280e36cbcaf76adb48f2976"
+    },
+    {
+      "name": "line2",
+      "width": 128,
+      "height": 128,
+      "png_sha256": "6e172299eb3f4625fbe415a569d18b7007f24d7b52e6b77a8b72711011a66d86"
+    },
+    {
+      "name": "3line2",
+      "width": 128,
+      "height": 128,
+      "png_sha256": "73f032ae6ac6d7aeab16c72b31ac55ca99623d83a34f2fbbcd773d1825185eab"
+    },
+    {
+      "name": "square2",
+      "width": 128,
+      "height": 128,
+      "png_sha256": "d9a5d07ccea7d4ce974b239cb20591d6bad6c65062b54f9874203a02675c79cc"
+    },
+    {
+      "name": "triangle2",
+      "width": 128,
+      "height": 128,
+      "png_sha256": "84b0c663ee547c410b08f002a24a95a06f24758766d3b38d5de858c0c69c4bc6"
+    }
+  ],
+  "source_package_contains_shape_pixels": false,
+  "local_generated_html_may_embed_user_rip_pixels": true
+}

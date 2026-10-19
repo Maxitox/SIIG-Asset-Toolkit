@@ -1,0 +1,149 @@
+{
+  "format": "SIIG_RELEASE_VALIDATION",
+  "release": "2.10.0-dev18",
+  "date": "2026-09-17",
+  "status": "development-pass",
+  "selftest": {
+    "passed": 100,
+    "failed": 0,
+    "ok": true,
+    "report": "validation/SELFTEST_2.10.0-dev18.json",
+    "reported_toolkit_version": "2.10.0-dev18"
+  },
+  "inherited_release_gate": {
+    "from": "2.10.0-dev17",
+    "report": "validation/RELEASE_VALIDATION_2.10.0-dev17.json",
+    "note": "All sealed dev17 SQUID, dev16 PROGRESSIVE UFO classic, dev15 GIGANTIC UFO, dev14 CENTIPEDE, dev13 VERTEBRATE, dev12 UNKNOWN, dev11 BUTTERFLY, dev10 HORNET, dev9 ULTIMATE UFO, dev8 MANDALA and earlier native-format/mod/source-only gates remain inherited. Dev18 adds AXON without changing prior assembly catalogs."
+  },
+  "axon": {
+    "status": "pass",
+    "report": "validation/AXON_RUNTIME_ASSEMBLY_2.10.0-dev18.json",
+    "catalogs": [
+      "axon_native_body",
+      "axon_expanded_petals",
+      "axon_exposed_core"
+    ],
+    "subordinate_records": 17,
+    "core_records": 1,
+    "petal_records": 16,
+    "ring1": {
+      "petals": 8,
+      "expanded_radius": 75.0,
+      "y_offset": -3.0,
+      "table_angle_step_degrees": 45.0
+    },
+    "ring2": {
+      "petals": 8,
+      "expanded_radius": 220.0,
+      "y_offset": -5.5,
+      "table_angle_step_degrees": 45.0,
+      "table_angle_offset_degrees": 22.5
+    },
+    "native_body": {
+      "instances": 1,
+      "meshes": 42,
+      "nodes": 76,
+      "animations": 32
+    },
+    "expanded_petals": {
+      "instances": 17,
+      "meshes": 34,
+      "nodes": 84,
+      "animations": 0
+    },
+    "exposed_core": {
+      "instances": 1,
+      "meshes": 2,
+      "nodes": 20,
+      "animations": 0
+    },
+    "fresh_retail_hashes_verified": true,
+    "june10_crosscheck": true
+  },
+  "desktop_gui": {
+    "status": "pass",
+    "report": "validation/DESKTOP_GUI_2.10.0-dev18.json",
+    "gui_version": "0.29.0-dev18",
+    "gui_modes": [
+      "simple",
+      "advanced"
+    ],
+    "default_gui_mode": "simple",
+    "axon_form_assemblies": 3,
+    "axon_exact_two_ring_assembly": true
+  },
+  "asset_functionalization": {
+    "status": "pass",
+    "report": "validation/ASSET_FUNCTIONALIZATION_2.10.0-dev18.json",
+    "known_asset_families": 14,
+    "viewable_or_exportable_families": 14,
+    "native_round_trip_families": 11,
+    "native_builder_available_families": 11,
+    "gmx_multi_file_assembly": true
+  },
+  "versioning_policy": {
+    "status": "pass",
+    "report": "validation/VERSIONING_POLICY_2.10.0-dev18.json",
+    "previous": "2.10.0-dev17",
+    "current": "2.10.0-dev18"
+  },
+  "source_only_audit": {
+    "status": "pass",
+    "report": "validation/SOURCE_ONLY_AUDIT_2.10.0-dev18.json",
+    "game_assets": 0,
+    "external_executable_magic": 0,
+    "archive_binary_members": 0,
+    "private_runtime_paths": 0,
+    "python_bytecode": 0,
+    "third_party_binaries_bundled": false,
+    "sources_rows": 24
+  },
+  "version_consistency": {
+    "VERSION.txt": "2.10.0-dev18",
+    "cli_toolkit_version": "2.10.0-dev18",
+    "gui_version": "0.29.0-dev18"
+  },
+  "fresh_package": {
+    "status": "pass",
+    "candidate_manifest_entries_verified": 581,
+    "candidate_manifest_missing": 0,
+    "candidate_manifest_mismatched": 0,
+    "candidate_unlisted_files": 0,
+    "candidate_source_only_audit": "pass",
+    "candidate_selftest_passed": 100,
+    "candidate_selftest_failed": 0,
+    "candidate_version_reported": "2.10.0-dev18",
+    "candidate_gui_version": "0.29.0-dev18",
+    "candidate_gui_axon_form_assemblies": 3,
+    "candidate_gui_axon_exact_two_ring_assembly": true,
+    "candidate_package_sha256": "91e421918dd4fb20410c59b85b965a8f01416bcb5579e45c294b077be20ecc1c",
+    "note": "Candidate was extracted fresh, verified against RELEASE_MANIFEST with no unlisted files, independently source-audited before executing package code, then passed 100/100 selftests plus CLI/GUI version and AXON three-form exact-two-ring checks."
+  },
+  "final_package": {
+    "status": "pass",
+    "deterministic_rebuild_byte_identical": true,
+    "untouched_manifest_entries_verified": 581,
+    "untouched_manifest_missing": 0,
+    "untouched_manifest_mismatched": 0,
+    "untouched_unlisted_files": 0,
+    "untouched_source_only_audit": "pass",
+    "untouched_selftest_passed": 100,
+    "untouched_selftest_failed": 0,
+    "untouched_gui_version": "0.29.0-dev18",
+    "untouched_gui_axon_form_assemblies": 3,
+    "untouched_gui_axon_exact_two_ring_assembly": true,
+    "note": "Final package is produced as a fixed-metadata deterministic ZIP pair. Before the final metadata freeze, a byte-identical rehearsal pair and untouched fresh extraction passed manifest, pre-execution source audit, 100/100 selftests, CLI version, and GUI AXON checks; the final pair is rebuilt and rechecked after this report is frozen."
+  },
+  "limitations": [
+    "AXON expanded-petal export is the executable-backed stable phase-angle-0 expanded snapshot; dev18 does not invent continuous petal animation timing beyond the recovered runtime transform equations.",
+    "AXON native A5 whole-body and subordinate CA/CB representations are exported as separate catalogs because the executable explicitly switches their visibility rather than stacking both representations.",
+    "Fresh retail Xbox game data was used only for external validation; no proprietary package, GMX, or generated retail glTF is bundled.",
+    "Native SIIG coordinate scale is preserved; no speculative meter conversion or hidden display scaling is applied.",
+    "Runtime acceptance of arbitrary fully original synthesized scenes remains a separate emulator/hardware gate.",
+    "Platform shader microcode compilation and remaining opaque GMX semantics remain unresolved.",
+    "Compressed/mipmapped native texture variants are not synthesized.",
+    "PS3 NPDRM/SDAT re-encryption is not implemented.",
+    "Audio replacement/rebuilding remains intentionally deferred.",
+    "Project-owner license selection remains open."
+  ]
+}

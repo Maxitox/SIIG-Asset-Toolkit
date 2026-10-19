@@ -1,0 +1,55 @@
+{
+  "format": "SIIG_RIP_UPDATER_FASTPATH_VALIDATION",
+  "release": "2.10.0-dev24",
+  "checkpoint": "WIP189",
+  "gui_version": "0.49.0-dev24",
+  "status": "pass",
+  "behavior": {
+    "global_preflight": "inventory/size plus manifest-bound stat cache; re-hash changed-stat files only",
+    "legacy_destructive_guard": "hash every tracked file in the component being overwritten against the prior manifest; stat cache is never trusted for destructive replacement",
+    "final_manifest": "reuse unchanged hashes; hash rebuilt/changed/new/size-changed files",
+    "full_integrity_command": "verify-output / verify-rip remains full SHA-256 by default",
+    "force_modified": "explicit override; final manifest re-hashes all actual files",
+    "fresh_rip_cache": "OUTPUT_STAT_CACHE.json generated from freshly hashed output manifest",
+    "refresh_assets_override": "cannot be short-circuited by already_current profile check",
+    "saved_option_authority": "explicit modern convert_obj=false is not overridden by aggregate OBJ output counts"
+  },
+  "control_file": "validation/OUTPUT_STAT_CACHE.json",
+  "content_manifest_excludes_control_file": true,
+  "source_only_regression": {
+    "unchanged_cached_update_hash_reads": 0,
+    "changed_stat_rehashes_only_that_file": true,
+    "same_size_legacy_edit_protected_before_overwrite": true,
+    "incremental_manifest_reuses_unchanged_hashes": true
+  },
+  "boundaries": [
+    "filesystem size/mtime is a routine global read-avoidance hint; it is never trusted to authorize destructive component overwrite",
+    "full independent whole-rip re-hash remains explicit Verify Rip"
+  ],
+  "retail_xbox_external_benchmark": {
+    "source": "project-owner retained Xbox 360 retail package; not bundled",
+    "environment_note": "wall-clock timings are environment-specific and are validation evidence, not a guaranteed performance target",
+    "fresh_rip_seconds": 301.09,
+    "first_wip189_update_seconds": 9.98,
+    "exact_profile_noop_seconds": 1.9,
+    "explicit_full_verify_seconds": 9.7,
+    "fresh_manifest_files": 16669,
+    "post_update_manifest_files": 16671,
+    "bbx_archives_reused": 23,
+    "bbx_archives_total": 23,
+    "resources_reused": 2593,
+    "incremental_manifest_hashes_computed": 5,
+    "incremental_manifest_hashes_reused": 16666,
+    "full_verify_hashes_checked": 16671,
+    "components_reused": [
+      "assets",
+      "localization",
+      "systemfont",
+      "audio",
+      "structured",
+      "stage_explorer",
+      "visualizer_simulator",
+      "asset_viewer"
+    ]
+  }
+}

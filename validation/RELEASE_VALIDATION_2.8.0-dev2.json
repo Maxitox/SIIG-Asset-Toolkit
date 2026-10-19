@@ -1,0 +1,251 @@
+{
+  "format": "SIIG_RELEASE_VALIDATION",
+  "release": "2.8.0-dev2",
+  "date": "2026-09-05",
+  "status": "development-pass",
+  "selftest": {
+    "passed": 24,
+    "failed": 0,
+    "ok": true,
+    "report": "validation/SELFTEST_2.8.0-dev2.json"
+  },
+  "dev2_targeted_real_corpus_validation": {
+    "stage3dmap": {
+      "input_files": 47,
+      "failures": 0,
+      "stage3d_json": 47,
+      "route_source_csv": 47,
+      "route_source_obj": 47,
+      "active_records": 19563,
+      "runtime_route_source_points": 19563,
+      "nonzero_slot_counts": {
+        "2": 19562
+      },
+      "origin_fallback_files": [
+        "Bmap16.bin"
+      ]
+    },
+    "gmxtrack": {
+      "input_gmx_files": 4,
+      "tracks": 6,
+      "failures": 0,
+      "targets": [
+        "cam01_op1.gmx",
+        "cam02_op1.gmx",
+        "fld014.gmx",
+        "fld015.gmx"
+      ],
+      "details_from": "validation/RUNTIME_3D_RESEARCH_VALIDATION_2.8.0-dev2.json"
+    },
+    "entity_registry": {
+      "xbox360_retail": {
+        "entry_count": 240,
+        "category_counts": {
+          "primitive": 22,
+          "model": 129,
+          "unconfigured": 89
+        },
+        "render_group_counts": {
+          "Offset Opacity": 229,
+          "Non Opacity": 11
+        }
+      },
+      "xbox360_june10": {
+        "entry_count": 240,
+        "category_counts": {
+          "primitive": 22,
+          "model": 129,
+          "unconfigured": 89
+        },
+        "render_group_counts": {
+          "Offset Opacity": 229,
+          "Non Opacity": 11
+        }
+      },
+      "xbox360_may11": {
+        "entry_count": 241,
+        "category_counts": {
+          "primitive": 22,
+          "model": 131,
+          "unconfigured": 88
+        },
+        "render_group_counts": {
+          "Offset Opacity": 228,
+          "Non Opacity": 13
+        }
+      },
+      "xbox360_may9": {
+        "entry_count": 241,
+        "category_counts": {
+          "primitive": 22,
+          "model": 131,
+          "unconfigured": 88
+        },
+        "render_group_counts": {
+          "Offset Opacity": 228,
+          "Non Opacity": 13
+        }
+      },
+      "ps3_retail": {
+        "entry_count": 240,
+        "category_counts": {
+          "primitive": 22,
+          "model": 129,
+          "unconfigured": 89
+        },
+        "render_group_counts": {
+          "Offset Opacity": 229,
+          "Non Opacity": 11
+        }
+      },
+      "normalized_equalities": {
+        "may9_vs_may11_same_index": 241,
+        "june10_vs_xbox_retail_same_index": 240,
+        "xbox_retail_vs_ps3_retail_same_index": 240
+      }
+    },
+    "camera_presets": {
+      "preset_count": 32,
+      "words_per_preset": 30,
+      "rows": 960,
+      "table_address_ps3_retail": "0x0053284C"
+    },
+    "route_animation_descriptors": [
+      {
+        "descriptor_index": "0",
+        "model_name": "fld015",
+        "gmx_file": "fld015.gmx",
+        "frame_limit": "6300.0",
+        "raw_flag": "0",
+        "raw_flag_hex": "0x00000000"
+      },
+      {
+        "descriptor_index": "1",
+        "model_name": "fld014",
+        "gmx_file": "fld014.gmx",
+        "frame_limit": "1440.0",
+        "raw_flag": "1",
+        "raw_flag_hex": "0x00000001"
+      }
+    ]
+  },
+  "reference_table_validation": {
+    "ENTITY_RUNTIME_REGISTRY.csv": {
+      "rows": 1202,
+      "columns": 28,
+      "ragged_rows": 0
+    },
+    "ENTITY_RUNTIME_REGISTRY_BUILD_DIFF.csv": {
+      "rows": 61,
+      "columns": 17,
+      "ragged_rows": 0
+    },
+    "CAMERA_PRESETS_RAW.csv": {
+      "rows": 960,
+      "columns": 7,
+      "ragged_rows": 0
+    },
+    "ROUTE_ANIMATION_DESCRIPTORS.csv": {
+      "rows": 2,
+      "columns": 6,
+      "ragged_rows": 0
+    }
+  },
+  "retail_package_validation_inherited_from_dev1": {
+    "basis": "No package/container/audio/viewer behavior changed in dev2; dev2 changes are runtime research tables plus stage3dmap/gmxtrack export paths. Dev1 retail package gates are retained as inherited evidence, while changed dev2 paths were revalidated above.",
+    "xbox360": {
+      "input_type": "stfs",
+      "outer_files": 94,
+      "resources": 2593,
+      "hash_mismatches": 0,
+      "archive_failures": 0,
+      "png": 899,
+      "wav": 86,
+      "wma": 53,
+      "errors": 0,
+      "stage_explorer": {
+        "version": 5,
+        "entries": 92,
+        "runtime_pairings": 78
+      },
+      "asset_viewer": {
+        "files": 7355,
+        "previewable": 3520,
+        "thumbnails": 3520,
+        "missing": 0
+      },
+      "output_verification": {
+        "ok": true,
+        "hashes_checked": 9855,
+        "issues": 0,
+        "warnings": 0,
+        "mode": "hash/privacy"
+      }
+    },
+    "ps3": {
+      "input_type": "ps3_pkg",
+      "outer_files": 88,
+      "resources": 2593,
+      "hash_mismatches": 0,
+      "archive_failures": 0,
+      "wav": 84,
+      "sdat_internal": 6,
+      "sdat_authenticated_blocks": 18,
+      "sdat_fallback": 0,
+      "errors": 0,
+      "stage_explorer": {
+        "version": 5,
+        "entries": 92,
+        "runtime_pairings": 78
+      },
+      "asset_viewer": {
+        "files": 8264,
+        "previewable": 3991,
+        "thumbnails": 3991,
+        "missing": 0
+      },
+      "output_verification": {
+        "ok": true,
+        "hashes_checked": 11195,
+        "issues": 0,
+        "warnings": 0,
+        "mode": "hash/privacy"
+      }
+    }
+  },
+  "source_only_audit": {
+    "game_asset_extensions_found": [],
+    "external_executable_magic_found": [],
+    "archive_binary_members_found": [],
+    "private_runtime_paths_found": [],
+    "bundled_archives": [
+      "addons/SIIG_Blender_Addon_v0.1.0.zip"
+    ],
+    "sources_csv": {
+      "rows": 18,
+      "columns": 10,
+      "ragged_rows": 0
+    },
+    "tcrf_used": false,
+    "third_party_binaries_bundled": false
+  },
+  "serialization_validation": {
+    "json_files": 19,
+    "json_parse_failures": []
+  },
+  "publication_gates": {
+    "original_project_license_selected": false,
+    "blender_ui_test_completed": false,
+    "modified_bbx_game_acceptance_tested": false,
+    "xenos_shader_isa_disassembled": false,
+    "exact_route_spline_resampling_reproduced": false,
+    "camera_preset_fields_fully_named": false
+  },
+  "notes": [
+    "Dev2 real-corpus validation reran every changed stage3dmap route-source export and all four changed-route/camera GMX inputs with the final dev2 code.",
+    "The full retail one-click package statistics are inherited from the validated dev1 checkpoint because dev2 did not modify outer-container, archive, texture, audio, viewer, or Stage Explorer code paths.",
+    "Runtime route-source outputs are source/control points, not a claim of exact engine spline resampling.",
+    "Camera preset words are preserved raw where field semantics are not yet proven.",
+    "Source-only package excludes proprietary game packages, extracted game assets, Ghidra exports, and generated game-data viewers."
+  ]
+}

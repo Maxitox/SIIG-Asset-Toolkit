@@ -1,0 +1,35 @@
+{
+  "format": "SIIG_DESKTOP_GUI_VALIDATION",
+  "toolkit_target": "2.8.0-dev27",
+  "status": "pass",
+  "diagnostics": {
+    "gui_version": "0.3.0-dev27",
+    "toolkit_version": "2.8.0-dev27",
+    "toolkit_exists": true,
+    "tkinter_available": true,
+    "python": "3.13.5",
+    "tabs": [
+      "Game Rip",
+      "Mod Workspace",
+      "GMX Workbench",
+      "Utilities"
+    ],
+    "principle": "GUI wraps the existing CLI; format logic stays in audited toolkit code",
+    "gmx_scene_graph_report": true,
+    "gmx_scene_graph_sync": true
+  },
+  "gmx_workbench": {
+    "mesh_graph_sync_control": "Sync native MESH/ARRY graph (advanced)",
+    "mesh_cli_flag": "--sync-mesh-graph",
+    "mesh_default_enabled": false,
+    "scene_graph_sync_control": "Sync BONE/PARE + material/shader scene graph (dev27, advanced)",
+    "scene_cli_flag": "--sync-scene-graph",
+    "scene_default_enabled": false,
+    "scene_report_action": "Scene graph report",
+    "scene_report_cli": "gmx-scene-report",
+    "behavior": "scene sync implies mesh sync; both structural modes require explicit opt-in; visual report uses audited toolkit parsers via CLI"
+  },
+  "network_required": false,
+  "external_gui_dependencies": false,
+  "format_logic_duplicated": false
+}

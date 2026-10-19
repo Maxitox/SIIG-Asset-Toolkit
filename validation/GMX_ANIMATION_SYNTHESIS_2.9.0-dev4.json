@@ -1,0 +1,37 @@
+{
+  "format": "SIIG_GMX_ANIMATION_SYNTHESIS_VALIDATION",
+  "toolkit_version": "2.9.0-dev4",
+  "status": "pass",
+  "selftest_case": "GMX donor-free MOTN/ANIM synthesis",
+  "detail": "root-only GMX -> new BONE/MOTN/ANIM at 30 Hz -> glTF export -> byte-identical animation-aware no-op",
+  "template_fixture": "root-only GMX; no BONE/MOTN/ANIM donors",
+  "created_chain": [
+    "BONE 0",
+    "MOTN 0",
+    "ANIM 0"
+  ],
+  "authoring_keys": 3,
+  "authoring_duration_seconds": 1.0,
+  "native_runtime_hz": 30.0,
+  "native_frame_count": 31,
+  "raw_motion_duration_tested": 1.25,
+  "supported_import_channels": [
+    "translation",
+    "rotation",
+    "scale"
+  ],
+  "supported_interpolation": [
+    "LINEAR",
+    "STEP"
+  ],
+  "rotation_interpolation": "shortest-path quaternion slerp",
+  "roundtrip_gltf_export": true,
+  "animation_aware_noop_byte_identical": true,
+  "existing_native_default": "preserve by gmxMotionIndex unless gmxReplaceNativeAnimation=true",
+  "mod_import_gltf_enables_animation_sync": true,
+  "limitations": [
+    "one target BONE per glTF animation",
+    "CUBICSPLINE not yet supported",
+    "runtime acceptance of arbitrary synthesized animations remains external emulator/hardware validation"
+  ]
+}

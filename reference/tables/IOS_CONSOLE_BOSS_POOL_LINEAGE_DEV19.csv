@@ -1,0 +1,7 @@
+boss,ios_opcode,ios_pools_type_x_capacity,console_pools_type_x_capacity,preserved_slots,total_slots,known_change,ps3_crosscheck
+THE_MOON,0x0046,70x5;36x20,70x5;36x20,2,2,none,matches console on retail PS3
+THE_SUN,0x0047,71x9;37x8;38x36;39x20;46x4,71x9;37x8;38x60;39x20;46x4,4,5,type 38 / dischargeTheSunWaveShot capacity 36->60,retail PS3 independently has console 60-object type-38 pool
+GIGANTIC_UFO,0x0048,72x59;40x20;41x20;42x4;43x2;44x2;23x10;28x10;60x30;29x30;80x4,72x59;40x20;41x20;42x4;43x2;44x2;23x10;28x10;60x30;29x30;80x4,11,11,none,matches console on retail PS3
+LADYBUG,0x0049,73x5;45x40;46x20;47x4,73x5;45x40;46x20;47x4,4,4,none,matches console on retail PS3
+MANDALA,0x004A,74x72;48x100;49x10;50x40,74x72;48x100;49x10;50x40,4,4,none,matches console on retail PS3
+UNKNOWN,0x004B,75x11;51x30;52x30;53x80,75x11;51x30;52x30;53x80,4,4,none,matches console on retail PS3

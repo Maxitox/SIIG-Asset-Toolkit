@@ -1,0 +1,48 @@
+{
+  "status": "pass",
+  "toolkit_version": "2.10.0-dev24",
+  "checkpoint": "WIP173",
+  "visualizer_dataset_version": 17,
+  "primary_build": "Xbox 360 June 10 prototype",
+  "opcode": "0xCD",
+  "opcode_name": "VL_CHANGETIME",
+  "runtime": {
+    "set_sequence": "Function_82175C10",
+    "set_change_range": "Function_82175DB0",
+    "pick_threshold": "Function_82175CC0",
+    "active_update": "Function_82177648",
+    "constructor": "Function_82177510",
+    "default_min": 18000,
+    "default_max": 18000,
+    "upper_bound_exclusive_when_span_nonzero": true,
+    "advance_condition": "threshold < counter",
+    "new_slot_applied_on_following_active_update": true,
+    "terminator": -1
+  },
+  "rng": {
+    "wrapper": "Function_8249A9D8",
+    "step": "Function_824A9E88",
+    "seed_wrapper": "Function_8249A9B0",
+    "timer_source": "Function_82495800",
+    "multiplier": "0x000343FD",
+    "increment": "0x00269EC3",
+    "rand15": "(state >> 16) & 0x7FFF",
+    "random30": "second_rand15 | (first_rand15 << 15)",
+    "seed_1_first_state": "0xC823F683",
+    "seed_1_first_random30": 1361955
+  },
+  "simulator": {
+    "deterministic_seed_control": true,
+    "seek_rebuilds_sequence_state_from_frame_zero": true,
+    "live_follow_steps_sequence_once_per_60hz_authored_frame": true,
+    "timeline_status_exposes_threshold_counter_and_rng": true
+  },
+  "supersedes": [
+    "unresolved exact VL_CHANGETIME interpolation wording in WIP168-era notes"
+  ],
+  "remaining_boundaries": [
+    "upstream XAudio2 volume-meter processing/callback cadence",
+    "bit-identical Xenos render-target alpha storage/compositing",
+    "unrecovered final native presentation differences"
+  ]
+}

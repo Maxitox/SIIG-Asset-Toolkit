@@ -1,0 +1,3 @@
+platform,map_header_endianness,generator_map_files,nonempty_layers,total_cells,nonzero_cells,generated_output_layers,blocks_per_generated_stage,known_output_capacity_bytes_per_layer,note
+iOS 4.1.0,little,330,645,121472,38253,3,24,6144,stageGenerateMapInit: 6144 = 24*8*32
+Console June/retail,big,330,645,242944,62223,3,24,,"same generator family; exactly 2x stored cell capacity, but nonzero cells are not doubled"

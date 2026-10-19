@@ -1,0 +1,133 @@
+{
+  "format": "SIIG_AXON_RUNTIME_ASSEMBLY_VALIDATION",
+  "release": "2.10.0-dev18",
+  "status": "pass",
+  "retail": {
+    "constructor": "Function_8210D808",
+    "subordinate_count_function": "FUN_8210D930",
+    "subordinate_count": 17,
+    "initializer": "Function_82110378",
+    "visual_update": "Function_8210EF00",
+    "whole_body_switch": "Function_8210E280",
+    "angle_table": "DAT_820093F8",
+    "y_offset_table": "DAT_8200943C",
+    "models": {
+      "bos_012.gmx": {
+        "bytes": 172256,
+        "sha256": "09931a245a532e33eb1e540f025a43bc6f79c2f4a4545aa4a30c1f237246dbc7"
+      },
+      "bos_012a.gmx": {
+        "bytes": 12576,
+        "sha256": "73b655a542ed12836810b703f9ae3e36254251492da87e868a3df833b15cffa0"
+      },
+      "bos_012b.gmx": {
+        "bytes": 7568,
+        "sha256": "b299396e134105e890c7449618e62380d08b8412077a3b9fa23a2d79ea07e057"
+      }
+    }
+  },
+  "june10_crosscheck": {
+    "source_debug_name": "Axon.cpp",
+    "constructor": "Function_82126878",
+    "subordinate_count": 17,
+    "data_range": "0x8200EB88..0x8200EBE7",
+    "matches_retail_angles_targets_offsets": true
+  },
+  "runtime_layout": {
+    "core_record": 0,
+    "core_runtime_type": "0xCA",
+    "petal_runtime_type": "0xCB",
+    "petal_records": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "ring1": {
+      "records": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "table_angles_degrees": [
+        0.0,
+        45.0,
+        90.0,
+        135.0,
+        180.0,
+        225.0,
+        270.0,
+        315.0
+      ],
+      "expanded_radius": 75.0,
+      "retracted_radius": 0.0,
+      "y_offset": -3.0
+    },
+    "ring2": {
+      "records": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "table_angles_degrees": [
+        22.5,
+        67.5,
+        112.5,
+        157.5,
+        202.5,
+        247.5,
+        292.5,
+        337.5
+      ],
+      "expanded_radius": 220.0,
+      "retracted_radius": 18.5,
+      "y_offset": -5.5
+    },
+    "phase0_transform": "runtime_angle=-table_angle; X=r*sin(runtime_angle); Z=r*cos(runtime_angle); Yrot=-90-runtime_angle"
+  },
+  "catalogs": {
+    "axon_native_body": {
+      "instances": 1,
+      "meshes": 42,
+      "nodes": 76,
+      "animations": 32
+    },
+    "axon_expanded_petals": {
+      "instances": 17,
+      "meshes": 34,
+      "nodes": 84,
+      "animations": 0
+    },
+    "axon_exposed_core": {
+      "instances": 1,
+      "meshes": 2,
+      "nodes": 20,
+      "animations": 0
+    }
+  },
+  "gui_version": "0.29.0-dev18",
+  "selftest_expected": 100,
+  "ok": true
+}

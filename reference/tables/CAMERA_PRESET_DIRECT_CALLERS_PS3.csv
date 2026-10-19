@@ -1,0 +1,6 @@
+﻿caller,role,call,ultimate_ufo_direct_caller
+0x0014F604,DAT Analyze3DCameraChange01 handler,"SetCameraPreset(index, authored_duration)",False
+0x00160E10,stage camera refresh when stage-camera enable byte is set,"SetCameraPreset(current_stage_camera,0)",False
+0x00161380,stage camera object initialization,"SetCameraPreset(0,0)",False
+0x00161BD8,stage setup sequence camera refresh,"SetCameraPreset(current_stage_camera,0)",False
+0x001D8690,Vertebrate-specific transition (cross-build June debug provenance),"SetCameraPreset(0,120)",False

@@ -1,0 +1,10 @@
+{
+  "format": "SIIG_VERSIONING_POLICY_VALIDATION",
+  "release": "2.10.0-dev6",
+  "status": "pass",
+  "previous": "2.10.0-dev5",
+  "toolkit_version": "2.10.0-dev6",
+  "gui_version": "0.17.0-dev6",
+  "reason": "incremental 2.10 development checkpoint: exact HORNET prism-wall runtime variant family; no incompatible public format break",
+  "ok": true
+}

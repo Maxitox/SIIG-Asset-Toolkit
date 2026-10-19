@@ -1,0 +1,32 @@
+{
+  "format": "SIIG_GMX_GLTF_TEMPLATE_IMPORT_VALIDATION",
+  "toolkit_target": "2.8.0-dev25",
+  "status": "pass",
+  "scope": "user-supplied retail Xbox 360 external corpus; proprietary GMX inputs and generated glTF are not bundled",
+  "retail_corpus_gmx_total": 307,
+  "mesh_bearing_applicable": 306,
+  "no_edit_byte_identical_passed": 306,
+  "no_edit_failed": 0,
+  "not_applicable": [
+    {
+      "resource": "enemy/enemy/bos_008c.gmx",
+      "reason": "GMX contains no MESH chunks"
+    }
+  ],
+  "aabb_proof": {
+    "retail_player_gmx_checked": 13,
+    "root_range": "0x10..0x27",
+    "interpretation": "min XYZ followed by max XYZ",
+    "exact_matches": 13
+  },
+  "topology_smoke": {
+    "resource": "player/plr_001.gmx",
+    "mesh_index": 0,
+    "vertex_count": "328 -> 329",
+    "index_count": "656 -> 658",
+    "native_size_bytes": "49600 -> 49680",
+    "injected_max_x": 20.0,
+    "reparse": "pass"
+  },
+  "boundary": "Proves lossless no-op import and native structural count resizing. It does not prove arbitrary edited-model acceptance by the retail runtime or from-scratch GMX graph synthesis."
+}

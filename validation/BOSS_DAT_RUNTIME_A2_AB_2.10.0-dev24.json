@@ -1,0 +1,297 @@
+{
+  "format": "SIIG_BOSS_DAT_RUNTIME_A2_AB_DEV24",
+  "version": "2.10.0-dev24",
+  "status": "research-validation",
+  "opcodes": {
+    "0xA2": {
+      "sample_records": [
+        [
+          0,
+          8000,
+          256,
+          213,
+          80,
+          9000,
+          4000
+        ],
+        [
+          0,
+          3500,
+          256,
+          213,
+          80,
+          2000,
+          1000
+        ],
+        [
+          0,
+          5000,
+          256,
+          213,
+          90,
+          3000,
+          3000
+        ]
+      ],
+      "retail_occurrences": 7
+    },
+    "0xA3": {
+      "sample_records": [
+        [
+          0,
+          8000,
+          256,
+          213,
+          100
+        ],
+        [
+          0,
+          4000,
+          256,
+          213,
+          100
+        ],
+        [
+          0,
+          1000,
+          256,
+          213,
+          100
+        ]
+      ],
+      "retail_occurrences": 6
+    },
+    "0xA4": {
+      "sample_records": [
+        [
+          0,
+          3000,
+          256,
+          213,
+          100,
+          200,
+          80,
+          300,
+          45,
+          15,
+          60,
+          60
+        ],
+        [
+          0,
+          1300,
+          256,
+          213,
+          100,
+          80,
+          10,
+          100,
+          50,
+          50,
+          65,
+          90
+        ]
+      ],
+      "retail_occurrences": 5
+    },
+    "0xA5": {
+      "sample_records": [
+        [
+          0,
+          5000,
+          256,
+          213,
+          120,
+          18,
+          15,
+          30,
+          1200
+        ],
+        [
+          0,
+          3000,
+          256,
+          213,
+          120,
+          30,
+          20,
+          30,
+          300
+        ]
+      ],
+      "retail_occurrences": 5
+    },
+    "0xA6": {
+      "sample_records": [
+        [
+          0,
+          9000,
+          256,
+          213,
+          100,
+          30,
+          2,
+          1,
+          25
+        ],
+        [
+          0,
+          3000,
+          0,
+          213,
+          100,
+          30,
+          30,
+          0
+        ]
+      ],
+      "retail_occurrences": 4
+    },
+    "0xA7": {
+      "sample_records": [
+        [
+          0,
+          32700,
+          256,
+          213,
+          120,
+          10000,
+          1000,
+          30,
+          45,
+          100
+        ],
+        [
+          0,
+          3000,
+          256,
+          213,
+          100,
+          30,
+          30,
+          100,
+          100
+        ]
+      ],
+      "retail_occurrences": 4
+    },
+    "0xA8": {
+      "sample_records": [
+        [
+          0,
+          10000,
+          0,
+          0,
+          100,
+          900,
+          40,
+          500,
+          1000,
+          100,
+          15,
+          60,
+          60,
+          70
+        ]
+      ],
+      "retail_occurrences": 2
+    },
+    "0xA9": {
+      "sample_records": [
+        [
+          0,
+          12000,
+          256,
+          213,
+          120,
+          70,
+          110
+        ],
+        [
+          0,
+          3000,
+          256,
+          213,
+          100,
+          60,
+          60
+        ]
+      ],
+      "retail_occurrences": 3
+    },
+    "0xAA": {
+      "sample_records": [
+        [
+          0,
+          5000,
+          256,
+          213,
+          120,
+          3,
+          1,
+          2,
+          3,
+          4,
+          0,
+          3,
+          1,
+          3,
+          4,
+          0,
+          3,
+          1,
+          3,
+          3,
+          0,
+          3500,
+          1000,
+          3500,
+          1000,
+          3500,
+          1000,
+          1000,
+          700,
+          3000,
+          1000,
+          60
+        ]
+      ],
+      "retail_occurrences": 3
+    },
+    "0xAB": {
+      "sample_records": [
+        [
+          0,
+          3000,
+          256,
+          213,
+          120,
+          213,
+          120
+        ],
+        [
+          0,
+          100,
+          512,
+          213,
+          -100,
+          213,
+          80
+        ]
+      ],
+      "retail_occurrences": 3
+    }
+  },
+  "identity_resolution": {
+    "0xA5": "AXON (June Axon::SetScriptData/Axon.cpp + retail lineage)",
+    "0xA7": "CRAB (June Crab::SetScriptData/Crab.cpp + retail lineage)"
+  },
+  "conservative_boundaries": {
+    "0xA3": "only five authored args promoted",
+    "0xA6_arg7_arg8": "behavior-derived names",
+    "0xA7_arg9": "source says itv but runtime conversion proves angular raw value"
+  },
+  "retail_total_occurrences": 42,
+  "retail_unique_record_shapes": 20,
+  "note": "sample_records contains every distinct args_signed vector recovered from the latest retail Stage Explorer corpus; retail_occurrences preserves duplicate authored uses."
+}

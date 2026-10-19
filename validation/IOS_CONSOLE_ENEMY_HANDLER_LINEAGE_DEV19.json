@@ -1,0 +1,78 @@
+{
+  "format": "SIIG_IOS_CONSOLE_ENEMY_HANDLER_LINEAGE_VALIDATION",
+  "release": "2.8.0-dev19",
+  "date": "2026-09-10",
+  "status": "pass",
+  "stage3_boss_pool_lineage": {
+    "bosses": 6,
+    "pool_slots_total": 30,
+    "pool_slots_preserved": 29,
+    "preservation_ratio": 0.966667,
+    "sole_changed_slot": "THE_SUN type 38 / dischargeTheSunWaveShot 36->60",
+    "retail_ps3_crosscheck": "same console pool layouts, including THE_SUN type 38 capacity 60"
+  },
+  "constructor_fingerprints": {
+    "may9_to_may11": "100% all six",
+    "may11_to_june10": "~86-93% across six; exact per-boss values not retained",
+    "june10_to_retail": "100% all six",
+    "moon_struct_growth": "0x10C->0x120",
+    "interpretation": "engine/layout cleanup around preserved gameplay timing/logic"
+  },
+  "console_enemy_dispatcher": {
+    "range": "0x96..0xAB",
+    "slots": 22,
+    "deliberate_null": [
+      "0x9F"
+    ],
+    "null_absent_from_available_dat_corpus": true,
+    "retunes": [
+      {
+        "opcode": "0x9C",
+        "name": "GLUTTONY",
+        "change": "56-object helper type 55->72",
+        "window": "May 9 -> May 11"
+      },
+      {
+        "opcode": "0xA8",
+        "name": "ULTIMATE_UFO",
+        "change": "type-55 helper pool 20->40",
+        "window": "May 11 -> June 10"
+      },
+      {
+        "opcode": "0xAA",
+        "name": "VERTEBRATE",
+        "change": "one pool 4->20; 80-object helper type 72->62",
+        "window": "May 11 -> June 10"
+      }
+    ],
+    "raw_pointer_values_retained": false
+  },
+  "world5_chronology": {
+    "may9": "WATER STRIDER trial 5-1 only; 5-2 boss slot and ULTIMATE UFO already in normal 5-2/5-3",
+    "may11": "WATER STRIDER enters normal 5-1",
+    "june10": "SQUID/VERTEBRATE/NO_NAME first preserved normal 5-4/5-5/5-6 integration",
+    "no_name_pre_june": "hidden 3Db_026.dat generator test only"
+  },
+  "loadscript_addresses": {
+    "ios_armv7": "0x0008FEFC",
+    "xbox_may9": "0x8222C3B8",
+    "xbox_may11": "0x8222DE78",
+    "xbox_june10": "0x82239790",
+    "xbox_retail": "0x82212888",
+    "ps3_retail_opd": "0x000DF5C0"
+  },
+  "a7_name_policy": {
+    "machine_readable_name": null,
+    "gameplay_identification": "CRAB",
+    "executable_context": "Crab.cpp implementation present",
+    "policy": "do not name opcode until explicit code connection is proven"
+  },
+  "files": [
+    "reference/tables/IOS_CONSOLE_BOSS_POOL_LINEAGE_DEV19.csv",
+    "reference/tables/XBOX_BOSS_CONSTRUCTOR_EVOLUTION_DEV19.csv",
+    "reference/tables/XBOX_ENEMY_HANDLER_LINEAGE_DEV19.csv",
+    "reference/tables/WORLD5_BOSS_INTEGRATION_DEV19.csv",
+    "docs/research/IOS_CONSOLE_ENEMY_HANDLER_LINEAGE_DEV19.md"
+  ],
+  "no_binary_distribution": true
+}

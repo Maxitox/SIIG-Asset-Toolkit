@@ -1,0 +1,10 @@
+{
+  "format": "SIIG_VERSIONING_POLICY_VALIDATION",
+  "release": "2.10.0-dev21",
+  "status": "pass",
+  "previous": "2.10.0-dev20",
+  "toolkit_version": "2.10.0-dev21",
+  "gui_version": "0.32.0-dev21",
+  "reason": "incremental 2.10 checkpoint: corrects all-boss visual-controller factory indexing, continues five native-only boss controller tracing, and adds dependency-free Windows Game Rip drag-and-drop without an incompatible public format break",
+  "ok": true
+}

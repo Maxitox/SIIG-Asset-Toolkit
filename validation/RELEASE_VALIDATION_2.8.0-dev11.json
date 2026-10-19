@@ -1,0 +1,41 @@
+{
+  "format": "SIIG_RELEASE_VALIDATION",
+  "release": "2.8.0-dev11",
+  "date": "2026-09-07",
+  "status": "development-pass",
+  "selftest": {"passed": 39, "failed": 0, "ok": true, "report": "validation/SELFTEST_2.8.0-dev11.json"},
+  "inherited_release_gate": {
+    "from": "2.8.0-dev10",
+    "report": "validation/RELEASE_VALIDATION_2.8.0-dev10.json",
+    "note": "Dev11 resolves the late Ultimate UFO owned-model identity and cross-build evolution. Dev10 special-stage reload/HP-zero work and all earlier extraction, rendering, audio, route, and package gates remain inherited from frozen checkpoints."
+  },
+  "dev11_ultimate_ufo_late_object_validation": {
+    "status": "pass",
+    "report": "validation/ULTIMATE_UFO_LATE_OBJECT_VALIDATION_2.8.0-dev11.json",
+    "cross_builds": 5,
+    "retail_june_model": "bos_015k.gmx",
+    "retail_june_model_id": "0xD8",
+    "may_prototype_model": "bos_015l.gmx",
+    "may_prototype_model_id": "0xD9",
+    "late_object_field_link_proven": true,
+    "final_disable_field_link_proven": true
+  },
+  "source_only_audit": {
+    "status": "pass",
+    "report": "validation/SOURCE_ONLY_AUDIT_2.8.0-dev11.json",
+    "game_assets": 0,
+    "external_executable_magic": 0,
+    "archive_binary_members": 0,
+    "private_runtime_paths": 0,
+    "python_bytecode": 0,
+    "third_party_binaries_bundled": false,
+    "sources_rows": 18
+  },
+  "limitations": [
+    "The executable proves that retail/June late phases animate and disable bos_015k.gmx; the sliding-airlock-door role is independent project-owner observation and remains labeled as such.",
+    "Both retail Ultimate UFO DAT encounters place camera preset 4 immediately after the boss record, but synchronization to HP-zero/final rear-camera timing is not yet executable-proven.",
+    "The known retail PA-route setup directly selects camera index 0/cam01; no proven retail activation callsite selecting index 1/cam02 has been found.",
+    "Runtime fog-profile selection over time and camera preset word 11 exact semantics remain unresolved.",
+    "Instruction-level shader translation, real Blender UI/runtime validation, and project-owner license selection remain future work."
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "format": "SIIG_VISUALIZER_SHAPE_SAMPLER_VALIDATION",
+  "release": "2.10.0-dev24",
+  "status": "pass",
+  "private_validation_source": "retail Xbox 360 visualizer TEX headers from a private full-rip probe; no texture bytes bundled",
+  "shape_count": 10,
+  "all_headers_identical": true,
+  "tex_size_bytes": 65588,
+  "resource_header_size_bytes": 52,
+  "pixel_payload_size_bytes": 65536,
+  "resource_header_sha256": "5d4331385f7a946c2cf86374ec5845fa6b449d007251bc0ef271abb87513cdf3",
+  "fetch_dwords": [
+    "0x81000002",
+    "0x00000086",
+    "0x000FE07F",
+    "0x00000C14",
+    "0x00000000",
+    "0x00000A00"
+  ],
+  "decoded_fetch": {
+    "width": 128,
+    "height": 128,
+    "tiled": true,
+    "clamp_x": "repeat",
+    "clamp_y": "repeat",
+    "clamp_z": "repeat",
+    "mag_filter": "point",
+    "min_filter": "point",
+    "mip_filter": "point",
+    "anisotropy": "disabled",
+    "dimension": "2D"
+  },
+  "runtime_chain": [
+    "Function_8216EAF0 creates ten 128x128 source-image objects",
+    "Function_8216E238 selects the indexed visualizer texture resource",
+    "Function_8248BEB0 copies the serialized 0x34-byte D3D resource header into the runtime texture object",
+    "FUN_8248BDF0 returns the texture resource used by Function_821AB320",
+    "Function_821AB6D8 binds that resource through Function_8226F5C0"
+  ],
+  "external_reference": {
+    "project": "Xenia",
+    "file": "src/xenia/gpu/xenos.h",
+    "relationship": "texture fetch-constant field/enum documentation only",
+    "code_copied": false,
+    "license": "BSD-3-Clause"
+  },
+  "browser": {
+    "real_shape_image_smoothing": false,
+    "scope": "transformed draw of user-rip SHAPE texture only",
+    "procedural_fallback": "remains approximate and is not claimed to emulate texture filtering"
+  },
+  "source_package_contains_shape_pixels": false,
+  "unresolved": [
+    "sampler scope is closed; ScreenSpritePS color/tint/blend semantics are tracked separately in VISUALIZER_SHAPE_SHADER_2.10.0-dev24.json",
+    "procedural fallback geometry remains approximate when no user-rip SHAPE PNG is present"
+  ]
+}

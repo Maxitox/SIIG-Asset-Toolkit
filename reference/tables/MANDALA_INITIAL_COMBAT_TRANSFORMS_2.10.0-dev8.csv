@@ -1,0 +1,41 @@
+row,runtime_slot,label,runtime_type,model,role,phase_u8,x,y,z,scale,pose_sample,evidence_boundary
+0,0,surface_b7_00,0xB7,bos_005a.gmx,outer moving surface component,192,0.0,0.0,-109.0,1.0,,state-7 activation before first rotational update
+1,1,surface_b7_01,0xB7,bos_005a.gmx,outer moving surface component,204,31.5078125,0.0,-103.890625,1.0,,state-7 activation before first rotational update
+2,2,surface_b7_02,0xB7,bos_005a.gmx,outer moving surface component,217,62.58984375,0.0,-88.98828125,1.0,,state-7 activation before first rotational update
+3,3,surface_b7_03,0xB7,bos_005a.gmx,outer moving surface component,230,87.28515625,0.0,-64.71875,1.0,,state-7 activation before first rotational update
+4,4,surface_b7_04,0xB7,bos_005a.gmx,outer moving surface component,243,103.46484375,0.0,-34.0625,1.0,,state-7 activation before first rotational update
+5,5,surface_b7_05,0xB7,bos_005a.gmx,outer moving surface component,0,109.0,0.0,0.0,1.0,,state-7 activation before first rotational update
+6,6,surface_b7_06,0xB7,bos_005a.gmx,outer moving surface component,12,103.890625,0.0,31.5078125,1.0,,state-7 activation before first rotational update
+7,7,surface_b7_07,0xB7,bos_005a.gmx,outer moving surface component,25,88.98828125,0.0,62.58984375,1.0,,state-7 activation before first rotational update
+8,8,surface_b7_08,0xB7,bos_005a.gmx,outer moving surface component,38,64.71875,0.0,87.28515625,1.0,,state-7 activation before first rotational update
+9,9,surface_b7_09,0xB7,bos_005a.gmx,outer moving surface component,51,34.0625,0.0,103.46484375,1.0,,state-7 activation before first rotational update
+10,10,surface_b7_10,0xB7,bos_005a.gmx,outer moving surface component,64,0.0,0.0,109.0,1.0,,state-7 activation before first rotational update
+11,11,surface_b7_11,0xB7,bos_005a.gmx,outer moving surface component,76,-31.5078125,0.0,103.890625,1.0,,state-7 activation before first rotational update
+12,12,surface_b7_12,0xB7,bos_005a.gmx,outer moving surface component,89,-62.58984375,0.0,88.98828125,1.0,,state-7 activation before first rotational update
+13,13,surface_b7_13,0xB7,bos_005a.gmx,outer moving surface component,102,-87.28515625,0.0,64.71875,1.0,,state-7 activation before first rotational update
+14,14,surface_b7_14,0xB7,bos_005a.gmx,outer moving surface component,115,-103.46484375,0.0,34.0625,1.0,,state-7 activation before first rotational update
+15,15,surface_b7_15,0xB7,bos_005a.gmx,outer moving surface component,128,-109.0,0.0,0.0,1.0,,state-7 activation before first rotational update
+16,16,surface_b7_16,0xB7,bos_005a.gmx,outer moving surface component,140,-103.890625,0.0,-31.5078125,1.0,,state-7 activation before first rotational update
+17,17,surface_b7_17,0xB7,bos_005a.gmx,outer moving surface component,153,-88.98828125,0.0,-62.58984375,1.0,,state-7 activation before first rotational update
+18,18,surface_b7_18,0xB7,bos_005a.gmx,outer moving surface component,166,-64.71875,0.0,-87.28515625,1.0,,state-7 activation before first rotational update
+19,19,surface_b7_19,0xB7,bos_005a.gmx,outer moving surface component,179,-34.0625,0.0,-103.46484375,1.0,,state-7 activation before first rotational update
+20,20,surface_b8_20,0xB8,bos_005b.gmx,inner moving surface component,192,0.0,0.0,-69.0,1.0,,state-7 activation before first rotational update
+21,21,surface_b9_21,0xB9,bos_005c.gmx,inner moving surface component,224,48.78515625,0.0,-48.78515625,1.0,,state-7 activation before first rotational update
+22,22,surface_ba_22,0xBA,bos_005d.gmx,inner moving surface component,0,69.0,0.0,0.0,1.0,,state-7 activation before first rotational update
+23,23,surface_bb_23,0xBB,bos_005e.gmx,inner moving surface component,32,48.78515625,0.0,48.78515625,1.0,,state-7 activation before first rotational update
+24,24,surface_b8_24,0xB8,bos_005b.gmx,inner moving surface component,64,0.0,0.0,69.0,1.0,,state-7 activation before first rotational update
+25,25,surface_b9_25,0xB9,bos_005c.gmx,inner moving surface component,96,-48.78515625,0.0,48.78515625,1.0,,state-7 activation before first rotational update
+26,26,surface_ba_26,0xBA,bos_005d.gmx,inner moving surface component,128,-69.0,0.0,0.0,1.0,,state-7 activation before first rotational update
+27,27,surface_bb_27,0xBB,bos_005e.gmx,inner moving surface component,160,-48.78515625,0.0,-48.78515625,1.0,,state-7 activation before first rotational update
+28,60,structure_center_40,0x4A,bos_005.gmx,central structural ring,,0.0,0.0,0.0,40.0,,state-7 activation before first rotational update
+29,61,structure_center_56,0x4A,bos_005.gmx,central structural ring,,0.0,0.0,0.0,56.0,,state-7 activation before first rotational update
+30,62,structure_center_82,0x4A,bos_005.gmx,central structural ring,,0.0,0.0,0.0,82.0,,state-7 activation before first rotational update
+31,63,structure_center_109,0x4A,bos_005.gmx,central structural ring,,0.0,0.0,0.0,109.0,,state-7 activation before first rotational update
+32,64,structure_mid_0,0x4A,bos_005.gmx,radius-69 structural ring,192,0.0,0.0,-69.0,29.0,,state-7 activation before first rotational update
+33,65,structure_mid_1,0x4A,bos_005.gmx,radius-69 structural ring,0,69.0,0.0,0.0,29.0,,state-7 activation before first rotational update
+34,66,structure_mid_2,0x4A,bos_005.gmx,radius-69 structural ring,64,0.0,0.0,69.0,29.0,,state-7 activation before first rotational update
+35,67,structure_mid_3,0x4A,bos_005.gmx,radius-69 structural ring,128,-69.0,0.0,0.0,29.0,,state-7 activation before first rotational update
+36,68,structure_inner_0,0x4A,bos_005.gmx,radius-20 structural ring,192,0.0,0.0,-20.0,20.0,,state-7 activation before first rotational update
+37,69,structure_inner_1,0x4A,bos_005.gmx,radius-20 structural ring,0,20.0,0.0,0.0,20.0,,state-7 activation before first rotational update
+38,70,structure_inner_2,0x4A,bos_005.gmx,radius-20 structural ring,64,0.0,0.0,20.0,20.0,,state-7 activation before first rotational update
+39,71,structure_inner_3,0x4A,bos_005.gmx,radius-20 structural ring,128,-20.0,0.0,0.0,20.0,,state-7 activation before first rotational update

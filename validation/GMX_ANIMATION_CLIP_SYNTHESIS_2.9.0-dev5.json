@@ -1,0 +1,40 @@
+{
+  "format": "SIIG_GMX_ANIMATION_CLIP_SYNTHESIS_VALIDATION",
+  "toolkit_version": "2.9.0-dev5",
+  "status": "pass",
+  "selftest_case": "GMX multi-bone CUBICSPLINE animation synthesis",
+  "detail": "one glTF two-bone clip with CUBICSPLINE -> two synchronized native MOTN/ANIM tracks -> byte-identical exported no-op",
+  "template_fixture": "root-only GMX; no BONE/MOTN/ANIM donors",
+  "gltf_clip_target_bones": 2,
+  "native_tracks_created": 2,
+  "native_runtime_hz": 30.0,
+  "native_frame_count_per_track": 31,
+  "shared_raw_motion_duration_tested": 1.5,
+  "supported_import_channels": [
+    "translation",
+    "rotation",
+    "scale"
+  ],
+  "supported_interpolation": [
+    "LINEAR",
+    "STEP",
+    "CUBICSPLINE"
+  ],
+  "cubic_translation_midpoint_verified": {
+    "time_seconds": 0.5,
+    "x": 1.5
+  },
+  "cubic_rotation": "component-wise Hermite followed by quaternion normalization",
+  "multi_bone_mapping": "one glTF clip expands into one native MOTN/ANIM pair per target BONE on a shared 30 Hz timeline",
+  "clip_grouping_native_record": "not proven; retained as import-report provenance only",
+  "roundtrip_gltf_export_tracks": 2,
+  "animation_aware_noop_byte_identical": true,
+  "existing_native_default": "preserve by gmxMotionIndex unless gmxReplaceNativeAnimation=true",
+  "explicit_replacement_boundary": "scalar gmxMotionIndex replacement remains single-track to avoid ambiguous multi-track identity mapping",
+  "mod_import_gltf_enables_animation_sync": true,
+  "limitations": [
+    "runtime acceptance of arbitrary synthesized animations remains external emulator/hardware validation",
+    "native named clip container has not been identified",
+    "fully template-free GMX root construction remains unresolved"
+  ]
+}

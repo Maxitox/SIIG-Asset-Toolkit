@@ -1,0 +1,37 @@
+{
+  "catalogs": [
+    {
+      "animation_names": [
+        "vanity_primary:sbs_002_clip_00",
+        "vanity_helper_01:sbs_002a_clip_00",
+        "vanity_helper_02:sbs_002a_clip_00"
+      ],
+      "animations": 3,
+      "catalog": "vanity_state2_entry_relative",
+      "generated_gltf_sha256": "a5df2ef816b26660c1cc40c52c1585c5ce9f41a2c3a1bf709c357d979039eacd",
+      "instances": 3,
+      "meshes": 6,
+      "nodes": 14
+    }
+  ],
+  "evidence_boundary": "relative primary/helper coordinate records are exact at state-2 entry; helper visibility remains separately activity-gated and is not asserted by this inspection scene",
+  "format": "SIIG_DEV_RETAIL_VALIDATION",
+  "inputs": [
+    {
+      "model": "sbs_002.gmx",
+      "sha256": "130bd4f9f13f927294325e5d3b16cce21d28e0d71cb2b8137e954cd6098a07ec"
+    },
+    {
+      "model": "sbs_002a.gmx",
+      "sha256": "9d7510aa0cacefde25d177f80a2a1ddf458c77490e9d3cf0423dedb3135679ff"
+    }
+  ],
+  "release": "2.10.0-dev24",
+  "selftest": {
+    "failed": 0,
+    "passed": 122,
+    "report_external": "selftest_greed_docs.json"
+  },
+  "status": "pass",
+  "subject": "VANITY normalized state-2 entry coordinate records"
+}

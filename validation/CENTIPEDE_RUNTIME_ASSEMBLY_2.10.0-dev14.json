@@ -1,0 +1,71 @@
+{
+  "format": "SIIG_CENTIPEDE_RUNTIME_ASSEMBLY_VALIDATION",
+  "release": "2.10.0-dev14",
+  "status": "pass",
+  "catalog": "centipede_initial_combat_ring",
+  "retail_xbox": {
+    "constructor": "0x82116690",
+    "ring_initializer": "0x821133A0",
+    "role_display_dispatch": "0x82115028 -> 0x82113148",
+    "split_handler": "0x82115140",
+    "endpoint_reform_handler": "0x82113F48",
+    "final_phase_threshold_dispatch": "0x821154A0 -> 0x821140C8",
+    "visible_links": 32,
+    "head_tail_model": "bos_007.gmx / runtime 0xA0",
+    "body_model": "bos_007a.gmx / runtime 0xBE",
+    "initial_counts": {
+      "bos_007.gmx": 2,
+      "bos_007a.gmx": 30
+    },
+    "ring_radius": 80.0,
+    "angle_step_degrees": 11.25,
+    "first_angle_degrees": -90.0,
+    "orientation": "Y rotation = -ring angle"
+  },
+  "runtime_roles": {
+    "1": "head endpoint -> A0 visible, BE hidden",
+    "2": "body -> A0 hidden, BE visible",
+    "3": "tail endpoint -> A0 visible, BE hidden"
+  },
+  "split_reform": {
+    "body_destroyed": "severs both neighbor links; newly exposed ends transition to head/tail roles and therefore A0 display",
+    "endpoint_destroyed": "takes all-chain reset/reform branch; surviving links are temporarily detached/repositioned before reformation",
+    "final_phase_threshold": "32 - destroyed < 6, i.e. five or fewer surviving links",
+    "final_phase": "surviving links detach, take role 1/A0, and move independently with runtime-randomized motion; no canonical static preset"
+  },
+  "cross_platform": {
+    "june10_ring_initializer": "0x8212CA90",
+    "june10_threshold_dispatch": "0x8212ECE8",
+    "ps3_ring_initializer": "0x001A16D8",
+    "ps3_threshold_dispatch": "0x001A58D0",
+    "status": "same 32-link radius-80, 11.25-degree construction and <6-survivor final-phase threshold independently retained"
+  },
+  "real_retail_assets": {
+    "bos_007.gmx": {
+      "size": 25264,
+      "sha256": "7fd09bbd989b7cab2a9b4305de5e95f2c674350b080a20dd8ad1d4ba1bc1d6de"
+    },
+    "bos_007a.gmx": {
+      "size": 7024,
+      "sha256": "ef6ede75b5ce732d2e5803ef1a2af985e00d9d64a5ddd8c882d4025addc06d41"
+    }
+  },
+  "real_export": {
+    "instances": 32,
+    "meshes": 64,
+    "nodes": 128,
+    "animations": 0,
+    "bounds_min": [
+      -102.37330055,
+      -2.88235998,
+      -102.37330055
+    ],
+    "bounds_max": [
+      102.37330055,
+      2.88235998,
+      102.37330055
+    ]
+  },
+  "project_owner_observation": "Gameplay capture/description supplied 2026-09-16 corroborates BE as normal body form, A0 as endpoints, body-cut endpoint promotion, endpoint-triggered reform, and final independent-piece phase.",
+  "distribution_boundary": "No proprietary GMX, screenshot, or generated retail glTF is bundled in the source-only release."
+}

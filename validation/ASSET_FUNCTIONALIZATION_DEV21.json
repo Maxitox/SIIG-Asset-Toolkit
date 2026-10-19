@@ -1,0 +1,176 @@
+{
+  "format": "SIIG_ASSET_CAPABILITY_MATRIX",
+  "schema": 1,
+  "toolkit_version": "2.8.0-dev21",
+  "goal": "make every extracted resource useful for viewing, editing, replay, archival, or native rebuild",
+  "counts": {
+    "known_formats": 14,
+    "native_round_trip": 7,
+    "viewable_or_exportable": 14,
+    "native_builder_available": 8
+  },
+  "assets": [
+    {
+      "format": "BBX",
+      "extensions": [
+        ".bin",
+        ".bbx"
+      ],
+      "read": "complete",
+      "view": "inventory/extract",
+      "edit": "native round-trip",
+      "native_build": "repack-bbx",
+      "next_gap": "semantic naming for remaining anonymous resources"
+    },
+    {
+      "format": "TEX",
+      "extensions": [
+        ".tex"
+      ],
+      "read": "complete for supplied Xbox/PS3 corpus",
+      "view": "PNG",
+      "edit": "native round-trip using original TEX template",
+      "native_build": "png2tex",
+      "next_gap": "new layout/header synthesis without a template"
+    },
+    {
+      "format": "systemfont CRP",
+      "extensions": [
+        ".crp"
+      ],
+      "read": "complete",
+      "view": "PNG glyph atlas",
+      "edit": "native round-trip using original CRP/template",
+      "native_build": "png2font",
+      "next_gap": "glyph-table editing and font-metric authoring"
+    },
+    {
+      "format": "GMX",
+      "extensions": [
+        ".gmx"
+      ],
+      "read": "geometry/hierarchy/materials/animation decoded",
+      "view": "glTF/OBJ/Blender/viewer",
+      "edit": "export-side only",
+      "native_build": null,
+      "next_gap": "glTF/Blender -> GMX compiler and attachment/material reconstruction"
+    },
+    {
+      "format": "DAT",
+      "extensions": [
+        ".dat"
+      ],
+      "read": "binary layout complete; semantics partial",
+      "view": "timed CSV/JSON/stage explorer",
+      "edit": "native round-trip from CSV/JSON",
+      "native_build": "dat-build",
+      "next_gap": "complete opcode/parameter semantics and stage simulator"
+    },
+    {
+      "format": "MAP",
+      "extensions": [
+        ".map"
+      ],
+      "read": "byte grids and tile/flip encoding complete",
+      "view": "PNG/atlas/stage explorer",
+      "edit": "native round-trip from editable JSON",
+      "native_build": "map-build",
+      "next_gap": "runtime layer roles and full scroll playback"
+    },
+    {
+      "format": "ANM",
+      "extensions": [
+        ".anm"
+      ],
+      "read": "record layout complete",
+      "view": "CSV/JSON/timeline",
+      "edit": "native round-trip from CSV/JSON",
+      "native_build": "anm-build",
+      "next_gap": "prove higher-level gameplay meaning for all animation groups"
+    },
+    {
+      "format": "COL",
+      "extensions": [
+        ".col"
+      ],
+      "read": "1-bit mask layout complete",
+      "view": "PNG",
+      "edit": "native round-trip from PNG/template",
+      "native_build": "png2col",
+      "next_gap": "prove variant field semantics"
+    },
+    {
+      "format": "XACT XWB/XSB",
+      "extensions": [
+        ".xwb",
+        ".xsb"
+      ],
+      "read": "bank/cue layout decoded",
+      "view": "named WAV when decoder available",
+      "edit": "not yet native-encodable",
+      "native_build": null,
+      "next_gap": "replacement/rebuild workflow for XMA2 banks"
+    },
+    {
+      "format": "PS3 SBlk/989SND",
+      "extensions": [
+        ".bnk"
+      ],
+      "read": "retail bank decoded",
+      "view": "named WAV",
+      "edit": "not yet native-encodable",
+      "native_build": null,
+      "next_gap": "VAG/SBlk bank rebuild"
+    },
+    {
+      "format": "localization",
+      "extensions": [
+        "text.bin",
+        "message.bin"
+      ],
+      "read": "decoded",
+      "view": "UTF-8 CSV/JSON/source",
+      "edit": "raw BBX payload editing possible; no dedicated compiler",
+      "native_build": "repack-bbx (manual payload path)",
+      "next_gap": "dedicated text/message compilers"
+    },
+    {
+      "format": "stage3D route tables",
+      "extensions": [
+        "Bmap*.bin",
+        "Xmap*.bin",
+        "map4*.bin",
+        "map5*.bin"
+      ],
+      "read": "structurally decoded",
+      "view": "JSON/CSV/OBJ/runtime route playback",
+      "edit": "not yet native-encodable",
+      "native_build": null,
+      "next_gap": "structured JSON -> native route-table compiler"
+    },
+    {
+      "format": "stagewall/generator tables",
+      "extensions": [
+        "wall*.bin",
+        "Xwall*.bin",
+        "stage_generate.bin"
+      ],
+      "read": "structurally decoded",
+      "view": "CSV/JSON",
+      "edit": "not yet native-encodable",
+      "native_build": null,
+      "next_gap": "CSV/JSON -> native table compiler"
+    },
+    {
+      "format": "Xenos compiled shader",
+      "extensions": [
+        "shader resources"
+      ],
+      "read": "container/header/microcode bounds decoded",
+      "view": "metadata + raw microcode",
+      "edit": "opaque microcode only",
+      "native_build": null,
+      "next_gap": "Xenos ISA disassembly/translation or compatible shader compiler"
+    }
+  ]
+}

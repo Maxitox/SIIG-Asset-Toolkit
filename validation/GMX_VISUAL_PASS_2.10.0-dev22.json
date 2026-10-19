@@ -1,0 +1,61 @@
+{
+  "format": "SIIG_GMX_VISUAL_PASS_VALIDATION",
+  "release": "2.10.0-dev22",
+  "date": "2026-09-17",
+  "status": "pass",
+  "modes": [
+    "separate",
+    "solid",
+    "outline",
+    "combined"
+  ],
+  "default": "separate",
+  "classification": {
+    "primary": "native bone suffix/name `_F` solid/face vs `_E` outline/edge",
+    "fallback": "material/primitive classification for atypical/malformed files"
+  },
+  "the_sun_bos_002": {
+    "separate": {
+      "meshes": 8,
+      "animations": 6,
+      "channels": 18
+    },
+    "solid": {
+      "meshes": 4,
+      "animations": 3,
+      "channels": 9
+    },
+    "outline": {
+      "meshes": 4,
+      "animations": 3,
+      "channels": 9
+    },
+    "combined": {
+      "meshes": 8,
+      "animations": 1,
+      "channels": 18
+    }
+  },
+  "progressive_ufo_assembly": {
+    "solid": {
+      "meshes": 5,
+      "nodes": 20,
+      "animations": 5,
+      "channels": 15
+    },
+    "combined": {
+      "meshes": 10,
+      "nodes": 20,
+      "animations": 5,
+      "channels": 30
+    }
+  },
+  "threaded_through": [
+    "gmx2gltf",
+    "gmx-assemble/gmx-assemble-catalog",
+    "rip-game",
+    "desktop GUI"
+  ],
+  "selftest_covered": true,
+  "ok": true
+}

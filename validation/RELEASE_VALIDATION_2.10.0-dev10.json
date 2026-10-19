@@ -1,0 +1,120 @@
+{
+  "format": "SIIG_RELEASE_VALIDATION",
+  "release": "2.10.0-dev10",
+  "date": "2026-09-15",
+  "status": "development-pass",
+  "selftest": {
+    "passed": 92,
+    "failed": 0,
+    "ok": true,
+    "report": "validation/SELFTEST_2.10.0-dev10.json",
+    "reported_toolkit_version": "2.10.0-dev10"
+  },
+  "inherited_release_gate": {
+    "from": "2.10.0-dev9",
+    "report": "validation/RELEASE_VALIDATION_2.10.0-dev9.json",
+    "note": "All sealed dev9 ULTIMATE UFO, dev8 MANDALA, dev7 HORNET propagation, dev6 prism-wall, dev5 full-armor/CRAB, native-format, mod-package and source-only gates remain inherited. Dev10 adds the executable-backed HORNET exposed-core state-3 entry and fresh real-retail validation."
+  },
+  "hornet_exposed_core": {
+    "status": "pass",
+    "report": "validation/HORNET_EXPOSED_CORE_2.10.0-dev10.json",
+    "catalog": "hornet_exposed_core",
+    "runtime_state": 3,
+    "snapshot": "state-entry",
+    "visible_instances": 1,
+    "cross_builds": 3,
+    "retail_xbox": "0x8211E3D0/0x8211CF98/0x8211D840/0x8211D648",
+    "june10_xbox": "0x82138568/0x82136FD0/0x82137820/0x82137628",
+    "retail_ps3": "0x001B25B8/0x001B02F8/0x001AFFD8",
+    "fresh_real_retail_export": {
+      "instances": 1,
+      "meshes": 2,
+      "nodes": 4,
+      "animations": 0,
+      "bounds_abs_approx": 13.8054
+    },
+    "fresh_retail_hash_match_historical_dev5": true
+  },
+  "desktop_gui": {
+    "status": "pass",
+    "report": "validation/DESKTOP_GUI_2.10.0-dev10.json",
+    "gui_version": "0.21.0-dev10",
+    "tabs": [
+      "Game Rip",
+      "Mod Workspace",
+      "GMX Workbench",
+      "Utilities"
+    ],
+    "gui_modes": [
+      "simple",
+      "advanced"
+    ],
+    "default_gui_mode": "simple",
+    "hover_context_help": true,
+    "hornet_full_armor": true,
+    "hornet_exposed_core": true,
+    "hornet_prism_wall_variants": 13,
+    "hornet_propagation_family": true
+  },
+  "asset_functionalization": {
+    "status": "pass",
+    "report": "validation/ASSET_FUNCTIONALIZATION_2.10.0-dev10.json",
+    "known_asset_families": 14,
+    "viewable_or_exportable_families": 14,
+    "native_round_trip_families": 11,
+    "native_builder_available_families": 11,
+    "gmx_multi_file_assembly": true,
+    "hornet_exposed_core": true
+  },
+  "versioning_policy": {
+    "status": "pass",
+    "report": "validation/VERSIONING_POLICY_2.10.0-dev10.json",
+    "previous": "2.10.0-dev9",
+    "current": "2.10.0-dev10"
+  },
+  "source_only_audit": {
+    "status": "pass",
+    "report": "validation/SOURCE_ONLY_AUDIT_2.10.0-dev10.json",
+    "game_assets": 0,
+    "external_executable_magic": 0,
+    "archive_binary_members": 0,
+    "private_runtime_paths": 0,
+    "python_bytecode": 0,
+    "third_party_binaries_bundled": false,
+    "sources_rows": 24
+  },
+  "version_consistency": {
+    "VERSION.txt": "2.10.0-dev10",
+    "cli_toolkit_version": "2.10.0-dev10",
+    "gui_version": "0.21.0-dev10"
+  },
+  "fresh_package": {
+    "status": "pass",
+    "candidate_manifest_entries_verified": 499,
+    "candidate_manifest_missing": 0,
+    "candidate_manifest_mismatched": 0,
+    "candidate_unlisted_files": 0,
+    "candidate_source_only_audit": "pass",
+    "candidate_selftest_passed": 92,
+    "candidate_selftest_failed": 0,
+    "candidate_version_reported": "2.10.0-dev10",
+    "candidate_gui_version": "0.21.0-dev10",
+    "candidate_gui_hornet_exposed_core": true,
+    "candidate_package_sha256": "911c216770faa17aac457de9e19f90d8e849083fe0841a54d63debe80db2d139",
+    "note": "Candidate was extracted fresh, verified against RELEASE_MANIFEST with no unlisted files, independently source-audited before executing package code, then passed 92/92 selftests plus CLI/GUI version and HORNET exposed-core checks. Final package is rebuilt deterministically after recording this evidence."
+  },
+  "limitations": [
+    "hornet_exposed_core is the deterministic state-3 entry snapshot; it does not claim A1 remains frozen at sample 0 throughout the entire attack state.",
+    "The state-3 exposed-core preset contains A1 visible geometry only; C1 remains a meshless runtime formation rig and BF/C0 pools are not selected after the common reset.",
+    "HORNET prism-wall and state-6 propagation catalogs remain runtime families rather than one canonical random result.",
+    "Fresh retail Xbox game data was used only for external validation; no proprietary package, GMX, ANM or generated retail glTF is bundled.",
+    "Native SIIG coordinate scale is preserved; no speculative meter conversion or hidden display scaling is applied.",
+    "Assembly export produces a combined glTF viewing/editing scene; it does not claim the retail game stores or accepts one merged native GMX.",
+    "Runtime acceptance of arbitrary fully original synthesized scenes remains a separate emulator/hardware gate.",
+    "Platform shader microcode compilation and remaining opaque GMX semantics remain unresolved.",
+    "Compressed/mipmapped native texture variants are not synthesized.",
+    "PS3 NPDRM/SDAT re-encryption is not implemented.",
+    "Audio replacement/rebuilding remains intentionally deferred.",
+    "Project-owner license selection remains open."
+  ]
+}

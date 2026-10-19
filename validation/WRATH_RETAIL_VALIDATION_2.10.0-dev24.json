@@ -1,0 +1,85 @@
+{
+  "approach_action": {
+    "final_xyz": [
+      213.0,
+      0.0,
+      80.0
+    ],
+    "first_xyz": [
+      213.0,
+      -500.0,
+      280.0
+    ],
+    "interpolation": "LINEAR",
+    "name": "WRATH Level 4-4 state-0 approach",
+    "penultimate_xyz": [
+      213.0,
+      -7.90735387802124,
+      83.1629409790039
+    ],
+    "runtime_hz": 60.0,
+    "samples": 55,
+    "updates": 54
+  },
+  "auxiliary_pools": {
+    "group0": {
+      "capacity": 40,
+      "factory": "Function_8213CBC0",
+      "permanent_gmx_part": false,
+      "role": "four-point pooled attack projectile/effect slots",
+      "type": "0x39"
+    },
+    "group1": {
+      "capacity": 2,
+      "factory": "Function_8213D708",
+      "permanent_gmx_part": false,
+      "role": "lt_005/lt_006 locator-driven procedural effect slots",
+      "type": "0x38"
+    }
+  },
+  "catalogs": [
+    {
+      "animation_names": [
+        "WRATH Level 4-4 state-0 approach"
+      ],
+      "animations": 1,
+      "catalog": "wrath_retail_level4_4_approach",
+      "generated_gltf_sha256": "13e2b9e58e91d755309331f1fb2537b1b1767c46c39bc8c041fc41dabdd59125",
+      "instances": 1,
+      "meshes": 2,
+      "nodes": 10
+    }
+  ],
+  "evidence_boundary": "body spawn/approach/anchor, state-1 rates, attack timing and transient auxiliary-pool classification are executable-backed; live player-dependent tracking and procedural attack rendering are deliberately not baked as permanent GMX parts",
+  "format": "SIIG_DEV_RETAIL_VALIDATION",
+  "input": {
+    "model": "emy_049.gmx",
+    "note": "external retail asset used only for validation; not bundled",
+    "runtime_type": "0x9B",
+    "sha256": "6522b53fd055269d3a8a8b54d85e1ebadf9689e1dceb590a5517b9980f6261e9"
+  },
+  "release": "2.10.0-dev24",
+  "selftest": {
+    "failed": 0,
+    "passed": 124,
+    "report_external": "selftest_wrath_aux_124.json"
+  },
+  "source_dat": {
+    "args": [
+      0,
+      3500,
+      2560,
+      213,
+      80,
+      0,
+      30
+    ],
+    "command_index": 406,
+    "file": "level4_stage4.dat",
+    "frame": 654354,
+    "opcode_decimal": 155,
+    "opcode_hex": "0x9B"
+  },
+  "status": "pass",
+  "subject": "WRATH runtime 0x9B Level 4-4 approach"
+}

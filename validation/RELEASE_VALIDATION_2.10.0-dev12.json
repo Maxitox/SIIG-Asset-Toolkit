@@ -1,0 +1,145 @@
+{
+  "format": "SIIG_RELEASE_VALIDATION",
+  "release": "2.10.0-dev12",
+  "date": "2026-09-16",
+  "status": "development-pass",
+  "selftest": {
+    "passed": 94,
+    "failed": 0,
+    "ok": true,
+    "report": "validation/SELFTEST_2.10.0-dev12.json",
+    "reported_toolkit_version": "2.10.0-dev12"
+  },
+  "inherited_release_gate": {
+    "from": "2.10.0-dev11",
+    "report": "validation/RELEASE_VALIDATION_2.10.0-dev11.json",
+    "note": "All sealed dev11 BUTTERFLY, dev10 HORNET, dev9 ULTIMATE UFO, dev8 MANDALA, earlier GMX/mod/native-format and source-only gates remain inherited. Dev12 resolves UNKNOWN internal-form selection and validates it against the real retail GMX."
+  },
+  "unknown_internal_forms": {
+    "status": "pass",
+    "report": "validation/UNKNOWN_INTERNAL_FORMS_2.10.0-dev12.json",
+    "catalogs": [
+      "unknown_all_forms",
+      "unknown_form_01",
+      "unknown_form_02",
+      "unknown_form_03",
+      "unknown_form_04",
+      "unknown_form_05",
+      "unknown_form_06",
+      "unknown_form_07",
+      "unknown_form_08",
+      "unknown_form_09",
+      "unknown_form_10",
+      "unknown_form_11",
+      "unknown_form_12",
+      "unknown_form_13",
+      "unknown_form_14"
+    ],
+    "named_branches": 14,
+    "unique_visual_forms": 13,
+    "visual_duplicate": {
+      "uk08": "uk01"
+    },
+    "normal_console_named_cycle": 12,
+    "normal_console_unique_visuals": 11,
+    "normalized_cycle_hz": 30,
+    "period_seconds": 0.4,
+    "retail_xbox_draw": "0x821302E8",
+    "retail_xbox_move": "0x82240DD0",
+    "june10_draw": "0x8214B4C0",
+    "june10_move": "0x822682A0",
+    "retail_ps3_draw": "0x001D5148",
+    "retail_ps3_move": "0x001039EC",
+    "state_0": "forces uk01",
+    "uk13_uk14": "registered native branches outside the normal 12-tick cycle",
+    "fresh_real_retail": {
+      "bos_006_sha256": "9ec3de255073c7871ef35dce3f27de6305ae9e3b8c1177bcfaeef4a04befbecf",
+      "meshes": 33,
+      "bones": 48,
+      "animations": 0,
+      "all_forms_nodes": 49
+    }
+  },
+  "desktop_gui": {
+    "status": "pass",
+    "report": "validation/DESKTOP_GUI_2.10.0-dev12.json",
+    "gui_version": "0.23.0-dev12",
+    "tabs": [
+      "Game Rip",
+      "Mod Workspace",
+      "GMX Workbench",
+      "Utilities"
+    ],
+    "gui_modes": [
+      "simple",
+      "advanced"
+    ],
+    "default_gui_mode": "simple",
+    "hover_context_help": true,
+    "unknown_internal_forms": 14,
+    "unknown_unique_visual_forms": 13,
+    "unknown_visual_duplicate": "uk08=uk01"
+  },
+  "asset_functionalization": {
+    "status": "pass",
+    "report": "validation/ASSET_FUNCTIONALIZATION_2.10.0-dev12.json",
+    "known_asset_families": 14,
+    "viewable_or_exportable_families": 14,
+    "native_round_trip_families": 11,
+    "native_builder_available_families": 11,
+    "gmx_multi_file_assembly": true,
+    "unknown_internal_form_export": true
+  },
+  "versioning_policy": {
+    "status": "pass",
+    "report": "validation/VERSIONING_POLICY_2.10.0-dev12.json",
+    "previous": "2.10.0-dev11",
+    "current": "2.10.0-dev12"
+  },
+  "source_only_audit": {
+    "status": "pass",
+    "report": "validation/SOURCE_ONLY_AUDIT_2.10.0-dev12.json",
+    "game_assets": 0,
+    "external_executable_magic": 0,
+    "archive_binary_members": 0,
+    "private_runtime_paths": 0,
+    "python_bytecode": 0,
+    "third_party_binaries_bundled": false,
+    "sources_rows": 24
+  },
+  "version_consistency": {
+    "VERSION.txt": "2.10.0-dev12",
+    "cli_toolkit_version": "2.10.0-dev12",
+    "gui_version": "0.23.0-dev12"
+  },
+  "fresh_package": {
+    "status": "pass",
+    "candidate_manifest_entries_verified": 519,
+    "candidate_manifest_missing": 0,
+    "candidate_manifest_mismatched": 0,
+    "candidate_unlisted_files": 0,
+    "candidate_source_only_audit": "pass",
+    "candidate_selftest_passed": 94,
+    "candidate_selftest_failed": 0,
+    "candidate_version_reported": "2.10.0-dev12",
+    "candidate_gui_version": "0.23.0-dev12",
+    "candidate_gui_unknown_internal_forms": 14,
+    "candidate_gui_unknown_unique_visual_forms": 13,
+    "candidate_gui_unknown_visual_duplicate": "uk08=uk01",
+    "candidate_package_sha256": "6cf0573fe5f3317254ed00321f14df9607b2b8a52e3bc94caa4eb01e508a8cfe",
+    "note": "Candidate was extracted fresh, verified against RELEASE_MANIFEST with no unlisted files, independently source-audited before executing package code, then passed 94/94 selftests plus CLI/GUI version and UNKNOWN 14-named/13-unique form checks. Final package is rebuilt deterministically after recording this evidence."
+  },
+  "limitations": [
+    "UNKNOWN form export is exact native subtree selection; the toolkit does not pretend the runtime visibility toggle is a native GMX animation because bos_006.gmx contains no MOTN/ANIM.",
+    "uk13 and uk14 are renderer-registered native branches but are not promoted into the normal 12-tick console cycle without runtime evidence.",
+    "The project-owner 2D duplicate observation is corroboration only; the 3D uk08=uk01 relation is independently proven from the retail GMX.",
+    "Fresh retail Xbox game data was used only for external validation; no proprietary package, GMX, screenshot or generated retail glTF is bundled.",
+    "Native SIIG coordinate scale is preserved; no speculative meter conversion or hidden display scaling is applied.",
+    "Runtime acceptance of arbitrary fully original synthesized scenes remains a separate emulator/hardware gate.",
+    "Platform shader microcode compilation and remaining opaque GMX semantics remain unresolved.",
+    "Compressed/mipmapped native texture variants are not synthesized.",
+    "PS3 NPDRM/SDAT re-encryption is not implemented.",
+    "Audio replacement/rebuilding remains intentionally deferred.",
+    "Project-owner license selection remains open."
+  ]
+}

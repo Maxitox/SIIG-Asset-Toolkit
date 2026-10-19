@@ -1,0 +1,28 @@
+entity,aspect,evidence,value,status
+TELEPORTER,dat_handler,retail_xbox,Function_821AE858,exact
+TELEPORTER,state_update,retail_xbox,Function_82235D50,exact
+TELEPORTER,visual_controller,retail_xbox,Function_8210B888,exact
+TELEPORTER,world5_4_left_xz,retail_dat,"142;70",exact
+TELEPORTER,world5_4_left_anchor_x,retail_xbox,284,exact
+TELEPORTER,world5_4_right_xz,retail_dat,"284;70",exact
+TELEPORTER,world5_4_right_anchor_x,retail_xbox,142,exact
+TELEPORTER,state0_samples,retail_xbox_normal_step,20,exact
+TELEPORTER,state1_samples,retail_xbox_normal_step,30,exact
+TELEPORTER,state2_samples,retail_xbox_normal_step,14,exact
+TELEPORTER,state3_samples,retail_xbox_normal_step,30,exact
+TELEPORTER,state4_samples,retail_xbox_normal_step,20,exact
+TELEPORTER,deterministic_cycle_samples,retail_xbox_normal_step,114,exact
+TELEPORTER,state2_activation_interval,retail_xbox_normal_step,1 update,exact
+TELEPORTER,state2_tick7_modes,retail_xbox,"0;0;1;2;3;4;5;-1;-1",exact
+VANITY,dat_handler,retail_xbox,Function_821AF5A0,exact
+VANITY,state_update,retail_xbox,Function_822395D0,exact
+VANITY,visual_controller,retail_xbox,Function_8210CAB8,exact
+VANITY,common_positioner,retail_xbox,Function_820FA770,exact
+VANITY,helper_x_offsets,retail_xbox,"-74;+74",exact
+VANITY,main_game_start_xz,retail_dat,"213;-24",exact_for_main_game_rows
+VANITY,main_game_target_xz,retail_dat,"213;32",exact_for_main_game_rows
+VANITY,state2_counter_range,retail_xbox,"1000..500 step -10",exact
+VANITY,state2_local_y_range,retail_xbox,"0..-100",exact
+VANITY,state2_local_y_samples,retail_xbox,51,exact
+VANITY,state2_xz,retail_xbox,live steering,not_static
+VANITY,state2_helpers,retail_xbox,independent activity and retained coordinates,not_static

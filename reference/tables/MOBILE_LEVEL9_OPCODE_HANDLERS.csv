@@ -1,0 +1,10 @@
+opcode,name,analyzeScript_jump_entry_armv7,case_address_armv7,tail_call,evidence
+0x004C,THE_MOON_V2,0x00011DD0,0x0001248C,_setTheMoonV2,iOS 4.1.0 ARMv7 _analyzeScript jump table and retained Mach-O symbol name
+0x004D,THE_SUN_V2,0x00011DD4,0x000124AC,_setTheSunV2,iOS 4.1.0 ARMv7 _analyzeScript jump table and retained Mach-O symbol name
+0x004E,GIGANTIC_UFO_V2,0x00011DD8,0x000124CC,_setGiganticUfoV2,iOS 4.1.0 ARMv7 _analyzeScript jump table and retained Mach-O symbol name
+0x004F,LADYBUG_V2,0x00011DDC,0x000124EC,_setLadybugV2,iOS 4.1.0 ARMv7 _analyzeScript jump table and retained Mach-O symbol name
+0x0050,MANDALA_V2,0x00011DE0,0x0001250C,_setMandalaV2,iOS 4.1.0 ARMv7 _analyzeScript jump table and retained Mach-O symbol name
+0x0051,UNKNOWN_V2,0x00011DE4,0x0001252C,_setUnknownV2,iOS 4.1.0 ARMv7 _analyzeScript jump table and retained Mach-O symbol name
+0x0052,KING_FOSSIL,0x00011DE8,0x0001254C,_setKingFossil,iOS 4.1.0 ARMv7 _analyzeScript jump table and retained Mach-O symbol name
+0x0053,TWILIGHT_MIRAGE,0x00011DEC,0x00012568,_setTwilightMirage,iOS 4.1.0 ARMv7 _analyzeScript jump table and retained Mach-O symbol name
+0x0054,APARTHEAD,0x00011DF0,0x00012588,_setApartHead,iOS 4.1.0 ARMv7 _analyzeScript jump table and retained Mach-O symbol name

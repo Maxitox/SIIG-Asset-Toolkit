@@ -1,0 +1,50 @@
+{
+  "format": "SIIG_RELEASE_VALIDATION",
+  "release": "2.8.0-dev10",
+  "date": "2026-09-06",
+  "status": "development-pass",
+  "selftest": {
+    "passed": 38,
+    "failed": 0,
+    "ok": true,
+    "report": "validation/SELFTEST_2.8.0-dev10.json"
+  },
+  "inherited_release_gate": {
+    "from": "2.8.0-dev9",
+    "report": "validation/RELEASE_VALIDATION_2.8.0-dev9.json",
+    "note": "Dev10 closes the executable/script special-stage reload chain and adds Ultimate UFO HP-zero/destruction-state research. Dev9 route tables/hold-resume and all earlier extraction/rendering/audio/package gates remain inherited from frozen validated checkpoints."
+  },
+  "dev10_special_stage_death_validation": {
+    "status": "pass",
+    "report": "validation/SPECIAL_STAGE_DEATH_VALIDATION_2.8.0-dev10.json",
+    "cross_builds": 5,
+    "retail_stage_count": 92,
+    "special_boss_occurrences": 6,
+    "matching_warning_requests": 6,
+    "direct_reload_write_recovered": true,
+    "ultimate_ufo_hp_zero_dispatch_recovered": true,
+    "prototype_vanish_symbol_recovered": true,
+    "retail_phase12_13_actions_recovered": true
+  },
+  "source_only_audit": {
+    "status": "pass",
+    "report": "validation/SOURCE_ONLY_AUDIT_2.8.0-dev10.json",
+    "game_assets": 0,
+    "external_executable_magic": 0,
+    "archive_binary_members": 0,
+    "private_runtime_paths": 0,
+    "python_bytecode": 0,
+    "third_party_binaries_bundled": false,
+    "sources_rows": 18
+  },
+  "limitations": [
+    "The known retail setup directly selects camera index 0/cam01; no proven retail activation callsite selecting index 1/cam02 has been found.",
+    "Ultimate UFO gameplay labels for vertical traversal, airlock escape, and the final rear-camera shot are not assigned to specific phases/camera resources without an executable-backed camera consumer.",
+    "The HP-zero/destruction chain and the authored WARNING special-stage reload chain are distinct mechanisms; boss death/spawn is not claimed to write the reload parameter.",
+    "Runtime fog-profile selection over time remains unresolved.",
+    "Camera preset word 11 remains a proven shared model/material scalar with unresolved exact virtual-setter meaning.",
+    "Instruction-level RSX/Xenos shader disassembly/translation remains future work.",
+    "The bundled Blender add-on has not been exercised inside a real Blender UI/runtime.",
+    "The project owner has not selected a license for original toolkit code."
+  ]
+}

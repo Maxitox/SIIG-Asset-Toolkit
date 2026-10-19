@@ -1,0 +1,906 @@
+{
+  "format": "SIIG_RESEARCH_VALIDATION",
+  "toolkit_version": "2.4.0",
+  "date": "2026-08-27",
+  "anm": {
+    "files": 3,
+    "records": 160,
+    "groups": 130,
+    "details": [
+      {
+        "file": "enemy.anm",
+        "records": 90,
+        "groups": 60,
+        "looped": 35,
+        "non_looped": 55
+      },
+      {
+        "file": "map.anm",
+        "records": 67,
+        "groups": 67,
+        "looped": 40,
+        "non_looped": 27
+      },
+      {
+        "file": "player.anm",
+        "records": 3,
+        "groups": 3,
+        "looped": 3,
+        "non_looped": 0
+      }
+    ]
+  },
+  "stage3d": {
+    "files": 47,
+    "active_records": 19563,
+    "model_placements": 23830,
+    "unique_model_refs": 77,
+    "missing_model_refs": 0,
+    "cell_step_counts": {
+      "0,0,-1": 16890,
+      "0,1,0": 1616,
+      "0,0,1": 512,
+      "0,-1,0": 522,
+      "0,1,-1": 2,
+      "1,0,0": 20,
+      "0,-1,-1": 1
+    },
+    "files_detail": [
+      {
+        "file": "Bmap01.bin",
+        "capacity": 512,
+        "active": 512,
+        "placements": 0,
+        "kind": "boss"
+      },
+      {
+        "file": "Bmap02.bin",
+        "capacity": 512,
+        "active": 512,
+        "placements": 0,
+        "kind": "boss"
+      },
+      {
+        "file": "Bmap03.bin",
+        "capacity": 512,
+        "active": 512,
+        "placements": 0,
+        "kind": "boss"
+      },
+      {
+        "file": "Bmap04.bin",
+        "capacity": 512,
+        "active": 512,
+        "placements": 0,
+        "kind": "boss"
+      },
+      {
+        "file": "Bmap05.bin",
+        "capacity": 512,
+        "active": 512,
+        "placements": 0,
+        "kind": "boss"
+      },
+      {
+        "file": "Bmap06.bin",
+        "capacity": 512,
+        "active": 512,
+        "placements": 0,
+        "kind": "boss"
+      },
+      {
+        "file": "Bmap07.bin",
+        "capacity": 512,
+        "active": 512,
+        "placements": 512,
+        "kind": "boss"
+      },
+      {
+        "file": "Bmap08.bin",
+        "capacity": 512,
+        "active": 512,
+        "placements": 512,
+        "kind": "boss"
+      },
+      {
+        "file": "Bmap09.bin",
+        "capacity": 512,
+        "active": 512,
+        "placements": 512,
+        "kind": "boss"
+      },
+      {
+        "file": "Bmap10.bin",
+        "capacity": 512,
+        "active": 512,
+        "placements": 512,
+        "kind": "boss"
+      },
+      {
+        "file": "Bmap11.bin",
+        "capacity": 512,
+        "active": 512,
+        "placements": 1024,
+        "kind": "boss"
+      },
+      {
+        "file": "Bmap12.bin",
+        "capacity": 512,
+        "active": 512,
+        "placements": 1,
+        "kind": "boss"
+      },
+      {
+        "file": "Bmap13.bin",
+        "capacity": 128,
+        "active": 51,
+        "placements": 1,
+        "kind": "boss"
+      },
+      {
+        "file": "Bmap14.bin",
+        "capacity": 512,
+        "active": 512,
+        "placements": 1536,
+        "kind": "boss"
+      },
+      {
+        "file": "Bmap15.bin",
+        "capacity": 512,
+        "active": 512,
+        "placements": 0,
+        "kind": "boss"
+      },
+      {
+        "file": "Bmap16.bin",
+        "capacity": 512,
+        "active": 512,
+        "placements": 1537,
+        "kind": "boss"
+      },
+      {
+        "file": "Bmap17.bin",
+        "capacity": 512,
+        "active": 512,
+        "placements": 512,
+        "kind": "boss"
+      },
+      {
+        "file": "Bmap18.bin",
+        "capacity": 512,
+        "active": 512,
+        "placements": 1,
+        "kind": "boss"
+      },
+      {
+        "file": "Xmap1_2.bin",
+        "capacity": 128,
+        "active": 128,
+        "placements": 128,
+        "kind": "normal"
+      },
+      {
+        "file": "Xmap1_3.bin",
+        "capacity": 512,
+        "active": 512,
+        "placements": 1024,
+        "kind": "normal"
+      },
+      {
+        "file": "Xmap1_6.bin",
+        "capacity": 512,
+        "active": 51,
+        "placements": 153,
+        "kind": "normal"
+      },
+      {
+        "file": "Xmap2_1.bin",
+        "capacity": 128,
+        "active": 127,
+        "placements": 127,
+        "kind": "normal"
+      },
+      {
+        "file": "Xmap2_5.bin",
+        "capacity": 512,
+        "active": 512,
+        "placements": 512,
+        "kind": "normal"
+      },
+      {
+        "file": "Xmap2_6.bin",
+        "capacity": 512,
+        "active": 512,
+        "placements": 512,
+        "kind": "normal"
+      },
+      {
+        "file": "Xmap3_1.bin",
+        "capacity": 512,
+        "active": 512,
+        "placements": 512,
+        "kind": "normal"
+      },
+      {
+        "file": "Xmap3_2.bin",
+        "capacity": 128,
+        "active": 128,
+        "placements": 128,
+        "kind": "normal"
+      },
+      {
+        "file": "Xmap3_4.bin",
+        "capacity": 512,
+        "active": 512,
+        "placements": 512,
+        "kind": "normal"
+      },
+      {
+        "file": "Xmap4_1.bin",
+        "capacity": 128,
+        "active": 0,
+        "placements": 0,
+        "kind": "normal"
+      },
+      {
+        "file": "Xmap4_3.bin",
+        "capacity": 512,
+        "active": 512,
+        "placements": 1499,
+        "kind": "normal"
+      },
+      {
+        "file": "Xmap4_4.bin",
+        "capacity": 128,
+        "active": 128,
+        "placements": 249,
+        "kind": "normal"
+      },
+      {
+        "file": "Xmap4_6.bin",
+        "capacity": 128,
+        "active": 51,
+        "placements": 0,
+        "kind": "normal"
+      },
+      {
+        "file": "Xmap5_1.bin",
+        "capacity": 128,
+        "active": 128,
+        "placements": 128,
+        "kind": "normal"
+      },
+      {
+        "file": "Xmap5_4.bin",
+        "capacity": 512,
+        "active": 512,
+        "placements": 1014,
+        "kind": "normal"
+      },
+      {
+        "file": "Xmap5_5.bin",
+        "capacity": 512,
+        "active": 512,
+        "placements": 1024,
+        "kind": "normal"
+      },
+      {
+        "file": "Xmap5_6.bin",
+        "capacity": 128,
+        "active": 51,
+        "placements": 0,
+        "kind": "normal"
+      },
+      {
+        "file": "map4_1.bin",
+        "capacity": 512,
+        "active": 512,
+        "placements": 1033,
+        "kind": "unknown"
+      },
+      {
+        "file": "map4_2.bin",
+        "capacity": 512,
+        "active": 512,
+        "placements": 1024,
+        "kind": "unknown"
+      },
+      {
+        "file": "map4_3.bin",
+        "capacity": 512,
+        "active": 512,
+        "placements": 1024,
+        "kind": "unknown"
+      },
+      {
+        "file": "map4_4.bin",
+        "capacity": 512,
+        "active": 512,
+        "placements": 1024,
+        "kind": "unknown"
+      },
+      {
+        "file": "map4_5.bin",
+        "capacity": 512,
+        "active": 512,
+        "placements": 512,
+        "kind": "unknown"
+      },
+      {
+        "file": "map4_6.bin",
+        "capacity": 512,
+        "active": 512,
+        "placements": 2048,
+        "kind": "unknown"
+      },
+      {
+        "file": "map5_1.bin",
+        "capacity": 512,
+        "active": 512,
+        "placements": 212,
+        "kind": "unknown"
+      },
+      {
+        "file": "map5_2.bin",
+        "capacity": 512,
+        "active": 512,
+        "placements": 580,
+        "kind": "unknown"
+      },
+      {
+        "file": "map5_3.bin",
+        "capacity": 512,
+        "active": 512,
+        "placements": 584,
+        "kind": "unknown"
+      },
+      {
+        "file": "map5_4.bin",
+        "capacity": 512,
+        "active": 512,
+        "placements": 960,
+        "kind": "unknown"
+      },
+      {
+        "file": "map5_5.bin",
+        "capacity": 512,
+        "active": 288,
+        "placements": 637,
+        "kind": "unknown"
+      },
+      {
+        "file": "map5_6.bin",
+        "capacity": 512,
+        "active": 512,
+        "placements": 10,
+        "kind": "unknown"
+      }
+    ],
+    "cross_build_identical_files": 77,
+    "cross_build_compared": "June 10 prototype versus retail stage tables"
+  },
+  "stagewall": {
+    "files": 30,
+    "wall_files": 29,
+    "generator_files": 1,
+    "active_named_wall_records": 32,
+    "generator_enabled_candidates": 53,
+    "details": [
+      {
+        "file": "Xwall1_2.bin",
+        "kind": "wall_strip",
+        "records": 64,
+        "active": 0,
+        "expanded_repeat_count": 64
+      },
+      {
+        "file": "Xwall1_3.bin",
+        "kind": "wall_strip",
+        "records": 64,
+        "active": 0,
+        "expanded_repeat_count": 64
+      },
+      {
+        "file": "Xwall1_6.bin",
+        "kind": "wall_strip",
+        "records": 64,
+        "active": 0,
+        "expanded_repeat_count": 64
+      },
+      {
+        "file": "Xwall2_1.bin",
+        "kind": "wall_strip",
+        "records": 64,
+        "active": 0,
+        "expanded_repeat_count": 64
+      },
+      {
+        "file": "Xwall2_5.bin",
+        "kind": "wall_strip",
+        "records": 64,
+        "active": 0,
+        "expanded_repeat_count": 64
+      },
+      {
+        "file": "Xwall2_6.bin",
+        "kind": "wall_strip",
+        "records": 64,
+        "active": 0,
+        "expanded_repeat_count": 64
+      },
+      {
+        "file": "Xwall3_1.bin",
+        "kind": "wall_strip",
+        "records": 64,
+        "active": 0,
+        "expanded_repeat_count": 64
+      },
+      {
+        "file": "Xwall3_2.bin",
+        "kind": "wall_strip",
+        "records": 64,
+        "active": 0,
+        "expanded_repeat_count": 64
+      },
+      {
+        "file": "Xwall3_4.bin",
+        "kind": "wall_strip",
+        "records": 64,
+        "active": 0,
+        "expanded_repeat_count": 64
+      },
+      {
+        "file": "Xwall4_1.bin",
+        "kind": "wall_strip",
+        "records": 64,
+        "active": 0,
+        "expanded_repeat_count": 64
+      },
+      {
+        "file": "Xwall4_3.bin",
+        "kind": "wall_strip",
+        "records": 64,
+        "active": 0,
+        "expanded_repeat_count": 64
+      },
+      {
+        "file": "Xwall4_4.bin",
+        "kind": "wall_strip",
+        "records": 64,
+        "active": 0,
+        "expanded_repeat_count": 64
+      },
+      {
+        "file": "Xwall4_6.bin",
+        "kind": "wall_strip",
+        "records": 64,
+        "active": 0,
+        "expanded_repeat_count": 64
+      },
+      {
+        "file": "Xwall5_1.bin",
+        "kind": "wall_strip",
+        "records": 64,
+        "active": 0,
+        "expanded_repeat_count": 64
+      },
+      {
+        "file": "Xwall5_4.bin",
+        "kind": "wall_strip",
+        "records": 64,
+        "active": 0,
+        "expanded_repeat_count": 64
+      },
+      {
+        "file": "Xwall5_5.bin",
+        "kind": "wall_strip",
+        "records": 64,
+        "active": 0,
+        "expanded_repeat_count": 64
+      },
+      {
+        "file": "Xwall5_6.bin",
+        "kind": "wall_strip",
+        "records": 64,
+        "active": 0,
+        "expanded_repeat_count": 64
+      },
+      {
+        "file": "wall4_1.bin",
+        "kind": "wall_strip",
+        "records": 64,
+        "active": 4,
+        "expanded_repeat_count": 956
+      },
+      {
+        "file": "wall4_2.bin",
+        "kind": "wall_strip",
+        "records": 64,
+        "active": 8,
+        "expanded_repeat_count": 910
+      },
+      {
+        "file": "wall4_3.bin",
+        "kind": "wall_strip",
+        "records": 64,
+        "active": 0,
+        "expanded_repeat_count": 64
+      },
+      {
+        "file": "wall4_4.bin",
+        "kind": "wall_strip",
+        "records": 64,
+        "active": 6,
+        "expanded_repeat_count": 929
+      },
+      {
+        "file": "wall4_5.bin",
+        "kind": "wall_strip",
+        "records": 64,
+        "active": 3,
+        "expanded_repeat_count": 966
+      },
+      {
+        "file": "wall4_6.bin",
+        "kind": "wall_strip",
+        "records": 64,
+        "active": 0,
+        "expanded_repeat_count": 64
+      },
+      {
+        "file": "wall5_1.bin",
+        "kind": "wall_strip",
+        "records": 64,
+        "active": 0,
+        "expanded_repeat_count": 64
+      },
+      {
+        "file": "wall5_2.bin",
+        "kind": "wall_strip",
+        "records": 64,
+        "active": 6,
+        "expanded_repeat_count": 931
+      },
+      {
+        "file": "wall5_3.bin",
+        "kind": "wall_strip",
+        "records": 64,
+        "active": 0,
+        "expanded_repeat_count": 64
+      },
+      {
+        "file": "wall5_4.bin",
+        "kind": "wall_strip",
+        "records": 64,
+        "active": 5,
+        "expanded_repeat_count": 79
+      },
+      {
+        "file": "wall5_5.bin",
+        "kind": "wall_strip",
+        "records": 64,
+        "active": 0,
+        "expanded_repeat_count": 64
+      },
+      {
+        "file": "wall5_6.bin",
+        "kind": "wall_strip",
+        "records": 64,
+        "active": 0,
+        "expanded_repeat_count": 64
+      },
+      {
+        "file": "stage_generate.bin",
+        "kind": "generator_candidates",
+        "records": 191,
+        "active": 53
+      }
+    ]
+  },
+  "shaders": {
+    "files": 16,
+    "pixel": 9,
+    "vertex": 7,
+    "microcode_bytes": 2264,
+    "details": [
+      {
+        "file": "EffectBlurPS",
+        "stage": "pixel",
+        "size": 292,
+        "microcode_size": 72,
+        "profiles": [
+          "ps_3_0"
+        ],
+        "compiler_versions": [
+          "2.0.11164.0"
+        ]
+      },
+      {
+        "file": "EffectBlurVS",
+        "stage": "vertex",
+        "size": 320,
+        "microcode_size": 132,
+        "profiles": [
+          "vs_3_0"
+        ],
+        "compiler_versions": [
+          "2.0.11164.0"
+        ]
+      },
+      {
+        "file": "KoalaFaceVS",
+        "stage": "vertex",
+        "size": 548,
+        "microcode_size": 240,
+        "profiles": [
+          "vs_3_0"
+        ],
+        "compiler_versions": [
+          "2.0.11164.0"
+        ]
+      },
+      {
+        "file": "KoalaNoTexPS",
+        "stage": "pixel",
+        "size": 288,
+        "microcode_size": 60,
+        "profiles": [
+          "ps_3_0"
+        ],
+        "compiler_versions": [
+          "2.0.11164.0"
+        ]
+      },
+      {
+        "file": "KoalaTexPS",
+        "stage": "pixel",
+        "size": 376,
+        "microcode_size": 96,
+        "profiles": [
+          "ps_3_0"
+        ],
+        "compiler_versions": [
+          "2.0.11164.0"
+        ]
+      },
+      {
+        "file": "KoalaVS",
+        "stage": "vertex",
+        "size": 472,
+        "microcode_size": 216,
+        "profiles": [
+          "vs_3_0"
+        ],
+        "compiler_versions": [
+          "2.0.11164.0"
+        ]
+      },
+      {
+        "file": "ScanLinePS",
+        "stage": "pixel",
+        "size": 200,
+        "microcode_size": 36,
+        "profiles": [
+          "ps_3_0"
+        ],
+        "compiler_versions": [
+          "2.0.11164.0"
+        ]
+      },
+      {
+        "file": "ScanLineVS",
+        "stage": "vertex",
+        "size": 204,
+        "microcode_size": 72,
+        "profiles": [
+          "vs_3_0"
+        ],
+        "compiler_versions": [
+          "2.0.11164.0"
+        ]
+      },
+      {
+        "file": "ScreenSpriteHanten1PS",
+        "stage": "pixel",
+        "size": 612,
+        "microcode_size": 400,
+        "profiles": [
+          "ps_3_0"
+        ],
+        "compiler_versions": [
+          "2.0.11164.0"
+        ]
+      },
+      {
+        "file": "ScreenSpriteHanten2PS",
+        "stage": "pixel",
+        "size": 348,
+        "microcode_size": 136,
+        "profiles": [
+          "ps_3_0"
+        ],
+        "compiler_versions": [
+          "2.0.11164.0"
+        ]
+      },
+      {
+        "file": "ScreenSpritePS",
+        "stage": "pixel",
+        "size": 232,
+        "microcode_size": 60,
+        "profiles": [
+          "ps_3_0"
+        ],
+        "compiler_versions": [
+          "2.0.11164.0"
+        ]
+      },
+      {
+        "file": "ScreenSpriteVS",
+        "stage": "vertex",
+        "size": 356,
+        "microcode_size": 156,
+        "profiles": [
+          "vs_3_0"
+        ],
+        "compiler_versions": [
+          "2.0.11164.0"
+        ]
+      },
+      {
+        "file": "SfShaderNoTexPS",
+        "stage": "pixel",
+        "size": 272,
+        "microcode_size": 60,
+        "profiles": [
+          "ps_3_0"
+        ],
+        "compiler_versions": [
+          "2.0.11164.0"
+        ]
+      },
+      {
+        "file": "SfShaderNoTexVS",
+        "stage": "vertex",
+        "size": 436,
+        "microcode_size": 192,
+        "profiles": [
+          "vs_3_0"
+        ],
+        "compiler_versions": [
+          "2.0.11164.0"
+        ]
+      },
+      {
+        "file": "SfShaderTexPS",
+        "stage": "pixel",
+        "size": 380,
+        "microcode_size": 120,
+        "profiles": [
+          "ps_3_0"
+        ],
+        "compiler_versions": [
+          "2.0.11164.0"
+        ]
+      },
+      {
+        "file": "SfShaderTexVS",
+        "stage": "vertex",
+        "size": 472,
+        "microcode_size": 216,
+        "profiles": [
+          "vs_3_0"
+        ],
+        "compiler_versions": [
+          "2.0.11164.0"
+        ]
+      }
+    ]
+  },
+  "selftest": {
+    "format": "SIIG_SELFTEST",
+    "toolkit_version": "2.4.0",
+    "python": "3.13.5",
+    "passed": 15,
+    "failed": 0,
+    "ok": true,
+    "tests": [
+      {
+        "name": "AES-128 FIPS-197",
+        "status": "PASS",
+        "seconds": 6.5e-05,
+        "detail": "known-answer vector"
+      },
+      {
+        "name": "DAT parser",
+        "status": "PASS",
+        "seconds": 2.1e-05,
+        "detail": "one command, absolute frame 5"
+      },
+      {
+        "name": "MAP parser",
+        "status": "PASS",
+        "seconds": 1.6e-05,
+        "detail": "tile IDs and X/Y bits preserved"
+      },
+      {
+        "name": "BBX parser/hash",
+        "status": "PASS",
+        "seconds": 3.8e-05,
+        "detail": "named entry and filename hash"
+      },
+      {
+        "name": "BBX repacker",
+        "status": "PASS",
+        "seconds": 0.0001,
+        "detail": "named/unnamed payloads, hashes, alignment, and sorted index"
+      },
+      {
+        "name": "ANM range parser",
+        "status": "PASS",
+        "seconds": 1.7e-05,
+        "detail": "16-byte names, start/end frames, grouping, and loop flags"
+      },
+      {
+        "name": "Stage wall/generator table",
+        "status": "PASS",
+        "seconds": 5.3e-05,
+        "detail": "20-byte names, wall repeat counts, clamp, and generator enable flags"
+      },
+      {
+        "name": "Bmap/Xmap parser",
+        "status": "PASS",
+        "seconds": 7.1e-05,
+        "detail": "0x118 record, 800-unit path cell, placements, and sentinel"
+      },
+      {
+        "name": "Xenos shader inventory",
+        "status": "PASS",
+        "seconds": 0.000185,
+        "detail": "stage bit, header offsets, strings, and bounded microcode"
+      },
+      {
+        "name": "Gzip safety",
+        "status": "PASS",
+        "seconds": 0.000165,
+        "detail": "valid stream decoded; expansion over limit rejected"
+      },
+      {
+        "name": "PNG/atlas renderer",
+        "status": "PASS",
+        "seconds": 1.564624,
+        "detail": "RGBA PNG round trip and flipped atlas MAP render"
+      },
+      {
+        "name": "ZIP safety",
+        "status": "PASS",
+        "seconds": 0.001269,
+        "detail": "valid member extracted; traversal rejected"
+      },
+      {
+        "name": "Privacy scrubber",
+        "status": "PASS",
+        "seconds": 5.1e-05,
+        "detail": "Windows and POSIX routes redacted"
+      },
+      {
+        "name": "HTML asset viewer",
+        "status": "PASS",
+        "seconds": 0.01588,
+        "detail": "searchable HTML inventory with text and image previews"
+      },
+      {
+        "name": "Output manifest/verification",
+        "status": "PASS",
+        "seconds": 0.004536,
+        "detail": "fresh tree verified; tampering detected"
+      }
+    ]
+  },
+  "limitations": [
+    "Xenos microcode is extracted but not ISA-disassembled.",
+    "Five Bmap/Xmap auxiliary vectors are preserved; their per-slot gameplay roles remain unnamed.",
+    "Complete runtime 2D MAP scrolling and 3D stage playback remain future work.",
+    "Modified BBX acceptance still requires game/emulator testing."
+  ]
+}

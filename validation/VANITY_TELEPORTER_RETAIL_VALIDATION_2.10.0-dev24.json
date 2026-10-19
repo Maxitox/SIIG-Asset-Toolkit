@@ -1,0 +1,151 @@
+{
+  "format": "SIIG_VANITY_TELEPORTER_RETAIL_VALIDATION",
+  "toolkit_version": "2.10.0-dev24",
+  "platform": "xbox360-retail",
+  "ok": true,
+  "source_gmx_sha256": {
+    "sbs_002.gmx": "130bd4f9f13f927294325e5d3b16cce21d28e0d71cb2b8137e954cd6098a07ec",
+    "sbs_002a.gmx": "9d7510aa0cacefde25d177f80a2a1ddf458c77490e9d3cf0423dedb3135679ff",
+    "sbs_003.gmx": "b0ee13bc45c3961fd5338aef26d4da8810033794ad54e50d302f8541ac1cc4f1",
+    "sbs_003a.gmx": "de176ceb278df406ca897642a04956b6370682e8ff765fbe17ac06e54240a6d9",
+    "sbs_003b.gmx": "244d723e8307c0636c15410f6f34438d575eb59d2eae37311efc9e88c22d87f7",
+    "sbs_003c.gmx": "06976ce7289e1f099d7ffa76de5c564a0576d913d0fd6f24a8f02a8a5f765b1b",
+    "sbs_003d.gmx": "80b465b425ffd054045bacb917b20106885f7952afcc6666562795ce24b54257",
+    "sbs_003e.gmx": "9c8a3981d7acfcb2e1482ca09bdd28758f5703748b774f183f31667e0a67aa18",
+    "sbs_003f.gmx": "b8c60995c8ad3bbaab6f4d726255bb3a958f0bb61dec64fa6bd5c6d464be3dd0",
+    "sbs_003g.gmx": "065d25212f820df652962aea2cb5dce3ffd7bfa1f74eb5c95c9686d41d96bd71",
+    "sbs_003h.gmx": "3652b825015df2e9ab6d26f6dfa1d9c49882085d07139dbbc6b22e34b0405fb9",
+    "sbs_003i.gmx": "d9bc0e34fe0ff45ad6c4cbd9f93a6085b537248034f84efaf72d16c25ac2880d"
+  },
+  "catalogs": [
+    {
+      "catalog": "vanity_main_game_arrival",
+      "expected": {
+        "nodes": 14,
+        "meshes": 6,
+        "animations_min": 1,
+        "instances": 3
+      },
+      "actual": {
+        "nodes": 14,
+        "meshes": 6,
+        "animations": 3,
+        "instances": 3
+      },
+      "checks": {
+        "nodes": true,
+        "meshes": true,
+        "animations_min": true,
+        "instances": true
+      }
+    },
+    {
+      "catalog": "vanity_state2_primary_descent_local",
+      "expected": {
+        "nodes": 6,
+        "meshes": 2,
+        "animations": 2,
+        "instances": 1
+      },
+      "actual": {
+        "nodes": 6,
+        "meshes": 2,
+        "animations": 2,
+        "instances": 1
+      },
+      "checks": {
+        "nodes": true,
+        "meshes": true,
+        "animations": true,
+        "instances": true,
+        "runtime_action_primary_y_1000_to_500": true
+      }
+    },
+    {
+      "catalog": "teleporter_retail_5_4_left_state2_tick7",
+      "expected": {
+        "nodes": 32,
+        "meshes": 16,
+        "animations": 0,
+        "instances": 8
+      },
+      "actual": {
+        "nodes": 32,
+        "meshes": 16,
+        "animations": 0,
+        "instances": 8
+      },
+      "checks": {
+        "nodes": true,
+        "meshes": true,
+        "animations": true,
+        "instances": true
+      }
+    },
+    {
+      "catalog": "teleporter_retail_5_4_right_state2_tick7",
+      "expected": {
+        "nodes": 32,
+        "meshes": 16,
+        "animations": 0,
+        "instances": 8
+      },
+      "actual": {
+        "nodes": 32,
+        "meshes": 16,
+        "animations": 0,
+        "instances": 8
+      },
+      "checks": {
+        "nodes": true,
+        "meshes": true,
+        "animations": true,
+        "instances": true
+      }
+    },
+    {
+      "catalog": "teleporter_retail_5_4_left_transfer_cycle",
+      "expected": {
+        "nodes": 48,
+        "meshes": 24,
+        "animations": 4,
+        "instances": 12
+      },
+      "actual": {
+        "nodes": 48,
+        "meshes": 24,
+        "animations": 4,
+        "instances": 12
+      },
+      "checks": {
+        "nodes": true,
+        "meshes": true,
+        "animations": true,
+        "instances": true,
+        "runtime_action_24ch_114samples_ranges": true
+      }
+    },
+    {
+      "catalog": "teleporter_retail_5_4_right_transfer_cycle",
+      "expected": {
+        "nodes": 48,
+        "meshes": 24,
+        "animations": 4,
+        "instances": 12
+      },
+      "actual": {
+        "nodes": 48,
+        "meshes": 24,
+        "animations": 4,
+        "instances": 12
+      },
+      "checks": {
+        "nodes": true,
+        "meshes": true,
+        "animations": true,
+        "instances": true,
+        "runtime_action_24ch_114samples_ranges": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "format": "SIIG_UTILITIES_HELP_VALIDATION",
+  "release": "2.10.0-dev24",
+  "checkpoint": "WIP190",
+  "status": "pass",
+  "gui_version": "0.50.0-dev24",
+  "utilities_in_tab_help_box": true,
+  "utilities_context_help_direct": true,
+  "doctor_gui_label": "Diagnose toolkit / input",
+  "doctor_cli_command": "doctor",
+  "doctor_read_only": true,
+  "read_only_actions": [
+    "Diagnose toolkit / input",
+    "Run selftests",
+    "Asset capabilities",
+    "Boss matrix"
+  ],
+  "generated_output_actions": [
+    "Build viewer",
+    "Visualizer simulator (PoC)"
+  ],
+  "notes": "Utilities guidance is visible inside the tab and does not depend on the global notebook-level help box."
+}

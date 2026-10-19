@@ -1,0 +1,484 @@
+{
+  "format": "SIIG_SELFTEST",
+  "toolkit_version": "2.9.0-dev5",
+  "python": "3.13.5",
+  "passed": 79,
+  "failed": 0,
+  "ok": true,
+  "tests": [
+    {
+      "name": "AES-128 FIPS-197",
+      "status": "PASS",
+      "seconds": 9.2e-05,
+      "detail": "known-answer vector"
+    },
+    {
+      "name": "AES-128 decrypt",
+      "status": "PASS",
+      "seconds": 0.000688,
+      "detail": "encrypt and inverse-cipher vectors"
+    },
+    {
+      "name": "PKG AES-CTR backend",
+      "status": "PASS",
+      "seconds": 0.002412,
+      "detail": "unaligned chunking equals one-shot CTR and round-trips"
+    },
+    {
+      "name": "STFS CON initialization",
+      "status": "PASS",
+      "seconds": 0.000782,
+      "detail": "CON transactional layout initializes after first hash-table address"
+    },
+    {
+      "name": "NPDRM SDAT authentication",
+      "status": "PASS",
+      "seconds": 0.007606,
+      "detail": "encrypted-key HMAC-SHA1 block decrypts; tamper rejected"
+    },
+    {
+      "name": "PSX ADPCM decoder",
+      "status": "PASS",
+      "seconds": 0.000119,
+      "detail": "16-byte frame -> 28 PCM16 samples; terminal frame silent"
+    },
+    {
+      "name": "text.bin native localization builder",
+      "status": "PASS",
+      "seconds": 0.000277,
+      "detail": "canonical BBX byte-identical rebuild plus edited UTF-8 language line"
+    },
+    {
+      "name": "message.bin native localization builder",
+      "status": "PASS",
+      "seconds": 0.001759,
+      "detail": "readable Unicode scripts reverse glyph codes and rebuild native Shift-JIS BBX"
+    },
+    {
+      "name": "DAT parser",
+      "status": "PASS",
+      "seconds": 2.6e-05,
+      "detail": "one command, absolute frame 5"
+    },
+    {
+      "name": "Route runtime state machine",
+      "status": "PASS",
+      "seconds": 0.000373,
+      "detail": "signed spacing, non-loop tail, loop wrap, linear rebuild, and Hermite non-rebuild"
+    },
+    {
+      "name": "DAT-coupled route playback",
+      "status": "PASS",
+      "seconds": 0.001899,
+      "detail": "authored DAT frames -> runtime updates, initial spacing, and mid-segment SCROLL_02 rebuild"
+    },
+    {
+      "name": "Combined route-camera playback",
+      "status": "PASS",
+      "seconds": 0.003112,
+      "detail": "DAT route spacing + procedural orientation + explicit camera preset world-state export"
+    },
+    {
+      "name": "MAP parser",
+      "status": "PASS",
+      "seconds": 2.4e-05,
+      "detail": "tile IDs and X/Y bits preserved"
+    },
+    {
+      "name": "MAP native round-trip builder",
+      "status": "PASS",
+      "seconds": 5.5e-05,
+      "detail": "editable JSON rebuild is lossless and accepts tile edits"
+    },
+    {
+      "name": "DAT native round-trip builder",
+      "status": "PASS",
+      "seconds": 9.2e-05,
+      "detail": "CSV/JSON record compiler preserves unknown opcodes/arguments losslessly"
+    },
+    {
+      "name": "BBX parser/hash",
+      "status": "PASS",
+      "seconds": 4.1e-05,
+      "detail": "named entry and filename hash"
+    },
+    {
+      "name": "BBX repacker",
+      "status": "PASS",
+      "seconds": 0.000104,
+      "detail": "named/unnamed payloads, hashes, alignment, and sorted index"
+    },
+    {
+      "name": "TEX native round-trip builder",
+      "status": "PASS",
+      "seconds": 0.000394,
+      "detail": "Xbox RGBA inverse tiling/endian/swizzle path and template-preserving rebuild"
+    },
+    {
+      "name": "TEX donor-free native layout synthesis",
+      "status": "PASS",
+      "seconds": 0.001014,
+      "detail": "canonical Xbox tiled 8_8_8_8 and PS3 linear wrappers synthesize new dimensions without a TEX donor"
+    },
+    {
+      "name": "COL native round-trip builder",
+      "status": "PASS",
+      "seconds": 0.000693,
+      "detail": "LSB-first one-bit mask PNG round trip"
+    },
+    {
+      "name": "ANM range parser",
+      "status": "PASS",
+      "seconds": 1.9e-05,
+      "detail": "16-byte names, start/end frames, grouping, and loop flags"
+    },
+    {
+      "name": "ANM native round-trip builder",
+      "status": "PASS",
+      "seconds": 2.8e-05,
+      "detail": "CSV/JSON compiler preserves 28-byte records and applies frame edits"
+    },
+    {
+      "name": "Stage wall/generator table",
+      "status": "PASS",
+      "seconds": 4.9e-05,
+      "detail": "20-byte names, wall repeat counts, clamp, and generator enable flags"
+    },
+    {
+      "name": "Stage wall/generator native builder",
+      "status": "PASS",
+      "seconds": 4.9e-05,
+      "detail": "byte-identical unchanged rebuild plus editable native count field"
+    },
+    {
+      "name": "Bmap/Xmap parser",
+      "status": "PASS",
+      "seconds": 0.000193,
+      "detail": "0x118 record, corrected placement transforms, route-source slots, origin fallback, and sentinel"
+    },
+    {
+      "name": "Bmap/Xmap native builder",
+      "status": "PASS",
+      "seconds": 0.000216,
+      "detail": "byte-identical template/synthetic round-trip plus edited route control point"
+    },
+    {
+      "name": "Retail route resampler",
+      "status": "PASS",
+      "seconds": 0.000416,
+      "detail": "linear write-after-step, classifier, six-state tangents, Hermite endpoints, and non-loop source-index tail"
+    },
+    {
+      "name": "GMX native template builder",
+      "status": "PASS",
+      "seconds": 0.000361,
+      "detail": "byte-identical fixed-layout rebuild plus native geometry/bone/animation edits"
+    },
+    {
+      "name": "GMX glTF topology template compiler",
+      "status": "PASS",
+      "seconds": 0.001799,
+      "detail": "byte-identical glTF no-op plus vertex/index-count change, chunk resize, and AABB repair"
+    },
+    {
+      "name": "GMX whole mesh-graph synchronization",
+      "status": "PASS",
+      "seconds": 0.002378,
+      "detail": "byte-identical sync no-op plus whole MESH/ARRY creation, deletion, fresh identities, and BONE attachment repair"
+    },
+    {
+      "name": "GMX material/bone/shader scene-graph synchronization",
+      "status": "PASS",
+      "seconds": 0.002685,
+      "detail": "byte-identical scene no-op plus SHAD/MTRL/BONE/PARE synthesis and native material-mesh attachment wiring"
+    },
+    {
+      "name": "GMX TXIF texture-graph synchronization",
+      "status": "PASS",
+      "seconds": 0.002533,
+      "detail": "byte-identical texture no-op plus Blender-style baseColorTexture -> new TXIF -> DiffuseSampler synthesis"
+    },
+    {
+      "name": "GMX donor-free native vertex/material schema synthesis",
+      "status": "PASS",
+      "seconds": 0.000924,
+      "detail": "root-only GMX + Blender glTF -> donor-free MESH/ARRY declaration, arbitrary MTRL schema, SHAD/BONE graph, and repaired bounds"
+    },
+    {
+      "name": "Mod glTF + donor-free TEX + BBX addition pipeline",
+      "status": "PASS",
+      "seconds": 0.498268,
+      "detail": "glTF GMX import synthesizes a new-size TEX with no TEX donor, adds it to BBX, and round-trips it through .siigmod"
+    },
+    {
+      "name": "GMX donor-free MOTN/ANIM synthesis",
+      "status": "PASS",
+      "seconds": 0.002471,
+      "detail": "root-only GMX -> new BONE/MOTN/ANIM at 30 Hz -> glTF export -> byte-identical animation-aware no-op"
+    },
+    {
+      "name": "GMX multi-bone CUBICSPLINE animation synthesis",
+      "status": "PASS",
+      "seconds": 0.003035,
+      "detail": "one glTF two-bone clip with CUBICSPLINE -> two synchronized native MOTN/ANIM tracks -> byte-identical exported no-op"
+    },
+    {
+      "name": "GMX animation-track exporter",
+      "status": "PASS",
+      "seconds": 0.001382,
+      "detail": "matrix tracks/glTF use 30 Hz runtime indexing while preserving raw authoring times"
+    },
+    {
+      "name": "Animated camera runtime",
+      "status": "PASS",
+      "seconds": 0.003676,
+      "detail": "cam1/int1 frames 0..199, 1/frame-multiplier clock, FieldPos offset"
+    },
+    {
+      "name": "Animated field runtime",
+      "status": "PASS",
+      "seconds": 0.002105,
+      "detail": "fld014 frame 1440 wraps to sample 0 under loop descriptor"
+    },
+    {
+      "name": "Field GMX camera reconstruction",
+      "status": "PASS",
+      "seconds": 0.003122,
+      "detail": "GMX column-vector serialization -> runtime row matrix -> procedural field-camera export"
+    },
+    {
+      "name": "Route animation descriptors",
+      "status": "PASS",
+      "seconds": 0.000106,
+      "detail": "fld015 0..6300 non-loop; fld014 0..1440 loop with 1440 matrices"
+    },
+    {
+      "name": "PA-route cross-build activation reference",
+      "status": "PASS",
+      "seconds": 0.001067,
+      "detail": "cross-build gates, cam01/cam02 selection, boss-field correlations, tables, and conservative DAT scan"
+    },
+    {
+      "name": "boss PA-route timeline reference",
+      "status": "PASS",
+      "seconds": 3e-05,
+      "detail": "Water Strider 1441-frame wrap and retail/prototype Ultimate UFO phase tables verified"
+    },
+    {
+      "name": "special-stage reload chain",
+      "status": "PASS",
+      "seconds": 1.5e-05,
+      "detail": "WARNING[12]/[14] direct reload requests resolve to Bmap13/fld014 and Bmap15/fld015"
+    },
+    {
+      "name": "Ultimate UFO destruction chain",
+      "status": "PASS",
+      "seconds": 8e-06,
+      "detail": "HP-zero dispatch, prototype UltimateUfo::Vanish lineage, and retail phases 12/13 are preserved"
+    },
+    {
+      "name": "Ultimate UFO late owned-model identity",
+      "status": "PASS",
+      "seconds": 9e-05,
+      "detail": "bos_015k late-route ownership verified across all Xbox builds; May uses ID 0xD9 and later builds use 0xD8"
+    },
+    {
+      "name": "Ultimate UFO May 9 debug HUD semantics",
+      "status": "PASS",
+      "seconds": 1e-05,
+      "detail": "May 9 Mframe/Sframe/state HUD, L2 skip, and Umb/Tow/Fan/Ring col/dis phase bytes verified"
+    },
+    {
+      "name": "Ultimate UFO normal versus Bonus 5-6 profiles",
+      "status": "PASS",
+      "seconds": 1e-05,
+      "detail": "normal 5-3 and DLC Bonus 5-6 destruction policies remain explicitly separated"
+    },
+    {
+      "name": "Ultimate UFO Mframe to fld015 chain",
+      "status": "PASS",
+      "seconds": 1.1e-05,
+      "detail": "all five builds directly write Ultimate UFO Mframe into finite fld015 frame 0..6300"
+    },
+    {
+      "name": "Ultimate UFO late PA camera geometry",
+      "status": "PASS",
+      "seconds": 1.5e-05,
+      "detail": "cam01 temporary override -> procedural fallback, five non-UFO direct preset writers, and late preset-4/fld015 rear-follow geometry verified"
+    },
+    {
+      "name": "Ultimate UFO camera gate + final Vanish evolution",
+      "status": "PASS",
+      "seconds": 8e-06,
+      "detail": "retail +0x11C timed-transition gate and May phase-12 UltimateUfo::Vanish(0) lineage"
+    },
+    {
+      "name": "Ultimate UFO final reset caller audit",
+      "status": "PASS",
+      "seconds": 7e-06,
+      "detail": "6030/6200 non-clear actions, +0x48 reset chain, clear instruction, watchdog, script exclusions, and destructor-only removal verified"
+    },
+    {
+      "name": "Mobile TZIP parser",
+      "status": "PASS",
+      "seconds": 0.000415,
+      "detail": "zlib binary-plist resource dictionary, path safety, and iOS-backed V2 opcode names"
+    },
+    {
+      "name": "Mobile Chimera opcode map",
+      "status": "PASS",
+      "seconds": 1e-06,
+      "detail": "iOS analyzeScript 0x52..0x54 -> King Fossil / Twilight Mirage / ApartHead"
+    },
+    {
+      "name": "Mobile exclusives reference",
+      "status": "PASS",
+      "seconds": 3.8e-05,
+      "detail": "Evolution-gated Chimera substitutions, eight terminal endings, V2 behavior, and enemy-shot dispatch mappings"
+    },
+    {
+      "name": "iOS-console code lineage reference",
+      "status": "PASS",
+      "seconds": 3.9e-05,
+      "detail": "iOS MAP/DAT/timing/generator lineage, opcode frontier, and console anchor mappings"
+    },
+    {
+      "name": "iOS-console boss/enemy handler lineage",
+      "status": "PASS",
+      "seconds": 3.5e-05,
+      "detail": "29/30 Stage-3 pool slots, four-build dispatcher retunes, World-5 chronology, and exact DAT-loader addresses"
+    },
+    {
+      "name": "iOS-console original-boss mover lineage",
+      "status": "PASS",
+      "seconds": 0.00011,
+      "detail": "six original mobile boss IDs map directly to console movers, with direct semantic anchors and recovered exact constructor fingerprints"
+    },
+    {
+      "name": "Mobile MAP parser",
+      "status": "PASS",
+      "seconds": 3.5e-05,
+      "detail": "little-endian dimensions, declared layer count, and tile flip bits"
+    },
+    {
+      "name": "Mobile DEX header",
+      "status": "PASS",
+      "seconds": 0.000119,
+      "detail": "DEX SHA-1, Adler-32, version, and endian-tag header validation"
+    },
+    {
+      "name": "Android binary manifest",
+      "status": "PASS",
+      "seconds": 0.000151,
+      "detail": "binary AXML package/version/debuggable attributes"
+    },
+    {
+      "name": "iOS Mach-O encryption metadata",
+      "status": "PASS",
+      "seconds": 1.6e-05,
+      "detail": "Mach-O LC_ENCRYPTION_INFO cryptid status"
+    },
+    {
+      "name": "Camera preset semantic table",
+      "status": "PASS",
+      "seconds": 0.000681,
+      "detail": "32 runtime presets with FOV/scale/eye/translation/dynamic/fog semantics; word 11 remains explicitly unresolved"
+    },
+    {
+      "name": "Camera dynamic response",
+      "status": "PASS",
+      "seconds": 0.000221,
+      "detail": "retail normalized X/Y response, gain/scale clamp, separate target and eye local-X factors"
+    },
+    {
+      "name": "Route orientation + camera world state",
+      "status": "PASS",
+      "seconds": 0.000488,
+      "detail": "Hermite orientation ordering and procedural camera eye/target world transform"
+    },
+    {
+      "name": "Xenos shader inventory",
+      "status": "PASS",
+      "seconds": 0.000237,
+      "detail": "stage bit, header offsets, strings, and bounded microcode"
+    },
+    {
+      "name": "Gzip safety",
+      "status": "PASS",
+      "seconds": 0.00032,
+      "detail": "valid stream decoded; expansion over limit rejected"
+    },
+    {
+      "name": "PNG/atlas renderer",
+      "status": "PASS",
+      "seconds": 1.653756,
+      "detail": "RGBA PNG round trip and flipped atlas MAP render"
+    },
+    {
+      "name": "ZIP safety",
+      "status": "PASS",
+      "seconds": 0.002288,
+      "detail": "valid member extracted; traversal rejected"
+    },
+    {
+      "name": "Outer-container resume cache",
+      "status": "PASS",
+      "seconds": 0.002819,
+      "detail": "content-addressed staging reuses exact input and invalidates changed packages"
+    },
+    {
+      "name": "Privacy scrubber",
+      "status": "PASS",
+      "seconds": 1.6e-05,
+      "detail": "Windows and POSIX routes redacted"
+    },
+    {
+      "name": "Stage Explorer platform roots",
+      "status": "PASS",
+      "seconds": 0.270362,
+      "detail": "Xbox Media and PS3 USRDIR stage roots detected without renaming"
+    },
+    {
+      "name": "HTML asset viewer",
+      "status": "PASS",
+      "seconds": 0.022204,
+      "detail": "small linked HTML, lazy image thumbnail, and deferred text payload"
+    },
+    {
+      "name": "Mod workspace/package pipeline",
+      "status": "PASS",
+      "seconds": 0.014666,
+      "detail": "workspace build + baseline-dependent .siigmod delta pack/apply + deterministic gzip verification"
+    },
+    {
+      "name": "Mod package binary delta",
+      "status": "PASS",
+      "seconds": 0.0003,
+      "detail": "sparse equal-size delta, variable-size copy/data delta, and deterministic package ZIP"
+    },
+    {
+      "name": "Asset functionalization matrix",
+      "status": "PASS",
+      "seconds": 2.5e-05,
+      "detail": "14 asset families classified by view/edit/native-build status"
+    },
+    {
+      "name": "Desktop GUI smoke",
+      "status": "PASS",
+      "seconds": 0.011846,
+      "detail": "Tkinter desktop control center 0.9.0-dev5 with 4 workflow tabs"
+    },
+    {
+      "name": "Release layout",
+      "status": "PASS",
+      "seconds": 0.000292,
+      "detail": "organized support folders present; 28 root files"
+    },
+    {
+      "name": "Output manifest/verification",
+      "status": "PASS",
+      "seconds": 0.002423,
+      "detail": "fresh tree verified; tampering detected"
+    }
+  ]
+}

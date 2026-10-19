@@ -1,0 +1,10 @@
+{
+  "format": "SIIG_VERSIONING_POLICY_VALIDATION",
+  "release": "2.10.0-dev9",
+  "status": "pass",
+  "previous": "2.10.0-dev8",
+  "toolkit_version": "2.10.0-dev9",
+  "gui_version": "0.20.0-dev9",
+  "reason": "incremental 2.10 development checkpoint: ULTIMATE UFO runtime phase/locator assembly family; no incompatible public format break",
+  "ok": true
+}

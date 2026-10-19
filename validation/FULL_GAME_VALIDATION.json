@@ -1,0 +1,50 @@
+{
+  "toolkit_version": "2.4.0",
+  "validation_date": "2026-08-27",
+  "scope": "user-supplied Xbox 360 research subset containing nine real BBX archives",
+  "archives": {
+    "processed": 9,
+    "skipped": 0,
+    "failed": 0,
+    "resources": 879,
+    "hash_mismatches": 0
+  },
+  "outputs": {
+    "png": 185,
+    "gltf": 0,
+    "obj": 47,
+    "wav": 0,
+    "wma": 0,
+    "bnk": 0,
+    "collision_png": 153,
+    "anm_csv": 3,
+    "stage_wall_tables": 30,
+    "stage3d_maps": 47,
+    "shader_inventories": 16,
+    "dat_csv": 76,
+    "map_files": 64,
+    "localization_archives": 0,
+    "ready_files": 0,
+    "stage_explorer": 0,
+    "asset_viewer": 0
+  },
+  "errors": [],
+  "output_verification": {
+    "ok": true,
+    "hashes_checked": 1757,
+    "issues": []
+  },
+  "research_corpus_summary": {
+    "anm_files": 3,
+    "anm_records": 160,
+    "stage3d_files": 47,
+    "stage3d_active_records": 19563,
+    "stage3d_model_placements": 23830,
+    "stagewall_files": 30,
+    "shader_files": 16
+  },
+  "limitations": [
+    "The integration input is a reconstructed directory from user-supplied inner files, not the original retail STFS outer package.",
+    "glTF, texture, audio, Stage Explorer, and Asset Viewer generation were disabled in this focused structured-data regression run; those paths were validated in prior releases."
+  ]
+}

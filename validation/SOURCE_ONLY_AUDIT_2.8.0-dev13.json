@@ -1,0 +1,17 @@
+{
+  "game_asset_extensions_found": [],
+  "external_executable_magic_found": [],
+  "archive_binary_members_found": [],
+  "private_runtime_paths_found": [],
+  "python_bytecode_found": [],
+  "bundled_archives": [
+    "addons/SIIG_Blender_Addon_v0.1.0.zip"
+  ],
+  "sources_csv": {
+    "rows": 18,
+    "columns": 10,
+    "ragged_rows": 0
+  },
+  "tcrf_used": false,
+  "third_party_binaries_bundled": false
+}

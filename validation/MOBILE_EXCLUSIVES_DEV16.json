@@ -1,0 +1,252 @@
+{
+  "format": "SIIG_MOBILE_EXCLUSIVES_VALIDATION",
+  "release": "2.8.0-dev16",
+  "date": "2026-09-10",
+  "status": "pass",
+  "evidence_policy": {
+    "game_packages": "user-supplied modified-wrapper research copies; no bytes bundled",
+    "executable_resources": "authoritative implementation evidence for mappings below",
+    "third_party_footage": "observational corroboration only; credited to MaxTheMurdererV2 per project owner; not bundled"
+  },
+  "deletion_v2": {
+    "extra_range": [
+      23,
+      28
+    ],
+    "scripts": [
+      "level8_stage3EX.dat",
+      "level8_stage4EX.dat",
+      "level8_stage5EX.dat",
+      "level8_stage6EX.dat",
+      "level8_stage7EX.dat",
+      "level8_stage8EX.dat"
+    ],
+    "opcodes": [
+      "0x004C",
+      "0x004D",
+      "0x004E",
+      "0x004F",
+      "0x0050",
+      "0x0051"
+    ],
+    "names": [
+      "THE_MOON_V2",
+      "THE_SUN_V2",
+      "GIGANTIC_UFO_V2",
+      "LADYBUG_V2",
+      "MANDALA_V2",
+      "UNKNOWN_V2"
+    ],
+    "original_entity_types": [
+      70,
+      71,
+      72,
+      73,
+      74,
+      75
+    ],
+    "v2_entity_types": [
+      100,
+      101,
+      102,
+      103,
+      104,
+      105
+    ],
+    "all_six_sequence_script": "level8_stage9EX.dat",
+    "five_of_six_script_args_identical_to_original": true,
+    "unknown_args_original": [
+      0,
+      10000,
+      1,
+      20
+    ],
+    "unknown_v2_args": [
+      0,
+      10000,
+      1,
+      60
+    ]
+  },
+  "survival": {
+    "graph_records": 36,
+    "graph_record_bytes": 12,
+    "terminal_nodes": [
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35
+    ],
+    "ending_names": [
+      "LINK",
+      "CIRCLE",
+      "VIRTUAL",
+      "ETERNITY",
+      "CUT OFF",
+      "IMMORTALITY",
+      "PHANTASM",
+      "PARALLEL"
+    ],
+    "achievement_indices": [
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59
+    ],
+    "achievement_names": [
+      "SURVIVAL_01_CLEAR",
+      "SURVIVAL_02_CLEAR",
+      "SURVIVAL_03_CLEAR",
+      "SURVIVAL_04_CLEAR",
+      "SURVIVAL_05_CLEAR",
+      "SURVIVAL_06_CLEAR",
+      "SURVIVAL_07_CLEAR",
+      "SURVIVAL_08_CLEAR"
+    ],
+    "conversion_records": 6,
+    "conversion_rows": [
+      [
+        49,
+        30,
+        31
+      ],
+      [
+        50,
+        31,
+        40
+      ],
+      [
+        51,
+        32,
+        36
+      ],
+      [
+        52,
+        33,
+        27
+      ],
+      [
+        53,
+        34,
+        46
+      ],
+      [
+        54,
+        35,
+        30
+      ]
+    ],
+    "conversion_status_semantics": "unresolved; if referenced byte != 1, field-2 stage substitution is used",
+    "setVer2Destroy_same_status_array": false
+  },
+  "chimera": {
+    "ios_level9_files": 6,
+    "stage_order": [
+      "C-1A CAPTAIN NEO",
+      "C-2A URBAN TRAIL",
+      "C-3A BORN TO BE FREE",
+      "C-1B I CAN NOT APE",
+      "C-2B BURN ALT AIR",
+      "C-3B BEFORE TEN ORB"
+    ],
+    "source_packs": [
+      "Darius",
+      "Night Striker",
+      "Metal Black",
+      "Darius",
+      "Night Striker",
+      "Metal Black"
+    ],
+    "boss_opcodes": [
+      "0x0052",
+      "0x0053",
+      "0x0054",
+      "0x0052",
+      "0x0053",
+      "0x0054"
+    ],
+    "opcode_names": [
+      "KING_FOSSIL",
+      "TWILIGHT_MIRAGE",
+      "APARTHEAD"
+    ],
+    "handlers": [
+      "_setKingFossil",
+      "_setTwilightMirage",
+      "_setApartHead"
+    ],
+    "main_entity_types": [
+      106,
+      107,
+      108
+    ],
+    "main_pool_capacities": [
+      5,
+      12,
+      21
+    ],
+    "android_level9_stub_terminal_opcodes": [
+      "0x004C",
+      "0x004D",
+      "0x004E",
+      "0x004F",
+      "0x0050",
+      "0x0051"
+    ],
+    "android_maps_each_bytes": 32,
+    "android_maps_empty_three_layers": true,
+    "level9_split_resolved_as_chimera_vs_android_stub": true
+  },
+  "checks": [
+    {
+      "name": "Shared DAT opcode names 0x4C..0x54",
+      "status": "pass"
+    },
+    {
+      "name": "DELETION Level-8 V2 script mapping",
+      "status": "pass"
+    },
+    {
+      "name": "All-six V2 sequence in level8_stage9EX",
+      "status": "pass"
+    },
+    {
+      "name": "36-record Survival graph",
+      "status": "pass"
+    },
+    {
+      "name": "Terminal nodes 28..35 to eight endings",
+      "status": "pass"
+    },
+    {
+      "name": "Six Survival conditional substitutions",
+      "status": "pass"
+    },
+    {
+      "name": "iOS Level-9 Chimera opcode pattern 52/53/54 x2",
+      "status": "pass"
+    },
+    {
+      "name": "Android Level-9 V2 stub opcode sequence 4C..51",
+      "status": "pass"
+    },
+    {
+      "name": "Android six 32-byte empty Level-9 maps",
+      "status": "pass"
+    }
+  ],
+  "limitations": [
+    "The exact meaning of the six Survival status bytes remains unresolved.",
+    "The exact reason Android placeholder scripts use one V2 boss opcode each remains unresolved.",
+    "Detailed per-attack timing/damage/HP differences for all V2 bosses remain partially traced rather than fully normalized into semantic fields.",
+    "Third-party videos are not frame-derived implementation evidence in this report."
+  ]
+}

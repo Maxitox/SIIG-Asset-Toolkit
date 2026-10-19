@@ -1,0 +1,51 @@
+{
+  "format": "SIIG_BLENDER_MODDING_HEADLESS_VALIDATION",
+  "release": "2.10.0-dev24",
+  "wip": 179,
+  "status": "pass",
+  "blender_addon": {
+    "version": "0.2.1",
+    "package": "addons/SIIG_Blender_Addon_v0.2.1.zip",
+    "fix": "source-tree toolkit auto-discovery walks parent directories instead of stopping at addons/",
+    "headless_contracts": [
+      "module import with minimal bpy surface",
+      "register/unregister class and import-menu hooks",
+      "unpacked source-tree toolkit discovery",
+      "extras-based logical master recognition",
+      "conservative name fallback",
+      "nested logical part traversal stop",
+      "collection-name sanitation/cap"
+    ],
+    "real_blender_runtime_available": false
+  },
+  "modding_regressions": {
+    "existing_native_roundtrip": [
+      "GMX TXIF texture-graph synchronization",
+      "GMX material/bone/shader scene-graph synchronization",
+      "GMX donor-free schema synthesis",
+      "GMX rigid mesh partitioning by joint"
+    ],
+    "existing_mod_pipeline": [
+      "Mod glTF + donor-free TEX + BBX addition pipeline",
+      "Mod workspace/package pipeline",
+      "Mod package binary delta"
+    ],
+    "boundary": "Real Blender UI/operator execution and arbitrary synthesized-scene game runtime acceptance remain external validation gates."
+  },
+  "lust_identity_sync": {
+    "friendly_identity": "LUST",
+    "model": "emy_051.gmx",
+    "runtime_type": "0x9D",
+    "catalog_status": "resolved_project_owner_identity",
+    "runtime_pairing": "five-build executable-backed",
+    "internal_script_token": "unproven",
+    "old_open_boundary": "RUNTIME_009D_EMY051_GAMEPLAY_NAME",
+    "new_status": "resolved_superseded"
+  },
+  "selftest_expected": 167,
+  "pre_manifest_probe": {
+    "passed": 166,
+    "failed": 1,
+    "only_expected_failure": "Dev24 release-readiness consistency count still 166 before manifest refresh"
+  }
+}

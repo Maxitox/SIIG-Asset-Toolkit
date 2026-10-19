@@ -1,0 +1,22 @@
+{
+  "glyph_record_count": 6732,
+  "native_unicode_glyphs": 6730,
+  "empty_records": 2,
+  "atlas_width": 2048,
+  "atlas_height": 3392,
+  "cell_width": 32,
+  "cell_height": 32,
+  "columns": 64,
+  "rows": 106,
+  "record_table_xex_address": "0x8200E508",
+  "record_size": 12,
+  "fields": [
+    "packed UTF-8 code (4 bytes)",
+    "glyph width (u32 BE)",
+    "left inset (u32 BE)"
+  ],
+  "notes": [
+    "Retail Function_8215ACB0 proves all recovered alias scales: ASCII aliases use 0.5; halfwidth-katakana aliases use 1.0.",
+    "reference/systemfont/systemfont_aliases.csv records all 152 recovered alias entries, including duplicate halfwidth aliases that target alternate native glyphs."
+  ]
+}

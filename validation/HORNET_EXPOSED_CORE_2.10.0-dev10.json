@@ -1,0 +1,62 @@
+{
+  "format": "SIIG_HORNET_EXPOSED_CORE_VALIDATION",
+  "release": "2.10.0-dev10",
+  "status": "pass",
+  "catalog": "hornet_exposed_core",
+  "runtime_state": 3,
+  "snapshot": "state-entry",
+  "visible_instances": 1,
+  "instance": {
+    "runtime_type": "0xA1",
+    "model": "bos_008.gmx",
+    "pose_sample": 0,
+    "outer_transform": "identity"
+  },
+  "retail_xbox": {
+    "dispatcher": "0x8211E3D0",
+    "state3": "0x8211CF98",
+    "transition_reset": "0x8211D840",
+    "common_reset": "0x8211D648",
+    "placement_update": "0x8211CAB8"
+  },
+  "june10_xbox": {
+    "dispatcher": "0x82138568",
+    "state3": "0x82136FD0",
+    "transition_reset": "0x82137820",
+    "common_reset": "0x82137628",
+    "placement_update": "0x82136AA8"
+  },
+  "retail_ps3": {
+    "state3": "0x001B25B8",
+    "transition_reset": "0x001B02F8",
+    "common_reset": "0x001AFFD8",
+    "placement_update": "0x001AFA08"
+  },
+  "reset_semantics": {
+    "a1_visible": true,
+    "a1_motion": 0,
+    "a1_sample": 0,
+    "record_count": 125,
+    "record_state_after_reset": -1,
+    "bf_visible_members": 0,
+    "c0_visible_members": 0,
+    "c1_meshless": true
+  },
+  "real_retail_xbox": {
+    "source": "project-owner re-uploaded original Xbox 360 retail STFS package; proprietary bytes excluded from release",
+    "bos_008_sha256": "0d73ffe9744fdd635c6480836734576f715b3037d2aa90737682912ab88cd516",
+    "bos_008a_sha256": "7d9d44813cd5327c91218e477e8be8e8d71915425d4067b01729078d37edfd55",
+    "bos_008b_sha256": "e4be18e2da142cc65504456c16d5464cb9064636a621c78d57878f144b8b47e5",
+    "bos_008c_sha256": "7e0601f6048a38ce49fe4a6ebc6319619ae99037ba3c0bf93ba643ac03041ad1",
+    "enemy_anm_sha256": "c3100a85d279af220e3f2b1f8b51650acf2e3c536ecac1f918d5174f88570cb4",
+    "export": {
+      "instances": 1,
+      "meshes": 2,
+      "nodes": 4,
+      "animations": 0,
+      "bounds_min": [-13.805399894714355, -13.805399894714355, -13.805399894714355],
+      "bounds_max": [13.805399894714355, 13.805399894714355, 13.805399894714355]
+    }
+  },
+  "ok": true
+}

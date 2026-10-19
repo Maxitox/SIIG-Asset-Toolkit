@@ -1,0 +1,5 @@
+format,ios_4_1_0,android_1_0_4,console_june_retail,confidence,evidence
+DAT,big-endian 16-bit command words; 78 authored + 581 generator files parse,big-endian 16-bit command words; 78 authored files parse,big-endian command format; same toolkit parser,high,All mobile DATs parse with console DAT parser; Android loader explicitly swaps 16-bit words after LE primitive read
+MAP,MAP\0 + little-endian u32 layer count/dimensions,MAP\0 + little-endian u32 layer count/dimensions,MAP\0 + big-endian u32 layer count/dimensions,high,Full mobile corpora parse with LE header; console executable-backed loader uses BE header
+generator MAP corpus,330 maps / 645 nonempty layers / 121472 cells,not shipped as separate generator corpus,330 maps / 645 nonempty layers / 242944 cells,high,Exact map/layer counts match; console cell capacity is exactly 2x iOS but populated cells are not simply doubled
+TZIP,zlib stream -> Apple binary plist dict of name:data,not used in supplied APK,not used; BBX/gzip packaging,high,Six iOS TZIP archives parse losslessly with plistlib after zlib decompression

@@ -1,0 +1,12 @@
+{
+  "format": "SIIG_VERSIONING_POLICY_VALIDATION",
+  "toolkit_target": "2.9.0-dev7",
+  "status": "pass",
+  "previous_checkpoint": "2.9.0-dev6",
+  "new_feature_line": "2.9.0-dev1",
+  "minor_review_deadline": "dev8",
+  "policy": "Advance MINOR earlier when the active work becomes a materially different user-facing capability; do not keep a minor line indefinitely merely because work remains unfinished.",
+  "document": "docs/project/VERSIONING.md",
+  "current_checkpoint": "2.9.0-dev7",
+  "review_decision": "dev7 is the last planned 2.9 feature checkpoint; prefer 2.10.0-dev1 for the next substantial capability track, reserving 2.9.0-dev8 for stabilization/release-gate fixes only"
+}

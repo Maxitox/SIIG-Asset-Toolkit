@@ -1,0 +1,36 @@
+{
+  "format": "SIIG_DESKTOP_VISIBLE_HELP_VALIDATION",
+  "release": "2.10.0-dev24",
+  "checkpoint": "WIP195",
+  "status": "pass",
+  "reported_regression": "Mod Workspace's global What does this do? panel was below the effective window cavity and appeared empty/off-screen.",
+  "root_cause": "WIP193/WIP194 packed the expanding Notebook before the old bottom help/log panes, allowing the Notebook to consume the remaining pack cavity. An initial WIP195 bottom-reservation fix made the help visible but stole too much height from Game Rip's protected console.",
+  "final_fix": {
+    "context_help": "compact always-visible What does this do? strip above the Notebook",
+    "context_help_widget": "wrapped ttk.Label backed by StringVar; no blank Text viewport",
+    "task_log": "separate 900x380 on-demand Toplevel opened by Task log…; hidden by default, output retained",
+    "tab_height_policy": "task log consumes zero Notebook height while hidden or open",
+    "focus_help": "FocusOut/Leave restore the selected tab's default explanation"
+  },
+  "live_smoke": {
+    "1120x780": {
+      "mod_workspace_help": {"mapped": true, "height_px": 42, "correct_default_text": true},
+      "notebook_height_px_mod_workspace": 609,
+      "game_rip_console": {"mapped": true, "height_px": 110, "bottom_px": 777, "inside_root": true},
+      "task_log": {"hidden_before_request": true, "mapped_after_request": true, "size_px": [900, 380]}
+    },
+    "1744x868": {
+      "mod_workspace_help": {"mapped": true, "height_px": 22, "correct_default_text": true},
+      "notebook_height_px_mod_workspace": 717,
+      "game_rip_console": {"mapped": true, "height_px": 124, "bottom_px": 791, "inside_root": true},
+      "task_log": {"hidden_before_request": true, "mapped_after_request": true, "size_px": [900, 380]}
+    }
+  },
+  "requirements": [
+    "Mod Workspace contextual help is visible and populated at normal desktop geometries",
+    "Task log remains available without permanently consuming tab height",
+    "Game Rip dedicated console remains readable after the help correction",
+    "GMX Workbench remains scrollable",
+    "No tab needs to rely on an off-screen global footer"
+  ]
+}

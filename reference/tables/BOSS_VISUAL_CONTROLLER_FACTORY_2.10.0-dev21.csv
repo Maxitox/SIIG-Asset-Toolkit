@@ -1,0 +1,19 @@
+key,boss,runtime_type,factory_case,constructor,object_size,coverage,index_rule,evidence
+the_moon,THE MOON,0x46,0x47,Function_8212B638,0x74,native_inspection_only,factory_case = runtime_type + 1,retail Function_821489F8 plus caller Function_820E7AE8
+the_sun,THE SUN,0x47,0x48,Function_8212BA68,0x138,deep_runtime_reconstruction,factory_case = runtime_type + 1,retail Function_821489F8 plus caller Function_820E7AE8
+gigantic_ufo,GIGANTIC UFO,0x9E,0x9F,Function_8211B560,0x228,deep_runtime_reconstruction,factory_case = runtime_type + 1,retail Function_821489F8 plus caller Function_820E7AE8
+ladybug,LADYBUG,0x49,0x4A,Function_8211EA18,0x80,native_inspection_only,factory_case = runtime_type + 1,retail Function_821489F8 plus caller Function_820E7AE8
+mandala,MANDALA,0x4A,0x4B,Function_8211ED60,0x70,deep_runtime_reconstruction,factory_case = runtime_type + 1,retail Function_821489F8 plus caller Function_820E7AE8
+unknown,UNKNOWN,0x4B,0x4C,Function_821300A8,0x254,deep_runtime_reconstruction,factory_case = runtime_type + 1,retail Function_821489F8 plus caller Function_820E7AE8
+centipede,CENTIPEDE,0xA0,0xA1,Function_82116478,0x210,deep_runtime_reconstruction,factory_case = runtime_type + 1,retail Function_821489F8 plus caller Function_820E7AE8
+hornet,HORNET,0xA1,0xA2,Function_8211E1C0,0x290,deep_runtime_reconstruction,factory_case = runtime_type + 1,retail Function_821489F8 plus caller Function_820E7AE8
+progressive_ufo,PROGRESSIVE UFO,0xA2,0xA3,Function_821276D0,0x224,deep_runtime_reconstruction,factory_case = runtime_type + 1,retail Function_821489F8 plus caller Function_820E7AE8
+octopus,OCTOPUS,0xA3,0xA4,Function_82123E18,0x28C,native_inspection_only,factory_case = runtime_type + 1,retail Function_821489F8 plus caller Function_820E7AE8
+butterfly,BUTTERFLY,0xA4,0xA5,Function_82111D28,0x23C,deep_runtime_reconstruction,factory_case = runtime_type + 1,retail Function_821489F8 plus caller Function_820E7AE8
+axon,AXON,0xA5,0xA6,Function_82110378,0x234,deep_runtime_reconstruction,factory_case = runtime_type + 1,retail Function_821489F8 plus caller Function_820E7AE8
+water_strider,WATER STRIDER,0xA6,0xA7,Function_821368E8,0x2F0,native_inspection_only,factory_case = runtime_type + 1,retail Function_821489F8 plus caller Function_820E7AE8
+crab,CRAB,0xA7,0xA8,Function_82119550,0x738,deep_runtime_reconstruction,factory_case = runtime_type + 1,retail Function_821489F8 plus caller Function_820E7AE8
+ultimate_ufo,ULTIMATE UFO,0xA8,0xA9,Function_8212DEC8,0x2EC,deep_runtime_reconstruction,factory_case = runtime_type + 1,retail Function_821489F8 plus caller Function_820E7AE8
+squid,SQUID,0xA9,0xAA,Function_8212A778,0x53C,deep_runtime_reconstruction,factory_case = runtime_type + 1,retail Function_821489F8 plus caller Function_820E7AE8
+vertebrate,VERTEBRATE,0xAA,0xAB,Function_821346A0,0x298,deep_runtime_reconstruction,factory_case = runtime_type + 1,retail Function_821489F8 plus caller Function_820E7AE8
+no_name,NO_NAME,0xAB,0xAC,Function_82120B50,0x240,native_inspection_only,factory_case = runtime_type + 1,retail Function_821489F8 plus caller Function_820E7AE8

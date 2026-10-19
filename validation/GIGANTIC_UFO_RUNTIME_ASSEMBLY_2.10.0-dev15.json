@@ -1,0 +1,49 @@
+{
+  "format": "SIIG_GIGANTIC_UFO_RUNTIME_ASSEMBLY_VALIDATION",
+  "release": "2.10.0-dev15",
+  "status": "pass",
+  "catalog": "gigantic_ufo_complete",
+  "runtime_hierarchy": {
+    "root_runtime_type": "0x9E",
+    "root_model": "bos_003.gmx",
+    "root_count": 1,
+    "child_runtime_type": "0xB5",
+    "child_model": "bos_003a.gmx",
+    "child_count": 36,
+    "locator_range": "lt_001..lt_036",
+    "excluded_helper_runtime_type": "0xB4",
+    "excluded_helper_slots": 3
+  },
+  "cross_platform": {
+    "retail_xbox": "same 1 root + 3 B4 helper slots + 36 B5 locator-attached children",
+    "june10_xbox": "same 1/3/36 structure independently retained",
+    "retail_ps3": "same root/child allocation and locator-driven child transform pattern independently retained"
+  },
+  "real_retail_assets": {
+    "bos_003.gmx": {
+      "size": 414192,
+      "sha256": "047a469fd571611b67703d7af1287407302dc5f35a6fd4d0af0241748771a154"
+    },
+    "bos_003a.gmx": {
+      "size": 26368,
+      "sha256": "e35c716606a38196639304a4cd3737be02d9dc5dc243800b5b4f067984c3d830"
+    }
+  },
+  "real_export": {
+    "instances": 37,
+    "meshes": 74,
+    "nodes": 185,
+    "animations": 0,
+    "bounds_min": [
+      -269.592630692885,
+      -269.592630692885,
+      -66.10335789747478
+    ],
+    "bounds_max": [
+      269.592630692885,
+      269.592630692885,
+      61.110716407506516
+    ]
+  },
+  "distribution_boundary": "No proprietary GMX or generated retail glTF is bundled in the source-only release."
+}

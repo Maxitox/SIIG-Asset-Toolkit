@@ -1,0 +1,282 @@
+{
+  "format": "SIIG_DEV24_UNRESOLVED_BOUNDARY_AUDIT",
+  "release": "2.10.0-dev24",
+  "checkpoint": "WIP187",
+  "status": "pass",
+  "scope": "living/current-facing project claims only; historical versioned release notes and validation reports remain period-correct",
+  "policy": {
+    "open": "still not claimed as exact/implemented/currently validated",
+    "resolved": "formerly open item with later evidence or implementation; historical mentions do not make it current",
+    "human_decision": "not a technical reverse-engineering blocker and not to be auto-resolved"
+  },
+  "open_boundaries": [
+    {
+      "id": "VISUALIZER_RT_ALPHA_STORAGE",
+      "category": "external_runtime_semantics",
+      "claim": "The recovered Visualizer RGB recurrence is exact, and WIP178 hardware footage shows clear RGB remains visible with BG:A=0; Canvas2D is still not claimed bit-identical to Xenos render-target alpha storage/compositing or final presentation.",
+      "evidence": [
+        "reference/research/VISUALIZER_RUNTIME_RENDER_PIPELINE_DEV24.md",
+        "reference/research/VISUALIZER_CHECK_FOLLOWUP_SWEEP_DEV24.md"
+      ],
+      "blocker": "Requires a more exact Xenos render-target/alpha observation or an equivalent controlled runtime capture; do not infer it from Canvas behavior."
+    },
+    {
+      "id": "VISUALIZER_BGM_PROCESSING_CADENCE",
+      "category": "external_runtime_semantics",
+      "claim": "Raw BGM semantics, Check Mode direct transfer, normal-stage adaptive VOL SCALE normalization and the native Xbox 360 processing window are recovered. WIP174 fixes one XAudio2 processing pass at 5 1/3 ms = 256 samples at 48 kHz. Only browser/native analyser snapshot phase and scheduling remain approximate.",
+      "evidence": [
+        "reference/research/VISUALIZER_BGM_METER_DEV24.md",
+        "reference/research/VISUALIZER_BGM_QUANTUM_DEV24.md",
+        "reference/research/VISUALIZER_GAMEPLAY_BGM_NORMALIZER_DEV24.md",
+        "validation/VISUALIZER_BGM_QUANTUM_2.10.0-dev24_WIP174.json"
+      ],
+      "blocker": "Requires controlled sample-phase/runtime instrumentation only if exact Web Audio snapshot alignment to native XAudio2 quantum boundaries is required; native quantum duration/window size itself is resolved."
+    },
+    {
+      "id": "ROUTE_DAT_PAIRING_AND_ACTIVATION",
+      "category": "research_semantics",
+      "claim": "Normal-stage XmapW_S and map4_/map5_ route filenames deterministically map to levelW_stageS.dat. Explicit Bmap13/Bmap15 DAT playback now cross-checks authored WARNING[12]/WARNING[14] request compatibility and reports request frames/competing special requests. Canonical Bmap ownership and the gameplay route-object initialization/instantiation frame remain explicit rather than inferred.",
+      "evidence": [
+        "reference/research/ROUTE_DAT_PAIRING_DEV24.md",
+        "validation/ROUTE_DAT_PAIRING_2.10.0-dev24.json",
+        "docs/formats/STAGE3D_NOTES.md",
+        "README.md"
+      ],
+      "blocker": "Needs scene-level/canonical ownership evidence for Bmap boss/special routes and exact route-object initialization timing; normal-stage filename correspondence and explicit Bmap WARNING-request compatibility no longer block playback."
+    },
+    {
+      "id": "MAP_SCROLL_LAYER_PLAYER_NAMES",
+      "category": "nomenclature",
+      "claim": "SCROLL_01/02/03 are proven layer 0/1/2 X/Y velocity setters; player-facing layer names remain unresolved.",
+      "evidence": [
+        "README.md"
+      ],
+      "blocker": "Naming only; no behavior is blocked."
+    },
+    {
+      "id": "GMX_NATIVE_BLENDED_SKINNING",
+      "category": "evidence_absent_feature",
+      "claim": "True multi-joint/blended glTF weights remain rejected because the checked retail player/enemy corpus has 901 MESH records at skin_index 0xFFFF and no JOINT/WEIGHT ARRY semantics.",
+      "evidence": [
+        "README.md",
+        "docs/formats/GMX_GLTF_NOTES.md"
+      ],
+      "blocker": "No native weighted-skin representation has been evidenced; do not invent one."
+    },
+    {
+      "id": "GMX_SKIN_INDEX_NONFFFF_SEMANTICS",
+      "category": "research_semantics",
+      "claim": "MESH.skin_index is understood only for the repeated observed 0xFFFF no-vertex-skin case; non-0xFFFF semantics are not claimed.",
+      "evidence": [
+        "validation/GMX_RIGID_BIND_REBAKE_2.10.0-dev1.json"
+      ],
+      "blocker": "Needs a genuine native sample or executable consumer using another value."
+    },
+    {
+      "id": "GMX_PLATFORM_SHADER_COMPILATION",
+      "category": "implementation_gap",
+      "claim": "The toolkit can preserve/synthesize proven shader metadata, and targeted Visualizer shader semantics have been decoded, but it does not compile new Xenos/RSX shader microcode.",
+      "evidence": [
+        "docs/guides/MOD_WORKSPACE.md",
+        "docs/guides/NATIVE_ASSET_ROUNDTRIP.md"
+      ],
+      "blocker": "Requires a separately justified platform shader compiler/assembler path and runtime validation."
+    },
+    {
+      "id": "GMX_OPAQUE_FIELD_SEMANTICS",
+      "category": "research_semantics",
+      "claim": "Remaining unnamed GMX/root fields are preserved in template mode or explicitly defaulted/overridden in canonical synthesis without invented meanings.",
+      "evidence": [
+        "README.md",
+        "docs/guides/MOD_WORKSPACE.md"
+      ],
+      "blocker": "Needs additional executable or corpus evidence per field."
+    },
+    {
+      "id": "GMX_NATIVE_NAMED_CLIP_CONTAINER",
+      "category": "research_semantics",
+      "claim": "Multi-bone MOTN/ANIM tracks are supported, but no native named animation-clip container has been proven.",
+      "evidence": [
+        "docs/formats/GMX_GLTF_NOTES.md"
+      ],
+      "blocker": "Needs a name-bearing native animation container/consumer; glTF clip names remain provenance only."
+    },
+    {
+      "id": "GMX_ARBITRARY_ORIGINAL_SCENE_RUNTIME_ACCEPTANCE",
+      "category": "external_validation",
+      "claim": "Template-free GMX construction is structurally implemented, but retail runtime acceptance of arbitrary fully original synthesized scenes is not claimed from source-only tests.",
+      "evidence": [
+        "README.md",
+        "docs/guides/MOD_WORKSPACE.md"
+      ],
+      "blocker": "Requires controlled Xenia/console/devkit validation on representative original scenes."
+    },
+    {
+      "id": "TEX_COMPRESSED_MIPMAPPED_AUTHORING",
+      "category": "implementation_gap",
+      "claim": "Canonical donor-free TEX synthesis covers the proven uncompressed layouts; compressed or mipmapped authoring variants are not implemented as a general path.",
+      "evidence": [
+        "docs/guides/MOD_WORKSPACE.md"
+      ],
+      "blocker": "Needs format-specific layout evidence plus encode/runtime tests for each variant."
+    },
+    {
+      "id": "PS3_SYNTH_TEX_UNKNOWN_WRAPPER_RUNTIME_ACCEPTANCE",
+      "category": "external_validation",
+      "claim": "PS3 canonical A8R8G8B8 TEX synthesis round-trips structurally, while runtime acceptance of unknown wrapper fields for newly invented textures remains an emulator/hardware gate.",
+      "evidence": [
+        "docs/guides/NATIVE_ASSET_ROUNDTRIP.md"
+      ],
+      "blocker": "Requires PS3 runtime validation of genuinely new synthesized textures."
+    },
+    {
+      "id": "PS3_NPDRM_SDAT_REENCRYPTION",
+      "category": "implementation_gap",
+      "claim": "SIIG SDAT decryption/authentication is implemented, but generation of a signed/encrypted replacement NPDRM/SDAT wrapper is not.",
+      "evidence": [
+        "docs/guides/MOD_PACKAGES.md",
+        "docs/guides/MOD_WORKSPACE.md"
+      ],
+      "blocker": "Requires a legally/technically justified re-encryption/signing implementation; inner BBX rebuild remains available."
+    },
+    {
+      "id": "AUDIO_REPLACEMENT_REBUILD",
+      "category": "implementation_gap",
+      "claim": "Mod Workspace supports variable-duration/rate Xbox XWB PCM16 replacement with metadata/loop-region rewrite and flexible channel input, plus variable-duration/rate PS3 SBlk repacking with multichannel-input downmix to SIIG native mono. Native XMA2 re-encoding, true multichannel PS3 topology synthesis, and retail-runtime acceptance remain open.",
+      "evidence": [
+        "reference/research/PS3_SBLK_REPLACEMENT_DEV24.md",
+        "validation/PS3_SBLK_REPLACEMENT_2.10.0-dev24.json",
+        "docs/formats/AUDIO_NOTES.md",
+        "docs/guides/NATIVE_ASSET_ROUNDTRIP.md",
+        "docs/guides/MOD_WORKSPACE.md",
+        "validation/MOD_WORKSPACE_AUDIO_EDIT_2.10.0-dev24_WIP187.json"
+      ],
+      "blocker": "Needs controlled emulator/hardware validation of edited Xbox/PS3 banks; optional native XMA2 encoding and true multichannel/topology-changing PS3 bank synthesis remain separate implementation work."
+    },
+    {
+      "id": "BLENDER_UI_RUNTIME_VALIDATION",
+      "category": "external_validation",
+      "claim": "Blender add-on source regressions are covered, but an in-Blender UI/operator runtime validation remains external to the release-build environment.",
+      "evidence": [
+        "docs/project/RELEASE_READINESS_DEV24.md"
+      ],
+      "blocker": "Requires running the add-on in a supported Blender environment."
+    },
+    {
+      "id": "ANDROID_LEVEL9_PLACEHOLDER_RATIONALE",
+      "category": "low_priority_research",
+      "claim": "The Android/iOS Level-9 authored-content split is mapped, but the exact rationale for Android placeholder scripts selecting one V2 boss opcode each remains unresolved.",
+      "evidence": [
+        "validation/RELEASE_VALIDATION_2.8.0-dev17.json"
+      ],
+      "blocker": "Historical mobile rationale; no current extraction/build feature depends on it."
+    },
+    {
+      "id": "CONSOLE_GENERATOR_2X_CAPACITY_RATIONALE",
+      "category": "low_priority_research",
+      "claim": "The runtime generated-layer capacity doubling is resolved (iOS 0x1800 -> PS3 retail 0x3000 per layer), but the authoring/design rationale for the console generator MAP corpus having exactly 2x iOS total stored cells remains unresolved.",
+      "evidence": [
+        "reference/tables/IOS_CONSOLE_GENERATOR_LINEAGE_DEV18.csv",
+        "reference/research/CONSOLE_GENERATOR_OUTPUT_CAPACITY_DEV24.md",
+        "validation/CONSOLE_GENERATOR_OUTPUT_CAPACITY_2.10.0-dev24.json"
+      ],
+      "blocker": "Needs per-file authored-dimension lineage, source-level design intent, or equivalent evidence explaining why console resources were expanded; allocator mechanics are no longer the blocker."
+    }
+  ],
+  "resolved_superseded_boundaries": [
+    {
+      "id": "SURVIVAL_CONVERSION_STATUS_BYTES",
+      "resolution": "Resolved in dev17 as Evolution Tree stage-node status bytes; dev16 unresolved wording is historical."
+    },
+    {
+      "id": "ROUTE_HERMITE_RESAMPLER",
+      "resolution": "Retail non-loop fixed-spacing route resampler, classifier, six-state tangents and cubic Hermite evaluation are implemented and regression-covered."
+    },
+    {
+      "id": "GMX_TEMPLATE_FREE_ROOT",
+      "resolution": "Canonical template-free GMX root/scene synthesis is implemented."
+    },
+    {
+      "id": "GMX_VERTEX_MATERIAL_SCHEMA_SYNTHESIS",
+      "resolution": "Donor-free MESH/ARRY vertex declarations and MTRL parameter streams are implemented structurally."
+    },
+    {
+      "id": "GMX_MULTI_BONE_ANIMATION_CUBICSPLINE",
+      "resolution": "Multi-bone glTF clips and CUBICSPLINE TRS import are implemented."
+    },
+    {
+      "id": "TEX_DONOR_FREE_CANONICAL_SYNTHESIS",
+      "resolution": "Canonical Xbox 360 and PS3 TEX wrapper synthesis is implemented for the proven layouts."
+    },
+    {
+      "id": "CAMERA_PRESET_WORD11_FACE_BIAS",
+      "resolution": "Retail camera preset word 11 is recovered as face_bias."
+    },
+    {
+      "id": "VISUALIZER_FEEDBACK_SAMPLER",
+      "resolution": "Recursive feedback sampler is recovered as repeat + point min/mag/mip with anisotropy disabled."
+    },
+    {
+      "id": "VISUALIZER_SHAPE_SAMPLER",
+      "resolution": "All ten serialized Visualizer SHAPE samplers are recovered as repeat + point filtering with anisotropy disabled."
+    },
+    {
+      "id": "VISUALIZER_EFFECTBLUR_BLEND",
+      "resolution": "EffectBlur fixed-function blend is recovered as Add(SrcAlpha, One)."
+    },
+    {
+      "id": "VISUALIZER_EFFECTBLUR_SHADER",
+      "resolution": "EffectBlur pixel shader is recovered as feedback RGB sample with uniform source alpha."
+    },
+    {
+      "id": "VISUALIZER_SCREENSPRITE_SHADER",
+      "resolution": "ScreenSprite SHAPE shader is recovered as sampled RGBA times runtime float4 tint, source-over blended."
+    },
+    {
+      "id": "STAGE_PLACEMENT_EULER_ORDER",
+      "resolution": "Retail Xbox 360 and PS3 stage-placement transform consumption proves row-vector S * Rz(z) * Rx(x) * Ry(y) * T. Stage Explorer applies the recovered runtime scale, stored degree rotations, and placement origin to GMX root-AABB proxy corners."
+    },
+    {
+      "id": "PS3_SBLK_FIXED_SLOT_REPLACEMENT",
+      "resolution": "WIP161 implements clean-room mono PCM16 -> PS-ADPCM encoding and fixed-capacity SBlk slot replacement while preserving bank layout and original per-frame control bytes; broader audio authoring remains open."
+    },
+    {
+      "id": "CONSOLE_GENERATOR_OUTPUT_BUFFER_CAPACITY",
+      "resolution": "PS3 retail stageGenerateMapInit (0x001327E8) allocates three generated MAP layers using capacity factors 0x20,0x20,0x20 multiplied by 0x180, yielding 0x3000 (12,288) bytes per layer; stageGenerate2DMap append logic at 0x001329DC bounds writes against the same product. The retained iOS ancestor capacity is 0x1800 (6,144) bytes per layer, so the runtime output capacity doubled exactly 2x."
+    },
+    {
+      "id": "BMAP_WARNING_REQUEST_COMPATIBILITY",
+      "resolution": "WIP164 explicitly cross-checks Bmap13/Bmap15 caller-supplied DATs for the proven WARNING[12]/WARNING[14] special-resource requests, reports authored request frame(s), competing special requests and normalized reload frame 130, while keeping canonical DAT ownership and route-object initialization timing uninferred."
+    },
+    {
+      "id": "VISUALIZER_GAMEPLAY_BGM_NORMALIZER",
+      "resolution": "WIP167 recovers the normal-stage post-meter path: constructor default 300-frame adaptive buffer, ScriptVOLUME_SCALE/opcode 0xCE reconfiguration (minimum 5; stages 4-2/4-4/4-5 author 180), exact MIN/MAX and 0.001-span guard, VOL SCALE mapping, and 180-frame RAW/SCALE diagnostic histories. Dedicated Check Mode remains a raw-meter path. Real-hardware overlay values numerically cross-check the formula."
+    },
+    {
+      "id": "VISUALIZER_SEQUENCE_CHANGE_TIMING",
+      "resolution": "WIP173 recovers VL_CHANGETIME as SequenceSet row-change timing, not parameter interpolation: default 18000-frame bounds, authored [min,max) threshold selection, exact Microsoft CRT LCG/rand30 construction, strict threshold<counter advance condition, -1/end wrap to slot 0, and next-update parameter application. Native seed remains timer-derived, so the browser exposes an explicit deterministic simulation seed rather than claiming a captured hardware seed."
+    },
+    {
+      "id": "RUNTIME_009D_EMY051_GAMEPLAY_NAME",
+      "resolution": "WIP178 project-owner model identification resolves emy_051 as LUST; WIP179 synchronizes the living boundary registry. Runtime 0x9D -> emy_051 ownership remains executable-backed across all five retained builds. No executable-internal LUST string/token is claimed, but that provenance distinction no longer requires a neutral player-facing label."
+    }
+  ],
+  "human_decisions": [
+    {
+      "id": "PROJECT_LICENSE_SELECTION",
+      "status": "deferred_by_owner",
+      "claim": "No project license is selected; this remains an owner publication decision, not a reverse-engineering uncertainty."
+    },
+    {
+      "id": "DEV24_SEAL_PROMOTION",
+      "status": "owner_controlled",
+      "claim": "Passing WIP gates does not automatically seal/promote dev24."
+    }
+  ],
+  "audit_rules": [
+    "Historical versioned release notes and validation reports may retain period-correct unresolved statements.",
+    "Current-facing docs must not cite a resolved_superseded boundary as still open.",
+    "An open boundary may be closed only by evidence, implementation plus validation where applicable, or an explicit owner decision for human_decisions.",
+    "Opaque GPU/GMX state must not be guessed to reduce this list."
+  ]
+}

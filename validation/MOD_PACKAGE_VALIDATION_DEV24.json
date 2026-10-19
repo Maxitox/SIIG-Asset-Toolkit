@@ -1,0 +1,51 @@
+{
+  "format": "SIIG_MOD_PACKAGE_VALIDATION_DEV24",
+  "toolkit_version": "2.8.0-dev24",
+  "result": "PASS",
+  "package_format": "SIIG_MOD_PACKAGE_V1",
+  "binary_patch_format": "SIIG_BINARY_PATCH_V1",
+  "synthetic_regression": {
+    "result": "PASS",
+    "flow": [
+      "mod-init",
+      "mod-export DAT",
+      "edit CSV",
+      "mod-build",
+      "mod-pack",
+      "mod-apply --build",
+      "mod-verify"
+    ],
+    "verified": [
+      "the applied package reconstructs the exact rebuilt BBX produced by the source workspace",
+      "equal-size deltas store sparse changed byte runs",
+      "variable-size deltas reconstruct through baseline copy + package data operations",
+      "deterministic ZIP output is independent of input mapping order"
+    ]
+  },
+  "retail_localization_package": {
+    "result": "PASS",
+    "scope": "externally supplied retail Xbox text.bin; source archive is not bundled",
+    "source_string_count": 542,
+    "edit": "one readable localization character changed while preserving file length",
+    "source_archive_size": 211968,
+    "rebuilt_archive_size": 211968,
+    "package_size": 1184,
+    "delta_payload_bytes": 1,
+    "applied_patches": 1,
+    "fresh_workspace_rebuild_matches_source_workspace": true,
+    "mod_verify": true,
+    "validation_package_sha256": "257b6b6e7f1b4a6ee4a3b0e0f5cccefd6526131acde712049376c4a1f9db313b"
+  },
+  "distribution_policy": {
+    "requires_matching_user_owned_baseline": true,
+    "complete_clean_source_archives_bundled": false,
+    "complete_clean_source_resources_bundled": false,
+    "equal_size_payload_policy": "only bytes differing at their target offsets are stored",
+    "length_changing_policy": "copy/data delta stream; large whole-archive length changes are rejected above the conservative sequence-diff limit"
+  },
+  "boundaries": [
+    "V1 does not automatically merge two packages that modify the same resource; conflicts require an explicit overwrite decision.",
+    "PS3 NPDRM/SDAT re-encryption remains unsupported.",
+    "Runtime acceptance of arbitrary edited values still requires emulator/hardware testing."
+  ]
+}

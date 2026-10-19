@@ -1,0 +1,32 @@
+{
+  "format": "SIIG_MOD_WORKSPACE_VALIDATION_DEV23",
+  "toolkit_version": "2.8.0-dev23",
+  "synthetic_resource_pipeline": {
+    "result": "PASS",
+    "flow": [
+      "mod-init",
+      "mod-export DAT",
+      "edit CSV",
+      "mod-build",
+      "mod-verify"
+    ],
+    "archives_built": 1,
+    "archives_changed": 1,
+    "native_resource_replacements": 1,
+    "verified_edit": "DAT delta_frame 10 -> 11 survived native rebuild and BBX reparse",
+    "gzip_patch": "deterministic gzip payload decompressed exactly to rebuilt BBX"
+  },
+  "retail_localization_workspace": {
+    "result": "PASS",
+    "scope": "user-supplied retail Xbox text.bin/message.bin used externally; not bundled",
+    "archives_built": 2,
+    "archives_changed": 2,
+    "builders": [
+      "text_archive",
+      "message_archive"
+    ],
+    "verified": "edited readable localization exports rebuilt to valid native BBX archives and passed mod-verify"
+  },
+  "ps3_boundary": "NPDRM/SDAT re-encryption is not implemented; mod-build emits verified decompressed BBX for SDAT-backed resources.",
+  "result": "PASS"
+}

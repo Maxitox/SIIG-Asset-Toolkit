@@ -1,0 +1,381 @@
+{
+  "format": "SIIG_THE_MOON_VISUAL_CONTROLLER_VALIDATION",
+  "release": "2.10.0-dev24",
+  "status": "pass",
+  "platform": "Xbox 360 retail",
+  "runtime_type": "0x46",
+  "model": "bos_001.gmx",
+  "factory_case": "0x47",
+  "controller": "Function_8212B638",
+  "setup": "Function_8212B6F8",
+  "update": "Function_8212B760",
+  "material_vector_setter": "Function_8214D9B0",
+  "material_forwarder": "Function_8214E120",
+  "material_names": [
+    "collada_edge1",
+    "collada_face1",
+    "collada_face2"
+  ],
+  "obsolete_interpretation": "dynamic node scale / 0.4 scale path",
+  "corrected_interpretation": "RGB-preserving fourth-component/material-alpha updates plus slot-0 Z rotation",
+  "controller_report": {
+    "format": "SIIG_THE_MOON_VISUAL_CONTROLLER_V1",
+    "toolkit_version": "2.10.0-dev24",
+    "platform": "Xbox 360 retail",
+    "runtime_type": "0x46",
+    "model": "bos_001.gmx",
+    "controller": "Function_8212B638",
+    "setup": "Function_8212B6F8",
+    "update": "Function_8212B760",
+    "material_vector_setter": "Function_8214D9B0",
+    "material_forwarder": "Function_8214E120",
+    "rotation_setter": "FUN_8214b6e8",
+    "frame_multiplier": 1,
+    "state0": {
+      "edge_alpha": 0.9,
+      "face_alpha_rule": "0 before/equal fade start; float32((timer-start)/(end-start)) for start<timer<end; 1 at/after end",
+      "fade_start_timer": 131,
+      "fade_end_timer": 262,
+      "partial_alpha_resource": "+0x1A8",
+      "fully_opaque_resource": "+0x1A4"
+    },
+    "other_primary_states": {
+      "edge_alpha": 1.0,
+      "face1_alpha": 1.0,
+      "face2_alpha": 1.0
+    },
+    "nonzero_visual_slots": {
+      "edge_alpha": 0.4000000059604645,
+      "face1_alpha": 0.4000000059604645,
+      "face2_alpha": 0.4000000059604645,
+      "setup_resource": "+0x1A8",
+      "rotation_write": false
+    },
+    "rotation": {
+      "slot0_step_degrees": 36.0,
+      "step_count": 10,
+      "normal_step_rule": "(rotation_timer // frame_multiplier) % 10",
+      "pre_fade_state0_override": "fade_timer % 10 while fade_timer < 131*frame_multiplier"
+    },
+    "samples": [
+      {
+        "format": "SIIG_THE_MOON_VISUAL_SAMPLE_V1",
+        "runtime_type": "0x46",
+        "root_model": "bos_001.gmx",
+        "visual_slot": 0,
+        "primary_state": 0,
+        "rotation_timer": 0,
+        "fade_timer": 0,
+        "frame_multiplier": 1,
+        "fade_start_timer": 131,
+        "fade_end_timer": 262,
+        "rotation_step": 0,
+        "rotation_z_degrees": 0.0,
+        "rotation_angle_source": "fade_timer_mod_10_before_fade_start",
+        "material_alpha": {
+          "collada_edge1": 0.8999999761581421,
+          "collada_face1": 0.0,
+          "collada_face2": 0.0
+        },
+        "material_vector_order": [
+          "collada_edge1",
+          "collada_face1",
+          "collada_face2"
+        ],
+        "resource_flag_before": 0,
+        "resource_action": "none",
+        "resource_pointer_offset": null,
+        "resource_flag_after": 0,
+        "nonzero_slot_setup_resource": null,
+        "evidence_functions": [
+          "Function_8212B638",
+          "Function_8212B6F8",
+          "Function_8212B760",
+          "Function_8214D9B0",
+          "Function_8214E120",
+          "FUN_8214b6e8"
+        ],
+        "evidence_boundary": "visual-slot/material behavior is exact; mapping a controller visual slot or its three named material vectors onto specific exported glTF nodes remains unproven, so no fake node-scale animation is emitted"
+      },
+      {
+        "format": "SIIG_THE_MOON_VISUAL_SAMPLE_V1",
+        "runtime_type": "0x46",
+        "root_model": "bos_001.gmx",
+        "visual_slot": 0,
+        "primary_state": 0,
+        "rotation_timer": 130,
+        "fade_timer": 130,
+        "frame_multiplier": 1,
+        "fade_start_timer": 131,
+        "fade_end_timer": 262,
+        "rotation_step": 0,
+        "rotation_z_degrees": 0.0,
+        "rotation_angle_source": "fade_timer_mod_10_before_fade_start",
+        "material_alpha": {
+          "collada_edge1": 0.8999999761581421,
+          "collada_face1": 0.0,
+          "collada_face2": 0.0
+        },
+        "material_vector_order": [
+          "collada_edge1",
+          "collada_face1",
+          "collada_face2"
+        ],
+        "resource_flag_before": 0,
+        "resource_action": "none",
+        "resource_pointer_offset": null,
+        "resource_flag_after": 0,
+        "nonzero_slot_setup_resource": null,
+        "evidence_functions": [
+          "Function_8212B638",
+          "Function_8212B6F8",
+          "Function_8212B760",
+          "Function_8214D9B0",
+          "Function_8214E120",
+          "FUN_8214b6e8"
+        ],
+        "evidence_boundary": "visual-slot/material behavior is exact; mapping a controller visual slot or its three named material vectors onto specific exported glTF nodes remains unproven, so no fake node-scale animation is emitted"
+      },
+      {
+        "format": "SIIG_THE_MOON_VISUAL_SAMPLE_V1",
+        "runtime_type": "0x46",
+        "root_model": "bos_001.gmx",
+        "visual_slot": 0,
+        "primary_state": 0,
+        "rotation_timer": 131,
+        "fade_timer": 131,
+        "frame_multiplier": 1,
+        "fade_start_timer": 131,
+        "fade_end_timer": 262,
+        "rotation_step": 1,
+        "rotation_z_degrees": 36.0,
+        "rotation_angle_source": "rotation_timer_div_frame_multiplier_mod_10",
+        "material_alpha": {
+          "collada_edge1": 0.8999999761581421,
+          "collada_face1": 0.0,
+          "collada_face2": 0.0
+        },
+        "material_vector_order": [
+          "collada_edge1",
+          "collada_face1",
+          "collada_face2"
+        ],
+        "resource_flag_before": 0,
+        "resource_action": "none",
+        "resource_pointer_offset": null,
+        "resource_flag_after": 0,
+        "nonzero_slot_setup_resource": null,
+        "evidence_functions": [
+          "Function_8212B638",
+          "Function_8212B6F8",
+          "Function_8212B760",
+          "Function_8214D9B0",
+          "Function_8214E120",
+          "FUN_8214b6e8"
+        ],
+        "evidence_boundary": "visual-slot/material behavior is exact; mapping a controller visual slot or its three named material vectors onto specific exported glTF nodes remains unproven, so no fake node-scale animation is emitted"
+      },
+      {
+        "format": "SIIG_THE_MOON_VISUAL_SAMPLE_V1",
+        "runtime_type": "0x46",
+        "root_model": "bos_001.gmx",
+        "visual_slot": 0,
+        "primary_state": 0,
+        "rotation_timer": 132,
+        "fade_timer": 132,
+        "frame_multiplier": 1,
+        "fade_start_timer": 131,
+        "fade_end_timer": 262,
+        "rotation_step": 2,
+        "rotation_z_degrees": 72.0,
+        "rotation_angle_source": "rotation_timer_div_frame_multiplier_mod_10",
+        "material_alpha": {
+          "collada_edge1": 0.8999999761581421,
+          "collada_face1": 0.007633587811142206,
+          "collada_face2": 0.007633587811142206
+        },
+        "material_vector_order": [
+          "collada_edge1",
+          "collada_face1",
+          "collada_face2"
+        ],
+        "resource_flag_before": 0,
+        "resource_action": "select_alternate_visual_resource",
+        "resource_pointer_offset": "+0x1A8",
+        "resource_flag_after": 1,
+        "nonzero_slot_setup_resource": null,
+        "evidence_functions": [
+          "Function_8212B638",
+          "Function_8212B6F8",
+          "Function_8212B760",
+          "Function_8214D9B0",
+          "Function_8214E120",
+          "FUN_8214b6e8"
+        ],
+        "evidence_boundary": "visual-slot/material behavior is exact; mapping a controller visual slot or its three named material vectors onto specific exported glTF nodes remains unproven, so no fake node-scale animation is emitted"
+      },
+      {
+        "format": "SIIG_THE_MOON_VISUAL_SAMPLE_V1",
+        "runtime_type": "0x46",
+        "root_model": "bos_001.gmx",
+        "visual_slot": 0,
+        "primary_state": 0,
+        "rotation_timer": 196,
+        "fade_timer": 196,
+        "frame_multiplier": 1,
+        "fade_start_timer": 131,
+        "fade_end_timer": 262,
+        "rotation_step": 6,
+        "rotation_z_degrees": 216.0,
+        "rotation_angle_source": "rotation_timer_div_frame_multiplier_mod_10",
+        "material_alpha": {
+          "collada_edge1": 0.8999999761581421,
+          "collada_face1": 0.49618321657180786,
+          "collada_face2": 0.49618321657180786
+        },
+        "material_vector_order": [
+          "collada_edge1",
+          "collada_face1",
+          "collada_face2"
+        ],
+        "resource_flag_before": 1,
+        "resource_action": "none",
+        "resource_pointer_offset": null,
+        "resource_flag_after": 1,
+        "nonzero_slot_setup_resource": null,
+        "evidence_functions": [
+          "Function_8212B638",
+          "Function_8212B6F8",
+          "Function_8212B760",
+          "Function_8214D9B0",
+          "Function_8214E120",
+          "FUN_8214b6e8"
+        ],
+        "evidence_boundary": "visual-slot/material behavior is exact; mapping a controller visual slot or its three named material vectors onto specific exported glTF nodes remains unproven, so no fake node-scale animation is emitted"
+      },
+      {
+        "format": "SIIG_THE_MOON_VISUAL_SAMPLE_V1",
+        "runtime_type": "0x46",
+        "root_model": "bos_001.gmx",
+        "visual_slot": 0,
+        "primary_state": 0,
+        "rotation_timer": 261,
+        "fade_timer": 261,
+        "frame_multiplier": 1,
+        "fade_start_timer": 131,
+        "fade_end_timer": 262,
+        "rotation_step": 1,
+        "rotation_z_degrees": 36.0,
+        "rotation_angle_source": "rotation_timer_div_frame_multiplier_mod_10",
+        "material_alpha": {
+          "collada_edge1": 0.8999999761581421,
+          "collada_face1": 0.9923664331436157,
+          "collada_face2": 0.9923664331436157
+        },
+        "material_vector_order": [
+          "collada_edge1",
+          "collada_face1",
+          "collada_face2"
+        ],
+        "resource_flag_before": 1,
+        "resource_action": "none",
+        "resource_pointer_offset": null,
+        "resource_flag_after": 1,
+        "nonzero_slot_setup_resource": null,
+        "evidence_functions": [
+          "Function_8212B638",
+          "Function_8212B6F8",
+          "Function_8212B760",
+          "Function_8214D9B0",
+          "Function_8214E120",
+          "FUN_8214b6e8"
+        ],
+        "evidence_boundary": "visual-slot/material behavior is exact; mapping a controller visual slot or its three named material vectors onto specific exported glTF nodes remains unproven, so no fake node-scale animation is emitted"
+      },
+      {
+        "format": "SIIG_THE_MOON_VISUAL_SAMPLE_V1",
+        "runtime_type": "0x46",
+        "root_model": "bos_001.gmx",
+        "visual_slot": 0,
+        "primary_state": 0,
+        "rotation_timer": 262,
+        "fade_timer": 262,
+        "frame_multiplier": 1,
+        "fade_start_timer": 131,
+        "fade_end_timer": 262,
+        "rotation_step": 2,
+        "rotation_z_degrees": 72.0,
+        "rotation_angle_source": "rotation_timer_div_frame_multiplier_mod_10",
+        "material_alpha": {
+          "collada_edge1": 0.8999999761581421,
+          "collada_face1": 1.0,
+          "collada_face2": 1.0
+        },
+        "material_vector_order": [
+          "collada_edge1",
+          "collada_face1",
+          "collada_face2"
+        ],
+        "resource_flag_before": 1,
+        "resource_action": "restore_default_visual_resource",
+        "resource_pointer_offset": "+0x1A4",
+        "resource_flag_after": 0,
+        "nonzero_slot_setup_resource": null,
+        "evidence_functions": [
+          "Function_8212B638",
+          "Function_8212B6F8",
+          "Function_8212B760",
+          "Function_8214D9B0",
+          "Function_8214E120",
+          "FUN_8214b6e8"
+        ],
+        "evidence_boundary": "visual-slot/material behavior is exact; mapping a controller visual slot or its three named material vectors onto specific exported glTF nodes remains unproven, so no fake node-scale animation is emitted"
+      },
+      {
+        "format": "SIIG_THE_MOON_VISUAL_SAMPLE_V1",
+        "runtime_type": "0x46",
+        "root_model": "bos_001.gmx",
+        "visual_slot": 1,
+        "primary_state": 0,
+        "rotation_timer": 0,
+        "fade_timer": 0,
+        "frame_multiplier": 1,
+        "fade_start_timer": 131,
+        "fade_end_timer": 262,
+        "rotation_step": null,
+        "rotation_z_degrees": null,
+        "rotation_angle_source": "none_nonzero_visual_slot",
+        "material_alpha": {
+          "collada_edge1": 0.4000000059604645,
+          "collada_face1": 0.4000000059604645,
+          "collada_face2": 0.4000000059604645
+        },
+        "material_vector_order": [
+          "collada_edge1",
+          "collada_face1",
+          "collada_face2"
+        ],
+        "resource_flag_before": 0,
+        "resource_action": "none",
+        "resource_pointer_offset": null,
+        "resource_flag_after": 0,
+        "nonzero_slot_setup_resource": "+0x1A8",
+        "evidence_functions": [
+          "Function_8212B638",
+          "Function_8212B6F8",
+          "Function_8212B760",
+          "Function_8214D9B0",
+          "Function_8214E120",
+          "FUN_8214b6e8"
+        ],
+        "evidence_boundary": "visual-slot/material behavior is exact; mapping a controller visual slot or its three named material vectors onto specific exported glTF nodes remains unproven, so no fake node-scale animation is emitted"
+      }
+    ],
+    "correction": "Supersedes the dev22 scale interpretation. Constants 0.4/0.9/0..1 are fourth components of the three named material vectors, not node scales.",
+    "export_boundary": "Keep the_moon_native_body as the canonical Workbench catalog until visual-slot/material ownership can be mapped to exact exported GMX render nodes/materials."
+  },
+  "canonical_catalog": "the_moon_native_body",
+  "coverage": "native_inspection_only",
+  "promotion_gate": "map controller visual slots/material vectors to exact exported GMX render nodes/materials before emitting material animation; do not substitute node scaling",
+  "ok": true
+}

@@ -1,0 +1,13 @@
+{
+  "format": "SIIG_GMX_RIGID_PARTITION_VALIDATION",
+  "release": "2.10.0-dev2",
+  "status": "pass",
+  "proven": [
+    "one indexed glTF TRIANGLES mesh with two disjoint unit-weight joint islands partitions to two compact native MESH/ARRY graphs",
+    "each partition is inverse-bind rebaked independently and attached to its corresponding native BONE",
+    "synthesized MESH.skin_index remains 0xFFFF and no native JOINT/WEIGHT ARRY semantics are invented",
+    "a triangle spanning multiple rigid joints is rejected explicitly"
+  ],
+  "selftest": "GMX rigid mesh partitioning by joint",
+  "blended_weights_supported": false
+}

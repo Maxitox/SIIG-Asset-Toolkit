@@ -1,0 +1,142 @@
+{
+  "format": "SIIG_RELEASE_VALIDATION",
+  "release": "2.10.0-dev21",
+  "date": "2026-09-17",
+  "status": "development-pass",
+  "selftest": {
+    "passed": 102,
+    "failed": 0,
+    "ok": true,
+    "report": "validation/SELFTEST_2.10.0-dev21.json",
+    "reported_toolkit_version": "2.10.0-dev21"
+  },
+  "inherited_release_gate": {
+    "from": "2.10.0-dev20",
+    "report": "validation/RELEASE_VALIDATION_2.10.0-dev20.json",
+    "note": "All sealed dev20 all-boss and earlier native-format/mod/source-only gates remain inherited. Dev21 corrects visual-controller indexing and adds Game Rip drag/drop without modifying sealed dev20."
+  },
+  "boss_visual_controller_factory": {
+    "status": "pass",
+    "report": "validation/BOSS_VISUAL_CONTROLLER_FACTORY_2.10.0-dev21.json",
+    "factory": "Function_821489F8",
+    "index_rule": "switch(runtime_type + 1)",
+    "mapped_families": 18,
+    "invariant_pass": true,
+    "the_moon": {
+      "runtime_type": "0x46",
+      "factory_case": "0x47",
+      "controller": "Function_8212B638",
+      "setup": "Function_8212B6F8",
+      "node_update": "Function_8212B760"
+    },
+    "the_sun": {
+      "runtime_type": "0x47",
+      "factory_case": "0x48",
+      "controller": "Function_8212BA68",
+      "aux_setup": "Function_8212BB58",
+      "long_wave_update": "Function_8212BBF0",
+      "b2_capacity": 8,
+      "b3_capacity": 48
+    },
+    "historical_dev19_dev20_immutable": true
+  },
+  "all_boss_reconstruction": {
+    "status": "pass",
+    "report": "validation/ALL_BOSS_RECONSTRUCTION_2.10.0-dev21.json",
+    "boss_family_count": 18,
+    "deep_runtime_reconstruction_families": 13,
+    "native_inspection_only_families": 5,
+    "canonical_catalogs": 18,
+    "fresh_retail_root_models_present": 18,
+    "visual_controller_mapped_families": 18,
+    "all_catalogs_resolve": true
+  },
+  "desktop_gui": {
+    "status": "pass",
+    "report": "validation/DESKTOP_GUI_2.10.0-dev21.json",
+    "gui_version": "0.32.0-dev21",
+    "gui_modes": [
+      "simple",
+      "advanced"
+    ],
+    "default_gui_mode": "simple",
+    "game_rip_drag_drop": true,
+    "game_rip_drag_drop_backend": "stdlib Windows WM_DROPFILES",
+    "game_rip_drag_drop_accepts_files_and_folders": true,
+    "game_rip_drop_starts_automatically": false,
+    "game_rip_browse_fallback": true,
+    "windows_shell_runtime_exercised_in_build_container": false
+  },
+  "asset_functionalization": {
+    "status": "pass",
+    "report": "validation/ASSET_FUNCTIONALIZATION_2.10.0-dev21.json",
+    "known_asset_families": 14,
+    "viewable_or_exportable_families": 14,
+    "native_round_trip_families": 11,
+    "native_builder_available_families": 11,
+    "gmx_multi_file_assembly": true
+  },
+  "versioning_policy": {
+    "status": "pass",
+    "report": "validation/VERSIONING_POLICY_2.10.0-dev21.json",
+    "previous": "2.10.0-dev20",
+    "current": "2.10.0-dev21"
+  },
+  "source_only_audit": {
+    "status": "pass",
+    "report": "validation/SOURCE_ONLY_AUDIT_2.10.0-dev21.json",
+    "game_assets": 0,
+    "external_executable_magic": 0,
+    "archive_binary_members": 0,
+    "private_runtime_paths": 0,
+    "python_bytecode": 0,
+    "third_party_binaries_bundled": false,
+    "sources_rows": 24
+  },
+  "version_consistency": {
+    "VERSION.txt": "2.10.0-dev21",
+    "cli_toolkit_version": "2.10.0-dev21",
+    "gui_version": "0.32.0-dev21"
+  },
+  "fresh_package": {
+    "status": "pass",
+    "candidate_manifest_entries_verified": 616,
+    "candidate_manifest_missing": 0,
+    "candidate_manifest_mismatched": 0,
+    "candidate_unlisted_files": 0,
+    "candidate_source_only_audit": "pass",
+    "candidate_selftest_passed": 102,
+    "candidate_selftest_failed": 0,
+    "candidate_version_reported": "2.10.0-dev21",
+    "candidate_gui_version": "0.32.0-dev21",
+    "candidate_gui_game_rip_drag_drop": true,
+    "candidate_gui_boss_families": 18,
+    "candidate_visual_controller_mapped_families": 18,
+    "package_sha256": "recorded externally in SIIG_Asset_Toolkit_v2.10.0-dev21_SHA256.txt"
+  },
+  "final_package": {
+    "status": "pass",
+    "deterministic_rebuild_byte_identical": true,
+    "untouched_manifest_entries_verified": 616,
+    "untouched_manifest_missing": 0,
+    "untouched_manifest_mismatched": 0,
+    "untouched_unlisted_files": 0,
+    "untouched_source_only_audit": "pass",
+    "untouched_selftest_passed": 102,
+    "untouched_selftest_failed": 0,
+    "untouched_gui_version": "0.32.0-dev21",
+    "untouched_gui_game_rip_drag_drop": true,
+    "untouched_gui_boss_families": 18,
+    "untouched_visual_controller_mapped_families": 18,
+    "note": "Final package is a fixed-metadata deterministic ZIP. Final hash is stored outside the package to avoid self-referential package metadata."
+  },
+  "limitations": [
+    "THE MOON, LADYBUG, OCTOPUS, WATER STRIDER and NO_NAME remain native-inspection-only; dev21 adds corrected controller-class evidence but does not invent static gameplay assemblies before transforms/attachments/state timing are proven.",
+    "THE SUN dev19 controller attribution is corrected in dev21: runtime 0x47 owns factory case 0x48 / Function_8212BA68; sealed dev19/dev20 artifacts remain immutable historical checkpoints.",
+    "Windows Explorer WM_DROPFILES delivery cannot be exercised in the Linux release-build container; dev21 validates the stdlib implementation structurally, tests path-selection/error behavior, preserves Browse fallback, and does not auto-start extraction on drop.",
+    "Fresh retail Xbox game data and raw Ghidra exports were used only for external research/validation and are not bundled.",
+    "Runtime acceptance of arbitrary fully original synthesized scenes remains a separate emulator/hardware gate.",
+    "Platform shader microcode compilation and remaining opaque GMX semantics remain unresolved.",
+    "Audio replacement/rebuilding remains intentionally deferred."
+  ]
+}

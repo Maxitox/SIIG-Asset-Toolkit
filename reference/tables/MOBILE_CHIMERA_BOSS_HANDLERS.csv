@@ -1,0 +1,4 @@
+opcode,internal_opcode_name,ios_constructor,display_or_public_name,main_entity_type,main_pool_capacity,helper_type_x_capacity,fps60_constructor,retained_attack_or_subentity_symbols
+0x0052,KING_FOSSIL,_setKingFossil,KING FOSSIL,106,5,75x40,_setKingFossil_FPS60,_dischargeKingFossilShot
+0x0053,TWILIGHT_MIRAGE,_setTwilightMirage,GREAT DESTROYER / Twilight Mirage,107,12,78x20;76x105;77x18,_setTwilightMirage_FPS60,_dischargeTwilightMirageHomingMissile; _dischargeTwilightMirageGhost; _dischargeTwilightMirageVulcan; _moveTwilightTrooper; _moveTwilightMirageCore
+0x0054,APARTHEAD,_setApartHead,APARTHEAD (franchise/public: Apartheid),108,21,79x32;81x105;82x1;80x18,_setApartHead_FPS60,_dischargeApartHeadHomingMissile; _dischargeApartHead3WayShot; _dischargeApartHeadCounterBeam; _dischargeApartHeadTwinShot; _moveApartHeadEffect

@@ -1,0 +1,57 @@
+{
+  "format": "SIIG_RIP_UPDATER_VALIDATION",
+  "schema_version": 1,
+  "release": "2.10.0-dev24",
+  "checkpoint": "WIP169",
+  "status": "pass",
+  "command": "update-rip",
+  "requires_original_game_package": false,
+  "authoritative_retained_source": "decompressed_bbx/",
+  "safety": {
+    "old_output_manifest_full_hash_preflight": true,
+    "modified_rip_refused_by_default": true,
+    "explicit_force_modified_override": true,
+    "component_directory_stage_and_swap": true,
+    "interrupted_update_recovery_journal": "validation/RIP_UPDATE_IN_PROGRESS.json",
+    "recovery_journal_excluded_from_output_manifest": true
+  },
+  "update_state": {
+    "file": "validation/RIP_UPDATE_STATE.json",
+    "profile": "SHA-256 fingerprint of updater-relevant toolkit source modules",
+    "same_public_version_wip_changes_detectable": true
+  },
+  "update_report": "validation/RIP_UPDATE_REPORT.json",
+  "refreshed_components": [
+    "BBX extraction and GMX/TEX conversion outputs",
+    "COL/ANM convenience exports",
+    "localization",
+    "systemfont",
+    "decoded audio",
+    "structured DAT/MAP/stage3D/stagewall/shader exports",
+    "Stage Explorer",
+    "Visualizer Simulator",
+    "Asset Viewer",
+    "asset capability report",
+    "RIP_REPORT current-output metadata",
+    "OUTPUT_MANIFEST and RIP_VERIFICATION"
+  ],
+  "regression": "Retained-source rip updater: rebuild + smart reuse + --refresh-assets override + verification",
+  "smart_migration": {
+    "archive_reuse_key": [
+      "retained BBX SHA-256",
+      "conversion options",
+      "archive conversion schema"
+    ],
+    "matching_archive_outputs_reused": true,
+    "component_schema_checks": true,
+    "generator_module_sha256_checks": [
+      "Stage Explorer",
+      "Visualizer Simulator",
+      "Asset Viewer",
+      "PS3 SBlk audio"
+    ],
+    "upstream_dependency_invalidation": true,
+    "explicit_full_conversion_override": "--refresh-assets",
+    "asset_viewer_incremental_thumbnail_reuse": true
+  }
+}

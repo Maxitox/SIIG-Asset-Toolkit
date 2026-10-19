@@ -1,0 +1,82 @@
+{
+  "format": "SIIG_ULTIMATE_UFO_RUNTIME_ASSEMBLY_VALIDATION",
+  "release": "2.10.0-dev9",
+  "status": "pass",
+  "catalogs": [
+    "ultimate_ufo_complete",
+    "ultimate_ufo_state_02",
+    "ultimate_ufo_state_03",
+    "ultimate_ufo_state_06",
+    "ultimate_ufo_state_07",
+    "ultimate_ufo_state_08",
+    "ultimate_ufo_state_09",
+    "ultimate_ufo_state_11",
+    "ultimate_ufo_state_12"
+  ],
+  "retail_pool_counts": {
+    "0xA8": 1,
+    "0xD0": 1,
+    "0xD1": 1,
+    "0xD2": 1,
+    "0xD3": 1,
+    "0xD4": 21,
+    "0xD5": 2,
+    "0xD6": 32,
+    "0xD7": 64,
+    "0xD8": 1,
+    "0xD9": 1
+  },
+  "allocated_model_instances": 126,
+  "phase_mframes": {
+    "2": 1750,
+    "3": 2250,
+    "6": 4450,
+    "7": 5100,
+    "8": 5300,
+    "9": 5897,
+    "11": 5902,
+    "12": 6030
+  },
+  "locator_hierarchy": {
+    "0xD5": "A8 lt_002..lt_003",
+    "0xD4": "A8 lt_004..lt_024",
+    "0xD6": "D0 lt_226..lt_241 + D1 lt_242..lt_257",
+    "0xD7": "D2 lt_258..lt_289 + D3 lt_290..lt_321"
+  },
+  "runtime_parent_rotation": {
+    "D0": "Y 0deg +0.5",
+    "D1": "Y 360deg -0.5",
+    "D2": "Y 360deg -1.0",
+    "D3": "Y 0deg +1.0"
+  },
+  "native_animations_preserved": true,
+  "named_locator_attachment_enforced": true,
+  "crosscheck_builds": [
+    "retail Xbox",
+    "June 10 Xbox"
+  ],
+  "external_retail_export": {
+    "status": "not-run",
+    "reason": "retail bos_015*.gmx binaries were not present in the persistent research Library during dev9",
+    "bundled_game_assets": false
+  },
+  "tables": [
+    "reference/tables/ULTIMATE_UFO_RUNTIME_ATTACHMENT_MAP_2.10.0-dev9.csv",
+    "reference/tables/ULTIMATE_UFO_PHASE_ACTIVITY_2.10.0-dev9.csv"
+  ],
+  "regression": "ULTIMATE UFO phase/locator assembly hierarchy",
+  "ok": true,
+  "complete_allocated_instances": 126,
+  "complete_catalog_semantics": "constructor-baseline allocation/hierarchy; not simultaneous render-visibility claim",
+  "activity_subset_instances": {
+    "2": 3,
+    "3": 22,
+    "6": 101,
+    "7": 101,
+    "8": 67,
+    "9": 2,
+    "11": 2,
+    "12": 2
+  },
+  "phase_table_semantics": "Umb/Tow/Fan/Ring bytes are collision/destructibility controller flags; zero is not treated as render invisibility proof"
+}

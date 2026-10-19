@@ -1,0 +1,4 @@
+build,dispatcher,state3,transition_reset,common_reset,placement_update,entry_visible_model,entry_pose_sample,subordinate_record_state,notes
+Xbox retail,0x8211E3D0,0x8211CF98,0x8211D840,0x8211D648,0x8211CAB8,bos_008.gmx,0,-1,A1-only state-3 entry; BF/C0 not selected
+Xbox June 10,0x82138568,0x82136FD0,0x82137820,0x82137628,0x82136AA8,bos_008.gmx,0,-1,same state/reset architecture
+PS3 retail,,0x001B25B8,0x001B02F8,0x001AFFD8,0x001AFA08,bos_008.gmx,0,-1,independent retail cross-platform confirmation

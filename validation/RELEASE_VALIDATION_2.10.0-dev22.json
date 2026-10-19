@@ -1,0 +1,181 @@
+{
+  "format": "SIIG_RELEASE_VALIDATION",
+  "release": "2.10.0-dev22",
+  "date": "2026-09-17",
+  "status": "development-pass",
+  "selftest": {
+    "passed": 106,
+    "failed": 0,
+    "ok": true,
+    "report": "validation/SELFTEST_2.10.0-dev22.json",
+    "reported_toolkit_version": "2.10.0-dev22"
+  },
+  "inherited_release_gate": {
+    "from": "2.10.0-dev21",
+    "report": "validation/RELEASE_VALIDATION_2.10.0-dev21.json",
+    "note": "All sealed dev21 and earlier native-format/mod/source-only gates remain inherited. Dev22 is branched from dev21; sealed historical releases are unchanged."
+  },
+  "fresh_retail": {
+    "status": "pass",
+    "report": "validation/FRESH_RETAIL_VALIDATION_2.10.0-dev22.json",
+    "platform": "xbox360",
+    "resources": 2593,
+    "png": 1351,
+    "gltf": 486,
+    "wav": 86,
+    "wma": 53,
+    "stage_entries": 92,
+    "stage_commands": 17335,
+    "visualizer_timelines": 30,
+    "visualizer_commands": 243,
+    "asset_viewer_files": 9384,
+    "asset_viewer_previewable": 8669,
+    "asset_viewer_missing_thumbnails": 0,
+    "output_hashes_checked": 16544,
+    "output_verification_issues": 0,
+    "final_exit_code": 0
+  },
+  "visualizer_simulator": {
+    "status": "pass",
+    "report": "validation/VISUALIZER_SIMULATOR_2.10.0-dev22.json",
+    "primary_reference": "June 10 Visualizer Check Mode footage",
+    "render_model": "feedback/trailing-copy ping-pong surface",
+    "parameter_presets": 49,
+    "sequences": 57,
+    "parameter_values": 29,
+    "shape_resources": 10,
+    "retail_timelines": 30,
+    "retail_commands": 243
+  },
+  "gmx_visual_pass": {
+    "status": "pass",
+    "report": "validation/GMX_VISUAL_PASS_2.10.0-dev22.json",
+    "modes": [
+      "separate",
+      "solid",
+      "outline",
+      "combined"
+    ],
+    "default": "separate",
+    "native_face_bone": "_F",
+    "native_edge_bone": "_E",
+    "the_sun_mode_test": true,
+    "multi_gmx_boss_assembly_test": true
+  },
+  "all_boss_reconstruction": {
+    "status": "pass",
+    "report": "validation/ALL_BOSS_RECONSTRUCTION_2.10.0-dev22.json",
+    "boss_family_count": 18,
+    "deep_runtime_reconstruction_families": 13,
+    "native_inspection_only_families": 5,
+    "native_controller_traced_families": 5,
+    "canonical_catalogs": 18,
+    "fresh_retail_root_models_present": 18,
+    "visual_controller_mapped_families": 18,
+    "all_catalogs_resolve": true
+  },
+  "desktop_gui": {
+    "status": "pass",
+    "report": "validation/DESKTOP_GUI_2.10.0-dev22.json",
+    "gui_version": "0.35.0-dev22",
+    "tabs": [
+      "Game Rip",
+      "Mod Workspace",
+      "GMX Workbench",
+      "Utilities"
+    ],
+    "gui_modes": [
+      "simple",
+      "advanced"
+    ],
+    "default_gui_mode": "simple",
+    "game_rip_live_progress": true,
+    "game_rip_drag_drop": true,
+    "boss_compact_assembler": true,
+    "boss_model_folder_reuse": true,
+    "boss_output_folder_reuse": true,
+    "boss_families": 18,
+    "gmx_visual_pass_modes": [
+      "separate",
+      "solid",
+      "outline",
+      "combined"
+    ],
+    "asset_viewer_os_default_bridge": true,
+    "windows_shell_runtime_exercised_in_build_container": false
+  },
+  "asset_functionalization": {
+    "status": "pass",
+    "report": "validation/ASSET_FUNCTIONALIZATION_2.10.0-dev22.json",
+    "known_asset_families": 14,
+    "viewable_or_exportable_families": 14,
+    "native_round_trip_families": 11,
+    "native_builder_available_families": 11,
+    "gmx_multi_file_assembly": true
+  },
+  "versioning_policy": {
+    "status": "pass",
+    "report": "validation/VERSIONING_POLICY_2.10.0-dev22.json",
+    "previous": "2.10.0-dev21",
+    "current": "2.10.0-dev22"
+  },
+  "source_only_audit": {
+    "status": "pass",
+    "report": "validation/SOURCE_ONLY_AUDIT_2.10.0-dev22.json",
+    "game_assets": 0,
+    "external_executable_magic": 0,
+    "archive_binary_members": 0,
+    "private_runtime_paths": 0,
+    "python_bytecode": 0,
+    "third_party_binaries_bundled": false,
+    "sources_rows": 24
+  },
+  "version_consistency": {
+    "VERSION.txt": "2.10.0-dev22",
+    "cli_toolkit_version": "2.10.0-dev22",
+    "gui_version": "0.35.0-dev22"
+  },
+  "candidate_package": {
+    "status": "pass",
+    "manifest_entries_verified": 630,
+    "manifest_missing": 0,
+    "manifest_mismatched": 0,
+    "unlisted_files": 0,
+    "source_only_audit": "pass-before-code-execution",
+    "selftest_passed": 106,
+    "selftest_failed": 0,
+    "version_reported": "2.10.0-dev22",
+    "gui_version": "0.35.0-dev22",
+    "deterministic_rebuild_byte_identical": true,
+    "candidate_sha256": "e64769c755363bb1682cee16535d3af85881fb90a9aa1c27942b5ff5e5df7035",
+    "note": "Candidate was extracted fresh, manifest/source-only audited before code execution, then passed 106/106 selftests and GUI/version checks. Two independently built fixed-metadata candidate ZIPs were byte-identical."
+  },
+  "final_package": {
+    "status": "pass",
+    "deterministic_rebuild_byte_identical": true,
+    "manifest_entries_verified": 632,
+    "manifest_missing": 0,
+    "manifest_mismatched": 0,
+    "unlisted_files": 0,
+    "source_only_audit": "pass-before-code-execution",
+    "selftest_passed": 106,
+    "selftest_failed": 0,
+    "version_reported": "2.10.0-dev22",
+    "gui_version": "0.35.0-dev22",
+    "game_assets": 0,
+    "external_executable_magic": 0,
+    "archive_binary_members": 0,
+    "private_runtime_paths": 0,
+    "python_bytecode": 0,
+    "package_sha256": "recorded externally in SIIG_Asset_Toolkit_v2.10.0-dev22_SHA256.txt",
+    "note": "Final package was built twice from the completed source tree with fixed 1980-01-01 ZIP metadata; the two ZIPs were byte-identical. An untouched fresh extraction was manifest/source-audited before package code execution, then passed 106/106 selftests and GUI/version checks. The final hash is stored outside the package to avoid self-referential metadata."
+  },
+  "limitations": [
+    "Visualizer exact original SHAPE pixels/compositing math and Position Fix/Fix Rotation semantics remain unresolved; recovered timing/parameters/resources are kept separate from those approximations.",
+    "Stage Explorer 3D GMX proxies use proven root AABBs and runtime scale but intentionally do not apply unresolved placement rotation order.",
+    "THE MOON, LADYBUG, OCTOPUS, WATER STRIDER and NAMELESS/NO_NAME remain conservative native/timed representations; controller tracing is recorded without inventing unsupported static gameplay assemblies.",
+    "Windows Explorer WM_DROPFILES and OS-default shell opening cannot be fully exercised in the Linux release-build container; stdlib wiring, fallback behavior and GUI structure are regression-tested.",
+    "Fresh retail Xbox validation began from a clean output tree and completed through content-addressed --resume after execution-wrapper interruption; the final resumed command exited 0 and full output hash/privacy verification passed.",
+    "Platform shader microcode compilation, remaining opaque GMX semantics, and audio replacement/rebuilding remain unresolved/deferred."
+  ]
+}

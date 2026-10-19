@@ -1,0 +1,111 @@
+{
+  "format": "SIIG_MOBILE_BEHAVIOR_VALIDATION",
+  "release": "2.8.0-dev17",
+  "date": "2026-09-10",
+  "status": "pass_static",
+  "survival": {
+    "check_function": "0x00096BDC",
+    "status_array_offset": "infSystem+0xD6E",
+    "status_semantic": "Evolution Tree node status",
+    "status_required": 1,
+    "conversion_table": "0x002E96C0",
+    "records": 6,
+    "evolution_title_table": "0x002EB4FA",
+    "purchase_function": "0x0009F168",
+    "purchase_pair_table": "0x002E98CC",
+    "purchase_pairs": [
+      [
+        88,
+        30
+      ],
+      [
+        89,
+        31
+      ],
+      [
+        90,
+        32
+      ]
+    ],
+    "clear_unlock_function": "0x0009F394",
+    "clear_unlocks": [
+      [
+        49,
+        33
+      ],
+      [
+        50,
+        34
+      ],
+      [
+        51,
+        35
+      ]
+    ],
+    "fallbacks": [
+      [
+        49,
+        31
+      ],
+      [
+        50,
+        40
+      ],
+      [
+        51,
+        36
+      ],
+      [
+        52,
+        27
+      ],
+      [
+        53,
+        46
+      ],
+      [
+        54,
+        30
+      ]
+    ]
+  },
+  "v2": {
+    "boss_pairs": 6,
+    "shared_movers": 6,
+    "explicit_main_type_branches": [
+      "THE_SUN",
+      "GIGANTIC_UFO",
+      "UNKNOWN"
+    ],
+    "no_direct_main_type_branch_found": [
+      "THE_MOON",
+      "LADYBUG",
+      "MANDALA"
+    ],
+    "unknown_v2_double_sites": [
+      "0x000D3A88",
+      "0x000D3E24",
+      "0x000D4014"
+    ],
+    "unknown_v2_destroy_site": "0x000D47F8"
+  },
+  "chimera_ab": {
+    "king_fossil_args_differ": true,
+    "king_fossil_a_tail": [
+      48,
+      6
+    ],
+    "king_fossil_b_tail": [
+      96,
+      3
+    ],
+    "king_fossil_field_0x98_is_reload_countdown_source": true,
+    "twilight_args_identical": true,
+    "aparthead_args_identical": true
+  },
+  "limitations": [
+    "Unnamed boss/helper fields remain unnamed unless a consumer establishes a safe semantic label.",
+    "The +0x14/+0x28 UNKNOWN helper fields are proven to double for V2 but their exact gameplay property names remain unresolved.",
+    "King Fossil script argument 7 feeds an internal countdown at entity +0x98; its exact real-time/gameplay label is not yet promoted beyond countdown/timer behavior."
+  ]
+}

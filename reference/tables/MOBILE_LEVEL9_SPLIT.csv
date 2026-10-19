@@ -1,0 +1,7 @@
+slot,script_name,ios_actual_mission,chimera_stage,source_pack,ios_dat_bytes,android_dat_bytes,android_command_count,ios_actual_boss_opcode,ios_actual_boss_name,ios_actual_handler,android_stub_terminal_opcode,android_stub_terminal_name,android_stub_terminal_args,ios_map_bytes,android_map_bytes,android_map_state,ios_extra_map
+1,level9_stage1EX.dat,CAPTAIN NEO,C-1A,Darius,4668,113,10,0x0052,KING_FOSSIL,_setKingFossil,0x004C,THE_MOON_V2,0 10000 1,11480,32,three empty layers,level9_stage1EX_b.map
+2,level9_stage2EX.dat,URBAN TRAIL,C-2A,Night Striker,3254,115,10,0x0053,TWILIGHT_MIRAGE,_setTwilightMirage,0x004D,THE_SUN_V2,0 10000 1 1000,29224,32,three empty layers,level9_stage2EX_b.map
+3,level9_stage3EX.dat,BORN TO BE FREE,C-3A,Metal Black,5759,127,10,0x0054,APARTHEAD,_setApartHead,0x004E,GIGANTIC_UFO_V2,0 5000 1 100 300 200 500 1000 5000 5000,12248,32,three empty layers,level9_stage3EX_b.map
+4,level9_stage4EX.dat,I CAN NOT APE,C-1B,Darius,16944,234,23,0x0052,KING_FOSSIL,_setKingFossil,0x004F,LADYBUG_V2,0 32700 1,11480,32,three empty layers,
+5,level9_stage5EX.dat,BURN ALT AIR,C-2B,Night Striker,5919,119,10,0x0053,TWILIGHT_MIRAGE,_setTwilightMirage,0x0050,MANDALA_V2,0 5000 1 200 200 200,29296,32,three empty layers,
+6,level9_stage6EX.dat,BEFORE TEN ORB,C-3B,Metal Black,11522,115,10,0x0054,APARTHEAD,_setApartHead,0x0051,UNKNOWN_V2,0 10000 1 20,12232,32,three empty layers,

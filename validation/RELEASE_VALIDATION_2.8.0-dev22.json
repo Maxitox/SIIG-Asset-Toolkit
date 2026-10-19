@@ -1,0 +1,76 @@
+{
+  "format": "SIIG_RELEASE_VALIDATION",
+  "release": "2.8.0-dev22",
+  "date": "2026-09-10",
+  "status": "development-pass",
+  "selftest": {
+    "passed": 67,
+    "failed": 0,
+    "ok": true,
+    "report": "validation/SELFTEST_2.8.0-dev22.json",
+    "reported_toolkit_version": "2.8.0-dev22"
+  },
+  "inherited_release_gate": {
+    "from": "2.8.0-dev21",
+    "report": "validation/RELEASE_VALIDATION_2.8.0-dev21.json",
+    "note": "All prior extraction/rendering/audio/route/camera/mobile/code-lineage and dev21 native-functionalization gates are inherited. dev22 adds native stage-table, fixed-layout GMX, and localization rebuild workflows without modifying sealed dev21."
+  },
+  "dev22_asset_functionalization_validation": {
+    "status": "pass",
+    "report": "validation/ASSET_FUNCTIONALIZATION_DEV22.json",
+    "known_asset_families": 14,
+    "viewable_or_exportable_families": 14,
+    "native_round_trip_families": 11,
+    "native_builder_available_families": 11,
+    "new_native_build_commands": [
+      "stagewall-build",
+      "stage3d-build",
+      "gmx-edit-export",
+      "gmx-build",
+      "text-build",
+      "message-build"
+    ],
+    "new_regression_gates": [
+      "Stage wall/generator native builder",
+      "Bmap/Xmap native builder",
+      "GMX native template builder",
+      "text.bin native localization builder",
+      "message.bin native localization builder"
+    ],
+    "full_rip_capability_report": "validation/ASSET_CAPABILITIES.json",
+    "modding_guide": "docs/guides/NATIVE_ASSET_ROUNDTRIP.md"
+  },
+  "source_only_audit": {
+    "status": "pass",
+    "report": "validation/SOURCE_ONLY_AUDIT_2.8.0-dev22.json",
+    "game_assets": 0,
+    "external_executable_magic": 0,
+    "archive_binary_members": 0,
+    "private_runtime_paths": 0,
+    "python_bytecode": 0,
+    "third_party_binaries_bundled": false,
+    "sources_rows": 24
+  },
+  "version_consistency": {
+    "VERSION.txt": "2.8.0-dev22",
+    "cli_toolkit_version": "2.8.0-dev22"
+  },
+  "fresh_package": {
+    "status": "pass",
+    "candidate_manifest_entries_verified": 282,
+    "candidate_source_only_audit": "pass",
+    "candidate_selftest_passed": 67,
+    "candidate_selftest_failed": 0,
+    "candidate_version_reported": "2.8.0-dev22",
+    "note": "Candidate was extracted fresh, verified against RELEASE_MANIFEST, passed source-only audit and 67/67 selftests. Final package is rebuilt deterministically after recording these candidate results and revalidated separately."
+  },
+  "limitations": [
+    "GMX native editing is template-preserving and fixed-layout; arbitrary topology changes, count changes, new attachment graphs, and new chunk-graph construction are not claimed.",
+    "The dev22 GMX native-builder regression is synthetic/structural. Previous supplied-corpus parsing/export validation is inherited, but real-corpus native rebuild or runtime-mod acceptance is not claimed.",
+    "The dev22 localization byte-identity regressions use canonical synthetic fixtures; arbitrary modified localization still requires game/emulator testing.",
+    "Xbox XACT/XMA2 and PS3 SBlk/VAG/989SND banks decode to common audio but do not yet have native replacement-bank builders.",
+    "Xenos shader containers expose bounded raw microcode and metadata; ISA disassembly/translation/compilation remains unresolved.",
+    "Runtime acceptance of arbitrary modified native resources still requires game/emulator testing.",
+    "Project-owner license selection remains open."
+  ]
+}

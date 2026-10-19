@@ -1,0 +1,5 @@
+﻿part,owner_offset,col_offset,dis_offset,debug_string,observed_role,role_evidence
+Umb,+0x1F4,+0x20,+0x21,"Umb : col=%d, dis=%d",top/umbrella assembly and surrounding small laser cannons,project-owner May 9 footage/model observation; executable proves only debug label/fields
+Tow,+0x1F0,+0x20,+0x21,"Tow : col=%d, dis=%d",small laser towers on top of the boss,project-owner May 9 footage/model observation; executable proves only debug label/fields
+Fan,+0x1E0,+0x20,+0x21,"Fan : col=%d, dis=%d",fan blades around the giant laser cannon,project-owner May 9 footage/model observation; executable proves only debug label/fields
+Ring,+0x1E4,+0x20,+0x21,"Ring: col=%d, dis=%d",rings near the start of the giant laser cannon,project-owner May 9 footage/model observation; executable proves only debug label/fields

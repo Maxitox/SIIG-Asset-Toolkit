@@ -1,0 +1,29 @@
+{
+  "format": "SIIG_VISUALIZER_PRESENTATION_AUDIO_VALIDATION",
+  "toolkit": "2.10.0-dev24",
+  "checkpoint": "WIP166",
+  "status": "pass",
+  "dataset_version": 12,
+  "presentation_softness": {
+    "default_px": 0.65,
+    "range_px": [0.0, 2.0],
+    "scope": "display-only after recovered feedback recurrence",
+    "runtime_point_sampler_unchanged": true
+  },
+  "native_bgm": {
+    "xbox360": {"extension": ".wma", "retail_tracks": 53, "browser_previews": 53},
+    "ps3": {"extension": ".at3", "codec_family": "ATRAC3+ in supplied retail corpus", "retail_tracks": 56, "browser_previews": 56},
+    "transcoder": "FFmpeg when available",
+    "preferred_preview": "MP3/libmp3lame with AAC/M4A fallback",
+    "source_hash_cached": true,
+    "original_native_files_modified": false
+  },
+  "retail_visualizer_crosscheck": {
+    "xbox360_timelines": 30,
+    "xbox360_commands": 243,
+    "ps3_timelines": 30,
+    "ps3_commands": 243,
+    "embedded_shape_images_each": 10
+  },
+  "source_only": true
+}

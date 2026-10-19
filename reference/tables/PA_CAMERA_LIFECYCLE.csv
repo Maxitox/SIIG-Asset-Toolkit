@@ -1,0 +1,6 @@
+﻿step,ps3_retail,effect
+activate_pa_camera,0x001580DC,successful SetPaRoute sets animated-camera flag +0x108=1
+sample_animated_eye_target,0x00157A10 -> 0x0015B094,"while +0x108 is set, sample cam1/int1 and add current FieldPos"
+advance_and_finish,0x00157A10 -> 0x0015B1C8,advance camera animation clock; clear +0x108 and reset clock at animation end
+sample_field_matrix,0x0015ABCC -> 0x00159D58,"sample active field GMX matrix; extract translation to FieldPos and zero matrix translation, retaining orientation"
+procedural_fallback,0x00157A10,"when animated flag is clear, transform current camera-preset eye/target through field orientation and FieldPos"

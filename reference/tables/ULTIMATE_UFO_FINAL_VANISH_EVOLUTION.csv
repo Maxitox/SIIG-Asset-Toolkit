@@ -1,0 +1,5 @@
+﻿build,move_main,phase,trigger_frame,action,vanish_function,debug_name,confidence,phase12_frame,phase12_action,phase13_frame,phase13_action,direct_final_vanish_in_move_main
+xbox360_may9,0x82142008,12,6200,vtable +0x48(part 0),0x821410A8,UltimateUfo::Vanish,direct_executable_debug_name,,,,,
+xbox360_may11,0x821431D0,12,6200,vtable +0x48(part 0),0x821423B8,UltimateUfo::Vanish,direct_executable_debug_name,,,,,
+xbox360_june10,0x82149DF8,,,,,,direct_executable,6030,part-0 destruction path; enable recurring explosion state,6200,disable bos_015k owned object,False
+xbox360_retail,0x8212EC50,,,,,,direct_executable,6030,part-0 destruction path; enable recurring explosion state,6200,disable bos_015k owned object,False

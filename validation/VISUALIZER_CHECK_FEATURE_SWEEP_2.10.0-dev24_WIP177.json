@@ -1,0 +1,89 @@
+{
+  "format": "SIIG_VISUALIZER_CHECK_FEATURE_SWEEP_VALIDATION",
+  "release": "2.10.0-dev24",
+  "wip": 177,
+  "status": "pass",
+  "visualizer_dataset_version": 20,
+  "segment_count": 10,
+  "hardware_inputs": {
+    "owner_supplied": true,
+    "platform": "Xbox 360",
+    "build": "June 10 prototype",
+    "capture": "1920x1080 60 fps MKV",
+    "bundled": false
+  },
+  "segments": [
+    {
+      "segment": 1,
+      "feature": "Magnify A / baseline",
+      "result": "corroborates VolumeSet endpoint feedback-alpha behavior"
+    },
+    {
+      "segment": 2,
+      "feature": "Position Free",
+      "result": "+X right, +Y up; raw Position Fix 0 uses free X/Y"
+    },
+    {
+      "segment": 3,
+      "feature": "Rotation Base/Add with Fix Rotation",
+      "result": "nonzero Fix Rotation overrides Base/Add accumulated path"
+    },
+    {
+      "segment": 4,
+      "feature": "Position Fix",
+      "result": "nonzero raw values select distinct fixed anchors; executable table remains canonical"
+    },
+    {
+      "segment": 5,
+      "feature": "SHAPE RGBA min/max",
+      "result": "VolumeSet source-tint endpoints, not random ranges"
+    },
+    {
+      "segment": 6,
+      "feature": "BG RGBA",
+      "result": "direct single clear controls; exact alpha storage/final composite retained as boundary"
+    },
+    {
+      "segment": 7,
+      "feature": "Magnify Scale maxima",
+      "result": ">1 expands previous feedback independently by axis"
+    },
+    {
+      "segment": 8,
+      "feature": "Magnify Scale minima",
+      "result": "<1 contracts previous feedback independently by axis"
+    },
+    {
+      "segment": 9,
+      "feature": "SHAPE resources",
+      "result": "corroborates ten-resource order"
+    },
+    {
+      "segment": 10,
+      "feature": "ordinary Scale X/Y",
+      "result": "scales new SHAPE source stamp; source setter permits inverted endpoints"
+    }
+  ],
+  "confirmed": {
+    "position_free_coordinates": "+X right, +Y up",
+    "position_fix_zero_uses_free": true,
+    "position_fix_nonzero_ignores_free": true,
+    "fix_rotation_overrides_base_and_add": true,
+    "endpoint_formula": "min + (max - min) * volume",
+    "ordinary_scale_targets": "new SHAPE source stamp",
+    "magnify_scale_targets": "previous feedback surface",
+    "shape_rgba_targets": "new SHAPE source tint",
+    "background_rgba": "direct single clear controls",
+    "ordinary_scale_order_assertion": false
+  },
+  "implementation": {
+    "renderer_math_changed": false,
+    "ui_inactive_state_hints": true,
+    "live_effective_source_scale": true,
+    "live_effective_shape_tint": true
+  },
+  "boundaries_retained": [
+    "exact Xenos render-target alpha storage/final-composite equivalence",
+    "browser/native XAudio2 snapshot phase/scheduling"
+  ]
+}

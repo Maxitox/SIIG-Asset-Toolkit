@@ -1,0 +1,7 @@
+boss,xbox_may9_address,xbox_may11_address,xbox_june10_address,xbox_retail_address,ps3_retail_address,may9_mnemonics,may11_mnemonics,june10_mnemonics,retail_mnemonics,may9_to_may11_similarity_percent,may11_to_june10_similarity_percent,june10_to_retail_similarity_percent,structural_note
+THE_MOON,0x821C8E80,0x821CA918,0x821D6E60,0x821AFEB8,0x000155A0,162,162,145,145,100.0,87.947883,100.0,0x10C->0x120 entity layout; centralized frame multiplier
+THE_SUN,0x821C9108,0x821CABA0,0x821D9268,0x821B22C0,0x00014A78,370,370,348,348,100.0,86.072423,100.0,May11->June10 engine/layout refactor
+GIGANTIC_UFO,0x821CAEB8,0x821CC950,0x821D97D8,0x821B2830,0x000133C8,837,837,779,779,100.0,87.99505,100.0,May11->June10 engine/layout refactor
+LADYBUG,0x821C9760,0x821CB1F8,0x821D7138,0x821B0190,0x00012AF0,288,288,268,268,100.0,89.208633,100.0,May11->June10 engine/layout refactor
+MANDALA,0x821C9D58,0x821CB7F0,0x821D76E0,0x821B0738,0x00011A90,601,601,562,562,100.0,92.691316,100.0,May11->June10 engine/layout refactor
+UNKNOWN,0x821CA6C0,0x821CC158,0x821D7FA8,0x821B1000,0x0001121C,278,278,252,252,100.0,92.075472,100.0,May11->June10 engine/layout refactor

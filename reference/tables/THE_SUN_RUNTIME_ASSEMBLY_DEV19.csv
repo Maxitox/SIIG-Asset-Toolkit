@@ -1,0 +1,4 @@
+catalog,model,runtime_type,instances,pose_sample,native_animation_tracks,status
+THE_SUN_NATIVE_BODY,bos_002.gmx,0x47,1,,6,exact native animated body
+THE_SUN_EXTENDED_ARMS,bos_002.gmx,0x47,1,40,6,exact native sample-40 inspection pose
+THE_SUN_LONG_WAVE,bos_002b.gmx,0xB3,48,,0,exact full-ramp four-by-twelve segment field

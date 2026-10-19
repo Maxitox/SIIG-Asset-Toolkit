@@ -1,0 +1,133 @@
+{
+  "format": "SIIG_BOSS_ROUTE_VALIDATION",
+  "release": "2.8.0-dev9",
+  "date": "2026-09-06",
+  "status": "pass",
+  "corpus_builds": 5,
+  "corpus": {
+    "xbox360_retail": {
+      "archive": "SIIGGHIDRA(1).zip",
+      "sha256": "444ea2b9cf85f201cd160f935ea890bc473b6d541cb9d8cecb849ae462c53499"
+    },
+    "xbox360_may9": {
+      "archive": "SIIGMAY9GHIDRA.zip",
+      "sha256": "57da9c228c0040b90d760e115cdf658a32cb4c8a8147a5ba09703884960bcb43"
+    },
+    "xbox360_may11": {
+      "archive": "SIIGMAY11GHIDRA.zip",
+      "sha256": "4fc11fbe66656596eedc6560774e5858cb2882dbbe6d4aeaccf20aa2d717531d"
+    },
+    "xbox360_june10": {
+      "archive": "SIIGJUNE10GHIDRA.zip",
+      "sha256": "987cf607e4164dde06b980718a6169791d81e064d4b5e46ecb35f45176076f66"
+    },
+    "ps3_retail": {
+      "archive": "SIIGPS3GHIDRA.zip",
+      "sha256": "e7af0cd5940268c4697470ca58d55010b45a50706dfc10ead552d4ee4ce55d6d"
+    }
+  },
+  "water_strider": {
+    "retail_table_exact_match_xbox360_june10_ps3": true,
+    "retail_table_sha256": "4241bae37ba7f571be4a962a99231cbda4f3c8581dd2f1804f068c6fab2aefbd",
+    "retail_record_count": 17,
+    "retail_record_size": 16,
+    "frame_domain": [
+      0,
+      1440
+    ],
+    "loop_period_frames": 1441,
+    "prototype_boundary_match_retail": true,
+    "prototype_record_size": 20,
+    "table_addresses": {
+      "xbox360_retail": "0x8200B338",
+      "xbox360_may9": "0x82011950",
+      "xbox360_may11": "0x82011A40",
+      "xbox360_june10": "0x820128E8",
+      "ps3_retail": "0x004BBCDC"
+    },
+    "loop_driver_addresses": {
+      "xbox360_retail": "0x82136810",
+      "xbox360_june10": "0x82151D98",
+      "ps3_retail": "0x001E04D0"
+    },
+    "conclusion": "Retail Xbox 360, June 10, and PS3 use the same 17-segment 0..1440 route table; executable loop drivers reset the route frame after 1440, yielding a 1441-frame repeating route while active."
+  },
+  "ultimate_ufo": {
+    "retail_table_exact_match_xbox360_june10_ps3": true,
+    "retail_table_sha256": "7b3e257ef8c6747e018ab1ac54d5460b2f4583f0bf80048e1dea0970b330a7ae",
+    "retail_record_count": 13,
+    "prototype_record_count": 12,
+    "record_size": 20,
+    "prototype_may9_may11_exact_match": true,
+    "retail_trigger_frames": [
+      0,
+      1750,
+      2250,
+      3123,
+      4231,
+      4450,
+      5100,
+      5300,
+      5897,
+      5898,
+      5902,
+      6030,
+      6200
+    ],
+    "prototype_trigger_frames": [
+      0,
+      1800,
+      2300,
+      3123,
+      4231,
+      4600,
+      5100,
+      5300,
+      5897,
+      5898,
+      5902,
+      6200
+    ],
+    "retail_phase5_delay": 200,
+    "phase9_event_hold_resume_executable_backed": true,
+    "table_addresses": {
+      "xbox360_retail": "0x8200AA08",
+      "xbox360_may9": "0x82562348",
+      "xbox360_may11": "0x82562360",
+      "xbox360_june10": "0x82011C58",
+      "ps3_retail": "0x004BB5B0"
+    },
+    "conclusion": "Retail Xbox 360, June 10, and PS3 use the same finite 13-phase route table. May 9/May 11 use the same earlier 12-phase table. Retail/June phase 9 explicitly halts route advancement until an owned event/object completion condition resumes it."
+  },
+  "functions": {
+    "xbox360_retail": {
+      "ultimate_ufo_move_main": "0x8212EC50",
+      "water_strider_update_act": "0x82135670",
+      "water_strider_loop_driver": "0x82136810"
+    },
+    "xbox360_may9": {
+      "ultimate_ufo_move_main": "0x82142008",
+      "water_strider_update_act": "0x82148078"
+    },
+    "xbox360_may11": {
+      "ultimate_ufo_move_main": "0x821431D0",
+      "water_strider_update_act": "0x82149490"
+    },
+    "xbox360_june10": {
+      "ultimate_ufo_move_main": "0x82149DF8",
+      "water_strider_update_act": "0x82150BA8",
+      "water_strider_loop_driver": "0x82151D98"
+    },
+    "ps3_retail": {
+      "ultimate_ufo_move_main": "0x001D2988",
+      "water_strider_update_act": "0x001DEB68",
+      "water_strider_loop_driver": "0x001E04D0"
+    }
+  },
+  "semantic_limits": [
+    "The executable evidence does not yet identify human camera-angle names for individual Ultimate UFO phases.",
+    "No proven retail activation caller for camera index 1/cam02_op1.gmx was recovered.",
+    "Airlock escape and final rear-camera-shot descriptions remain gameplay guidance, not executable-backed labels in dev9.",
+    "The final boss-stage reload parameter write/callsite remains unresolved."
+  ]
+}

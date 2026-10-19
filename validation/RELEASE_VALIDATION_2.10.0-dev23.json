@@ -1,0 +1,177 @@
+{
+  "format": "SIIG_RELEASE_VALIDATION",
+  "release": "2.10.0-dev23",
+  "date": "2026-09-18",
+  "status": "development-pass",
+  "selftest": {
+    "passed": 117,
+    "failed": 0,
+    "ok": true,
+    "report": "validation/SELFTEST_2.10.0-dev23.json",
+    "reported_toolkit_version": "2.10.0-dev23"
+  },
+  "inherited_release_gate": {
+    "from": "2.10.0-dev22",
+    "report": "validation/RELEASE_VALIDATION_2.10.0-dev22.json",
+    "note": "All sealed dev22 and earlier native-format/mod/source-only gates remain inherited. Dev23 was branched from dev22; sealed historical releases are unchanged."
+  },
+  "fresh_retail": {
+    "status": "pass",
+    "report": "validation/FRESH_RETAIL_VALIDATION_2.10.0-dev23.json",
+    "platform": "xbox360",
+    "input_type": "zip+stfs",
+    "archives_processed": 23,
+    "archives_failed": 0,
+    "resources": 2593,
+    "png": 1351,
+    "gltf": 486,
+    "wav": 86,
+    "wma": 53,
+    "stage_entries": 92,
+    "stage_commands": 17335,
+    "visualizer_timelines": 30,
+    "visualizer_commands": 243,
+    "asset_viewer_files": 9379,
+    "asset_viewer_previewable": 8665,
+    "asset_viewer_missing_thumbnails": 0,
+    "asset_viewer_hidden_converted_duplicates": 486,
+    "output_hashes_checked": 16540,
+    "output_verification_issues": 0,
+    "final_exit_code": 0
+  },
+  "dev23_workbench": {
+    "status": "pass",
+    "enemy_subboss_families": 6,
+    "authored_clip_grouping": true,
+    "envy_retail_sampler_proven": true,
+    "ladybug_runtime_legs": true,
+    "crab_animated_hierarchy": true,
+    "mandala_inner_rings": true,
+    "centipede_part_swaps": true,
+    "axon_procedural_pistons": true,
+    "ultimate_ufo_rotation_action": true,
+    "vertebrate_phase1_rotation": true,
+    "vertebrate_phase2_transform_correction": true,
+    "progressive_ufo_barrier_sign_correction": true,
+    "blender_addon_version": "0.2.0",
+    "blender_gui_runtime_exercised": false
+  },
+  "visualizer_simulator": {
+    "status": "pass",
+    "x_feedback_reset": true,
+    "y_debug_text_toggle": true,
+    "volume_sources": [
+      "from BGM",
+      "from Stick"
+    ],
+    "fix_rotation_range_degrees": [
+      -365.0,
+      365.0
+    ],
+    "parameter_presets": 49,
+    "sequences": 57,
+    "parameter_values": 29,
+    "retail_timelines": 30,
+    "retail_commands": 243,
+    "retail_sequence_quick_presets": 39
+  },
+  "stage_explorer": {
+    "status": "pass",
+    "version": 7,
+    "stage_entries": 92,
+    "commands": 17335,
+    "world4_default_view": "top-down route follow",
+    "world5_default_view": "forward POV route follow",
+    "pixel_stable_2d": true,
+    "background_reference_provenance_separated": true,
+    "generated_javascript_syntax_checked": true
+  },
+  "asset_viewer": {
+    "status": "pass",
+    "folder_navigation": true,
+    "recursive_scope": true,
+    "hide_converted_model_duplicates_default": true,
+    "retail_files": 9379,
+    "retail_previewable": 8665,
+    "retail_missing_thumbnails": 0,
+    "retail_hidden_converted_duplicates": 486
+  },
+  "game_rip": {
+    "status": "pass",
+    "live_progress_repaint_fix": true,
+    "nested_outer_zip_package_detection": true,
+    "extensionless_stfs_detection": true,
+    "ambiguous_multi_package_rejection": true
+  },
+  "systemfont_experiment": {
+    "status": "pass-source-only",
+    "generator": "tools/systemfont_derived_font.py",
+    "native_mappings": 6730,
+    "total_local_cmap_entries": 6879,
+    "formats_locally_validated": [
+      "TTF",
+      "OTF/CFF",
+      "WOFF",
+      "WOFF2"
+    ],
+    "generated_font_binaries_bundled": false
+  },
+  "source_only_audit": {
+    "status": "pass",
+    "report": "validation/SOURCE_ONLY_AUDIT_2.10.0-dev23.json",
+    "game_assets": 0,
+    "external_executable_magic": 0,
+    "archive_binary_members": 0,
+    "private_runtime_paths": 0,
+    "python_bytecode": 0,
+    "third_party_binaries_bundled": false,
+    "sources_rows": 24
+  },
+  "version_consistency": {
+    "VERSION.txt": "2.10.0-dev23",
+    "cli_toolkit_version": "2.10.0-dev23",
+    "gui_version": "0.36.0-dev23"
+  },
+  "candidate_package": {
+    "status": "pass",
+    "manifest_entries_verified": 644,
+    "manifest_missing": 0,
+    "manifest_mismatched": 0,
+    "unlisted_files": 0,
+    "source_only_audit": "pass-before-code-execution",
+    "selftest_passed": 117,
+    "selftest_failed": 0,
+    "version_reported": "2.10.0-dev23",
+    "gui_version": "0.36.0-dev23",
+    "deterministic_rebuild_byte_identical": true,
+    "candidate_sha256": "c0644846a8be2fa149238268c86c91c0b718edc2a1df2a46e9b9ea1536c19f53",
+    "note": "Candidate was extracted fresh, manifest/source-only audited before code execution, then passed 117/117 selftests and version checks. Two independently built fixed-metadata candidate ZIPs were byte-identical."
+  },
+  "final_package": {
+    "status": "pass",
+    "deterministic_rebuild_byte_identical": true,
+    "manifest_entries_verified": 645,
+    "manifest_missing": 0,
+    "manifest_mismatched": 0,
+    "unlisted_files": 0,
+    "source_only_audit": "pass-before-code-execution",
+    "selftest_passed": 117,
+    "selftest_failed": 0,
+    "version_reported": "2.10.0-dev23",
+    "gui_version": "0.36.0-dev23",
+    "game_assets": 0,
+    "external_executable_magic": 0,
+    "archive_binary_members": 0,
+    "private_runtime_paths": 0,
+    "python_bytecode": 0,
+    "package_sha256": "recorded externally in SIIG_Asset_Toolkit_v2.10.0-dev23_SHA256.txt",
+    "note": "A provisional fixed-metadata final pair was byte-identical and an untouched extraction passed manifest/source-only audit before package code execution, then 117/117 selftests and version checks. The definitive package is rebuilt after freezing this record, built twice byte-identically, and rechecked again; the hash is stored outside the package to avoid self-reference."
+  },
+  "limitations": [
+    "Blender add-on 0.2.0 package/source behavior is regression-tested, but Blender is not installed in the release-build environment, so manual Blender GUI interaction is not claimed.",
+    "Stage Explorer route cameras and background presets are inspection/presentation aids rather than a claim of full frame-accurate gameplay rendering; gameplay-reference visuals remain explicitly separated from executable-derived stage semantics.",
+    "Host-audio Visualizer BGM normalization approximates the game upstream meter transfer curve.",
+    "Derived systemfont outputs are convenience bitmap-outline derivatives, not original authoring outlines, and are not bundled.",
+    "Platform shader microcode compilation, remaining opaque GMX semantics, and audio replacement/rebuilding remain unresolved/deferred."
+  ]
+}

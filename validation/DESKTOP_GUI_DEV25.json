@@ -1,0 +1,22 @@
+{
+  "format": "SIIG_DESKTOP_GUI_VALIDATION",
+  "toolkit_target": "2.8.0-dev25",
+  "status": "pass",
+  "diagnostics": {
+    "gui_version": "0.1.0-dev25",
+    "toolkit_version": "2.8.0-dev25",
+    "toolkit_exists": true,
+    "tkinter_available": true,
+    "python": "3.13.5",
+    "tabs": [
+      "Game Rip",
+      "Mod Workspace",
+      "GMX Workbench",
+      "Utilities"
+    ],
+    "principle": "GUI wraps the existing CLI; format logic stays in audited toolkit code"
+  },
+  "network_required": false,
+  "external_gui_dependencies": false,
+  "format_logic_duplicated": false
+}

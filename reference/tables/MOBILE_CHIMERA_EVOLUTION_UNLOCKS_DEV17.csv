@@ -1,0 +1,7 @@
+paired_ship_node,paired_ship_title,trigger,stage_node,stage_node_title,stage_identity
+88,SILVER HAWK,purchase result == 3,30,EXTRA 31,C-1A CAPTAIN NEO
+89,INTER GRAY,purchase result == 3,31,EXTRA 32,C-2A URBAN TRAIL
+90,BLACK FLY,purchase result == 3,32,EXTRA 33,C-3A BORN TO BE FREE
+,,clear stage 49 / C-1A,33,EXTRA 34,C-1B I CAN NOT APE
+,,clear stage 50 / C-2A,34,EXTRA 35,C-2B BURN ALT AIR
+,,clear stage 51 / C-3A,35,EXTRA 36,C-3B BEFORE TEN ORB

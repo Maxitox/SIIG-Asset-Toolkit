@@ -1,0 +1,46 @@
+{
+  "format": "SIIG_CRAB_RUNTIME_ASSEMBLY_VALIDATION",
+  "toolkit_version": "2.10.0-dev5",
+  "status": "pass",
+  "default_catalog": "crab",
+  "preserved_catalog": "crab_first_visible",
+  "default_state": "landed/combat-ready",
+  "root_pose_sample": 1,
+  "shell_pose_sample": 0,
+  "runtime_root_y_rotation_degrees": 180.0,
+  "attachment_center": [
+    0.0,
+    214.9811019897461,
+    -3.018549919128418
+  ],
+  "propodus_x_offsets": [
+    -81.0,
+    81.0
+  ],
+  "dactyl_y_offsets": [
+    -23.0,
+    23.0
+  ],
+  "external_real_bounds_min": [
+    -89.3984,
+    -0.126642,
+    -103.5331
+  ],
+  "external_real_bounds_max": [
+    89.3984,
+    255.7224,
+    103.5391
+  ],
+  "first_visible_preserved": {
+    "root_pose_sample": 167,
+    "attachment_center_y": 422.0840835571289,
+    "state": "airborne intro"
+  },
+  "cross_platform": [
+    "June 10 Xbox",
+    "retail Xbox",
+    "retail PS3"
+  ],
+  "reason_for_default_change": "project-owner Blender validation showed dev4 first-visible pose is correctly airborne; dev5 chooses deterministic first landed loop sample without arbitrary recentering",
+  "ok": true
+}

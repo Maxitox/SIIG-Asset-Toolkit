@@ -1,0 +1,83 @@
+{
+  "format": "SIIG_RUNTIME_CAMERA_ROUTE_VALIDATION",
+  "release": "2.8.0-dev6",
+  "date": "2026-09-06",
+  "route_orientation_stress": {
+    "analysis_spacing": 100.0,
+    "resampleable_files": 46,
+    "skipped": [
+      {
+        "file": "Xmap4_1.bin",
+        "source_points": 0
+      }
+    ],
+    "files_with_orientation_updates": 6,
+    "total_orientation_updates": 356,
+    "files": [
+      {
+        "file": "Bmap16.bin",
+        "runtime_updates": 4091,
+        "orientation_updates": 53,
+        "segment_builds": 510,
+        "final_pitch_radians": 1.278127670288086,
+        "final_yaw_radians": 0.0
+      },
+      {
+        "file": "Xmap3_2.bin",
+        "runtime_updates": 992,
+        "orientation_updates": 40,
+        "segment_builds": 126,
+        "final_pitch_radians": -0.11425428837537766,
+        "final_yaw_radians": 0.0
+      },
+      {
+        "file": "map5_1.bin",
+        "runtime_updates": 4076,
+        "orientation_updates": 38,
+        "segment_builds": 510,
+        "final_pitch_radians": 0.11424461752176285,
+        "final_yaw_radians": 0.0
+      },
+      {
+        "file": "map5_2.bin",
+        "runtime_updates": 4076,
+        "orientation_updates": 10,
+        "segment_builds": 510,
+        "final_pitch_radians": 0.0,
+        "final_yaw_radians": -0.11425433307886124
+      },
+      {
+        "file": "map5_4.bin",
+        "runtime_updates": 4088,
+        "orientation_updates": 36,
+        "segment_builds": 510,
+        "final_pitch_radians": 0.053665608167648315,
+        "final_yaw_radians": 0.0
+      },
+      {
+        "file": "map5_5.bin",
+        "runtime_updates": 2215,
+        "orientation_updates": 179,
+        "segment_builds": 286,
+        "final_pitch_radians": 0.1670120358467102,
+        "final_yaw_radians": -0.11425866186618805
+      }
+    ]
+  },
+  "explicit_combined_playback": {
+    "stage_source_name": "Xmap3_1.bin",
+    "dat_source_name": "level3_stage1.dat",
+    "camera_preset_index": 0,
+    "runtime_x": 213.0,
+    "runtime_y": 233.0,
+    "frame_multiplier": 2,
+    "updates_simulated": 265020,
+    "rows_emitted": 4418,
+    "emit_every": 60,
+    "scroll02_events_applied": 7,
+    "termination": "route_finished",
+    "orientation_updates": 0,
+    "validation_input_policy": "preset and runtime coordinates are explicit deterministic test inputs, not inferred gameplay activation"
+  },
+  "status": "pass"
+}

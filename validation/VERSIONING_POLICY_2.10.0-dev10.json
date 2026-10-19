@@ -1,0 +1,10 @@
+{
+  "format": "SIIG_VERSIONING_POLICY_VALIDATION",
+  "release": "2.10.0-dev10",
+  "status": "pass",
+  "previous": "2.10.0-dev9",
+  "toolkit_version": "2.10.0-dev10",
+  "gui_version": "0.21.0-dev10",
+  "reason": "incremental 2.10 development checkpoint: HORNET executable-backed exposed-core state-3 entry plus fresh real-retail validation; no incompatible public format break",
+  "ok": true
+}

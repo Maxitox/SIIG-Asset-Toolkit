@@ -1,0 +1,90 @@
+{
+  "format": "SIIG_HORNET_PRISM_WALL_VALIDATION",
+  "toolkit_version": "2.10.0-dev6",
+  "status": "pass",
+  "catalog_family": "hornet_prism_wall_XX",
+  "canonical_single_variant": false,
+  "root_slots": [
+    0,
+    2,
+    6,
+    8,
+    18,
+    20,
+    22,
+    24,
+    26,
+    36,
+    38,
+    42,
+    44
+  ],
+  "grid": {
+    "record_count": 45,
+    "rows": 5,
+    "columns": 9,
+    "spacing": 46.0,
+    "x_origin": 29.5,
+    "y": 0.0,
+    "z_origin": 28.0
+  },
+  "visible_per_variant": {
+    "A1": 1,
+    "C0": 44,
+    "total": 45,
+    "BF": 0,
+    "C1": 0
+  },
+  "root_animation": {
+    "model": "bos_008.gmx",
+    "pose_sample_baked": false,
+    "reason": "native 0..20 loop remains active during phase"
+  },
+  "outer_transform": {
+    "rotation": "identity",
+    "scale": [
+      1,
+      1,
+      1
+    ]
+  },
+  "cross_platform": [
+    "June 10 Xbox",
+    "retail Xbox",
+    "retail PS3"
+  ],
+  "anchors": {
+    "june": {
+      "phase": "0x82136178",
+      "grid_helper": "0x82135958",
+      "root_slot_table": "0x82010678",
+      "c0_show": "0x82135C70",
+      "selected_hide": "0x82136A48"
+    },
+    "retail_xbox": {
+      "phase": "0x8211C1C8",
+      "root_slot_table": "DAT_8200A094"
+    },
+    "retail_ps3": {
+      "phase": "_opd_FUN_001b1fd0",
+      "grid_helper": "_opd_FUN_001b1f00",
+      "root_slot_table": "DAT_004bafb0"
+    }
+  },
+  "external_real_export": {
+    "catalog": "hornet_prism_wall_22",
+    "instance_count": 45,
+    "mesh_count": 90,
+    "node_count": 180,
+    "root_position": [
+      213.5,
+      0.0,
+      120.0
+    ],
+    "a1_sha256": "0d73ffe9744fdd635c6480836734576f715b3037d2aa90737682912ab88cd516",
+    "c0_sha256": "e4be18e2da142cc65504456c16d5464cb9064636a621c78d57878f144b8b47e5",
+    "a1_animation_preserved": true
+  },
+  "state6_boundary": "separate neighborhood/propagation attack remains unresolved",
+  "ok": true
+}

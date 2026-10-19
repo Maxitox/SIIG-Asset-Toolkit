@@ -1,0 +1,150 @@
+{
+  "format": "SIIG_VISUALIZER_POSITION_COORDINATES_VALIDATION",
+  "release": "2.10.0-dev24",
+  "checkpoint": "WIP170",
+  "status": "superseded",
+  "visualizer_dataset_version": 15,
+  "target": {
+    "width": 1280,
+    "height": 720,
+    "origin": [
+      640,
+      360
+    ],
+    "x_axis": "right-positive",
+    "y_axis": "up-positive"
+  },
+  "canvas_bridge": {
+    "x": "640 + game_x",
+    "y": "360 - game_y"
+  },
+  "same_stage_cross_check": {
+    "sequence": 4,
+    "parameter": 3,
+    "raw_position_fix": 0,
+    "free_position": [
+      10,
+      360
+    ],
+    "expected_canvas": [
+      650,
+      0
+    ],
+    "old_incorrect_canvas": [
+      650,
+      720
+    ]
+  },
+  "raw_position_fix_coords": [
+    [
+      0,
+      0
+    ],
+    [
+      -448,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      448,
+      0
+    ],
+    [
+      -448,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      448,
+      0
+    ],
+    [
+      -448,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      448,
+      0
+    ]
+  ],
+  "canonical_position_fix_map": [
+    0,
+    1,
+    2,
+    3,
+    1,
+    2,
+    3,
+    1,
+    2,
+    3
+  ],
+  "ui_choices": [
+    {
+      "index": 0,
+      "label": "Free X/Y",
+      "raw_indices": [
+        0
+      ]
+    },
+    {
+      "index": 1,
+      "label": "Fixed left",
+      "coord": [
+        -448,
+        0
+      ],
+      "raw_indices": [
+        1,
+        4,
+        7
+      ]
+    },
+    {
+      "index": 2,
+      "label": "Fixed center",
+      "coord": [
+        0,
+        0
+      ],
+      "raw_indices": [
+        2,
+        5,
+        8
+      ]
+    },
+    {
+      "index": 3,
+      "label": "Fixed right",
+      "coord": [
+        448,
+        0
+      ],
+      "raw_indices": [
+        3,
+        6,
+        9
+      ]
+    }
+  ],
+  "regression": {
+    "raw_table_preserved": true,
+    "aliases_collapsed_in_ui": true,
+    "top_edge_mapping_checked": true,
+    "bottom_edge_mapping_checked": true
+  },
+  "source_only": true,
+  "proprietary_validation_inputs_bundled": false,
+  "superseded_by": "VISUALIZER_POSITION_COORDINATES_2.10.0-dev24_WIP171.json",
+  "superseded_reason": "Static executable image was read before the startup initializer that patches Position Fix upper/lower Y rows."
+}

@@ -1,0 +1,60 @@
+{
+  "format": "SIIG_PROGRESSIVE_UFO_CLASSIC_VALIDATION",
+  "release": "2.10.0-dev16",
+  "status": "pass",
+  "catalog": "progressive_ufo_classic",
+  "membership": {
+    "0xA2": 1,
+    "0xC2": 2,
+    "0xC3": 2,
+    "total": 5
+  },
+  "retail": {
+    "initializer": "Function_82536720",
+    "pose_table": "0x82568180",
+    "apply_helper": "Function_82127018",
+    "major_states": [
+      5,
+      8
+    ]
+  },
+  "june10": {
+    "initializer": "Function_82562710",
+    "pose_table": "0x825D95B0",
+    "apply_helper": "Function_82141B38",
+    "result": "same five pose records"
+  },
+  "ps3": {
+    "initializer": "_opd_FUN_001c51e8",
+    "pose_table": "DAT_0054b610..DAT_0054b67c",
+    "apply_helper": "_opd_FUN_001c064c",
+    "result": "same five pose records"
+  },
+  "human_label_provenance": "project owner requested classic UFO formation terminology; transforms/state membership are executable-backed",
+  "compatibility": {
+    "original_catalog": "progressive_ufo",
+    "unchanged": true
+  },
+  "real_retail_assets": {
+    "bos_009.gmx": "086e34c20a1d59006b4663b61023965dc0f6a3f90ba40a37b5a5adf89ce6e8ec",
+    "bos_009a.gmx": "2cfc849d44133178c62470a6ea32fe34ef81e15bcd40010f30d1db98b49165ae",
+    "bos_009b.gmx": "173f0ca1236405bb8d7b5b7123041a344ed1872f3ff2a264951b9c6ff1d006c6"
+  },
+  "fresh_export": {
+    "instances": 5,
+    "meshes": 10,
+    "nodes": 20,
+    "animations": 10,
+    "bounds_min": [
+      -144.2832570929188,
+      -40.26989367434368,
+      -60.61280255906347
+    ],
+    "bounds_max": [
+      144.2832570929188,
+      40.23272329763132,
+      58.204103523418944
+    ]
+  },
+  "proprietary_assets_bundled": false
+}

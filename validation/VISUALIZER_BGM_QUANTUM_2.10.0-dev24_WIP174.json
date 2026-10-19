@@ -1,0 +1,49 @@
+{
+  "format": "SIIG_VISUALIZER_BGM_QUANTUM_VALIDATION",
+  "release": "2.10.0-dev24",
+  "checkpoint": "WIP174",
+  "status": "pass",
+  "visualizer_dataset_version": 18,
+  "native_xbox360": {
+    "sample_rate_hz": 48000,
+    "quantum_ms": 5.333333333333333,
+    "quantum_samples": 256,
+    "derivation": "48000 Hz * (5 1/3 ms) = 256 samples",
+    "peak_semantics": "maximum absolute level per channel during one processing pass",
+    "stereo_combine": "arithmetic mean of left/right peak levels",
+    "public_documentation": [
+      "https://learn.microsoft.com/en-us/windows/win32/xaudio2/xaudio2-audio-graph",
+      "https://learn.microsoft.com/en-us/windows/win32/api/xaudio2fx/ns-xaudio2fx-xaudio2fx_volumemeter_levels"
+    ]
+  },
+  "browser_bridge": {
+    "requested_audio_context_rate_hz": 48000,
+    "fallback_if_rate_rejected": true,
+    "analyser_fft_size": 256,
+    "smoothing_time_constant": 0,
+    "peak_operation": "max(abs(sample)) per channel",
+    "native_phase_alignment_claimed": false,
+    "remaining_boundary": "host/browser analyser query phase and media scheduling relative to Xbox 360 XAudio2 processing-pass boundaries"
+  },
+  "game_update": {
+    "post_meter_normalizer_update": "once per active logical Visualizer update",
+    "meter_window_source": "XAudio2 processing pass, not the 60 Hz game-update interval"
+  },
+  "private_hardware_capture_cross_check": {
+    "bundled": false,
+    "capture": "project-owner June 10 real-hardware stage recording 2026-09-19; first supplied hardware clip",
+    "overlay_samples": 9,
+    "comparison_interval_seconds": [
+      8.0,
+      12.0
+    ],
+    "best_window_samples": 256,
+    "fit_correlation": 0.99668,
+    "fit_rmse": 0.008025,
+    "fit_av_offset_ms": -41.5,
+    "fit_gain": 2.4045,
+    "role": "empirical corroboration only; native quantum comes from public XAudio2 documentation"
+  },
+  "source_package_contains_capture_media": false,
+  "source_package_contains_microsoft_code": false
+}

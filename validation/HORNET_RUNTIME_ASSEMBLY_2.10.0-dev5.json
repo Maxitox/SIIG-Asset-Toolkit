@@ -1,0 +1,86 @@
+{
+  "format": "SIIG_HORNET_RUNTIME_ASSEMBLY_VALIDATION",
+  "toolkit_version": "2.10.0-dev5",
+  "status": "pass",
+  "catalog": "hornet_full_armor",
+  "visible_instance_count": 126,
+  "root": {
+    "runtime_type": "0xA1",
+    "model": "bos_008.gmx",
+    "pose_sample": 0
+  },
+  "armor": {
+    "runtime_type": "0xBF",
+    "model": "bos_008a.gmx",
+    "count": 125,
+    "levels": [
+      -31.68000030517578,
+      -15.84000015258789,
+      0.0,
+      15.84000015258789,
+      31.68000030517578
+    ],
+    "cartesian_product_count": 125,
+    "rotation": "identity",
+    "scale": [
+      1,
+      1,
+      1
+    ]
+  },
+  "runtime_pools": {
+    "BF": 125,
+    "C0": 125,
+    "C1": 1
+  },
+  "formation_rig": {
+    "model": "bos_008c.gmx",
+    "runtime_type": "0xC1",
+    "mesh_count": 0,
+    "track_count": 126,
+    "formation_tracks": 125,
+    "clip": [
+      0,
+      125
+    ],
+    "visible_in_preset": false
+  },
+  "c0_phase": {
+    "model": "bos_008b.gmx",
+    "runtime_type": "0xC0",
+    "visible_in_preset": false,
+    "later_attack_active_record_count": 45,
+    "grid_spacing": 46.0,
+    "grid_x_origin": 29.5,
+    "grid_z_origin": 28.0,
+    "promoted_to_catalog": false
+  },
+  "cross_platform": [
+    "June 10 Xbox",
+    "retail Xbox",
+    "retail PS3"
+  ],
+  "gmx_sha256": {
+    "bos_008.gmx": "0d73ffe9744fdd635c6480836734576f715b3037d2aa90737682912ab88cd516",
+    "bos_008a.gmx": "7d9d44813cd5327c91218e477e8be8e8d71915425d4067b01729078d37edfd55",
+    "bos_008b.gmx": "e4be18e2da142cc65504456c16d5464cb9064636a621c78d57878f144b8b47e5",
+    "bos_008c.gmx": "7e0601f6048a38ce49fe4a6ebc6319619ae99037ba3c0bf93ba643ac03041ad1"
+  },
+  "enemy_anm_sha256": "c3100a85d279af220e3f2b1f8b51650acf2e3c536ecac1f918d5174f88570cb4",
+  "external_real_export": {
+    "instance_count": 126,
+    "mesh_count": 252,
+    "node_count": 504,
+    "bounds_min": [
+      -39.44554,
+      -39.44554,
+      -39.44554
+    ],
+    "bounds_max": [
+      39.44554,
+      39.44554,
+      39.44554
+    ]
+  },
+  "ok": true
+}

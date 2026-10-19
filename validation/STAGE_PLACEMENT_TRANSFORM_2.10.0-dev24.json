@@ -1,0 +1,57 @@
+{
+  "format": "SIIG_STAGE_PLACEMENT_TRANSFORM_VALIDATION",
+  "release": "2.10.0-dev24",
+  "checkpoint": "WIP159",
+  "status": "pass",
+  "platforms": [
+    "retail Xbox 360",
+    "retail PS3"
+  ],
+  "transform_convention": "row-vector",
+  "transform_order": "S * Rz(z) * Rx(x) * Ry(y) * T",
+  "scale_rule": "runtime_scale = stored_scale * 5.0",
+  "rotation_units": "stored degrees converted to radians",
+  "stage_explorer_proxy": "eight GMX root-AABB corners transformed before projection in orbit/top-down/POV views",
+  "regression_fixture": {
+    "aabb_min": [
+      -1.0,
+      -2.0,
+      -3.0
+    ],
+    "aabb_max": [
+      4.0,
+      5.0,
+      6.0
+    ],
+    "runtime_scale": [
+      5.0,
+      10.0,
+      15.0
+    ],
+    "rotation_degrees": [
+      0.0,
+      90.0,
+      0.0
+    ],
+    "origin": [
+      10.0,
+      20.0,
+      -370.0
+    ],
+    "first_corner": [
+      -35.0,
+      0.0,
+      -365.0
+    ],
+    "second_corner": [
+      -35.0,
+      0.0,
+      -390.0
+    ]
+  },
+  "boundaries": [
+    "route-to-DAT pairing/activation remains open",
+    "collision and unmodeled 3D-control side effects remain outside Stage Explorer",
+    "inspection cameras are not claimed byte-identical to gameplay"
+  ]
+}

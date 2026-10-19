@@ -1,0 +1,116 @@
+{
+  "format": "SIIG_RELEASE_VALIDATION",
+  "release": "2.10.0-dev8",
+  "date": "2026-09-15",
+  "status": "development-pass",
+  "selftest": {
+    "passed": 90,
+    "failed": 0,
+    "ok": true,
+    "report": "validation/SELFTEST_2.10.0-dev8.json",
+    "reported_toolkit_version": "2.10.0-dev8"
+  },
+  "inherited_release_gate": {
+    "from": "2.10.0-dev7",
+    "report": "validation/RELEASE_VALIDATION_2.10.0-dev7.json",
+    "note": "All sealed dev7 HORNET propagation, dev6 prism wall, dev5 full armor/grounded CRAB, PROGRESSIVE assembly, native-format, mod-package and source-only gates remain inherited. Dev8 adds the five-build MANDALA initial-combat assembly."
+  },
+  "mandala_runtime_assembly": {
+    "status": "pass",
+    "report": "validation/MANDALA_RUNTIME_ASSEMBLY_2.10.0-dev8.json",
+    "catalog": "mandala_initial_combat",
+    "cross_builds": 5,
+    "visible_instances": 40,
+    "composition": "20xB7 + 2xB8 + 2xB9 + 2xBA + 2xBB + 12x4A",
+    "later_bc_excluded": 32,
+    "native_animations_preserved": true,
+    "visual_guessing": false
+  },
+  "gmx_assembly_export": {
+    "status": "pass",
+    "report": "validation/GMX_ASSEMBLY_EXPORT_2.10.0-dev8.json",
+    "pose_sample_supported": true,
+    "mandala_native_animation_preserved": true,
+    "generic_unresolved_transform_guard": true
+  },
+  "desktop_gui": {
+    "status": "pass",
+    "report": "validation/DESKTOP_GUI_2.10.0-dev8.json",
+    "gui_version": "0.19.0-dev8",
+    "tabs": [
+      "Game Rip",
+      "Mod Workspace",
+      "GMX Workbench",
+      "Utilities"
+    ],
+    "gui_modes": [
+      "simple",
+      "advanced"
+    ],
+    "default_gui_mode": "simple",
+    "hover_context_help": true,
+    "mandala_simple": true,
+    "mandala_advanced_manifest": true
+  },
+  "asset_functionalization": {
+    "status": "pass",
+    "report": "validation/ASSET_FUNCTIONALIZATION_2.10.0-dev8.json",
+    "known_asset_families": 14,
+    "viewable_or_exportable_families": 14,
+    "native_round_trip_families": 11,
+    "native_builder_available_families": 11,
+    "gmx_multi_file_assembly": true,
+    "mandala_initial_combat_assembly": true
+  },
+  "versioning_policy": {
+    "status": "pass",
+    "report": "validation/VERSIONING_POLICY_2.10.0-dev8.json",
+    "previous": "2.10.0-dev7",
+    "current": "2.10.0-dev8"
+  },
+  "source_only_audit": {
+    "status": "pass",
+    "report": "validation/SOURCE_ONLY_AUDIT_2.10.0-dev8.json",
+    "game_assets": 0,
+    "external_executable_magic": 0,
+    "archive_binary_members": 0,
+    "private_runtime_paths": 0,
+    "python_bytecode": 0,
+    "third_party_binaries_bundled": false,
+    "sources_rows": 24
+  },
+  "version_consistency": {
+    "VERSION.txt": "2.10.0-dev8",
+    "cli_toolkit_version": "2.10.0-dev8",
+    "gui_version": "0.19.0-dev8"
+  },
+  "fresh_package": {
+    "status": "pass",
+    "candidate_manifest_entries_verified": 477,
+    "candidate_manifest_missing": 0,
+    "candidate_manifest_mismatched": 0,
+    "candidate_unlisted_files": 0,
+    "candidate_source_only_audit": "pass",
+    "candidate_selftest_passed": 90,
+    "candidate_selftest_failed": 0,
+    "candidate_version_reported": "2.10.0-dev8",
+    "candidate_gui_version": "0.19.0-dev8",
+    "candidate_gui_mandala_one_click": true,
+    "candidate_package_sha256": "6586aac333bd1f82bf8959c04e331d44be62aa144341095627f02f3ea0e8439d",
+    "note": "Candidate was extracted fresh, verified against RELEASE_MANIFEST with no unlisted files, independently source-audited before executing package code, and then passed 90/90 selftests plus CLI/GUI version and MANDALA-control checks. Final package is rebuilt deterministically after recording this evidence."
+  },
+  "limitations": [
+    "MANDALA preset is the deterministic state-7 activation snapshot; later 32xBC inner-phase members are deliberately not included.",
+    "MANDALA B7-BB native animations are preserved; no arbitrary internal GMX pose sample is frozen.",
+    "No radial-facing orientation is invented for MANDALA pieces because no such runtime callback was recovered.",
+    "HORNET state-6 propagation and prism-wall catalogs remain runtime families rather than one canonical random result.",
+    "Native SIIG coordinate scale is preserved; no speculative meter conversion or hidden display scaling is applied.",
+    "Assembly export produces a combined glTF viewing/editing scene; it does not claim the retail game stores or accepts one merged native GMX.",
+    "Runtime acceptance of arbitrary fully original synthesized scenes remains a separate emulator/hardware gate.",
+    "Platform shader microcode compilation and remaining opaque GMX semantics remain unresolved.",
+    "Compressed/mipmapped native texture variants are not synthesized.",
+    "PS3 NPDRM/SDAT re-encryption is not implemented.",
+    "Audio replacement/rebuilding remains intentionally deferred.",
+    "Project-owner license selection remains open."
+  ]
+}

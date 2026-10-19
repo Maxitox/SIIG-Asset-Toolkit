@@ -1,0 +1,4 @@
+catalog,runtime_models,instance_count,runtime_relationship,notes
+axon_native_body,1x A5 / bos_012.gmx,1,standalone whole-body representation,kept separate from subordinate CA/CB pool
+axon_expanded_petals,1x CA / bos_012a.gmx + 16x CB / bos_012b.gmx,17,subordinate pool stable expanded target at phase angle 0,two rings of eight; exact runtime math
+axon_exposed_core,1x CA / bos_012a.gmx,1,core-only inspection form,CB petals omitted; no guessed transform

@@ -1,0 +1,61 @@
+{
+  "format": "SIIG_GMX_ASSEMBLY_EXPORT_VALIDATION",
+  "release": "2.10.0-dev5",
+  "status": "pass",
+  "generic_export": "manifest-driven multi-GMX glTF assembly with explicit outer matrices, hierarchy/resource remapping and source-hash report",
+  "unresolved_transform_guard": true,
+  "pose_sample": {
+    "supported": true,
+    "validation": "non-negative and in range for every native animation track",
+    "behavior": "bake native sample into static node TRS and suppress posed instance animation channels"
+  },
+  "progressive_ufo_catalog": {
+    "status": "inherited/proven from 2.10.0-dev3",
+    "direct_catalog_command": "gmx-assemble-catalog progressive_ufo"
+  },
+  "crab_catalog": {
+    "membership_count_status": "proven",
+    "instances": [
+      "1x bos_013.gmx (0xA7)",
+      "1x bos_013b.gmx (0xCD)",
+      "1x bos_013a.gmx (0xCC)",
+      "2x bos_013c.gmx (0xCE)",
+      "4x bos_013d.gmx (0xCF)"
+    ],
+    "runtime_transform_status": "landed/combat-ready sample-1 formation recovered/cross-checked; dev4 first-visible frame-167 formation preserved separately",
+    "root_pose_sample": 1,
+    "body_shell_pose_sample": 0,
+    "evidence": "June Xbox + retail Xbox + retail PS3 runtime state/locator code plus GMX/ANM model evidence",
+    "guessed_placement": false,
+    "direct_catalog_command": "gmx-assemble-catalog crab",
+    "preserved_catalog": "crab_first_visible",
+    "preserved_root_pose_sample": 167
+  },
+  "selftests": [
+    "GMX multi-file assembly export",
+    "PROGRESSIVE UFO runtime assembly preset",
+    "CRAB runtime assembly pose",
+    "HORNET full-armor runtime assembly"
+  ],
+  "hornet_full_armor_catalog": {
+    "membership_count_status": "proven",
+    "visible_instances": 126,
+    "instances": [
+      "1x bos_008.gmx (0xA1)",
+      "125x bos_008a.gmx (0xBF)"
+    ],
+    "controller": "1x bos_008c.gmx (0xC1), meshless 126-track formation rig, not emitted as visible geometry",
+    "dormant_pool": "125x bos_008b.gmx (0xC0), excluded from full-armor snapshot",
+    "formation": "C1 sample-0 5x5x5 lattice",
+    "axis_levels": [
+      -31.68000030517578,
+      -15.84000015258789,
+      0.0,
+      15.84000015258789,
+      31.68000030517578
+    ],
+    "evidence": "June Xbox + retail Xbox + retail PS3 runtime code plus retail C1 GMX animation rig",
+    "guessed_placement": false,
+    "direct_catalog_command": "gmx-assemble-catalog hornet_full_armor"
+  }
+}

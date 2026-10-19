@@ -1,0 +1,70 @@
+{
+  "format": "SIIG_RELEASE_VALIDATION",
+  "release": "2.8.0-dev3",
+  "date": "2026-09-05",
+  "status": "development-pass",
+  "selftest": {
+    "passed": 26,
+    "failed": 0,
+    "ok": true,
+    "report": "validation/SELFTEST_2.8.0-dev3.json"
+  },
+  "inherited_release_gate": {
+    "from": "2.8.0-dev2",
+    "report": "validation/RELEASE_VALIDATION_2.8.0-dev2.json",
+    "note": "Dev3 changes analysis/export code and reference tables only; direct retail package extraction, SDAT/audio, Stage Explorer, Asset Viewer, and full-manifest gates remain inherited from the frozen dev2 checkpoint."
+  },
+  "dev3_targeted_real_corpus_validation": {
+    "route_resample": {
+      "candidate_stage3d_files": 47,
+      "resampleable_files": 46,
+      "route_empty_skipped": [
+        "Xmap4_1.bin"
+      ],
+      "failures": 0,
+      "analysis_spacing_units": 100.0,
+      "segments": 19471,
+      "samples": 155690,
+      "linear_segments": 19409,
+      "cubic_hermite_segments": 62,
+      "json_outputs": 46,
+      "csv_outputs": 46,
+      "obj_outputs": 46,
+      "scope": "non_loop_constant_spacing",
+      "limitations": [
+        "Runtime SCROLL_02 spacing changes are not modeled by route-resample.",
+        "Looping-route wrap behavior is not modeled by route-resample.",
+        "The 100-unit spacing is a deterministic validation value, not an authentic stage timeline."
+      ]
+    },
+    "camera_presets": {
+      "preset_count": 32,
+      "words_per_preset": 30,
+      "runtime_initializer_writes_traced": 160,
+      "schema_rows": 30,
+      "raw_table": "reference/tables/CAMERA_PRESETS_RAW.csv",
+      "runtime_table": "reference/tables/CAMERA_PRESETS_RUNTIME.csv",
+      "schema": "reference/tables/CAMERA_PRESET_SCHEMA.csv",
+      "initializer_ps3_retail": "0x0015C7F0",
+      "transition_ps3_retail": "0x0015BBA8"
+    }
+  },
+  "source_only_audit": {
+    "status": "pass",
+    "report": "validation/SOURCE_ONLY_AUDIT_2.8.0-dev3.json",
+    "game_assets": 0,
+    "external_executable_magic": 0,
+    "archive_binary_members": 0,
+    "private_runtime_paths": 0,
+    "third_party_binaries_bundled": false,
+    "sources_rows": 18
+  },
+  "limitations": [
+    "Dynamic SCROLL_02 route spacing has not yet been coupled into time-varying route playback.",
+    "Looping-route wrap semantics remain unresolved in the public analysis exporter.",
+    "Several camera-preset scalar and vec4 gameplay semantics remain intentionally unnamed.",
+    "Instruction-level RSX/Xenos shader disassembly/translation remains future work.",
+    "The bundled Blender add-on has not been exercised inside a real Blender UI/runtime.",
+    "The project owner has not selected a license for original toolkit code."
+  ]
+}

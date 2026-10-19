@@ -1,0 +1,97 @@
+{
+  "format": "SIIG_RELEASE_VALIDATION",
+  "release": "2.8.0-dev27",
+  "date": "2026-09-11",
+  "status": "development-pass",
+  "selftest": {
+    "passed": 73,
+    "failed": 0,
+    "ok": true,
+    "report": "validation/SELFTEST_2.8.0-dev27.json",
+    "reported_toolkit_version": "2.8.0-dev27"
+  },
+  "inherited_release_gate": {
+    "from": "2.8.0-dev26",
+    "report": "validation/RELEASE_VALIDATION_2.8.0-dev26.json",
+    "note": "All sealed dev26 whole-MESH/ARRY graph synchronization, dev25 retail GMX evidence, GUI baseline, mod-package/workspace, native-builder, research, extraction and source-only gates are inherited. Dev27 adds opt-in BONE/PARE/MTRL/SHAD scene relationships and a visual scene report without modifying dev26."
+  },
+  "dev27_gmx_scene_graph_sync": {
+    "status": "pass",
+    "report": "validation/GMX_SCENE_GRAPH_SYNC_DEV27.json",
+    "default_behavior": "dev25/dev26-compatible template and mesh-graph modes remain available; full scene synchronization is opt-in",
+    "opt_in_flag": "--sync-scene-graph",
+    "implies": "--sync-mesh-graph",
+    "proven_regression": [
+      "byte-identical SHAD/MTRL/PARE/BONE/MESH/ARRY scene-sync no-op",
+      "new fixed-layout SHAD identity",
+      "new donor-schema MTRL with edited DiffuseColor",
+      "new BONE with material/mesh attachments and imported transform",
+      "new PARE parent-child relationship",
+      "new complete MESH/ARRY graph through inherited dev26 compiler",
+      "self-contained HTML+JSON scene relationship report"
+    ],
+    "inherited_external_retail_gate": "dev25 306/306 mesh-bearing GMX no-op byte-identical plus plr_001 topology smoke",
+    "boundary": "Scene synthesis is structurally regression-tested. Mesh/material layouts still clone compatible native donors; TXIF creation, arbitrary schemas, platform shader compilation, broader animation graph synthesis, template-free GMX construction and arbitrary synthesized-scene runtime acceptance remain unresolved."
+  },
+  "dev27_desktop_gui": {
+    "status": "pass",
+    "report": "validation/DESKTOP_GUI_DEV27.json",
+    "gui_version": "0.3.0-dev27",
+    "scene_graph_sync_exposed": true,
+    "scene_graph_sync_default_enabled": false,
+    "scene_graph_report_exposed": true,
+    "tabs": [
+      "Game Rip",
+      "Mod Workspace",
+      "GMX Workbench",
+      "Utilities"
+    ]
+  },
+  "asset_functionalization": {
+    "status": "pass",
+    "report": "validation/ASSET_FUNCTIONALIZATION_DEV27.json",
+    "known_asset_families": 14,
+    "viewable_or_exportable_families": 14,
+    "native_round_trip_families": 11,
+    "native_builder_available_families": 11,
+    "gmx_scene_graph_sync": true
+  },
+  "source_only_audit": {
+    "status": "pass",
+    "report": "validation/SOURCE_ONLY_AUDIT_2.8.0-dev27.json",
+    "game_assets": 0,
+    "external_executable_magic": 0,
+    "archive_binary_members": 0,
+    "private_runtime_paths": 0,
+    "python_bytecode": 0,
+    "third_party_binaries_bundled": false,
+    "sources_rows": 24
+  },
+  "version_consistency": {
+    "VERSION.txt": "2.8.0-dev27",
+    "cli_toolkit_version": "2.8.0-dev27",
+    "gui_version": "0.3.0-dev27"
+  },
+  "fresh_package": {
+    "status": "pass",
+    "candidate_manifest_entries_verified": 323,
+    "candidate_source_only_audit": "pass",
+    "candidate_selftest_passed": 73,
+    "candidate_selftest_failed": 0,
+    "candidate_version_reported": "2.8.0-dev27",
+    "candidate_gui_version_reported": "0.3.0-dev27",
+    "candidate_package_sha256": "6bde08433f6e15519a78ae95e74ebf12b84963442e8cfc2de3939388f89220c0",
+    "note": "Candidate was extracted fresh, verified against RELEASE_MANIFEST with no missing/mismatched/unlisted files, source-audited before executing package code, then passed 73/73 selftests and CLI/GUI version checks. The final package is rebuilt deterministically after recording these candidate results and is revalidated separately."
+  },
+  "limitations": [
+    "Dev27 SHAD/MTRL/BONE/PARE scene synthesis is structurally regression-tested but has not yet been exercised as an arbitrary synthesized scene on retail hardware/emulator.",
+    "Synthesized MESH/ARRY nodes and MTRL parameter schemas clone compatible native donor layouts; arbitrary vertex declarations and material parameter schemas are not implemented.",
+    "SHAD synthesis covers the known fixed native identity/name/flags record; platform shader bytecode compilation is not implemented.",
+    "TXIF creation is not implemented, so genuinely new texture-binding graph synthesis still requires compatible template resources.",
+    "Existing BONE transform bytes are preserved unless explicit transform import is requested; MOTN/ANIM graph synthesis remains template-owned.",
+    "The external dev25 retail 306/306 no-op and plr_001 topology evidence is inherited rather than re-bundled or re-run from proprietary inputs in this release tree.",
+    "PS3 NPDRM/SDAT re-encryption is not implemented.",
+    "Audio replacement/rebuilding remains intentionally deferred by current project priority.",
+    "Project-owner license selection remains open."
+  ]
+}

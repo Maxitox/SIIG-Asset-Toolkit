@@ -1,0 +1,38 @@
+{
+  "format": "SIIG_MANDALA_ALL_MEMBERSHIP_VALIDATION",
+  "release": "2.10.0-dev24",
+  "status": "pass",
+  "retail_mover": "Function_82240190",
+  "runtime_type": "0x4A",
+  "member_count": 72,
+  "runtime_membership": {
+    "0xB7": 20,
+    "0xB8": 2,
+    "0xB9": 2,
+    "0xBA": 2,
+    "0xBB": 2,
+    "0xBC": 32,
+    "0x4A": 12
+  },
+  "bc": {
+    "runtime_type": "0xBC",
+    "model": "bos_005f.gmx",
+    "slots": [
+      28,
+      59
+    ],
+    "groups": 4,
+    "members_per_group": 8,
+    "ring_radius": 20.0,
+    "center_radius": 20.0,
+    "activation_state": 8,
+    "geometry_written_states": [
+      7,
+      8,
+      9
+    ]
+  },
+  "catalog": "mandala_all_members_phase0",
+  "canonical_workbench_catalog": true,
+  "evidence_boundary": "global phase is normalized to 0 for inspection; exact fight-time phase is dynamic. BC geometry is exact, while state-7 gameplay activation remains false until the executable promotes slots 28..59 at state 8."
+}

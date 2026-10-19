@@ -1,0 +1,68 @@
+{
+  "format": "SIIG_RELEASE_VALIDATION",
+  "release": "2.8.0-dev17",
+  "date": "2026-09-10",
+  "status": "development-pass",
+  "selftest": {
+    "passed": 53,
+    "failed": 0,
+    "ok": true,
+    "report": "validation/SELFTEST_2.8.0-dev17.json",
+    "reported_toolkit_version": "2.8.0-dev17"
+  },
+  "inherited_release_gate": {
+    "from": "2.8.0-dev16",
+    "report": "validation/RELEASE_VALIDATION_2.8.0-dev16.json",
+    "note": "All console extraction/rendering/audio/route/camera, dev15 mobile package/format, and dev16 DELETION/Survival/Chimera gates are inherited. dev17 resolves Survival Evolution gating and V2 attack behavior without modifying sealed dev16."
+  },
+  "dev17_mobile_behavior_validation": {
+    "status": "pass",
+    "report": "validation/MOBILE_BEHAVIOR_DEV17.json",
+    "survival_chimera_substitutions": 6,
+    "survival_evolution_status_semantic": "Evolution Tree stage-node status",
+    "chimera_purchase_pairs": 3,
+    "chimera_b_stage_clear_unlocks": 3,
+    "survival_terminal_endings": 8,
+    "v2_boss_pairs": 6,
+    "v2_explicit_main_type_branch_bosses": [
+      "THE_SUN",
+      "GIGANTIC_UFO",
+      "UNKNOWN"
+    ],
+    "v2_attack_dispatcher": "dischargeEnemyShot_FPS60",
+    "v2_changed_attack_pool_bosses": 6,
+    "king_fossil_ab_reload_countdown_change": "48->96"
+  },
+  "source_only_audit": {
+    "status": "pass",
+    "report": "validation/SOURCE_ONLY_AUDIT_2.8.0-dev17.json",
+    "game_assets": 0,
+    "external_executable_magic": 0,
+    "archive_binary_members": 0,
+    "private_runtime_paths": 0,
+    "python_bytecode": 0,
+    "third_party_binaries_bundled": false,
+    "sources_rows": 24
+  },
+  "version_consistency": {
+    "VERSION.txt": "2.8.0-dev17",
+    "cli_toolkit_version": "2.8.0-dev17"
+  },
+  "fresh_package": {
+    "status": "pass",
+    "candidate_manifest_entries_verified": 242,
+    "candidate_source_only_audit": "pass",
+    "candidate_selftest_passed": 53,
+    "candidate_selftest_failed": 0,
+    "candidate_version_reported": "2.8.0-dev17",
+    "note": "Final package is rebuilt deterministically after recording these candidate results and is revalidated separately before publication."
+  },
+  "limitations": [
+    "The supplied iOS 4.1.0 IPA and Android 1.0.4 APK have modified distribution provenance and remain research copies rather than pristine store packages.",
+    "The exact gameplay names of several V2-specific helper fields remain unresolved even where their V2 multipliers/branches are proven.",
+    "The exact reason Android Level-9 placeholder scripts use one V2 boss opcode each remains unresolved.",
+    "King Fossil C-1A/C-1B parameter 48/96 is proven to feed an internal reload/countdown; the exact gameplay label and the paired 6/3 parameter remain unresolved.",
+    "The cause of the exact 2x console generator MAP cell capacity relative to iOS remains unresolved.",
+    "Existing console limitations on shader ISA translation, Blender UI/runtime validation, and project-owner license selection remain."
+  ]
+}

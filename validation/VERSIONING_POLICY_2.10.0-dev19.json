@@ -1,0 +1,10 @@
+{
+  "format": "SIIG_VERSIONING_POLICY_VALIDATION",
+  "release": "2.10.0-dev19",
+  "status": "pass",
+  "previous": "2.10.0-dev18",
+  "toolkit_version": "2.10.0-dev19",
+  "gui_version": "0.30.0-dev19",
+  "reason": "incremental 2.10 development checkpoint: executable-backed THE SUN native/extended body inspection plus exact 48-segment B3 maximum long-wave layout; no incompatible public format break",
+  "ok": true
+}

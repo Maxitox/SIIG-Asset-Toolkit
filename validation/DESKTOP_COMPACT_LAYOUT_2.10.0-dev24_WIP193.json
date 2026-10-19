@@ -1,0 +1,36 @@
+{
+  "toolkit_version": "2.10.0-dev24",
+  "checkpoint": "WIP193",
+  "status": "pass",
+  "gui_version": "0.52.0-dev24",
+  "game_rip": {
+    "problem": "WIP192 cache controls could consume enough vertical space to flatten the dedicated rip/update console on common display heights",
+    "compact_drop_target": true,
+    "compact_cache_single_row": true,
+    "compact_progress": true,
+    "console_grid_weight": 1,
+    "console_row_min_pixels": 150,
+    "console_text_requested_lines": 8,
+    "long_footer_removed_from_dense_path": true,
+    "cache_warning_contract_preserved": true
+  },
+  "gmx_workbench": {
+    "scrollable_surface_preserved": true,
+    "core_simple_actions_one_row": true,
+    "shared_assembly_model_and_output_paths": true,
+    "nested_assembler_tabs": ["Bosses", "Enemies / sub-bosses"],
+    "centipede_overrides_conditional": true,
+    "advanced_import_options_columns": 2,
+    "functions_removed": 0
+  },
+  "runtime_smoke": {
+    "backend": "Tk 8.6 under X virtual display",
+    "default_window": "1120x780",
+    "game_rip_console_multiline_visible": true,
+    "gmx_simple_core_and_assembler_visible_without_initial_scroll": true
+  },
+  "boundaries": [
+    "Platform theme metrics vary; the console floor is enforced by the Tk grid row rather than a pixel-perfect screenshot assumption.",
+    "Advanced GMX tools remain scrollable because their research surface is intentionally extensive."
+  ]
+}

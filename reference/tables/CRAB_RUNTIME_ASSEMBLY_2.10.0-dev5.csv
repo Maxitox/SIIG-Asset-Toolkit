@@ -1,0 +1,10 @@
+catalog,index,runtime_type,model,role,pose_sample,translation_x,translation_y,translation_z,outer_rotation_y_deg
+crab,0,0xA7,bos_013.gmx,root/legs,1,0,0,0,180
+crab,1,0xCD,bos_013b.gmx,body shell,0,0,214.9811019897461,-3.018549919128418,0
+crab,2,0xCC,bos_013a.gmx,central cannon,,0,214.9811019897461,-3.018549919128418,0
+crab,3,0xCE,bos_013c.gmx,propodus,,81,214.9811019897461,-3.018549919128418,0
+crab,4,0xCE,bos_013c.gmx,propodus,,-81,214.9811019897461,-3.018549919128418,0
+crab,5,0xCF,bos_013d.gmx,dactyl,,81,237.9811019897461,-3.018549919128418,0
+crab,6,0xCF,bos_013d.gmx,dactyl,,81,191.9811019897461,-3.018549919128418,0
+crab,7,0xCF,bos_013d.gmx,dactyl,,-81,237.9811019897461,-3.018549919128418,0
+crab,8,0xCF,bos_013d.gmx,dactyl,,-81,191.9811019897461,-3.018549919128418,0

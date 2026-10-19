@@ -1,0 +1,60 @@
+{
+  "format": "SIIG_GMX_TEMPLATE_FREE_COMPILATION_VALIDATION",
+  "toolkit_version": "2.9.0-dev6",
+  "status": "pass",
+  "selftest_case": "GMX fully template-free root/scene compilation",
+  "detail": "plain glTF -> synthesized canonical GMX root + TXIF/SHAD/MTRL/BONE/MOTN/ANIM/MESH/ARRY graph with no GMX template",
+  "input_gmx_template": null,
+  "cli": "gltf2gmx-new",
+  "canonical_root": {
+    "size": 48,
+    "magic": "GMX\\0",
+    "total_size_offset": "0x0C",
+    "bounds_offset": "0x10..0x27",
+    "unknown_08_default": 0,
+    "reserved_28_default_hex": "0000000000000000",
+    "advanced_overrides": [
+      "extras.gmxRootUnknown08",
+      "extras.gmxRootReserved28Hex"
+    ],
+    "unknown_fields_semantics": "intentionally unresolved"
+  },
+  "synthesized_chunk_types": [
+    "TXIF",
+    "SHAD",
+    "MTRL",
+    "BONE",
+    "MOTN",
+    "ANIM",
+    "MESH",
+    "ARRY"
+  ],
+  "native_schema_synthesis": true,
+  "texture_reference_synthesis": true,
+  "scene_graph_synthesis": true,
+  "animation_synthesis": true,
+  "runtime_clock_hz": 30.0,
+  "animation_frames_tested": 31,
+  "root_aabb_recomputed": true,
+  "root_total_size_recomputed": true,
+  "gltf_export_root_provenance": true,
+  "command_level_smoke": {
+    "status": "pass",
+    "input": "plain three-vertex glTF",
+    "output_bytes": 384,
+    "chunk_tags": [
+      "GMX",
+      "BONE",
+      "MESH",
+      "ARRY",
+      "ARRY"
+    ],
+    "template_free_report": true
+  },
+  "limitations": [
+    "runtime acceptance of fully original scenes remains external emulator/hardware validation",
+    "platform shader microcode compilation remains unresolved",
+    "standard glTF skins/JOINTS_0/WEIGHTS_0 import is not yet mapped",
+    "unknown root bytes are zeroed by default or explicitly overridden; no semantics are inferred"
+  ]
+}

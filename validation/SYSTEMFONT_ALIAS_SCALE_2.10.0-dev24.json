@@ -1,0 +1,37 @@
+{
+  "format": "SIIG_SYSTEMFONT_ALIAS_SCALE_VALIDATION",
+  "version": "2.10.0-dev24",
+  "status": "pass",
+  "retail_function": "Function_8215ACB0",
+  "ascii_direct_ranges": [
+    "0-9",
+    "A-Z",
+    "a-z"
+  ],
+  "ascii_alias_table": {
+    "address": "DAT_820221F8",
+    "entries": 73,
+    "runtime_scale": 0.5
+  },
+  "halfwidth_katakana_table": {
+    "address": "DAT_820220A0",
+    "entries": 85,
+    "runtime_scale": 1.0,
+    "base_target_glyph_index": "0xEB"
+  },
+  "recovered_alias_entries": 152,
+  "ascii_alias_entries": 94,
+  "halfwidth_katakana_alias_entries": 58,
+  "unresolved_scale_alias_entries": 0,
+  "derived_font_real_retail_probe": {
+    "native_glyphs": 6730,
+    "unique_alias_glyphs": 149,
+    "cmap_entries": 6879,
+    "half_scale_aliases": 94,
+    "native_scale_aliases": 55,
+    "approximate_aliases": 0,
+    "pipe_alias_present": true,
+    "generated_ttf_sha256": "355e084c3ec5850b0c6190c382d4cd4779ef590215dcaa65b28077e2b95b3661"
+  },
+  "boundary": "The generated font remains a local bitmap-to-outline convenience derivative, not the original vector font; no generated font is bundled."
+}

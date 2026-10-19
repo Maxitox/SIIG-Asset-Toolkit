@@ -1,0 +1,9 @@
+visual_slot,primary_state,rotation_timer,fade_timer,rotation_z_degrees,collada_edge1_alpha,collada_face1_alpha,collada_face2_alpha,resource_flag_before,resource_action,resource_pointer_offset,resource_flag_after,angle_source
+0,0,0,0,0.0,0.8999999761581421,0.0,0.0,0,none,,0,fade_timer_mod_10_before_fade_start
+0,0,130,130,0.0,0.8999999761581421,0.0,0.0,0,none,,0,fade_timer_mod_10_before_fade_start
+0,0,131,131,36.0,0.8999999761581421,0.0,0.0,0,none,,0,rotation_timer_div_frame_multiplier_mod_10
+0,0,132,132,72.0,0.8999999761581421,0.007633587811142206,0.007633587811142206,0,select_alternate_visual_resource,+0x1A8,1,rotation_timer_div_frame_multiplier_mod_10
+0,0,196,196,216.0,0.8999999761581421,0.49618321657180786,0.49618321657180786,1,none,,1,rotation_timer_div_frame_multiplier_mod_10
+0,0,261,261,36.0,0.8999999761581421,0.9923664331436157,0.9923664331436157,1,none,,1,rotation_timer_div_frame_multiplier_mod_10
+0,0,262,262,72.0,0.8999999761581421,1.0,1.0,1,restore_default_visual_resource,+0x1A4,0,rotation_timer_div_frame_multiplier_mod_10
+1,0,0,0,,0.4000000059604645,0.4000000059604645,0.4000000059604645,0,none,,0,none_nonzero_visual_slot

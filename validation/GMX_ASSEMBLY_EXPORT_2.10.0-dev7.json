@@ -1,0 +1,60 @@
+{
+  "format": "SIIG_GMX_ASSEMBLY_EXPORT_VALIDATION",
+  "release": "2.10.0-dev7",
+  "status": "pass",
+  "pose_sample_supported": true,
+  "posed_instance_animation_suppression": true,
+  "catalogs": [
+    "progressive_ufo",
+    "crab",
+    "crab_first_visible",
+    "hornet_full_armor",
+    "hornet_prism_wall_00",
+    "hornet_prism_wall_02",
+    "hornet_prism_wall_06",
+    "hornet_prism_wall_08",
+    "hornet_prism_wall_18",
+    "hornet_prism_wall_20",
+    "hornet_prism_wall_22",
+    "hornet_prism_wall_24",
+    "hornet_prism_wall_26",
+    "hornet_prism_wall_36",
+    "hornet_prism_wall_38",
+    "hornet_prism_wall_42",
+    "hornet_prism_wall_44"
+  ],
+  "hornet_prism_wall": {
+    "variant_count": 13,
+    "canonical_default": false,
+    "visible_per_variant": 45,
+    "composition": "1x A1 + 44x C0",
+    "a1_animation_preserved": true
+  },
+  "generic_unresolved_transform_guard": true,
+  "ok": true,
+  "hornet_propagation": {
+    "procedural_seed_wave_family": true,
+    "seed_count": 13,
+    "seed_values": [
+      0,
+      2,
+      6,
+      8,
+      18,
+      20,
+      22,
+      24,
+      26,
+      36,
+      38,
+      42,
+      44
+    ],
+    "a1_hidden": true,
+    "visible_type": "0xC0",
+    "snapshot": "wave activation instant",
+    "unqualified_default_rejected": true,
+    "representative": "hornet_propagation_22_wave_03",
+    "representative_visible": 29
+  }
+}

@@ -1,0 +1,30 @@
+﻿main_game_order,entity,primary_role,boss_stage,boss_order,toolkit_family,toolkit_runtime_name,appearance_notes,source_status,bonus_stages_included
+1,SOL,sub-boss,,,,,"sub-boss in stage 1-6 and 3-5, generic enemy starting from 5-1",project_owner_reference_unverified,no
+2,DIFUSSER,sub-boss,,,,,"sub-boss in 2-1, 3-1 and 3-5, generic enemy starting from 4-1",project_owner_reference_unverified,no
+3,JOLYNE,sub-boss,,,,,"sub-boss in 2-2, 3-2 and 3-5, generic enemy starting from 4-2",project_owner_reference_unverified,no
+4,SATORU UFO,sub-boss,,,,,"sub-boss in 2-3, 3-3 and 3-5, generic enemy starting from 4-3",project_owner_reference_unverified,no
+5,DIFUSSER2,sub-boss,,,,,"sub-boss in 2-4, 3-4 and 3-5, generic enemy starting from 4-1",project_owner_reference_unverified,no
+6,SPIDER,sub-boss,,,,,"sub-boss in 2-4, 3-4 and 3-5, generic enemy starting from 4-4",project_owner_reference_unverified,no
+7,TELEPORTER,sub-boss,,,,,"sub-boss in 2-5 and 3-5, generic enemy starting from 5-4",project_owner_reference_unverified,no
+8,VANITY,sub-boss,,,,,"sub-boss in 2-6 and 3-5, couldn't find more appearances inside the main mode",project_owner_reference_unverified,no
+9,THE MOON,boss,3-1,1,the_moon,,"boss in 3-1, sub-boss starting from 4-1",project_owner_reference_unverified,no
+10,THE SUN,boss,3-2,2,the_sun,,"boss in 3-2, sub-boss starting from 4-2",project_owner_reference_unverified,no
+11,GIGANTIC UFO,boss,3-3,3,gigantic_ufo,,"boss in 3-3, sub-boss in 4-3, generic enemy starting from 5-1",project_owner_reference_unverified,no
+12,LADYBUG,boss,3-4,4,ladybug,,"boss in 3-4, sub-boss starting from 4-4",project_owner_reference_unverified,no
+13,MANDALA,boss,3-5,5,mandala,,"boss in 3-5, sub-boss in 4-5, generic enemy starting from 5-5",project_owner_reference_unverified,no
+14,UNKNOWN,boss,3-6,6,unknown,,"boss in 3-6, sub-boss starting from 4-5",project_owner_reference_unverified,no
+15,GREED,sub-boss,,,,,"sub-boss in 4-1, generic enemy starting from 5-1",project_owner_reference_unverified,no
+16,CENTIPEDE,boss,4-1,7,centipede,,"boss in 4-1, sub-boss starting from 5-1",project_owner_reference_unverified,no
+17,HORNET,boss,4-2,8,hornet,,"boss in 4-2, sub-boss starting from 5-2",project_owner_reference_unverified,no
+18,PROGRESSIVE UFO,boss,4-3,9,progressive_ufo,,"boss in 4-3, sub-boss starting from 5-3",project_owner_reference_unverified,no
+19,WRATH,sub-boss,,,,,"sub-boss in 4-4, generic enemy starting from 5-2",project_owner_reference_unverified,no
+20,OCTOPUS,boss,4-4,10,octopus,,"boss in 4-4, sub-boss starting from 5-4",project_owner_reference_unverified,no
+21,BUTTERFLY,boss,4-5,11,butterfly,,"boss in 4-5, sub-boss starting from 5-5",project_owner_reference_unverified,no
+22,AXON,boss,4-6,12,axon,,"boss in 4-6, sub-boss starting from 5-5",project_owner_reference_unverified,no
+23,WATER STRIDER,boss,5-1,13,water_strider,,boss in 5-1,project_owner_reference_unverified,no
+24,CRAB,boss,5-2,14,crab,,boss in 5-2,project_owner_reference_unverified,no
+25,ULTIMATE UFO,boss,5-3,15,ultimate_ufo,,boss in 5-3,project_owner_reference_unverified,no
+26,GLUTTONY,sub-boss,,,,,sub-boss in 5-4 and 5-5,project_owner_reference_unverified,no
+27,SQUID,boss,5-4,16,squid,,boss in 5-4,project_owner_reference_unverified,no
+28,VERTEBRATE,boss,5-5,17,vertebrate,,boss in 5-5,project_owner_reference_unverified,no
+29,NAMELESS,boss,5-6,18,no_name,NO_NAME,boss in 5-6,project_owner_reference_unverified,no

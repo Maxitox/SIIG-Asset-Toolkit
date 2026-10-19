@@ -1,0 +1,5 @@
+resource_id,texture_filename,string_address,descriptor_entry_address,descriptor_index,registration_call,runtime_use
+6,fence1_512.png,0x82048000,0x820481C8,0,"Function_822407D8 -> Function_821CEBA8(base=6,count=4,descriptor=0x820481C8)","stage table uses IDs 6,7,8"
+7,fence2_512.png,0x82047FF0,0x820481D0,1,"Function_822407D8 -> Function_821CEBA8(base=6,count=4,descriptor=0x820481C8)","stage table uses IDs 6,7,8"
+8,fence6_512a.png,0x82047FE0,0x820481D8,2,"Function_822407D8 -> Function_821CEBA8(base=6,count=4,descriptor=0x820481C8)","stage table uses IDs 6,7,8"
+9,fence3_512.png,0x82047FD0,0x820481E0,3,"Function_822407D8 -> Function_821CEBA8(base=6,count=4,descriptor=0x820481C8)",registered but not selected by the 75-stage table

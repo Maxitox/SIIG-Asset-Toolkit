@@ -1,0 +1,21 @@
+{
+  "format": "SIIG_PROGRESSIVE_UFO_BARRIER_ORIENTATION_VALIDATION",
+  "toolkit_version": "2.10.0-dev5",
+  "status": "pass",
+  "model": "bos_009b.gmx",
+  "runtime_type": "0xC3",
+  "outer_runtime_rotation": [
+    0,
+    0,
+    0
+  ],
+  "mesh_bones": [
+    "p3_E1",
+    "p3_F1"
+  ],
+  "internal_bind_rotation_z_degrees": 190.794265116,
+  "offset_from_180_degrees": 10.794265116,
+  "source_sha256": "173f0ca1236405bb8d7b5b7123041a344ed1872f3ff2a264951b9c6ff1d006c6",
+  "interpretation": "intentional native GMX orientation; do not straighten in assembly catalog",
+  "ok": true
+}

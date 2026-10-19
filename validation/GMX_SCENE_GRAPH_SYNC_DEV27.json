@@ -1,0 +1,35 @@
+{
+  "format": "SIIG_GMX_SCENE_GRAPH_SYNC_VALIDATION",
+  "toolkit_target": "2.8.0-dev27",
+  "status": "pass",
+  "mode": "opt-in --sync-scene-graph; implies --sync-mesh-graph; conservative dev25 and dev26 modes remain available",
+  "regression": {
+    "scene_sync_no_edit": "byte-identical synthetic native GMX including SHAD/MTRL/PARE/BONE/MESH/ARRY",
+    "create_shader": "new SHAD identity 6 cloned from fixed native record with edited shader name",
+    "create_material": "new MTRL identity 5 cloned from MTRL 0 parameter schema; DiffuseColor imported as 0.25/0.5/0.75",
+    "create_mesh": "new MESH identity 7 plus fresh owned ARRY identities via inherited dev26 mesh compiler",
+    "create_bone": "new BONE identity 9 with material 5 + mesh 7 attachments and translated glTF transform",
+    "hierarchy": "new PARE group parent BONE 0 -> child BONE 9",
+    "visual_report": "self-contained HTML + JSON scene report exposes synthesized bone/material/mesh/shader relationships",
+    "post_build_guards": [
+      "duplicate ARRY identity",
+      "duplicate MESH identity",
+      "duplicate BONE identity",
+      "duplicate SHAD identity",
+      "duplicate MTRL identity",
+      "dangling MESH->ARRY",
+      "MESH/index ARRY count mismatch",
+      "dangling MTRL->SHAD",
+      "dangling BONE->MTRL",
+      "dangling BONE->MESH",
+      "dangling/duplicate PARE child references"
+    ]
+  },
+  "inherited_dev25_external_evidence": {
+    "retail_mesh_bearing_noop": "306/306 byte-identical",
+    "meshless_not_applicable": 1,
+    "retail_topology_smoke": "plr_001.gmx mesh0 328->329 vertices; 656->658 indices; 49600->49680 bytes",
+    "note": "External proprietary corpus was validated in sealed dev25 and is not bundled or re-run in dev27."
+  },
+  "boundary": "MESH and MTRL synthesis clone proven template layouts. TXIF creation, arbitrary vertex/material parameter schemas, MOTN/ANIM graph synthesis, platform shader compilation, template-free GMX construction, and retail runtime acceptance of arbitrary synthesized scenes remain unresolved."
+}

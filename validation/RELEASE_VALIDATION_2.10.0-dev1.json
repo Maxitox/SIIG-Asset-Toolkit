@@ -1,0 +1,98 @@
+{
+  "format": "SIIG_RELEASE_VALIDATION",
+  "release": "2.10.0-dev1",
+  "date": "2026-09-11",
+  "status": "development-pass",
+  "selftest": {
+    "passed": 82,
+    "failed": 0,
+    "ok": true,
+    "report": "validation/SELFTEST_2.10.0-dev1.json",
+    "reported_toolkit_version": "2.10.0-dev1"
+  },
+  "inherited_release_gate": {
+    "from": "2.9.0-dev7",
+    "report": "validation/RELEASE_VALIDATION_2.9.0-dev7.json",
+    "note": "All sealed dev7 evidence-bounded rigid skin compatibility, dev6 template-free compilation, dev5 multi-bone/CUBICSPLINE animation, dev4 MOTN/ANIM creation, dev3 TEX synthesis, dev2 schema synthesis, dev1 integrated mod staging, earlier GMX graph/native-builder work and source-only gates are inherited. 2.10.0-dev1 opens a new minor feature line by rebaking non-identity rigid inverse binds into native geometry without claiming blended skinning."
+  },
+  "gmx_rigid_bind_rebake": {
+    "status": "pass",
+    "report": "validation/GMX_RIGID_BIND_REBAKE_2.10.0-dev1.json",
+    "non_identity_affine_inverse_bind": true,
+    "position_rebake": true,
+    "inverse_transpose_normal_rebake": true,
+    "singular_guard": true,
+    "blended_weights_supported": false,
+    "selftest": "pass"
+  },
+  "versioning_policy": {
+    "status": "pass",
+    "report": "validation/VERSIONING_POLICY_2.10.0-dev1.json",
+    "previous": "2.9.0-dev7",
+    "current": "2.10.0-dev1"
+  },
+  "desktop_gui": {
+    "status": "pass",
+    "report": "validation/DESKTOP_GUI_2.10.0-dev1.json",
+    "gui_version": "0.12.0-dev1",
+    "tabs": [
+      "Game Rip",
+      "Mod Workspace",
+      "GMX Workbench",
+      "Utilities"
+    ],
+    "rigid_inverse_bind_rebake": true
+  },
+  "asset_functionalization": {
+    "status": "pass",
+    "report": "validation/ASSET_FUNCTIONALIZATION_2.10.0-dev1.json",
+    "known_asset_families": 14,
+    "viewable_or_exportable_families": 14,
+    "native_round_trip_families": 11,
+    "native_builder_available_families": 11,
+    "gmx_rigid_inverse_bind_rebake": true
+  },
+  "source_only_audit": {
+    "status": "pass",
+    "report": "validation/SOURCE_ONLY_AUDIT_2.10.0-dev1.json",
+    "game_assets": 0,
+    "external_executable_magic": 0,
+    "archive_binary_members": 0,
+    "private_runtime_paths": 0,
+    "python_bytecode": 0,
+    "third_party_binaries_bundled": false,
+    "sources_rows": 24
+  },
+  "version_consistency": {
+    "VERSION.txt": "2.10.0-dev1",
+    "cli_toolkit_version": "2.10.0-dev1",
+    "gui_version": "0.12.0-dev1"
+  },
+  "fresh_package": {
+    "status": "pass",
+    "candidate_manifest_entries_verified": 395,
+    "candidate_manifest_missing": 0,
+    "candidate_manifest_mismatched": 0,
+    "candidate_unlisted_files": 0,
+    "candidate_source_only_audit": "pass",
+    "candidate_selftest_passed": 82,
+    "candidate_selftest_failed": 0,
+    "candidate_version_reported": "2.10.0-dev1",
+    "candidate_gui_version": "0.12.0-dev1",
+    "candidate_package_sha256": "65ed78eeb827a543e9697ce6e7e71f9e9a9414631c908fe097df97af0f5d8c73",
+    "note": "Candidate was extracted fresh, verified against RELEASE_MANIFEST with no unlisted files, source-audited before executing package code, and then passed 82/82 selftests plus CLI/GUI version checks. Final package is rebuilt deterministically after recording this evidence."
+  },
+  "limitations": [
+    "Rigid glTF skin compatibility still requires one unit-weight joint shared by the whole mesh; true blended/multi-joint weights are not encoded because no confirmed native per-vertex skin representation exists.",
+    "Non-identity inverse binds must be affine; singular linear transforms are rejected when normals require an inverse-transpose matrix.",
+    "MESH.skin_index remains semantically unresolved beyond the repeated corpus-observed 0xFFFF no-vertex-skin value and is not repurposed as a glTF skin index.",
+    "Runtime acceptance of arbitrary fully original synthesized scenes remains a separate emulator/hardware gate.",
+    "Platform shader microcode compilation and remaining opaque GMX semantics remain unresolved.",
+    "Compressed/mipmapped native texture variants are not synthesized.",
+    "PS3 donor-free TEX wrapper synthesis remains structurally validated rather than hardware/emulator-proven.",
+    "The external dev25 306/306 retail GMX no-op evidence and dev7 player/enemy skin-field evidence are inherited rather than rerun/bundled from proprietary inputs.",
+    "PS3 NPDRM/SDAT re-encryption is not implemented.",
+    "Audio replacement/rebuilding remains intentionally deferred.",
+    "Project-owner license selection remains open."
+  ]
+}

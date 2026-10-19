@@ -1,0 +1,53 @@
+{
+  "format": "SIIG_IOS_CONSOLE_LINEAGE_VALIDATION",
+  "release": "2.8.0-dev18",
+  "status": "research-pass",
+  "function_correspondences": 9,
+  "mobile_dispatch_frontier": "0x8D",
+  "console_dispatch_table_frontier": "0xCE",
+  "ios_authored_dat_files": 78,
+  "ios_generator_dat_files": 581,
+  "ios_active_opcode_count": 87,
+  "june_console_active_opcode_count": 113,
+  "active_opcode_intersection": 73,
+  "normal_stage_pairs_compared": 18,
+  "normal_stage_ios_commands": 3302,
+  "normal_stage_console_commands": 3166,
+  "normal_stage_opcode_lcs": 3028,
+  "normal_stage_aggregate_opcode_lcs_ratio": 0.91702,
+  "stages_same_opcode_sequence": 10,
+  "major_rewrite_stages": [
+    "3-6"
+  ],
+  "timing_equations": {
+    "authored_hz": 30,
+    "ios_delta_runtime_formula": "runtime_delta = authored_delta * runtime_fps / 30",
+    "ios_scroll_runtime_formula": "runtime_speed = authored_speed * 30 / runtime_fps",
+    "console_duration_formula": "runtime_updates = authored_ticks * frame_multiplier",
+    "console_velocity_formula": "runtime_velocity = authored_velocity / frame_multiplier",
+    "console_update_hz_formula": "runtime_updates_per_second = 30 * frame_multiplier",
+    "interpretation": "same 30-Hz authored-time invariant; console centralizes the 30/60 timing policy that mobile partly handled with duplicated primary analyzers"
+  },
+  "generator_model": {
+    "ios_output_layers": 3,
+    "ios_bytes_per_output_layer": 6144,
+    "ios_block_iterations": 24,
+    "ordinary_block_width": 8,
+    "ordinary_block_height": 32,
+    "capacity_identity": "6144 = 24 * 8 * 32",
+    "ios_generator_map_files": 330,
+    "ios_nonempty_generator_layers": 645,
+    "ios_generator_cells": 121472,
+    "console_generator_map_files": 330,
+    "console_nonempty_generator_layers": 645,
+    "console_generator_cells": 242944,
+    "console_to_ios_cell_ratio": 2.0,
+    "warning": "nonzero cells are not doubled, so the console corpus is not a simple byte duplication of the mobile maps"
+  },
+  "limitations": [
+    "Exact Xbox address of the authored DAT loader is not yet isolated from retained console references.",
+    "Exact console generator-map output-buffer initializer corresponding to iOS stageGenerateMapInit is not yet isolated.",
+    "The exact cause of the console generator resource corpus's 2x total cell capacity remains unresolved.",
+    "Normal-stage content is substantially retuned even where opcode sequence structure is preserved; code lineage must not be described as byte-identical stage content."
+  ]
+}

@@ -1,0 +1,13 @@
+tick,branch,visual_identity,unique_visual_index_note
+0,uk01,uk01,unique within 14-branch set
+1,uk02,uk02,unique within 14-branch set
+2,uk03,uk03,unique within 14-branch set
+3,uk04,uk04,unique within 14-branch set
+4,uk05,uk05,unique within 14-branch set
+5,uk06,uk06,unique within 14-branch set
+6,uk07,uk07,unique within 14-branch set
+7,uk08,uk01,duplicate of uk01
+8,uk09,uk09,unique within 14-branch set
+9,uk10,uk10,unique within 14-branch set
+10,uk11,uk11,unique within 14-branch set
+11,uk12,uk12,unique within 14-branch set

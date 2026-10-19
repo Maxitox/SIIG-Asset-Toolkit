@@ -1,0 +1,64 @@
+{
+  "format": "SIIG_RELEASE_VALIDATION",
+  "release": "2.8.0-dev15",
+  "date": "2026-09-10",
+  "status": "development-pass",
+  "selftest": {
+    "passed": 51,
+    "failed": 0,
+    "ok": true,
+    "report": "validation/SELFTEST_2.8.0-dev15.json",
+    "reported_toolkit_version": "2.8.0-dev15"
+  },
+  "inherited_release_gate": {
+    "from": "2.8.0-dev14",
+    "report": "validation/RELEASE_VALIDATION_2.8.0-dev14.json",
+    "note": "All console extraction, rendering, audio, route, camera, Ultimate UFO and source-only gates are inherited. dev15 adds mobile package/format support without modifying finalized dev14."
+  },
+  "dev15_mobile_lineage_validation": {
+    "status": "pass",
+    "report": "validation/MOBILE_LINEAGE_DEV15.json",
+    "mobile_dat_files": 737,
+    "mobile_dat_parse_failures": 0,
+    "mobile_map_files": 493,
+    "mobile_map_parse_failures": 0,
+    "shared_authored_dat_map": 158,
+    "byte_identical_shared": 146,
+    "level9_differences": 12,
+    "ios_generator_maps": 330,
+    "ios_generator_nonempty_layers": 645,
+    "console_generator_maps": 330,
+    "console_generator_nonempty_layers": 645,
+    "level9_opcode_names_proven": true,
+    "level9_opcode_names": [
+      "THE_MOON_V2",
+      "THE_SUN_V2",
+      "GIGANTIC_UFO_V2",
+      "LADYBUG_V2",
+      "MANDALA_V2",
+      "UNKNOWN_V2"
+    ]
+  },
+  "source_only_audit": {
+    "status": "pass",
+    "report": "validation/SOURCE_ONLY_AUDIT_2.8.0-dev15.json",
+    "game_assets": 0,
+    "external_executable_magic": 0,
+    "archive_binary_members": 0,
+    "private_runtime_paths": 0,
+    "python_bytecode": 0,
+    "third_party_binaries_bundled": false,
+    "sources_rows": 19
+  },
+  "version_consistency": {
+    "VERSION.txt": "2.8.0-dev15",
+    "cli_toolkit_version": "2.8.0-dev15"
+  },
+  "limitations": [
+    "The supplied iOS 4.1.0 IPA and Android 1.0.4 APK have modified distribution provenance and are treated as research copies, not pristine store packages.",
+    "The cause of the exact 2x console generator MAP cell capacity relative to iOS remains unresolved.",
+    "Mobile-exclusive Survival and Level-9 gameplay logic is only anchored, not yet fully reconstructed.",
+    "Existing console limitations on shader ISA translation, Blender UI/runtime validation, and project-owner license selection remain.",
+    "The exact behavioral differences between original mobile bosses 0x46..0x4B and their V2 handlers 0x4C..0x51 remain open."
+  ]
+}

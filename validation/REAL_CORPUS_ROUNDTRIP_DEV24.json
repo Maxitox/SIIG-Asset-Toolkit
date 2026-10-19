@@ -1,0 +1,112 @@
+{
+  "format": "SIIG_REAL_CORPUS_ROUNDTRIP_VALIDATION_V1",
+  "toolkit_target": "2.8.0-dev24",
+  "status": "PASS",
+  "scope": "User-supplied retail Xbox 360 BBX corpus used externally; no proprietary game payloads are bundled in the toolkit.",
+  "byte_identical_checks_passed": 2197,
+  "byte_identical_checks_failed": 0,
+  "families": [
+    {
+      "format": "GMX",
+      "checked": 307,
+      "passed": 307,
+      "method": "native GMX -> editable fixed-layout document -> native GMX with the original file as template",
+      "corpus": {
+        "player.bin": 13,
+        "enemy.bin": 137,
+        "wall.bin": 153,
+        "route.bin": 2,
+        "camera.bin": 2
+      },
+      "result": "all rebuilt byte-for-byte identically"
+    },
+    {
+      "format": "TEX",
+      "checked": 3,
+      "passed": 3,
+      "method": "native TEX -> PNG -> native TEX with the original TEX as layout template",
+      "corpus": "image.bin: button.tex, max.tex, min.tex",
+      "result": "all rebuilt byte-for-byte identically"
+    },
+    {
+      "format": "DAT",
+      "checked": 1258,
+      "passed": 1258,
+      "method": "native DAT -> parsed command records -> native DAT",
+      "corpus": "all .dat entries extracted from retail generator.bin",
+      "result": "all rebuilt byte-for-byte identically"
+    },
+    {
+      "format": "MAP",
+      "checked": 394,
+      "passed": 394,
+      "method": "native MAP -> lossless editable row-grid document -> native MAP",
+      "corpus": "330 .map entries from generator.bin plus 64 level maps from map.bin",
+      "result": "all rebuilt byte-for-byte identically"
+    },
+    {
+      "format": "ANM",
+      "checked": 2,
+      "passed": 2,
+      "method": "native ANM -> parsed records -> native ANM",
+      "corpus": "player.anm and enemy.anm",
+      "result": "both rebuilt byte-for-byte identically"
+    },
+    {
+      "format": "stage3D route/placement tables",
+      "checked": 47,
+      "passed": 47,
+      "method": "Bmap/Xmap/map4/map5 -> editable 0x118-record document -> native table using original template",
+      "corpus": "all matching entries extracted from retail stage.bin",
+      "result": "all rebuilt byte-for-byte identically"
+    },
+    {
+      "format": "stagewall/generator tables",
+      "checked": 30,
+      "passed": 30,
+      "method": "wall/Xwall records -> editable name/value records -> native 20-byte table",
+      "corpus": "all matching wall/Xwall entries extracted from retail stage.bin",
+      "result": "all rebuilt byte-for-byte identically"
+    },
+    {
+      "format": "COL",
+      "inventory_parsed": 153,
+      "checked": 153,
+      "passed": 153,
+      "method": "native COL -> PNG -> native COL with original header template",
+      "corpus": "all 153 .col entries extracted from retail wall.bin; 78,643,200 collision pixels total",
+      "coverage": "both observed layouts/variants: 512x256 variant 1 (4 files) and 512x1024 variant 4 (149 files)",
+      "result": "all 153 rebuilt byte-for-byte identically"
+    },
+    {
+      "format": "systemfont CRP",
+      "checked": 1,
+      "passed": 1,
+      "method": "native XOR-obfuscated CRP -> decrypted TEX -> PNG -> rebuilt TEX -> XOR-obfuscated CRP",
+      "corpus": "retail systemfont.bin/systemfont.crp",
+      "result": "rebuilt byte-for-byte identically"
+    },
+    {
+      "format": "text.bin localization",
+      "checked": 1,
+      "passed": 1,
+      "string_count": 542,
+      "method": "retail text.bin -> readable CSV -> native BBX",
+      "result": "rebuilt byte-for-byte identically"
+    },
+    {
+      "format": "message.bin localization",
+      "checked": 1,
+      "passed": 1,
+      "group_count": 284,
+      "strings_per_language": 1295,
+      "method": "retail message.bin -> six readable language scripts -> native BBX",
+      "result": "rebuilt byte-for-byte identically"
+    }
+  ],
+  "evidence_boundaries": [
+    "These are no-edit byte-identity tests. They prove lossless round-trip behavior for the tested corpus, not that every arbitrary edited value is accepted by the retail runtime.",
+    "GMX remains fixed-layout/template-preserving; arbitrary topology/count/chunk-graph synthesis is not claimed.",
+    "No retail game bytes are included in this validation JSON; only derived counts, names, and methodological statements are retained."
+  ]
+}

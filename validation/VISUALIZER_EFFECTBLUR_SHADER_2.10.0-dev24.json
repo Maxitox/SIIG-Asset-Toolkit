@@ -1,0 +1,69 @@
+{
+  "format": "SIIG_VISUALIZER_EFFECTBLUR_SHADER_VALIDATION",
+  "version": "2.10.0-dev24",
+  "status": "pass",
+  "dataset_version": 11,
+  "retail_xbox360": {
+    "effectblur_ps_size_bytes": 292,
+    "microcode_size_bytes": 72,
+    "microcode_sha256": "550328d21de6af38fde4a0814bd71aa68352667c826b0d7b1f172796c3db8116",
+    "control_flow": [
+      {
+        "opcode": "Exec",
+        "address": 2,
+        "count": 1,
+        "sequence": "fetch"
+      },
+      {
+        "opcode": "Alloc",
+        "type": "pixel colors"
+      },
+      {
+        "opcode": "ExecEnd",
+        "address": 3,
+        "count": 2,
+        "sequence": "ALU, ALU"
+      }
+    ],
+    "texture_fetch": {
+      "dimension": "2D",
+      "texture_constant": 0,
+      "destination": "r0",
+      "destination_components": "xyz; w kept",
+      "source": "r0 texture coordinates"
+    },
+    "alu_1": {
+      "result": "r0.w = Alpha.w",
+      "encoded_scalar_op": "MAXs",
+      "note": "both scalar operands address constant 0 W, so max(c0.w,c0.w)=c0.w"
+    },
+    "alu_2": {
+      "result": "export color0 = r0",
+      "encoded_vector_op": "MAXv",
+      "note": "both vector operands are r0, so max(r0,r0)=r0"
+    },
+    "shader_source_rgb": "sample(previous_feedback).rgb",
+    "shader_source_alpha": "Alpha.w",
+    "sampled_texture_alpha_used_for_rgb": false
+  },
+  "ps3_cross_check": {
+    "pixel_parameters": [
+      "TextureSampler",
+      "Alpha"
+    ],
+    "alpha_upload": "(0,0,0,alpha)"
+  },
+  "combined_rgb_recurrence": "dst.rgb += sample(previous_feedback).rgb * feedback_alpha",
+  "browser_bridge": {
+    "feedback_context_alpha": false,
+    "composite": "lighter",
+    "global_alpha": "feedback_alpha",
+    "clear_rgb_preserved_when_authored_clear_alpha_is_zero": true
+  },
+  "source_package_contains_shader_binary": false,
+  "external_reference": {
+    "name": "Xenia ucode.h",
+    "usage": "documentation-only Xenos instruction layout/enums"
+  },
+  "remaining_boundary": "exact Xenos alpha-channel storage/compositing is not claimed by the Canvas bridge"
+}

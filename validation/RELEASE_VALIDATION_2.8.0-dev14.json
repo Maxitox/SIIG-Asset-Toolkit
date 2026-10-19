@@ -1,0 +1,57 @@
+{
+  "format": "SIIG_RELEASE_VALIDATION",
+  "release": "2.8.0-dev14",
+  "date": "2026-09-10",
+  "status": "development-pass",
+  "selftest": {
+    "passed": 46,
+    "failed": 0,
+    "ok": true,
+    "report": "validation/SELFTEST_2.8.0-dev14.json",
+    "reported_toolkit_version": "2.8.0-dev14"
+  },
+  "inherited_release_gate": {
+    "from": "2.8.0-dev13",
+    "report": "validation/RELEASE_VALIDATION_2.8.0-dev13.json",
+    "note": "All earlier extraction, rendering, audio, container, route, matrix, and field-camera gates are inherited. Dev14 adds a final-reset caller audit without modifying frozen dev13."
+  },
+  "dev14_final_reset_validation": {
+    "status": "pass_static_closure_runtime_branch_unresolved",
+    "report": "validation/ULTIMATE_UFO_FINAL_RESET_DEV14.json",
+    "checks_passed": 11,
+    "checks_failed": 0,
+    "mframe_6030_clears_camera_gate": false,
+    "mframe_6200_clears_camera_gate": false,
+    "proven_clear_instruction": "0x8212DD20",
+    "proven_clear_condition": "part 0 and state 0 outside Extra 5-6",
+    "generic_reset_function": "0x820FBEE8",
+    "ordinary_post_6200_reset_caller_proven": false,
+    "ordinary_normal_5_3_gate_clear_proven_to_execute": false,
+    "june10_visible_ufo_removal_boundary": "~427.367 s present -> ~427.400 s absent in Normal seg6; project-owner footage observation"
+  },
+  "source_only_audit": {
+    "status": "pass",
+    "report": "validation/SOURCE_ONLY_AUDIT_2.8.0-dev14.json",
+    "game_assets": 0,
+    "external_executable_magic": 0,
+    "archive_binary_members": 0,
+    "private_runtime_paths": 0,
+    "python_bytecode": 0,
+    "third_party_binaries_bundled": false,
+    "sources_rows": 18
+  },
+  "version_consistency": {
+    "VERSION.txt": "2.8.0-dev14",
+    "cli_toolkit_version": "2.8.0-dev14"
+  },
+  "limitations": [
+    "No ordinary Normal 5-3 post-6200 +0x48 caller is proven; the retail part-0/state-0 clear is a proven mechanism, not proof that the ordinary ending executes it.",
+    "Static evidence leaves a runtime-only branch between a higher-level +0x48 reset before teardown and destructor-only manager removal.",
+    "June 10 prototype footage brackets the visible entity-registration removal at the stage-completion white-out but cannot distinguish the implementation path.",
+    "The 25200-timer-unit generic lifetime path is proven but retained as a watchdog rather than assigned as the ordinary ending.",
+    "The Extra/Bonus 5-6 branch deliberately excludes the UFO part-0/state-0 camera-gate clear.",
+    "The known retail PA-route setup directly selects cam01; no proven retail activation callsite selecting cam02 has been found.",
+    "Runtime fog-profile selection over time and camera preset word 11 exact renderer semantics remain unresolved.",
+    "Instruction-level shader translation, real Blender UI/runtime validation, and project-owner license selection remain future work."
+  ]
+}

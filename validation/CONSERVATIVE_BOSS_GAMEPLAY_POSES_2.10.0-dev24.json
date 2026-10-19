@@ -1,0 +1,121 @@
+{
+  "format": "siig-conservative-boss-gameplay-poses-validation-v1",
+  "version": "2.10.0-dev24",
+  "status": "source-only executable/DAT-backed research validation",
+  "coverage": {
+    "boss_family_count": 18,
+    "deep_runtime_reconstruction_families": 14,
+    "gameplay_pose_reconstruction_families": 3,
+    "native_inspection_only_families": 1,
+    "sole_native_inspection_only": "THE MOON"
+  },
+  "promotions": {
+    "OCTOPUS": {
+      "runtime_type": "0xA3",
+      "model": "bos_010.gmx",
+      "catalog": "octopus_retail_spawn",
+      "retail_occurrences": 6,
+      "root_xyz": [
+        213,
+        0,
+        100
+      ],
+      "evidence": "all retail records author X/Z 213/100 and common initializer consumes args3/4 as root X/Z",
+      "boundary": "no auxiliary GMX ownership or unauthored class-tail value promoted"
+    },
+    "WATER_STRIDER": {
+      "runtime_type": "0xA6",
+      "model": "bos_014.gmx",
+      "catalog": "water_strider_retail_spawn",
+      "retail_occurrences": 4,
+      "root_xyz": [
+        213,
+        0,
+        100
+      ],
+      "evidence": "all retail records author X/Z 213/100 and common initializer consumes them",
+      "boundary": "fld014 timed PA-route remains a separate stage-field system, not a boss-root matrix"
+    },
+    "NO_NAME": {
+      "runtime_type": "0xAB",
+      "model": "bos_018a.gmx",
+      "catalog": "no_name_retail_main_spawn",
+      "main_bonus_root_xyz": [
+        213,
+        0,
+        120
+      ],
+      "main_bonus_records": [
+        {
+          "file": "level5_stage6.dat",
+          "command_index": 208,
+          "absolute_frame": 237210,
+          "args": [
+            0,
+            3000,
+            256,
+            213,
+            120,
+            213,
+            120
+          ]
+        },
+        {
+          "file": "extra5_stage6.dat",
+          "command_index": 292,
+          "absolute_frame": 860201,
+          "args": [
+            0,
+            3000,
+            256,
+            213,
+            120,
+            213,
+            120
+          ]
+        }
+      ],
+      "extra2_stage8": {
+        "catalog": "no_name_extra2_stage8_approach",
+        "command_index": 24,
+        "absolute_frame": 954,
+        "args": [
+          0,
+          100,
+          512,
+          213,
+          -100,
+          213,
+          80
+        ],
+        "start_xyz": [
+          213,
+          0,
+          -100
+        ],
+        "target_xyz": [
+          213,
+          0,
+          80
+        ],
+        "normal_step_units": 2.0,
+        "sample_count": 92,
+        "final_target_repeated": true,
+        "completion_rule": "pre-update distance < step"
+      },
+      "evidence_functions": [
+        "0x8211F1A0",
+        "Function_8211F370"
+      ],
+      "boundary": "bos_018.gmx and May-only bos_018b/c have no proven retail NO_NAME ownership path"
+    }
+  },
+  "unchanged_boundary": {
+    "THE_MOON": {
+      "runtime_type": "0x46",
+      "model": "bos_001.gmx",
+      "catalog": "the_moon_native_body",
+      "reason": "retail command has no authored root X/Z; Function_8212B638/Function_8212B760 drive controller-internal visual state without one proven canonical outer gameplay transform"
+    }
+  }
+}

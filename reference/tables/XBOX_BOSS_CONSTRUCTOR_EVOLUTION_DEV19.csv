@@ -1,0 +1,7 @@
+boss,may9_to_may11_mnemonic_similarity,may11_to_june10_similarity_retained,may11_to_june10_exact_score_retained,june10_to_retail_mnemonic_similarity,structural_note
+THE_MOON,100%,~86-93% range across all six bosses,no,100%,entity structure 0x10C->0x120; field movement; repeated runtime-rate virtual calls replaced by centralized frame multiplier; timing math remains equivalent
+THE_SUN,100%,~86-93% range across all six bosses,no,100%,same major May11->June10 engine/layout refactor; exact per-boss middle score not retained in continuity checkpoint
+GIGANTIC_UFO,100%,~86-93% range across all six bosses,no,100%,same major May11->June10 engine/layout refactor; exact per-boss middle score not retained in continuity checkpoint
+LADYBUG,100%,~86-93% range across all six bosses,no,100%,same major May11->June10 engine/layout refactor; exact per-boss middle score not retained in continuity checkpoint
+MANDALA,100%,~86-93% range across all six bosses,no,100%,same major May11->June10 engine/layout refactor; exact per-boss middle score not retained in continuity checkpoint
+UNKNOWN,100%,~86-93% range across all six bosses,no,100%,same major May11->June10 engine/layout refactor; exact per-boss middle score not retained in continuity checkpoint

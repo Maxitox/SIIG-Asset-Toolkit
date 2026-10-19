@@ -1,0 +1,54 @@
+{
+  "format": "SIIG_ENTITY_MODEL_IDENTITIES_VALIDATION",
+  "release": "2.10.0-dev24",
+  "wip": 178,
+  "status": "pass",
+  "catalog": "reference/tables/ENTITY_MODEL_IDENTITIES_DEV24.csv",
+  "pattern_count": 82,
+  "counts": {
+    "player": 10,
+    "enemy": 36,
+    "sub_boss": 7,
+    "boss": 18,
+    "effect_projectile": 11,
+    "project_owner_confirmed": 71,
+    "project_owner_confirmed_effect": 2,
+    "project_owner_speculative": 9
+  },
+  "cross_build_reconciliations": {
+    "CELL": {
+      "model": "emy_044.gmx",
+      "runtime_type": "0x97",
+      "builds": ["xbox360_retail", "xbox360_june10", "xbox360_may11", "xbox360_may9", "ps3_retail"],
+      "friendly_name_source": "project owner"
+    },
+    "LUST": {
+      "model": "emy_051.gmx",
+      "runtime_type": "0x9D",
+      "builds": ["xbox360_retail", "xbox360_june10", "xbox360_may11", "xbox360_may9", "ps3_retail"],
+      "friendly_name_source": "project owner"
+    },
+    "SHUTTER": {
+      "model": "emy_052.gmx",
+      "runtime_types": ["0x5A", "0x5B"],
+      "builds": ["xbox360_retail", "xbox360_june10", "xbox360_may11", "xbox360_may9", "ps3_retail"],
+      "dat_names": ["SHUTTER1", "SHUTTER2"],
+      "friendly_name_source": "project owner + recovered DAT family corroboration"
+    }
+  },
+  "effect_ownership": {
+    "project_owner_confirmed_usage": {
+      "est_013": "PROGRESSIVE UFO missiles",
+      "est_015": "WATER STRIDER trail spikes"
+    },
+    "speculative_stems": ["est_011", "est_012", "est_014", "est_016", "est_017", "est_018", "est_019", "est_020", "est_021"],
+    "runtime_registry_exception": "est_012.gmx is a top-level runtime registry model slot, so the est_ prefix alone cannot prove child/projectile ownership"
+  },
+  "asset_viewer": {
+    "version": "2.2.0",
+    "friendly_identity_search": true,
+    "same_stem_converted_models_inherit_identity": true,
+    "speculative_rows_visibly_labeled": true
+  },
+  "boundary": "Project-owner friendly names are not represented as executable-internal strings unless separately corroborated; speculative est_* ownership remains unresolved."
+}

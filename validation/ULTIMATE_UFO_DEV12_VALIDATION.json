@@ -1,0 +1,202 @@
+{
+  "format": "SIIG_ULTIMATE_UFO_DEV12_VALIDATION",
+  "release": "2.8.0-dev12",
+  "date": "2026-09-07",
+  "status": "pass",
+  "cross_build_archives": [
+    {
+      "name": "SIIGGHIDRA(1).zip",
+      "sha256": "444ea2b9cf85f201cd160f935ea890bc473b6d541cb9d8cecb849ae462c53499",
+      "size": 14231549
+    },
+    {
+      "name": "SIIGMAY9GHIDRA.zip",
+      "sha256": "57da9c228c0040b90d760e115cdf658a32cb4c8a8147a5ba09703884960bcb43",
+      "size": 15225876
+    },
+    {
+      "name": "SIIGMAY11GHIDRA.zip",
+      "sha256": "4fc11fbe66656596eedc6560774e5858cb2882dbbe6d4aeaccf20aa2d717531d",
+      "size": 15277347
+    },
+    {
+      "name": "SIIGJUNE10GHIDRA.zip",
+      "sha256": "987cf607e4164dde06b980718a6169791d81e064d4b5e46ecb35f45176076f66",
+      "size": 15557546
+    },
+    {
+      "name": "SIIGPS3GHIDRA.zip",
+      "sha256": "e7af0cd5940268c4697470ca58d55010b45a50706dfc10ead552d4ee4ce55d6d",
+      "size": 12469255
+    }
+  ],
+  "retail_stage_explorer": {
+    "stage_count": 92,
+    "normal_5_3_records": 223,
+    "bonus_5_6_records": 295
+  },
+  "checks": [
+    {
+      "name": "may9_debug_hud_strings",
+      "pass": true,
+      "evidence": "May 9 strings.csv literal HUD strings"
+    },
+    {
+      "name": "may9_skip_and_timer_logic",
+      "pass": true,
+      "evidence": "Function_82142008"
+    },
+    {
+      "name": "prototype_bos015k_registry_correction",
+      "pass": true,
+      "evidence": "ENTITY_RUNTIME_REGISTRY.csv per-build entries"
+    },
+    {
+      "name": "bonus_5_6_fast_destroy_xbox",
+      "pass": true,
+      "evidence": "retail Xbox Function_8212DCB0"
+    },
+    {
+      "name": "bonus_5_6_fast_destroy_ps3",
+      "pass": true,
+      "evidence": "PS3 retail 0x001D3380"
+    },
+    {
+      "name": "mframe_route_setter_xbox360_may9",
+      "pass": true,
+      "evidence": "FUN_820fca08"
+    },
+    {
+      "name": "mframe_route_setter_xbox360_may11",
+      "pass": true,
+      "evidence": "FUN_820fcc30"
+    },
+    {
+      "name": "mframe_route_setter_xbox360_june10",
+      "pass": true,
+      "evidence": "FUN_820fdd68"
+    },
+    {
+      "name": "mframe_route_setter_xbox360_retail",
+      "pass": true,
+      "evidence": "FUN_820eaed8"
+    },
+    {
+      "name": "mframe_route_setter_ps3_retail",
+      "pass": true,
+      "evidence": "_opd_FUN_0015a2dc"
+    },
+    {
+      "name": "ps3_camera_preset_direct_call_count",
+      "pass": true,
+      "evidence": "direct_calls=5; none occurs in UltimateUfo MoveMain 0x001D2988"
+    },
+    {
+      "name": "ps3_camera_lifecycle_001580dc",
+      "pass": true,
+      "evidence": "001580dc"
+    },
+    {
+      "name": "ps3_camera_lifecycle_00157a10",
+      "pass": true,
+      "evidence": "00157a10"
+    },
+    {
+      "name": "ps3_camera_lifecycle_0015b094",
+      "pass": true,
+      "evidence": "0015b094"
+    },
+    {
+      "name": "ps3_camera_lifecycle_0015b1c8",
+      "pass": true,
+      "evidence": "0015b1c8"
+    },
+    {
+      "name": "ps3_camera_lifecycle_0015abcc",
+      "pass": true,
+      "evidence": "0015abcc"
+    },
+    {
+      "name": "ps3_camera_lifecycle_00159d58",
+      "pass": true,
+      "evidence": "00159d58"
+    },
+    {
+      "name": "normal_5_3_ufo_camera_context",
+      "pass": true,
+      "evidence": "ufo=781 camera=912 args=[4, 0]"
+    },
+    {
+      "name": "bonus_5_6_ufo_camera_context",
+      "pass": true,
+      "evidence": "ufo=33749 camera=34779 args=[4, 0]"
+    },
+    {
+      "name": "fld015_6301_logical_samples",
+      "pass": true,
+      "evidence": "rows=6301 last=6300"
+    },
+    {
+      "name": "fld015_late_orientation_5897",
+      "pass": true,
+      "evidence": "quat=(0.7071067811865475,0.0,0.0,0.7071067811865476)"
+    },
+    {
+      "name": "fld015_late_orientation_5898",
+      "pass": true,
+      "evidence": "quat=(0.7071067811865475,0.0,0.0,0.7071067811865476)"
+    },
+    {
+      "name": "fld015_late_orientation_5902",
+      "pass": true,
+      "evidence": "quat=(0.7071067811865475,0.0,0.0,0.7071067811865476)"
+    },
+    {
+      "name": "fld015_late_orientation_6030",
+      "pass": true,
+      "evidence": "quat=(0.7071067811865475,0.0,0.0,0.7071067811865476)"
+    },
+    {
+      "name": "fld015_late_orientation_6200",
+      "pass": true,
+      "evidence": "quat=(0.7071067811865475,0.0,0.0,0.7071067811865476)"
+    },
+    {
+      "name": "fld015_late_orientation_6300",
+      "pass": true,
+      "evidence": "quat=(0.7071067811865475,0.0,0.0,0.7071067811865476)"
+    },
+    {
+      "name": "cam01_controller_0_199",
+      "pass": true,
+      "evidence": "runtime_rows=400 first=0 last=199"
+    },
+    {
+      "name": "cam02_controller_0_199",
+      "pass": true,
+      "evidence": "runtime_rows=400 first=0 last=199"
+    },
+    {
+      "name": "late_rear_follow_geometry",
+      "pass": true,
+      "evidence": "preset4 local (0,40,60) transformed by +90deg X -> (0,-60,+40)"
+    }
+  ],
+  "check_summary": {
+    "passed": 29,
+    "failed": 0,
+    "total": 29
+  },
+  "conclusions": {
+    "prototype_registry_correction": "May 9/May 11 ID 0xD9 and June/retail/PS3 ID 0xD8 all identify bos_015k.gmx.",
+    "debug_hud": "May 9 HUD and MoveMain directly support Mframe/Sframe/state, L2 skip, and named Umb/Tow/Fan/Ring col/dis semantics.",
+    "stage_variant": "Bonus 5-6 has a direct Xbox/PS3 fast-destruction branch keyed to category 5 and state pair 5/6; normal 5-3 does not use that special case.",
+    "route_clock": "All five builds write Ultimate UFO Mframe to the active fld015 route frame.",
+    "camera": "cam01 is a temporary PA animation; later procedural camera uses the current field orientation/FieldPos. Normal 5-3 preset-4 plus late fld015 gives rear-follow base geometry."
+  },
+  "semantic_boundaries": [
+    "Umb/Tow/Fan/Ring gameplay-role expansions and state-10/state-11/state-12 visible events are project-owner prototype-footage observations; executable evidence independently proves the HUD labels/fields and timing table.",
+    "rear-follow geometry is strong executable/asset evidence, not an exhaustive proof that no non-DAT external camera preset write occurs during the fight.",
+    "cam02 support remains executable-proven but a retail activation callsite selecting it remains unproven."
+  ]
+}

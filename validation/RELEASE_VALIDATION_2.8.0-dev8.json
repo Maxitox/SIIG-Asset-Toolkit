@@ -1,0 +1,49 @@
+{
+  "format": "SIIG_RELEASE_VALIDATION",
+  "release": "2.8.0-dev8",
+  "date": "2026-09-06",
+  "status": "development-pass",
+  "selftest": {
+    "passed": 35,
+    "failed": 0,
+    "ok": true,
+    "report": "validation/SELFTEST_2.8.0-dev8.json"
+  },
+  "inherited_release_gate": {
+    "from": "2.8.0-dev7",
+    "report": "validation/RELEASE_VALIDATION_2.8.0-dev7.json",
+    "note": "Dev8 adds cross-build PA-route activation research helpers/tables/CLI/tests/docs. Direct package extraction, SDAT/audio, route/camera math, runtime-correct GMX animation, animated camera/field exporters, viewers, and prior real-package gates remain inherited from frozen validated checkpoints."
+  },
+  "dev8_pa_route_validation": {
+    "status": "pass",
+    "report": "validation/PA_ROUTE_VALIDATION_2.8.0-dev8.json",
+    "cross_builds": 5,
+    "retail_dat_files": 76,
+    "dat_parse_failures": 0,
+    "special_boss_occurrences": 6,
+    "camera_resources": 2,
+    "boss_field_correlations": 2
+  },
+  "source_only_audit": {
+    "status": "pass",
+    "report": "validation/SOURCE_ONLY_AUDIT_2.8.0-dev8.json",
+    "game_assets": 0,
+    "external_executable_magic": 0,
+    "archive_binary_members": 0,
+    "private_runtime_paths": 0,
+    "python_bytecode": 0,
+    "third_party_binaries_bundled": false,
+    "sources_rows": 18
+  },
+  "limitations": [
+    "The final special boss-stage transition/write that supplies the reload parameter remains unresolved, so dev8 does not auto-switch procedural playback into PA-route mode.",
+    "The known retail setup directly selects camera index 0/cam01; no proven retail activation callsite selecting index 1/cam02 has been found.",
+    "Water Strider/Ultimate UFO boss-to-field mapping is strong cross-system correlation rather than one recovered literal boss->reload callsite.",
+    "Boss DAT opcode presence alone is not treated as an activation trigger.",
+    "Runtime fog-profile selection over time remains unresolved.",
+    "Camera preset word 11 remains a proven shared model/material scalar with unresolved exact virtual-setter meaning.",
+    "Instruction-level RSX/Xenos shader disassembly/translation remains future work.",
+    "The bundled Blender add-on has not been exercised inside a real Blender UI/runtime.",
+    "The project owner has not selected a license for original toolkit code."
+  ]
+}

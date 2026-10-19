@@ -1,0 +1,17 @@
+{
+  "format": "SIIG_SOURCE_ONLY_AUDIT",
+  "toolkit_version": "2.9.0-dev4",
+  "game_asset_extensions": [],
+  "external_executable_or_game_magic": [],
+  "python_bytecode": [],
+  "private_runtime_paths": [],
+  "archive_binary_members": [],
+  "sources_csv": {
+    "data_rows": 24,
+    "columns": 10,
+    "ragged_rows": 0
+  },
+  "tcrf_used": false,
+  "third_party_binaries_bundled": false,
+  "ok": true
+}

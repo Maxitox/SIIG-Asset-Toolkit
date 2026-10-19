@@ -1,0 +1,65 @@
+{
+  "format": "SIIG_RELEASE_VALIDATION",
+  "release": "2.8.0-dev16",
+  "date": "2026-09-10",
+  "status": "development-pass",
+  "selftest": {
+    "passed": 52,
+    "failed": 0,
+    "ok": true,
+    "report": "validation/SELFTEST_2.8.0-dev16.json",
+    "reported_toolkit_version": "2.8.0-dev16"
+  },
+  "inherited_release_gate": {
+    "from": "2.8.0-dev15",
+    "report": "validation/RELEASE_VALIDATION_2.8.0-dev15.json",
+    "note": "All console extraction/rendering/audio/route/camera and dev15 mobile package/format gates are inherited. dev16 adds mobile-exclusive DELETION, Survival and Chimera research without modifying sealed dev15."
+  },
+  "dev16_mobile_exclusives_validation": {
+    "status": "pass",
+    "report": "validation/MOBILE_EXCLUSIVES_DEV16.json",
+    "deletion_v2_bosses": 6,
+    "survival_graph_records": 36,
+    "survival_terminal_endings": 8,
+    "chimera_stage_files": 6,
+    "chimera_opcode_names": [
+      "KING_FOSSIL",
+      "TWILIGHT_MIRAGE",
+      "APARTHEAD"
+    ],
+    "android_level9_stub_maps": 6,
+    "level9_split_resolved": true
+  },
+  "source_only_audit": {
+    "status": "pass",
+    "report": "validation/SOURCE_ONLY_AUDIT_2.8.0-dev16.json",
+    "game_assets": 0,
+    "external_executable_magic": 0,
+    "archive_binary_members": 0,
+    "private_runtime_paths": 0,
+    "python_bytecode": 0,
+    "third_party_binaries_bundled": false,
+    "sources_rows": 24
+  },
+  "version_consistency": {
+    "VERSION.txt": "2.8.0-dev16",
+    "cli_toolkit_version": "2.8.0-dev16"
+  },
+  "fresh_package": {
+    "status": "pass",
+    "candidate_manifest_entries_verified": 231,
+    "candidate_source_only_audit": "pass",
+    "candidate_selftest_passed": 52,
+    "candidate_selftest_failed": 0,
+    "candidate_version_reported": "2.8.0-dev16",
+    "note": "Final package is rebuilt deterministically after recording these candidate results and is revalidated separately before publication."
+  },
+  "limitations": [
+    "The supplied iOS 4.1.0 IPA and Android 1.0.4 APK have modified distribution provenance and remain research copies rather than pristine store packages.",
+    "The exact meaning of the six Survival status bytes used by survivalStageConvertTable remains unresolved.",
+    "The exact reason Android Level-9 placeholder scripts use one V2 boss opcode each remains unresolved.",
+    "Detailed per-attack timing/damage/HP differences for all six V2 bosses remain partially traced.",
+    "The cause of the exact 2x console generator MAP cell capacity relative to iOS remains unresolved.",
+    "Existing console limitations on shader ISA translation, Blender UI/runtime validation, and project-owner license selection remain."
+  ]
+}

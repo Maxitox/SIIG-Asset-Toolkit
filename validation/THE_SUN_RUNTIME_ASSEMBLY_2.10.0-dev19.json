@@ -1,0 +1,110 @@
+{
+  "format": "SIIG_THE_SUN_RUNTIME_ASSEMBLY_VALIDATION",
+  "release": "2.10.0-dev19",
+  "status": "pass",
+  "retail": {
+    "body_runtime_type": "0x47",
+    "body_model": "bos_002.gmx",
+    "body_controller": "Function_8212B638",
+    "body_update": "Function_8212B760",
+    "aux_controller_runtime_type": "0x48",
+    "aux_setup": "Function_8212BB58",
+    "aux_update": "Function_8212BBF0",
+    "wave_constructor": "Function_821B22C0",
+    "move_the_sun": "Function_8223AEC0",
+    "models": {
+      "bos_002.gmx": {
+        "bytes": 78016,
+        "sha256": "13f595fd6a89bb0efb056d91594a7342bf4ff8f551bc2d152bdb7cb223128fba"
+      },
+      "bos_002b.gmx": {
+        "bytes": 4992,
+        "sha256": "6d3bd2fe8a1455ac75544af3fc354f0e09a8a74946d9e286a8e26c7dba241455"
+      }
+    },
+    "body": {
+      "meshes": 8,
+      "bones": 9,
+      "motions": 6,
+      "animations": 6,
+      "track_targets": [
+        "c1_E",
+        "d1_E",
+        "d2_E",
+        "c1_F",
+        "d1_F",
+        "d2_F"
+      ],
+      "logical_samples": 41,
+      "extended_pose_sample": 40
+    },
+    "wave_tile": {
+      "meshes": 2,
+      "bones": 3,
+      "motions": 0,
+      "animations": 0
+    }
+  },
+  "long_wave": {
+    "groups": 4,
+    "segments_per_group": 12,
+    "active_segments_full_ramp": 48,
+    "allocation_capacity": 48,
+    "x_centers": [
+      69.0,
+      165.0,
+      261.0,
+      357.0
+    ],
+    "z_centers": [
+      176.0,
+      178.0,
+      180.0,
+      182.0,
+      184.0,
+      186.0,
+      188.0,
+      190.0,
+      192.0,
+      194.0,
+      196.0,
+      198.0
+    ],
+    "start_fixed": "0xB000",
+    "length_fixed": "0x1800",
+    "count_formula": "positive length >> 9",
+    "placement_formula": "X=(x0+span/2)/256; Y=0; Z=start/256+2*i"
+  },
+  "catalogs": {
+    "the_sun_native_body": {
+      "instances": 1,
+      "meshes": 8,
+      "nodes": 10,
+      "animations": 6
+    },
+    "the_sun_extended_arms": {
+      "instances": 1,
+      "meshes": 8,
+      "nodes": 10,
+      "animations": 0
+    },
+    "the_sun_long_wave": {
+      "instances": 48,
+      "meshes": 96,
+      "nodes": 192,
+      "animations": 0
+    }
+  },
+  "evidence_boundary": "extended-arm sample 40 and 48-segment full-ramp wave are independently proven; exact synchronization is unproven and presets remain separate",
+  "june10_crosscheck": {
+    "allocator": "Function_82146B90",
+    "updater": "Function_82146C28",
+    "move_the_sun": "0x82262390",
+    "b2_count": 8,
+    "b3_capacity": 48,
+    "same_four_group_formula": true
+  },
+  "gui_version": "0.30.0-dev19",
+  "selftest_expected": 101,
+  "ok": true
+}

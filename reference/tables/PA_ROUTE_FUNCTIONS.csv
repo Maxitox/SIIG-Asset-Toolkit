@@ -1,0 +1,6 @@
+﻿build,set_pa_route,activation_wrapper,stage_setup,debug_name,camera_format
+ps3_retail,0x0015AEBC,0x001580DC,0x00161134,Route::SetPaRoute (name recovered from Xbox prototypes),cam%02d_op1.gmx
+xbox360_retail,0x820EAFC8,0x820EABE8,0x820EFA98,Route::SetPaRoute (name recovered from Xbox prototypes),cam%02d_op1.gmx
+xbox360_june10,0x820FDE88,0x820FDAE0,0x82104860,Route::SetPaRoute,cam%02d_op1.gmx
+xbox360_may11,0x820FCD50,0x820FC9A8,0x82101C90,Route::SetPaRoute,cam%02d_op1.gmx
+xbox360_may9,0x820FCB28,0x820FC718,corresponding setup does not activate PA-route,Route::SetPaRoute,cam%02d_op1.gmx

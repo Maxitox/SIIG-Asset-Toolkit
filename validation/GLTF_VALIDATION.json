@@ -1,0 +1,22 @@
+{
+  "version": "1.5",
+  "corpus": "all supplied 3ddata GMX resources",
+  "gmx_files": 486,
+  "meshes": 1938,
+  "primitives": 1938,
+  "hierarchy_nodes": 3298,
+  "materials": 776,
+  "animation_tracks": 913,
+  "conversion_failures": 0,
+  "hierarchy_cycles": 0,
+  "unreachable_nodes": 0,
+  "missing_texture_references": 0,
+  "shared_texture": "ptn_001.dds -> _textures/ptn_001.png",
+  "independent_reader_samples": [
+    "route/fld014.gltf",
+    "wall/b028.gltf",
+    "map(1)/pp_012.gltf",
+    "enemy/bos_017j.gltf",
+    "player/plr_003.gltf"
+  ]
+}

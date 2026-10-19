@@ -1,0 +1,58 @@
+{
+  "format": "SIIG_GMX_RIGID_SKIN_COMPATIBILITY_VALIDATION",
+  "toolkit_version": "2.9.0-dev7",
+  "status": "pass",
+  "selftest_case": "GMX rigid glTF skin compatibility",
+  "dependency_free_detail": "single-joint glTF JOINTS_0/WEIGHTS_0 -> rigid BONE->MESH collapse; blended skinning rejected",
+  "native_evidence_model": "rigid BONE scene-node attachment; no confirmed per-vertex weight stream",
+  "accepted_gltf": {
+    "skins": true,
+    "JOINTS_0": "UNSIGNED_BYTE/UNSIGNED_SHORT VEC4",
+    "WEIGHTS_0": "FLOAT or normalized unsigned VEC4",
+    "rule": "every vertex must have exactly one active unit weight and all vertices must resolve to the same skin joint",
+    "inverse_bind_matrix": "selected joint must be identity/default in dev7"
+  },
+  "native_mapping": {
+    "joint_nodes": "synthesized/resolved as BONE records",
+    "mesh_binding": "selected joint BONE receives native MESH and MTRL attachments",
+    "hierarchy": "nearest ancestor with a native BONE identity; non-bone armature/container nodes may be skipped",
+    "mesh_skin_index_default": 65535,
+    "joint_weight_array_synthesis": false
+  },
+  "rejections": [
+    "blended/multi-joint vertex weights",
+    "different rigid joints across vertices",
+    "JOINTS_1/WEIGHTS_1",
+    "non-identity selected inverse-bind matrix"
+  ],
+  "external_corpus_crosscheck": {
+    "inputs": "user-supplied retail player.bin and enemy.bin; proprietary files excluded from release",
+    "player": {
+      "gmx_files": 13,
+      "mesh_records": 35,
+      "skin_index_ffff": 35
+    },
+    "enemy": {
+      "gmx_files": 137,
+      "mesh_records": 866,
+      "skin_index_ffff": 866
+    },
+    "combined": {
+      "gmx_files": 150,
+      "mesh_records": 901,
+      "skin_index_ffff": 901,
+      "other_skin_index": 0
+    },
+    "vertex_semantics_every_mesh": [
+      "IN.position",
+      "IN.normal",
+      "IN.texuv",
+      "IN.color",
+      "uint16 index array"
+    ],
+    "joint_weight_semantics_observed": false,
+    "prior_inherited_evidence": "Earlier 486-GMX exporter research reported no per-vertex skin weights and rigid scene-node geometry attachment."
+  },
+  "evidence_boundary": "MESH.skin_index remains semantically unresolved beyond the repeated corpus-observed 0xFFFF no-vertex-skin value; dev7 does not reinterpret it as a glTF skin index.",
+  "runtime_validation": "structural/compiler regression plus retail corpus observation; arbitrary new scenes still require emulator/hardware validation"
+}

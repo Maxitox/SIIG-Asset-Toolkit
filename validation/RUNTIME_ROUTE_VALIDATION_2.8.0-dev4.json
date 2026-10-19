@@ -1,0 +1,46 @@
+{
+  "format": "SIIG_RUNTIME_ROUTE_VALIDATION",
+  "release": "2.8.0-dev4",
+  "date": "2026-09-05",
+  "real_route_runtime_stress": {
+    "files": 47,
+    "resampleable": 46,
+    "skipped": 1,
+    "nonloop_steps": 1472,
+    "linear_rebuilds": 46,
+    "curve_initial": 0,
+    "loop_smoke_files": 46,
+    "errors": []
+  },
+  "dat_coupled_examples": {
+    "Xmap2_1__level2_stage1": {
+      "stage3d": "Xmap2_1.bin",
+      "dat": "level2_stage1.dat",
+      "frame_multiplier": 2,
+      "initial_spacing": 1.0,
+      "updates_emitted": 100000,
+      "termination": "route_finished",
+      "segment_builds": 125,
+      "applied_scroll02_events": 0,
+      "linear_spacing_rebuilds": 0,
+      "note": "filename-correspondence validation candidate; not asserted as part of a complete authoritative route-to-DAT map"
+    },
+    "Xmap3_1__level3_stage1": {
+      "stage3d": "Xmap3_1.bin",
+      "dat": "level3_stage1.dat",
+      "frame_multiplier": 2,
+      "initial_spacing": 0.5,
+      "updates_emitted": 265020,
+      "termination": "route_finished",
+      "segment_builds": 517,
+      "applied_scroll02_events": 7,
+      "linear_spacing_rebuilds": 7,
+      "note": "filename-correspondence validation candidate; not asserted as part of a complete authoritative route-to-DAT map"
+    }
+  },
+  "scope_notes": [
+    "All stress inputs are supplied retail stage3d route tables; aggregate counts only are retained in the source release.",
+    "The two DAT examples validate scheduler/state-machine coupling using filename-correspondence candidates; they do not prove a global route-to-DAT pairing table.",
+    "Route object activation frame is not inferred; examples use start authored frame 0."
+  ]
+}

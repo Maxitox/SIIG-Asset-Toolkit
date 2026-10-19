@@ -1,0 +1,122 @@
+{
+  "format": "SIIG_THE_SUN_CONTROLLER_TIMING_VALIDATION",
+  "release": "2.10.0-dev24",
+  "status": "pass",
+  "runtime_type": "0x47",
+  "model": "bos_002.gmx",
+  "controller": "Function_8212BA68",
+  "visual_update": "Function_8212BE00",
+  "aux_update": "Function_8212BBF0",
+  "mover": "Function_8223AEC0",
+  "opening_state0": {
+    "body_frame": 0,
+    "barrier_length_start_fixed": 0,
+    "barrier_length_end_fixed": 6144,
+    "barrier_start_initial_fixed": 51200,
+    "barrier_step_fixed_per_update": 512,
+    "updates_to_full": 12,
+    "full_segments_per_group": 12,
+    "full_segments_total": 48,
+    "synchronization": "proven: body remains clip 0/frame 0 for the entire root-state-0 barrier ramp"
+  },
+  "arm_extension_state9": {
+    "progress_start_fixed": 0,
+    "progress_end_fixed": 92416,
+    "progress_step_fixed_per_update": 1536,
+    "updates_to_full": 61,
+    "clip": 0,
+    "clip_end_frame": 40,
+    "frame_rule": "truncate((progress/0x16900)*clip0_end_frame)"
+  },
+  "arm_hold_state10": {
+    "progress_fixed": 92416,
+    "body_frame": 40,
+    "hold_updates": 60,
+    "timer_rule": "frame_multiplier*0x708/0x1E"
+  },
+  "arm_retract_state11": {
+    "progress_start_fixed": 92416,
+    "progress_end_fixed": 0,
+    "progress_step_fixed_per_update": -1536,
+    "updates_to_zero": 61,
+    "frame_rule": "truncate((progress/0x16900)*clip0_end_frame)"
+  },
+  "extension_samples": [
+    {
+      "update": 0,
+      "progress_fixed": 0,
+      "body_frame": 0
+    },
+    {
+      "update": 1,
+      "progress_fixed": 1536,
+      "body_frame": 0
+    },
+    {
+      "update": 20,
+      "progress_fixed": 30720,
+      "body_frame": 13
+    },
+    {
+      "update": 30,
+      "progress_fixed": 46080,
+      "body_frame": 19
+    },
+    {
+      "update": 60,
+      "progress_fixed": 92160,
+      "body_frame": 39
+    },
+    {
+      "update": 61,
+      "progress_fixed": 92416,
+      "body_frame": 40
+    }
+  ],
+  "retraction_samples": [
+    {
+      "update": 0,
+      "progress_fixed": 92416,
+      "body_frame": 40
+    },
+    {
+      "update": 1,
+      "progress_fixed": 90880,
+      "body_frame": 39
+    },
+    {
+      "update": 20,
+      "progress_fixed": 61696,
+      "body_frame": 26
+    },
+    {
+      "update": 30,
+      "progress_fixed": 46336,
+      "body_frame": 20
+    },
+    {
+      "update": 60,
+      "progress_fixed": 256,
+      "body_frame": 0
+    },
+    {
+      "update": 61,
+      "progress_fixed": 0,
+      "body_frame": 0
+    }
+  ],
+  "correction": "Supersedes the dev19 synchronization boundary: the 48-slot B3 field reaches full during root state 0 while the body is explicitly forced to animation frame 0. Sample/frame 40 belongs to the later state-9 extension and state-10 hold, not to the opening barrier ramp.",
+  "cross_build_june10": {
+    "visual_update": "Function_82146E38",
+    "aux_update": "Function_82146C28",
+    "mover": "0x82262390",
+    "same_0x16900_progress": true,
+    "same_0x600_progress_step": true,
+    "same_states_9_10_11_frame_rule": true,
+    "same_four_group_barrier_formula": true
+  },
+  "boundary": "The runtime timing law and opening body/barrier synchronization are exact. Individual B3 damage/destruction history is live gameplay state and is not inferred by this sampler.",
+  "catalog": "the_sun_opening_full_barriers",
+  "gui_version": "0.41.0-dev24",
+  "selftest_gate": "154/154 after current manifest regeneration"
+}

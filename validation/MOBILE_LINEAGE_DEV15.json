@@ -1,0 +1,120 @@
+{
+  "format": "SIIG_MOBILE_LINEAGE_VALIDATION",
+  "release": "2.8.0-dev15",
+  "date": "2026-09-10",
+  "status": "pass",
+  "inputs": {
+    "ios": {
+      "declared_version": "4.1.0",
+      "sha256": "3acac159bdf2e47e36c35b544070b3f760d4c0eb4a62ed39dae684a9e77b1ac8",
+      "code_resources": "514/514",
+      "wrapper": "modified/decrypted research copy"
+    },
+    "android": {
+      "declared_version": "1.0.4",
+      "version_code": 6,
+      "sha256": "ce233e2bb3b038f66bcfc8a98d5e687b12dad834d8ca255de5bf70c9e0f33e80",
+      "manifest_hashes": "249/249",
+      "certificate_sha1": "61ed377e85d386a8dfee6b864bd85b0bfaa5af81",
+      "wrapper": "modified/resigned research copy"
+    }
+  },
+  "corpus": {
+    "ios_authored_dat": 78,
+    "ios_generator_dat": 581,
+    "android_dat": 78,
+    "dat_parse_failures": 0,
+    "ios_authored_map": 83,
+    "ios_generator_map": 330,
+    "android_map": 80,
+    "map_parse_failures": 0,
+    "shared_authored_dat_map": 158,
+    "byte_identical_shared": 146,
+    "different_shared": 12
+  },
+  "generator": {
+    "ios_maps": 330,
+    "ios_nonempty_layers": 645,
+    "ios_cells": 121472,
+    "ios_nonzero_cells": 38253,
+    "console_maps": 330,
+    "console_nonempty_layers": 645,
+    "console_cells": 242944,
+    "console_capacity_ratio": 2.0,
+    "simple_duplication_claimed": false
+  },
+  "android_level9": {
+    "slots": 6,
+    "map_placeholder_bytes": 32,
+    "terminal_opcodes": [
+      "0x004C",
+      "0x004D",
+      "0x004E",
+      "0x004F",
+      "0x0050",
+      "0x0051"
+    ],
+    "opcode_names_proven": true,
+    "terminal_opcode_names": [
+      "THE_MOON_V2",
+      "THE_SUN_V2",
+      "GIGANTIC_UFO_V2",
+      "LADYBUG_V2",
+      "MANDALA_V2",
+      "UNKNOWN_V2"
+    ],
+    "evidence": "iOS ARMv7 analyzeScript jump table tail-calls retained set*V2 symbols"
+  },
+  "checks": [
+    {
+      "name": "TZIP zlib/bplist structure",
+      "status": "pass"
+    },
+    {
+      "name": "Shared DAT parser mobile corpus",
+      "status": "pass"
+    },
+    {
+      "name": "Mobile MAP little-endian corpus",
+      "status": "pass"
+    },
+    {
+      "name": "iOS CodeResources covered files",
+      "status": "pass"
+    },
+    {
+      "name": "Android MANIFEST.MF covered files",
+      "status": "pass"
+    },
+    {
+      "name": "DEX stored SHA-1",
+      "status": "pass"
+    },
+    {
+      "name": "DEX stored Adler-32",
+      "status": "pass"
+    },
+    {
+      "name": "iOS Mach-O cryptid inspection",
+      "status": "pass"
+    },
+    {
+      "name": "iOS/Android authored-stage compare",
+      "status": "pass"
+    },
+    {
+      "name": "Generator corpus count lineage",
+      "status": "pass"
+    },
+    {
+      "name": "Level-9 0x4C..0x51 iOS handler names",
+      "status": "pass"
+    }
+  ],
+  "limitations": [
+    "iOS 4.1.0 supplied package is not a pristine App Store wrapper.",
+    "Android 1.0.4 supplied package is not trusted as an original Play-signed wrapper.",
+    "Reason for the exact 2x console generator MAP capacity remains unresolved.",
+    "Exact gameplay differences between original 0x46..0x4B bosses and V2 0x4C..0x51 handlers remain to be traced."
+  ]
+}

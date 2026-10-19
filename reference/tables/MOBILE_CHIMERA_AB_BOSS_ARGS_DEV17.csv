@@ -1,0 +1,7 @@
+chimera_stage,script,boss,opcode,args_signed
+C-1A,level9_stage1EX.dat,KING_FOSSIL,0x52,"0,2000,1,1000,1000,150,48,6"
+C-1B,level9_stage4EX.dat,KING_FOSSIL,0x52,"0,2000,1,1000,1000,150,96,3"
+C-2A,level9_stage2EX.dat,TWILIGHT_MIRAGE,0x53,"0,4000,1,1000,5"
+C-2B,level9_stage5EX.dat,TWILIGHT_MIRAGE,0x53,"0,4000,1,1000,5"
+C-3A,level9_stage3EX.dat,APARTHEAD,0x54,"0,10000,1,60,120,60,60,60,12"
+C-3B,level9_stage6EX.dat,APARTHEAD,0x54,"0,10000,1,60,120,60,60,60,12"

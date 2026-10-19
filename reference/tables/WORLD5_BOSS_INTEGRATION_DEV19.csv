@@ -1,0 +1,7 @@
+opcode,script_name,normal_stage,may9,may11,june10,retail,note
+0xA6,WATER_STRIDER,5-1,trial 5-1 only; absent from normal 5-1,normal 5-1 integrated,normal 5-1 integrated,normal 5-1 integrated,
+0xA7,,5-2,boss slot present in normal 5-2,boss slot present,boss slot present,boss slot present,gameplay identification CRAB; machine-readable opcode name intentionally unresolved pending explicit code connection
+0xA8,ULTIMATE_UFO,5-3,normal 5-3 integrated,normal 5-3 integrated,normal 5-3 integrated,normal 5-3 integrated,
+0xA9,SQUID,5-4,not normal-stage content,not normal-stage content,first preserved normal-stage integration,normal 5-4 integrated,
+0xAA,VERTEBRATE,5-5,not normal-stage content,not normal-stage content,first preserved normal-stage integration,normal 5-5 integrated,
+0xAB,NO_NAME,5-6,hidden 3Db_026.dat generator test only,hidden 3Db_026.dat generator test only,first preserved normal-stage integration,normal 5-6 integrated,

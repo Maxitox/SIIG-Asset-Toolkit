@@ -1,0 +1,7 @@
+{
+  "schema": "SIIG_XWB_SCAN_SAMPLE",
+  "version": 1,
+  "status": "placeholder_without_game_data",
+  "note": "No game-derived XWB sample is bundled in the source-only release. Run `python siig_toolkit.py scan <bank.xwb>` to produce a local scan.",
+  "entries": []
+}

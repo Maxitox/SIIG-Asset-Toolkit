@@ -1,0 +1,37 @@
+{
+  "format": "SIIG_ASSET_VIEWER_VALIDATION",
+  "viewer_version": "2.0.0",
+  "date": "2026-08-28",
+  "status": "pass",
+  "corpus": {
+    "files": 1759,
+    "source_bytes": 300776833,
+    "previewable_assets": 1016,
+    "thumbnails": 1016,
+    "missing_previewable_thumbnails": 0
+  },
+  "layout": {
+    "html_bytes": 12022,
+    "data_bytes": 884237,
+    "payload_bytes": 30238740,
+    "thumbnail_bytes": 4205223,
+    "viewer_total_bytes": 35200039,
+    "payload_shards": 32,
+    "base64_media_embedded": false
+  },
+  "comparison_to_v2_4_same_corpus": {
+    "old_single_html_bytes": 18207366,
+    "new_html_bytes": 12022,
+    "html_reduction_percent": 99.934
+  },
+  "reference_validation": {
+    "checked_entries": 1759,
+    "missing_files": [],
+    "missing_payload_keys": []
+  },
+  "notes": [
+    "The original-file, thumbnail, audio/image preview, and payload URLs were resolved from the HTML location and checked on disk.",
+    "JavaScript syntax is checked separately with Node.js.",
+    "Interactive browser automation was unavailable in the build environment; normal desktop browser testing remains recommended."
+  ]
+}

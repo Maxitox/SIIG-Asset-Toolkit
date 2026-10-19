@@ -1,0 +1,72 @@
+{
+  "format": "SIIG_VISUALIZER_UI_RUNTIME_OVERHAUL_VALIDATION",
+  "release": "2.10.0-dev24",
+  "checkpoint": "WIP191",
+  "status": "pass",
+  "visualizer_dataset_version": 22,
+  "ui": {
+    "viewport_first": true,
+    "in_game_check_mode_inspired": true,
+    "tabs": ["PRESETS", "CHECK MODE", "ADVANCED"],
+    "always_visible_stage_boss_selector": true,
+    "stage_boss_selection_auto_applies": true,
+    "stage_boss_selection_resets_feedback": true,
+    "menu_toggle_key": "M",
+    "fullscreen_api": true,
+    "fullscreen_key": "F",
+    "native_keys_preserved": {"X": "reset feedback", "Y": "toggle debug text"}
+  },
+  "position": {
+    "coordinate_axes": "+X right / +Y up",
+    "logical_to_target_scale": 1.5,
+    "logical_reference_height": 480,
+    "target_height": 720,
+    "bridge": "target_x=640+logical_x*1.5; target_y=360-logical_y*1.5",
+    "parameter_4_crosscheck": {
+      "authored_position": [0, 256],
+      "predicted_target_center": [640, -24],
+      "reference": "project-owner retail-hardware stage 4-4 capture; concentric feedback center is at/above top edge"
+    },
+    "position_free_sweep_crosscheck": {
+      "visible_debug_value": [345, 195],
+      "predicted_target_center": [1157.5, 67.5],
+      "predicted_1920x1080_capture_center": [1736.25, 101.25],
+      "observation": "source visibly clipped against top-right in June 10 Position Free sweep"
+    },
+    "fixed_target_centers": {
+      "1": [-32, -102], "2": [640, -102], "3": [1312, -102],
+      "4": [-32, 360], "5": [640, 360], "6": [1312, 360],
+      "7": [-32, 822], "8": [640, 822], "9": [1312, 822]
+    },
+    "exact_upstream_executable_scale_call_isolated": false,
+    "evidence_grade": "hardware-derived target-space correction"
+  },
+  "presentation": {
+    "recursive_feedback_sampler_changed": false,
+    "recursive_feedback_sampler": "point",
+    "default_mode": "hardware-like smooth resolve",
+    "resolve_intermediate": [640, 360],
+    "resolve_filter": "browser high-quality smoothing",
+    "feeds_back_into_recursive_surfaces": false,
+    "raw_recovered_rgb_mode": true,
+    "default_softness_px": 0.8,
+    "default_base_intensity": 0.9,
+    "default_bloom": 0.46
+  },
+  "retail_derived_generation_smoke": {
+    "parameter_sets": 49,
+    "sequence_sets": 57,
+    "timelines": 30,
+    "timeline_commands": 243,
+    "timeline_presets": 39,
+    "shape_images": 10,
+    "generated_javascript_node_syntax": "pass",
+    "retail_payload_bundled": false
+  },
+  "boundaries_retained": [
+    "exact upstream executable logical-to-target scale call",
+    "exact Xenos final-composite/render-target alpha equivalence",
+    "browser/native XAudio2 meter query phase alignment",
+    "browser display resolve is presentation-only, not claimed native sampler state"
+  ]
+}

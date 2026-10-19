@@ -1,0 +1,7 @@
+{
+  "format": "SIIG_VERSIONING_POLICY_VALIDATION",
+  "release": "2.10.0-dev3",
+  "previous": "2.10.0-dev2",
+  "status": "pass",
+  "note": "Dev3 completes the evidence-backed runtime placement subtarget introduced by the sealed 2.10.0-dev2 multi-GMX assembly layer; no new incompatible native format contract is introduced."
+}

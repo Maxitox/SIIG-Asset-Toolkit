@@ -1,0 +1,166 @@
+{
+  "format": "SIIG_RELEASE_VALIDATION",
+  "release": "2.10.0-dev5",
+  "date": "2026-09-11",
+  "status": "development-pass",
+  "selftest": {
+    "passed": 87,
+    "failed": 0,
+    "ok": true,
+    "report": "validation/SELFTEST_2.10.0-dev5.json",
+    "reported_toolkit_version": "2.10.0-dev5"
+  },
+  "inherited_release_gate": {
+    "from": "2.10.0-dev4",
+    "report": "validation/RELEASE_VALIDATION_2.10.0-dev4.json",
+    "note": "All sealed dev4 beginner-GUI, posed CRAB/PROGRESSIVE UFO assembly and inherited native-format/mod-workspace/source-only gates remain inherited. Dev5 refines CRAB to a landed default, validates the native PROGRESSIVE barrier tilt, resolves HORNET C1, and adds the HORNET full-armor assembly."
+  },
+  "hornet_runtime_assembly": {
+    "status": "pass",
+    "report": "validation/HORNET_RUNTIME_ASSEMBLY_2.10.0-dev5.json",
+    "visible_instances": 126,
+    "root": "1x 0xA1 bos_008.gmx @ sample 0",
+    "armor": "125x 0xBF bos_008a.gmx",
+    "formation": "C1 sample-0 5x5x5 lattice",
+    "formation_controller": "0xC1 bos_008c.gmx; meshless 126-track rig",
+    "dormant_pool": "125x 0xC0 bos_008b.gmx",
+    "crosscheck": [
+      "June 10 Xbox",
+      "retail Xbox",
+      "retail PS3"
+    ],
+    "visual_guessing": false
+  },
+  "crab_runtime_assembly": {
+    "status": "pass",
+    "report": "validation/CRAB_RUNTIME_ASSEMBLY_2.10.0-dev5.json",
+    "default_catalog": "crab",
+    "default_root_pose_sample": 1,
+    "default_state": "landed/combat-ready",
+    "preserved_catalog": "crab_first_visible",
+    "preserved_root_pose_sample": 167,
+    "crosscheck": [
+      "June 10 Xbox",
+      "retail Xbox",
+      "retail PS3"
+    ],
+    "arbitrary_recentering": false
+  },
+  "progressive_ufo_barrier_orientation": {
+    "status": "pass",
+    "report": "validation/PROGRESSIVE_UFO_BARRIER_ORIENTATION_2.10.0-dev5.json",
+    "outer_c3_rotation": [
+      0,
+      0,
+      0
+    ],
+    "internal_bind_rotation_z_degrees": 190.794265116,
+    "interpretation": "native authored barrier tilt; not corrected by catalog"
+  },
+  "gmx_assembly_export": {
+    "status": "pass",
+    "report": "validation/GMX_ASSEMBLY_EXPORT_2.10.0-dev5.json",
+    "pose_sample_supported": true,
+    "posed_instance_animation_suppression": true,
+    "catalogs": [
+      "progressive_ufo",
+      "crab",
+      "crab_first_visible",
+      "hornet_full_armor"
+    ],
+    "direct_catalog_commands": [
+      "gmx-assemble-catalog progressive_ufo",
+      "gmx-assemble-catalog crab",
+      "gmx-assemble-catalog crab_first_visible",
+      "gmx-assemble-catalog hornet_full_armor"
+    ],
+    "generic_unresolved_transform_guard": true
+  },
+  "versioning_policy": {
+    "status": "pass",
+    "report": "validation/VERSIONING_POLICY_2.10.0-dev5.json",
+    "previous": "2.10.0-dev4",
+    "current": "2.10.0-dev5"
+  },
+  "desktop_gui": {
+    "status": "pass",
+    "report": "validation/DESKTOP_GUI_2.10.0-dev5.json",
+    "gui_version": "0.16.0-dev5",
+    "tabs": [
+      "Game Rip",
+      "Mod Workspace",
+      "GMX Workbench",
+      "Utilities"
+    ],
+    "gui_modes": [
+      "simple",
+      "advanced"
+    ],
+    "default_gui_mode": "simple",
+    "hover_context_help": true,
+    "progressive_ufo_one_click_assembly": true,
+    "crab_one_click_assembly": true,
+    "hornet_one_click_assembly": true
+  },
+  "asset_functionalization": {
+    "status": "pass",
+    "report": "validation/ASSET_FUNCTIONALIZATION_2.10.0-dev5.json",
+    "known_asset_families": 14,
+    "viewable_or_exportable_families": 14,
+    "native_round_trip_families": 11,
+    "native_builder_available_families": 11,
+    "gmx_multi_file_assembly": true,
+    "completed_runtime_assembly_presets": [
+      "progressive_ufo",
+      "crab",
+      "crab_first_visible",
+      "hornet_full_armor"
+    ]
+  },
+  "source_only_audit": {
+    "status": "pass",
+    "report": "validation/SOURCE_ONLY_AUDIT_2.10.0-dev5.json",
+    "game_assets": 0,
+    "external_executable_magic": 0,
+    "archive_binary_members": 0,
+    "private_runtime_paths": 0,
+    "python_bytecode": 0,
+    "third_party_binaries_bundled": false,
+    "sources_rows": 24
+  },
+  "version_consistency": {
+    "VERSION.txt": "2.10.0-dev5",
+    "cli_toolkit_version": "2.10.0-dev5",
+    "gui_version": "0.16.0-dev5"
+  },
+  "fresh_package": {
+    "status": "pass",
+    "candidate_manifest_entries_verified": 444,
+    "candidate_manifest_missing": 0,
+    "candidate_manifest_mismatched": 0,
+    "candidate_unlisted_files": 0,
+    "candidate_source_only_audit": "pass",
+    "candidate_selftest_passed": 87,
+    "candidate_selftest_failed": 0,
+    "candidate_version_reported": "2.10.0-dev5",
+    "candidate_gui_version": "0.16.0-dev5",
+    "candidate_package_sha256": "65dcb9c798d4f6d926652d159cb20cb2c45555e554239d1e1f78933b5f40fe33",
+    "note": "Candidate was extracted fresh, verified against RELEASE_MANIFEST with no unlisted files, independently source-audited before executing package code, and then passed 87/87 selftests plus CLI/GUI version checks. Final package is rebuilt deterministically after recording this candidate evidence."
+  },
+  "limitations": [
+    "HORNET full-armor preset is the fully revealed 125-BF sample-0 lattice snapshot; the later dynamic 45-slot C0 prism attack remains a separate unresolved assembly target.",
+    "CRAB default is the executable/ANM-backed landed combat-loop sample 1; the preserved crab_first_visible preset remains the genuine airborne sample-167 intro snapshot.",
+    "PROGRESSIVE UFO preset remains the first recovered five-part runtime formation; later dynamic phase/movement formations are not collapsed into its static catalog entry.",
+    "Native SIIG coordinate scale is preserved; no speculative meters conversion or hidden display scaling is applied.",
+    "True blended/multi-joint deformation is not encoded; triangles spanning rigid joint partitions are rejected because no confirmed native per-vertex skin representation exists.",
+    "Assembly export produces a combined glTF viewing/editing scene; it does not claim the retail game stores or accepts one merged native GMX for multipart runtime entities.",
+    "Runtime acceptance of arbitrary fully original synthesized scenes remains a separate emulator/hardware gate.",
+    "Platform shader microcode compilation and remaining opaque GMX semantics remain unresolved.",
+    "Compressed/mipmapped native texture variants are not synthesized.",
+    "PS3 donor-free TEX wrapper synthesis remains structurally validated rather than hardware/emulator-proven.",
+    "The external dev25 306/306 retail GMX no-op evidence and dev7 retail skin-field evidence are inherited rather than rerun/bundled from proprietary inputs.",
+    "PS3 NPDRM/SDAT re-encryption is not implemented.",
+    "Audio replacement/rebuilding remains intentionally deferred.",
+    "Project-owner license selection remains open."
+  ]
+}

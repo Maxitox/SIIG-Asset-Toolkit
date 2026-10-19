@@ -1,0 +1,32 @@
+{
+  "format": "SIIG_MOD_WORKSPACE_SIMPLE_CLEANUP_VALIDATION",
+  "release": "2.10.0-dev24",
+  "checkpoint": "WIP185",
+  "status": "pass",
+  "gui_version": "0.46.0-dev24",
+  "localization_workspace_exports": {
+    "text.bin": [
+      "text_strings.csv"
+    ],
+    "message.bin": [
+      "message_japanese_readable.nut",
+      "message_english_readable.nut",
+      "message_french_readable.nut",
+      "message_italian_readable.nut",
+      "message_german_readable.nut",
+      "message_spanish_readable.nut"
+    ],
+    "reference_only_exports_hidden_from_workspace": true,
+    "standalone_localization_export_retains_rich_reference_outputs": true
+  },
+  "xbox_sound_workspace": {
+    "archive": "sound.bin/XACT",
+    "action": "listen_only_preview",
+    "backend_command": "mod-extract-audio",
+    "output": "view/audio/<archive-key>",
+    "stages_mod_edit": false,
+    "workspace_status_after_extraction": "untouched",
+    "native_audio_rebuild_supported": false
+  },
+  "regression": "synthetic six-language message archive exports canonical readable NUTs only; synthetic Xbox XACT sound archive is classified view-only and produces preview output without changing mod state"
+}

@@ -1,0 +1,5 @@
+state_or_event,visible_membership,topology,executable_evidence,note
+initial_combat_ring,"2x A0 bos_007 + 30x BE bos_007a","one 32-link chain; link1 head, links2-31 body, link32 tail","retail 0x82116690,0x821133A0,0x82115028/0x82113148","radius 80; 11.25-degree step"
+body_segment_destroyed,"surviving internal links BE; newly exposed ends A0","one chain becomes two chains","retail 0x82115140 -> endpoint state handlers","cut location is player-dependent; no single static preset"
+endpoint_destroyed,"surviving pieces enter reform sequence","links cleared then reformed","retail 0x82115140 -> 0x82113F48","boss becomes temporarily invulnerable per gameplay observation; runtime chooses reform motion"
+final_phase,"all surviving links A0","all links detached / independent","retail 0x821154A0 threshold + 0x821140C8/0x82114200","begins at five or fewer survivors; movement is runtime-randomized"

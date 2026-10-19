@@ -1,0 +1,55 @@
+{
+  "format": "SIIG_RELEASE_VALIDATION",
+  "release": "2.8.0-dev12",
+  "date": "2026-09-07",
+  "status": "development-pass",
+  "selftest": {
+    "passed": 43,
+    "failed": 0,
+    "ok": true,
+    "report": "validation/SELFTEST_2.8.0-dev12.json",
+    "reported_toolkit_version": "2.8.0-dev12"
+  },
+  "inherited_release_gate": {
+    "from": "2.8.0-dev11",
+    "report": "validation/RELEASE_VALIDATION_2.8.0-dev11.json",
+    "note": "All earlier extraction/rendering/audio/container/runtime gates are inherited. Dev12 explicitly supersedes dev11's erroneous May late-model name while preserving dev11 as a historical checkpoint."
+  },
+  "dev12_ultimate_ufo_validation": {
+    "status": "pass",
+    "report": "validation/ULTIMATE_UFO_DEV12_VALIDATION.json",
+    "checks_passed": 29,
+    "checks_failed": 0,
+    "prototype_registry_corrected": true,
+    "normal_5_3_bonus_5_6_split": true,
+    "bonus_5_6_xbox_ps3_fast_destroy": true,
+    "mframe_to_fld015_all_five_builds": true,
+    "pa_animated_to_procedural_lifecycle": true,
+    "late_camera_classification": "rear_follow_geometry",
+    "ps3_direct_preset_writer_scan": "five direct callers; none UltimateUfo"
+  },
+  "source_only_audit": {
+    "status": "pass",
+    "report": "validation/SOURCE_ONLY_AUDIT_2.8.0-dev12.json",
+    "game_assets": 0,
+    "external_executable_magic": 0,
+    "archive_binary_members": 0,
+    "private_runtime_paths": 0,
+    "python_bytecode": 0,
+    "third_party_binaries_bundled": false,
+    "sources_rows": 18
+  },
+  "version_consistency": {
+    "VERSION.txt": "2.8.0-dev12",
+    "cli_toolkit_version": "2.8.0-dev12",
+    "fixed_from_prior_drift": true
+  },
+  "limitations": [
+    "Project-owner May 9 footage supplies visible gameplay-role labels (including state-10 core destruction and state-11 airlock escape); executable evidence independently proves the HUD labels/fields, phase bytes, and timing.",
+    "Normal 5-3 late preset-4 plus fld015 is strong rear-follow geometry. No direct PS3 camera-preset setter caller is UltimateUfo, but indirect/function-pointer or otherwise unresolved external preset writes are not exhaustively ruled out.",
+    "The known retail PA-route setup directly selects camera index 0/cam01; no proven retail activation callsite selecting index 1/cam02 has been found.",
+    "The project-owner state-3 pause observation near Mframe 3120 differs from literal next phase trigger 3123; update/display ordering remains unresolved.",
+    "Runtime fog-profile selection over time and camera preset word 11 exact semantics remain unresolved.",
+    "Instruction-level shader translation, real Blender UI/runtime validation, and project-owner license selection remain future work."
+  ]
+}

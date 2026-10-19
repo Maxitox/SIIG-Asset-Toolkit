@@ -1,0 +1,10 @@
+{
+  "format": "SIIG_VERSIONING_POLICY_VALIDATION",
+  "release": "2.10.0-dev14",
+  "status": "pass",
+  "previous": "2.10.0-dev13",
+  "toolkit_version": "2.10.0-dev14",
+  "gui_version": "0.25.0-dev14",
+  "reason": "incremental 2.10 development checkpoint: executable/real-GMX-backed CENTIPEDE initial-combat ring plus evidence-bounded split/reform/final-phase topology; no incompatible public format break",
+  "ok": true
+}

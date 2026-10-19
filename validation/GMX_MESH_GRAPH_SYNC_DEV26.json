@@ -1,0 +1,25 @@
+{
+  "format": "SIIG_GMX_MESH_GRAPH_SYNC_VALIDATION",
+  "toolkit_target": "2.8.0-dev26",
+  "status": "pass",
+  "mode": "opt-in --sync-mesh-graph; legacy/template-preserving import remains default",
+  "regression": {
+    "sync_no_edit": "byte-identical synthetic native GMX",
+    "create_mesh": "new MESH identity 7 plus fresh owned ARRY identities; original MESH retained",
+    "replace_attached_mesh": "MESH 0 removed, new MESH 9 created, BONE 0 mesh attachment repaired to 9",
+    "post_build_guards": [
+      "duplicate ARRY identity",
+      "duplicate MESH identity",
+      "dangling MESH->ARRY",
+      "MESH/index ARRY count mismatch",
+      "dangling BONE->MESH"
+    ]
+  },
+  "inherited_dev25_external_evidence": {
+    "retail_mesh_bearing_noop": "306/306 byte-identical",
+    "meshless_not_applicable": 1,
+    "retail_topology_smoke": "plr_001.gmx mesh0 328->329 vertices; 656->658 indices; 49600->49680 bytes",
+    "note": "External proprietary corpus was validated in sealed dev25 and is not bundled in dev26."
+  },
+  "boundary": "New mesh geometry clones a compatible existing MESH/ARRY declaration. New BONE/PARE/MTRL/SHAD nodes and from-scratch GMX construction are not implemented."
+}

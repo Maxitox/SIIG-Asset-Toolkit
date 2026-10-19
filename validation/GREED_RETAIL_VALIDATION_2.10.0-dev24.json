@@ -1,0 +1,65 @@
+{
+  "catalogs": [
+    {
+      "animation_names": [],
+      "animations": 0,
+      "catalog": "greed_retail_level4_1_spawn",
+      "generated_gltf_sha256": "b608ae1335b0b42fdbb08daa5a54b6d0933fa170b99d33bfbe7c6e930e955f23",
+      "instances": 1,
+      "meshes": 2,
+      "nodes": 4
+    },
+    {
+      "animation_names": [],
+      "animations": 0,
+      "catalog": "greed_retail_level4_1_approach_trace",
+      "generated_gltf_sha256": "2140f44da9c2f4af6ec434f596a132fe383b923f5ef00fbf5c60145ed08abe96",
+      "instances": 5,
+      "meshes": 10,
+      "nodes": 20
+    },
+    {
+      "animation_names": [],
+      "animations": 0,
+      "catalog": "greed_retail_level4_1_hover_entry",
+      "generated_gltf_sha256": "d774c3d3af31cd8174f942675d53cfda3cc884df71a69c255227362a382fd80d",
+      "instances": 1,
+      "meshes": 2,
+      "nodes": 4
+    }
+  ],
+  "evidence_boundary": "spawn, exact normal-timing state-0 rendered trace, target/controller anchor, timers/exit/spin and state-1 rates are executable-backed; live player-dependent hover X trajectory is deliberately not baked",
+  "format": "SIIG_DEV_RETAIL_VALIDATION",
+  "input": {
+    "model": "emy_046.gmx",
+    "note": "external retail asset used only for validation; not bundled",
+    "runtime_type": "0x99",
+    "sha256": "f45523f9492802646acedc23c69255ffd80c9d3788af58a3bfbaa08eb42f5f5f"
+  },
+  "release": "2.10.0-dev24",
+  "selftest": {
+    "failed": 0,
+    "passed": 123,
+    "report_external": "selftest_wrath_123.json"
+  },
+  "source_dat": {
+    "args": [
+      0,
+      2000,
+      20480,
+      213,
+      360,
+      213,
+      80,
+      5120,
+      10,
+      150,
+      1
+    ],
+    "command_index": 24,
+    "file": "level4_stage1.dat",
+    "frame": 711
+  },
+  "status": "pass",
+  "subject": "GREED runtime 0x99 Level 4-1 reconstruction"
+}

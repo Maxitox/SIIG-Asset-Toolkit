@@ -1,0 +1,24 @@
+{
+  "format": "SIIG_DESKTOP_GUI_QOL_VALIDATION",
+  "version": 1,
+  "toolkit": "2.10.0-dev24",
+  "checkpoint": "WIP168",
+  "gui_version": "0.43.0-dev24",
+  "status": "pass",
+  "gmx_workbench": {
+    "whole_tab_vertical_scroll": true,
+    "scrollbar": true,
+    "mousewheel_background_scroll": true,
+    "dense_controls_remain_reachable": true
+  },
+  "game_rip": {
+    "compact_current_phase_summary_retained": true,
+    "dedicated_per_file_console": true,
+    "append_only_during_current_rip": true,
+    "vertical_scrollbar": true,
+    "horizontal_scrollbar": true,
+    "clear_button": true,
+    "copy_button": true,
+    "global_task_log_retained": true
+  }
+}

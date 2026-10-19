@@ -1,0 +1,56 @@
+{
+  "format": "SIIG_RELEASE_VALIDATION",
+  "release": "2.8.0-dev13",
+  "date": "2026-09-07",
+  "status": "development-pass",
+  "selftest": {
+    "passed": 45,
+    "failed": 0,
+    "ok": true,
+    "report": "validation/SELFTEST_2.8.0-dev13.json",
+    "reported_toolkit_version": "2.8.0-dev13"
+  },
+  "inherited_release_gate": {
+    "from": "2.8.0-dev12",
+    "report": "validation/RELEASE_VALIDATION_2.8.0-dev12.json",
+    "note": "All earlier extraction/rendering/audio/container/runtime gates are inherited. Dev13 adds field-camera reconstruction and camera/ending lifecycle research without changing frozen dev12."
+  },
+  "dev13_camera_reconstruction_validation": {
+    "status": "pass",
+    "report": "validation/ULTIMATE_UFO_CAMERA_RECONSTRUCTION_DEV13.json",
+    "checks_passed": 17,
+    "checks_failed": 0,
+    "real_fld015_frames": 404,
+    "late_camera_classification": "rear_follow_all_404_frames",
+    "rear_distance_min": 59.85896191407736,
+    "rear_distance_max": 72.11102103598846,
+    "dynamic_x_stress_preserves_rear_follow": true,
+    "retail_camera_transition_gate_decoded": true,
+    "prototype_phase12_final_vanish_recovered": true
+  },
+  "source_only_audit": {
+    "status": "pass",
+    "report": "validation/SOURCE_ONLY_AUDIT_2.8.0-dev13.json",
+    "game_assets": 0,
+    "external_executable_magic": 0,
+    "archive_binary_members": 0,
+    "private_runtime_paths": 0,
+    "python_bytecode": 0,
+    "third_party_binaries_bundled": false,
+    "sources_rows": 18
+  },
+  "version_consistency": {
+    "VERSION.txt": "2.8.0-dev13",
+    "cli_toolkit_version": "2.8.0-dev13"
+  },
+  "limitations": [
+    "Project-owner May 9 footage supplies visible state-10 core destruction, state-11 airlock escape, and state-12 deletion labels; executable evidence independently proves the timing/phase and prototype Vanish path.",
+    "field-camera reconstructs procedural geometry for an explicit preset; it does not infer preset activation timing from a DAT.",
+    "Actual player runtime X/Y was not recovered in dev13, so exact dynamic-X rendered framing is not claimed; constant-X stress demonstrates the rear-route component is invariant over the tested late window.",
+    "The exact internal SgModel node-matrix getter implementation was not separately identified; the serialized-to-runtime transpose is modeled from proven real GMX input layout and runtime camera/matrix output layout.",
+    "June/retail final part-0 reset caller after the 6030/6200 ending split remains unresolved.",
+    "The known retail PA-route setup directly selects cam01; no proven retail activation callsite selecting cam02 has been found.",
+    "Runtime fog-profile selection over time and camera preset word 11 exact semantics remain unresolved.",
+    "Instruction-level shader translation, real Blender UI/runtime validation, and project-owner license selection remain future work."
+  ]
+}

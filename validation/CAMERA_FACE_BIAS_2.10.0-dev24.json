@@ -1,0 +1,21 @@
+{
+  "format": "SIIG_CAMERA_FACE_BIAS_VALIDATION",
+  "release": "2.10.0-dev24",
+  "status": "pass",
+  "preset_word": 11,
+  "semantic": "face_bias",
+  "retail_value_all_32": 0.2,
+  "evidence": {
+    "ps3_forwarding": [
+      "0x0015B910",
+      "0x0020D69C",
+      "0x0020E984",
+      "0x0020EC48"
+    ],
+    "xbox_forwarder": "Function_8214E120",
+    "xbox_virtual_setter": "0x82475590 stores f1 at material wrapper +0x60",
+    "xbox_gpu_upload": "Function_824745F0 uploads +0x60..+0x6C for collada_face1/type 1",
+    "embedded_shader": "0x8208D408: float4 faceBias : register(c9); pos = pos - (In.Normal * faceBias.x)"
+  },
+  "confidence": "high"
+}

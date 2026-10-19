@@ -1,0 +1,110 @@
+{
+  "format": "SIIG_SQUID_RUNTIME_ASSEMBLY_VALIDATION",
+  "release": "2.10.0-dev17",
+  "status": "pass",
+  "catalogs": [
+    "squid_phase1_legs",
+    "squid_phase2_body"
+  ],
+  "runtime_hierarchy": {
+    "body_record": 0,
+    "body_runtime_type": "0xA9",
+    "body_model": "bos_016.gmx",
+    "leg_records": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "leg_runtime_type": "0xDA",
+    "leg_model": "bos_016a.gmx",
+    "attachment_pointer_range": "0x8200A5D4..0x8200A5F0",
+    "locators": [
+      "lt_000",
+      "lt_001",
+      "lt_002",
+      "lt_003",
+      "lt_004",
+      "lt_005",
+      "lt_006",
+      "lt_007"
+    ],
+    "excluded_helper_records": [
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "body_native_animation_clips": 8,
+    "leg_native_animation_clips": 0
+  },
+  "phase_transition": {
+    "retail_state": 8,
+    "retail_entry": "Function_8212AE30",
+    "retail_virtual_offset": "0x54",
+    "retail_disable_target": "Function_820FC270",
+    "disabled_records": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "body_record_left_active": 0,
+    "june10_disable_loop": "Function_82145E68"
+  },
+  "real_retail_assets": {
+    "bos_016.gmx": {
+      "size": 44544,
+      "sha256": "5e51d90192593d2d87cb81471532e32f2f78b63b490d91a117875ef913591b30"
+    },
+    "bos_016a.gmx": {
+      "size": 7024,
+      "sha256": "e345016de566897e275aff9fed3d62b9aecdddaab35aacd47ac308ae6381ddea"
+    }
+  },
+  "real_exports": {
+    "phase1": {
+      "instances": 9,
+      "meshes": 18,
+      "nodes": 44,
+      "animations": 8,
+      "bounds_min": [
+        -19.13981294631958,
+        -19.13981294631958,
+        -19.5
+      ],
+      "bounds_max": [
+        19.13981294631958,
+        19.13981294631958,
+        88.875
+      ]
+    },
+    "phase2": {
+      "instances": 1,
+      "meshes": 2,
+      "nodes": 12,
+      "animations": 8,
+      "bounds_min": [
+        -11.086574792861938,
+        -11.086574792861938,
+        -19.5
+      ],
+      "bounds_max": [
+        11.086574792861938,
+        11.086574792861938,
+        20.25
+      ]
+    }
+  },
+  "distribution_boundary": "No proprietary GMX or generated retail glTF is bundled in the source-only release.",
+  "ok": true
+}

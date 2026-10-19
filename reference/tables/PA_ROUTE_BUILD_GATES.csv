@@ -1,0 +1,6 @@
+﻿build,platform,gate_function,category_function,requires_category_zero,requires_state_218,requires_state_21c,setup_calls_pa_route,evidence
+ps3_retail,ps3,0x000EA2E0,,True,4,1,True,direct retail decompilation: inlined stage/category classifier + state checks; stage setup vtable +0x08 requests index 0
+xbox360_retail,xbox360,0x8221CBE0,0x8212C000,True,4,1,True,direct retail decompilation: category helper + state checks; stage setup invokes route vtable +0x08 with index 0
+xbox360_june10,xbox360,0x82243F78,0x821013E0,True,4,1,True,direct June 10 decompilation; Route::SetPaRoute debug string identifies the vtable target
+xbox360_may11,xbox360,0x82238A18,0x820FF990,False,4,1,True,direct May 11 decompilation: state checks only; category filter is absent
+xbox360_may9,xbox360,not observed in corresponding setup,0x820FF2D8,False,,,False,"Route::SetPaRoute exists, but the corresponding stage-setup routine does not invoke the PA-route activation branch"

@@ -1,0 +1,31 @@
+{
+  "format": "SIIG_GIGANTIC_UFO_PRESENTATION_ORIENTATION_VALIDATION",
+  "release": "2.10.0-dev24",
+  "checkpoint": "WIP175",
+  "status": "pass",
+  "catalog": "gigantic_ufo_complete",
+  "policy": "common_native_model_facing",
+  "special_presentation_matrix": null,
+  "special_presentation_metadata": null,
+  "generic_gmx_gltf_axis_conversion_changed": false,
+  "runtime_hierarchy_changed": false,
+  "root": {
+    "runtime_type": "0x9E",
+    "model": "bos_003.gmx",
+    "count": 1
+  },
+  "children": {
+    "runtime_type": "0xB5",
+    "model": "bos_003a.gmx",
+    "count": 36,
+    "locator_first": "lt_001",
+    "locator_last": "lt_036",
+    "local_matrix": "identity"
+  },
+  "excluded_non_model_helpers": {
+    "runtime_type": "0xB4",
+    "count": 3
+  },
+  "supersedes": "dev23-era GIGANTIC-UFO-only -90-degree X presentation-root interpretation",
+  "reason": "project-owner clarification: SIIG models share the same native facing convention under the top-down game presentation; GIGANTIC UFO is not a facing exception"
+}

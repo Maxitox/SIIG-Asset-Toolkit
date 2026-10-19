@@ -1,0 +1,40 @@
+{
+  "format": "SIIG_DESKTOP_GUI_VALIDATION",
+  "toolkit_target": "2.9.0-dev2",
+  "status": "pass",
+  "diagnostics": {
+    "gui_version": "0.6.0-dev2",
+    "toolkit_version": "2.9.0-dev2",
+    "toolkit_exists": true,
+    "tkinter_available": true,
+    "python": "3.13.5",
+    "tabs": [
+      "Game Rip",
+      "Mod Workspace",
+      "GMX Workbench",
+      "Utilities"
+    ],
+    "principle": "GUI wraps the existing CLI; format logic stays in audited toolkit code",
+    "gmx_scene_graph_report": true,
+    "gmx_scene_graph_sync": true,
+    "gmx_texture_graph_sync": true,
+    "gmx_native_schema_synthesis": true,
+    "mod_gltf_texture_pipeline": true
+  },
+  "mod_workspace": {
+    "integrated_gltf_texture_action": "Import glTF + TEX",
+    "cli": "mod-import-gltf",
+    "native_schema_synthesis_fallback": true,
+    "behavior": "GUI launches the same CLI path; compatible donors are retained, while missing GMX vertex/material schemas can be synthesized before linked texture staging."
+  },
+  "gmx_workbench": {
+    "mesh_sync_default": false,
+    "scene_sync_default": false,
+    "texture_sync_default": false,
+    "native_schema_synthesis_default": false,
+    "scene_report": true
+  },
+  "network_required": false,
+  "external_gui_dependencies": false,
+  "format_logic_duplicated": false
+}

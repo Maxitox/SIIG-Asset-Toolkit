@@ -1,0 +1,39 @@
+{
+  "format": "SIIG_PS3_SBLK_REPLACEMENT_VALIDATION",
+  "release": "2.10.0-dev24",
+  "checkpoint": "WIP161",
+  "status": "pass",
+  "implementation": {
+    "command": "sblk-replace",
+    "input_audio": "mono uncompressed PCM16 WAV",
+    "output_codec": "Sony PS-ADPCM",
+    "constraint": "sample rate and decoded sample count must exactly match selected existing slot",
+    "predictors": 5,
+    "samples_per_frame": 28,
+    "bytes_per_frame": 16,
+    "frame_controls_preserved": true,
+    "bank_layout_preserved": true,
+    "stream_offsets_and_capacity_preserved": true
+  },
+  "synthetic_regression": {
+    "bank": "one-stream SBlk v3 fixture",
+    "sample_rate": 48000,
+    "pcm_samples": 56,
+    "encoded_frames": 2,
+    "test_tone_hz": 440,
+    "test_tone_peak": 12000,
+    "max_absolute_pcm_error": 61,
+    "header_and_table_bytes_outside_audio_slot_unchanged": true,
+    "stream_metadata_unchanged": true
+  },
+  "retail_inherited_evidence": {
+    "decoded_streams": "84/84",
+    "audio_region_bytes": 4200384,
+    "edited_runtime_validation": false
+  },
+  "boundaries": [
+    "variable-duration/topology-changing SBlk authoring is not implemented",
+    "edited PS3 bank runtime acceptance is not claimed",
+    "Xbox XACT/XMA2 replacement remains unsupported"
+  ]
+}

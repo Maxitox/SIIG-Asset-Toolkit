@@ -1,0 +1,98 @@
+{
+  "format": "SIIG_RELEASE_VALIDATION",
+  "release": "2.8.0-dev24",
+  "date": "2026-09-10",
+  "status": "development-pass",
+  "selftest": {
+    "passed": 69,
+    "failed": 0,
+    "ok": true,
+    "report": "validation/SELFTEST_2.8.0-dev24.json",
+    "reported_toolkit_version": "2.8.0-dev24"
+  },
+  "inherited_release_gate": {
+    "from": "2.8.0-dev23",
+    "report": "validation/RELEASE_VALIDATION_2.8.0-dev23.json",
+    "note": "All prior extraction/rendering/audio/route/camera/mobile/code-lineage, native-builder and dev23 workspace gates are inherited. Dev24 adds a shareable delta package layer, expands retail round-trip evidence, and optimizes the common COL inverse path without modifying the sealed dev23 release."
+  },
+  "dev24_mod_package_validation": {
+    "status": "pass",
+    "report": "validation/MOD_PACKAGE_VALIDATION_DEV24.json",
+    "commands": [
+      "mod-pack",
+      "mod-package-info",
+      "mod-apply"
+    ],
+    "package_format": "SIIG_MOD_PACKAGE_V1",
+    "binary_patch_format": "SIIG_BINARY_PATCH_V1",
+    "synthetic_pack_apply_build_verify": "pass",
+    "retail_text_package_apply": "pass",
+    "retail_validation_delta_payload_bytes": 1,
+    "complete_clean_original_assets_bundled": false,
+    "baseline_hash_enforcement": "pass",
+    "deterministic_zip": "pass"
+  },
+  "dev24_real_corpus_roundtrip": {
+    "status": "pass",
+    "report": "validation/REAL_CORPUS_ROUNDTRIP_DEV24.json",
+    "scope": "user-supplied retail Xbox 360 external corpus; proprietary inputs not bundled",
+    "byte_identical_checks_passed": 2197,
+    "byte_identical_checks_failed": 0,
+    "gmx": "307/307",
+    "dat": "1258/1258",
+    "map": "394/394",
+    "stage3d": "47/47",
+    "stagewall": "30/30",
+    "col": "153/153",
+    "tex": "3/3",
+    "anm": "2/2",
+    "systemfont": "1/1",
+    "text_localization": "1/1 (542 strings)",
+    "message_localization": "1/1 (284 groups / 1295 strings per language)",
+    "boundary": "No-edit byte identity proves lossless reconstruction on the tested retail corpus; arbitrary modified-asset runtime acceptance remains a separate gate."
+  },
+  "asset_functionalization": {
+    "status": "pass",
+    "report": "validation/ASSET_FUNCTIONALIZATION_DEV24.json",
+    "known_asset_families": 14,
+    "viewable_or_exportable_families": 14,
+    "native_round_trip_families": 11,
+    "native_builder_available_families": 11,
+    "distribution_layer": "baseline-dependent .siigmod delta packages"
+  },
+  "source_only_audit": {
+    "status": "pass",
+    "report": "validation/SOURCE_ONLY_AUDIT_2.8.0-dev24.json",
+    "game_assets": 0,
+    "external_executable_magic": 0,
+    "archive_binary_members": 0,
+    "private_runtime_paths": 0,
+    "python_bytecode": 0,
+    "third_party_binaries_bundled": false,
+    "sources_rows": 24
+  },
+  "version_consistency": {
+    "VERSION.txt": "2.8.0-dev24",
+    "cli_toolkit_version": "2.8.0-dev24"
+  },
+  "fresh_package": {
+    "status": "pass",
+    "candidate_manifest_entries_verified": 299,
+    "candidate_source_only_audit": "pass",
+    "candidate_selftest_passed": 69,
+    "candidate_selftest_failed": 0,
+    "candidate_version_reported": "2.8.0-dev24",
+    "candidate_package_sha256": "1bea73cd387f28f0c966017d7979eb36563e85558b0c9dfcd8406c970335e517",
+    "note": "Candidate was extracted fresh, verified against RELEASE_MANIFEST with no unlisted files, audited before executing package code, and passed 69/69 selftests. Final package is rebuilt deterministically after recording these candidate results and revalidated separately."
+  },
+  "limitations": [
+    "PS3 NPDRM/SDAT re-encryption is not implemented; mod-build emits verified decompressed BBX for SDAT-backed resources.",
+    "GMX native editing remains template-preserving and fixed-layout; arbitrary topology/count/chunk-graph synthesis is not claimed.",
+    "Retail byte-identical no-op rebuilds do not by themselves prove runtime acceptance of arbitrary modifications.",
+    "V1 mod packages reject/require explicit resolution for conflicting changes rather than semantically merging multiple mods.",
+    "Length-changing whole-archive binary deltas above the conservative bounded SequenceMatcher limit are rejected; stage the changed inner resource where possible.",
+    "Xbox XACT/XMA2 and PS3 SBlk/VAG/989SND banks decode to common audio but do not yet have native replacement-bank builders.",
+    "Xenos shader containers expose bounded raw microcode and metadata; ISA disassembly/translation/compilation remains unresolved.",
+    "Project-owner license selection remains open."
+  ]
+}

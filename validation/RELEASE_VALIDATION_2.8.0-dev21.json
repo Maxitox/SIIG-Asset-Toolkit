@@ -1,0 +1,76 @@
+{
+  "format": "SIIG_RELEASE_VALIDATION",
+  "release": "2.8.0-dev21",
+  "date": "2026-09-10",
+  "status": "development-pass",
+  "selftest": {
+    "passed": 62,
+    "failed": 0,
+    "ok": true,
+    "report": "validation/SELFTEST_2.8.0-dev21.json",
+    "reported_toolkit_version": "2.8.0-dev21"
+  },
+  "inherited_release_gate": {
+    "from": "2.8.0-dev20",
+    "report": "validation/RELEASE_VALIDATION_2.8.0-dev20.json",
+    "note": "All prior extraction/rendering/audio/route/camera/mobile/code-lineage gates are inherited. dev21 adds native asset-functionalization and reverse-build workflows without modifying sealed dev20."
+  },
+  "dev21_asset_functionalization_validation": {
+    "status": "pass",
+    "report": "validation/ASSET_FUNCTIONALIZATION_DEV21.json",
+    "known_asset_families": 14,
+    "native_round_trip_families": 7,
+    "native_builder_available_families": 8,
+    "new_native_build_commands": [
+      "png2tex",
+      "png2font",
+      "dat-build",
+      "map-build",
+      "anm-build",
+      "png2col"
+    ],
+    "existing_native_build_command": "repack-bbx",
+    "byte_identical_round_trip_gates": [
+      "TEX",
+      "DAT",
+      "MAP",
+      "ANM",
+      "COL"
+    ],
+    "full_rip_capability_report": "validation/ASSET_CAPABILITIES.json",
+    "modding_guide": "docs/guides/NATIVE_ASSET_ROUNDTRIP.md"
+  },
+  "source_only_audit": {
+    "status": "pass",
+    "report": "validation/SOURCE_ONLY_AUDIT_2.8.0-dev21.json",
+    "game_assets": 0,
+    "external_executable_magic": 0,
+    "archive_binary_members": 0,
+    "private_runtime_paths": 0,
+    "python_bytecode": 0,
+    "third_party_binaries_bundled": false,
+    "sources_rows": 24
+  },
+  "version_consistency": {
+    "VERSION.txt": "2.8.0-dev21",
+    "cli_toolkit_version": "2.8.0-dev21"
+  },
+  "fresh_package": {
+    "status": "pass",
+    "candidate_manifest_entries_verified": 277,
+    "candidate_source_only_audit": "pass",
+    "candidate_selftest_passed": 62,
+    "candidate_selftest_failed": 0,
+    "candidate_version_reported": "2.8.0-dev21",
+    "note": "Candidate was extracted fresh, verified against RELEASE_MANIFEST, passed source-only audit and 62/62 selftests. Final package is rebuilt deterministically after recording these candidate results and revalidated separately."
+  },
+  "limitations": [
+    "Native TEX and COL edits currently require an original resource as a layout/header template; arbitrary new platform resource-layout synthesis is not claimed.",
+    "GMX remains export/view capable but does not yet have a glTF/Blender-to-GMX compiler.",
+    "Stage3D route tables and wall/generator tables remain one-way structured exports pending native rebuild compilers.",
+    "Xbox XACT/XMA2 and PS3 SBlk/VAG banks decode to common audio but do not yet have native replacement-bank builders.",
+    "Xenos shader containers expose bounded raw microcode and metadata; ISA disassembly/translation remains unresolved.",
+    "Runtime acceptance of arbitrary modified native resources still requires game/emulator testing.",
+    "Project-owner license selection remains open."
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "format": "SIIG_PA_ROUTE_VALIDATION",
+  "release": "2.8.0-dev8",
+  "date": "2026-09-06",
+  "status": "pass",
+  "cross_builds": 5,
+  "build_gates": 5,
+  "camera_selections": 2,
+  "boss_field_correlations": 2,
+  "retail_dat_corpus": {
+    "files_scanned": 76,
+    "parse_failures": 0,
+    "special_boss_occurrences": 6,
+    "counts_by_opcode_name": {
+      "WATER_STRIDER": 4,
+      "ULTIMATE_UFO": 2
+    },
+    "files_with_special_bosses": [
+      "extra2_stage8.dat",
+      "extra5_stage6.dat",
+      "level5_stage1.dat",
+      "level5_stage3.dat",
+      "trial_level5_stage1.dat"
+    ]
+  },
+  "gate_regression": {
+    "retail_category0_state_4_1": true,
+    "retail_category1_state_4_1": false,
+    "may11_category1_state_4_1": true,
+    "may9_corresponding_setup": false
+  },
+  "known_retail_camera_setup_index": 0,
+  "cam02_retail_activation_proven": false,
+  "limitations": [
+    "Boss DAT opcode presence alone is not treated as PA-route activation.",
+    "The final boss-stage transition/write supplying the special reload parameter remains unresolved.",
+    "The Water Strider/Ultimate UFO boss-to-field mapping is strong correlation rather than one recovered literal boss->reload callsite.",
+    "No proven retail activation callsite selecting Route::SetPaRoute(1)/cam02 has been found."
+  ],
+  "failures": []
+}

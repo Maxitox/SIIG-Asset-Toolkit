@@ -1,0 +1,10 @@
+step,address,trigger,operation,calls_part0_state0,clears_camera_gate,status
+phase12_destruction,0x8212EC50,Mframe 6030,"vtable +0x3C(part 0, state +0x1EE=1), then +0x44(part 0)",False,False,proven_not_gate_clear
+phase13_owned_object_shutdown,0x8212EC50,Mframe 6200,"Function_820F2CF8(bos_015k owned object, 0)",False,False,proven_not_gate_clear
+post_phase_move_main_tail,0x8212EC50,every update after phase dispatch,"camera/owned-object updates, recurring explosion emitter, Mframe advance, route-frame write",False,False,no_final_reset_in_move_main
+generic_vanish_reset,0x820FBEE8,vtable +0x48(part),dispatch vtable +0x3C(part state 0),True,True,proven_mechanism_caller_unresolved
+ufo_part_state_gate_clear,"0x8212DCB0 / instruction 0x8212DD20","part 0 and state 0, except Extra 5-6 branch",clear stage +0x1CC and camera controller byte +0x11C,True,True,proven_clear_site
+generic_lifetime_watchdog,0x820FB280,elapsed timer > 25200,"vtable +0x48 for every part, then vtable +0x20",True,True,proven_failsafe_not_assigned_as_normal_ending
+normal_stage_script_cleanup,level5_stage3.dat,after ULTIMATE_UFO spawn,"no DEL_ALL_ENEMY or DEL_LV5_BOSS record; DEL_ZAKO excludes type 0xA8",False,False,applicable_authored_cleanup_excluded
+flagged_entity_removal,0x82148748 -> 0x8214A368,entity +0x2D removal flag and manager gate,"invoke destructor and clear manager slot; no vtable +0x48 dispatch",False,False,destruction_is_not_reset
+camera_controller_initialization,0x820ECFD8,camera controller construction,initialize camera gate +0x11C to 1,False,False,proven_reinitialization_not_clear

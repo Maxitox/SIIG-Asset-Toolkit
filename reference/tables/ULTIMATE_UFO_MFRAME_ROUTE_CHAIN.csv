@@ -1,0 +1,6 @@
+﻿build,move_main,route_frame_setter,mframe_field,field_model,field_start,field_end,loop
+xbox360_may9,0x82142008,0x820FCA08,+0x1C4 / word 0x71,fld015.gmx,0,6300,False
+xbox360_may11,0x821431D0,0x820FCC30,+0x1D0 / word 0x74,fld015.gmx,0,6300,False
+xbox360_june10,0x82149DF8,0x820FDD68,word 0x79 in evolved object layout,fld015.gmx,0,6300,False
+xbox360_retail,0x8212EC50,0x820EAED8,evolved retail Mframe field,fld015.gmx,0,6300,False
+ps3_retail,0x001D2988,0x0015A2DC,evolved retail Mframe field,fld015.gmx,0,6300,False

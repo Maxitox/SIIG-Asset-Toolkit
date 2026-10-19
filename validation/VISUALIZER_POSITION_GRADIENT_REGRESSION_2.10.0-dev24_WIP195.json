@@ -1,0 +1,49 @@
+{
+  "format": "SIIG_VISUALIZER_POSITION_GRADIENT_REGRESSION_VALIDATION",
+  "release": "2.10.0-dev24",
+  "checkpoint": "WIP195",
+  "status": "pass",
+  "visualizer_dataset_version": 23,
+  "reported_regression": "many authored visualizers collapsed into full-screen color gradients after WIP191; project owner identified level4_stage1, level4_stage4 and level5_stage3 as examples that remained visibly structured while level4_stage5 was broken",
+  "root_cause": "WIP191 added an extra 1.5x Position multiplier. For retail stage 4-5 SEQUENCE_12 / PARAM_7, free Y=+360 and source scale 1.0 then place the 128x128 WhiteCircle2 source center at y=-180, giving source bounds -244..-116: completely outside the 1280x720 feedback target. No SHAPE pixels can seed the recurrence, leaving only the nonzero BG RGB clear values to magnify into a smooth gradient.",
+  "hardware_crosscheck": {
+    "source": "project-owner retail Xbox 360 stage 4-5 no-background-details Visualizer capture, 2026-09-19 19-01-18.mp4",
+    "observed_runtime": "debug overlay identifies SEQ:12 PARAM:7 and structured teal recursive feedback remains visible throughout gameplay",
+    "parameter_7": {
+      "shape_index": 5,
+      "shape": "WhiteCircle2",
+      "position_fix": 0,
+      "position_free": [10, 360],
+      "source_scale": [1.0, 1.0],
+      "bg_rgba": [0, 1, 1, 0]
+    },
+    "wip191_prediction": {
+      "scale": 1.5,
+      "source_center": [655, -180],
+      "source_y_bounds": [-244, -116],
+      "target_intersection": false
+    },
+    "wip195_prediction": {
+      "scale": 1.0,
+      "source_center": [650, 0],
+      "source_y_bounds": [-64, 64],
+      "target_intersection": true
+    }
+  },
+  "position": {
+    "axes": "+X right / +Y up",
+    "target_pixel_scale": 1.0,
+    "bridge": "target_x=640+position_x; target_y=360-position_y",
+    "fixed_centers": {
+      "1": [192, 52], "2": [640, 52], "3": [1088, 52],
+      "4": [192, 360], "5": [640, 360], "6": [1088, 360],
+      "7": [192, 668], "8": [640, 668], "9": [1088, 668]
+    }
+  },
+  "supersedes": {
+    "checkpoint": "WIP191",
+    "scope": "only the inferred 1.5x logical-to-target Position multiplier; WIP191 viewport UI, fullscreen, preset selector and display-only smooth resolve remain retained",
+    "historical_validation_retained": "VISUALIZER_UI_RUNTIME_OVERHAUL_2.10.0-dev24_WIP191.json"
+  },
+  "bundled_user_media": false
+}

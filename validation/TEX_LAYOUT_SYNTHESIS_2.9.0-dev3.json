@@ -1,0 +1,45 @@
+{
+  "format": "SIIG_TEX_LAYOUT_SYNTHESIS_VALIDATION",
+  "toolkit_version": "2.9.0-dev3",
+  "status": "pass",
+  "xbox360": {
+    "corpus_basis": "all 54 supplied Xbox TEX textures share format 6 / endian 2 / tiled / Z,Y,X,W swizzle",
+    "synthesized_fixture": {
+      "width": 37,
+      "height": 19,
+      "physical_pitch": 64,
+      "allocated_height": 32,
+      "payload_bytes": 8192
+    },
+    "format": "8_8_8_8",
+    "endianness": "8in32",
+    "tiled": true,
+    "swizzle": [
+      "Z",
+      "Y",
+      "X",
+      "W"
+    ],
+    "rgba_round_trip": "pass",
+    "donor_required": false
+  },
+  "ps3": {
+    "wrapper": "0x80-byte linear A8R8G8B8",
+    "synthesized_fixture": {
+      "width": 5,
+      "height": 3,
+      "payload_bytes": 60
+    },
+    "rgba_round_trip": "pass",
+    "donor_required": false,
+    "evidence_boundary": "structural decode/encode validation; arbitrary newly synthesized wrapper unknown fields are not hardware/emulator-proven"
+  },
+  "cli": {
+    "template_preserving": "png2tex input.png --template original.tex -o output.tex",
+    "donor_free": "png2tex input.png --platform xbox360|ps3 -o output.tex"
+  },
+  "limitations": [
+    "compressed/mipmapped texture variants are not synthesized",
+    "newly invented PS3 wrapper runtime acceptance remains unproven"
+  ]
+}

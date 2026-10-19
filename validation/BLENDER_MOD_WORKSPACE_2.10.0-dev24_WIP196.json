@@ -1,0 +1,45 @@
+{
+  "format": "SIIG_DEV24_WIP196_BLENDER_MOD_WORKSPACE_VALIDATION",
+  "release": "2.10.0-dev24",
+  "checkpoint": "WIP196",
+  "status": "pass",
+  "blender_addon": {
+    "version": "0.4.0",
+    "package": "addons/SIIG_Blender_Addon_v0.4.0.zip",
+    "package_sha256": "eb98e4d026873bc5b9116f8935afebac7a57c2c2301822ea3967509cf6cc4f3b",
+    "raw_gmx_default_visual_pass": "solid",
+    "assembly_native_outline_default": "hidden_non_destructively",
+    "native_outline_visibility_controls": true,
+    "style_preview_auto_apply_default": false,
+    "blender_36_4x_compositor_branch": "Scene.node_tree compatibility fallback",
+    "blender_5_compositor_branch": "Scene.compositing_node_group + NodeGroupOutput",
+    "blender_5_unified_mix_fallback": "ShaderNodeMixRGB",
+    "real_blender_runtime_available_in_build_environment": false,
+    "runtime_boundary": "source/headless compatibility is validated here; final Blender 5 visual/operator behavior remains an external project-owner test"
+  },
+  "mod_workspace": {
+    "xbox_primary_deployment_output": "build/velocity_replacements",
+    "replacement_wrappers": [
+      "deterministic gzip-wrapped BBX for .gz",
+      "raw rebuilt BBX for .bin"
+    ],
+    "mapping_file": "build/velocity_replacements/VELOCITY_REPLACEMENTS.json",
+    "mapping_format": "SIIG_VELOCITY_REPLACEMENTS_V1",
+    "synthetic_gzip_payload_identity_required": true,
+    "siigmod_role": "optional baseline-dependent sharing delta; not an STFS/Velocity replacement file",
+    "gui_pack_success_path_feedback": true,
+    "gui_background_failure_popup": true,
+    "stfs_editor_boundary": "toolkit emits replacement files and mapping; manual insertion/save in Velocity remains external"
+  },
+  "selftest_expected": 174,
+  "notes": [
+    "The source rip remains immutable.",
+    "PS3 NPDRM/SDAT re-encryption remains unsupported by Mod Workspace deployment output.",
+    "Retail STFS runtime acceptance is not claimed by this source-only validation."
+  ],
+  "worktree_selftest": {
+    "passed": 174,
+    "failed": 0
+  },
+  "gui_xvfb_launch_smoke": "passed (process remained alive until 5-second timeout)"
+}

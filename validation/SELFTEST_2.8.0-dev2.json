@@ -1,0 +1,154 @@
+{
+  "format": "SIIG_SELFTEST",
+  "toolkit_version": "2.8.0-dev2",
+  "python": "3.13.5",
+  "passed": 24,
+  "failed": 0,
+  "ok": true,
+  "tests": [
+    {
+      "name": "AES-128 FIPS-197",
+      "status": "PASS",
+      "seconds": 7.8e-05,
+      "detail": "known-answer vector"
+    },
+    {
+      "name": "AES-128 decrypt",
+      "status": "PASS",
+      "seconds": 0.00062,
+      "detail": "encrypt and inverse-cipher vectors"
+    },
+    {
+      "name": "PKG AES-CTR backend",
+      "status": "PASS",
+      "seconds": 0.002008,
+      "detail": "unaligned chunking equals one-shot CTR and round-trips"
+    },
+    {
+      "name": "STFS CON initialization",
+      "status": "PASS",
+      "seconds": 0.000441,
+      "detail": "CON transactional layout initializes after first hash-table address"
+    },
+    {
+      "name": "NPDRM SDAT authentication",
+      "status": "PASS",
+      "seconds": 0.006711,
+      "detail": "encrypted-key HMAC-SHA1 block decrypts; tamper rejected"
+    },
+    {
+      "name": "PSX ADPCM decoder",
+      "status": "PASS",
+      "seconds": 3.7e-05,
+      "detail": "16-byte frame -> 28 PCM16 samples; terminal frame silent"
+    },
+    {
+      "name": "DAT parser",
+      "status": "PASS",
+      "seconds": 1.9e-05,
+      "detail": "one command, absolute frame 5"
+    },
+    {
+      "name": "MAP parser",
+      "status": "PASS",
+      "seconds": 1.5e-05,
+      "detail": "tile IDs and X/Y bits preserved"
+    },
+    {
+      "name": "BBX parser/hash",
+      "status": "PASS",
+      "seconds": 0.000307,
+      "detail": "named entry and filename hash"
+    },
+    {
+      "name": "BBX repacker",
+      "status": "PASS",
+      "seconds": 0.000114,
+      "detail": "named/unnamed payloads, hashes, alignment, and sorted index"
+    },
+    {
+      "name": "ANM range parser",
+      "status": "PASS",
+      "seconds": 1.8e-05,
+      "detail": "16-byte names, start/end frames, grouping, and loop flags"
+    },
+    {
+      "name": "Stage wall/generator table",
+      "status": "PASS",
+      "seconds": 4.7e-05,
+      "detail": "20-byte names, wall repeat counts, clamp, and generator enable flags"
+    },
+    {
+      "name": "Bmap/Xmap parser",
+      "status": "PASS",
+      "seconds": 0.000127,
+      "detail": "0x118 record, corrected placement transforms, route-source slots, origin fallback, and sentinel"
+    },
+    {
+      "name": "GMX animation-track exporter",
+      "status": "PASS",
+      "seconds": 0.001188,
+      "detail": "matrix tracks, seconds, observed 24 Hz cadence, decomposition, CSV/OBJ output"
+    },
+    {
+      "name": "Xenos shader inventory",
+      "status": "PASS",
+      "seconds": 0.000179,
+      "detail": "stage bit, header offsets, strings, and bounded microcode"
+    },
+    {
+      "name": "Gzip safety",
+      "status": "PASS",
+      "seconds": 0.000156,
+      "detail": "valid stream decoded; expansion over limit rejected"
+    },
+    {
+      "name": "PNG/atlas renderer",
+      "status": "PASS",
+      "seconds": 1.553542,
+      "detail": "RGBA PNG round trip and flipped atlas MAP render"
+    },
+    {
+      "name": "ZIP safety",
+      "status": "PASS",
+      "seconds": 0.001229,
+      "detail": "valid member extracted; traversal rejected"
+    },
+    {
+      "name": "Outer-container resume cache",
+      "status": "PASS",
+      "seconds": 0.002076,
+      "detail": "content-addressed staging reuses exact input and invalidates changed packages"
+    },
+    {
+      "name": "Privacy scrubber",
+      "status": "PASS",
+      "seconds": 1.2e-05,
+      "detail": "Windows and POSIX routes redacted"
+    },
+    {
+      "name": "Stage Explorer platform roots",
+      "status": "PASS",
+      "seconds": 0.076852,
+      "detail": "Xbox Media and PS3 USRDIR stage roots detected without renaming"
+    },
+    {
+      "name": "HTML asset viewer",
+      "status": "PASS",
+      "seconds": 0.016896,
+      "detail": "small linked HTML, lazy image thumbnail, and deferred text payload"
+    },
+    {
+      "name": "Release layout",
+      "status": "PASS",
+      "seconds": 0.000225,
+      "detail": "organized support folders present; 20 root files"
+    },
+    {
+      "name": "Output manifest/verification",
+      "status": "PASS",
+      "seconds": 0.001859,
+      "detail": "fresh tree verified; tampering detected"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+stage_id,status_index,substitute_stage_id,semantics
+49,30,31,"if status byte != 1, checkSurvivalStage substitutes stage_id with substitute_stage_id; exact status meaning unresolved"
+50,31,40,"if status byte != 1, checkSurvivalStage substitutes stage_id with substitute_stage_id; exact status meaning unresolved"
+51,32,36,"if status byte != 1, checkSurvivalStage substitutes stage_id with substitute_stage_id; exact status meaning unresolved"
+52,33,27,"if status byte != 1, checkSurvivalStage substitutes stage_id with substitute_stage_id; exact status meaning unresolved"
+53,34,46,"if status byte != 1, checkSurvivalStage substitutes stage_id with substitute_stage_id; exact status meaning unresolved"
+54,35,30,"if status byte != 1, checkSurvivalStage substitutes stage_id with substitute_stage_id; exact status meaning unresolved"

@@ -1,0 +1,10 @@
+{
+  "format": "SIIG_VERSIONING_POLICY_VALIDATION",
+  "release": "2.10.0-dev22",
+  "status": "pass",
+  "previous": "2.10.0-dev21",
+  "toolkit_version": "2.10.0-dev22",
+  "gui_version": "0.35.0-dev22",
+  "reason": "incremental 2.10 checkpoint: rebuilds Visualizer rendering from June 10 footage, completes Stage Explorer/Asset Viewer/Game Rip GUI work, corrects boss presentation/research boundaries, and adds GMX solid/outline visual-pass control without an incompatible public-format break",
+  "ok": true
+}

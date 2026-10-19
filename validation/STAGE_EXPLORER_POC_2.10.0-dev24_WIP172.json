@@ -1,0 +1,33 @@
+{
+  "format": "SIIG_STAGE_EXPLORER_POC_VALIDATION",
+  "toolkit": "2.10.0-dev24",
+  "checkpoint": "WIP172",
+  "stage_explorer_dataset_version": 8,
+  "maturity": "proof_of_concept",
+  "fidelity": "research_inspector_not_gameplay_renderer",
+  "authoritative_inspection_surfaces": [
+    "decoded MAP layer bytes/cell semantics",
+    "decoded DAT records/semantic fields",
+    "runtime script/map table pairing",
+    "recovered route/placement metadata"
+  ],
+  "experimental_surfaces": [
+    "SCROLL_01/02/03 browser motion preview",
+    "3D route-follow/top-down/POV inspection cameras",
+    "browser atlas presentation"
+  ],
+  "motion_preview_executes_full_dat": false,
+  "claims_frame_accurate_gameplay_renderer": false,
+  "claims_native_pixel_equivalence": false,
+  "ui_corrections": {
+    "decoded_map_layers_presented_before_experimental_previews": true,
+    "timeline_search_rebuilds_map_panels": false,
+    "timeline_category_filter_rebuilds_map_panels": false,
+    "no_scroll_entries_disable_motion_controls": true
+  },
+  "known_user_visible_boundaries": [
+    "sprite/atlas presentation may still appear jittery or unlike native output",
+    "motion preview does not reproduce the complete stage sequence",
+    "browser/inspection cameras are not native gameplay cameras"
+  ]
+}

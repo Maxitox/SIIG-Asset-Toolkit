@@ -1,0 +1,73 @@
+{
+  "format": "SIIG_RELEASE_VALIDATION",
+  "release": "2.8.0-dev4",
+  "date": "2026-09-05",
+  "status": "development-pass",
+  "selftest": {
+    "passed": 28,
+    "failed": 0,
+    "ok": true,
+    "report": "validation/SELFTEST_2.8.0-dev4.json"
+  },
+  "inherited_release_gate": {
+    "from": "2.8.0-dev3",
+    "report": "validation/RELEASE_VALIDATION_2.8.0-dev3.json",
+    "note": "Dev4 changes executable-backed route runtime/DAT analysis and documentation only; direct retail package extraction, SDAT/audio, Stage Explorer, Asset Viewer, and prior route/camera gates remain inherited from the frozen dev3 checkpoint."
+  },
+  "dev4_targeted_real_corpus_validation": {
+    "report": "validation/RUNTIME_ROUTE_VALIDATION_2.8.0-dev4.json",
+    "route_runtime_stress": {
+      "candidate_stage3d_files": 47,
+      "resampleable_files": 46,
+      "route_empty_skipped": 1,
+      "nonloop_updates_smoke_stepped": 1472,
+      "linear_spacing_rebuilds": 46,
+      "loop_smoke_files": 46,
+      "errors": 0
+    },
+    "dat_coupled_examples": {
+      "Xmap2_1__level2_stage1": {
+        "stage3d": "Xmap2_1.bin",
+        "dat": "level2_stage1.dat",
+        "frame_multiplier": 2,
+        "initial_spacing": 1.0,
+        "updates_emitted": 100000,
+        "termination": "route_finished",
+        "segment_builds": 125,
+        "applied_scroll02_events": 0,
+        "linear_spacing_rebuilds": 0,
+        "note": "filename-correspondence validation candidate; not asserted as part of a complete authoritative route-to-DAT map"
+      },
+      "Xmap3_1__level3_stage1": {
+        "stage3d": "Xmap3_1.bin",
+        "dat": "level3_stage1.dat",
+        "frame_multiplier": 2,
+        "initial_spacing": 0.5,
+        "updates_emitted": 265020,
+        "termination": "route_finished",
+        "segment_builds": 517,
+        "applied_scroll02_events": 7,
+        "linear_spacing_rebuilds": 7,
+        "note": "filename-correspondence validation candidate; not asserted as part of a complete authoritative route-to-DAT map"
+      }
+    }
+  },
+  "source_only_audit": {
+    "status": "pass",
+    "report": "validation/SOURCE_ONLY_AUDIT_2.8.0-dev4.json",
+    "game_assets": 0,
+    "external_executable_magic": 0,
+    "archive_binary_members": 0,
+    "private_runtime_paths": 0,
+    "third_party_binaries_bundled": false,
+    "sources_rows": 18
+  },
+  "limitations": [
+    "Complete authoritative route-to-DAT pairing and route-object activation timing remain unresolved; route-playback requires caller-supplied pairing/start frame.",
+    "Route orientation, field-model animation, camera matrices/preset semantics, and scenegraph side effects are not yet combined into one playback model.",
+    "Several camera-preset scalar and vec4 gameplay semantics remain intentionally unnamed.",
+    "Instruction-level RSX/Xenos shader disassembly/translation remains future work.",
+    "The bundled Blender add-on has not been exercised inside a real Blender UI/runtime.",
+    "The project owner has not selected a license for original toolkit code."
+  ]
+}

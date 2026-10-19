@@ -1,0 +1,4 @@
+runtime_type,model,count,role,assembly_member
+0x9E,bos_003.gmx,1,main/root body,yes
+0xB4,,3,renderer helper/control slot,no
+0xB5,bos_003a.gmx,36,locator-attached weapon module,yes

@@ -1,0 +1,170 @@
+{
+  "format": "SIIG_ULTIMATE_UFO_CAMERA_RECONSTRUCTION_DEV13_VALIDATION",
+  "release": "2.8.0-dev13",
+  "date": "2026-09-07",
+  "status": "pass",
+  "cross_build_archives": [
+    {
+      "name": "SIIGGHIDRA(1).zip",
+      "sha256": "444ea2b9cf85f201cd160f935ea890bc473b6d541cb9d8cecb849ae462c53499",
+      "size": 14231549
+    },
+    {
+      "name": "SIIGMAY9GHIDRA.zip",
+      "sha256": "57da9c228c0040b90d760e115cdf658a32cb4c8a8147a5ba09703884960bcb43",
+      "size": 15225876
+    },
+    {
+      "name": "SIIGMAY11GHIDRA.zip",
+      "sha256": "4fc11fbe66656596eedc6560774e5858cb2882dbbe6d4aeaccf20aa2d717531d",
+      "size": 15277347
+    },
+    {
+      "name": "SIIGJUNE10GHIDRA.zip",
+      "sha256": "987cf607e4164dde06b980718a6169791d81e064d4b5e46ecb35f45176076f66",
+      "size": 15557546
+    },
+    {
+      "name": "SIIGPS3GHIDRA.zip",
+      "sha256": "e7af0cd5940268c4697470ca58d55010b45a50706dfc10ead552d4ee4ce55d6d",
+      "size": 12469255
+    }
+  ],
+  "real_asset_validation": {
+    "field": "fld015.gmx",
+    "frame_range": [
+      5897,
+      6300
+    ],
+    "rows": 404,
+    "classification_counts": {
+      "rear_follow": 404
+    },
+    "rear_follow_behind_distance": {
+      "min": 59.85896191407736,
+      "max": 72.11102103598846,
+      "mean": 63.665016216306846
+    },
+    "dynamic_stress": [
+      {
+        "runtime_x": 0,
+        "runtime_y": 233,
+        "counts": {
+          "rear_follow": 404
+        }
+      },
+      {
+        "runtime_x": 426,
+        "runtime_y": 233,
+        "counts": {
+          "rear_follow": 404
+        }
+      }
+    ]
+  },
+  "checks": [
+    {
+      "name": "matrix_conversion_report",
+      "pass": true,
+      "evidence": "real fld015 field-camera report"
+    },
+    {
+      "name": "late_window_complete",
+      "pass": true,
+      "evidence": "inclusive real fld015 5897..6300"
+    },
+    {
+      "name": "late_window_rear_follow_all",
+      "pass": true,
+      "evidence": "404/404 real fld015 frames"
+    },
+    {
+      "name": "late_rear_distance_range",
+      "pass": true,
+      "evidence": "{'min': 59.85896191407736, 'max': 72.11102103598846, 'mean': 63.665016216306846}"
+    },
+    {
+      "name": "dynamic_x0_rear_follow",
+      "pass": true,
+      "evidence": "runtime_x=0 runtime_y=233"
+    },
+    {
+      "name": "dynamic_x426_rear_follow",
+      "pass": true,
+      "evidence": "runtime_x=426 runtime_y=233"
+    },
+    {
+      "name": "dynamic_rear_metric_invariant",
+      "pass": true,
+      "evidence": "base/x0/x426 rear-distance summaries identical"
+    },
+    {
+      "name": "ps3_preset_timed_gate",
+      "pass": true,
+      "evidence": "PS3 0x0015B524, +0x11C == param_1+0x47 char gate"
+    },
+    {
+      "name": "ps3_ufo_gate_clear",
+      "pass": true,
+      "evidence": "PS3 0x001D3380 normal reset excludes Extra (5,6)"
+    },
+    {
+      "name": "xbox_ufo_gate_clear",
+      "pass": true,
+      "evidence": "Xbox retail 0x8212DCB0 cross-platform equivalent"
+    },
+    {
+      "name": "may9_phase12_vanish",
+      "pass": true,
+      "evidence": "May 9 MoveMain 0x82142008 phase 12 plus vtable +0x48"
+    },
+    {
+      "name": "may11_phase12_vanish",
+      "pass": true,
+      "evidence": "May 11 MoveMain 0x821431D0 phase 12 plus vtable +0x48"
+    },
+    {
+      "name": "prototype_vanish_debug_names",
+      "pass": true,
+      "evidence": "May 9/May 11 strings.csv"
+    },
+    {
+      "name": "retail_del_lv5_boss_not_authored",
+      "pass": true,
+      "evidence": "92-stage retail Stage Explorer corpus"
+    },
+    {
+      "name": "reference_camera_gate_rows",
+      "pass": true,
+      "evidence": "reference table row count"
+    },
+    {
+      "name": "reference_final_vanish_rows",
+      "pass": true,
+      "evidence": "reference table row count"
+    },
+    {
+      "name": "reference_matrix_convention_rows",
+      "pass": true,
+      "evidence": "reference table row count"
+    }
+  ],
+  "check_summary": {
+    "passed": 17,
+    "failed": 0,
+    "total": 17
+  },
+  "conclusions": {
+    "matrix_bridge": "Real GMX ANIM affine matrices are converted to the runtime row-vector representation by a 4x4 transpose model, matching serialized and runtime evidence.",
+    "late_camera": "Normal 5-3 preset-4 procedural camera is rear-follow for every real fld015 Mframe 5897..6300; dynamic horizontal response stress preserves the route-relative rear component.",
+    "transition_gate": "Retail camera +0x11C gates positive-duration preset transitions; Ultimate UFO normal part-0/state-0 reset clears it on Xbox and PS3.",
+    "prototype_endpoint": "May 9/May 11 phase 12 at Mframe 6200 directly invokes the part-0 vtable +0x48 operation identified by prototype debug strings as UltimateUfo::Vanish."
+  },
+  "semantic_boundaries": [
+    "Project-owner May 9 footage supplies the visible state-10/core, state-11/airlock and state-12/deletion labels; executable evidence independently proves the phase timing and Vanish path.",
+    "The exporter reconstructs procedural camera geometry for an explicit preset; it does not infer preset activation timing from a DAT.",
+    "Actual player runtime X/Y was not recovered during dev13, so exact rendered dynamic-X framing is not claimed.",
+    "The internal SgModel virtual node-matrix getter implementation was not separately identified; representation conversion is modeled from proven serialized input and runtime output conventions.",
+    "The later June/retail final part-0 reset caller remains unresolved."
+  ]
+}

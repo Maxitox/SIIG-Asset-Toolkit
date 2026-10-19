@@ -1,0 +1,121 @@
+{
+  "format": "SIIG_RELEASE_VALIDATION",
+  "release": "2.10.0-dev15",
+  "date": "2026-09-16",
+  "status": "development-pass",
+  "selftest": {
+    "passed": 97,
+    "failed": 0,
+    "ok": true,
+    "report": "validation/SELFTEST_2.10.0-dev15.json",
+    "reported_toolkit_version": "2.10.0-dev15"
+  },
+  "inherited_release_gate": {
+    "from": "2.10.0-dev14",
+    "report": "validation/RELEASE_VALIDATION_2.10.0-dev14.json",
+    "note": "All sealed dev14 CENTIPEDE, dev13 VERTEBRATE, dev12 UNKNOWN, dev11 BUTTERFLY, dev10 HORNET, dev9 ULTIMATE UFO, dev8 MANDALA and earlier native-format/mod/source-only gates remain inherited. Dev15 resolves GIGANTIC UFO complete visual hierarchy."
+  },
+  "gigantic_ufo_runtime_assembly": {
+    "status": "pass",
+    "report": "validation/GIGANTIC_UFO_RUNTIME_ASSEMBLY_2.10.0-dev15.json",
+    "catalog": "gigantic_ufo_complete",
+    "root_count": 1,
+    "child_count": 36,
+    "total_instances": 37,
+    "locator_range": "lt_001..lt_036",
+    "excluded_b4_helper_slots": 3,
+    "fresh_real_retail": {
+      "instances": 37,
+      "meshes": 74,
+      "nodes": 185,
+      "animations": 0,
+      "bounds_min": [
+        -269.592630692885,
+        -269.592630692885,
+        -66.10335789747478
+      ],
+      "bounds_max": [
+        269.592630692885,
+        269.592630692885,
+        61.110716407506516
+      ]
+    },
+    "cross_platform": "retail Xbox + June 10 Xbox + retail PS3 preserve the same 1 root + 36 B5 locator-driven visual hierarchy"
+  },
+  "desktop_gui": {
+    "status": "pass",
+    "report": "validation/DESKTOP_GUI_2.10.0-dev15.json",
+    "gui_version": "0.26.0-dev15",
+    "tabs": [
+      "Game Rip",
+      "Mod Workspace",
+      "GMX Workbench",
+      "Utilities"
+    ],
+    "gui_modes": [
+      "simple",
+      "advanced"
+    ],
+    "default_gui_mode": "simple",
+    "hover_context_help": true,
+    "gigantic_ufo_one_click_assembly": true
+  },
+  "asset_functionalization": {
+    "status": "pass",
+    "report": "validation/ASSET_FUNCTIONALIZATION_2.10.0-dev15.json",
+    "known_asset_families": 14,
+    "viewable_or_exportable_families": 14,
+    "native_round_trip_families": 11,
+    "native_builder_available_families": 11,
+    "gmx_multi_file_assembly": true,
+    "gigantic_ufo_complete_assembly": true
+  },
+  "versioning_policy": {
+    "status": "pass",
+    "report": "validation/VERSIONING_POLICY_2.10.0-dev15.json",
+    "previous": "2.10.0-dev14",
+    "current": "2.10.0-dev15"
+  },
+  "source_only_audit": {
+    "status": "pass",
+    "report": "validation/SOURCE_ONLY_AUDIT_2.10.0-dev15.json",
+    "game_assets": 0,
+    "external_executable_magic": 0,
+    "archive_binary_members": 0,
+    "private_runtime_paths": 0,
+    "python_bytecode": 0,
+    "third_party_binaries_bundled": false,
+    "sources_rows": 24
+  },
+  "version_consistency": {
+    "VERSION.txt": "2.10.0-dev15",
+    "cli_toolkit_version": "2.10.0-dev15",
+    "gui_version": "0.26.0-dev15"
+  },
+  "fresh_package": {
+    "status": "pass",
+    "candidate_manifest_entries_verified": 551,
+    "candidate_manifest_missing": 0,
+    "candidate_manifest_mismatched": 0,
+    "candidate_unlisted_files": 0,
+    "candidate_source_only_audit": "pass",
+    "candidate_selftest_passed": 97,
+    "candidate_selftest_failed": 0,
+    "candidate_version_reported": "2.10.0-dev15",
+    "candidate_gui_version": "0.26.0-dev15",
+    "candidate_gui_gigantic_ufo_complete_assembly": true,
+    "candidate_package_sha256": "77429755bbc927e47a92e7dc66abd9d190d30743f491131960617e5e4a65ccd8",
+    "note": "Candidate was extracted fresh, verified against RELEASE_MANIFEST with no unlisted files, independently source-audited before executing package code, then passed 97/97 selftests plus CLI/GUI version and GIGANTIC UFO hierarchy checks. Final package is rebuilt deterministically after recording this evidence."
+  },
+  "limitations": [
+    "GIGANTIC UFO dev15 publishes the deterministic complete visual hierarchy; 0xB4 helper/control slots are not model assets and are deliberately excluded.",
+    "Fresh retail Xbox game data was used only for external validation; no proprietary package, GMX, or generated retail glTF is bundled.",
+    "Native SIIG coordinate scale is preserved; no speculative meter conversion or hidden display scaling is applied.",
+    "Runtime acceptance of arbitrary fully original synthesized scenes remains a separate emulator/hardware gate.",
+    "Platform shader microcode compilation and remaining opaque GMX semantics remain unresolved.",
+    "Compressed/mipmapped native texture variants are not synthesized.",
+    "PS3 NPDRM/SDAT re-encryption is not implemented.",
+    "Audio replacement/rebuilding remains intentionally deferred.",
+    "Project-owner license selection remains open."
+  ]
+}

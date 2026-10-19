@@ -1,0 +1,67 @@
+{
+  "format": "SIIG_RELEASE_VALIDATION",
+  "schema_version": 1,
+  "release": "2.5.1",
+  "scope": "organized source-only release tree before ZIP packaging",
+  "layout": {
+    "previous_root_file_count": 75,
+    "current_root_file_count": 18,
+    "root_file_reduction": 57,
+    "root_files": [
+      "CHANGELOG.md",
+      "README.md",
+      "RELEASE_MANIFEST.json",
+      "SIIG_Build_Asset_Viewer.bat",
+      "SIIG_Decode_Stage3D.bat",
+      "SIIG_Decode_StageWall.bat",
+      "SIIG_Extract_BBX.bat",
+      "SIIG_Inspect_Shaders.bat",
+      "SIIG_Repack_BBX.bat",
+      "SIIG_Rip_Game.bat",
+      "SIIG_Run_Selftest.bat",
+      "SIIG_Serve_Output.bat",
+      "SIIG_Verify_Rip.bat",
+      "VERSION.txt",
+      "siig_asset_viewer.py",
+      "siig_containers.py",
+      "siig_stageviz.py",
+      "siig_toolkit.py"
+    ],
+    "folders": [
+      "docs",
+      "reference",
+      "validation",
+      "tools",
+      "addons",
+      "LICENSES"
+    ],
+    "documentation_index": "docs/README.md"
+  },
+  "runtime_validation": {
+    "python_compile": "pass",
+    "selftest": "16 passed, 0 failed",
+    "doctor_required_files": "pass",
+    "stage_pairing_rows": 78,
+    "legacy_path_fallbacks": true
+  },
+  "documentation_validation": {
+    "markdown_files": 53,
+    "broken_relative_links": [],
+    "status": "pass"
+  },
+  "source_only_audit": {
+    "forbidden_game_asset_entries": [],
+    "private_path_findings": [],
+    "status": "pass"
+  },
+  "content": {
+    "files_excluding_release_manifest": 95,
+    "no_research_files_removed": true,
+    "commands_unchanged": true,
+    "windows_launchers_unchanged": true
+  },
+  "limitations": [
+    "This patch reorganizes release files; it does not change asset-format decoding behavior.",
+    "Windows launcher execution was not tested on Windows in this environment; their command paths remain root-relative and unchanged."
+  ]
+}

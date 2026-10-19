@@ -1,0 +1,15 @@
+runtime_record,runtime_type,model,role,parent_record,parent_model,locator,retail_attachment_pointer,phase1_modeled,phase2_modeled,evidence
+0,0xA9,bos_016.gmx,animated main/root body,,,,,yes,yes,Retail Function_82127B38 model record 0
+1,0xDA,bos_016a.gmx,locator-attached leg,0,bos_016.gmx,lt_000,0x8200A5D4,yes,no,Retail per-frame updater attachment table
+2,0xDA,bos_016a.gmx,locator-attached leg,0,bos_016.gmx,lt_001,0x8200A5D8,yes,no,Retail per-frame updater attachment table
+3,0xDA,bos_016a.gmx,locator-attached leg,0,bos_016.gmx,lt_002,0x8200A5DC,yes,no,Retail per-frame updater attachment table
+4,0xDA,bos_016a.gmx,locator-attached leg,0,bos_016.gmx,lt_003,0x8200A5E0,yes,no,Retail per-frame updater attachment table
+5,0xDA,bos_016a.gmx,locator-attached leg,0,bos_016.gmx,lt_004,0x8200A5E4,yes,no,Retail per-frame updater attachment table
+6,0xDA,bos_016a.gmx,locator-attached leg,0,bos_016.gmx,lt_005,0x8200A5E8,yes,no,Retail per-frame updater attachment table
+7,0xDA,bos_016a.gmx,locator-attached leg,0,bos_016.gmx,lt_006,0x8200A5EC,yes,no,Retail per-frame updater attachment table
+8,0xDA,bos_016a.gmx,locator-attached leg,0,bos_016.gmx,lt_007,0x8200A5F0,yes,no,Retail per-frame updater attachment table
+9,,,non-GMX helper/control object,,,,,no,no,Retail allocation is not a GMX model record
+10,,,non-GMX helper/control object,,,,,no,no,Retail allocation is not a GMX model record
+11,,,non-GMX helper/control object,,,,,no,no,Retail allocation is not a GMX model record
+12,,,non-GMX helper/control object,,,,,no,no,Retail allocation is not a GMX model record
+13,,,non-GMX helper/control object,,,,,no,no,Retail allocation is not a GMX model record

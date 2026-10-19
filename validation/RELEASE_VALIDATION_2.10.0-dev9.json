@@ -1,0 +1,119 @@
+{
+  "format": "SIIG_RELEASE_VALIDATION",
+  "release": "2.10.0-dev9",
+  "date": "2026-09-15",
+  "status": "development-pass",
+  "selftest": {
+    "passed": 91,
+    "failed": 0,
+    "ok": true,
+    "report": "validation/SELFTEST_2.10.0-dev9.json",
+    "reported_toolkit_version": "2.10.0-dev9"
+  },
+  "inherited_release_gate": {
+    "from": "2.10.0-dev8",
+    "report": "validation/RELEASE_VALIDATION_2.10.0-dev8.json",
+    "note": "All sealed dev8 MANDALA, dev7 HORNET propagation, dev6 prism wall, dev5 full armor/grounded CRAB, PROGRESSIVE assembly, native-format, mod-package and source-only gates remain inherited. Dev9 adds the ULTIMATE UFO complete allocated hierarchy and activity-focused state catalogs."
+  },
+  "ultimate_ufo_runtime_assembly": {
+    "status": "pass",
+    "report": "validation/ULTIMATE_UFO_RUNTIME_ASSEMBLY_2.10.0-dev9.json",
+    "complete_catalog": "ultimate_ufo_complete",
+    "complete_allocated_instances": 126,
+    "activity_subset_catalogs": 8,
+    "retail_phase_table_semantics": "collision/destructibility activity; not render-visibility proof",
+    "named_locator_hierarchy": true,
+    "cross_builds": 2,
+    "external_retail_export": "not-run; proprietary bos_015*.gmx absent from persistent research Library"
+  },
+  "gmx_assembly_export": {
+    "status": "pass",
+    "report": "validation/GMX_ASSEMBLY_EXPORT_2.10.0-dev9.json",
+    "named_locator_attachment_supported": true,
+    "missing_locator_rejected": true,
+    "attachment_cycles_rejected": true,
+    "native_parent_hierarchy_preserved": true
+  },
+  "desktop_gui": {
+    "status": "pass",
+    "report": "validation/DESKTOP_GUI_2.10.0-dev9.json",
+    "gui_version": "0.20.0-dev9",
+    "tabs": [
+      "Game Rip",
+      "Mod Workspace",
+      "GMX Workbench",
+      "Utilities"
+    ],
+    "gui_modes": [
+      "simple",
+      "advanced"
+    ],
+    "default_gui_mode": "simple",
+    "hover_context_help": true,
+    "ultimate_ufo_complete_default": true,
+    "ultimate_ufo_activity_choices": 8
+  },
+  "asset_functionalization": {
+    "status": "pass",
+    "report": "validation/ASSET_FUNCTIONALIZATION_2.10.0-dev9.json",
+    "known_asset_families": 14,
+    "viewable_or_exportable_families": 14,
+    "native_round_trip_families": 11,
+    "native_builder_available_families": 11,
+    "gmx_multi_file_assembly": true,
+    "ultimate_ufo_complete_hierarchy": true
+  },
+  "versioning_policy": {
+    "status": "pass",
+    "report": "validation/VERSIONING_POLICY_2.10.0-dev9.json",
+    "previous": "2.10.0-dev8",
+    "current": "2.10.0-dev9"
+  },
+  "source_only_audit": {
+    "status": "pass",
+    "report": "validation/SOURCE_ONLY_AUDIT_2.10.0-dev9.json",
+    "game_assets": 0,
+    "external_executable_magic": 0,
+    "archive_binary_members": 0,
+    "private_runtime_paths": 0,
+    "python_bytecode": 0,
+    "third_party_binaries_bundled": false,
+    "sources_rows": 24
+  },
+  "version_consistency": {
+    "VERSION.txt": "2.10.0-dev9",
+    "cli_toolkit_version": "2.10.0-dev9",
+    "gui_version": "0.20.0-dev9"
+  },
+  "fresh_package": {
+    "status": "pass",
+    "candidate_manifest_entries_verified": 489,
+    "candidate_manifest_missing": 0,
+    "candidate_manifest_mismatched": 0,
+    "candidate_unlisted_files": 0,
+    "candidate_source_only_audit": "pass",
+    "candidate_selftest_passed": 91,
+    "candidate_selftest_failed": 0,
+    "candidate_version_reported": "2.10.0-dev9",
+    "candidate_gui_version": "0.20.0-dev9",
+    "candidate_gui_ultimate_ufo_complete": true,
+    "candidate_gui_ultimate_ufo_activity_choices": 8,
+    "candidate_package_sha256": "e24c34e67a957f60122df6e7f879677fd64fe83edf6a5be04dfa3478dcbf7b6d",
+    "note": "Candidate was extracted fresh, verified against RELEASE_MANIFEST with no unlisted files, independently source-audited before executing package code, then passed 91/91 selftests plus CLI/GUI version and ULTIMATE UFO complete/activity-control checks. Final package is rebuilt deterministically after recording this evidence."
+  },
+  "limitations": [
+    "ULTIMATE UFO complete catalog represents the 126-instance constructor allocation/hierarchy baseline; it is not a claim that all phase-gated members are simultaneously rendered or gameplay-active.",
+    "ULTIMATE UFO numbered state catalogs are controller-activity subsets derived from col/dis phase flags; zero flags are not interpreted as render invisibility.",
+    "No fresh real-retail bos_015*.gmx assembled glTF was produced in dev9 because those proprietary GMXs were not present in the persistent research Library; the exporter resolves exact named locators from user-selected local GMXs at runtime.",
+    "D0-D3 procedural parent rotations are recorded as runtime metadata at their constructor-baseline 0/360-degree orientations; dev9 does not invent a sampled later-phase angular pose.",
+    "HORNET state-6 propagation and prism-wall catalogs remain runtime families rather than one canonical random result.",
+    "Native SIIG coordinate scale is preserved; no speculative meter conversion or hidden display scaling is applied.",
+    "Assembly export produces a combined glTF viewing/editing scene; it does not claim the retail game stores or accepts one merged native GMX.",
+    "Runtime acceptance of arbitrary fully original synthesized scenes remains a separate emulator/hardware gate.",
+    "Platform shader microcode compilation and remaining opaque GMX semantics remain unresolved.",
+    "Compressed/mipmapped native texture variants are not synthesized.",
+    "PS3 NPDRM/SDAT re-encryption is not implemented.",
+    "Audio replacement/rebuilding remains intentionally deferred.",
+    "Project-owner license selection remains open."
+  ]
+}

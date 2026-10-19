@@ -1,0 +1,2820 @@
+{
+  "format": "SIIG_MAP_ATLAS_VALIDATION",
+  "version": 1,
+  "layout": {
+    "columns": 7,
+    "rows": 7,
+    "pitch_px": 144,
+    "source_size_px": 96,
+    "logical_sprite_units": 32,
+    "map_cell_units": 30
+  },
+  "atlas_count": 6,
+  "all_dimensions_1152x1152": true,
+  "all_alpha_inside_96px_source_boxes": true,
+  "atlases": [
+    {
+      "filename": "fence1_512.png",
+      "sha256": "a13e2a061f684eea349d0a634691006f6c0b3a0f1e1d020c2bf3e7b62750d200",
+      "width": 1152,
+      "height": 1152,
+      "occupied_tile_count": 41,
+      "occupied_tile_ids": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        40,
+        41,
+        42,
+        49
+      ],
+      "max_alpha_x_within_source": 92,
+      "max_alpha_y_within_source": 92,
+      "nontransparent_pixels_outside_96px_source_boxes": 0,
+      "tile_alpha_bboxes": [
+        {
+          "tile_id": 1,
+          "alpha_bbox_local": [
+            7,
+            7,
+            88,
+            88
+          ]
+        },
+        {
+          "tile_id": 2,
+          "alpha_bbox_local": [
+            7,
+            7,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 3,
+          "alpha_bbox_local": null
+        },
+        {
+          "tile_id": 4,
+          "alpha_bbox_local": [
+            3,
+            69,
+            27,
+            93
+          ]
+        },
+        {
+          "tile_id": 5,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 6,
+          "alpha_bbox_local": [
+            91,
+            46,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 7,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            5
+          ]
+        },
+        {
+          "tile_id": 8,
+          "alpha_bbox_local": [
+            7,
+            7,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 9,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 10,
+          "alpha_bbox_local": [
+            3,
+            49,
+            47,
+            93
+          ]
+        },
+        {
+          "tile_id": 11,
+          "alpha_bbox_local": [
+            7,
+            3,
+            47,
+            93
+          ]
+        },
+        {
+          "tile_id": 12,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 13,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 14,
+          "alpha_bbox_local": [
+            3,
+            91,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 15,
+          "alpha_bbox_local": [
+            7,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 16,
+          "alpha_bbox_local": [
+            7,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 17,
+          "alpha_bbox_local": [
+            7,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 18,
+          "alpha_bbox_local": [
+            7,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 19,
+          "alpha_bbox_local": [
+            91,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 20,
+          "alpha_bbox_local": [
+            25,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 21,
+          "alpha_bbox_local": [
+            3,
+            45,
+            93,
+            47
+          ]
+        },
+        {
+          "tile_id": 22,
+          "alpha_bbox_local": [
+            7,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 23,
+          "alpha_bbox_local": [
+            7,
+            3,
+            47,
+            93
+          ]
+        },
+        {
+          "tile_id": 24,
+          "alpha_bbox_local": [
+            7,
+            3,
+            93,
+            88
+          ]
+        },
+        {
+          "tile_id": 25,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 26,
+          "alpha_bbox_local": [
+            45,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 27,
+          "alpha_bbox_local": [
+            25,
+            3,
+            47,
+            93
+          ]
+        },
+        {
+          "tile_id": 28,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            47
+          ]
+        },
+        {
+          "tile_id": 29,
+          "alpha_bbox_local": [
+            7,
+            3,
+            47,
+            93
+          ]
+        },
+        {
+          "tile_id": 30,
+          "alpha_bbox_local": [
+            7,
+            3,
+            27,
+            93
+          ]
+        },
+        {
+          "tile_id": 31,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            88
+          ]
+        },
+        {
+          "tile_id": 32,
+          "alpha_bbox_local": [
+            7,
+            3,
+            93,
+            88
+          ]
+        },
+        {
+          "tile_id": 33,
+          "alpha_bbox_local": [
+            45,
+            3,
+            47,
+            93
+          ]
+        },
+        {
+          "tile_id": 34,
+          "alpha_bbox_local": [
+            25,
+            3,
+            27,
+            93
+          ]
+        },
+        {
+          "tile_id": 35,
+          "alpha_bbox_local": [
+            3,
+            49,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 36,
+          "alpha_bbox_local": [
+            3,
+            3,
+            47,
+            47
+          ]
+        },
+        {
+          "tile_id": 37,
+          "alpha_bbox_local": [
+            3,
+            3,
+            27,
+            27
+          ]
+        },
+        {
+          "tile_id": 38,
+          "alpha_bbox_local": [
+            3,
+            7,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 39,
+          "alpha_bbox_local": null
+        },
+        {
+          "tile_id": 40,
+          "alpha_bbox_local": [
+            3,
+            3,
+            47,
+            48
+          ]
+        },
+        {
+          "tile_id": 41,
+          "alpha_bbox_local": [
+            3,
+            3,
+            27,
+            27
+          ]
+        },
+        {
+          "tile_id": 42,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 43,
+          "alpha_bbox_local": null
+        },
+        {
+          "tile_id": 44,
+          "alpha_bbox_local": null
+        },
+        {
+          "tile_id": 45,
+          "alpha_bbox_local": null
+        },
+        {
+          "tile_id": 46,
+          "alpha_bbox_local": null
+        },
+        {
+          "tile_id": 47,
+          "alpha_bbox_local": null
+        },
+        {
+          "tile_id": 48,
+          "alpha_bbox_local": null
+        },
+        {
+          "tile_id": 49,
+          "alpha_bbox_local": [
+            41,
+            41,
+            55,
+            55
+          ]
+        }
+      ]
+    },
+    {
+      "filename": "fence2_512.png",
+      "sha256": "aee53a0a291d3c439291196bf294424d4fd43891aa0a4b50b70af9d8a216ac40",
+      "width": 1152,
+      "height": 1152,
+      "occupied_tile_count": 42,
+      "occupied_tile_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        40,
+        41,
+        42,
+        49
+      ],
+      "max_alpha_x_within_source": 92,
+      "max_alpha_y_within_source": 92,
+      "nontransparent_pixels_outside_96px_source_boxes": 0,
+      "tile_alpha_bboxes": [
+        {
+          "tile_id": 1,
+          "alpha_bbox_local": [
+            3,
+            7,
+            93,
+            89
+          ]
+        },
+        {
+          "tile_id": 2,
+          "alpha_bbox_local": [
+            3,
+            7,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 3,
+          "alpha_bbox_local": [
+            3,
+            7,
+            93,
+            89
+          ]
+        },
+        {
+          "tile_id": 4,
+          "alpha_bbox_local": [
+            3,
+            69,
+            27,
+            93
+          ]
+        },
+        {
+          "tile_id": 5,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 6,
+          "alpha_bbox_local": [
+            91,
+            46,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 7,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            5
+          ]
+        },
+        {
+          "tile_id": 8,
+          "alpha_bbox_local": [
+            3,
+            7,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 9,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 10,
+          "alpha_bbox_local": [
+            3,
+            49,
+            47,
+            93
+          ]
+        },
+        {
+          "tile_id": 11,
+          "alpha_bbox_local": [
+            3,
+            3,
+            47,
+            93
+          ]
+        },
+        {
+          "tile_id": 12,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 13,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 14,
+          "alpha_bbox_local": [
+            3,
+            91,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 15,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 16,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 17,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 18,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 19,
+          "alpha_bbox_local": [
+            91,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 20,
+          "alpha_bbox_local": [
+            25,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 21,
+          "alpha_bbox_local": [
+            3,
+            45,
+            93,
+            47
+          ]
+        },
+        {
+          "tile_id": 22,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 23,
+          "alpha_bbox_local": [
+            3,
+            3,
+            47,
+            93
+          ]
+        },
+        {
+          "tile_id": 24,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            89
+          ]
+        },
+        {
+          "tile_id": 25,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 26,
+          "alpha_bbox_local": [
+            45,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 27,
+          "alpha_bbox_local": [
+            25,
+            3,
+            47,
+            93
+          ]
+        },
+        {
+          "tile_id": 28,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            47
+          ]
+        },
+        {
+          "tile_id": 29,
+          "alpha_bbox_local": [
+            3,
+            3,
+            47,
+            93
+          ]
+        },
+        {
+          "tile_id": 30,
+          "alpha_bbox_local": [
+            3,
+            3,
+            27,
+            93
+          ]
+        },
+        {
+          "tile_id": 31,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            89
+          ]
+        },
+        {
+          "tile_id": 32,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            89
+          ]
+        },
+        {
+          "tile_id": 33,
+          "alpha_bbox_local": [
+            45,
+            3,
+            47,
+            93
+          ]
+        },
+        {
+          "tile_id": 34,
+          "alpha_bbox_local": [
+            25,
+            3,
+            27,
+            93
+          ]
+        },
+        {
+          "tile_id": 35,
+          "alpha_bbox_local": [
+            3,
+            49,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 36,
+          "alpha_bbox_local": [
+            3,
+            3,
+            47,
+            47
+          ]
+        },
+        {
+          "tile_id": 37,
+          "alpha_bbox_local": [
+            3,
+            3,
+            27,
+            27
+          ]
+        },
+        {
+          "tile_id": 38,
+          "alpha_bbox_local": [
+            3,
+            7,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 39,
+          "alpha_bbox_local": null
+        },
+        {
+          "tile_id": 40,
+          "alpha_bbox_local": [
+            3,
+            3,
+            47,
+            48
+          ]
+        },
+        {
+          "tile_id": 41,
+          "alpha_bbox_local": [
+            3,
+            3,
+            27,
+            27
+          ]
+        },
+        {
+          "tile_id": 42,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 43,
+          "alpha_bbox_local": null
+        },
+        {
+          "tile_id": 44,
+          "alpha_bbox_local": null
+        },
+        {
+          "tile_id": 45,
+          "alpha_bbox_local": null
+        },
+        {
+          "tile_id": 46,
+          "alpha_bbox_local": null
+        },
+        {
+          "tile_id": 47,
+          "alpha_bbox_local": null
+        },
+        {
+          "tile_id": 48,
+          "alpha_bbox_local": null
+        },
+        {
+          "tile_id": 49,
+          "alpha_bbox_local": [
+            41,
+            41,
+            55,
+            55
+          ]
+        }
+      ]
+    },
+    {
+      "filename": "fence3_512.png",
+      "sha256": "a13e2a061f684eea349d0a634691006f6c0b3a0f1e1d020c2bf3e7b62750d200",
+      "width": 1152,
+      "height": 1152,
+      "occupied_tile_count": 41,
+      "occupied_tile_ids": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        40,
+        41,
+        42,
+        49
+      ],
+      "max_alpha_x_within_source": 92,
+      "max_alpha_y_within_source": 92,
+      "nontransparent_pixels_outside_96px_source_boxes": 0,
+      "tile_alpha_bboxes": [
+        {
+          "tile_id": 1,
+          "alpha_bbox_local": [
+            7,
+            7,
+            88,
+            88
+          ]
+        },
+        {
+          "tile_id": 2,
+          "alpha_bbox_local": [
+            7,
+            7,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 3,
+          "alpha_bbox_local": null
+        },
+        {
+          "tile_id": 4,
+          "alpha_bbox_local": [
+            3,
+            69,
+            27,
+            93
+          ]
+        },
+        {
+          "tile_id": 5,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 6,
+          "alpha_bbox_local": [
+            91,
+            46,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 7,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            5
+          ]
+        },
+        {
+          "tile_id": 8,
+          "alpha_bbox_local": [
+            7,
+            7,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 9,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 10,
+          "alpha_bbox_local": [
+            3,
+            49,
+            47,
+            93
+          ]
+        },
+        {
+          "tile_id": 11,
+          "alpha_bbox_local": [
+            7,
+            3,
+            47,
+            93
+          ]
+        },
+        {
+          "tile_id": 12,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 13,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 14,
+          "alpha_bbox_local": [
+            3,
+            91,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 15,
+          "alpha_bbox_local": [
+            7,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 16,
+          "alpha_bbox_local": [
+            7,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 17,
+          "alpha_bbox_local": [
+            7,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 18,
+          "alpha_bbox_local": [
+            7,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 19,
+          "alpha_bbox_local": [
+            91,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 20,
+          "alpha_bbox_local": [
+            25,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 21,
+          "alpha_bbox_local": [
+            3,
+            45,
+            93,
+            47
+          ]
+        },
+        {
+          "tile_id": 22,
+          "alpha_bbox_local": [
+            7,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 23,
+          "alpha_bbox_local": [
+            7,
+            3,
+            47,
+            93
+          ]
+        },
+        {
+          "tile_id": 24,
+          "alpha_bbox_local": [
+            7,
+            3,
+            93,
+            88
+          ]
+        },
+        {
+          "tile_id": 25,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 26,
+          "alpha_bbox_local": [
+            45,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 27,
+          "alpha_bbox_local": [
+            25,
+            3,
+            47,
+            93
+          ]
+        },
+        {
+          "tile_id": 28,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            47
+          ]
+        },
+        {
+          "tile_id": 29,
+          "alpha_bbox_local": [
+            7,
+            3,
+            47,
+            93
+          ]
+        },
+        {
+          "tile_id": 30,
+          "alpha_bbox_local": [
+            7,
+            3,
+            27,
+            93
+          ]
+        },
+        {
+          "tile_id": 31,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            88
+          ]
+        },
+        {
+          "tile_id": 32,
+          "alpha_bbox_local": [
+            7,
+            3,
+            93,
+            88
+          ]
+        },
+        {
+          "tile_id": 33,
+          "alpha_bbox_local": [
+            45,
+            3,
+            47,
+            93
+          ]
+        },
+        {
+          "tile_id": 34,
+          "alpha_bbox_local": [
+            25,
+            3,
+            27,
+            93
+          ]
+        },
+        {
+          "tile_id": 35,
+          "alpha_bbox_local": [
+            3,
+            49,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 36,
+          "alpha_bbox_local": [
+            3,
+            3,
+            47,
+            47
+          ]
+        },
+        {
+          "tile_id": 37,
+          "alpha_bbox_local": [
+            3,
+            3,
+            27,
+            27
+          ]
+        },
+        {
+          "tile_id": 38,
+          "alpha_bbox_local": [
+            3,
+            7,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 39,
+          "alpha_bbox_local": null
+        },
+        {
+          "tile_id": 40,
+          "alpha_bbox_local": [
+            3,
+            3,
+            47,
+            48
+          ]
+        },
+        {
+          "tile_id": 41,
+          "alpha_bbox_local": [
+            3,
+            3,
+            27,
+            27
+          ]
+        },
+        {
+          "tile_id": 42,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 43,
+          "alpha_bbox_local": null
+        },
+        {
+          "tile_id": 44,
+          "alpha_bbox_local": null
+        },
+        {
+          "tile_id": 45,
+          "alpha_bbox_local": null
+        },
+        {
+          "tile_id": 46,
+          "alpha_bbox_local": null
+        },
+        {
+          "tile_id": 47,
+          "alpha_bbox_local": null
+        },
+        {
+          "tile_id": 48,
+          "alpha_bbox_local": null
+        },
+        {
+          "tile_id": 49,
+          "alpha_bbox_local": [
+            41,
+            41,
+            55,
+            55
+          ]
+        }
+      ]
+    },
+    {
+      "filename": "fence4_512.png",
+      "sha256": "aee53a0a291d3c439291196bf294424d4fd43891aa0a4b50b70af9d8a216ac40",
+      "width": 1152,
+      "height": 1152,
+      "occupied_tile_count": 42,
+      "occupied_tile_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        40,
+        41,
+        42,
+        49
+      ],
+      "max_alpha_x_within_source": 92,
+      "max_alpha_y_within_source": 92,
+      "nontransparent_pixels_outside_96px_source_boxes": 0,
+      "tile_alpha_bboxes": [
+        {
+          "tile_id": 1,
+          "alpha_bbox_local": [
+            3,
+            7,
+            93,
+            89
+          ]
+        },
+        {
+          "tile_id": 2,
+          "alpha_bbox_local": [
+            3,
+            7,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 3,
+          "alpha_bbox_local": [
+            3,
+            7,
+            93,
+            89
+          ]
+        },
+        {
+          "tile_id": 4,
+          "alpha_bbox_local": [
+            3,
+            69,
+            27,
+            93
+          ]
+        },
+        {
+          "tile_id": 5,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 6,
+          "alpha_bbox_local": [
+            91,
+            46,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 7,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            5
+          ]
+        },
+        {
+          "tile_id": 8,
+          "alpha_bbox_local": [
+            3,
+            7,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 9,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 10,
+          "alpha_bbox_local": [
+            3,
+            49,
+            47,
+            93
+          ]
+        },
+        {
+          "tile_id": 11,
+          "alpha_bbox_local": [
+            3,
+            3,
+            47,
+            93
+          ]
+        },
+        {
+          "tile_id": 12,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 13,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 14,
+          "alpha_bbox_local": [
+            3,
+            91,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 15,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 16,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 17,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 18,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 19,
+          "alpha_bbox_local": [
+            91,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 20,
+          "alpha_bbox_local": [
+            25,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 21,
+          "alpha_bbox_local": [
+            3,
+            45,
+            93,
+            47
+          ]
+        },
+        {
+          "tile_id": 22,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 23,
+          "alpha_bbox_local": [
+            3,
+            3,
+            47,
+            93
+          ]
+        },
+        {
+          "tile_id": 24,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            89
+          ]
+        },
+        {
+          "tile_id": 25,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 26,
+          "alpha_bbox_local": [
+            45,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 27,
+          "alpha_bbox_local": [
+            25,
+            3,
+            47,
+            93
+          ]
+        },
+        {
+          "tile_id": 28,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            47
+          ]
+        },
+        {
+          "tile_id": 29,
+          "alpha_bbox_local": [
+            3,
+            3,
+            47,
+            93
+          ]
+        },
+        {
+          "tile_id": 30,
+          "alpha_bbox_local": [
+            3,
+            3,
+            27,
+            93
+          ]
+        },
+        {
+          "tile_id": 31,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            89
+          ]
+        },
+        {
+          "tile_id": 32,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            89
+          ]
+        },
+        {
+          "tile_id": 33,
+          "alpha_bbox_local": [
+            45,
+            3,
+            47,
+            93
+          ]
+        },
+        {
+          "tile_id": 34,
+          "alpha_bbox_local": [
+            25,
+            3,
+            27,
+            93
+          ]
+        },
+        {
+          "tile_id": 35,
+          "alpha_bbox_local": [
+            3,
+            49,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 36,
+          "alpha_bbox_local": [
+            3,
+            3,
+            47,
+            47
+          ]
+        },
+        {
+          "tile_id": 37,
+          "alpha_bbox_local": [
+            3,
+            3,
+            27,
+            27
+          ]
+        },
+        {
+          "tile_id": 38,
+          "alpha_bbox_local": [
+            3,
+            7,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 39,
+          "alpha_bbox_local": null
+        },
+        {
+          "tile_id": 40,
+          "alpha_bbox_local": [
+            3,
+            3,
+            47,
+            48
+          ]
+        },
+        {
+          "tile_id": 41,
+          "alpha_bbox_local": [
+            3,
+            3,
+            27,
+            27
+          ]
+        },
+        {
+          "tile_id": 42,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 43,
+          "alpha_bbox_local": null
+        },
+        {
+          "tile_id": 44,
+          "alpha_bbox_local": null
+        },
+        {
+          "tile_id": 45,
+          "alpha_bbox_local": null
+        },
+        {
+          "tile_id": 46,
+          "alpha_bbox_local": null
+        },
+        {
+          "tile_id": 47,
+          "alpha_bbox_local": null
+        },
+        {
+          "tile_id": 48,
+          "alpha_bbox_local": null
+        },
+        {
+          "tile_id": 49,
+          "alpha_bbox_local": [
+            41,
+            41,
+            55,
+            55
+          ]
+        }
+      ]
+    },
+    {
+      "filename": "fence5_512.png",
+      "sha256": "a13e2a061f684eea349d0a634691006f6c0b3a0f1e1d020c2bf3e7b62750d200",
+      "width": 1152,
+      "height": 1152,
+      "occupied_tile_count": 41,
+      "occupied_tile_ids": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        40,
+        41,
+        42,
+        49
+      ],
+      "max_alpha_x_within_source": 92,
+      "max_alpha_y_within_source": 92,
+      "nontransparent_pixels_outside_96px_source_boxes": 0,
+      "tile_alpha_bboxes": [
+        {
+          "tile_id": 1,
+          "alpha_bbox_local": [
+            7,
+            7,
+            88,
+            88
+          ]
+        },
+        {
+          "tile_id": 2,
+          "alpha_bbox_local": [
+            7,
+            7,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 3,
+          "alpha_bbox_local": null
+        },
+        {
+          "tile_id": 4,
+          "alpha_bbox_local": [
+            3,
+            69,
+            27,
+            93
+          ]
+        },
+        {
+          "tile_id": 5,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 6,
+          "alpha_bbox_local": [
+            91,
+            46,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 7,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            5
+          ]
+        },
+        {
+          "tile_id": 8,
+          "alpha_bbox_local": [
+            7,
+            7,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 9,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 10,
+          "alpha_bbox_local": [
+            3,
+            49,
+            47,
+            93
+          ]
+        },
+        {
+          "tile_id": 11,
+          "alpha_bbox_local": [
+            7,
+            3,
+            47,
+            93
+          ]
+        },
+        {
+          "tile_id": 12,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 13,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 14,
+          "alpha_bbox_local": [
+            3,
+            91,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 15,
+          "alpha_bbox_local": [
+            7,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 16,
+          "alpha_bbox_local": [
+            7,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 17,
+          "alpha_bbox_local": [
+            7,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 18,
+          "alpha_bbox_local": [
+            7,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 19,
+          "alpha_bbox_local": [
+            91,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 20,
+          "alpha_bbox_local": [
+            25,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 21,
+          "alpha_bbox_local": [
+            3,
+            45,
+            93,
+            47
+          ]
+        },
+        {
+          "tile_id": 22,
+          "alpha_bbox_local": [
+            7,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 23,
+          "alpha_bbox_local": [
+            7,
+            3,
+            47,
+            93
+          ]
+        },
+        {
+          "tile_id": 24,
+          "alpha_bbox_local": [
+            7,
+            3,
+            93,
+            88
+          ]
+        },
+        {
+          "tile_id": 25,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 26,
+          "alpha_bbox_local": [
+            45,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 27,
+          "alpha_bbox_local": [
+            25,
+            3,
+            47,
+            93
+          ]
+        },
+        {
+          "tile_id": 28,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            47
+          ]
+        },
+        {
+          "tile_id": 29,
+          "alpha_bbox_local": [
+            7,
+            3,
+            47,
+            93
+          ]
+        },
+        {
+          "tile_id": 30,
+          "alpha_bbox_local": [
+            7,
+            3,
+            27,
+            93
+          ]
+        },
+        {
+          "tile_id": 31,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            88
+          ]
+        },
+        {
+          "tile_id": 32,
+          "alpha_bbox_local": [
+            7,
+            3,
+            93,
+            88
+          ]
+        },
+        {
+          "tile_id": 33,
+          "alpha_bbox_local": [
+            45,
+            3,
+            47,
+            93
+          ]
+        },
+        {
+          "tile_id": 34,
+          "alpha_bbox_local": [
+            25,
+            3,
+            27,
+            93
+          ]
+        },
+        {
+          "tile_id": 35,
+          "alpha_bbox_local": [
+            3,
+            49,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 36,
+          "alpha_bbox_local": [
+            3,
+            3,
+            47,
+            47
+          ]
+        },
+        {
+          "tile_id": 37,
+          "alpha_bbox_local": [
+            3,
+            3,
+            27,
+            27
+          ]
+        },
+        {
+          "tile_id": 38,
+          "alpha_bbox_local": [
+            3,
+            7,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 39,
+          "alpha_bbox_local": null
+        },
+        {
+          "tile_id": 40,
+          "alpha_bbox_local": [
+            3,
+            3,
+            47,
+            48
+          ]
+        },
+        {
+          "tile_id": 41,
+          "alpha_bbox_local": [
+            3,
+            3,
+            27,
+            27
+          ]
+        },
+        {
+          "tile_id": 42,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 43,
+          "alpha_bbox_local": null
+        },
+        {
+          "tile_id": 44,
+          "alpha_bbox_local": null
+        },
+        {
+          "tile_id": 45,
+          "alpha_bbox_local": null
+        },
+        {
+          "tile_id": 46,
+          "alpha_bbox_local": null
+        },
+        {
+          "tile_id": 47,
+          "alpha_bbox_local": null
+        },
+        {
+          "tile_id": 48,
+          "alpha_bbox_local": null
+        },
+        {
+          "tile_id": 49,
+          "alpha_bbox_local": [
+            41,
+            41,
+            55,
+            55
+          ]
+        }
+      ]
+    },
+    {
+      "filename": "fence6_512a.png",
+      "sha256": "c3b18b75d62a9d5f6955f6b27abdd0c3c7e4c25491abc2781d3bd974e806cc22",
+      "width": 1152,
+      "height": 1152,
+      "occupied_tile_count": 49,
+      "occupied_tile_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ],
+      "max_alpha_x_within_source": 92,
+      "max_alpha_y_within_source": 92,
+      "nontransparent_pixels_outside_96px_source_boxes": 0,
+      "tile_alpha_bboxes": [
+        {
+          "tile_id": 1,
+          "alpha_bbox_local": [
+            3,
+            7,
+            93,
+            89
+          ]
+        },
+        {
+          "tile_id": 2,
+          "alpha_bbox_local": [
+            3,
+            7,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 3,
+          "alpha_bbox_local": [
+            3,
+            91,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 4,
+          "alpha_bbox_local": [
+            3,
+            91,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 5,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            5
+          ]
+        },
+        {
+          "tile_id": 6,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 7,
+          "alpha_bbox_local": [
+            41,
+            41,
+            55,
+            55
+          ]
+        },
+        {
+          "tile_id": 8,
+          "alpha_bbox_local": [
+            3,
+            7,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 9,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 10,
+          "alpha_bbox_local": [
+            3,
+            91,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 11,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            5
+          ]
+        },
+        {
+          "tile_id": 12,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            5
+          ]
+        },
+        {
+          "tile_id": 13,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 14,
+          "alpha_bbox_local": [
+            41,
+            41,
+            55,
+            55
+          ]
+        },
+        {
+          "tile_id": 15,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 16,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 17,
+          "alpha_bbox_local": [
+            3,
+            91,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 18,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            5
+          ]
+        },
+        {
+          "tile_id": 19,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            5
+          ]
+        },
+        {
+          "tile_id": 20,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 21,
+          "alpha_bbox_local": [
+            41,
+            41,
+            55,
+            55
+          ]
+        },
+        {
+          "tile_id": 22,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 23,
+          "alpha_bbox_local": [
+            3,
+            3,
+            47,
+            93
+          ]
+        },
+        {
+          "tile_id": 24,
+          "alpha_bbox_local": [
+            3,
+            91,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 25,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            5
+          ]
+        },
+        {
+          "tile_id": 26,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 27,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 28,
+          "alpha_bbox_local": [
+            41,
+            41,
+            55,
+            55
+          ]
+        },
+        {
+          "tile_id": 29,
+          "alpha_bbox_local": [
+            3,
+            3,
+            47,
+            93
+          ]
+        },
+        {
+          "tile_id": 30,
+          "alpha_bbox_local": [
+            3,
+            3,
+            27,
+            93
+          ]
+        },
+        {
+          "tile_id": 31,
+          "alpha_bbox_local": [
+            3,
+            91,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 32,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            5
+          ]
+        },
+        {
+          "tile_id": 33,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 34,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 35,
+          "alpha_bbox_local": [
+            41,
+            41,
+            55,
+            55
+          ]
+        },
+        {
+          "tile_id": 36,
+          "alpha_bbox_local": [
+            3,
+            3,
+            47,
+            47
+          ]
+        },
+        {
+          "tile_id": 37,
+          "alpha_bbox_local": [
+            3,
+            3,
+            27,
+            27
+          ]
+        },
+        {
+          "tile_id": 38,
+          "alpha_bbox_local": [
+            3,
+            91,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 39,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            5
+          ]
+        },
+        {
+          "tile_id": 40,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 41,
+          "alpha_bbox_local": [
+            41,
+            41,
+            55,
+            55
+          ]
+        },
+        {
+          "tile_id": 42,
+          "alpha_bbox_local": [
+            41,
+            41,
+            55,
+            55
+          ]
+        },
+        {
+          "tile_id": 43,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 44,
+          "alpha_bbox_local": [
+            3,
+            91,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 45,
+          "alpha_bbox_local": [
+            3,
+            91,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 46,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            5
+          ]
+        },
+        {
+          "tile_id": 47,
+          "alpha_bbox_local": [
+            3,
+            3,
+            93,
+            93
+          ]
+        },
+        {
+          "tile_id": 48,
+          "alpha_bbox_local": [
+            41,
+            41,
+            55,
+            55
+          ]
+        },
+        {
+          "tile_id": 49,
+          "alpha_bbox_local": [
+            41,
+            41,
+            55,
+            55
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence_notes": [
+    "Function_822407D8 registers four resources at IDs 6..9 through Function_821CEBA8 and descriptor 0x820481C8.",
+    "The descriptor order resolves IDs 6,7,8,9 to fence1_512.png, fence2_512.png, fence6_512a.png, and fence3_512.png.",
+    "MAP renderer Function_8223AC28 masks cells with 0x3F, subtracts one, and passes indices 0..48 to Function_8223A1B0.",
+    "All atlas alpha pixels fit inside 96x96 source rectangles placed on a 144-pixel 7x7 pitch.",
+    "The 32-logical-unit sprite size is inferred from the executable 3x coordinate path and the 96-pixel source regions; the confirmed MAP step is 30 units."
+  ]
+}

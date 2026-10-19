@@ -1,0 +1,146 @@
+{
+  "format": "SIIG_RELEASE_VALIDATION",
+  "release": "2.10.0-dev7",
+  "date": "2026-09-11",
+  "status": "development-pass",
+  "selftest": {
+    "passed": 89,
+    "failed": 0,
+    "ok": true,
+    "report": "validation/SELFTEST_2.10.0-dev7.json",
+    "reported_toolkit_version": "2.10.0-dev7"
+  },
+  "inherited_release_gate": {
+    "from": "2.10.0-dev6",
+    "report": "validation/RELEASE_VALIDATION_2.10.0-dev6.json",
+    "note": "All sealed dev6 HORNET prism-wall, full-armor, grounded-CRAB, PROGRESSIVE barrier-orientation, beginner-GUI and inherited native-format/source-only gates remain inherited. Dev7 resolves the separate HORNET state-6 propagation attack as a deterministic seed+wave family."
+  },
+  "hornet_propagation": {
+    "status": "pass",
+    "report": "validation/HORNET_PROPAGATION_2.10.0-dev7.json",
+    "seed_count": 13,
+    "seed_values": [
+      0,
+      2,
+      6,
+      8,
+      18,
+      20,
+      22,
+      24,
+      26,
+      36,
+      38,
+      42,
+      44
+    ],
+    "grid": "5x9; spacing 46; x origin 29.5; y 0; z origin 28",
+    "initial": "inherited state-4 A1 slot; seed only",
+    "expansion": "orthogonal then diagonal, alternating to all 45 cells",
+    "visible_members": "reached C0 prisms only; A1 hidden by state 5",
+    "snapshot": "wave activation instant; zero extra Y rotation; transient beam/effects omitted",
+    "canonical_single_variant": false,
+    "crosscheck": [
+      "June 10 Xbox",
+      "retail Xbox",
+      "retail PS3"
+    ],
+    "visual_guessing": false
+  },
+  "gmx_assembly_export": {
+    "status": "pass",
+    "report": "validation/GMX_ASSEMBLY_EXPORT_2.10.0-dev7.json",
+    "pose_sample_supported": true,
+    "hornet_prism_variant_family": 13,
+    "hornet_propagation_seed_wave_family": true,
+    "hornet_propagation_seed_count": 13,
+    "unqualified_propagation_default_rejected": true,
+    "generic_unresolved_transform_guard": true
+  },
+  "desktop_gui": {
+    "status": "pass",
+    "report": "validation/DESKTOP_GUI_2.10.0-dev7.json",
+    "gui_version": "0.18.0-dev7",
+    "tabs": [
+      "Game Rip",
+      "Mod Workspace",
+      "GMX Workbench",
+      "Utilities"
+    ],
+    "gui_modes": [
+      "simple",
+      "advanced"
+    ],
+    "default_gui_mode": "simple",
+    "hover_context_help": true,
+    "hornet_full_armor_simple": true,
+    "hornet_prism_advanced_variants": 13,
+    "hornet_propagation_advanced_seed_wave": true
+  },
+  "asset_functionalization": {
+    "status": "pass",
+    "report": "validation/ASSET_FUNCTIONALIZATION_2.10.0-dev7.json",
+    "known_asset_families": 14,
+    "viewable_or_exportable_families": 14,
+    "native_round_trip_families": 11,
+    "native_builder_available_families": 11,
+    "gmx_multi_file_assembly": true
+  },
+  "versioning_policy": {
+    "status": "pass",
+    "report": "validation/VERSIONING_POLICY_2.10.0-dev7.json",
+    "previous": "2.10.0-dev6",
+    "current": "2.10.0-dev7"
+  },
+  "source_only_audit": {
+    "status": "pass",
+    "report": "validation/SOURCE_ONLY_AUDIT_2.10.0-dev7.json",
+    "game_assets": 0,
+    "external_executable_magic": 0,
+    "archive_binary_members": 0,
+    "private_runtime_paths": 0,
+    "python_bytecode": 0,
+    "third_party_binaries_bundled": false,
+    "sources_rows": 24
+  },
+  "version_consistency": {
+    "VERSION.txt": "2.10.0-dev7",
+    "cli_toolkit_version": "2.10.0-dev7",
+    "gui_version": "0.18.0-dev7"
+  },
+  "fresh_package": {
+    "status": "pass",
+    "candidate_manifest_entries_verified": 466,
+    "candidate_manifest_missing": 0,
+    "candidate_manifest_mismatched": 0,
+    "candidate_unlisted_files": 0,
+    "candidate_source_only_audit": "pass",
+    "candidate_selftest_passed": 89,
+    "candidate_selftest_failed": 0,
+    "candidate_version_reported": "2.10.0-dev7",
+    "candidate_gui_version": "0.18.0-dev7",
+    "candidate_gui_propagation_family": true,
+    "candidate_gui_propagation_seeds": 13,
+    "candidate_package_sha256": "f5f5cdd6bdd3923ee03ed7921debfd741cb8a699d6a8bfaec91aae61cdb4043f",
+    "note": "Candidate was extracted fresh, verified against RELEASE_MANIFEST with no unlisted files, independently source-audited before executing package code, and then passed 89/89 selftests plus CLI/GUI version and propagation-control checks. Final package is rebuilt deterministically after recording this evidence."
+  },
+  "limitations": [
+    "HORNET state-6 propagation catalogs are activation-instant snapshots; transient beam/effect objects and the subsequent 0-to-45-degree prism turn are not frozen into static geometry.",
+    "HORNET propagation inherits one of 13 runtime prism-wall seeds; there is deliberately no single canonical unqualified propagation preset.",
+    "HORNET prism-wall catalog remains a 13-variant runtime-random family; there is deliberately no single canonical unqualified prism-wall preset.",
+    "A1 is hidden during the recovered state-6 propagation attack; visible activation snapshots contain reached C0 prisms only.",
+    "HORNET full-armor remains the deterministic 125-BF C1 sample-0 lattice state.",
+    "CRAB default remains the executable/ANM-backed landed combat-loop sample 1; crab_first_visible preserves the airborne sample-167 intro.",
+    "PROGRESSIVE UFO remains the first recovered five-part runtime formation; its barrier tilt is native authored GMX orientation.",
+    "Native SIIG coordinate scale is preserved; no speculative meter conversion or hidden display scaling is applied.",
+    "True blended/multi-joint deformation is not encoded because no confirmed native per-vertex skin representation exists.",
+    "Assembly export produces a combined glTF viewing/editing scene; it does not claim the retail game stores or accepts one merged native GMX.",
+    "Runtime acceptance of arbitrary fully original synthesized scenes remains a separate emulator/hardware gate.",
+    "Platform shader microcode compilation and remaining opaque GMX semantics remain unresolved.",
+    "Compressed/mipmapped native texture variants are not synthesized.",
+    "PS3 donor-free TEX wrapper synthesis remains structurally validated rather than hardware/emulator-proven.",
+    "PS3 NPDRM/SDAT re-encryption is not implemented.",
+    "Audio replacement/rebuilding remains intentionally deferred.",
+    "Project-owner license selection remains open."
+  ]
+}

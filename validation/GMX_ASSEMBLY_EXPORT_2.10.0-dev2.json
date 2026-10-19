@@ -1,0 +1,14 @@
+{
+  "format": "SIIG_GMX_ASSEMBLY_EXPORT_VALIDATION",
+  "release": "2.10.0-dev2",
+  "status": "pass",
+  "generic_export": "two synthetic GMX inputs with explicit matrices merge into one glTF with two named instance roots, remapped buffers/accessors/materials/meshes, and source-hash report",
+  "unresolved_transform_guard": true,
+  "progressive_ufo_catalog": {
+    "membership_count_status": "proven",
+    "instances": ["1x bos_009.gmx (0xA2)", "2x bos_009a.gmx (0xC2)", "2x bos_009b.gmx (0xC3)"],
+    "exact_side_transform_status": "unresolved; four matrices intentionally null",
+    "guessed_placement": false
+  },
+  "selftest": "GMX multi-file assembly export"
+}

@@ -1,0 +1,33 @@
+{
+  "format": "SIIG_DESKTOP_GUI_VALIDATION",
+  "toolkit_version": "2.10.0-dev1",
+  "status": "pass",
+  "gui_version": "0.12.0-dev1",
+  "toolkit_exists": true,
+  "tkinter_available": true,
+  "python": "3.13.5",
+  "tabs": [
+    "Game Rip",
+    "Mod Workspace",
+    "GMX Workbench",
+    "Utilities"
+  ],
+  "principle": "GUI wraps the existing CLI; format logic stays in audited toolkit code",
+  "gmx_scene_graph_report": true,
+  "gmx_scene_graph_sync": true,
+  "gmx_texture_graph_sync": true,
+  "gmx_animation_graph_sync": true,
+  "mod_gltf_texture_pipeline": true,
+  "native_tex_layout_synthesis": true,
+  "gmx_multibone_animation_sync": true,
+  "gltf_cubicspline_animation_import": true,
+  "gmx_template_free_compile": true,
+  "gmx_canonical_root_synthesis": true,
+  "gmx_rigid_skin_import": true,
+  "gmx_blended_skin_rejection": true,
+  "gmx_rigid_inverse_bind_rebake": true,
+  "rigid_skin_control": true,
+  "rigid_inverse_bind_rebake": true,
+  "default_enabled": false,
+  "mod_workspace_automatic_path": true
+}

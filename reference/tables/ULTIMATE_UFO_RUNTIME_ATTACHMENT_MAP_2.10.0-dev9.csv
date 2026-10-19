@@ -1,0 +1,14 @@
+runtime_type,model,count,controller,parent_type,parent_instance,locator_start,locator_end,locator_count,state_visibility,runtime_rotation,evidence
+0xA8,bos_015.gmx,1,root,,,,,0,all selected states,,retail parent setup Function_8212FC80
+0xD5,bos_015h.gmx,2,UMB children,0xA8,body,lt_002,lt_003,2,2,,retail controller constructors/update loops; June cross-check
+0xD4,bos_015g.gmx,21,TOW children,0xA8,body,lt_004,lt_024,21,3,,retail controller constructors/update loops; June cross-check
+0xD0,bos_015a.gmx,1,FAN parent A,,,,,0,"6,7","Y: initial 0 deg, step +0.5",retail controller constructors/update loops; June cross-check
+0xD1,bos_015b.gmx,1,FAN parent B,,,,,0,"6,7","Y: initial 360 deg, step -0.5",retail controller constructors/update loops; June cross-check
+0xD6,bos_015i.gmx,16,FAN children A,0xD0,fan_parent_a,lt_226,lt_241,16,"6,7",,retail controller constructors/update loops; June cross-check
+0xD6,bos_015i.gmx,16,FAN children B,0xD1,fan_parent_b,lt_242,lt_257,16,"6,7",,retail controller constructors/update loops; June cross-check
+0xD2,bos_015c.gmx,1,RING parent A,,,,,0,"6,7,8","Y: initial 360 deg, step -1.0",retail controller constructors/update loops; June cross-check
+0xD3,bos_015d.gmx,1,RING parent B,,,,,0,"6,7,8","Y: initial 0 deg, step +1.0",retail controller constructors/update loops; June cross-check
+0xD7,bos_015j.gmx,32,RING children A,0xD2,ring_parent_a,lt_258,lt_289,32,"6,7,8",,retail controller constructors/update loops; June cross-check
+0xD7,bos_015j.gmx,32,RING children B,0xD3,ring_parent_b,lt_290,lt_321,32,"6,7,8",,retail controller constructors/update loops; June cross-check
+0xD9,bos_015l.gmx,1,core / weak-spot assembly,,,,,0,9,,retail controller constructors/update loops; June cross-check
+0xD8,bos_015k.gmx,1,late airlock object,,,,,0,"11,12",,retail controller constructors/update loops; June cross-check

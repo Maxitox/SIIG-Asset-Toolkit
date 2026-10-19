@@ -1,0 +1,7 @@
+requested_stage_id,requested_extra,chimera_stage,mission,evolution_node,evolution_title,unlock_source,paired_purchase_node,paired_purchase_title,fallback_stage_id,fallback_extra,fallback_mission,status_required
+49,31,C-1A,CAPTAIN NEO,30,EXTRA 31,crossover purchase,88,SILVER HAWK,31,13,PROOF-READING REPAIR,1
+50,32,C-2A,URBAN TRAIL,31,EXTRA 32,crossover purchase,89,INTER GRAY,40,22,TELEOMORPH,1
+51,33,C-3A,BORN TO BE FREE,32,EXTRA 33,crossover purchase,90,BLACK FLY,36,18,GENETIC DRIFT,1
+52,34,C-1B,I CAN NOT APE,33,EXTRA 34,clear stage 49 / C-1A,,,27,9,REPLICATION FORK,1
+53,35,C-2B,BURN ALT AIR,34,EXTRA 35,clear stage 50 / C-2A,,,46,28,CHROMOSOMAL DELETION,1
+54,36,C-3B,BEFORE TEN ORB,35,EXTRA 36,clear stage 51 / C-3A,,,30,12,ALLELE,1

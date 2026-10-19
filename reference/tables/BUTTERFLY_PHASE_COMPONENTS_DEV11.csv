@@ -1,0 +1,21 @@
+build,loader,record_table,model_index_table,locator_pointer_table,phase,group,model_index,runtime_type,model,count,locator_start,locator_end,role
+Xbox retail,0x82111F48,0x82009560,0x82009750,PTR_DAT_82543150,1,0,0,0xA4,bos_011.gmx,1,,,phase body
+Xbox retail,0x82111F48,0x82009560,0x82009750,PTR_DAT_82543150,2,1,1,0xC4,bos_011a.gmx,1,,,phase body
+Xbox retail,0x82111F48,0x82009560,0x82009750,PTR_DAT_82543150,3,2,2,0xC5,bos_011b.gmx,1,,,phase body
+Xbox retail,0x82111F48,0x82009560,0x82009750,PTR_DAT_82543150,4,3,3,0xC6,bos_011c.gmx,1,,,phase body
+Xbox retail,0x82111F48,0x82009560,0x82009750,PTR_DAT_82543150,2,1,4,0xC7,bos_011d.gmx,4,lt_001,lt_004,large square wing module
+Xbox retail,0x82111F48,0x82009560,0x82009750,PTR_DAT_82543150,3,2,4,0xC7,bos_011d.gmx,8,lt_001,lt_008,large square wing module
+Xbox retail,0x82111F48,0x82009560,0x82009750,PTR_DAT_82543150,3,2,5,0xC8,bos_011e.gmx,10,lt_009,lt_018,small square wing module
+Xbox retail,0x82111F48,0x82009560,0x82009750,PTR_DAT_82543150,4,3,4,0xC7,bos_011d.gmx,8,lt_001,lt_008,large square wing module
+Xbox retail,0x82111F48,0x82009560,0x82009750,PTR_DAT_82543150,4,3,5,0xC8,bos_011e.gmx,32,lt_009,lt_040,small square wing module
+Xbox retail,0x82111F48,0x82009560,0x82009750,PTR_DAT_82543150,4,3,6,0xC9,bos_011f.gmx,8,lt_041,lt_048,elongated rectangular wing module
+Xbox June 10,0x8212B490,0x8200F1A0,0x8200F720,PTR_DAT_82573D00,1,0,0,0xA4,bos_011.gmx,1,,,phase body
+Xbox June 10,0x8212B490,0x8200F1A0,0x8200F720,PTR_DAT_82573D00,2,1,1,0xC4,bos_011a.gmx,1,,,phase body
+Xbox June 10,0x8212B490,0x8200F1A0,0x8200F720,PTR_DAT_82573D00,3,2,2,0xC5,bos_011b.gmx,1,,,phase body
+Xbox June 10,0x8212B490,0x8200F1A0,0x8200F720,PTR_DAT_82573D00,4,3,3,0xC6,bos_011c.gmx,1,,,phase body
+Xbox June 10,0x8212B490,0x8200F1A0,0x8200F720,PTR_DAT_82573D00,2,1,4,0xC7,bos_011d.gmx,4,lt_001,lt_004,large square wing module
+Xbox June 10,0x8212B490,0x8200F1A0,0x8200F720,PTR_DAT_82573D00,3,2,4,0xC7,bos_011d.gmx,8,lt_001,lt_008,large square wing module
+Xbox June 10,0x8212B490,0x8200F1A0,0x8200F720,PTR_DAT_82573D00,3,2,5,0xC8,bos_011e.gmx,10,lt_009,lt_018,small square wing module
+Xbox June 10,0x8212B490,0x8200F1A0,0x8200F720,PTR_DAT_82573D00,4,3,4,0xC7,bos_011d.gmx,8,lt_001,lt_008,large square wing module
+Xbox June 10,0x8212B490,0x8200F1A0,0x8200F720,PTR_DAT_82573D00,4,3,5,0xC8,bos_011e.gmx,32,lt_009,lt_040,small square wing module
+Xbox June 10,0x8212B490,0x8200F1A0,0x8200F720,PTR_DAT_82573D00,4,3,6,0xC9,bos_011f.gmx,8,lt_041,lt_048,elongated rectangular wing module

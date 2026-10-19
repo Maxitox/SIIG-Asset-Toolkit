@@ -1,0 +1,34 @@
+{
+  "format": "SIIG_RIP_UPDATER_SCOPED_FASTPATH_VALIDATION",
+  "release": "2.10.0-dev24",
+  "checkpoint": "WIP194",
+  "gui_version": "0.52.0-dev24",
+  "status": "pass",
+  "trigger": "project-owner hands-on WIP192 Update Rip remained close to fresh-rip wall-clock time",
+  "behavior": {
+    "exact_profile_noop": "returns before whole-rip inventory/stat/hash traversal; Verify Rip is the explicit integrity audit",
+    "migration_preflight": "component-scoped overwrite guards only; untouched output trees are not globally enumerated",
+    "destructive_guard": "verified manifest-bound stat-cache rows are reused when size/mtime/hash still agree; changed-stat or legacy rows are SHA-256 checked before replacement",
+    "retained_bbx_fingerprint": "verified OUTPUT_STAT_CACHE + OUTPUT_MANIFEST digest reused for unchanged decompressed_bbx sources; changed-stat/legacy sources are SHA-256 read",
+    "manifest_refresh": "untouched rows copied from prior manifest in memory; only changed prefixes and explicit validation paths enumerated and hashed",
+    "stat_cache_refresh": "untouched prior cache rows copied in memory; only changed scopes are statted/refreshed",
+    "report_counts": "suffix counts projected from old manifest plus changed scopes instead of whole-rip rglob",
+    "privacy_audit": "changed component JSON only; prior clean audit reused when no generated JSON scope changed",
+    "final_gate": "changed-scope inventory/size/privacy verification; full whole-tree SHA-256 remains Verify Rip",
+    "force_or_recovery": "falls back to exhaustive manifest rebuild when old manifest trust is intentionally waived"
+  },
+  "source_only_regression": {
+    "exact_profile_hash_reads": 0,
+    "exact_profile_preflight_mode": "profile_noop",
+    "scope_guard_stat_cache_hits_observed": true,
+    "changed_stat_scope_file_rehashed": true,
+    "legacy_same_size_edit_rejected_before_replace": true,
+    "changed_scope_manifest_hash_reuse": true,
+    "retained_bbx_cache_path_covered": true
+  },
+  "boundaries": [
+    "size/mtime cache reuse is optimized for normal user edits; a same-size edit with deliberately preserved mtime requires explicit Verify Rip for detection unless that scope lacks a trusted cache row",
+    "actual retail wall-clock improvement must be confirmed by project-owner retest because filesystem/antivirus/storage behavior is environment-specific",
+    "component rebuilds that are genuinely invalidated by a converter/viewer/simulator change still take their real generation time"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "format": "SIIG_DESKTOP_GUI_VALIDATION",
+  "toolkit_target": "2.8.0-dev26",
+  "status": "pass",
+  "diagnostics": {
+    "gui_version": "0.2.0-dev26",
+    "toolkit_version": "2.8.0-dev26",
+    "toolkit_exists": true,
+    "tkinter_available": true,
+    "python": "3.13.5",
+    "tabs": [
+      "Game Rip",
+      "Mod Workspace",
+      "GMX Workbench",
+      "Utilities"
+    ],
+    "principle": "GUI wraps the existing CLI; format logic stays in audited toolkit code"
+  },
+  "gmx_workbench": {
+    "graph_sync_control": "Sync native MESH/ARRY graph (advanced)",
+    "cli_flag": "--sync-mesh-graph",
+    "default_enabled": false,
+    "behavior": "omitted meshes are deleted and new mesh graphs synthesized only after explicit opt-in"
+  },
+  "network_required": false,
+  "external_gui_dependencies": false,
+  "format_logic_duplicated": false
+}

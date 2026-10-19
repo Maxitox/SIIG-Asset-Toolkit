@@ -1,0 +1,4 @@
+stage,duration_frames,pillar_count,endcap_count,description
+phase1_tower,,30,2,two caps plus 30 DB pillar sections at exact 70-unit ladder
+collapse,120,30 -> 0,2,all DB pillar records are removed/shrunk while the two AA endcaps remain
+phase2_endcaps,,0,2,both AA endcaps rebased to local origin; effective Z rotations 90 and 270 degrees

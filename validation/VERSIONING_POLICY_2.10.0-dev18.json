@@ -1,0 +1,10 @@
+{
+  "format": "SIIG_VERSIONING_POLICY_VALIDATION",
+  "release": "2.10.0-dev18",
+  "status": "pass",
+  "previous": "2.10.0-dev17",
+  "toolkit_version": "2.10.0-dev18",
+  "gui_version": "0.29.0-dev18",
+  "reason": "incremental 2.10 development checkpoint: executable-backed AXON A5/CA/CB three-form assembly with exact 16-petal two-ring runtime transforms; no incompatible public format break",
+  "ok": true
+}

@@ -1,0 +1,48 @@
+{
+  "format": "SIIG_RELEASE_VALIDATION",
+  "release": "2.8.0-dev7",
+  "date": "2026-09-06",
+  "status": "development-pass",
+  "selftest": {
+    "passed": 34,
+    "failed": 0,
+    "ok": true,
+    "report": "validation/SELFTEST_2.8.0-dev7.json"
+  },
+  "inherited_release_gate": {
+    "from": "2.8.0-dev6",
+    "report": "validation/RELEASE_VALIDATION_2.8.0-dev6.json",
+    "note": "Dev7 changes GMX matrix-animation timing, glTF animation key timing, explicit camera/field animation exporters, tests, tables and docs. Direct package extraction, audio/SDAT, procedural route/camera, viewers and prior real-package gates remain inherited from frozen checkpoints."
+  },
+  "dev7_animated_runtime_validation": {
+    "status": "pass",
+    "report": "validation/ANIMATED_RUNTIME_VALIDATION_2.8.0-dev7.json",
+    "real_gmx_files": 4,
+    "animation_tracks": 6,
+    "camera_models": 2,
+    "field_models": 2,
+    "gltf_files": 4,
+    "conversion_failures": 0
+  },
+  "source_only_audit": {
+    "status": "pass",
+    "report": "validation/SOURCE_ONLY_AUDIT_2.8.0-dev7.json",
+    "game_assets": 0,
+    "external_executable_magic": 0,
+    "archive_binary_members": 0,
+    "private_runtime_paths": 0,
+    "python_bytecode": 0,
+    "third_party_binaries_bundled": false,
+    "sources_rows": 18
+  },
+  "limitations": [
+    "Exact global DAT/opcode activation schedules for animated camera and field modes remain unresolved; the new exporters require explicit GMX inputs.",
+    "cam02_op1 contains 300 matrix samples per track, but the traced camera controller only reaches frames 0..199; possible use of samples 200..299 by another path remains unresolved.",
+    "Field-model animation can be externally frame-driven; dev7 exports descriptor-frame evaluation but does not infer the complete stage driver timeline.",
+    "Runtime fog-profile selection over time remains unresolved.",
+    "Camera preset word 11 remains a proven shared model/material scalar with unresolved exact virtual-setter meaning.",
+    "Instruction-level RSX/Xenos shader disassembly/translation remains future work.",
+    "The bundled Blender add-on has not been exercised inside a real Blender UI/runtime.",
+    "The project owner has not selected a license for original toolkit code."
+  ]
+}

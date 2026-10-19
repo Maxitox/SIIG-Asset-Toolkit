@@ -1,0 +1,49 @@
+{
+  "format": "SIIG_MOD_WORKSPACE_AUDIO_EDIT_VALIDATION",
+  "release": "2.10.0-dev24",
+  "checkpoint": "WIP187",
+  "gui_version": "0.48.0-dev24",
+  "xbox360": {
+    "surface": "sound.bin / media/sound -> AUDIO \u00b7 EDIT",
+    "canonical_edit": "PCM16 WAV",
+    "input_constraints": [
+      "PCM16",
+      "1..64 input channels",
+      "sample rate encodable by standard XWB mini-wave format"
+    ],
+    "native_channel_policy": "1..6 preserved; 7..64 downmixed to stereo",
+    "native_rebuild": "edited XWB slots -> PCM16 with duration/format/play-region rewrite; untouched XMA2 preserved; existing loops remapped proportionally",
+    "big_endian_pcm16_byteswap": true,
+    "retail_structural_validation": {
+      "source_slot": "looped XMA2 SE_008",
+      "source": "1 ch / 43882 Hz / 12800 samples",
+      "replacement": "3 ch / 32000 Hz / 12345 samples",
+      "loop": "384/12288 -> 370/11852",
+      "result": "nested XWB and BBX reparse successfully"
+    }
+  },
+  "ps3": {
+    "surface": "SBlk/989SND .bnk resource",
+    "canonical_edit": "PCM16 WAV",
+    "input_constraints": [
+      "PCM16",
+      "1..64 input channels"
+    ],
+    "native_channel_policy": "SIIG SBlk v3 stream is mono; multichannel input downmixed to mono",
+    "native_rebuild": "PS-ADPCM encode + whole data-section repack + offset/size/pitch rewrite + loop/end flag regeneration",
+    "retail_structural_validation": {
+      "bank_streams": 84,
+      "source": "mono / 44050 Hz / 15960 decoded samples",
+      "replacement": "stereo / 32000 Hz / 10003 frames",
+      "native_result": "mono / 32003 Hz / resized payload",
+      "result": "84 streams reparse with contiguous full data coverage and untouched stream bytes preserved"
+    }
+  },
+  "runtime_acceptance": "not yet claimed; emulator/hardware test required",
+  "remaining": [
+    "native XMA2 re-encoding",
+    "true multichannel/topology-changing PS3 SBlk synthesis",
+    "PS3 SDAT re-encryption",
+    "large variable-size whole-archive .siigmod delta packaging may hit existing safety cap"
+  ]
+}

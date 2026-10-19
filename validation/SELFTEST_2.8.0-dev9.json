@@ -1,0 +1,226 @@
+{
+  "format": "SIIG_SELFTEST",
+  "toolkit_version": "2.8.0-dev9",
+  "python": "3.13.5",
+  "passed": 36,
+  "failed": 0,
+  "ok": true,
+  "tests": [
+    {
+      "name": "AES-128 FIPS-197",
+      "status": "PASS",
+      "seconds": 8.9e-05,
+      "detail": "known-answer vector"
+    },
+    {
+      "name": "AES-128 decrypt",
+      "status": "PASS",
+      "seconds": 0.002855,
+      "detail": "encrypt and inverse-cipher vectors"
+    },
+    {
+      "name": "PKG AES-CTR backend",
+      "status": "PASS",
+      "seconds": 0.001962,
+      "detail": "unaligned chunking equals one-shot CTR and round-trips"
+    },
+    {
+      "name": "STFS CON initialization",
+      "status": "PASS",
+      "seconds": 0.000606,
+      "detail": "CON transactional layout initializes after first hash-table address"
+    },
+    {
+      "name": "NPDRM SDAT authentication",
+      "status": "PASS",
+      "seconds": 0.010977,
+      "detail": "encrypted-key HMAC-SHA1 block decrypts; tamper rejected"
+    },
+    {
+      "name": "PSX ADPCM decoder",
+      "status": "PASS",
+      "seconds": 3.8e-05,
+      "detail": "16-byte frame -> 28 PCM16 samples; terminal frame silent"
+    },
+    {
+      "name": "DAT parser",
+      "status": "PASS",
+      "seconds": 2.1e-05,
+      "detail": "one command, absolute frame 5"
+    },
+    {
+      "name": "Route runtime state machine",
+      "status": "PASS",
+      "seconds": 0.000288,
+      "detail": "signed spacing, non-loop tail, loop wrap, linear rebuild, and Hermite non-rebuild"
+    },
+    {
+      "name": "DAT-coupled route playback",
+      "status": "PASS",
+      "seconds": 0.003341,
+      "detail": "authored DAT frames -> runtime updates, initial spacing, and mid-segment SCROLL_02 rebuild"
+    },
+    {
+      "name": "Combined route-camera playback",
+      "status": "PASS",
+      "seconds": 0.013366,
+      "detail": "DAT route spacing + procedural orientation + explicit camera preset world-state export"
+    },
+    {
+      "name": "MAP parser",
+      "status": "PASS",
+      "seconds": 6.3e-05,
+      "detail": "tile IDs and X/Y bits preserved"
+    },
+    {
+      "name": "BBX parser/hash",
+      "status": "PASS",
+      "seconds": 4.3e-05,
+      "detail": "named entry and filename hash"
+    },
+    {
+      "name": "BBX repacker",
+      "status": "PASS",
+      "seconds": 0.000104,
+      "detail": "named/unnamed payloads, hashes, alignment, and sorted index"
+    },
+    {
+      "name": "ANM range parser",
+      "status": "PASS",
+      "seconds": 1.7e-05,
+      "detail": "16-byte names, start/end frames, grouping, and loop flags"
+    },
+    {
+      "name": "Stage wall/generator table",
+      "status": "PASS",
+      "seconds": 5e-05,
+      "detail": "20-byte names, wall repeat counts, clamp, and generator enable flags"
+    },
+    {
+      "name": "Bmap/Xmap parser",
+      "status": "PASS",
+      "seconds": 0.000118,
+      "detail": "0x118 record, corrected placement transforms, route-source slots, origin fallback, and sentinel"
+    },
+    {
+      "name": "Retail route resampler",
+      "status": "PASS",
+      "seconds": 0.000149,
+      "detail": "linear write-after-step, classifier, six-state tangents, Hermite endpoints, and non-loop source-index tail"
+    },
+    {
+      "name": "GMX animation-track exporter",
+      "status": "PASS",
+      "seconds": 0.001054,
+      "detail": "matrix tracks/glTF use 30 Hz runtime indexing while preserving raw authoring times"
+    },
+    {
+      "name": "Animated camera runtime",
+      "status": "PASS",
+      "seconds": 0.004964,
+      "detail": "cam1/int1 frames 0..199, 1/frame-multiplier clock, FieldPos offset"
+    },
+    {
+      "name": "Animated field runtime",
+      "status": "PASS",
+      "seconds": 0.004502,
+      "detail": "fld014 frame 1440 wraps to sample 0 under loop descriptor"
+    },
+    {
+      "name": "Route animation descriptors",
+      "status": "PASS",
+      "seconds": 0.000119,
+      "detail": "fld015 0..6300 non-loop; fld014 0..1440 loop with 1440 matrices"
+    },
+    {
+      "name": "PA-route cross-build activation reference",
+      "status": "PASS",
+      "seconds": 0.000263,
+      "detail": "cross-build gates, cam01/cam02 selection, boss-field correlations, tables, and conservative DAT scan"
+    },
+    {
+      "name": "boss PA-route timeline reference",
+      "status": "PASS",
+      "seconds": 2.3e-05,
+      "detail": "Water Strider 1441-frame wrap and retail/prototype Ultimate UFO phase tables verified"
+    },
+    {
+      "name": "Camera preset semantic table",
+      "status": "PASS",
+      "seconds": 0.001969,
+      "detail": "32 runtime presets with FOV/scale/eye/translation/dynamic/fog semantics; word 11 remains explicitly unresolved"
+    },
+    {
+      "name": "Camera dynamic response",
+      "status": "PASS",
+      "seconds": 0.000208,
+      "detail": "retail normalized X/Y response, gain/scale clamp, separate target and eye local-X factors"
+    },
+    {
+      "name": "Route orientation + camera world state",
+      "status": "PASS",
+      "seconds": 0.000445,
+      "detail": "Hermite orientation ordering and procedural camera eye/target world transform"
+    },
+    {
+      "name": "Xenos shader inventory",
+      "status": "PASS",
+      "seconds": 0.000284,
+      "detail": "stage bit, header offsets, strings, and bounded microcode"
+    },
+    {
+      "name": "Gzip safety",
+      "status": "PASS",
+      "seconds": 0.000182,
+      "detail": "valid stream decoded; expansion over limit rejected"
+    },
+    {
+      "name": "PNG/atlas renderer",
+      "status": "PASS",
+      "seconds": 1.788753,
+      "detail": "RGBA PNG round trip and flipped atlas MAP render"
+    },
+    {
+      "name": "ZIP safety",
+      "status": "PASS",
+      "seconds": 0.002061,
+      "detail": "valid member extracted; traversal rejected"
+    },
+    {
+      "name": "Outer-container resume cache",
+      "status": "PASS",
+      "seconds": 0.002928,
+      "detail": "content-addressed staging reuses exact input and invalidates changed packages"
+    },
+    {
+      "name": "Privacy scrubber",
+      "status": "PASS",
+      "seconds": 1.6e-05,
+      "detail": "Windows and POSIX routes redacted"
+    },
+    {
+      "name": "Stage Explorer platform roots",
+      "status": "PASS",
+      "seconds": 0.109921,
+      "detail": "Xbox Media and PS3 USRDIR stage roots detected without renaming"
+    },
+    {
+      "name": "HTML asset viewer",
+      "status": "PASS",
+      "seconds": 0.028556,
+      "detail": "small linked HTML, lazy image thumbnail, and deferred text payload"
+    },
+    {
+      "name": "Release layout",
+      "status": "PASS",
+      "seconds": 0.000287,
+      "detail": "organized support folders present; 23 root files"
+    },
+    {
+      "name": "Output manifest/verification",
+      "status": "PASS",
+      "seconds": 0.002805,
+      "detail": "fresh tree verified; tampering detected"
+    }
+  ]
+}

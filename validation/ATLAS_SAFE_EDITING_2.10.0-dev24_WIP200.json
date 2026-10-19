@@ -1,0 +1,30 @@
+{
+  "format": "SIIG_ATLAS_SAFE_EDITING_VALIDATION",
+  "release": "2.10.0-dev24",
+  "checkpoint": "WIP200",
+  "status": "pass",
+  "capabilities": {
+    "slot_identity_independent_of_pixels": true,
+    "exact_duplicate_slots_remain_distinct": true,
+    "duplicate_content_groups_are_advisory": true,
+    "technical_ids_separate_from_semantic_labels": true,
+    "labels_tsv_roundtrip": true,
+    "guide_pngs_separate_from_clean_atlas": true,
+    "guide_pngs_marked_do_not_rebuild": true,
+    "png2tex_rejects_marked_guides": true,
+    "individual_region_export": true,
+    "exact_size_region_replacement": true,
+    "out_of_region_change_detection": true
+  },
+  "boundary_model": {
+    "kind": "content-derived-conservative",
+    "native_uv_authoritative": false,
+    "reason": "Native general 2D sprite UV/allocation tables are not yet proven. Alpha/content analysis is intentionally used only for conservative no-overflow editing, never as a claim of native allocation.",
+    "known_limitations": [
+      "transparent padding owned by a native sprite may be omitted",
+      "one logical sprite with disconnected artwork may be split into multiple conservative regions",
+      "nearby components cannot be safely merged into a native slot from image content alone"
+    ]
+  },
+  "future_gate": "Atlas repacking, allocation enlargement, and new addressable slots remain experimental/disabled until native UV/reference ownership is recovered and rewrite coverage is proven."
+}

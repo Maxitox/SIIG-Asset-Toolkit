@@ -1,0 +1,143 @@
+{
+  "format": "SIIG_RELEASE_VALIDATION",
+  "release": "2.10.0-dev19",
+  "date": "2026-09-17",
+  "status": "development-pass",
+  "selftest": {
+    "passed": 101,
+    "failed": 0,
+    "ok": true,
+    "report": "validation/SELFTEST_2.10.0-dev19.json",
+    "reported_toolkit_version": "2.10.0-dev19"
+  },
+  "inherited_release_gate": {
+    "from": "2.10.0-dev18",
+    "report": "validation/RELEASE_VALIDATION_2.10.0-dev18.json",
+    "note": "All sealed dev18 AXON and earlier assembly/native-format/mod/source-only gates remain inherited. Dev19 adds THE SUN without modifying sealed dev18 or prior catalog definitions."
+  },
+  "the_sun": {
+    "status": "pass",
+    "report": "validation/THE_SUN_RUNTIME_ASSEMBLY_2.10.0-dev19.json",
+    "catalogs": [
+      "the_sun_native_body",
+      "the_sun_extended_arms",
+      "the_sun_long_wave"
+    ],
+    "body_runtime_type": "0x47",
+    "b3_runtime_type": "0xB3",
+    "extended_pose_sample": 40,
+    "long_wave_groups": 4,
+    "segments_per_group": 12,
+    "full_ramp_active_segments": 48,
+    "full_ramp_x_centers": [
+      69.0,
+      165.0,
+      261.0,
+      357.0
+    ],
+    "full_ramp_z_first": 176.0,
+    "full_ramp_z_last": 198.0,
+    "full_ramp_z_step": 2.0,
+    "native_body": {
+      "instances": 1,
+      "meshes": 8,
+      "nodes": 10,
+      "animations": 6
+    },
+    "extended_arms": {
+      "instances": 1,
+      "meshes": 8,
+      "nodes": 10,
+      "animations": 0
+    },
+    "long_wave": {
+      "instances": 48,
+      "meshes": 96,
+      "nodes": 192,
+      "animations": 0
+    },
+    "fresh_retail_hashes_verified": true,
+    "june10_crosscheck": true,
+    "body_wave_synchronization": "unproven; presets deliberately separate"
+  },
+  "desktop_gui": {
+    "status": "pass",
+    "report": "validation/DESKTOP_GUI_2.10.0-dev19.json",
+    "gui_version": "0.30.0-dev19",
+    "gui_modes": [
+      "simple",
+      "advanced"
+    ],
+    "default_gui_mode": "simple",
+    "the_sun_form_assemblies": 3,
+    "the_sun_long_wave_segments": 48
+  },
+  "asset_functionalization": {
+    "status": "pass",
+    "report": "validation/ASSET_FUNCTIONALIZATION_2.10.0-dev19.json",
+    "known_asset_families": 14,
+    "viewable_or_exportable_families": 14,
+    "native_round_trip_families": 11,
+    "native_builder_available_families": 11,
+    "gmx_multi_file_assembly": true
+  },
+  "versioning_policy": {
+    "status": "pass",
+    "report": "validation/VERSIONING_POLICY_2.10.0-dev19.json",
+    "previous": "2.10.0-dev18",
+    "current": "2.10.0-dev19"
+  },
+  "source_only_audit": {
+    "status": "pass",
+    "report": "validation/SOURCE_ONLY_AUDIT_2.10.0-dev19.json",
+    "game_assets": 0,
+    "external_executable_magic": 0,
+    "archive_binary_members": 0,
+    "private_runtime_paths": 0,
+    "python_bytecode": 0,
+    "third_party_binaries_bundled": false,
+    "sources_rows": 24
+  },
+  "version_consistency": {
+    "VERSION.txt": "2.10.0-dev19",
+    "cli_toolkit_version": "2.10.0-dev19",
+    "gui_version": "0.30.0-dev19"
+  },
+  "fresh_package": {
+    "status": "pass",
+    "candidate_manifest_missing": 0,
+    "candidate_manifest_mismatched": 0,
+    "candidate_unlisted_files": 0,
+    "candidate_source_only_audit": "pass",
+    "candidate_selftest_passed": 101,
+    "candidate_selftest_failed": 0,
+    "candidate_version_reported": "2.10.0-dev19",
+    "candidate_gui_version": "0.30.0-dev19",
+    "candidate_gui_the_sun_form_assemblies": 3,
+    "candidate_gui_the_sun_long_wave_segments": 48,
+    "package_sha256": "recorded externally in SIIG_Asset_Toolkit_v2.10.0-dev19_SHA256.txt"
+  },
+  "final_package": {
+    "status": "pass",
+    "deterministic_rebuild_byte_identical": true,
+    "untouched_manifest_missing": 0,
+    "untouched_manifest_mismatched": 0,
+    "untouched_unlisted_files": 0,
+    "untouched_source_only_audit": "pass",
+    "untouched_selftest_passed": 101,
+    "untouched_selftest_failed": 0,
+    "untouched_gui_version": "0.30.0-dev19",
+    "untouched_gui_the_sun_form_assemblies": 3,
+    "untouched_gui_the_sun_long_wave_segments": 48,
+    "note": "Final package is a fixed-metadata deterministic ZIP. Final hash is stored outside the package to avoid self-referential package metadata."
+  },
+  "limitations": [
+    "THE SUN extended-arm sample 40 and full 48-segment B3 wave are independently proven but exact temporal synchronization between them is not; dev19 intentionally does not emit a combined synchronized preset.",
+    "The 0x48 controller owns B2/B3 visual allocation; dev19 does not reinterpret 0x48/bos_003 as a persistent THE SUN body member.",
+    "Fresh retail Xbox game data was used only for external validation; no proprietary package, GMX, executable, Ghidra export, or generated retail glTF is bundled.",
+    "Native SIIG coordinate scale is preserved; no speculative meter conversion or hidden display scaling is applied.",
+    "Runtime acceptance of arbitrary fully original synthesized scenes remains a separate emulator/hardware gate.",
+    "Platform shader microcode compilation and remaining opaque GMX semantics remain unresolved.",
+    "Audio replacement/rebuilding remains intentionally deferred."
+  ]
+}

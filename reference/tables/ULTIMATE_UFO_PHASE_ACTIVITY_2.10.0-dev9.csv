@@ -1,0 +1,14 @@
+state,mframe,delay,umb_enabled,tow_enabled,fan_enabled,ring_enabled,meaning
+1,0,0,0,0,0,0,intro / all four controller groups off
+2,1750,0,1,0,0,0,UMB on
+3,2250,0,0,1,0,0,TOW on
+4,3123,0,0,0,0,0,all controller groups off
+5,4231,200,0,0,0,0,all four off; giant laser handled separately
+6,4450,0,0,0,1,1,FAN + RING on
+7,5100,0,0,0,1,1,FAN + RING on
+8,5300,0,0,0,0,1,RING only
+9,5897,0,0,0,0,0,group flags off; D9 core separately activated
+10,5898,0,0,0,0,0,D9 disabled / HP-zero bridge
+11,5902,0,0,0,0,0,D8 airlock begins
+12,6030,0,0,0,0,0,destruction state; D8 remains
+13,6200,0,0,0,0,0,D8 shutdown; later engine-owned reset

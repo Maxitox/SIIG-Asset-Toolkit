@@ -1,0 +1,69 @@
+{
+  "format": "SIIG_DEV24_WIP197_USABILITY_VISUALIZER_LOCALIZATION_VALIDATION",
+  "release": "2.10.0-dev24",
+  "checkpoint": "WIP197",
+  "status": "pass",
+  "desktop_gui": {
+    "version": "0.55.0-dev24",
+    "global_context_help_fixed_height": true,
+    "utilities_context_help_fixed_height": true,
+    "utilities_hover_updates_local_help_only": true,
+    "gmx_advanced_to_simple_recomputes_scrollregion": true,
+    "gmx_simple_mode_resets_yview_to_top": true
+  },
+  "visualizer": {
+    "dataset_version": 24,
+    "position_global_scale": 1.0,
+    "position_evidence": "June 10 Function_82177DF0: X * 0.0015625 (1/640), Y * 0.0027777778 (1/360) into 1280x720 renderer",
+    "wip191_1_5_scale": "historical_superseded",
+    "native_anchor_source_bounds_overlay": true,
+    "stage_response": "recovered adaptive VOL SCALE preserved",
+    "logical_step_meter_resampling": true,
+    "native_xaudio2_quantum_samples": 256,
+    "absolute_browser_native_phase_claimed": false,
+    "bgm_preview_cache_version": 1,
+    "cache_file": "visualizer_simulator/bgm_preview/BGM_PREVIEW_CACHE.json",
+    "cache_key_privacy": "rip-relative; no absolute source path stored",
+    "unchanged_cached_track_expected_operations": {
+      "source_hash_reads": 0,
+      "preview_transcodes": 0,
+      "envelope_decodes": 0
+    },
+    "synthetic_two_second_wma_smoke_seconds": {
+      "first_build_approx": 0.30,
+      "cached_second_build_approx": 0.07
+    },
+    "residual_position_boundary": "global scale is closed; remaining project-owner visual mismatch is retained for pivot/transform/composite/capture comparison rather than guessed"
+  },
+  "localization": {
+    "text_primary_editable": "text_strings.tsv",
+    "text_raw_editable": "text_strings_raw.tsv",
+    "message_inspection_tsv": [
+      "message_strings.tsv",
+      "message_groups.tsv"
+    ],
+    "encoding": "UTF-8 with BOM",
+    "delimiter": "tab",
+    "legacy_csv_retained": true,
+    "json_retained": true,
+    "text_build_accepts_tsv": true,
+    "mod_workspace_tracks_readable_tsv": true
+  },
+  "xbox_deployment": {
+    "primary_output": "build/xbox360_replacements",
+    "mapping": "build/xbox360_replacements/XBOX360_REPLACEMENTS.json",
+    "package_editor_agnostic": true,
+    "example_editors_only": [
+      "Velocity",
+      "Horizon",
+      "Le Fluffie"
+    ],
+    "siigmod_role": "optional baseline-dependent sharing delta; not a game-container replacement"
+  },
+  "boundaries": [
+    "Exact browser/native XAudio2 meter phase is not claimed.",
+    "Exact Xenos final-composite/alpha behavior remains bounded.",
+    "Real package-editor insertion and runtime acceptance remain external user validation.",
+    "Project-owner hardware footage and proprietary audio/executable inputs are not bundled."
+  ]
+}

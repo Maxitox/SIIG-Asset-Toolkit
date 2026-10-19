@@ -1,0 +1,202 @@
+{
+  "format": "SIIG_BOSS_VISUAL_CONTROLLER_FACTORY_VALIDATION",
+  "release": "2.10.0-dev21",
+  "status": "pass",
+  "platform": "Xbox 360 retail",
+  "factory": "Function_821489F8",
+  "factory_dispatch": "switch(param_2 + 1)",
+  "caller": "Function_820E7AE8",
+  "caller_evidence": "same iVar8 is passed to Function_821489F8 and FUN_820faab8 model-resource resolution",
+  "mapped_boss_families": 18,
+  "invariant": "factory_case == runtime_type + 1",
+  "invariant_pass": true,
+  "bosses": [
+    {
+      "key": "the_moon",
+      "name": "THE MOON",
+      "visual_controller_runtime_type": "0x46",
+      "visual_factory_case": "0x47",
+      "visual_controller_constructor": "Function_8212B638",
+      "visual_controller_object_size": "0x74",
+      "coverage": "native_inspection_only"
+    },
+    {
+      "key": "the_sun",
+      "name": "THE SUN",
+      "visual_controller_runtime_type": "0x47",
+      "visual_factory_case": "0x48",
+      "visual_controller_constructor": "Function_8212BA68",
+      "visual_controller_object_size": "0x138",
+      "coverage": "deep_runtime_reconstruction"
+    },
+    {
+      "key": "gigantic_ufo",
+      "name": "GIGANTIC UFO",
+      "visual_controller_runtime_type": "0x9E",
+      "visual_factory_case": "0x9F",
+      "visual_controller_constructor": "Function_8211B560",
+      "visual_controller_object_size": "0x228",
+      "coverage": "deep_runtime_reconstruction"
+    },
+    {
+      "key": "ladybug",
+      "name": "LADYBUG",
+      "visual_controller_runtime_type": "0x49",
+      "visual_factory_case": "0x4A",
+      "visual_controller_constructor": "Function_8211EA18",
+      "visual_controller_object_size": "0x80",
+      "coverage": "native_inspection_only"
+    },
+    {
+      "key": "mandala",
+      "name": "MANDALA",
+      "visual_controller_runtime_type": "0x4A",
+      "visual_factory_case": "0x4B",
+      "visual_controller_constructor": "Function_8211ED60",
+      "visual_controller_object_size": "0x70",
+      "coverage": "deep_runtime_reconstruction"
+    },
+    {
+      "key": "unknown",
+      "name": "UNKNOWN",
+      "visual_controller_runtime_type": "0x4B",
+      "visual_factory_case": "0x4C",
+      "visual_controller_constructor": "Function_821300A8",
+      "visual_controller_object_size": "0x254",
+      "coverage": "deep_runtime_reconstruction"
+    },
+    {
+      "key": "centipede",
+      "name": "CENTIPEDE",
+      "visual_controller_runtime_type": "0xA0",
+      "visual_factory_case": "0xA1",
+      "visual_controller_constructor": "Function_82116478",
+      "visual_controller_object_size": "0x210",
+      "coverage": "deep_runtime_reconstruction"
+    },
+    {
+      "key": "hornet",
+      "name": "HORNET",
+      "visual_controller_runtime_type": "0xA1",
+      "visual_factory_case": "0xA2",
+      "visual_controller_constructor": "Function_8211E1C0",
+      "visual_controller_object_size": "0x290",
+      "coverage": "deep_runtime_reconstruction"
+    },
+    {
+      "key": "progressive_ufo",
+      "name": "PROGRESSIVE UFO",
+      "visual_controller_runtime_type": "0xA2",
+      "visual_factory_case": "0xA3",
+      "visual_controller_constructor": "Function_821276D0",
+      "visual_controller_object_size": "0x224",
+      "coverage": "deep_runtime_reconstruction"
+    },
+    {
+      "key": "octopus",
+      "name": "OCTOPUS",
+      "visual_controller_runtime_type": "0xA3",
+      "visual_factory_case": "0xA4",
+      "visual_controller_constructor": "Function_82123E18",
+      "visual_controller_object_size": "0x28C",
+      "coverage": "native_inspection_only"
+    },
+    {
+      "key": "butterfly",
+      "name": "BUTTERFLY",
+      "visual_controller_runtime_type": "0xA4",
+      "visual_factory_case": "0xA5",
+      "visual_controller_constructor": "Function_82111D28",
+      "visual_controller_object_size": "0x23C",
+      "coverage": "deep_runtime_reconstruction"
+    },
+    {
+      "key": "axon",
+      "name": "AXON",
+      "visual_controller_runtime_type": "0xA5",
+      "visual_factory_case": "0xA6",
+      "visual_controller_constructor": "Function_82110378",
+      "visual_controller_object_size": "0x234",
+      "coverage": "deep_runtime_reconstruction"
+    },
+    {
+      "key": "water_strider",
+      "name": "WATER STRIDER",
+      "visual_controller_runtime_type": "0xA6",
+      "visual_factory_case": "0xA7",
+      "visual_controller_constructor": "Function_821368E8",
+      "visual_controller_object_size": "0x2F0",
+      "coverage": "native_inspection_only"
+    },
+    {
+      "key": "crab",
+      "name": "CRAB",
+      "visual_controller_runtime_type": "0xA7",
+      "visual_factory_case": "0xA8",
+      "visual_controller_constructor": "Function_82119550",
+      "visual_controller_object_size": "0x738",
+      "coverage": "deep_runtime_reconstruction"
+    },
+    {
+      "key": "ultimate_ufo",
+      "name": "ULTIMATE UFO",
+      "visual_controller_runtime_type": "0xA8",
+      "visual_factory_case": "0xA9",
+      "visual_controller_constructor": "Function_8212DEC8",
+      "visual_controller_object_size": "0x2EC",
+      "coverage": "deep_runtime_reconstruction"
+    },
+    {
+      "key": "squid",
+      "name": "SQUID",
+      "visual_controller_runtime_type": "0xA9",
+      "visual_factory_case": "0xAA",
+      "visual_controller_constructor": "Function_8212A778",
+      "visual_controller_object_size": "0x53C",
+      "coverage": "deep_runtime_reconstruction"
+    },
+    {
+      "key": "vertebrate",
+      "name": "VERTEBRATE",
+      "visual_controller_runtime_type": "0xAA",
+      "visual_factory_case": "0xAB",
+      "visual_controller_constructor": "Function_821346A0",
+      "visual_controller_object_size": "0x298",
+      "coverage": "deep_runtime_reconstruction"
+    },
+    {
+      "key": "no_name",
+      "name": "NO_NAME",
+      "visual_controller_runtime_type": "0xAB",
+      "visual_factory_case": "0xAC",
+      "visual_controller_constructor": "Function_82120B50",
+      "visual_controller_object_size": "0x240",
+      "coverage": "native_inspection_only"
+    }
+  ],
+  "corrected_the_moon": {
+    "runtime_type": "0x46",
+    "factory_case": "0x47",
+    "controller": "Function_8212B638",
+    "setup": "Function_8212B6F8",
+    "node_update": "Function_8212B760"
+  },
+  "corrected_the_sun": {
+    "runtime_type": "0x47",
+    "factory_case": "0x48",
+    "controller": "Function_8212BA68",
+    "aux_setup": "Function_8212BB58",
+    "long_wave_update": "Function_8212BBF0",
+    "b2_capacity": 8,
+    "b3_capacity": 48
+  },
+  "five_native_only_parallel_trace": {
+    "THE MOON": "controller class + three-node dynamic behavior traced; no canonical timed snapshot promoted",
+    "LADYBUG": "Function_8211EB88 resolves runtime 0xB6 group count 4; exact attachment/visibility sequence remains open",
+    "OCTOPUS": "0x28C-byte controller Function_82123E18 and native lt_000 use traced; no unproven auxiliary assembly promoted",
+    "WATER STRIDER": "Function_821368E8 vtable contains Function_82136810 1441-frame route updater",
+    "NO_NAME": "Function_82120B50 / Function_82120CA0 creates 0xAB root and helper pools; no unproven 0xE5 child stacked"
+  },
+  "historical_erratum": "sealed dev19/dev20 archives remain immutable; dev21 corrects current metadata and documents the off-by-one factory attribution",
+  "ok": true
+}

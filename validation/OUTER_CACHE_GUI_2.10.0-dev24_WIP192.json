@@ -1,0 +1,20 @@
+{
+  "format": "SIIG_OUTER_CACHE_GUI_VALIDATION",
+  "release": "2.10.0-dev24",
+  "checkpoint": "WIP192",
+  "status": "pass",
+  "gui_version": "0.51.0-dev24",
+  "visible_cache_controls": true,
+  "remember_cache_preference": true,
+  "cache_size_status": true,
+  "manual_refresh": true,
+  "clear_cache_action": true,
+  "clear_requires_confirmation": true,
+  "warning_states_rip_is_preserved": true,
+  "warning_states_future_unpack_may_be_slower": true,
+  "clear_does_not_touch_rip_tree": true,
+  "clear_does_not_touch_mod_workspaces": true,
+  "disable_cache_forwards_no_outer_cache": true,
+  "sidecar_path_contract": ".<rip-name>.siig_outer_cache beside the rip root",
+  "notes": "The GUI makes the persistent source-package cache explicit. Clearing is always confirmed and affects only the sidecar cache; the verified rip remains intact."
+}

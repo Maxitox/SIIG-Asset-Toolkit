@@ -1,0 +1,10 @@
+{
+  "format": "SIIG_VERSIONING_POLICY_VALIDATION",
+  "release": "2.10.0-dev20",
+  "status": "pass",
+  "previous": "2.10.0-dev19",
+  "toolkit_version": "2.10.0-dev20",
+  "gui_version": "0.31.0-dev20",
+  "reason": "incremental 2.10 development checkpoint: unifies all 18 console boss families under one canonical registry, adds five evidence-bounded native inspection catalogs and cross-boss validation without an incompatible public format break",
+  "ok": true
+}

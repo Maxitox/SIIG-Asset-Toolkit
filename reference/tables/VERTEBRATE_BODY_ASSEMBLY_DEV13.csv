@@ -1,0 +1,6 @@
+phase,label,model,runtime_type,count,x,y,z,z_rotation_degrees,range_or_note
+1,lower_endcap,bos_017.gmx,0xAA,1,0,-608,0,180,exact lower cap transform
+1,upper_endcap,bos_017.gmx,0xAA,1,0,1448,0,0,exact upper cap transform
+1,pillars,bos_017a.gmx,0xDB,30,0,-630 + 70*i,0,0,i=0..29 -> Y -630..1400 inclusive
+2,endcap_a,bos_017.gmx,0xAA,1,0,0,0,90,post-collapse/rebase
+2,endcap_b,bos_017.gmx,0xAA,1,0,0,0,270,post-collapse/rebase; inherited 180-degree relative cap orientation

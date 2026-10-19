@@ -1,0 +1,89 @@
+{
+  "format": "SIIG_RELEASE_VALIDATION",
+  "release": "2.8.0-dev26",
+  "date": "2026-09-11",
+  "status": "development-pass",
+  "selftest": {
+    "passed": 72,
+    "failed": 0,
+    "ok": true,
+    "report": "validation/SELFTEST_2.8.0-dev26.json",
+    "reported_toolkit_version": "2.8.0-dev26"
+  },
+  "inherited_release_gate": {
+    "from": "2.8.0-dev25",
+    "report": "validation/RELEASE_VALIDATION_2.8.0-dev25.json",
+    "note": "All sealed dev25 GMX retail no-op/topology evidence, GUI baseline, mod-package, workspace, native-builder, research, extraction and source-only gates are inherited. Dev26 adds opt-in whole MESH/ARRY graph synchronization without modifying dev25."
+  },
+  "dev26_gmx_mesh_graph_sync": {
+    "status": "pass",
+    "report": "validation/GMX_MESH_GRAPH_SYNC_DEV26.json",
+    "default_behavior": "dev25-compatible template mesh identities preserved",
+    "opt_in_flag": "--sync-mesh-graph",
+    "proven_regression": [
+      "byte-identical graph-sync no-op",
+      "new complete MESH/ARRY graph with fresh identities",
+      "whole mesh deletion",
+      "BONE mesh attachment repair"
+    ],
+    "inherited_external_retail_gate": "dev25 306/306 mesh-bearing GMX no-op byte-identical plus plr_001 topology smoke",
+    "boundary": "New mesh nodes clone a compatible native vertex declaration. New BONE/PARE/MTRL/SHAD nodes and from-scratch GMX construction remain unresolved."
+  },
+  "dev26_desktop_gui": {
+    "status": "pass",
+    "report": "validation/DESKTOP_GUI_DEV26.json",
+    "gui_version": "0.2.0-dev26",
+    "graph_sync_exposed": true,
+    "graph_sync_default_enabled": false,
+    "tabs": [
+      "Game Rip",
+      "Mod Workspace",
+      "GMX Workbench",
+      "Utilities"
+    ]
+  },
+  "asset_functionalization": {
+    "status": "pass",
+    "report": "validation/ASSET_FUNCTIONALIZATION_DEV26.json",
+    "known_asset_families": 14,
+    "viewable_or_exportable_families": 14,
+    "native_round_trip_families": 11,
+    "gmx_whole_mesh_graph_sync": true
+  },
+  "source_only_audit": {
+    "status": "pass",
+    "report": "validation/SOURCE_ONLY_AUDIT_2.8.0-dev26.json",
+    "game_assets": 0,
+    "external_executable_magic": 0,
+    "archive_binary_members": 0,
+    "private_runtime_paths": 0,
+    "python_bytecode": 0,
+    "third_party_binaries_bundled": false,
+    "sources_rows": 24
+  },
+  "version_consistency": {
+    "VERSION.txt": "2.8.0-dev26",
+    "cli_toolkit_version": "2.8.0-dev26",
+    "gui_version": "0.2.0-dev26"
+  },
+  "fresh_package": {
+    "status": "pass",
+    "candidate_manifest_entries_verified": 316,
+    "candidate_source_only_audit": "pass",
+    "candidate_selftest_passed": 72,
+    "candidate_selftest_failed": 0,
+    "candidate_version_reported": "2.8.0-dev26",
+    "candidate_package_sha256": "e985a428ad8ee4180cf35af24b5bcc91e3ed12e6b06d9d38b0ef9c16afcdceec",
+    "note": "Candidate was extracted fresh, verified against RELEASE_MANIFEST with no missing/mismatched/unlisted files, source-audited before executing package code, then passed 72/72 selftests and version checks. The final package is rebuilt deterministically after recording these candidate results and is revalidated separately."
+  },
+  "limitations": [
+    "Dev26 whole-mesh graph synthesis is structurally regression-tested but has not yet been exercised as a new arbitrary multi-object model on retail hardware/emulator.",
+    "Synthesized MESH/ARRY nodes clone a compatible native layout; arbitrary vertex-declaration synthesis is not implemented.",
+    "New BONE/PARE/MTRL/SHAD graph nodes are not synthesized; only existing BONE mesh attachments can be repaired/retargeted.",
+    "The external dev25 retail 306/306 no-op and plr_001 topology evidence is inherited rather than re-bundled or re-run from proprietary inputs in this release tree.",
+    "PS3 NPDRM/SDAT re-encryption is not implemented.",
+    "Audio replacement/rebuilding remains intentionally deferred by current project priority.",
+    "Xenos shader compilation remains unresolved.",
+    "Project-owner license selection remains open."
+  ]
+}

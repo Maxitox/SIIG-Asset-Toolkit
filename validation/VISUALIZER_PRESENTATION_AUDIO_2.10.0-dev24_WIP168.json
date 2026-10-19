@@ -1,0 +1,52 @@
+{
+  "format": "SIIG_VISUALIZER_PRESENTATION_AUDIO_VALIDATION",
+  "version": 1,
+  "toolkit": "2.10.0-dev24",
+  "checkpoint": "WIP168",
+  "status": "pass",
+  "simulator_dataset_version": 14,
+  "project_owner_reference": {
+    "kind": "June-10 real-hardware vs browser-simulator screenshots",
+    "bundled": false,
+    "hardware_overlay_example": "SEQ=4 PARAM=3",
+    "sequence_cross_check": {
+      "SEQUENCE_4": 3,
+      "parameter": "PARAM_3"
+    }
+  },
+  "presentation": {
+    "scope": "host-only final visible-canvas copy",
+    "softness_default_px": 5.5,
+    "softness_range_px": [0.0, 12.0],
+    "intensity_default": 0.32,
+    "intensity_range": [0.1, 1.0],
+    "raw_recovered_rgb_settings": {
+      "softness_px": 0.0,
+      "intensity": 1.0
+    },
+    "feeds_back_into_recursive_surface": false,
+    "changes_recovered_xenos_sampler": false,
+    "calibration_status": "empirical project-owner capture match, not a native constant"
+  },
+  "stage_timeline": {
+    "vl_sequenceset_auto_parameter_sync": true,
+    "status_exposes_seq_and_param": true,
+    "optional_60hz_authored_frame_follow": true,
+    "exact_vl_changetime_interpolation_claimed": false
+  },
+  "browser_audio": {
+    "premature_media_element_reroute_removed": true,
+    "connect_only_after_audio_context_running": true,
+    "native_media_audio_preserved_until_unlock": true,
+    "pointer_and_keyboard_unlock": true,
+    "preview_normalization": "stereo 48000 Hz before MP3/AAC encode",
+    "original_wma_at3_modified": false,
+    "selftest_nonzero_audio_fixture": true,
+    "selftest_preview_silence_rejection_when_ffmpeg_available": true
+  },
+  "open_boundaries": [
+    "exact Xenos render-target alpha storage/compositing equivalence",
+    "exact browser analyser window cadence versus XAudio2 processing-pass cadence",
+    "exact VL_CHANGETIME interpolation semantics"
+  ]
+}

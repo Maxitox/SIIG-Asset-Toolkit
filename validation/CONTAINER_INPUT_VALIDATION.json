@@ -1,0 +1,84 @@
+{
+  "toolkit_version": "2.2.0",
+  "container_tests": {
+    "aes_128_fips_197_known_answer": "pass",
+    "stfs_synthetic": {
+      "consecutive_files": "pass",
+      "nonconsecutive_block_chain": "pass",
+      "hash_level_0": "pass",
+      "hash_level_1_boundary": "pass",
+      "hash_level_2_boundary": "pass",
+      "signatures_supported": [
+        "CON ",
+        "LIVE",
+        "PIRS"
+      ]
+    },
+    "ps3_pkg_synthetic": {
+      "finalized_type_1": "pass",
+      "debug_type_1": "pass",
+      "safe_directory_and_file_extraction": "pass"
+    },
+    "safety_regressions": {
+      "path_traversal_rejected": "pass",
+      "zip_symlink_rejected": "pass",
+      "duplicate_case_collision_rejected": "pass",
+      "bounded_member_count_and_sizes": "pass",
+      "atomic_partial_writes": "pass",
+      "gzip_expansion_limit": "pass"
+    },
+    "direct_rip_dispatch": {
+      "stfs_to_xbox360_pipeline": "pass",
+      "pkg_to_ps3_pipeline": "pass"
+    }
+  },
+  "retail_extracted_input_regression": {
+    "xbox360": {
+      "archives_processed": 23,
+      "resources_extracted": 2593,
+      "archive_failures": 0,
+      "bbx_hash_mismatches": 0,
+      "privacy_audit_findings": 0
+    },
+    "ps3": {
+      "archives_processed": 23,
+      "resources_extracted": 2593,
+      "archive_failures": 0,
+      "bbx_hash_mismatches": 0,
+      "decrypted_sdat_payloads_used": 6,
+      "missing_sdat_payloads": 0,
+      "privacy_audit_findings": 0
+    }
+  },
+  "version_2_2_end_to_end_subset": {
+    "inputs": [
+      "default.xex",
+      "map.bin",
+      "script.bin",
+      "texture_map.bin"
+    ],
+    "archives_processed": 3,
+    "resources_extracted": 146,
+    "dat_files": 76,
+    "map_files": 64,
+    "stage_explorer_entries": 92,
+    "stage_commands": 17335,
+    "stage_map_cells": 573984,
+    "embedded_atlases": 4,
+    "output_files_hashed": 423,
+    "verification_errors": 0
+  },
+  "limits": {
+    "default_max_files": 200000,
+    "default_max_total_bytes": 17179869184,
+    "default_max_file_bytes": 4294967296,
+    "configurable": true
+  },
+  "limitations": [
+    "No original SIIG STFS package was supplied for exact-game outer-container validation.",
+    "No original SIIG PS3 PKG was supplied for exact-game outer-container validation.",
+    "STFS signature/publisher authentication is not performed.",
+    "PS3 PKG extraction removes only the outer package layer; inner SELF, EDAT, and SDAT payloads remain protected.",
+    "SIIG PS3 still requires the six matching decrypted .bin.gz.dat files."
+  ]
+}

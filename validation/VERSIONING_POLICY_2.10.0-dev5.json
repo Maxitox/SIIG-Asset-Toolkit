@@ -1,0 +1,8 @@
+{
+  "format": "SIIG_VERSIONING_POLICY_VALIDATION",
+  "release": "2.10.0-dev5",
+  "previous": "2.10.0-dev4",
+  "status": "pass",
+  "note": "Dev5 extends the backward-compatible multi-GMX catalog/GUI with a grounded CRAB default, preserved historical CRAB preset, and HORNET full-armor assembly; no incompatible native format contract is introduced.",
+  "toolkit_version": "2.10.0-dev5"
+}

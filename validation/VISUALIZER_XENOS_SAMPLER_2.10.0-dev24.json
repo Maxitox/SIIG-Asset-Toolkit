@@ -1,0 +1,36 @@
+{
+  "format": "SIIG_VISUALIZER_XENOS_SAMPLER_VALIDATION",
+  "release": "2.10.0-dev24",
+  "status": "pass",
+  "feedback_texture": {
+    "constructor": "May11 Function_821AA630 -> Function_8226F240 -> Function_8226EA98",
+    "bind": "Function_8226F5C0",
+    "fetch_dword3": "0x00001414",
+    "clamp_x": "repeat",
+    "clamp_y": "repeat",
+    "clamp_z": "repeat",
+    "mag_filter": "point",
+    "min_filter": "point",
+    "mip_filter": "point",
+    "anisotropy": "disabled"
+  },
+  "external_reference": {
+    "project": "Xenia",
+    "file": "src/xenia/gpu/xenos.h",
+    "relationship": "texture fetch-constant field/enum documentation only",
+    "code_copied": false,
+    "license": "BSD-3-Clause"
+  },
+  "browser": {
+    "feedback_image_smoothing": false,
+    "scope": "recursive previous-feedback draw only",
+    "shape_sampler_promoted": true,
+    "feedback_composite_operation": "lighter",
+    "effectblur_blend_promoted": true
+  },
+  "unresolved": [
+    "feedback sampler scope is closed; EffectBlur shader/blend semantics are tracked in dedicated dev24 validation artifacts",
+    "ordinary SHAPE ScreenSprite shader/color/blend semantics are tracked in VISUALIZER_SHAPE_SHADER_2.10.0-dev24.json",
+    "bit-exact Xenos render-target alpha storage/compositing is not claimed by the Canvas bridge"
+  ]
+}

@@ -1,0 +1,31 @@
+﻿word_index,byte_offset,structural_field,shape,runtime_initialization,consumer_addresses,transition_behavior,confidence,notes
+0,0x00,fov_degrees,scalar,projection FOV in degrees; converted to radians before perspective matrix build,0x00155300,interpolated,high,Passed to perspective projection builder after degrees-to-radians conversion.
+1,0x04,uniform_scene_view_scale,scalar,uniform scale used in scene/view transform and reciprocal inverse composition,0x00155300,copied directly on preset select; not observed in interpolation block,high,Also divides the dynamic-response gain at 0x00157540.
+2,0x08,camera_eye_offset_x,vec3 component,camera-eye offset transformed by active stage/route orientation and added to FieldPos,0x00157A10 -> 0x00155300,interpolated,high,Component 0 of eye-offset vec3.
+3,0x0C,camera_eye_offset_y,vec3 component,camera-eye offset transformed by active stage/route orientation and added to FieldPos,0x00157A10 -> 0x00155300,interpolated,high,Component 1 of eye-offset vec3.
+4,0x10,camera_eye_offset_z,vec3 component,camera-eye offset transformed by active stage/route orientation and added to FieldPos,0x00157A10 -> 0x00155300,interpolated,high,Component 2 of eye-offset vec3.
+5,0x14,scene_view_translation_x,vec3 component,scene/view translation used when composing the camera scene transform,0x00154B10; 0x00155300,interpolated,high,Component 0 of scene/view translation vec3.
+6,0x18,scene_view_translation_y,vec3 component,scene/view translation used when composing the camera scene transform,0x00154B10; 0x00155300,interpolated,high,Component 1 of scene/view translation vec3.
+7,0x1C,scene_view_translation_z,vec3 component,scene/view translation used when composing the camera scene transform,0x00154B10; 0x00155300,interpolated,high,Component 2 of scene/view translation vec3.
+8,0x20,dynamic_horizontal_response_gain,scalar,"gain divided by uniform scale, clamped at zero, for normalized runtime-coordinate response",0x00157540,interpolated,high,Common gain for target/eye local-X response; gameplay label intentionally not guessed.
+9,0x24,dynamic_target_local_x_scale,scalar,scales dynamic local-X translation applied to camera target,0x00157540,interpolated,high,Uses normalized runtime X/Y response before stage/route transform.
+10,0x28,dynamic_eye_local_x_scale,scalar,scales dynamic local-X translation applied to camera eye,0x00157540,interpolated,high,Uses normalized runtime X/Y response before stage/route transform.
+11,0x2C,face_bias,scalar,scalar offset applied along vertex normals by the collada_face1 vertex shader,0x0015B910; 0x0020D69C; 0x0020E984/0x0020EC48; Xbox Function_8214E120; 0x82475590; Function_824745F0; shader 0x8208D408,interpolated,high,Value is 0.2 in all 32 retail presets. Xbox shader declares faceBias:c9 and computes pos = pos - Normal * faceBias.x.
+12,0x30,fog0_start,fog scalar,fog profile 0 start distance,0x0020E984 -> renderer fogRange,interpolated,high,First component of fogRange input.
+13,0x34,fog0_end,fog scalar,fog profile 0 end distance,0x0020E984 -> renderer fogRange,interpolated,high,Second component of fogRange input.
+14,0x38,fog0_color_r,fog RGBA component,fog profile 0 color red,0x0020E984 -> 0x003756AC vFogColor,interpolated,high,Fog-color R.
+15,0x3C,fog0_color_g,fog RGBA component,fog profile 0 color green,0x0020E984 -> 0x003756AC vFogColor,interpolated,high,Fog-color G.
+16,0x40,fog0_color_b,fog RGBA component,fog profile 0 color blue,0x0020E984 -> 0x003756AC vFogColor,interpolated,high,Fog-color B.
+17,0x44,fog0_color_a,fog RGBA component,fog profile 0 color alpha,0x0020E984 -> 0x003756AC vFogColor,interpolated,high,Fog-color A.
+18,0x48,fog1_start,fog scalar,fog profile 1 start distance,0x0020E984 -> renderer fogRange,interpolated,high,First component of fogRange input.
+19,0x4C,fog1_end,fog scalar,fog profile 1 end distance,0x0020E984 -> renderer fogRange,interpolated,high,Second component of fogRange input.
+20,0x50,fog1_color_r,fog RGBA component,fog profile 1 color red,0x0020E984 -> 0x003756AC vFogColor,interpolated,high,Fog-color R.
+21,0x54,fog1_color_g,fog RGBA component,fog profile 1 color green,0x0020E984 -> 0x003756AC vFogColor,interpolated,high,Fog-color G.
+22,0x58,fog1_color_b,fog RGBA component,fog profile 1 color blue,0x0020E984 -> 0x003756AC vFogColor,interpolated,high,Fog-color B.
+23,0x5C,fog1_color_a,fog RGBA component,fog profile 1 color alpha,0x0020E984 -> 0x003756AC vFogColor,interpolated,high,Fog-color A.
+24,0x60,fog2_start,fog scalar,fog profile 2 start distance,0x0020E984 -> renderer fogRange,interpolated,high,First component of fogRange input.
+25,0x64,fog2_end,fog scalar,fog profile 2 end distance,0x0020E984 -> renderer fogRange,interpolated,high,Second component of fogRange input.
+26,0x68,fog2_color_r,fog RGBA component,fog profile 2 color red,0x0020E984 -> 0x003756AC vFogColor,interpolated,high,Fog-color R.
+27,0x6C,fog2_color_g,fog RGBA component,fog profile 2 color green,0x0020E984 -> 0x003756AC vFogColor,interpolated,high,Fog-color G.
+28,0x70,fog2_color_b,fog RGBA component,fog profile 2 color blue,0x0020E984 -> 0x003756AC vFogColor,interpolated,high,Fog-color B.
+29,0x74,fog2_color_a,fog RGBA component,fog profile 2 color alpha,0x0020E984 -> 0x003756AC vFogColor,interpolated,high,Fog-color A.

@@ -1,0 +1,55 @@
+{
+  "format": "SIIG_MANDALA_RUNTIME_ASSEMBLY_VALIDATION",
+  "release": "2.10.0-dev8",
+  "status": "pass",
+  "catalog": "mandala_initial_combat",
+  "crosscheck_builds": [
+    "May 9 Xbox",
+    "May 11 Xbox",
+    "June 10 Xbox",
+    "retail Xbox",
+    "retail PS3"
+  ],
+  "snapshot": "state-7 activation before first rotational update",
+  "visible_instances": 40,
+  "membership": {
+    "0xB7": 20,
+    "0xB8": 2,
+    "0xB9": 2,
+    "0xBA": 2,
+    "0xBB": 2,
+    "0x4A": 12,
+    "0xBC": 0
+  },
+  "moving_radii": [
+    109,
+    69
+  ],
+  "trig": "signed 8.8, 256-entry sine; cosine = +0x40 phase",
+  "structural_scales": [
+    40,
+    56,
+    82,
+    109,
+    29,
+    29,
+    29,
+    29,
+    20,
+    20,
+    20,
+    20
+  ],
+  "radial_facing_rotation": false,
+  "pose_sample_baked": false,
+  "native_animations_preserved": true,
+  "external_retail_validation": {
+    "instances": 40,
+    "meshes": 104,
+    "nodes": 240,
+    "preserved_native_animations": 38,
+    "bundled_game_assets": false
+  },
+  "table": "reference/tables/MANDALA_INITIAL_COMBAT_TRANSFORMS_2.10.0-dev8.csv",
+  "ok": true
+}

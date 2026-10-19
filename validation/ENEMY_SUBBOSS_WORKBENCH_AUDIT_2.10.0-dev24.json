@@ -1,0 +1,23 @@
+{
+  "format": "SIIG_DEV_WORKBENCH_AUDIT",
+  "release": "2.10.0-dev24",
+  "status": "pass",
+  "requested_core_family_count": 6,
+  "requested_core_families": ["ENVY", "KEEPER", "OPPRESSOR", "GLUTTONY", "VANITY", "TELEPORTER"],
+  "total_entity_workbench_families": 8,
+  "additional_families": ["GREED", "WRATH"],
+  "families": {
+    "ENVY": {"catalogs": ["envy_retail_level4_2_growth_complete", "envy_zigzag_preview_06"], "boundary": "normalized exact relationship; dynamic absolute base/fly-away not baked"},
+    "KEEPER": {"catalogs": ["keeper_complete"], "boundary": "exact static locator hierarchy"},
+    "OPPRESSOR": {"catalogs": ["oppressor_complete"], "boundary": "exact ownership/order and locator hierarchy"},
+    "GLUTTONY": {"catalogs": ["gluttony_complete"], "boundary": "exact hierarchy and aim law; live target yaw not baked"},
+    "VANITY": {"catalogs": ["vanity_main_game_arrival", "vanity_state2_entry_relative", "vanity_state2_primary_descent_local", "vanity_owned_visual_set"], "boundary": "exact arrival/local-Y actions plus inspection-only ownership; live state-2 X/Z/helper activity not synthesized"},
+    "TELEPORTER": {"catalogs": ["teleporter_retail_5_4_left_transfer_cycle", "teleporter_retail_5_4_right_transfer_cycle", "teleporter_retail_5_4_left_state2_tick7", "teleporter_retail_5_4_right_state2_tick7", "teleporter_owned_visual_set"], "boundary": "exact deterministic transfer cycle until next randomized state-0 X"}
+  },
+  "gui": {
+    "compact_folder_reuse": true,
+    "advanced_folder_reuse": true,
+    "asset_viewer_preview": true,
+    "preview_changes_evidence": false
+  }
+}

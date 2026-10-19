@@ -1,0 +1,7 @@
+{
+  "format": "SIIG_VERSIONING_POLICY_VALIDATION",
+  "release": "2.10.0-dev2",
+  "previous": "2.10.0-dev1",
+  "status": "pass",
+  "note": "Dev2 stays inside the 2.10 rigid/scene-authoring capability line; the dev8 minor-version review rule remains in force."
+}

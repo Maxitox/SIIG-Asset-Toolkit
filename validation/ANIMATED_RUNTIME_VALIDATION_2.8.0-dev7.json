@@ -1,0 +1,65 @@
+{
+  "format": "SIIG_ANIMATED_RUNTIME_VALIDATION",
+  "release": "2.8.0-dev7",
+  "date": "2026-09-06",
+  "status": "pass",
+  "matrix_runtime_semantics": {
+    "channel_type": 12,
+    "runtime_clock_hz": 30,
+    "lookup": "matrices[logical_frame % frame_count]",
+    "raw_float_time_table_role": "preserved authoring metadata; not consulted by traced retail matrix sampler"
+  },
+  "real_camera_models": {
+    "cam01_op1.gmx": {
+      "tracks": 2,
+      "matrix_samples_per_track": 200,
+      "raw_authoring_end": 8.291669845581055,
+      "stored_runtime_span_seconds": 6.666666666666667,
+      "controller_descriptor_end": 200,
+      "controller_distinct_frames": 200,
+      "frame_multiplier_2_updates": 400,
+      "last_controller_frame": 199
+    },
+    "cam02_op1.gmx": {
+      "tracks": 2,
+      "matrix_samples_per_track": 300,
+      "raw_authoring_end": 12.45829963684082,
+      "stored_runtime_span_seconds": 10.0,
+      "controller_descriptor_end": 200,
+      "controller_distinct_frames": 200,
+      "frame_multiplier_2_updates": 400,
+      "last_controller_frame": 199,
+      "unreached_stored_samples_by_traced_controller": 100
+    }
+  },
+  "real_field_models": {
+    "fld014.gmx": {
+      "tracks": 1,
+      "matrix_samples": 1440,
+      "raw_authoring_end": 59.95830154418945,
+      "stored_runtime_span_seconds": 48.0,
+      "descriptor_start": 0,
+      "descriptor_end": 1440,
+      "loop": true,
+      "endpoint_sample_index": 0
+    },
+    "fld015.gmx": {
+      "tracks": 1,
+      "matrix_samples": 6301,
+      "raw_authoring_end": 262.5,
+      "stored_runtime_span_seconds": 210.03333333333333,
+      "descriptor_start": 0,
+      "descriptor_end": 6300,
+      "loop": false,
+      "endpoint_sample_index": 6300
+    }
+  },
+  "gltf_gate": {
+    "files": 4,
+    "animation_tracks": 6,
+    "runtime_input_clock_hz": 30,
+    "raw_authoring_times_preserved_in_extras": true,
+    "failures": 0
+  },
+  "explicit_mode_policy": "camera and field GMXs are caller-supplied; dev7 does not infer global DAT/opcode activation schedules"
+}

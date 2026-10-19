@@ -1,0 +1,3 @@
+platform,package_id,declared_version,declared_build_or_version_code,package_sha256,wrapper_assessment,resource_integrity,notes
+ios,jp.co.taito.infinitygene,4.1.0,4.1.0,3acac159bdf2e47e36c35b544070b3f760d4c0eb4a62ed39dae684a9e77b1ac8,modified_distribution_wrapper,514/514 CodeResources-covered files match,"Both Mach-O slices cryptid=0; overdrive.dylib and SF_Info present; research copy, not pristine App Store provenance"
+android,jp.co.taito.am.siInfinityGene,1.0.4,6,ce233e2bb3b038f66bcfc8a98d5e687b12dad834d8ca255de5bf70c9e0f33e80,resigned_or_debug_distribution,249/249 MANIFEST.MF-covered files match,android:debuggable=true; certificate SHA-1 61ed377e85d386a8dfee6b864bd85b0bfaa5af81; no native .so libraries

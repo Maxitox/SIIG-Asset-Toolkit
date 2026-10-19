@@ -1,0 +1,218 @@
+{
+  "format": "SIIG_CRAB_RUNTIME_ASSEMBLY_VALIDATION",
+  "release": "2.10.0-dev4",
+  "date": "2026-09-11",
+  "status": "pass",
+  "opcode_resolution": {
+    "opcode": "0xA7",
+    "script_name": "CRAB",
+    "status": "resolved",
+    "basis": "A7->bos_013.gmx runtime registry plus explicit Crab.cpp child construction/runtime linkage; historical dev19 unresolved tables remain historical"
+  },
+  "runtime_order": [
+    "0xA7",
+    "0xCD",
+    "0xCC",
+    "0xCE",
+    "0xCE",
+    "0xCF",
+    "0xCF",
+    "0xCF",
+    "0xCF"
+  ],
+  "models": [
+    "bos_013.gmx",
+    "bos_013b.gmx",
+    "bos_013a.gmx",
+    "bos_013c.gmx",
+    "bos_013c.gmx",
+    "bos_013d.gmx",
+    "bos_013d.gmx",
+    "bos_013d.gmx",
+    "bos_013d.gmx"
+  ],
+  "pose_samples": [
+    167,
+    0,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "translations": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      422.0840835571289,
+      0
+    ],
+    [
+      0,
+      422.0840835571289,
+      0
+    ],
+    [
+      81,
+      422.0840835571289,
+      0
+    ],
+    [
+      -81,
+      422.0840835571289,
+      0
+    ],
+    [
+      81,
+      445.0840835571289,
+      0
+    ],
+    [
+      81,
+      399.0840835571289,
+      0
+    ],
+    [
+      -81,
+      445.0840835571289,
+      0
+    ],
+    [
+      -81,
+      399.0840835571289,
+      0
+    ]
+  ],
+  "outer_rotations_degrees": [
+    [
+      0,
+      180,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "june_xbox": {
+    "ghidra_export_sha256": "987cf607e4164dde06b980718a6169791d81e064d4b5e46ecb35f45176076f66",
+    "create_parts": "0x8213BB00",
+    "child_type_count_table": "0x8200FA04",
+    "root_setup": "0x821315D8",
+    "state_first_visible": "0x82132C90",
+    "multipart_update": "0x82134338",
+    "child_update_routines": [
+      "0x82133DC8",
+      "0x82132740",
+      "0x821321A8"
+    ],
+    "locator_offset_initializer": "0x82562448"
+  },
+  "retail_xbox": {
+    "ghidra_export_sha256": "444ea2b9cf85f201cd160f935ea890bc473b6d541cb9d8cecb849ae462c53499",
+    "state_first_visible": "0x821190D0",
+    "locator_offset_initializer": "0x82536458",
+    "crosscheck": "same nine-part enable + root segment 3 + sample 167 + locator/offset constants; retained enemy.anm and CRAB GMXs byte-identical to June corpus"
+  },
+  "retail_ps3": {
+    "ghidra_export_sha256": "e7af0cd5940268c4697470ca58d55010b45a50706dfc10ead552d4ee4ce55d6d",
+    "state_first_visible": "0x001AAA5C",
+    "locator_offset_initializer": "0x001AD900",
+    "crosscheck": "same segment 3/sample 167 state and +/-23, +/-81 locator offsets"
+  },
+  "anm": {
+    "sha256_june_and_retail": "c3100a85d279af220e3f2b1f8b51650acf2e3c536ecac1f918d5174f88570cb4",
+    "root_segments": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        60
+      ],
+      [
+        61,
+        100
+      ],
+      [
+        101,
+        239
+      ],
+      [
+        240,
+        279
+      ]
+    ],
+    "body_shell_segments": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        30
+      ],
+      [
+        31,
+        60
+      ]
+    ]
+  },
+  "native_frame167": {
+    "root_translation_y": 376.09698486328125,
+    "root_rotation_y_degrees": 180,
+    "lt_000_local_translation_y": 45.987098693847656,
+    "attachment_center_y": 422.0840835571289
+  },
+  "assembly_export": {
+    "pose_sample_supported": true,
+    "posed_instance_animations_suppressed": true,
+    "direct_catalog_command": "gmx-assemble-catalog crab"
+  },
+  "boundary": "first-visible frame-167 static runtime snapshot only; later CRAB phases remain dynamic",
+  "guessed_placement": false,
+  "proprietary_inputs_bundled": false
+}

@@ -1,0 +1,4 @@
+﻿layer,representation,translation,operation_to_runtime,evidence
+GMX_ANIM_serialized,row-major storage / column-vector affine,"flat indices 3,7,11",transpose 4x4,real cam01_op1.gmx and fld015.gmx ANIM matrices
+SgModel_node_getter,runtime matrix returned to route/camera,converted before consumer copy,getter bridges serialized to runtime representation,retail PS3 0x00159D58 virtual node-matrix getter path
+runtime_camera_math,row-vector affine,final row,consumer form,retail PS3 0x0036A154 translation matrix; 0x00369BE4 multiply; 0x00157A10 camera use

@@ -1,0 +1,90 @@
+{
+  "format": "SIIG_RELEASE_VALIDATION",
+  "release": "2.9.0-dev2",
+  "date": "2026-09-11",
+  "status": "development-pass",
+  "selftest": {
+    "passed": 76,
+    "failed": 0,
+    "ok": true,
+    "report": "validation/SELFTEST_2.9.0-dev2.json",
+    "reported_toolkit_version": "2.9.0-dev2"
+  },
+  "inherited_release_gate": {
+    "from": "2.9.0-dev1",
+    "report": "validation/RELEASE_VALIDATION_2.9.0-dev1.json",
+    "note": "All sealed 2.9.0-dev1 integrated glTF/GMX/TEX/BBX mod staging, dev28 TXIF graph, dev27 scene graph, dev26 mesh graph, dev25 retail GMX evidence, native builders, extraction/research and source-only gates are inherited. dev2 removes vertex/material schema donor requirements in an explicit synthesis mode."
+  },
+  "gmx_native_schema_synthesis": {
+    "status": "pass",
+    "report": "validation/GMX_NATIVE_SCHEMA_SYNTHESIS_2.9.0-dev2.json",
+    "command": "gltf2gmx-template --synthesize-native-schemas",
+    "root_only_donor_free_regression": "pass",
+    "vertex_declaration_synthesis": true,
+    "material_parameter_stream_synthesis": true,
+    "mod_import_fallback": true,
+    "inherited_external_retail_gate": "dev25 306/306 mesh-bearing retail GMX no-op byte-identical plus plr_001 topology smoke"
+  },
+  "desktop_gui": {
+    "status": "pass",
+    "report": "validation/DESKTOP_GUI_2.9.0-dev2.json",
+    "gui_version": "0.6.0-dev2",
+    "native_schema_synthesis_control": true,
+    "tabs": [
+      "Game Rip",
+      "Mod Workspace",
+      "GMX Workbench",
+      "Utilities"
+    ]
+  },
+  "asset_functionalization": {
+    "status": "pass",
+    "report": "validation/ASSET_FUNCTIONALIZATION_2.9.0-dev2.json",
+    "known_asset_families": 14,
+    "viewable_or_exportable_families": 14,
+    "native_round_trip_families": 11,
+    "native_builder_available_families": 11,
+    "gmx_schema_synthesis": true
+  },
+  "source_only_audit": {
+    "status": "pass",
+    "report": "validation/SOURCE_ONLY_AUDIT_2.9.0-dev2.json",
+    "game_assets": 0,
+    "external_executable_magic": 0,
+    "archive_binary_members": 0,
+    "private_runtime_paths": 0,
+    "python_bytecode": 0,
+    "third_party_binaries_bundled": false,
+    "sources_rows": 24
+  },
+  "version_consistency": {
+    "VERSION.txt": "2.9.0-dev2",
+    "cli_toolkit_version": "2.9.0-dev2",
+    "gui_version": "0.6.0-dev2"
+  },
+  "fresh_package": {
+    "status": "pass",
+    "candidate_manifest_entries_verified": 346,
+    "candidate_manifest_missing": 0,
+    "candidate_manifest_mismatched": 0,
+    "candidate_unlisted_files": 0,
+    "candidate_source_only_audit": "pass",
+    "candidate_selftest_passed": 76,
+    "candidate_selftest_failed": 0,
+    "candidate_version_reported": "2.9.0-dev2",
+    "candidate_gui_version": "0.6.0-dev2",
+    "candidate_package_sha256": "8f089cd4f2d27fed586ed26a771eee0a30f82efa023b791a8bca34d705752176",
+    "note": "Candidate was extracted fresh, verified against RELEASE_MANIFEST with no unlisted files, source-audited before executing package code, and then passed 76/76 selftests plus CLI/GUI version checks. Final package is rebuilt deterministically after recording this evidence."
+  },
+  "limitations": [
+    "Native TEX payloads still require a compatible donor layout/header; arbitrary Xenos/RSX texture layout synthesis is not implemented.",
+    "Unknown/custom GMX vertex semantics are not synthesized; dev2 covers the decoded standard POSITION/NORMAL/TEXCOORD_0/COLOR_0 mapping.",
+    "Novel MTRL parameter names are structurally encodable but only have runtime meaning if the selected native shader recognizes them.",
+    "MOTN/ANIM graph synthesis/import, platform shader compilation, and fully template-free GMX creation remain unresolved.",
+    "Retail runtime acceptance of arbitrary donor-free synthesized models remains a separate hardware/emulator gate.",
+    "The external dev25 306/306 retail GMX evidence is inherited rather than re-run from proprietary inputs.",
+    "PS3 NPDRM/SDAT re-encryption is not implemented.",
+    "Audio replacement/rebuilding remains intentionally deferred.",
+    "Project-owner license selection remains open."
+  ]
+}

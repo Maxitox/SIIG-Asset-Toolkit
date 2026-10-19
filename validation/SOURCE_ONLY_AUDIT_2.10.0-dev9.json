@@ -1,0 +1,21 @@
+{
+  "format": "SIIG_SOURCE_ONLY_AUDIT",
+  "toolkit_version": "2.10.0-dev9",
+  "status": "pass",
+  "game_asset_extensions": 0,
+  "game_asset_files": [],
+  "external_executable_magic": 0,
+  "external_magic_hits": [],
+  "archive_binary_members": 0,
+  "archive_binary_member_hits": [],
+  "private_runtime_paths": 0,
+  "private_path_hits": [],
+  "python_bytecode": 0,
+  "bytecode_files": [],
+  "third_party_binaries_bundled": false,
+  "sources_rows": 24,
+  "sources_columns": 10,
+  "sources_ragged": 0,
+  "tcrf_used": false,
+  "ok": true
+}

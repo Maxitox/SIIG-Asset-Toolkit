@@ -1,0 +1,86 @@
+{
+  "format": "SIIG_GMX_NATIVE_SCHEMA_SYNTHESIS_VALIDATION",
+  "toolkit_version": "2.9.0-dev2",
+  "status": "pass",
+  "mode": "gltf2gmx-template --synthesize-native-schemas",
+  "implications": [
+    "sync_texture_graph",
+    "sync_scene_graph",
+    "sync_mesh_graph"
+  ],
+  "vertex_schema": {
+    "donor_required": false,
+    "supported_gltf_attributes": [
+      "POSITION",
+      "NORMAL",
+      "TEXCOORD_0",
+      "COLOR_0"
+    ],
+    "native_semantics": [
+      "IN.position",
+      "IN.normal",
+      "IN.texuv",
+      "IN.color"
+    ],
+    "index_type": "uint16",
+    "array_scalar_types": [
+      "float32",
+      "uint16"
+    ]
+  },
+  "material_schema": {
+    "donor_required": false,
+    "explicit_contract": "extras.gmxParameterSchema",
+    "supported_types": {
+      "0": "float scalar/vector",
+      "1": "4x4 matrix array",
+      "2": "TXIF reference"
+    },
+    "fallback_schema": [
+      "mWVP",
+      "DiffuseSampler when textured",
+      "DiffuseColor",
+      "DiffuseAlpha",
+      "EmissiveColor when used"
+    ]
+  },
+  "synthetic_regression": {
+    "starting_template": "root-only GMX; no MESH/ARRY/MTRL/SHAD records",
+    "created": {
+      "SHAD": [
+        3
+      ],
+      "MTRL": [
+        4
+      ],
+      "BONE": [
+        5
+      ],
+      "MESH": [
+        2
+      ],
+      "ARRY_count": 4
+    },
+    "custom_parameter": {
+      "name": "CustomScalar",
+      "type": 0,
+      "value": 0.375
+    },
+    "root_bounds": [
+      0.0,
+      0.0,
+      0.0,
+      2.0,
+      2.0,
+      0.0
+    ],
+    "reparse": "pass"
+  },
+  "inherited_external_retail_gate": "dev25 306/306 mesh-bearing retail GMX no-op byte-identical; not re-run from proprietary inputs",
+  "limitations": [
+    "unknown/custom native vertex semantics are not synthesized",
+    "novel material parameter names require a game shader that understands them",
+    "TEX platform header/layout synthesis remains donor-constrained",
+    "MOTN/ANIM synthesis and shader microcode compilation remain unresolved"
+  ]
+}

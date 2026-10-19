@@ -1,0 +1,10 @@
+instance_index,label,runtime_type,model,role,pose_sample,translation_x,translation_y,translation_z,rotation_x_degrees,rotation_y_degrees,rotation_z_degrees,evidence,confidence
+0,root_legs,0xA7,bos_013.gmx,leg/root assembly,167,0,0,0,0,180,0,June 0x82132C90; retail Xbox 0x821190D0; PS3 0x001AAA5C,high
+1,body_shell,0xCD,bos_013b.gmx,body shell,0,0,422.0840835571289,0,0,0,0,lt_000 frame-167 attachment; shell remains clip0/sample0 at first visibility,high
+2,core_weapon,0xCC,bos_013a.gmx,central cannon/core,,0,422.0840835571289,0,0,0,0,lt_000 frame-167 attachment,high
+3,propodus_right,0xCE,bos_013c.gmx,propodus,,81,422.0840835571289,0,0,0,0,runtime CE placement: +81 X from lt_000,high
+4,propodus_left,0xCE,bos_013c.gmx,propodus,,-81,422.0840835571289,0,0,0,0,runtime CE placement: -81 X from lt_000,high
+5,dactyl_right_upper,0xCF,bos_013d.gmx,dactyl,,81,445.0840835571289,0,0,0,0,runtime CF placement: +23 Y from +81 CE,high
+6,dactyl_right_lower,0xCF,bos_013d.gmx,dactyl,,81,399.0840835571289,0,0,0,0,runtime CF placement: -23 Y from +81 CE,high
+7,dactyl_left_upper,0xCF,bos_013d.gmx,dactyl,,-81,445.0840835571289,0,0,0,0,runtime CF placement: +23 Y from -81 CE,high
+8,dactyl_left_lower,0xCF,bos_013d.gmx,dactyl,,-81,399.0840835571289,0,0,0,0,runtime CF placement: -23 Y from -81 CE,high
