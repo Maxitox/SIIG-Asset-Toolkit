@@ -22,6 +22,8 @@ The project Library currently contains historical toolkit ZIPs from the early `v
 
 This is a discovery inventory, not a claim that every file has already been imported or approved for redistribution. The Library also contains duplicate copies of some artifacts. Only one byte-identical copy should be archived unless distinct hashes or provenance justify keeping variants.
 
+See [INVENTORY.md](INVENTORY.md) for the filename-and-size list of the 142 distinct ZIP filenames discovered in the Library. That list is not yet a list of audited or committed archives.
+
 ## Current staging status
 
 **Pending:** binary archives have not yet been committed to this directory. The current GitHub file-editing workflow can update text files but cannot upload ZIP bytes directly. The archive ZIPs must be added through a local repository checkout / GitHub Desktop (or as GitHub Release assets), after the content and checksum audit.
