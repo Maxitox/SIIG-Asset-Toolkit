@@ -1,31 +1,25 @@
 # Project Licensing
 
+## Current project license: The Unlicense
+
+Original project-authored code and documentation in this repository are dedicated to the public domain under **The Unlicense**, but only to the extent that the project maintainer owns or is legally authorized to dedicate those rights. The complete license text is in the root [`UNLICENSE`](../UNLICENSE) file.
+
+The Unlicense is deliberately permissive: it permits copying, modification, redistribution, commercial use, and use in proprietary projects without requiring attribution or source publication. It also disclaims warranty and liability to the extent stated in the license. Contributors should understand that this is a public-domain dedication, not a copyleft license.
+
 ## No blanket ownership claim
 
-The repository maintainer does **not** claim ownership of every file in this repository.
+This repository contains code, research notes, generated material, historical records, and third-party-derived material. The presence of a file in this repository does not, by itself, mean the project maintainer owns it or can relicense it.
 
-The repository is a research archive and tooling collection assembled from project contributions, third-party work, historical material, generated material, and other sources. Each component must be considered according to its actual provenance.
+## Third-party components and material
 
-## Project contributions
+The Unlicense does **not** replace or override the terms of third-party components, libraries, code adaptations, datasets, or reference material. In particular, the Xenia-derived Xenos tiled-texture addressing adaptation retains the BSD 3-Clause notice in [`XENIA-BSD-3-CLAUSE.txt`](XENIA-BSD-3-CLAUSE.txt). See [`THIRD-PARTY.md`](THIRD-PARTY.md), `reference/provenance/SOURCES.csv`, and `docs/project/THIRD_PARTY_NOTICES.md` for additional provenance.
 
-To the extent that the project maintainer owns or otherwise has the legal authority to license an original contribution, that contribution is released under the **Do What The Fuck You Want To Public License, Version 2 (WTFPL 2.0)**, unless a more specific notice applies.
+Commercial SIIG game assets, executables, audio, video, and extracted game dumps are not relicensed by this repository's Unlicense notice and must not be redistributed without permission.
 
-The WTFPL is intentionally permissive and permits copying, modification, redistribution, and other uses without additional licensing restrictions. See [WTFPL-2.0.txt](WTFPL-2.0.txt).
+## AI-assisted development and uncertain rights
 
-This statement is not intended to relicense material that the project maintainer does not have the right to relicense.
-
-## Uncertain provenance
-
-Where authorship, copyright, or licensing status is uncertain, the repository should preserve that uncertainty and document the known provenance. Uncertainty is not treated as permission to impose a new license.
-
-## AI-assisted development
-
-Parts of the project were developed with AI assistance. The repository does not make a blanket claim that every generated or AI-assisted line is independently copyrightable or owned by the project maintainer. Where rights or authorship are uncertain, the component should be treated according to its actual provenance rather than assumed ownership.
-
-## Historical and third-party material
-
-See [THIRD-PARTY.md](THIRD-PARTY.md) for third-party and externally sourced material.
+Parts of the project were developed with AI assistance. This notice does not assert that every AI-assisted or generated line is independently copyrightable or that the maintainer owns all rights in every contribution. Where rights, provenance, or redistribution permission is uncertain, preserve that uncertainty and do not treat it as permission to impose a new license.
 
 ## Not legal advice
 
-This file describes the project's intended licensing practice; it is not legal advice and does not determine the copyright status of any particular work in every jurisdiction.
+This document describes the intended scope of the project's license and is not legal advice or a determination of ownership under every jurisdiction.
