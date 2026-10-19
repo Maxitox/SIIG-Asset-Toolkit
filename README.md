@@ -409,7 +409,7 @@ Dev7 adds the evidence-backed `hornet_propagation_SS_wave_WW` family for HORNET 
 - Fixed the STFS `CON` first-hash-table initialization path and added a regression fixture.
 - Integrated PS3 EBOOT-backed 3D placement, route-point, scroll, and timing corrections into the current source tree.
 
-The linked-data Asset Viewer now includes full-tree folder navigation and hides converted glTF cards that duplicate a native GMX interactive preview by default; duplicates remain indexed and can be shown explicitly. This remains a development build while automatic PA-route activation timing, the word-11 material scalar, shader ISA work, Blender runtime validation, and project licensing remain open.
+The linked-data Asset Viewer now includes full-tree folder navigation and hides converted glTF cards that duplicate a native GMX interactive preview by default; duplicates remain indexed and can be shown explicitly. This remains a development build while automatic PA-route activation timing, the word-11 material scalar, shader ISA work, and Blender runtime validation remain open. The project license decision is now recorded as The Unlicense, subject to source provenance and third-party license boundaries.
 
 ## Release folder layout
 
@@ -739,7 +739,7 @@ Confirmed facts are separated from unresolved semantics. The living dev24 source
 - OpenAI ChatGPT assistance is disclosed in `docs/project/AI_DISCLOSURE.md`.
 - Explicit sources and adaptations are recorded in `reference/provenance/SOURCES.csv`, `reference/provenance/PROVENANCE.json`, `docs/project/SOURCE_AUDIT.md`, and `docs/project/THIRD_PARTY_NOTICES.md`.
 - TCRF/the Cutting Room Floor was not used and is an explicitly excluded research source; see `docs/project/SOURCE_EXCLUSIONS.md`.
-- No license has yet been selected for the toolkit's original project code. See `docs/project/PROJECT_LICENSE_STATUS.md` before redistribution.
+- Original project-authored code and documentation are dedicated under The Unlicense only to the extent the project maintainer has the legal right to do so. See `UNLICENSE`, `LICENSES/PROJECT-LICENSING.md`, and `docs/project/PROJECT_LICENSE_STATUS.md`.
 
 ### Development note: 2.8.0-dev14
 
