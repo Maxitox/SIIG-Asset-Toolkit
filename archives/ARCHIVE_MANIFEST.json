@@ -1,0 +1,859 @@
+{
+  "format": "SIIG_HISTORICAL_ARCHIVE_IMPORT",
+  "archive_count": 142,
+  "total_bytes": 189961710,
+  "files": [
+    {
+      "name": "SIIG_Asset_Toolkit.zip",
+      "path": "archives/releases/legacy/SIIG_Asset_Toolkit.zip",
+      "size": 43597,
+      "sha256": "6a3e8ca2b5937e9fbf754c964a9a3993d00e229133c54a1c72b4cca43e8dcf01"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v1.1.zip",
+      "path": "archives/releases/v1/SIIG_Asset_Toolkit_v1.1.zip",
+      "size": 45371,
+      "sha256": "57d5cba6da7d98ae1ab9bad82bc85c83b34ba4e133e101eed78d9e3682ee00e6"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v1.2.zip",
+      "path": "archives/releases/v1/SIIG_Asset_Toolkit_v1.2.zip",
+      "size": 256970,
+      "sha256": "cfee35dff206320394284dc04e60ba238092276d0f2e94e057f81fbdd88c0528"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v1.3.zip",
+      "path": "archives/releases/v1/SIIG_Asset_Toolkit_v1.3.zip",
+      "size": 235376,
+      "sha256": "80aa05b75a87542c461f623bf22b798444701cd262334dd81269b9196b8c7b72"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v1.4.zip",
+      "path": "archives/releases/v1/SIIG_Asset_Toolkit_v1.4.zip",
+      "size": 289422,
+      "sha256": "fd514bb1826b63b4458c00d7221bea7c6b91f25ff16125b8e58f90d727b3fa3f"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v1.5.1.zip",
+      "path": "archives/releases/v1/SIIG_Asset_Toolkit_v1.5.1.zip",
+      "size": 256991,
+      "sha256": "c32fbaea98e0e958ee9fdd82fa9a991c1eabc2db78b74ad734b7a44d7fa88727"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v1.5.zip",
+      "path": "archives/releases/v1/SIIG_Asset_Toolkit_v1.5.zip",
+      "size": 254361,
+      "sha256": "3989cddc62c858708fbbe91675206861bb0b58e69dfe8e43a04953365ed82b08"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v1.6.zip",
+      "path": "archives/releases/v1/SIIG_Asset_Toolkit_v1.6.zip",
+      "size": 265495,
+      "sha256": "f6e6ff3a61421c0a1494404f59a034aea89698b2aa0436aacd7d31e4952637b2"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v1.7.zip",
+      "path": "archives/releases/v1/SIIG_Asset_Toolkit_v1.7.zip",
+      "size": 357584,
+      "sha256": "6311353668e99c41ef0dd577b826109eb0926b0e7bbd889473f9ddd3456b8147"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v1.8.zip",
+      "path": "archives/releases/v1/SIIG_Asset_Toolkit_v1.8.zip",
+      "size": 279890,
+      "sha256": "8ce1b5cb17518f7845d9ffd817d541e1aef9c8c3e8c3e93a8b1e8361d5c46870"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v1.9.1.zip",
+      "path": "archives/releases/v1/SIIG_Asset_Toolkit_v1.9.1.zip",
+      "size": 309433,
+      "sha256": "4b62d2ab5c68e4114dc92bbb3170eb4e4357a5d8b3e1142a6b7f06985e0f0114"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v1.9.zip",
+      "path": "archives/releases/v1/SIIG_Asset_Toolkit_v1.9.zip",
+      "size": 295951,
+      "sha256": "74d0681e6b6290307abb56776b6b6851e4dfba0c957396affad3539bbb542288"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.0.zip",
+      "path": "archives/releases/v2/SIIG_Asset_Toolkit_v2.0.zip",
+      "size": 413609,
+      "sha256": "d4f6e2ecac7828352a55043966ff1155a9683b7a5494b53d50df82ac16ef7c3b"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.1.zip",
+      "path": "archives/releases/v2/SIIG_Asset_Toolkit_v2.1.zip",
+      "size": 313191,
+      "sha256": "9bcd75940ff94e7717c121ab80dc5d0f0c5794bca9178a3d9dc5d410bc3db091"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev1.zip",
+      "path": "archives/releases/v1/SIIG_Asset_Toolkit_v2.10.0-dev1.zip",
+      "size": 1122781,
+      "sha256": "abb13a3b4966f868933a5db8e884efa1299903f88f545eee0a9a42dc476d9f47"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev10.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev10.zip",
+      "size": 1311115,
+      "sha256": "28f79478c11316c0229aaea9fe54a8e6742fc42f4fae5be7fd742dc4ec76ef93"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev11.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev11.zip",
+      "size": 1331294,
+      "sha256": "1d468f92985f81b5d1659498eb979c0b2f993800c3f2e8e2d5375b6990729e31"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev12.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev12.zip",
+      "size": 1355992,
+      "sha256": "4a99eacbd6a2a0cace2b05e68aac7e33a3d4206122fb0dc0bcc9a5e330bd76f4"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev13.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev13.zip",
+      "size": 1378750,
+      "sha256": "9d6c347e6628a5f8715eca7d8da489bf02349f79cb490a362e60ba16edae964a"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev14.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev14.zip",
+      "size": 1400133,
+      "sha256": "2ab6f0ae27ed243349e9221e07242d5851501adde2b1a99bf75db5a9cd2ea4ce"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev15.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev15.zip",
+      "size": 1417800,
+      "sha256": "8f0637b7f6fecb6ffe2e010803e0321b5380a447db75455bb6001602d6a1349e"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev15_candidate.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev15_candidate.zip",
+      "size": 1417499,
+      "sha256": "77429755bbc927e47a92e7dc66abd9d190d30743f491131960617e5e4a65ccd8"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev16.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev16.zip",
+      "size": 1437683,
+      "sha256": "4fef59174f29cba7928f2a266be4e2132f41e3beb776262b2e7b1711fed3e846"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev17.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev17.zip",
+      "size": 1457284,
+      "sha256": "d3b070ff196967724a07805e69d2a3b003491debba36657cfad65e88cf34991c"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev18.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev18.zip",
+      "size": 1479756,
+      "sha256": "3d1eb1f2829bcff951fa3ea86e4373092f79e0bbe73a36a1c78a353d6b9a2355"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev19.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev19.zip",
+      "size": 1500716,
+      "sha256": "cb6bbeef1f5e2eb4075d7969b886400e3dbc473a273e239e87bfed75e9e09b7f"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev2.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev2.zip",
+      "size": 1148083,
+      "sha256": "dd9a21ddaf1429852722f869b53ba13e708f5ade6ed32c908ff631744a570013"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev20.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev20.zip",
+      "size": 1527024,
+      "sha256": "b76ae97162159cbf7a1775bf37987d2cf3faee11aff527f6a2a37aa9c24375f9"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev21.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev21.zip",
+      "size": 1560999,
+      "sha256": "c4a2035503e977fe65104233b8c2867de305305e1572638f2e919195c360750b"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev22-WIP.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev22-WIP.zip",
+      "size": 1574864,
+      "sha256": "cbd1d306d4f18e4a520c44121c770817cc0d3d28c73b9ac8ad23e7f2c4ee1f77"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev22.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev22.zip",
+      "size": 1620386,
+      "sha256": "c3e492b38a6b54ff45d4897469730e0da6df2d459e1a69e43004b5a03765a853"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev23-WIP_2026-09-18.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev23-WIP_2026-09-18.zip",
+      "size": 1605798,
+      "sha256": "f5f44ed429c6879d69b3abfefe22e561883e89caf06c546098791e78f684ec30"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev23-WIP_2026-09-18_r2.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev23-WIP_2026-09-18_r2.zip",
+      "size": 1726629,
+      "sha256": "b90c02ea5ae9a8e701b20d1ee0904649f05b1d0f09063c2418239644133782aa"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev23.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev23.zip",
+      "size": 1709179,
+      "sha256": "8b9c90b202f88704ef52a0a2b6c4b349575984ee3f210f09cf30d522036e9cab"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_125.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_125.zip",
+      "size": 1752842,
+      "sha256": "c2520bce5b3d3c67522a28c74ef021b36230e9e52391271fc164ae25974b2c25"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_126.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_126.zip",
+      "size": 1767500,
+      "sha256": "a7f6191f721bb20560312b1ce849efabc36dae0e1683139e087dbcaffdddbc19"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_127.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_127.zip",
+      "size": 1771032,
+      "sha256": "3dc65dfb6dc19fc7fc0ff3b8c11b74a182bab9ff7bfca78c6199414d88c7a6d3"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_130.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_130.zip",
+      "size": 1775616,
+      "sha256": "93cff1d945bbe10f2af371eeb13328fc07058b063cfb9da5f0c2fcad89b4c099"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_142.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_142.zip",
+      "size": 1793644,
+      "sha256": "793e36174cfe22df9e631e5aa87fe30ca879edd71f561775f63078f330ae02c4"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_143.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_143.zip",
+      "size": 1802937,
+      "sha256": "eef02c0d1fb12ba6a09678fc0293a2f32a4452c0e12b9e5955cc9f8a93ef4aae"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_145.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_145.zip",
+      "size": 1818054,
+      "sha256": "fbc35c0d363b7c107c136b727746a0380a8a735f9fe5ac769703905d8f5a471c"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_149.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_149.zip",
+      "size": 1832862,
+      "sha256": "631ee6b1a07351057916040992659cf4f2737fe6fb41807bcc2b47122c7bebb0"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_150.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_150.zip",
+      "size": 1838563,
+      "sha256": "1499cc578e4ad33fdcbf9472be7bbff81494903efac1a02ba341a9f0391f907d"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_151.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_151.zip",
+      "size": 1842867,
+      "sha256": "7c5b9cb4be0b6d735c28cd79aef3791c28bcba423384c0022d4925eee79de3a8"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_153.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_153.zip",
+      "size": 1848444,
+      "sha256": "06bc1d17cee5425dff108be0fc367e3b87197b25bb207ebbb1e0ab2eec1f73a6"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_154.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_154.zip",
+      "size": 1855980,
+      "sha256": "0dd6423660cff59c67a99db17fd30a8b85c1c0c86738cbbc198ef1d04b2b63f9"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_155.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_155.zip",
+      "size": 1859196,
+      "sha256": "fdad6b8848984bdcdee5bee322fc25bb7f6cf3f4a7e951f1631cb72703aa7000"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_156.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_156.zip",
+      "size": 1862955,
+      "sha256": "a9cc85cb8870e38605fc07e6a237c1f08c7fbd92296b372d070113a17ac7c7f3"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_157.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_157.zip",
+      "size": 1867351,
+      "sha256": "63f2cb33951eb520473f76d55caaef63c4d6ca5297e58683f8f310fdb27ea5f8"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_158.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_158.zip",
+      "size": 1887773,
+      "sha256": "a05477c5d54fb0852d2528e3070b4652f20ba74861d7bc7ce33ffd94b82d89e4"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_159.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_159.zip",
+      "size": 1881751,
+      "sha256": "95f7aafd18f48fafb1dedd98f383da2d03566dc3665ea2395fb36e061ebabdcc"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_160.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_160.zip",
+      "size": 1887119,
+      "sha256": "8c2648c70b6837ad4ea9c0211590c5591885375ef6c7f8779dba8b28490394ad"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_161.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_161.zip",
+      "size": 1895323,
+      "sha256": "c9023718d9680068475e3e21b7a69dd759dae39512998d619ce1b9a66e80871a"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_162.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_162.zip",
+      "size": 1896014,
+      "sha256": "49cdf1fa2ac99ae367b7257c80d3b6da3dccd7ac215f4ce5baeb97cc099ef689"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_163.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_163.zip",
+      "size": 1900392,
+      "sha256": "f6e02745778515fbb652189b47afe17c0e3332c29c6e26354ef5fcaffec06987"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_164.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_164.zip",
+      "size": 1903412,
+      "sha256": "223e0f5dd6dc752671746ced3e560cec7d42dfac2c5826c6622e7682d85d198b"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_165.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_165.zip",
+      "size": 1917300,
+      "sha256": "0f7a616eb1b2d37ab24fba0968b0e1b009f65a11bca83786aa9b03c5756b1346"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_166.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_166.zip",
+      "size": 1923428,
+      "sha256": "68aef6fd880d1df65601b7c11561e88d07374c6e0a2df604c78f2cf877a43ffc"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_167.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_167.zip",
+      "size": 1933416,
+      "sha256": "8e4e47ccdf91052146e684db415e4939e7e294af6fc18451e443e48ebffd88d7"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_168.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_168.zip",
+      "size": 1942892,
+      "sha256": "6a15939e166a07b080ceea4287502ac92aeefb8775bb79ddaed12f17ebc0e8f4"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_169.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_169.zip",
+      "size": 1959161,
+      "sha256": "e52d5ab58ad85f297831c822d85cf97fb5cfcba93cc8fc63c7105153350bc52a"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_170.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_170.zip",
+      "size": 1964920,
+      "sha256": "d5a28fff2c684ce40ca7eee844620c6678a23d484704832e5cb808a9f93f792c"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_171.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_171.zip",
+      "size": 1968599,
+      "sha256": "44602d95e22f8422145c544ed09cb862c25110ace5f4d18d54fe4c8448a17c15"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_172.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_172.zip",
+      "size": 1974039,
+      "sha256": "f100ee535b9ae92687b44c2ed0e6810da8eb33137cabdd674c4c55201fcc2986"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_173.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_173.zip",
+      "size": 1982974,
+      "sha256": "ed7678d3bbc7241c5bb6d238312d2707b2cd23ad4326d6c7e111cdc9bf7c9a6e"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_174.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_174.zip",
+      "size": 1990251,
+      "sha256": "e1f12ed2fe5be0c41a1247259a2c2b57e4f56a75a212cf2550ef33ef4673537e"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_175.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_175.zip",
+      "size": 2003301,
+      "sha256": "e44a0470824f8e6a27d79553a545f96a1317d2f84228787382943b077cc838af"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_176.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_176.zip",
+      "size": 1998525,
+      "sha256": "3c7a7b304a75610ec68bc2b4ef5d6ad0c27becce01e416b8edb57cad337cd854"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_177.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_177.zip",
+      "size": 2005468,
+      "sha256": "05167a07d9b0a04def96751aac1153870e5a808de83e54ad150f98b583f3b34e"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_178.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_178.zip",
+      "size": 2018985,
+      "sha256": "bf98a1300bcd577c8e25436e1bbb5323f9a321fd3c3864fc65f7d4dc9788fbd5"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_179.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_179.zip",
+      "size": 2030566,
+      "sha256": "25c55592933afc6e9cd7c48a085cb46b45fc91e7053dfcee5cc620c9b3ec5f98"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_180.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_180.zip",
+      "size": 2036645,
+      "sha256": "084f94ce2580bfcab6d736aedb56cd519f851d5e111a54e597e41cc1060b3b47"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_181.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_181.zip",
+      "size": 2041972,
+      "sha256": "0f82fd083871489f6fce890b630e593c3711ea049e5bc40652b225dfef7c1b5e"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_182.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_182.zip",
+      "size": 2046932,
+      "sha256": "25c65c7c7c4d013eb2205f9f331ffd075177ce9f2000ab29568116433c147475"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_183.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_183.zip",
+      "size": 2063377,
+      "sha256": "bb33fe37e84071451ea8b874efd572a08573a61ecc25dfd5f1a1fe176a488d30"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_184.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_184.zip",
+      "size": 2060380,
+      "sha256": "260c9248b1510f3312aaae269f5d57fe111bbaca6991071b19b708e70198ffc8"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_185.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_185.zip",
+      "size": 2063972,
+      "sha256": "a64fcee8f6a4d0933b1f789e39ce5f40544639897a20f542809327a4a21bd5a6"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_186.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_186.zip",
+      "size": 2072449,
+      "sha256": "478376feebb6477b651aa24872853dce5a27ed819a34deb3e29e459f9741efea"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_187.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_187.zip",
+      "size": 2080260,
+      "sha256": "2d72073f6fc05032f8b150ebdab42922118b99343496dbc7dfd39cddc508ee68"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_188.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_188.zip",
+      "size": 2099373,
+      "sha256": "dfb2addf445972b3d2a3c8369a0feaf375f27db49aeadbc6d8bba71efd048afc"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_189.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_189.zip",
+      "size": 2107919,
+      "sha256": "264003ed330d141614a557c75e99655c71aed153f8ee8e74cf8d7152587c8e3d"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_190.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_190.zip",
+      "size": 2109915,
+      "sha256": "ae28acf5a7b70c14bdc0e92c0010feff4ca8a82221d7f05242da504f932a9ae4"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_191.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_191.zip",
+      "size": 2119816,
+      "sha256": "c7ca19facd28b6571d8c6e6726fb524966bd1d1085e52a0bf389b1566f95cfe9"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_192.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_192.zip",
+      "size": 2124133,
+      "sha256": "1063af6488faa1b3659fd3066ae84211debc773be9c78e4f2599469dd42395c6"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_193.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_193.zip",
+      "size": 2125987,
+      "sha256": "9cb20ea5ac4b4c6c6271f550becae73e045717209ee1ee4fe43f6f3aa4ec5ad9"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_194.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_194.zip",
+      "size": 2130243,
+      "sha256": "dfcebdd88003292f123050bc3c0e626de4da8fb21a1e59ce54b4bdf72b7ddfb0"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_195.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_195.zip",
+      "size": 2136988,
+      "sha256": "75059120da415f0ce11496384f921db9d18e86d890c7753193d8c331aecfbf53"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_196.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_196.zip",
+      "size": 2159796,
+      "sha256": "8fb7d20d12b792d6318cf1dd83d2279043048e46beb22a9df72ac6900eab6564"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_197.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_197.zip",
+      "size": 2171492,
+      "sha256": "30e5ce98686546f5166778919e0022062b908e26a17e77f3648423993268b0e9"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_198.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_198.zip",
+      "size": 2175828,
+      "sha256": "158c595fdd6154784a0d8aa9fda41a211213e4babb5d1eb55669d68301d97b8c"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_199.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_199.zip",
+      "size": 2180480,
+      "sha256": "a106b547e6abd1cf27925a944b273b51ca2489606f04a3fdaedeca57cfd94fc1"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_200.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev24-WIP_200.zip",
+      "size": 2193631,
+      "sha256": "e5604fd7be069b45005d40733f59b4748ffcafb1d06d67b21f4e24548e7c7daf"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev25-GitHubImport.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev25-GitHubImport.zip",
+      "size": 2214294,
+      "sha256": "6ad9f2ec40fa914296a0c36db6ad2b8bf13ecdf04469696c7234b4f73b8ef09a"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev25.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev25.zip",
+      "size": 2214294,
+      "sha256": "6ad9f2ec40fa914296a0c36db6ad2b8bf13ecdf04469696c7234b4f73b8ef09a"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev3.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev3.zip",
+      "size": 1168006,
+      "sha256": "9d50229ebc89e3ca57d7b5277295b186675ad7169f79ed250c9e4506d1d8510c"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev4.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev4.zip",
+      "size": 1169354,
+      "sha256": "61fe6cb3b7cdbcdf0ae5b9ceffd92f8548a8027e7369c50bd2eddfbe8143a93e"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev5.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev5.zip",
+      "size": 1198380,
+      "sha256": "9e14e90e24216fdd0d815c68590805f7fa39bd2e6fb8a91319c77cd08ee0d7a3"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev6.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev6.zip",
+      "size": 1219639,
+      "sha256": "091913c13dbaeeab2e6531779c65c8c5e7888a599aefabb42b82c8d68feb468b"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev7.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev7.zip",
+      "size": 1243996,
+      "sha256": "93a6edd5d41b5317f8d6b3bcbb22d96ab0bfcd5e5bbacda67774d95c9f221049"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev8.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev8.zip",
+      "size": 1272204,
+      "sha256": "d2255d8b0cfcb163c5bb27ebfde288e940b7ff84a8ae43acde46f0db437ce5a0"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.10.0-dev9.zip",
+      "path": "archives/development/v2.10.0/SIIG_Asset_Toolkit_v2.10.0-dev9.zip",
+      "size": 1291559,
+      "sha256": "8bb36a5277777843f9d01a84e18d4a03c62565ba97c360c5d6607b8fd16bfaab"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.2.0.zip",
+      "path": "archives/releases/v2/SIIG_Asset_Toolkit_v2.2.0.zip",
+      "size": 352402,
+      "sha256": "924d7fbda324f69d0e8ffa61ce219e6f97568b0705da13f69a0c579267ae8131"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.3.0.zip",
+      "path": "archives/releases/v2/SIIG_Asset_Toolkit_v2.3.0.zip",
+      "size": 385953,
+      "sha256": "97f24fa602e0ce1bc5e1980ef34058c01cb24ef43f077225632d29e0742bc1cd"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.4.0.zip",
+      "path": "archives/releases/v2/SIIG_Asset_Toolkit_v2.4.0.zip",
+      "size": 400891,
+      "sha256": "e26202f7d1926ec247a6ef8fd8bcedf693b9249f78c210978fe5780bfdf434e0"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.5.0.zip",
+      "path": "archives/releases/v2/SIIG_Asset_Toolkit_v2.5.0.zip",
+      "size": 414066,
+      "sha256": "57cc5830572fb90b8af8cd57bb00881a5a2ae9c7ae87c5c7194ab96c543e5bcd"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.5.1.zip",
+      "path": "archives/releases/v2/SIIG_Asset_Toolkit_v2.5.1.zip",
+      "size": 425252,
+      "sha256": "6dd8e440f1a638cd9a4656293405353200165fe5b0d9afa50b8431958539d93d"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.8.0-dev1.zip",
+      "path": "archives/releases/v1/SIIG_Asset_Toolkit_v2.8.0-dev1.zip",
+      "size": 448304,
+      "sha256": "103a544b9a9685738e90cdb5268c461e29f24cbf90d6f7cfd34cdbd0a42fae20"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.8.0-dev10.zip",
+      "path": "archives/development/v2.8.0/SIIG_Asset_Toolkit_v2.8.0-dev10.zip",
+      "size": 598820,
+      "sha256": "25e213c6566450dbb429ca3d3fa1cfb27ad654749a6ad151b822094e80b03406"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.8.0-dev11.zip",
+      "path": "archives/development/v2.8.0/SIIG_Asset_Toolkit_v2.8.0-dev11.zip",
+      "size": 606807,
+      "sha256": "7e7ed8e260c652b3b45b86b657974490fa9cbb3e75e098a6394a3eee79df6d94"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.8.0-dev12.zip",
+      "path": "archives/development/v2.8.0/SIIG_Asset_Toolkit_v2.8.0-dev12.zip",
+      "size": 626413,
+      "sha256": "273d50f4db93a7dd323330872307497880446234088e056f4f9bfeaa3ad87cc6"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.8.0-dev13.zip",
+      "path": "archives/development/v2.8.0/SIIG_Asset_Toolkit_v2.8.0-dev13.zip",
+      "size": 646367,
+      "sha256": "7cc6cb0177fefa8c55327ebc1b666cba83a1e895939661a4d8074b7f167fc6d7"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.8.0-dev14(1).zip",
+      "path": "archives/development/v2.8.0/SIIG_Asset_Toolkit_v2.8.0-dev14(1).zip",
+      "size": 661721,
+      "sha256": "535843d00201ca151a79dec220e5f6f99f58aadfc88d87006bf27d7aec3408f9"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.8.0-dev14.zip",
+      "path": "archives/development/v2.8.0/SIIG_Asset_Toolkit_v2.8.0-dev14.zip",
+      "size": 659310,
+      "sha256": "19c928d4433a299fee3247ddfb697a764f375fd462cf552aee6ac5c0937277ed"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.8.0-dev15.zip",
+      "path": "archives/development/v2.8.0/SIIG_Asset_Toolkit_v2.8.0-dev15.zip",
+      "size": 687271,
+      "sha256": "f24990333a9d0539404344a603d4a959a048eb38b1d6518fa19616fc740e28eb"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.8.0-dev16.zip",
+      "path": "archives/development/v2.8.0/SIIG_Asset_Toolkit_v2.8.0-dev16.zip",
+      "size": 708878,
+      "sha256": "f2cfc8094d100ef2a15fb0b157dce2f3010901960dc2c9b9a616a41debe94d1e"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.8.0-dev17.zip",
+      "path": "archives/development/v2.8.0/SIIG_Asset_Toolkit_v2.8.0-dev17.zip",
+      "size": 729473,
+      "sha256": "2230bbdf079aaaa8dd8de8e85dcce2d2b390a940dbc966af8b0e6092648cf90b"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.8.0-dev18.zip",
+      "path": "archives/development/v2.8.0/SIIG_Asset_Toolkit_v2.8.0-dev18.zip",
+      "size": 752085,
+      "sha256": "66f91a1ab7970289c55646ed07de73de014bf73613ddcfad183726025e142728"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.8.0-dev19.zip",
+      "path": "archives/development/v2.8.0/SIIG_Asset_Toolkit_v2.8.0-dev19.zip",
+      "size": 770859,
+      "sha256": "e86cebaed7714d15b8ede893b1eaae10b9790bda94b3cd3bc7dd6ba122359eeb"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.8.0-dev2.zip",
+      "path": "archives/development/v2.8.0/SIIG_Asset_Toolkit_v2.8.0-dev2.zip",
+      "size": 482237,
+      "sha256": "a52a3ecf16af0546a0d736d986aa60a90ae2879c7d4c28ea898ec06929c3478e"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.8.0-dev20.zip",
+      "path": "archives/development/v2.8.0/SIIG_Asset_Toolkit_v2.8.0-dev20.zip",
+      "size": 790156,
+      "sha256": "0ef32c929dc6c85db11c93b38c657bdb51d427800029cfb9e891e756730730f8"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.8.0-dev21.zip",
+      "path": "archives/development/v2.8.0/SIIG_Asset_Toolkit_v2.8.0-dev21.zip",
+      "size": 810349,
+      "sha256": "fbce3f1026d5d2ce360c513ad50261db9933461aecdaffbd775d85529584169c"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.8.0-dev22.zip",
+      "path": "archives/development/v2.8.0/SIIG_Asset_Toolkit_v2.8.0-dev22.zip",
+      "size": 833944,
+      "sha256": "134dfa35e1cb6b5a0461e557735c372bcd47dccfe6c5715bc1dff9dceccf1f70"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.8.0-dev23.zip",
+      "path": "archives/development/v2.8.0/SIIG_Asset_Toolkit_v2.8.0-dev23.zip",
+      "size": 857634,
+      "sha256": "36144a131ca3b0e02f60c894f87452a3b455431c4b8f32e858ea8aa7cf2145f9"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.8.0-dev24.zip",
+      "path": "archives/development/v2.8.0/SIIG_Asset_Toolkit_v2.8.0-dev24.zip",
+      "size": 889102,
+      "sha256": "7e1bd82447b2c0374767c36f8c8d96ffad84282b6eef0556f41a12edc1e767ff"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.8.0-dev24_candidate.zip",
+      "path": "archives/development/v2.8.0/SIIG_Asset_Toolkit_v2.8.0-dev24_candidate.zip",
+      "size": 888930,
+      "sha256": "1bea73cd387f28f0c966017d7979eb36563e85558b0c9dfcd8406c970335e517"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.8.0-dev25.zip",
+      "path": "archives/development/v2.8.0/SIIG_Asset_Toolkit_v2.8.0-dev25.zip",
+      "size": 916134,
+      "sha256": "8cc80b5eaf9b29dab0eb8916c9c624baee5e74e4bdb8330d32f95baf67a8c90b"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.8.0-dev26.zip",
+      "path": "archives/development/v2.8.0/SIIG_Asset_Toolkit_v2.8.0-dev26.zip",
+      "size": 927631,
+      "sha256": "5edd6b81b005970c02b5ca72bf8d3ac7f8c2310c2e6efb53ab8770e3596325a7"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.8.0-dev27.zip",
+      "path": "archives/development/v2.8.0/SIIG_Asset_Toolkit_v2.8.0-dev27.zip",
+      "size": 953696,
+      "sha256": "7004bf0eb4efa550f099d927a639e20dcf17699fd9871c9572f6cd8470da9ebc"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.8.0-dev28.zip",
+      "path": "archives/development/v2.8.0/SIIG_Asset_Toolkit_v2.8.0-dev28.zip",
+      "size": 971655,
+      "sha256": "e28ff488b214d3cb21d92d6fa1d08fdf0d77f1c42dea35e5da3ac135fa26f0ae"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.8.0-dev4.zip",
+      "path": "archives/development/v2.8.0/SIIG_Asset_Toolkit_v2.8.0-dev4.zip",
+      "size": 517699,
+      "sha256": "55f0a4c97ec293ef38c75eb13348463ef14729172245e325cf965e642b8477e1"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.8.0-dev5.zip",
+      "path": "archives/development/v2.8.0/SIIG_Asset_Toolkit_v2.8.0-dev5.zip",
+      "size": 525382,
+      "sha256": "c443be0923ccccb7aa74b6161402b137d49f9c59e4dac64ca7a74c510d238791"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.8.0-dev6.zip",
+      "path": "archives/development/v2.8.0/SIIG_Asset_Toolkit_v2.8.0-dev6.zip",
+      "size": 538034,
+      "sha256": "5052aa133c3d716d9cec0c6019dec76fa4334686d8cb25b7f765f96edb9c2cd2"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.8.0-dev7.zip",
+      "path": "archives/development/v2.8.0/SIIG_Asset_Toolkit_v2.8.0-dev7.zip",
+      "size": 550354,
+      "sha256": "ebd6abd24017726eec8b745d945c87d7e0d7d08c05b4cc9a74a46a50fb332099"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.8.0-dev8.zip",
+      "path": "archives/development/v2.8.0/SIIG_Asset_Toolkit_v2.8.0-dev8.zip",
+      "size": 567786,
+      "sha256": "9e7ab64d616f6a80c8cf356bf5c6f34cb5fbe7144ba411c4d8f5f3cf659da5a0"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.8.0-dev9.zip",
+      "path": "archives/development/v2.8.0/SIIG_Asset_Toolkit_v2.8.0-dev9.zip",
+      "size": 588873,
+      "sha256": "5b79cad5fa3c83746885df7b5b7e3598d732b1104ca96b889149225cd3dfdc94"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.9.0-dev1.zip",
+      "path": "archives/releases/v1/SIIG_Asset_Toolkit_v2.9.0-dev1.zip",
+      "size": 992345,
+      "sha256": "f5a05da8900490372242dfb487213b3fa72fd3fdbbb9b74cfd8a1a16e1fcbda8"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.9.0-dev2.zip",
+      "path": "archives/development/v2.9.0/SIIG_Asset_Toolkit_v2.9.0-dev2.zip",
+      "size": 1009792,
+      "sha256": "eac1e01bd009afbada94b2587f476217bd9e9fb587aa28f63a952fef24dab5c3"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.9.0-dev3.zip",
+      "path": "archives/development/v2.9.0/SIIG_Asset_Toolkit_v2.9.0-dev3.zip",
+      "size": 1027496,
+      "sha256": "3a4e25eb3000a131c3d449e6d9167280b6e599738bd5cc9317faaf59ec357959"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.9.0-dev4.zip",
+      "path": "archives/development/v2.9.0/SIIG_Asset_Toolkit_v2.9.0-dev4.zip",
+      "size": 1047302,
+      "sha256": "20e48d458f46aa4bea313a0238c4a5f1f2275f9356e1f95a5c3ea98d5b70676e"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.9.0-dev5.zip",
+      "path": "archives/development/v2.9.0/SIIG_Asset_Toolkit_v2.9.0-dev5.zip",
+      "size": 1063717,
+      "sha256": "589ea0ea0fd81bbc51c912482f4e9c8ad19edff303438e409e2f8020f1c83462"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.9.0-dev6.zip",
+      "path": "archives/development/v2.9.0/SIIG_Asset_Toolkit_v2.9.0-dev6.zip",
+      "size": 1082616,
+      "sha256": "1d5d28bdab3fdc63647ce99eb6bab043dfae28582faa53a8cb2c9652b3ab7258"
+    },
+    {
+      "name": "SIIG_Asset_Toolkit_v2.9.0-dev7.zip",
+      "path": "archives/development/v2.9.0/SIIG_Asset_Toolkit_v2.9.0-dev7.zip",
+      "size": 1104202,
+      "sha256": "2ca5b20377e3ab0a1a51db1a2a7d30eae7b74863e36a79b2d0046e1a705221a1"
+    }
+  ]
+}
