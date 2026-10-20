@@ -1,8 +1,8 @@
 {
   "format": "SIIG_RELEASE_MANIFEST",
   "release": "2.10.0-dev25",
-  "file_count": 787,
-  "total_bytes": 7357216,
+  "file_count": 790,
+  "total_bytes": 7377081,
   "files": [
     {
       "path": ".gitignore",
@@ -58,6 +58,16 @@
       "path": "CONTRIBUTING.md",
       "size": 718,
       "sha256": "485b47be42f7baa78fe345361a96397cc2f7ee26ab16317f9ff394a96a887174"
+    },
+    {
+      "path": "docs/archives/INVENTORY.md",
+      "size": 12303,
+      "sha256": "293c376ebd52c804fff159197855f95481c4ae3cf3f72e93244da2dc270028f4"
+    },
+    {
+      "path": "docs/archives/README.md",
+      "size": 3113,
+      "sha256": "df79b2c27a29ec4150dec9829c4073f10f41056ed94bc0e172cadac34290604b"
     },
     {
       "path": "docs/formats/ANM_NOTES.md",
@@ -208,6 +218,11 @@
       "path": "docs/guides/TESTING.md",
       "size": 6446,
       "sha256": "91a2d3d6d8a26e0325d18b7b4eaf043e28a7e19d5e2ca095e0da36751d01048b"
+    },
+    {
+      "path": "docs/history/DEV24_DEVELOPMENT_LOG.md",
+      "size": 105372,
+      "sha256": "138a9deaca6fcf81fb52fd2f6d078864674747f496b0886e8e28841294de7544"
     },
     {
       "path": "docs/project/AI_DISCLOSURE.md",
@@ -806,8 +821,8 @@
     },
     {
       "path": "README.md",
-      "size": 105135,
-      "sha256": "0e81615a41343b6ced3e76b7162988057a7fd8406823c717758646f90ad93a04"
+      "size": 4212,
+      "sha256": "8e72b24edec0a6ed10ac38c3807e8daedc44c4298d544286367c3524b25a1dbb"
     },
     {
       "path": "reference/provenance/PROVENANCE.json",
